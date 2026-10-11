@@ -1,42 +1,44 @@
-# Le marché de mon métier — les métiers du marketing
+# Le marché de mon métier — cheffe de produit pharmaceutique
 
-### 👉 **[Voir le site : vincentfavarin.github.io/metier](https://vincentfavarin.github.io/metier/)**
+### 👉 **[Voir le site : loubna589.github.io/avenir](https://loubna589.github.io/avenir/)**
 
 Le site est mis à jour chaque matin par une Action GitHub : elle interroge
 l'API France Travail, enregistre les offres du jour et publie les chiffres.
 
 | | |
 |---|---|
-| [Accueil](https://vincentfavarin.github.io/metier/) | les filtres, les chiffres, la carte de France |
-| [Ce que ça paie](https://vincentfavarin.github.io/metier/salaires.html) | fourchettes par niveau, métier, contrat, territoire |
-| [Ce qu'on vous demande](https://vincentfavarin.github.io/metier/exigences.html) | expérience, diplôme, outils, compétences |
-| [Qui recrute](https://vincentfavarin.github.io/metier/recruteurs.html) | entreprises, secteurs, employeurs ouverts aux débutants |
-| [Le marché bouge](https://vincentfavarin.github.io/metier/mouvement.html) | les extractions successives, la fraîcheur des annonces |
+| [Accueil](https://loubna589.github.io/avenir/) | les filtres, les chiffres, la carte de France |
+| [Ce que ça paie](https://loubna589.github.io/avenir/salaires.html) | fourchettes par niveau, métier, contrat, territoire |
+| [Ce qu'on vous demande](https://loubna589.github.io/avenir/exigences.html) | expérience, diplôme, outils, compétences |
+| [Qui recrute](https://loubna589.github.io/avenir/recruteurs.html) | entreprises, secteurs, employeurs ouverts aux débutants |
+| [Le marché bouge](https://loubna589.github.io/avenir/mouvement.html) | les extractions successives, la fraîcheur des annonces |
 
 Dossier de travail pour la séance « Écouter le marché de votre métier »
-(M2 MOD, IAE Clermont Auvergne). Dépôt de démonstration : il montre ce que
-l'on attend d'un dossier `avenir`, étape par étape, et la chaîne complète
-API → données → Action planifiée → page GitHub Pages.
+(M2 MOD, IAE Clermont Auvergne). Construit à partir du dépôt de démonstration
+VincentFavarin/metier : la chaîne complète API → données → Action planifiée
+→ page GitHub Pages.
 
 ## Le métier, tel que le marché le nomme
 
-- **Intitulé principal** : chargé / chargée de marketing digital
-- **Variantes rencontrées dans les offres** : chef de projet marketing digital,
-  chef de produit digital, traffic manager, CRM manager, chargé d'acquisition
-- **Code ROME** : **M1718** — Chargé / Chargée de marketing digital
-  (le README disait M1705 « Marketing » ; c'est la première extraction qui a
-  donné le bon code : 14 offres sur 22 étaient en M1718)
+- **Intitulé principal** : cheffe de produit pharmaceutique
+- **Intitulés proches** : chef ou cheffe de produit santé, Product Manager Pharma,
+  chef ou cheffe de gamme pharmaceutique
+- **Code ROME** : **M1703** — Management et gestion de produit
+- **Secteur ciblé** : industrie pharmaceutique et produits de santé
 
 ## Les questions que je pose à ce marché
 
-1. Combien d'offres, et où : Clermont / Puy-de-Dôme, Auvergne-Rhône-Alpes,
-   France, télétravail ?
-2. Quels contrats et quels salaires affichés ?
-3. Quels outils et compétences reviennent le plus — et lesquels la formation
-   ne me donnera pas ?
-4. Quelles entreprises publient le plus cet intitulé ?
+1. Combien d'offres correspondent à ce métier en France ?
+2. Où se situent les offres, notamment à Clermont-Ferrand, dans le Puy-de-Dôme,
+   en Auvergne-Rhône-Alpes et à Paris ?
+3. Quels contrats et quels salaires sont proposés ?
+4. Quelles compétences, quels outils et quel niveau d'expérience reviennent le plus souvent ?
+5. Quelle proportion des offres propose du télétravail ?
+6. Quelles entreprises recrutent le plus pour ce métier ?
 
-## Ce que la première journée a appris (22/09/2026)
+## Exemple du dépôt de départ (marketing digital, M1718)
+
+Ce que la première journée a appris (22/09/2026), dans le dépôt du professeur :
 
 Trois requêtes, même jour, même API :
 
@@ -69,7 +71,7 @@ API France Travail  →  scripts/extraire.py  →  data/brut/<mois>/<ROME>.jsonl
                                             →  data/actives/<date>.csv         les offres actives du jour (rome, id)
                                             →  data/serie.csv                  par jour et par métier : total, nouvelles, modifiées
                        scripts/resumer.py   →  data/resume.json                ce que les pages affichent (+ data/geo/, cache des positions)
-                       index.html + 4 pages →  https://vincentfavarin.github.io/metier/
+                       index.html + 4 pages →  https://loubna589.github.io/avenir/
                        .github/workflows/veille.yml : GitHub relance tout ça chaque matin à 7 h
 ```
 

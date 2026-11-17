@@ -36,6 +36,31 @@ VincentFavarin/metier : la chaîne complète API → données → Action planifi
 5. Quelle proportion des offres propose du télétravail ?
 6. Quelles entreprises recrutent le plus pour ce métier ?
 
+L'accueil du site répond à ces six questions en tête de page, une carte par question,
+avec la liste des offres concernées pour vérifier chaque chiffre.
+
+## Comment je délimite mon métier
+
+Le code ROME M1703 couvre **tous** les chefs de produit (bricolage, logiciel,
+aéronautique…) : au 24/09/2026, 10 offres sur 299 seulement relevaient de la
+pharma-santé. Le site distingue donc deux périmètres :
+
+- **Mon métier** : un intitulé de poste de produit (chef de produit, de gamme, de
+  marque, de marché, product manager) **et** un contexte pharma-santé : l'intitulé,
+  le code NAF de l'employeur (21, 46.46, 32.50, 72.11) ou une description qui désigne
+  un laboratoire, un médicament, un dispositif médical, la biotech… Ce repérage
+  (`est_pharma` dans `scripts/resumer.py`) porte sur tous les codes suivis et sur le
+  pseudo-code `PHARMA` : 8 recherches par mots-clés (`MOTS_CLES` dans
+  `scripts/extraire.py`), fusionnées sans doublon.
+- **M1703** : le référentiel complet, comme point de comparaison.
+
+Autres règles propres à ce dossier : Clermont-Ferrand = code commune 63113 ; le
+télétravail est lu dans le texte (« remote » et « hybride » comptent, « pas de
+télétravail » non) ; les agences d'intérim et cabinets de recrutement sont séparés
+des employeurs ; la grille d'outils est celle d'une cheffe de produit pharma (AMM,
+market access, IQVIA, Veeva…). L'échantillon pharma est petit : la page donne des
+nombres (« 3 sur 15 ») plutôt que des pourcentages seuls.
+
 ## Exemple du dépôt de départ (marketing digital, M1718)
 
 Ce que la première journée a appris (22/09/2026), dans le dépôt du professeur :

@@ -3,25 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Les métiers du marketing — le marché, lu dans les offres</title>
+<title>Cheffe de produit pharmaceutique — le marché, lu dans les offres</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css">
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.min.css">
 <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<link rel="stylesheet" href="assets/commun.css?v=3">
+<link rel="stylesheet" href="assets/commun.css?v=4">
 </head>
 <body>
 <main>
   <div id="nav-ici"></div>
-  <h1>Les métiers du marketing — le marché, lu dans les offres</h1>
+  <h1>Cheffe de produit pharmaceutique — le marché, lu dans les offres</h1>
   <p class="sous" id="sous">Chargement des données…</p>
 
+  <!-- ============ 0. MES SIX QUESTIONS (ne dépendent pas des filtres) ============ -->
+  <h2>Mes six questions au marché <small>— réponses calculées sur toutes les offres du jour, sans tenir compte des filtres plus bas</small></h2>
+  <p class="note" id="perimetre"></p>
+  <div class="reponses" id="reponses"></div>
+  <div class="carte large" style="margin-top:16px"><h3>Les offres de mon métier, une par une <small id="sous-liste"></small></h3>
+    <div class="defile"><table class="liste" id="liste-pharma"></table></div></div>
+
   <!-- ============ 1. FILTRES (posés par commun.js) ============ -->
+  <h2>Explorer en détail <small>— carte, graphiques et pages suivantes selon les filtres</small></h2>
   <div id="filtres-ici"></div>
 
   <!-- ============ 2. EN CHIFFRES ============ -->
-  <h2>En chiffres</h2>
+  <h2>En chiffres <small>— selon les filtres</small></h2>
   <div class="chiffres" id="chiffres"></div>
 
   <!-- ============ 3. OÙ SONT LES OFFRES ============ -->
@@ -34,7 +42,7 @@
       <button data-vue="paris">Île-de-France</button>
       <button data-fond="gris" class="actif">Fond gris</button>
       <button data-fond="osm">Fond OpenStreetMap</button>
-      <span class="legende"><span><i style="background:#0a5cff"></i>cœur marketing</span><span><i style="background:#ff6a00"></i>digital</span><span><i style="background:#8e8e93"></i>frontière</span></span>
+      <span class="legende"><span><i style="background:#c2185b"></i>mon métier</span><span><i style="background:#0a5cff"></i>cœur marketing</span><span><i style="background:#ff6a00"></i>digital</span><span><i style="background:#8e8e93"></i>frontière</span></span>
     </div>
     <div id="map"></div>
     <p class="note" id="note-carte"></p></div>
@@ -56,13 +64,97 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=3"></script>
+<script src="assets/commun.js?v=4"></script>
 <script>
-/* ============ Accueil : chiffres, carte, départements, contrats ============ */
+/* ============ Accueil : mes six questions, puis chiffres, carte, départements, contrats ============ */
 let carte, calque;
+
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+// « 3 sur 15 (20 %) » : avec un petit échantillon, le nombre compte plus que le pourcentage.
+const part = (k, n) => `${k} sur ${n}${n ? ` (${pct(k, n)} %)` : ""}`;
+const enListe = paires => paires.length ? paires.map(([k, v]) => `${esc(k)} <b>${v}</b>`).join(" · ") : "—";
+// Les territoires de ma question 2. Clermont-Ferrand : code commune INSEE 63113.
+const TERRITOIRES = [
+  ["Clermont-Ferrand", o => o.commune === "63113"],
+  ["Puy-de-Dôme (63)", o => o.dep === "63"],
+  ["Auvergne-Rhône-Alpes", o => AURA.has(o.dep)],
+  ["Paris (75)", o => o.dep === "75"],
+  ["Île-de-France", o => IDF.has(o.dep)],
+];
+function salaires(L) {
+  const s = L.filter(o => o.smin != null);
+  if (!s.length) return { n: 0, texte: "aucune offre n'affiche de salaire" };
+  const mn = mediane(s.map(o => o.smin)), mx = mediane(s.map(o => o.smax != null ? o.smax : o.smin));
+  return { n: s.length, texte: `${euro(mn, 100)} → ${euro(mx, 100)} brut par an (≈ ${euro(net(mn), 10)} → ${euro(net(mx), 10)} net par mois)` };
+}
+
+function rendreQuestions(D) {
+  const P = D.offres.filter(o => o.pharma), M = D.offres.filter(o => o.rome === "M1703");
+  const nP = P.length, nM = M.length;
+  const petit = nP < 30 ? ` <b>Petit échantillon</b> : lire les nombres plutôt que les pourcentages.` : "";
+  document.getElementById("perimetre").innerHTML =
+    `<b>Mon métier</b> = les offres de chef(fe) de produit (ou de gamme, de marque, de marché) dans la pharma et la santé, repérées dans tous les codes suivis et par ${Object.values(D.mots_cles || {}).flat().length || "des"} recherches par mots-clés : intitulé, code d'activité de l'employeur (NAF) ou description qui désigne un laboratoire, un médicament, un dispositif médical, la biotech… ` +
+    `<b>M1703</b> = le code ROME « Chef de produit », tous secteurs : il sert de point de comparaison.${petit}`;
+
+  const cartes = [];
+  /* 1. Combien */
+  const parCode = compter(P, o => o.rome === "PHARMA" ? "mots-clés seulement" : o.rome === "M1703" ? "code M1703" : "autres codes marketing");
+  cartes.push(["1. Combien d'offres en France ?", `${nP} offres`,
+    `de cheffe de produit pharma-santé actives le ${dateFr(D.date)}. Trouvées par : ${enListe(parCode)}.`,
+    `M1703, tous secteurs : ${nM} offres, dont ${part(M.filter(o => o.pharma).length, nM)} dans la pharma-santé.`, "mouvement.html"]);
+  /* 2. Où */
+  const ligne = L => TERRITOIRES.map(([lib, f]) => [lib, L.filter(f).length]);
+  const tP = ligne(P), tM = ligne(M);
+  const tableau = `<table class="mini"><tr><th></th><th>Mon métier</th><th>M1703</th></tr>` +
+    tP.map(([lib, k], i) => `<tr><td>${lib}</td><td><b>${k}</b></td><td>${tM[i][1]}</td></tr>`).join("") +
+    `<tr><td>Ailleurs en France ou lieu non précisé</td><td><b>${nP - tP[2][1] - tP[4][1]}</b></td><td>${nM - tM[2][1] - tM[4][1]}</td></tr></table>`;
+  const tetes = compter(P, o => o.dep || null).slice(0, 3).map(([d, k]) => `${d} (${k})`).join(", ");
+  cartes.push(["2. Où se situent les offres ?", `${tP[4][1]} en Île-de-France · ${tP[2][1]} en AURA`,
+    `${tP[0][1]} à Clermont-Ferrand, ${tP[1][1]} dans le Puy-de-Dôme. Départements en tête : ${tetes || "—"}. ${tableau}`,
+    `Le Puy-de-Dôme compte dans l'Auvergne-Rhône-Alpes, et Paris dans l'Île-de-France.`, "#map"]);
+  /* 3. Contrats et salaires */
+  const cP = compter(P, libContratOffre), sP = salaires(P), sM = salaires(M);
+  cartes.push(["3. Quels contrats et quels salaires ?", cP.length ? `${pct(cP[0][1], nP)} % en ${esc(cP[0][0])}` : "—",
+    `Contrats : ${enListe(cP)}. Salaire affiché par ${part(sP.n, nP)} : médiane ${sP.texte}.`,
+    `M1703 : ${part(M.filter(o => familleContrat(o) === "cdi").length, nM)} en CDI ; salaire affiché par ${part(sM.n, nM)}, médiane ${sM.texte}.`, "salaires.html"]);
+  /* 4. Compétences, outils, expérience */
+  const outils = compter(P.flatMap(o => o.outils), x => x).slice(0, 6).map(([k, v]) => [k, `${pct(v, nP)} %`]);
+  const comp = compter(P.flatMap(o => o.competences), x => x).slice(0, 4);
+  const exp = compter(P, trancheExp);
+  const debM = M.filter(debutantAccepte).length;
+  cartes.push(["4. Compétences, outils, expérience ?", outils.length ? esc(outils[0][0]) : "—",
+    `Outils et savoir-faire cités (part des offres) : ${enListe(outils)}. Expérience demandée : ${enListe(exp)}.` +
+    (comp.length ? ` Compétences codées par France Travail : ${enListe(comp)}.` : ""),
+    `M1703 : ${part(debM, nM)} acceptent un débutant. La grille d'outils est la mienne (scripts/resumer.py) : un mot cité n'est pas toujours une exigence.`, "exigences.html"]);
+  /* 5. Télétravail */
+  const ttP = P.filter(o => o.teletravail).length, ttM = M.filter(o => o.teletravail).length;
+  cartes.push(["5. Quelle part propose du télétravail ?", `${pct(ttP, nP)} %`,
+    `${part(ttP, nP)} offres de mon métier mentionnent le télétravail, le travail hybride ou le remote.`,
+    `M1703 : ${part(ttM, nM)}. Lu dans le texte de l'annonce (pas de champ dédié chez France Travail) ; « pas de télétravail » n'est pas compté.`, "exigences.html"]);
+  /* 6. Qui recrute */
+  const directs = compter(P.filter(o => !o.intermediaire), o => o.entreprise || null).slice(0, 6);
+  const interP = P.filter(o => o.intermediaire).length, anonP = P.filter(o => !o.intermediaire && !o.entreprise).length;
+  const directsM = compter(M.filter(o => !o.intermediaire), o => o.entreprise || null).slice(0, 5);
+  cartes.push(["6. Quelles entreprises recrutent le plus ?", directs.length ? esc(directs[0][0]) : "—",
+    `Employeurs directs : ${enListe(directs)}. Par un intermédiaire (intérim, cabinet) : ${interP} ; employeur non nommé : ${anonP}.`,
+    `M1703, employeurs directs en tête : ${enListe(directsM)} — ${part(M.filter(o => o.intermediaire).length, nM)} passent par un intermédiaire.`, "recruteurs.html"]);
+
+  document.getElementById("reponses").innerHTML = cartes.map(([q, gros, texte, compare, lien]) =>
+    `<div class="reponse"><h3>${q}</h3><b class="gros">${gros}</b><p>${texte}</p><p class="note">${compare}</p><a href="${lien}">Voir le détail →</a></div>`).join("");
+
+  /* La liste, pour que chaque chiffre puisse être vérifié à la main */
+  const tri = [...P].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  document.getElementById("sous-liste").textContent = `— ${nP} offres, les plus récentes d'abord ; cliquez un intitulé pour lire l'annonce`;
+  document.getElementById("liste-pharma").innerHTML =
+    `<tr><th>Intitulé</th><th>Employeur</th><th>Lieu</th><th>Contrat</th><th>Salaire</th><th>Publiée</th></tr>` +
+    tri.map(o => `<tr><td>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)}</td>` +
+      `<td>${esc(o.entreprise || "non précisé")}${o.intermediaire ? " <small>(intermédiaire)</small>" : ""}</td><td>${esc(o.lieu || "")}</td>` +
+      `<td>${esc(libContratOffre(o))}</td><td>${esc(salaireCourt(o) || "—")}</td><td>${dateFr(o.date)}</td></tr>`).join("");
+}
 
 function rendre(offres, D) {
   const lib = Commun.lib;
+  if (!rendreQuestions.fait) { rendreQuestions(D); rendreQuestions.fait = true; }
   const n = offres.length;
 
   /* ---- En chiffres ---- */

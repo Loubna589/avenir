@@ -59,7 +59,7 @@ const dateFr = (s, bref = false) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(
 const age = o => { const jour = Date.parse(D.date), t = Date.parse(o.date); return (isFinite(jour) && isFinite(t)) ? (jour - t) / 86400000 : null; };
 
 const couleur = "#0a5cff", pale = "rgba(10,92,255,.25)";
-const COULEURS = { Marketing: "#0a5cff", Digital: "#ff6a00", Frontière: "#8e8e93" };
+const COULEURS = { "Mon métier": "#c2185b", Marketing: "#0a5cff", Digital: "#ff6a00", Frontière: "#8e8e93" };
 // Palette des niveaux : du clair au foncé, assistant → directeur, « autre » en gris. Valable sur toute la page.
 const COUL_NIV = { assistant: "#a7c9ff", charge: "#5f9bf5", responsable: "#2a6ad4", directeur: "#123a7a", autre: "#b4b4bc" };
 // Sur ces trois teintes claires, le texte blanc n'est pas lisible : on écrit en encre foncée.
@@ -203,14 +203,22 @@ function flottantes(id, lignes) {
 /* ============================================================
    3) ÉTAT DES FILTRES
    ============================================================ */
+/* Clé de mémorisation des filtres. Elle a changé quand le site est passé des 23 métiers
+   marketing à mon métier : les anciens choix mémorisés ne s'appliquent plus, et la page
+   s'ouvre sur M1703 + pharma-santé, cochés par défaut. */
+const CLE_FILTRES = "avenir-filtres-v2";
 const cochees = sel => new Set([...document.querySelectorAll(sel + " input:checked")].map(i => i.value));
 function etatFiltres() {
   return { metiers: cochees("#metiers"), contrats: cochees("#f-contrats"), niveaux: cochees("#f-niveaux") };
 }
+/* Une offre est retenue par le filtre métiers si son code est coché. La case PHARMA
+   (mon métier) retient en plus les offres repérées comme pharma-santé sous n'importe quel
+   code : même règle que le compteur de la case, calculé dans scripts/resumer.py. */
+const dansMetiers = (o, f) => f.metiers.has(o.rome) || (o.pharma && f.metiers.has("PHARMA"));
 /* Les offres retenues par les trois filtres. */
 function filtrer(f) {
   f = f || etatFiltres();
-  return D.offres.filter(o => f.metiers.has(o.rome) && f.contrats.has(familleContrat(o)) && f.niveaux.has(niv(o)));
+  return D.offres.filter(o => dansMetiers(o, f) && f.contrats.has(familleContrat(o)) && f.niveaux.has(niv(o)));
 }
 
 /* ============================================================
@@ -267,7 +275,7 @@ function poserNavEtFiltres() {
     `<p style="margin:0 0 8px"><a href="mouvement.html#limites">Limites de ces chiffres</a></p>
      Chaîne : API France Travail → <code>scripts/extraire.py</code> → <code>data/brut/</code> (chaque version d'annonce, une seule fois) + <code>data/actives/</code> (les offres du jour) → <code>scripts/resumer.py</code> → <code>data/resume.json</code> → ces pages (GitHub Pages).
      Une Action GitHub relance la collecte chaque matin à 7 h. Identifiants dans les secrets du dépôt, jamais dans le code.
-     Dépôt de démonstration — M2 MOD, IAE Clermont Auvergne, séminaires métiers.`;
+     Le marché de mon métier, cheffe de produit pharmaceutique — M2 MOD, IAE Clermont Auvergne, d'après le dépôt de démonstration VincentFavarin/metier.`;
 }
 
 /* ============================================================
@@ -284,7 +292,7 @@ const Commun = {
   rafraichir() {
     const f = etatFiltres();
     Commun.f = f;
-    const parMetier = D.offres.filter(o => f.metiers.has(o.rome));           // base des compteurs de filtres
+    const parMetier = D.offres.filter(o => dansMetiers(o, f));               // base des compteurs de filtres
     const offres = filtrer(f);
     const n = offres.length, total = D.offres.length;
 
@@ -300,7 +308,7 @@ const Commun = {
     if (n === 0) { const d = document.querySelector("details.carte"); if (d) d.open = true; }
 
     // Mémorisation des trois filtres ensemble : ils suivent d'une page à l'autre.
-    try { localStorage.setItem("metiers-filtres", JSON.stringify({ metiers: [...f.metiers], contrats: [...f.contrats], niveaux: [...f.niveaux] })); } catch (e) {}
+    try { localStorage.setItem(CLE_FILTRES, JSON.stringify({ metiers: [...f.metiers], contrats: [...f.contrats], niveaux: [...f.niveaux] })); } catch (e) {}
 
     Commun.rendre(offres, D);
   },
@@ -324,8 +332,7 @@ const Commun = {
         `${d.source} · ${d.requete} · extraction du <b>${dateFr(d.date)}</b> · ${d.offres.length} offres actives, ${d.versions_conservees} versions d'annonces conservées`;
 
       let memo = null;
-      try { memo = JSON.parse(localStorage.getItem("metiers-filtres")); } catch (e) {}
-      if (!memo) { try { const vieux = JSON.parse(localStorage.getItem("metiers-coches")); if (Array.isArray(vieux)) memo = { metiers: vieux }; } catch (e) {} }
+      try { memo = JSON.parse(localStorage.getItem(CLE_FILTRES)); } catch (e) {}
       const memoA = (cle, defaut) => (memo && Array.isArray(memo[cle])) ? memo[cle] : defaut;
 
       // --- Filtre métiers, par groupe ---

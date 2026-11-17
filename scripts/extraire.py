@@ -4,6 +4,7 @@ Usage :
     .venv\Scripts\python.exe scripts\extraire.py                 # tous les métiers de METIERS
     .venv\Scripts\python.exe scripts\extraire.py --verifier      # teste seulement la connexion
     .venv\Scripts\python.exe scripts\extraire.py --rome M1718    # un seul code, pour essayer
+    .venv\Scripts\python.exe scripts\extraire.py --rome PHARMA   # seulement les recherches par mots-clés
 
 Ce que ça écrit :
     data/brut/<AAAA-MM>/<ROME>.jsonl   une ligne par offre complète (JSON tel que l'API le renvoie),
@@ -34,27 +35,30 @@ RACINE = Path(__file__).resolve().parent.parent
 load_dotenv(RACINE / ".env")
 
 # Les métiers suivis : code ROME -> (libellé, groupe, coché par défaut sur la page).
-# Choisis pour le M2 Marketing Opérationnel et Digital ; la page permet de cocher/décocher.
+# Mon métier d'abord (coché), puis les métiers marketing du dépôt de départ, gardés pour
+# comparer (décochés). La page permet de cocher/décocher.
 METIERS = {
+    # Mon métier : cheffe de produit pharmaceutique
+    "M1703": ("Chef(fe) de produit", "Mon métier", True),
+    "PHARMA": ("Chef(fe) de produit pharma-santé (tous codes + mots-clés)", "Mon métier", True),
     # Cœur marketing
-    "M1718": ("Chargé(e) de marketing digital", "Marketing", True),
-    "M1716": ("Directeur(trice) marketing digital", "Marketing", True),
-    "M1705": ("Responsable marketing", "Marketing", True),
-    "M1703": ("Chef(fe) de produit", "Marketing", True),
-    "M1620": ("Assistant(e) marketing", "Marketing", True),
-    "M1706": ("Chef(fe) de promotion des ventes", "Marketing", True),
-    "M1430": ("Chargé(e) d'études commerciales", "Marketing", True),
-    "M1711": ("Directeur(trice) du marketing", "Marketing", True),
+    "M1718": ("Chargé(e) de marketing digital", "Marketing", False),
+    "M1716": ("Directeur(trice) marketing digital", "Marketing", False),
+    "M1705": ("Responsable marketing", "Marketing", False),
+    "M1620": ("Assistant(e) marketing", "Marketing", False),
+    "M1706": ("Chef(fe) de promotion des ventes", "Marketing", False),
+    "M1430": ("Chargé(e) d'études commerciales", "Marketing", False),
+    "M1711": ("Directeur(trice) du marketing", "Marketing", False),
     # Digital, contenu, e-commerce
-    "E1113": ("Responsable e-commerce", "Digital", True),
-    "D1438": ("Assistant(e) e-commerce", "Digital", True),
-    "E1101": ("Community manager", "Digital", True),
-    "E1124": ("Social media manager", "Digital", True),
-    "E1405": ("Référenceur(se) web (SEO)", "Digital", True),
-    "M1886": ("Chef(fe) de projet web", "Digital", True),
-    "M1426": ("Chief digital officer", "Digital", True),
-    "M1719": ("Chargé(e) des relations avec les influenceurs", "Digital", True),
-    "E1406": ("Influenceur(se) web", "Digital", True),
+    "E1113": ("Responsable e-commerce", "Digital", False),
+    "D1438": ("Assistant(e) e-commerce", "Digital", False),
+    "E1101": ("Community manager", "Digital", False),
+    "E1124": ("Social media manager", "Digital", False),
+    "E1405": ("Référenceur(se) web (SEO)", "Digital", False),
+    "M1886": ("Chef(fe) de projet web", "Digital", False),
+    "M1426": ("Chief digital officer", "Digital", False),
+    "M1719": ("Chargé(e) des relations avec les influenceurs", "Digital", False),
+    "E1406": ("Influenceur(se) web", "Digital", False),
     # Communication et commerce, à la frontière
     "E1112": ("Chargé(e) de communication", "Frontière", False),
     "E1103": ("Chargé(e) des relations publiques", "Frontière", False),
@@ -62,6 +66,23 @@ METIERS = {
     "E1404": ("Assistant(e) en publicité", "Frontière", False),
     "D1506": ("Chargé(e) de merchandising", "Frontière", False),
     "D1415": ("Chargé(e) de relation client (CRM)", "Frontière", False),
+}
+
+# Le code ROME M1703 couvre tous les chefs de produit (bricolage, logiciel, mode…) : la
+# pharma y est rare. Le pseudo-code PHARMA rassemble donc des recherches par mots-clés,
+# France entière, sur les intitulés de mon métier ; une offre trouvée par plusieurs
+# recherches n'est comptée qu'une fois.
+MOTS_CLES = {
+    "PHARMA": [
+        "chef de produit pharmaceutique",
+        "chef de produit pharma",
+        "chef de produit santé",
+        "chef de produit dispositif médical",
+        "chef de gamme pharmaceutique",
+        "product manager pharma",
+        "product manager santé",
+        "brand manager pharma",
+    ],
 }
 
 TOKEN_URL = "https://entreprise.francetravail.fr/connexion/oauth2/access_token?realm=/partenaire"
@@ -149,7 +170,19 @@ def main():
 
     actives, lignes_serie = [], []
     for code in codes:
-        offres, total = chercher(token, {"codeROME": code})
+        if code in MOTS_CLES:
+            # Plusieurs recherches, fusionnées par identifiant : le total est le nombre
+            # d'offres distinctes, pas la somme des totaux annoncés (ils se recouvrent).
+            par_id = {}
+            for mots in MOTS_CLES[code]:
+                lot, _ = chercher(token, {"motsCles": mots})
+                for o in lot:
+                    par_id.setdefault(o["id"], o)
+                time.sleep(0.5)
+            offres = list(par_id.values())
+            total = len(offres)
+        else:
+            offres, total = chercher(token, {"codeROME": code})
         nouvelles = modifiees = 0
         with (RACINE / "data" / "brut" / mois / f"{code}.jsonl").open("a", encoding="utf-8") as brut:
             for o in offres:

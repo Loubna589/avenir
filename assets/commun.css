@@ -90,3 +90,18 @@ a.lien span i { font-style:normal; color:var(--accent); font-weight:600; }
 
 @media (max-width:880px) { .filtres { grid-template-columns:1fr; } }
 @media (max-width:480px) { main { padding:20px 12px 48px; } h1 { font-size:1.45rem; } #map { height:420px; } }
+
+/* ---- Accueil : mes six questions ---- */
+.reponses { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(320px,100%), 1fr)); gap:12px; }
+.reponse { background:var(--carte); border:1px solid var(--trait); border-top:4px solid #c2185b; border-radius:12px; padding:14px 16px; display:flex; flex-direction:column; }
+.reponse h3 { margin:0 0 6px; font-size:1rem; }
+.reponse .gros { font-size:1.6rem; line-height:1.15; color:#c2185b; margin-bottom:6px; }
+.reponse p { margin:0 0 8px; font-size:.92rem; }
+.reponse a { margin-top:auto; font-size:.9rem; }
+table.mini { border-collapse:collapse; margin-top:8px; font-size:.88rem; width:100%; }
+table.mini th, table.mini td { text-align:left; padding:3px 6px; border-bottom:1px solid var(--trait); }
+table.mini td + td, table.mini th + th { text-align:right; }
+.defile { overflow-x:auto; }
+table.liste { border-collapse:collapse; width:100%; font-size:.88rem; }
+table.liste th, table.liste td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--trait); vertical-align:top; }
+table.liste th { color:var(--gris); font-weight:600; white-space:nowrap; }

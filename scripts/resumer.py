@@ -29,31 +29,92 @@ import requests
 
 RACINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RACINE / "scripts"))
-from extraire import METIERS  # noqa: E402  (la liste des métiers vit dans un seul fichier)
+from extraire import METIERS, MOTS_CLES  # noqa: E402  (la liste des métiers vit dans un seul fichier)
 
-# Les outils et compétences que l'on cherche dans les annonces : c'est VOTRE grille, adaptez-la.
+# Les outils et compétences que l'on cherche dans les annonces : c'est MA grille, celle d'une
+# cheffe de produit pharmaceutique (réglementaire, données de marché, promotion médicale),
+# plus les outils généraux qui reviennent dans tous les postes de produit.
 # Chaque entrée : libellé affiché -> variantes cherchées (mot entier, insensible à la casse).
 OUTILS = {
-    "SEO": ["seo", "référencement naturel"],
-    "SEA / Google Ads": ["sea", "google ads", "adwords"],
-    "Meta Ads": ["meta ads", "facebook ads", "instagram ads"],
-    "Google Analytics": ["google analytics", "ga4", "analytics"],
-    "HubSpot": ["hubspot"],
-    "CRM / Salesforce": ["crm", "salesforce"],
-    "Emailing": ["emailing", "e-mailing", "newsletter", "mailchimp", "brevo", "sendinblue"],
-    "Réseaux sociaux": ["réseaux sociaux", "social media", "community management"],
-    "LinkedIn": ["linkedin"],
-    "WordPress": ["wordpress"],
-    "Shopify / e-commerce": ["shopify", "prestashop", "e-commerce", "ecommerce"],
-    "Canva": ["canva"],
-    "Suite Adobe": ["photoshop", "illustrator", "indesign", "adobe"],
-    "Excel": ["excel"],
-    "Power BI / Looker": ["power bi", "looker", "data studio"],
-    "SQL / Python": ["sql", "python"],
-    "Marketing automation": ["automation", "automatisation", "zapier", "make", "n8n"],
-    "IA générative": ["ia", "intelligence artificielle", "chatgpt", "ia générative", "genai", "llm"],
     "Anglais": ["anglais", "english"],
+    "Lancement de produit": ["lancement", "lancements", "launch"],
+    "Plan marketing / stratégie de marque": ["plan marketing", "plans marketing", "brand plan", "stratégie de marque", "plan d'action marketing"],
+    "Budget, P&L, prévisions": ["p&l", "budget", "forecast", "forecasts", "prévisions des ventes"],
+    "Études de marché, insights": ["étude de marché", "études de marché", "insights", "veille concurrentielle"],
+    "Réglementaire (AMM, ANSM, HAS)": ["amm", "ansm", "haute autorité de santé", "affaires réglementaires", "réglementaire", "réglementation"],
+    "Market access, remboursement": ["market access", "accès au marché", "ceps", "remboursement", "prix et remboursement"],
+    "Promotion médicale, KOL, congrès": ["visite médicale", "délégués médicaux", "kol", "leaders d'opinion", "congrès", "medical affairs", "affaires médicales"],
+    "Compliance / conformité": ["compliance", "conformité", "pharmacovigilance"],
+    "Données de marché (IQVIA, GERS…)": ["iqvia", "ims", "gers", "nielsen", "openhealth", "panel"],
+    "Omnicanal / digital santé": ["omnicanal", "omnicanale", "omnichannel", "e-detailing", "digital"],
+    "CRM (Veeva, Salesforce)": ["crm", "veeva", "salesforce"],
+    "Excel": ["excel"],
+    "Power BI / tableaux de bord": ["power bi", "looker", "tableau de bord", "tableaux de bord", "dashboard"],
+    "Gestion de projet": ["gestion de projet", "chef de projet", "rétroplanning", "mode projet"],
+    "IA générative": ["ia", "intelligence artificielle", "chatgpt", "ia générative", "genai", "llm"],
 }
+
+# Repérage des offres de mon métier (cheffe de produit pharma-santé), quel que soit le code
+# ROME ou la recherche qui les a trouvées : un poste de produit OU de marketing (intitulé), dans
+# un contexte pharma-santé (intitulé, code NAF de l'employeur ou description). « Marketing »
+# seul ne suffit pas (assistant marketing, webmarketer) : il faut un poste de produit, de gamme,
+# de marque ou de marché. Les listes de secteurs clients d'un fournisseur (« agroalimentaire,
+# pharmacie, chimie ») ne suffisent pas non plus : on demande dans la description une
+# expression qui désigne l'employeur ou ses produits.
+RX_ROLE = re.compile(r"produit|product|gamme|brand|marque|march[ée]\b|portfolio", re.IGNORECASE)
+RX_SANTE_TITRE = re.compile(
+    r"pharma|m[ée]dicament|sant[ée]|m[ée]dical|\bdm\b|medtech|biotech|ophtalm|dermo|\botc\b|officine"
+    r"|h[ôo]pital|diagnostic|\bivd\b|vaccin|oncolog|healthcare|nutraceut|compl[ée]ments? alimentaires?",
+    re.IGNORECASE)
+RX_SANTE_TEXTE = re.compile(
+    r"laboratoires? pharmaceutiques?|industrie pharmaceutique|groupe pharmaceutique|entreprise pharmaceutique"
+    r"|soci[ée]t[ée] pharmaceutique|sp[ée]cialit[ée]s? pharmaceutiques?|m[ée]dicaments?\b|dispositifs? m[ée]dica"
+    r"|diagnostic in vitro|ophtalmolog|dermo-?cosm[ée]tique|produits? de sant[ée](?! v[ée]g[ée]tale)|professionnels? de sant[ée]"
+    r"|biotechnolog|sant[ée] animale|compl[ée]ments? alimentaires|convention collective[^.]{0,40}pharma",
+    re.IGNORECASE)
+# Codes NAF de l'employeur : fabrication pharmaceutique (21), commerce de gros de produits
+# pharmaceutiques (46.46), instruments médicaux (32.50), R&D en biotechnologie (72.11).
+NAF_SANTE = ("21.", "46.46", "32.50", "72.11")
+
+
+def est_pharma(o):
+    """L'offre relève-t-elle de mon métier : un poste de produit dans la pharma ou la santé ?"""
+    titre = o.get("intitule") or ""
+    if not RX_ROLE.search(titre):
+        return False
+    return bool(RX_SANTE_TITRE.search(titre)
+                or (o.get("codeNAF") or "").startswith(NAF_SANTE)
+                or RX_SANTE_TEXTE.search(o.get("description") or ""))
+
+
+# Télétravail : France Travail n'a pas de champ dédié, on le lit dans le texte. « Remote » et
+# « hybride » comptent ; « pas de télétravail » ne compte pas.
+RX_TELETRAVAIL = re.compile(
+    r"t[ée]l[ée]-?travail|full[ -]remote|\bremote\b|travail hybride|mode hybride|organisation hybride"
+    r"|\bhybrid\b|home office", re.IGNORECASE)
+RX_PAS_TELETRAVAIL = re.compile(
+    r"(pas de|sans|aucun|non|ni|pas possible de faire du)\s+(possibilit[ée] de\s+)?t[ée]l[ée]-?travail"
+    r"|t[ée]l[ée]-?travail\s*(:\s*)?(non|impossible|pas possible|exclu)", re.IGNORECASE)
+
+
+def teletravail(texte):
+    return bool(RX_TELETRAVAIL.search(texte)) and not RX_PAS_TELETRAVAIL.search(texte)
+
+
+# Intermédiaires : agences d'intérim et cabinets de recrutement. Ils publient pour le compte
+# d'un client qu'ils ne nomment pas ; on les sépare des employeurs dans « qui recrute ».
+RX_INTERMEDIAIRE_SECTEUR = re.compile(r"travail temporaire|placement de main|mise à disposition de ressources|recrutement", re.IGNORECASE)
+RX_INTERMEDIAIRE_NOM = re.compile(
+    r"int[ée]rim|adecco|manpower|randstad|michael page|page personnel|\bhays\b|robert half|expectra|externatic"
+    r"|talents? sant[ée]|recrutement|\brh\b|staffing|gojob|\bcrit\b|synergie|proman|start people|cabinet|conseils rh",
+    re.IGNORECASE)
+RX_NOTRE_CLIENT = re.compile(r"\bnotre client\b|pour le compte d[e'u]|\bnotre partenaire\b", re.IGNORECASE)
+
+
+def intermediaire(o):
+    return bool(RX_INTERMEDIAIRE_SECTEUR.search(o.get("secteurActiviteLibelle") or "")
+                or RX_INTERMEDIAIRE_NOM.search((o.get("entreprise") or {}).get("nom") or "")
+                or RX_NOTRE_CLIENT.search(o.get("description") or ""))
 REGEX_OUTILS = {nom: re.compile(r"(?<![\w-])(" + "|".join(re.escape(v) for v in variantes) + r")(?![\w-])")
                 for nom, variantes in OUTILS.items()}
 
@@ -311,6 +372,7 @@ def main():
             "intitule": o.get("intitule"),
             "entreprise": (o.get("entreprise") or {}).get("nom"),
             "lieu": lieu.get("libelle"),
+            "commune": lieu.get("commune"),          # code INSEE : 63113 = Clermont-Ferrand
             "dep": departement(lieu),
             "lat": lat, "lon": lon, "prec": precision,
             "contrat": o.get("typeContrat"),
@@ -322,7 +384,9 @@ def main():
             "vu_le": v["vu_le"],
             "url": (o.get("origineOffre") or {}).get("urlOrigine"),
             "outils": [nom for nom, rx in REGEX_OUTILS.items() if rx.search(t)],
-            "teletravail": "télétravail" in t,
+            "teletravail": teletravail(texte),
+            "pharma": est_pharma(o),
+            "intermediaire": intermediaire(o),
             "competences": [c.get("libelle") for c in o.get("competences") or [] if c.get("libelle")],
             "niveau": niveau(o.get("intitule")),
             "nature": nature(o),
@@ -336,6 +400,11 @@ def main():
         })
     geo.sauver()
 
+    # Une offre trouvée à la fois par un code ROME et par les recherches par mots-clés n'est
+    # gardée qu'une fois, sous son code ROME : sinon elle compterait double dès qu'on coche les deux.
+    par_rome = {o["id"] for o in offres if o["rome"] not in MOTS_CLES}
+    offres = [o for o in offres if o["rome"] not in MOTS_CLES or o["id"] not in par_rome]
+
     # Série : par jour et par métier
     serie = defaultdict(dict)
     with (RACINE / "data" / "serie.csv").open(encoding="utf-8") as f:
@@ -345,9 +414,12 @@ def main():
     resume = {
         "date": jour,
         "source": "France Travail — API Offres d'emploi v2",
-        "requete": "une requête codeROME par métier, France entière",
+        "requete": "une requête codeROME par métier, plus des recherches par mots-clés, France entière",
+        "mots_cles": MOTS_CLES,
+        # La case PHARMA retient les offres trouvées par mots-clés ET celles repérées comme
+        # pharma-santé sous n'importe quel code (même règle que filtrer() dans commun.js).
         "metiers": [{"code": c, "libelle": l, "groupe": g, "coche": k,
-                     "actives": sum(1 for o in offres if o["rome"] == c)}
+                     "actives": sum(1 for o in offres if o["rome"] == c or (c == "PHARMA" and o["pharma"]))}
                     for c, (l, g, k) in METIERS.items()],
         "outils": list(OUTILS),
         "contrats": {c: contrat_libelle(c)
@@ -370,6 +442,7 @@ def main():
     avec = [o for o in offres if o["smin"] is not None]
     part = 100 * len(avec) // len(offres) if offres else 0
     print(f"Salaire affiché par {len(avec)} offres sur {len(offres)} ({part} %)")
+    print(f"Mon métier (pharma-santé) : {sum(o['pharma'] for o in offres)} offres")
 
 
 if __name__ == "__main__":

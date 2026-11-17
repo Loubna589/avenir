@@ -175,3 +175,5 @@ a.lien span i { color:var(--turquoise); }
 
 footer { border-top-color:var(--trait); }
 @media (max-width:480px) { main > h1 { padding:24px 20px; font-size:1.45rem; border-radius:18px 18px 18px 40px; } }
+.confronte.vie td:last-child span { display:inline-block; padding:2px 10px; border-radius:99px; background:#e3f5f4; color:#147d79; font-size:.8rem; white-space:nowrap; }
+.confronte.vie td:nth-child(2) { white-space:normal; font-weight:500; color:var(--encre); }

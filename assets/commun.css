@@ -105,3 +105,11 @@ table.mini td + td, table.mini th + th { text-align:right; }
 table.liste { border-collapse:collapse; width:100%; font-size:.88rem; }
 table.liste th, table.liste td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--trait); vertical-align:top; }
 table.liste th { color:var(--gris); font-weight:600; white-space:nowrap; }
+
+/* Tableau « annonces face à ma formation » (accueil) */
+.confronte { width:100%; border-collapse:collapse; font-size:.92rem; }
+.confronte th, .confronte td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--trait); }
+.confronte th { font-size:.8rem; text-transform:uppercase; letter-spacing:.03em; color:var(--gris); }
+.confronte td:nth-child(2) { white-space:nowrap; font-weight:600; }
+.confronte .ok { color:#137333; font-weight:600; }
+.confronte .ecart { color:#b3261e; font-weight:600; }

@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=7">
+<link rel="stylesheet" href="assets/commun.css?v=8">
 </head>
 <body>
 <main>
@@ -34,7 +34,7 @@
   <div class="phrase" style="margin-top:12px" id="comp-phrase">Chargement…</div>
 
   <!-- ============ 0 ter. MA POSITION ============ -->
-  <h2>Ma position <small>— ce que je vais chercher cette année</small></h2>
+  <h2 id="position">Ma position <small>— ce que je vais chercher cette année</small></h2>
   <div class="carte large position">
     <p><b>Je cherche un poste de cheffe de produit junior dans la santé, pour septembre 2027</b>, à la fin de mon M2 et de mon alternance chez Théa : <b>en priorité dans un laboratoire pharmaceutique</b>, et je reste ouverte aux dispositifs médicaux, à la cosmétique, à la nutrition-santé et à l'agroalimentaire, et à la santé animale (vétérinaire).</p>
     <ul>
@@ -50,7 +50,7 @@
 
 
   <!-- ============ 0 quater. MA VEILLE VIE (mise à jour chaque matin par scripts/vie.py) ============ -->
-  <h2>Ma veille VIE <small id="vie-date">— le volontariat international</small></h2>
+  <h2 id="vie">Ma veille VIE <small id="vie-date">— le volontariat international</small></h2>
   <div class="phrase" id="vie-phrase">Chargement de la veille VIE…</div>
   <div class="carte large defile" style="margin-top:12px">
     <h3>Missions santé dans le marketing, le digital ou le commercial</h3>
@@ -100,7 +100,7 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=5"></script>
+<script src="assets/commun.js?v=6"></script>
 <script>
 /* ============ Accueil : mes six questions, puis chiffres, carte, départements, contrats ============ */
 let carte, calque;

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille VIE — cheffe de produit pharmaceutique</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/commun.css?v=10">
+</head>
+<body>
+<main>
+  <div id="nav-ici"></div>
+  <h1>Veille VIE — le volontariat international</h1>
+  <p class="sous" id="sous">Chargement de la veille VIE…</p>
+
+  <div class="chiffres" id="tuiles"></div>
+
+  <h2>Les missions <small id="compte-vie"></small></h2>
+  <div class="carte large">
+    <div class="vie-filtres">
+      <label><input type="checkbox" id="f-sante" checked> santé seulement</label>
+      <label><input type="checkbox" id="f-marketing" checked> marketing, digital ou commercial seulement</label>
+      <select id="f-pays"><option value="">Tous les pays</option></select>
+      <input type="search" id="f-texte" placeholder="Chercher : entreprise, poste, ville…">
+    </div>
+  </div>
+  <div class="liste" id="liste-vie" style="margin-top:12px"></div>
+
+  <h2>Le marché VIE bouge <small>— une ligne par jour de collecte</small></h2>
+  <div class="carte large"><div class="zone"><canvas id="g-serie"></canvas></div>
+    <p class="note" id="note-serie"></p></div>
+
+  <h2>Méthode et limites</h2>
+  <p class="note">Business France ne publie pas d'API ouverte, et les offres ne sont pas dans le code de la page : elles s'affichent par JavaScript. Chaque matin, une Action GitHub (<code>.github/workflows/vie.yml</code>) lance <code>scripts/vie.py</code> : un navigateur automatique (Chromium, piloté par Playwright) ouvre la page publique de recherche — que le fichier robots.txt du site autorise —, tape quatre recherches (« marketing », « pharma », « santé », « chef de produit »), clique sur « Voir plus d'offres » jusqu'au bout et lit chaque carte d'offre. Une mission est classée « santé » ou « marketing » par mots-clés sur l'entreprise, l'intitulé et le début de l'annonce : le classement peut se tromper, et les missions qu'aucune des quatre recherches ne renvoie n'apparaissent pas. « Plus d'infos » compare l'intitulé et l'extrait de l'annonce à mon profil : c'est une aide, l'annonce complète fait foi. Données : <code>data/vie/vie.json</code> (missions du jour) et <code>data/vie/serie.csv</code> (historique).</p>
+  <footer>Veille VIE — M2 MOD, IAE Clermont Auvergne. Données : mon-vie-via.businessfrance.fr (page publique), relevées automatiquement.</footer>
+</main>
+<script src="assets/commun.js?v=7"></script>
+<script src="assets/profil.js?v=3"></script>
+<script>
+const esc = Profil.esc;
+document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map(([url, lib]) =>
+  `<a href="${url}"${url === "vie.html" ? ' class="ici" aria-current="page"' : ""}>${lib}</a>`).join("") + `</nav>`;
+
+const pays = o => (o.lieu || "").split(" - ")[0].trim();
+let V, offres = [];
+
+function afficher() {
+  const s = document.getElementById("f-sante").checked, m = document.getElementById("f-marketing").checked;
+  const p = document.getElementById("f-pays").value, q = document.getElementById("f-texte").value.trim().toLowerCase();
+  const liste = offres.filter(o => (!s || o.sante) && (!m || o.marketing) && (!p || pays(o) === p) &&
+    (!q || [o.intitule, o.entreprise, o.lieu, o.extrait].join(" ").toLowerCase().includes(q)));
+  document.getElementById("compte-vie").textContent = `— ${liste.length} sur ${offres.length}`;
+  document.getElementById("liste-vie").innerHTML = liste.length ? liste.map(o => `
+    <div class="item"><div class="titre"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a></div>
+      <div class="meta"><span><b>${esc(o.entreprise)}</b></span><span>·</span><span>${esc(o.lieu)}</span><span>·</span><span>${esc(o.duree)}</span>
+        ${o.sante ? `<span class="etiq" style="background:#1fa9a4">santé</span>` : ""}${o.marketing ? `<span class="etiq" style="background:#1f5fbf">marketing</span>` : ""}
+        <button class="bouton petit" data-fiche="${esc(o.id)}" style="margin-left:auto">Plus d'infos</button></div>
+      <div class="note" style="margin-top:4px">${esc((o.extrait || "").slice(0, 220))}…</div></div>`).join("")
+    : `<p class="note">Aucune mission avec ces filtres.</p>`;
+}
+
+(async () => {
+  try {
+    V = await (await fetch("data/vie/vie.json?" + Date.now())).json();
+  } catch (e) { document.getElementById("sous").textContent = "La veille VIE n'a pas encore de données."; return; }
+  offres = V.offres.map(o => ({...o, type: "VIE", source: "vie"}));
+  const jour = new Date(V.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
+  const rech = V.recherches.map(b => `« ${esc(b.recherche)} » ${b.annoncees ?? b.lues}`).join(" · ");
+  document.getElementById("sous").innerHTML = `Relevé automatique du <b>${jour}</b> sur le site officiel des VIE (Business France) · recherches : ${rech}.`;
+  const nPays = new Set(offres.filter(o => o.sante).map(pays)).size;
+  document.getElementById("tuiles").innerHTML = [
+    [V.nb_offres, "missions lues, une fois dédoublonnées"], [V.nb_sante, "dans la santé"],
+    [V.nb_sante_marketing, "en santé et marketing, digital ou commercial"], [nPays, "pays pour les missions santé"],
+  ].map(([b, s]) => `<div class="chiffre"><b>${b}</b><span>${s}</span></div>`).join("");
+  const sel = document.getElementById("f-pays");
+  [...new Set(offres.map(pays))].sort((a, b) => a.localeCompare(b, "fr")).forEach(p => sel.add(new Option(p.charAt(0) + p.slice(1).toLowerCase(), p)));
+  ["f-sante", "f-marketing", "f-pays"].forEach(id => document.getElementById(id).addEventListener("change", afficher));
+  document.getElementById("f-texte").addEventListener("input", afficher);
+  const parId = Object.fromEntries(offres.map(o => [String(o.id), o]));
+  document.getElementById("liste-vie").onclick = e => { const b = e.target.closest("[data-fiche]"); if (b) Profil.ouvrir(parId[b.dataset.fiche]); };
+  afficher();
+
+  // Historique : une ligne par jour (data/vie/serie.csv)
+  try {
+    const lignes = (await (await fetch("data/vie/serie.csv?" + Date.now())).text()).trim().split("\n").slice(1).map(l => l.split(","));
+    const jours = [...new Set(lignes.map(l => l[0]))].sort();
+    const mots = [...new Set(lignes.map(l => l[1]))];
+    const couleurs = ["#1f5fbf", "#1fa9a4", "#b7832a", "#c2185b"];
+    new Chart(document.getElementById("g-serie"), {type: "line",
+      data: {labels: jours.map(j => new Date(j + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"short"})),
+        datasets: mots.map((m, i) => ({label: `« ${m} » : missions santé`, borderColor: couleurs[i % 4], backgroundColor: couleurs[i % 4], tension: .25,
+          data: jours.map(j => { const l = lignes.find(x => x[0] === j && x[1] === m); return l ? +l[4] : null; })}))},
+      options: {maintainAspectRatio: false, scales: {y: {beginAtZero: true, ticks: {precision: 0}}}}});
+    document.getElementById("note-serie").textContent = jours.length < 2
+      ? "La veille VIE a commencé le " + jour + " : la courbe se dessinera au fil des jours."
+      : `${jours.length} jours de collecte, du ${jours[0]} au ${jours[jours.length - 1]}.`;
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>

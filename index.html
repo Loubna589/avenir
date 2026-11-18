@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=8">
+<link rel="stylesheet" href="assets/commun.css?v=10">
 </head>
 <body>
 <main>
@@ -49,16 +49,9 @@
   </div>
 
 
-  <!-- ============ 0 quater. MA VEILLE VIE (mise à jour chaque matin par scripts/vie.py) ============ -->
-  <h2 id="vie">Ma veille VIE <small id="vie-date">— le volontariat international</small></h2>
-  <div class="phrase" id="vie-phrase">Chargement de la veille VIE…</div>
-  <div class="carte large defile" style="margin-top:12px">
-    <h3>Missions santé dans le marketing, le digital ou le commercial</h3>
-    <table class="confronte vie" id="vie-marketing"></table>
-  </div>
-  <details class="carte large" style="margin-top:12px"><summary id="vie-autres-titre">Les autres missions VIE dans la santé</summary>
-    <div class="defile"><table class="confronte vie" id="vie-autres"></table></div></details>
-  <p class="note">Méthode et limites : Business France ne publie pas d'API ouverte, et les offres ne sont pas dans le code de la page (elles s'affichent par JavaScript). Chaque matin, une Action GitHub lance <code>scripts/vie.py</code> : un navigateur automatique (Chromium, piloté par Playwright) ouvre la page publique de recherche — que le fichier robots.txt du site autorise —, tape quatre recherches (« marketing », « pharma », « santé », « chef de produit »), clique sur « Voir plus d'offres » jusqu'au bout et lit chaque carte. Une offre est classée « santé » par mots-clés sur l'entreprise, l'intitulé et le début de l'annonce : le classement peut se tromper. Données : <code>data/vie/vie.json</code> (offres du jour) et <code>data/vie/serie.csv</code> (l'historique jour par jour).</p>
+  <!-- ============ 0 quater. VIE : voir l'onglet vie.html ============ -->
+  <h2 id="vie">Ma veille VIE <small>— le volontariat international, dans son propre onglet</small></h2>
+  <a class="lien" href="vie.html"><b>Voir les offres VIE →</b><span>Relevées chaque matin sur le site public de Business France : filtres par pays et par secteur, carte forces / écarts et lettre pour chaque mission.</span></a>
 
   <!-- ============ 1. FILTRES (posés par commun.js) ============ -->
   <h2>Explorer en détail <small>— carte, graphiques et pages suivantes selon les filtres</small></h2>
@@ -100,7 +93,8 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=6"></script>
+<script src="assets/commun.js?v=7"></script>
+<script src="assets/profil.js?v=3"></script>
 <script>
 /* ============ Accueil : mes six questions, puis chiffres, carte, départements, contrats ============ */
 let carte, calque;
@@ -180,12 +174,19 @@ function rendreQuestions(D) {
 
   /* La liste, pour que chaque chiffre puisse être vérifié à la main */
   const tri = [...P].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-  document.getElementById("sous-liste").textContent = `— ${nP} offres, les plus récentes d'abord ; cliquez un intitulé pour lire l'annonce`;
+  document.getElementById("sous-liste").textContent = `— ${nP} offres, les plus récentes d'abord ; cliquez un intitulé pour lire l'annonce, ou « Plus d'infos » pour voir mes forces et écarts et générer ma lettre`;
   document.getElementById("liste-pharma").innerHTML =
-    `<tr><th>Intitulé</th><th>Employeur</th><th>Lieu</th><th>Contrat</th><th>Salaire</th><th>Publiée</th></tr>` +
+    `<tr><th>Intitulé</th><th>Employeur</th><th>Lieu</th><th>Contrat</th><th>Salaire</th><th>Publiée</th><th></th></tr>` +
     tri.map(o => `<tr><td>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)}</td>` +
       `<td>${esc(o.entreprise || "non précisé")}${o.intermediaire ? " <small>(intermédiaire)</small>" : ""}</td><td>${esc(o.lieu || "")}</td>` +
-      `<td>${esc(libContratOffre(o))}</td><td>${esc(salaireCourt(o) || "—")}</td><td>${dateFr(o.date)}</td></tr>`).join("");
+      `<td>${esc(libContratOffre(o))}</td><td>${esc(salaireCourt(o) || "—")}</td><td>${dateFr(o.date)}</td>` +
+      `<td><button class="bouton petit" data-fiche="${esc(o.id)}">Plus d'infos</button></td></tr>`).join("");
+  const parId = Object.fromEntries(tri.map(o => [String(o.id), o]));
+  document.getElementById("liste-pharma").onclick = e => {
+    const b = e.target.closest("[data-fiche]"); if (!b) return;
+    const o = parId[b.dataset.fiche];
+    Profil.ouvrir({...o, contratLib: libContratOffre(o), entreprise: o.entreprise || "employeur non communiqué"});
+  };
 }
 
 function rendre(offres, D) {
@@ -268,49 +269,13 @@ document.querySelectorAll("[data-fond]").forEach(b => b.addEventListener("click"
 
 Commun.demarrer(rendre);
 
-// ---- Ma veille VIE : lit data/vie/vie.json (écrit chaque matin par scripts/vie.py) ----
-(async () => {
-  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
-  const phrase = document.getElementById("vie-phrase");
-  try {
-    const r = await fetch("data/vie/vie.json?" + Date.now());
-    if (!r.ok) throw new Error(r.status);
-    const d = await r.json();
-    const jour = new Date(d.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
-    document.getElementById("vie-date").textContent = `— le volontariat international, relevé automatique du ${jour}`;
-    const rech = d.recherches.map(b => `« ${esc(b.recherche)} » : <b>${b.annoncees ?? b.lues}</b>`).join(" · ");
-    phrase.innerHTML = `Sur le site officiel des VIE, ${rech} offres. Une fois dédoublonnées, <b>${d.nb_offres} offres</b>, dont <b>${d.nb_sante} dans la santé</b> et <b>${d.nb_sante_marketing} en santé et marketing</b> : les grands laboratoires y recrutent des profils marketing et digital juniors, une vraie porte d'entrée pour moi.`;
-    const tete = `<thead><tr><th>Mission</th><th>Entreprise</th><th>Pays</th><th>Durée</th><th>Trouvée par</th></tr></thead>`;
-    const ligne = o => `<tr><td><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a></td><td>${esc(o.entreprise)}</td><td>${esc(o.lieu)}</td><td>${esc(o.duree)}</td><td>${o.recherches.map(m => `<span>${esc(m)}</span>`).join(" ")}</td></tr>`;
-    const sante = d.offres.filter(o => o.sante);
-    const mk = sante.filter(o => o.marketing), autres = sante.filter(o => !o.marketing);
-    document.getElementById("vie-marketing").innerHTML = tete + "<tbody>" + mk.map(ligne).join("") + "</tbody>";
-    document.getElementById("vie-autres").innerHTML = tete + "<tbody>" + autres.map(ligne).join("") + "</tbody>";
-    document.getElementById("vie-autres-titre").textContent = `Les ${autres.length} autres missions VIE dans la santé (recherche, ingénierie, finance, qualité…)`;
-  } catch (e) {
-    phrase.textContent = "La veille VIE n'a pas encore de données (data/vie/vie.json absent).";
-  }
-})();
+
 
 // ---- Compétences et position : recalculées sur les offres pharma du jour (data/resume.json) ----
 (async () => {
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
   // Chaque ligne : ce que je cherche dans les annonces, puis ce que j'ai (écrit à la main) et mon écart.
-  const LIGNES = [
-    {lib:"Anglais", outils:["Anglais"], jai:"Anglais B2 ; poste Global chez Théa en lien avec 35 filiales", ecart:"À renforcer : viser un niveau C1 certifié", ok:false},
-    {lib:"Lancement de produit", outils:["Lancement de produit"], jai:"Lancement d'un médicament dans 4 pays avec 35 filiales ; lancement d'un médicament et d'un complément alimentaire chez Théa France", ecart:"Mon point fort", ok:true},
-    {lib:"Plan marketing, stratégie de marque", outils:["Plan marketing / stratégie de marque"], comp:["Elaborer un plan marketing"], jai:"M2 Marketing Vente (MOD) ; messages clés et outils marketing chez Théa", ecart:"Couvert", ok:true},
-    {lib:"Veille, besoins clients, connaissance produit", comp:["Réaliser une veille", "Recueillir et analyser les besoins client", "Maîtriser les caractéristiques"], jai:"Veille concurrentielle chez Théa France ; argumentaires et réponses aux objections ; immersion terrain avec les équipes de vente", ecart:"Couvert", ok:true},
-    {lib:"Compliance, conformité", outils:["Compliance / conformité"], jai:"Mise à jour des documents scientifiques et vérification des références ; procédures réglementaires en animalerie", ecart:"Couvert", ok:true},
-    {lib:"Réglementaire (AMM, ANSM, HAS)", outils:["Réglementaire (AMM, ANSM, HAS)"], jai:"Master Biologie Santé « Produits de santé et innovation » ; évaluation HAS et prix CEPS chez Théa France ; demandes d'autorisation réglementaires ; UE Évaluation médico-économique (Cnam, en cours)", ecart:"Mon point fort", ok:true},
-    {lib:"Études de marché, insights", outils:["Études de marché, insights"], jai:"M2 MOD ; analyse des ventes chez Théa France", ecart:"Couvert", ok:true},
-    {lib:"Excel, Power BI, tableaux de bord", outils:["Excel", "Power BI / tableaux de bord"], jai:"Tableau de bord des ventes chez Théa France ; Excel, Power BI, R (biostatistiques)", ecart:"Couvert", ok:true},
-    {lib:"Promotion médicale, KOL, congrès", outils:["Promotion médicale, KOL, congrès"], jai:"Messages clés, podcasts scientifiques", ecart:"Partiel : peu d'expérience des leaders d'opinion et des congrès", ok:false},
-    {lib:"Budget, P&L, prévisions", outils:["Budget, P&L, prévisions"], jai:"Analyse des ventes ; DU Entrepreneuriat (IAE)", ecart:"À développer : gérer le budget d'un produit", ok:false},
-    {lib:"Digital santé, omnicanal, CRM (Veeva)", outils:["Omnicanal / digital santé", "CRM (Veeva, Salesforce)"], jai:"M2 Marketing Opérationnel et Digital ; outils marketing et podcasts", ecart:"Partiel : Veeva jamais utilisé", ok:false},
-    {lib:"IA générative", outils:["IA générative"], jai:"DU Intelligence artificielle en santé (Université Paris-Saclay, en cours)", ecart:"Atout rare", ok:true},
-    {lib:"Données de marché (IQVIA, GERS)", outils:["Données de marché (IQVIA, GERS…)"], jai:"Pas encore utilisées", ecart:"À demander en alternance", ok:false},
-  ];
+  const LIGNES = Profil.LIGNES;  // défini dans assets/profil.js (partagé avec la fiche « Plus d'infos »)
   try {
     const d = await (await fetch("data/resume.json?" + Date.now())).json();
     const ph = d.offres.filter(o => o.pharma), n = ph.length;

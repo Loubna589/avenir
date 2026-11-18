@@ -61,7 +61,11 @@ const age = o => { const jour = Date.parse(D.date), t = Date.parse(o.date); retu
 const couleur = "#0a5cff", pale = "rgba(10,92,255,.25)";
 const COULEURS = { "Mon métier": "#c2185b", Marketing: "#0a5cff", Digital: "#ff6a00", Frontière: "#8e8e93" };
 // Palette des niveaux : du clair au foncé, assistant → directeur, « autre » en gris. Valable sur toute la page.
-const COUL_NIV = { assistant: "#a7c9ff", charge: "#5f9bf5", responsable: "#2a6ad4", directeur: "#123a7a", autre: "#b4b4bc" };
+// Niveaux : un dégradé du turquoise clair (junior) au bleu nuit (senior), aux couleurs du CV
+const COUL_NIV = { assistant: "#9fded9", charge: "#1fa9a4", responsable: "#1f5fbf", directeur: "#123a7a", autre: "#b4b4bc" };
+// Une couleur par type de contrat, et par territoire
+const COUL_CONTRAT = { cdi: "#1f5fbf", cdd: "#1fa9a4", alt: "#c2185b", mis: "#ef6c00", indep: "#6b55a6", autre: "#8e8e93" };
+const COUL_TERR = { "Puy-de-Dôme": "#1fa9a4", "Île-de-France": "#b7832a", "Reste de la France": "#6b55a6" };
 // Sur ces trois teintes claires, le texte blanc n'est pas lisible : on écrit en encre foncée.
 const ENCRE_FONCEE = new Set(["assistant", "charge", "autre"]);
 const NIVEAUX_DEFAUT = [["assistant", "Assistant·e / junior"], ["charge", "Chargé·e"], ["responsable", "Responsable"], ["directeur", "Directeur·rice"], ["autre", "Autre"]];

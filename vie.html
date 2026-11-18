@@ -35,7 +35,7 @@
   <p class="note">Business France ne publie pas d'API ouverte, et les offres ne sont pas dans le code de la page : elles s'affichent par JavaScript. Chaque matin, une Action GitHub (<code>.github/workflows/vie.yml</code>) lance <code>scripts/vie.py</code> : un navigateur automatique (Chromium, piloté par Playwright) ouvre la page publique de recherche — que le fichier robots.txt du site autorise —, tape quatre recherches (« marketing », « pharma », « santé », « chef de produit »), clique sur « Voir plus d'offres » jusqu'au bout et lit chaque carte d'offre. Une mission est classée « santé » par mots-clés sur l'entreprise, l'intitulé et le début de l'annonce, et rangée dans mes fonctions (marketing, affaires médicales, accès au marché, digital, commercial) d'après son intitulé ; supply chain, qualité, production, R&D, finance, achats, RH, informatique et réglementaire sont écartés (<code>scripts/fonctions.py</code>) : le classement peut se tromper, et les missions qu'aucune des quatre recherches ne renvoie n'apparaissent pas. « Plus d'infos » compare l'intitulé et l'extrait de l'annonce à mon profil : c'est une aide, l'annonce complète fait foi. Données : <code>data/vie/vie.json</code> (missions du jour) et <code>data/vie/serie.csv</code> (historique).</p>
   <footer>Veille VIE — M2 MOD, IAE Clermont Auvergne. Données : mon-vie-via.businessfrance.fr (page publique), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=9"></script>
+<script src="assets/commun.js?v=10"></script>
 <script src="assets/profil.js?v=4"></script>
 <script>
 const esc = Profil.esc;

@@ -62,7 +62,7 @@ const couleur = "#1fa9a4", pale = "rgba(31,169,164,.18)";
 const COULEURS = { "Mon métier": "#c2185b", Marketing: "#1f5fbf", Digital: "#ef6c00", Frontière: "#8e8e93" };
 // Mes cinq fonctions : une couleur chacune, la même sur toutes les pages
 const FONCTIONS = [["marketing", "Produit / marketing", "#1f5fbf"], ["affaires médicales", "Affaires médicales", "#6b55a6"],
-  ["accès au marché", "Accès au marché", "#b7832a"], ["digital", "Digital", "#ef6c00"], ["commercial", "Commercial", "#1fa9a4"]];
+  ["accès au marché", "Accès au marché", "#b7832a"], ["digital", "Digital", "#ef6c00"], ["gestion de projet", "Gestion de projet", "#2e7d5b"], ["commercial", "Commercial", "#1fa9a4"]];
 // Départements -> régions (pour compter par région et zoomer la carte)
 const REGIONS = {
   "Auvergne-Rhône-Alpes": ["01","03","07","15","26","38","42","43","63","69","73","74"],
@@ -232,7 +232,7 @@ function flottantes(id, lignes) {
 /* Clé de mémorisation des filtres. Elle a changé quand le site est passé des 23 métiers
    marketing à mon métier : les anciens choix mémorisés ne s'appliquent plus, et la page
    s'ouvre sur M1703 + pharma-santé, cochés par défaut. */
-const CLE_FILTRES = "avenir-filtres-v2";
+const CLE_FILTRES = "avenir-filtres-v3";
 const cochees = sel => new Set([...document.querySelectorAll(sel + " input:checked")].map(i => i.value));
 function etatFiltres() {
   return { metiers: cochees("#metiers"), contrats: cochees("#f-contrats"), niveaux: cochees("#f-niveaux") };
@@ -246,7 +246,7 @@ function etatFiltres() {
    scripts/fonctions.py) : code « PH:marketing », « PH:digital »… Une offre à deux fonctions
    apparaît sous les deux cases. */
 const SOUS_PHARMA = [["marketing", "Santé — produit / marketing"], ["affaires médicales", "Santé — affaires médicales"],
-  ["accès au marché", "Santé — accès au marché"], ["digital", "Santé — digital"], ["commercial", "Santé — commercial"]];
+  ["accès au marché", "Santé — accès au marché"], ["digital", "Santé — digital"], ["gestion de projet", "Santé — gestion de projet"], ["commercial", "Santé — commercial"]];
 const dansCode = (o, c) => c.startsWith("PH:") ? !!o.pharma && (o.fonctions || []).includes(c.slice(3))
   : c === "PHARMA" ? !!o.pharma : o.rome === c && o.rome !== "PHARMA";
 const dansMetiers = (o, f) => [...f.metiers].some(c => dansCode(o, c));
@@ -407,7 +407,7 @@ const Commun = {
       majGroupes();
 
       // --- Filtre type de contrat ---
-      const memoC = memoA("contrats", CONTRATS.map(x => x[0]));
+      const memoC = memoA("contrats", CONTRATS.map(x => x[0]).filter(k => k !== "alt"));  // pas d'alternance par défaut
       document.getElementById("f-contrats").innerHTML = CONTRATS.map(([k, l]) =>
         `<label><input type="checkbox" value="${k}" ${memoC.includes(k) ? "checked" : ""}> ${l} <small id="nb-c-${k}"></small></label>`).join("");
       // --- Filtre niveau de poste ---

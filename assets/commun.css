@@ -286,3 +286,17 @@ table.fonctions td.repere-c { background:#f1f2f5; color:var(--gris); }
 .cible > span { color:var(--gris); font-size:.85rem; }
 .cible:last-child .puce { opacity:.75; }
 @media (max-width:760px) { .cible { grid-template-columns:1fr; } }
+
+[data-voir] { cursor:pointer; }
+.barre[data-voir]:hover .lib, .recruteur[data-voir]:hover, .legende-seg [data-voir]:hover, .lien-voir:hover { color:var(--accent); text-decoration:underline; }
+.barre[data-voir]:hover .piste { outline:2px solid rgba(31,95,191,.25); }
+.segments i[data-voir]:hover { filter:brightness(1.12); }
+table.fonctions b[data-voir] { text-decoration:underline dotted; }
+.lien-voir { color:var(--accent); font-weight:600; }
+.ma-recherche { grid-template-columns:1fr auto; }
+.tuiles-pos { grid-column:1 / -1; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(300px,100%), 1fr)); gap:10px; margin-top:6px; }
+.tuiles-pos > div { background:#f6f9fd; border-radius:12px; padding:10px 14px 10px 46px; position:relative; font-size:.9rem; color:var(--gris); }
+.tuiles-pos > div > span { position:absolute; left:12px; top:9px; font-size:1.3rem; }
+.tuiles-pos b { display:block; color:var(--encre); font-size:.95rem; }
+.tuiles-pos i { font-style:normal; }
+.ma-recherche .ref { grid-column:1 / -1; }

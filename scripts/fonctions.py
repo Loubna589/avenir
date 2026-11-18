@@ -1,7 +1,7 @@
 """fonctions.py — la fonction d'un poste, lue dans son intitulé.
 
-Ma cible : le marketing de la santé au sens large. Cinq fonctions comptent :
-    marketing, affaires médicales, accès au marché, digital, commercial.
+Ma cible : le marketing de la santé au sens large. Six fonctions comptent :
+    marketing, affaires médicales, accès au marché, digital, gestion de projet, commercial.
 Les fonctions de supply chain, qualité, production, R&D, ingénierie, finance, achats,
 RH, informatique ou réglementaire n'en font pas partie, même dans un laboratoire.
 
@@ -31,6 +31,9 @@ FONCTIONS = {
     "digital": re.compile(
         r"\bdigital\w*|numerique|e-?commerce|\bcrm\b|social media|reseaux sociaux|\bgrowth\b|\bseo\b|\bsea\b|\bcontent\b"
         r"|contenus?\b|\bengagement\b|webmarket\w*|\bweb\b|community manag"),
+    "gestion de projet": re.compile(
+        r"\bchef\w* de projets?\b|project manag\w*|gestion de projets?|\bpmo\b|coordinat\w* de projets?|\bcharge\w* de projets?\b"
+        r"|\bproject (lead|leader|coordinator)\b|\bprogram\w* manager\b"),
     "commercial": re.compile(
         r"commercia\w*|\bsales\b|\bventes?\b|business develop\w*|developpement commercial|\bkey account|\bkam\b"
         r"|account (manager|executive)|\bdelegue\w*|visiteu\w* medical|\brepresentant\w*|\battache\w* commercial"
@@ -44,7 +47,8 @@ HORS_CIBLE = re.compile(
     r"|controll|comptab|audit|\bachats?\b|procurement|buyer|acheteu|ressources humaines|\brh\b|\btalent|recrut|developpeur"
     r"|developer|full ?stack|devops|data engineer|juriste|\blegal\b|\bhse\b|maintenance|technicien|\bprocess\b|bioprocess"
     r"|\bmsat\b|regulatory|reglementaire|pharmacovigilance|\bclinical (research|trial|operations)|\bcra\b|assistant\w* (de direction|administrati)"
-    r"|secretari|operateur|preparateur|magasinier|caissi|vendeu|employe\w* commercial|merchandis|chef d.equipe|superviseur")
+    r"|secretari|operateur|preparateur|magasinier|caissi|vendeu|employe\w* commercial|merchandis|chef d.equipe|superviseur"
+    r"|travaux|planificat|ordonnanc|\bbtp\b|batiment|informatique|systemes? d.information|infrastructure|immobili|etudes? cliniques?|\bclinical\b")
 
 
 def fonctions(intitule):

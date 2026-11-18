@@ -6,7 +6,7 @@
 <title>Mon marché — le marketing de la santé</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=13">
+<link rel="stylesheet" href="assets/commun.css?v=14">
 </head>
 <body>
 <main>
@@ -14,45 +14,40 @@
   <h1>Mon marché : le marketing de la santé</h1>
   <p class="sous" id="sous">Chargement des données…</p>
 
-  <!-- ============ MA RECHERCHE ============ -->
-  <div class="carte ma-recherche">
+  <!-- ============ MA POSITION : ce que je cherche ============ -->
+  <div class="carte ma-recherche" id="position">
     <div>
       <p><b>Diplômée en septembre 2027</b>, je cherche mon premier poste dans le marketing de la santé, là où se rejoignent mes deux formations : <b>la biologie et le marketing</b>.</p>
       <div class="cibles" id="puces"></div>
-      <p class="ref">Code métier de référence chez France Travail : <b>M1703 — Chef de produit</b>.</p>
     </div>
     <div class="gros-chiffre"><b id="nb-moi">—</b><span>offres pour moi<br>aujourd'hui</span></div>
+    <div class="tuiles-pos">
+      <div><span>🏥</span><b>Où</b>Un laboratoire pharmaceutique en priorité ; ouverte aux dispositifs médicaux, à la cosmétique, à la nutrition-santé et à la santé animale.</div>
+      <div><span>🎓</span><b>Quel niveau</b>Junior ou assistante chef de produit, avec deux ans d'alternance chez Théa à faire valoir. <i id="pos-exp"></i></div>
+      <div><span>📄</span><b>Quel contrat</b>CDI, CDD, intérim ou VIE : tout ce qui me fait entrer dans le métier.</div>
+      <div><span>🌍</span><b>Quelle zone</b>Toute la France et l'international : <i id="pos-geo"></i>, une seule ville serait trop étroit.</div>
+      <div><span>📅</span><b>Quand</b>Je postule de mars à juin 2027 ; ma veille tourne chaque matin d'ici là.</div>
+      <div><span>🚀</span><b>D'ici mars</b>Certifier mon anglais, demander des missions d'accès au marché chez Théa.</div>
+    </div>
+    <p class="ref">Code métier de référence chez France Travail : <b>M1703 — Chef de produit</b>.</p>
   </div>
 
   <!-- ============ LES SIX QUESTIONS ============ -->
   <h2>Mes six questions au marché</h2>
   <div class="reponses" id="reponses"></div>
 
-  <!-- ============ MES 5 FONCTIONS ============ -->
-  <h2>Mes cinq fonctions, côte à côte</h2>
+  <!-- ============ MES FONCTIONS ============ -->
+  <h2>Mes fonctions, côte à côte</h2>
   <div class="carte large defile"><table class="fonctions" id="t-fonctions"></table>
     <p class="note" style="margin:6px 6px 0">Une offre peut compter dans deux colonnes : un « chef de produit digital » est à la fois produit et digital.</p></div>
   <a class="bouton bouton-lien" href="offres.html">Voir les <span id="nb-moi2">—</span> offres une par une, et ce qu'elles demandent face à ce que j'ai →</a>
 
-  <!-- ============ MA POSITION ============ -->
-  <h2 id="position">Ma position</h2>
-  <div class="carte large position">
-    <p><b>Je cherche un poste de cheffe de produit junior dans la santé, pour septembre 2027</b>, à la fin de mon M2 et de mon alternance chez Théa : <b>en priorité dans un laboratoire pharmaceutique</b>, et je reste ouverte aux dispositifs médicaux, à la cosmétique, à la nutrition-santé et à l'agroalimentaire, et à la santé animale (vétérinaire).</p>
-    <ul>
-      <li><b>Mon profil.</b> Un profil scientifique (licence de pharmacologie, master Biologie Santé « Produits de santé et innovation ») complété par une spécialisation en marketing opérationnel et digital (M2 MOD) : la double compétence que demande le marketing santé, où il faut à la fois comprendre un produit et savoir le faire connaître.</li>
-      <li><b>Le contrat.</b> CDI, CDD, mission d'intérim ou VIE (volontariat international en entreprise) : tous me permettent d'entrer dans le métier.</li>
-      <li><b>Le bon niveau de poste.</b> <span id="pos-exp">Hors alternance, une partie seulement des offres accepte 2 ans d'expérience ou moins.</span> Je vise donc les postes junior et d'assistant(e) chef de produit, et je présente mes deux années d'alternance comme une expérience réelle, pas comme un stage.</li>
-      <li><b>Où.</b> Toute la France et l'international. Les offres de mon métier sont dispersées (<span id="pos-geo">une partie en Île-de-France, les autres dans de nombreux départements</span>) : me limiter à une ville réduirait trop un marché déjà petit. Mon poste Global chez Théa m'a donné envie de l'international, d'où le VIE.</li>
-      <li><b>À qui j'écris.</b> Les entreprises qui recrutent dans mes données : des laboratoires (Innothera, Mayoly, HTL Biotechnology), le diagnostic et l'équipement de laboratoire (Horiba, Erlab), la santé numérique (Cegedim, Technidata, PRECIPHAR), et des cabinets de recrutement spécialisés santé, qui recrutent pour le compte de laboratoires (Talents Santé, Appel Médical). J'y ajoute les laboratoires d'ophtalmologie, mon domaine chez Théa, et une candidature en interne chez Théa.</li>
-      <li><b>Quand.</b> Les postes se publient quelques mois avant la prise de poste : je postule de mars à juin 2027. D'ici là, ma veille tourne chaque matin, et mon outil de candidature trie les nouvelles offres, prépare un brouillon de lettre et les suit dans un tableau Excel.</li>
-    </ul>
-    <p class="note">Ce que je ferai d'ici mars : certifier mon anglais, demander des missions market access et l'accès aux données de marché (IQVIA) chez Théa, et relancer chaque mois la lecture de ce tableau avec les nouvelles offres.</p>
-  </div>
 
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=11"></script>
+<script src="assets/commun.js?v=12"></script>
+<script src="assets/profil.js?v=8"></script>
 <script>
 /* ============ Accueil : ma recherche, six questions en image, mes cinq fonctions, ma position ============ */
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -60,17 +55,20 @@ const s_ = k => k > 1 ? "s" : "";
 const kE = v => v == null ? "—" : Math.round(v / 1000) + " k€";
 
 /* Une liste de barres horizontales en HTML : [libellé, valeur, couleur, texte affiché] */
+/* ---- Cliquer sur une barre, un segment, un nom : la liste des offres concernées ---- */
+const LOTS = [];
+const voir = (titre, liste) => liste && liste.length ? ` data-voir="${LOTS.push([titre, liste]) - 1}"` : "";
 function barresHTML(lignes, max) {
   max = max || Math.max(1, ...lignes.map(l => l[1]));
-  return `<div class="barres-h">` + lignes.map(([lib, v, c, txt]) =>
-    `<div class="barre" title="${esc(lib)} : ${esc(txt == null ? v : txt)}"><span class="lib">${esc(lib)}</span>` +
+  return `<div class="barres-h">` + lignes.map(([lib, v, c, txt, liste]) =>
+    `<div class="barre"${voir(lib, liste)} title="${esc(lib)} : ${esc(txt == null ? v : txt)}"><span class="lib">${esc(lib)}</span>` +
     `<span class="piste"><i style="width:${100 * v / max}%;background:${c}"></i></span><span class="val">${txt == null ? v : txt}</span></div>`).join("") + `</div>`;
 }
 /* Une barre découpée en segments, avec sa légende */
 function segmentsHTML(parts) {
   const tot = parts.reduce((s, p) => s + p[1], 0) || 1;
-  return `<div class="segments">` + parts.filter(p => p[1]).map(([l, v, c]) => `<i title="${esc(l)} : ${v}" style="width:${100 * v / tot}%;background:${c}"></i>`).join("") + `</div>` +
-    `<div class="legende-seg">` + parts.filter(p => p[1]).map(([l, v, c]) => `<span><i style="background:${c}"></i>${esc(l)} ${v}</span>`).join("") + `</div>`;
+  return `<div class="segments">` + parts.filter(p => p[1]).map(([l, v, c, liste]) => `<i${voir(l, liste)} title="${esc(l)} : ${v}" style="width:${100 * v / tot}%;background:${c}"></i>`).join("") + `</div>` +
+    `<div class="legende-seg">` + parts.filter(p => p[1]).map(([l, v, c, liste]) => `<span${voir(l, liste)}><i style="background:${c}"></i>${esc(l)} ${v}</span>`).join("") + `</div>`;
 }
 /* Un anneau (Chart.js) avec un texte au centre */
 function anneau(id, parts, centre) {
@@ -101,22 +99,22 @@ function rendre(_, D) {
   const puce = fn => { const [, l, c] = FONCTIONS.find(x => x[0] === fn); return `<span class="puce" style="background:${c}">${l}</span>`; };
   document.getElementById("puces").innerHTML = [
     ["🎯 Ma cible", ["marketing", "digital"], ""],
-    ["➕ J'y postule aussi", ["affaires médicales", "accès au marché"], "Au fil de mon parcours, je me suis découvert un vrai intérêt pour ces deux métiers : ils font pleinement partie de ma recherche."],
+    ["➕ J'y postule aussi", ["affaires médicales", "accès au marché", "gestion de projet"], "Au fil de mon parcours, je me suis découvert un vrai intérêt pour ces domaines : ils font pleinement partie de ma recherche."],
     ["🤝 Si l'occasion se présente", ["commercial"], "Pas mon premier choix, mais une porte d'entrée possible."],
   ].map(([t, fns, txt]) => `<div class="cible"><b>${t}</b><div class="puces">${fns.map(puce).join("")}</div>${txt ? `<span>${txt}</span>` : ""}</div>`).join("");
 
   const cartes = [], dessins = [];
   /* 1. Combien */
-  cartes.push(["1. Combien d'offres ?", `${nP} offres`, "dans la santé, sur mes cinq fonctions",
-    barresHTML(FONCTIONS.map(([fn, l, c]) => [l, P.filter(o => aFn(o, fn)).length, c])),
+  cartes.push(["1. Combien d'offres ?", `${nP} offres`, "dans la santé, sur mes fonctions, hors alternance",
+    barresHTML(FONCTIONS.map(([fn, l, c]) => { const L = P.filter(o => aFn(o, fn)); return [l, L.length, c, null, L]; })),
     `Repère : ${nM} offres de chef de produit tous secteurs, dont ${M.filter(o => o.pharma).length} dans la santé.`, "mouvement.html"]);
 
   /* 2. Où */
   const parReg = compter(P, o => o.dep ? (REGION_DE[o.dep] || "Autre") : "Lieu non précisé");
   const tReg = r => r === "Île-de-France" ? "#b7832a" : r === "Auvergne-Rhône-Alpes" ? "#1fa9a4" : r === "Lieu non précisé" ? "#c4cad3" : "#8f7cc4";
   const idf = P.filter(o => IDF.has(o.dep)).length, p63 = P.filter(o => o.dep === "63").length, clf = P.filter(o => o.commune === "63113").length;
-  cartes.push(["2. Où sont-elles ?", `${idf} en Île-de-France`, `${p63} dans le Puy-de-Dôme, dont ${clf} à Clermont-Ferrand`,
-    barresHTML(parReg.map(([r, k]) => [r, k, tReg(r)])), "", "explorer.html#ou"]);
+  cartes.push(["2. Où sont-elles ?", `${idf} en Île-de-France`, `<span class="lien-voir"${voir("Puy-de-Dôme", P.filter(o => o.dep === "63"))}>${p63} dans le Puy-de-Dôme</span>, dont ${clf ? `<span class="lien-voir"${voir("Clermont-Ferrand", P.filter(o => o.commune === "63113"))}>${clf} à Clermont-Ferrand</span>` : "aucune à Clermont-Ferrand"}`,
+    barresHTML(parReg.map(([r, k]) => [r, k, tReg(r), null, P.filter(o => (o.dep ? (REGION_DE[o.dep] || "Autre") : "Lieu non précisé") === r)])), "Cliquez une barre pour voir les offres.", "explorer.html#ou"]);
 
   /* 3. Contrats et salaires */
   const cP = compter(P, o => familleContrat(o));
@@ -125,16 +123,17 @@ function rendre(_, D) {
   const a3 = anneau("a-contrats", cP.map(([k, v]) => [libC[k], v, COUL_CONTRAT[k]]), `<b>${pct((cP.find(x => x[0] === "cdi") || [0, 0])[1], nP)} %</b>en CDI`);
   dessins.push(a3.dessin);
   cartes.push(["3. Quels contrats, quel salaire ?", sP.mn ? `${kE(sP.mn)} → ${kE(sP.mx)}` : "—", "brut par an, salaire médian affiché",
-    `<div class="duo">${a3.html}<div><div class="legende-seg" style="display:grid;gap:4px">${cP.map(([k, v]) => `<span><i style="background:${COUL_CONTRAT[k]}"></i>${libC[k]} : <b>${v}</b></span>`).join("")}</div>` +
+    `<div class="duo">${a3.html}<div><div class="legende-seg" style="display:grid;gap:4px">${cP.map(([k, v]) => `<span${voir(libC[k], P.filter(o => familleContrat(o) === k))}><i style="background:${COUL_CONTRAT[k]}"></i>${libC[k]} : <b>${v}</b></span>`).join("")}` +
+    `<span${voir("Offres qui affichent un salaire", P.filter(o => o.smin != null))}>💶 avec salaire : <b>${sP.n}</b></span></div>` +
     `<p class="repere">≈ ${euro(net(sP.mn), 10)} → ${euro(net(sP.mx), 10)} net par mois</p></div></div>`,
     `Seules ${sP.n} offres sur ${nP} affichent un salaire : le salaire affiché n'est pas tout le marché.`, "explorer.html#salaires"]);
 
   /* 4. Ce qu'on demande */
   const outils = compter(P.flatMap(o => o.outils || []), x => x).slice(0, 5);
   const EXPC = { "Débutant accepté": "#1fa9a4", "Moins d'un an": "#9fded9", "1 à 2 ans": "#b7832a", "3 à 4 ans": "#6b55a6", "5 ans et plus": "#123a7a", "Non précisé": "#c4cad3" };
-  const exp = EXPS.map(t => [t, P.filter(o => trancheExp(o) === t).length, EXPC[t]]);
+  const exp = EXPS.map(t => { const L = P.filter(o => trancheExp(o) === t); return [t, L.length, EXPC[t], L]; });
   cartes.push(["4. Qu'est-ce qu'on me demande ?", outils.length ? `${pct(outils[0][1], nP)} %` : "—", outils.length ? `des offres citent : ${esc(outilLisible(outils[0][0]))}` : "",
-    barresHTML(outils.map(([k, v]) => [outilLisible(k), v, "#1fa9a4", pct(v, nP) + " %"]), nP) +
+    barresHTML(outils.map(([k, v]) => [outilLisible(k), v, "#1fa9a4", pct(v, nP) + " %", P.filter(o => (o.outils || []).includes(k))]), nP) +
     `<p class="repere" style="margin-bottom:2px"><b>Expérience demandée</b></p>${segmentsHTML(exp)}`, "", "explorer.html#demande"]);
 
   /* 5. Télétravail */
@@ -142,7 +141,7 @@ function rendre(_, D) {
   const a5 = anneau("a-tele", [["Télétravail mentionné", tt, "#1fa9a4"], ["Pas mentionné", nP - tt, "#e6ebf2"]], `<b>${tt}</b>sur ${nP}`);
   dessins.push(a5.dessin);
   cartes.push(["5. Du télétravail ?", `${pct(tt, nP)} %`, "des offres parlent de télétravail ou d'hybride",
-    `<div class="duo">${a5.html}<p class="repere" style="margin:0">Repère : ${pct(M.filter(o => o.teletravail).length, nM)} % chez les chefs de produit, tous secteurs.</p></div>`, "", "explorer.html#demande"]);
+    `<div class="duo">${a5.html}<p class="repere" style="margin:0"><span class="lien-voir"${voir("Télétravail mentionné", P.filter(o => o.teletravail))}>Voir les ${tt} offres →</span><br><br>Repère : ${pct(M.filter(o => o.teletravail).length, nM)} % chez les chefs de produit, tous secteurs.</p></div>`, "", "explorer.html#demande"]);
 
   /* 6. Qui recrute */
   const nomme = P.filter(o => o.entreprise);
@@ -150,7 +149,7 @@ function rendre(_, D) {
   const inter = new Set(nomme.filter(o => o.intermediaire).map(o => o.entreprise));
   const nbEmp = new Set(nomme.map(o => o.entreprise)).size;
   cartes.push(["6. Qui recrute ?", `${nbEmp} employeurs`, `différents ; ${P.length - nomme.length} offres ne disent pas qui recrute`,
-    `<div class="recruteurs">` + top.map(([nom, k]) => `<div class="recruteur"><span class="mono" style="background:${teinteDe(nom)}">${esc(initiales(nom))}</span>` +
+    `<div class="recruteurs">` + top.map(([nom, k]) => `<div class="recruteur"${voir(nom, P.filter(o => o.entreprise === nom))}><span class="mono" style="background:${teinteDe(nom)}">${esc(initiales(nom))}</span>` +
       `<span>${esc(nom)}${inter.has(nom) ? "<small>cabinet de recrutement ou intérim</small>" : ""}</span><span class="val">${k}</span></div>`).join("") + `</div>`, "", "explorer.html#recrute"]);
 
   document.getElementById("reponses").innerHTML = cartes.map(([q, gros, sous, visuel, repere, lien]) =>
@@ -162,7 +161,7 @@ function rendre(_, D) {
   const cols = FONCTIONS.map(([fn, l, c]) => ({ l, c, L: P.filter(o => aFn(o, fn)) }));
   cols.push({ l: "Chef de produit, tous secteurs (repère)", repere: true, L: M });
   const LIGNES = [
-    ["Offres aujourd'hui", L => `<b>${L.length}</b>`],
+    ["Offres aujourd'hui", (L, c) => `<b${c.repere ? "" : voir(c.l, L)}>${L.length}</b>`],
     ["En CDI", L => L.length ? pct(L.filter(o => familleContrat(o) === "cdi").length, L.length) + " %" : "—"],
     ["Salaire médian affiché", L => { const s = salaire(L); return s.mn ? `${kE(s.mn)} → ${kE(s.mx)}` : "—"; }],
     ["Débutant accepté", L => L.length ? pct(L.filter(debutantAccepte).length, L.length) + " %" : "—"],
@@ -171,15 +170,35 @@ function rendre(_, D) {
   ];
   document.getElementById("t-fonctions").innerHTML =
     `<tr><th class="vide-t"></th>${cols.map(c => c.repere ? `<th class="repere-t">${c.l}</th>` : `<th style="background:${c.c}">${c.l}</th>`).join("")}</tr>` +
-    LIGNES.map(([lib, f]) => `<tr><td>${lib}</td>${cols.map(c => `<td${c.repere ? ' class="repere-c"' : ""}>${f(c.L)}</td>`).join("")}</tr>`).join("");
+    LIGNES.map(([lib, f]) => `<tr><td>${lib}</td>${cols.map(c => `<td${c.repere ? ' class="repere-c"' : ""}>${f(c.L, c)}</td>`).join("")}</tr>`).join("");
 
   /* ---- Ma position : chiffres du jour ---- */
   const hors = P.filter(o => !o.alternance);
   const ok2 = hors.filter(o => o.exp_exige === "D" || (o.exp_ans != null && o.exp_ans <= 2)).length;
-  document.getElementById("pos-exp").textContent = `Hors alternance, ${ok2} offre${s_(ok2)} sur ${hors.length} accepte${ok2 > 1 ? "nt" : ""} un débutant ou 2 ans d'expérience au plus (relevé du ${dateFr(D.date)}).`;
+  document.getElementById("pos-exp").innerHTML = `<span${voir("Débutant ou 2 ans d'expérience au plus", hors.filter(o => o.exp_exige === "D" || (o.exp_ans != null && o.exp_ans <= 2)))} class="lien-voir">${ok2} offres sur ${hors.length}</span> acceptent aujourd'hui un débutant ou 2 ans d'expérience au plus.`;
   const autres = new Set(P.filter(o => o.dep && !IDF.has(o.dep)).map(o => o.dep)).size;
-  document.getElementById("pos-geo").textContent = `${idf} sur ${nP} en Île-de-France, les autres dans ${autres} départements différents`;
+  document.getElementById("pos-geo").textContent = `${idf} offres sur ${nP} en Île-de-France, les autres dans ${autres} départements`;
 }
+
+/* La fenêtre qui liste les offres d'un clic */
+let boiteL;
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-voir]"); if (!el) return;
+  const [titre, liste] = LOTS[+el.dataset.voir];
+  if (!boiteL) { boiteL = document.createElement("dialog"); boiteL.className = "fiche"; document.body.appendChild(boiteL);
+    boiteL.addEventListener("click", ev => { if (ev.target === boiteL) boiteL.close();
+      const b = ev.target.closest("[data-fiche]"); if (b) { const o = boiteL._liste[+b.dataset.fiche]; boiteL.close();
+        Profil.ouvrir({ ...o, contratLib: libContratOffre(o), entreprise: o.entreprise || "employeur non communiqué" }); } }); }
+  const tri = [...liste].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  boiteL._liste = tri;
+  boiteL.innerHTML = `<div class="fiche-tete"><div><h3>${esc(titre)}</h3><p class="note">${tri.length} offre${s_(tri.length)}, les plus récentes d'abord</p></div><button class="fermer" aria-label="Fermer">×</button></div>
+    <div class="liste" style="margin-top:12px">${tri.map((o, i) => `<div class="item"><div class="titre">${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)}</div>
+      <div class="meta"><span>${esc(o.entreprise || "employeur non communiqué")}</span><span>·</span><span>${esc(o.lieu || "lieu non précisé")}</span><span>·</span><span>${esc(libContratOffre(o))}</span>
+      ${salaireCourt(o) ? `<span>·</span><span class="sal">${esc(salaireCourt(o))}</span>` : ""}<span>·</span><span>${trancheExp(o)}</span><span>·</span><span>publiée le ${dateFr(o.date)}</span>
+      <button class="bouton petit" data-fiche="${i}" style="margin-left:auto">Plus d'infos</button></div></div>`).join("")}</div>`;
+  boiteL.querySelector(".fermer").onclick = () => boiteL.close();
+  boiteL.showModal();
+});
 
 Commun.demarrer(rendre);
 </script>

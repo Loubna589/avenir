@@ -93,6 +93,10 @@ def est_pharma(o):
     titre = o.get("intitule") or ""
     if not fonctions(titre) or RX_PAS_ROLE.search(titre):
         return False
+    # Pas d'alternance : je cherche un premier poste, pas un contrat d'apprentissage
+    if o.get("alternance") or re.search(r"apprenti|professionnalisation|alternan", " ".join(
+            [titre, o.get("natureContrat") or "", o.get("typeContratLibelle") or ""]), re.IGNORECASE):
+        return False
     return bool(RX_SANTE_TITRE.search(titre)
                 or (o.get("codeNAF") or "").startswith(NAF_SANTE)
                 or RX_SANTE_TEXTE.search(o.get("description") or ""))

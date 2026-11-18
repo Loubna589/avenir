@@ -42,6 +42,7 @@ const esc = Profil.esc;
 document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map(([url, lib]) =>
   `<a href="${url}"${url === "vie.html" ? ' class="ici" aria-current="page"' : ""}>${lib}</a>`).join("") + `</nav>`;
 
+const dCourt = d => new Date(d + "T12:00:00").toLocaleDateString("fr-FR", {day: "numeric", month: "long", year: "numeric"});
 const pays = o => (o.lieu || "").split(" - ")[0].trim();
 let V, offres = [];
 
@@ -53,9 +54,10 @@ function afficher() {
   document.getElementById("compte-vie").textContent = `— ${liste.length} dans mes fonctions, sur ${offres.length} lues`;
   document.getElementById("liste-vie").innerHTML = liste.length ? liste.map(o => `
     <div class="item"><div class="titre"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a></div>
-      <div class="meta"><span><b>${esc(o.entreprise)}</b></span><span>·</span><span>${esc(o.lieu)}</span><span>·</span><span>${esc(o.duree)}</span>
+      <div class="meta"><span><b>${esc(o.entreprise)}</b></span><span>·</span><span>${esc(o.lieu)}</span><span>·</span><span>${esc(o.duree)}</span>${o.debut ? `<span>·</span><span>départ ${dCourt(o.debut)}</span>` : ""}
         ${o.sante ? `<span class="etiq" style="background:#1fa9a4">santé</span>` : ""}${(o.fonctions || []).map(f => `<span class="etiq" style="background:#1f5fbf">${esc(f)}</span>`).join("")}
         <button class="bouton petit" data-fiche="${esc(o.id)}" style="margin-left:auto">Plus d'infos</button></div>
+      ${o.publiee ? `<div class="note" style="margin-top:4px">📅 Publiée le <b>${dCourt(o.publiee)}</b>${o.expire ? ` · candidatures jusqu'au <b>${dCourt(o.expire)}</b>` : ""}</div>` : ""}
       <div class="note" style="margin-top:4px">${esc((o.extrait || "").slice(0, 220))}…</div></div>`).join("")
     : `<p class="note">Aucune mission avec ces filtres.</p>`;
 }

@@ -4,9 +4,9 @@
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 92,
-   "lues": 92,
-   "sante": 15
+   "annoncees": 93,
+   "lues": 93,
+   "sante": 16
   },
   {
    "recherche": "pharma",
@@ -16,9 +16,9 @@
   },
   {
    "recherche": "santé",
-   "annoncees": 29,
-   "lues": 29,
-   "sante": 11
+   "annoncees": 30,
+   "lues": 30,
+   "sante": 12
   },
   {
    "recherche": "chef de produit",
@@ -27,10 +27,10 @@
    "sante": 3
   }
  ],
- "nb_offres": 147,
- "nb_sante": 35,
- "nb_sante_marketing": 15,
- "nb_fonctions": 62,
+ "nb_offres": 148,
+ "nb_sante": 36,
+ "nb_sante_marketing": 16,
+ "nb_fonctions": 63,
  "offres": [
   {
    "id": "247818",
@@ -67,6 +67,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-04",
+   "expire": "2026-11-24",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -86,6 +89,9 @@
     "marketing",
     "santé"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -104,6 +110,9 @@
    "recherches": [
     "santé"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -123,6 +132,9 @@
     "marketing",
     "pharma"
    ],
+   "publiee": "2026-11-04",
+   "expire": "2026-12-04",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -141,6 +153,28 @@
    "recherches": [
     "pharma"
    ],
+   "marketing": true
+  },
+  {
+   "id": "248394",
+   "entreprise": "LABORATOIRE D'AUDITION BENOIT",
+   "intitule": "BUSINESS DEVELOPMENT & OPERATIONS MANAGER (H/F)",
+   "lieu": "COLOMBIE - MEDELLIN",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248394",
+   "extrait": "Benoit Audition est un groupe international indépendant d'audioprothésistes, présent en Europe, en Afrique et en Amérique latine. Dans le cadre de notre développement en Colombie et au Panama, nous recherchons un Volontaire International en Entreprise (VIE) afin d'accompagner la croissance de notre ",
+   "sante": true,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing",
+    "santé"
+   ],
+   "publiee": "2026-11-18",
+   "expire": "2026-12-18",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -177,6 +211,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-29",
+   "expire": "2026-11-28",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -195,6 +232,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-29",
+   "expire": "2026-11-28",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -213,6 +253,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-13",
+   "expire": "2026-12-13",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -231,6 +274,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-12",
+   "expire": "2026-12-12",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -249,6 +295,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-10",
+   "expire": "2026-12-10",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -285,6 +334,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-12",
+   "expire": "2026-12-12",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -303,6 +355,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-16",
+   "expire": "2026-12-01",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -321,6 +376,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-23",
+   "expire": "2026-11-22",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -339,6 +397,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-02",
+   "expire": "2026-12-02",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -357,6 +418,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-02",
+   "expire": "2026-12-02",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -375,6 +439,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-10",
+   "expire": "2026-12-10",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -393,6 +460,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-04",
+   "expire": "2026-12-04",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -411,6 +481,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-21",
+   "expire": "2026-11-20",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -503,6 +576,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -521,6 +597,9 @@
    "recherches": [
     "chef de produit"
    ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -540,6 +619,9 @@
     "marketing",
     "chef de produit"
    ],
+   "publiee": "2026-11-04",
+   "expire": "2026-12-04",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -558,6 +640,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-19",
+   "expire": "2026-11-18",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -576,6 +661,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-09",
+   "expire": "2026-12-09",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -594,6 +682,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-09",
+   "expire": "2026-12-09",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -612,6 +703,9 @@
    "recherches": [
     "chef de produit"
    ],
+   "publiee": "2026-11-09",
+   "expire": "2026-12-02",
+   "debut": "2027-06-01",
    "marketing": true
   },
   {
@@ -630,6 +724,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-30",
+   "expire": "2026-11-29",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -648,6 +745,9 @@
    "recherches": [
     "chef de produit"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -666,6 +766,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-30",
+   "expire": "2026-11-29",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -685,6 +788,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-11",
+   "expire": "2026-12-11",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -703,6 +809,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-05",
+   "expire": "2026-12-05",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -721,6 +830,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-04",
+   "expire": "2026-12-04",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -757,6 +869,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-02",
+   "expire": "2026-12-02",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -775,6 +890,9 @@
    "recherches": [
     "chef de produit"
    ],
+   "publiee": "2026-11-02",
+   "expire": "2026-12-02",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -793,6 +911,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-13",
+   "expire": "2026-12-13",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -811,6 +932,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-10",
+   "expire": "2026-12-10",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -831,6 +955,9 @@
     "marketing",
     "chef de produit"
    ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2028-03-01",
    "marketing": true
   },
   {
@@ -849,6 +976,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2027-02-15",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -867,6 +997,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-29",
+   "expire": "2026-11-28",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -885,6 +1018,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -903,6 +1039,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -921,6 +1060,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -939,6 +1081,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-23",
+   "expire": "2026-11-22",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -977,6 +1122,9 @@
     "marketing",
     "santé"
    ],
+   "publiee": "2026-11-05",
+   "expire": "2026-12-05",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -995,6 +1143,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-16",
+   "expire": "2026-12-16",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1013,6 +1164,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-09",
+   "expire": "2026-12-09",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -1031,6 +1185,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1051,6 +1208,9 @@
     "marketing",
     "chef de produit"
    ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1069,6 +1229,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-26",
+   "expire": "2026-11-25",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -1087,6 +1250,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-19",
+   "expire": "2026-11-18",
+   "debut": "2026-12-01",
    "marketing": true
   },
   {
@@ -1123,6 +1289,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-30",
+   "expire": "2026-11-29",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1141,6 +1310,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-27",
+   "expire": "2026-11-26",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -1160,6 +1332,9 @@
     "marketing",
     "santé"
    ],
+   "publiee": "2026-11-12",
+   "expire": "2026-12-12",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {

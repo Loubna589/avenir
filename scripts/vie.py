@@ -95,6 +95,28 @@ def chercher(page, mot):
     return total, page.evaluate(LIRE_CARTES)
 
 
+MOIS = {m: i for i, m in enumerate(["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet",
+                                       "aout", "septembre", "octobre", "novembre", "decembre"], 1)}
+
+
+def date_fr(texte):
+    """« 02 novembre 2026 » -> « 2026-11-02 » (None si illisible)."""
+    m = re.search(r"(\d{1,2})\s+([a-z]+)\s+(\d{4})", plat(texte))
+    return f"{m.group(3)}-{MOIS[m.group(2)]:02d}-{int(m.group(1)):02d}" if m and m.group(2) in MOIS else None
+
+
+def lire_dates(page, url):
+    """Ouvre la page d'une offre : date de publication, d'expiration, début de mission."""
+    page.goto(url, wait_until="domcontentloaded", timeout=20000)
+    page.wait_for_function("document.body.innerText.includes('Date de publication')", timeout=15000)
+    t = page.inner_text("body")
+    pub = re.search(r"Date de publication\s*:\s*([^\n]+)", t)
+    exp = re.search(r"Date d.expiration\s*:\s*([^\n]+)", t)
+    deb = re.search(r"\bdu (\d{1,2} \w+ \d{4}) au", t)
+    return {"publiee": date_fr(pub.group(1)) if pub else None, "expire": date_fr(exp.group(1)) if exp else None,
+            "debut": date_fr(deb.group(1)) if deb else None}
+
+
 def main():
     DOSSIER.mkdir(parents=True, exist_ok=True)
     jour = date.today().isoformat()
@@ -126,6 +148,28 @@ def main():
             bilan.append({"recherche": mot, "annoncees": total, "lues": len(cartes), "sante": sante})
             print(f"  {mot} : {total} annoncées, {len(cartes)} lues, {sante} dans la santé")
             time.sleep(2)
+        # Dates de l'offre : seulement pour les missions dans mes fonctions, une page par offre,
+        # et une seule fois par offre (les dates déjà lues les jours précédents sont reprises)
+        ancien = DOSSIER / "vie.json"
+        connues = {o["id"]: o for o in json.loads(ancien.read_text(encoding="utf-8")).get("offres", [])} if ancien.exists() else {}
+        lues, echecs_suite = 0, 0
+        for o in offres.values():
+            if not o["fonctions"]:
+                continue
+            avant = connues.get(o["id"], {})
+            if avant.get("publiee"):
+                o.update({k: avant.get(k) for k in ("publiee", "expire", "debut")})
+                continue
+            if echecs_suite >= 5:  # le site ne répond plus : on réessaiera demain
+                continue
+            try:
+                o.update(lire_dates(page, o["url"]))
+                lues, echecs_suite = lues + 1, 0
+            except Exception as e:
+                echecs_suite += 1
+                print(f"  dates {o['id']} : échec ({e.__class__.__name__})", file=sys.stderr)
+            time.sleep(1)
+        print(f"  dates lues sur {lues} pages d'offres")
         navigateur.close()
 
     if not offres:

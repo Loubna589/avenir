@@ -108,20 +108,19 @@
         ? `Un médicament du glaucome, quatre pays, trente-cinq filiales, un seul lancement à réussir : c'est mon quotidien d'alternante cheffe de produit Global aux Laboratoires Théa. C'est cette expérience que je vous propose ${pour}.`
         : `Faire connaître un médicament, c'est d'abord le comprendre. J'ai appris la pharmacologie avant le marketing, et je mets aujourd'hui les deux en pratique comme alternante cheffe de produit Global aux Laboratoires Théa. C'est ce double regard que je vous propose ${pour}.`,
     };
-    // L'accroche part de la FONCTION du poste (lue dans l'intitulé) : accès au marché, affaires
-    // médicales, digital, commercial ; pour le marketing produit, elle part du secteur.
+    // L'accroche part de la FONCTION du poste (lue dans l'intitulé) : accès au marché, digital,
+    // commercial ; pour le marketing produit et les affaires médicales, elle part du secteur.
     const fn = o.fonctions || [];
     const publiques = /policy|public affairs|affaires publiques|external affairs|government/i.test(o.intitule || "");
     const PAR_FONCTION = {
       "accès au marché": publiques
         ? `Les décisions de santé se construisent avec les autorités, les professionnels et les patients : c'est là que se joue l'accès d'un traitement à ceux qui en ont besoin. Chez Théa France, j'ai découvert l'évaluation par la HAS et la fixation du prix par le CEPS, et je creuse aujourd'hui ces sujets avec une UE d'évaluation médico-économique au Cnam. C'est ce regard que je vous propose ${pour}.`
         : `Un médicament n'atteint ses patients qu'une fois évalué, remboursé et à un prix juste. Chez Théa France, j'ai découvert cette étape décisive (l'évaluation par la HAS, la fixation du prix par le CEPS), et je la creuse aujourd'hui avec une UE d'évaluation médico-économique au Cnam. C'est ce double regard, scientifique et économique, que je vous propose ${pour}.`,
-      "affaires médicales": `Entre la donnée scientifique et le terrain, il faut quelqu'un qui parle les deux langues. Formée à la pharmacologie puis aux produits de santé, je mets à jour chez Théa les documents scientifiques en vérifiant chaque référence, et je décline les messages clés pour les équipes. C'est cette rigueur que je vous propose ${pour}.`,
       "digital": `Un produit de santé se choisit de plus en plus en ligne, mais il se vend toujours sur la confiance. Mon M2 Marketing Opérationnel et Digital m'a formée aux outils digitaux et omnicanaux ; mon alternance de cheffe de produit aux Laboratoires Théa m'a appris ce qu'exige la communication sur un produit de santé. C'est cette double compétence que je vous propose ${pour}.`,
       "commercial": `Un argumentaire ne vaut que s'il tient face aux questions du terrain. Chez Théa France, j'ai préparé les argumentaires et les réponses aux objections des équipes de vente, après une immersion sur le terrain à leurs côtés. C'est ce lien entre le marketing et la vente que je vous propose ${pour}.`,
     };
     // La fonction la plus précise d'abord ; « commercial » ne l'emporte pas sur le marketing produit
-    const cle = ["accès au marché", "affaires médicales", "digital"].find(f => fn.includes(f))
+    const cle = ["accès au marché", "digital"].find(f => fn.includes(f))
       || (fn.includes("commercial") && !fn.includes("marketing") ? "commercial" : null);
     const METIER = cle ? PAR_FONCTION[cle] : null;
     const p = [];

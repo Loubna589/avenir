@@ -280,3 +280,9 @@ table.fonctions td.repere-c { background:#f1f2f5; color:var(--gris); }
 .limites p { margin:4px 0 0; color:var(--gris); font-size:.9rem; }
 .veille h4 { margin-top:16px; } .veille .bouton.petit { text-decoration:none; }
 .vie-filtres input[type=tel], .vie-filtres input[type=email] { font:inherit; padding:6px 12px; border:1px solid var(--trait); border-radius:99px; background:#fff; }
+.cibles { display:grid; gap:10px; margin:4px 0 0; }
+.cible { display:grid; grid-template-columns:190px auto 1fr; gap:6px 12px; align-items:center; font-size:.9rem; }
+.cible > b { font-size:.92rem; }
+.cible > span { color:var(--gris); font-size:.85rem; }
+.cible:last-child .puce { opacity:.75; }
+@media (max-width:760px) { .cible { grid-template-columns:1fr; } }

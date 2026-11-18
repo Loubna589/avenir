@@ -6,7 +6,7 @@
 <title>Mon marché — le marketing de la santé</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=12">
+<link rel="stylesheet" href="assets/commun.css?v=13">
 </head>
 <body>
 <main>
@@ -17,8 +17,8 @@
   <!-- ============ MA RECHERCHE ============ -->
   <div class="carte ma-recherche">
     <div>
-      <p><b>Diplômée en septembre 2027</b>, je cherche mon premier poste dans le marketing de la santé, là où se rejoignent mes deux formations : <b>la pharmacologie et le marketing digital</b>.</p>
-      <div class="puces" id="puces"></div>
+      <p><b>Diplômée en septembre 2027</b>, je cherche mon premier poste dans le marketing de la santé, là où se rejoignent mes deux formations : <b>la biologie et le marketing</b>.</p>
+      <div class="cibles" id="puces"></div>
       <p class="ref">Code métier de référence chez France Travail : <b>M1703 — Chef de produit</b>.</p>
     </div>
     <div class="gros-chiffre"><b id="nb-moi">—</b><span>offres pour moi<br>aujourd'hui</span></div>
@@ -97,7 +97,13 @@ function rendre(_, D) {
   const aFn = (o, fn) => (o.fonctions || []).includes(fn);
   document.getElementById("nb-moi").textContent = nP;
   document.getElementById("nb-moi2").textContent = nP;
-  document.getElementById("puces").innerHTML = FONCTIONS.map(([, l, c]) => `<span class="puce" style="background:${c}">${l}</span>`).join("");
+  // Trois cercles : ma cible, les postes que mon parcours m'a fait aimer, et l'occasion à saisir
+  const puce = fn => { const [, l, c] = FONCTIONS.find(x => x[0] === fn); return `<span class="puce" style="background:${c}">${l}</span>`; };
+  document.getElementById("puces").innerHTML = [
+    ["🎯 Ma cible", ["marketing", "digital"], ""],
+    ["➕ J'y postule aussi", ["affaires médicales", "accès au marché"], "Au fil de mon parcours, je me suis découvert un vrai intérêt pour ces deux métiers : ils font pleinement partie de ma recherche."],
+    ["🤝 Si l'occasion se présente", ["commercial"], "Pas mon premier choix, mais une porte d'entrée possible."],
+  ].map(([t, fns, txt]) => `<div class="cible"><b>${t}</b><div class="puces">${fns.map(puce).join("")}</div>${txt ? `<span>${txt}</span>` : ""}</div>`).join("");
 
   const cartes = [], dessins = [];
   /* 1. Combien */

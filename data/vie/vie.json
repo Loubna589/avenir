@@ -4,33 +4,34 @@
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 93,
-   "lues": 93,
-   "sante": 16
-  },
-  {
-   "recherche": "pharma",
-   "annoncees": 15,
-   "lues": 15,
+   "annoncees": 94,
+   "lues": 94,
    "sante": 14
   },
   {
+   "recherche": "pharma",
+   "annoncees": 14,
+   "lues": 14,
+   "sante": 13
+  },
+  {
    "recherche": "santé",
-   "annoncees": 30,
-   "lues": 30,
+   "annoncees": 31,
+   "lues": 31,
    "sante": 12
   },
   {
    "recherche": "chef de produit",
    "annoncees": 34,
    "lues": 34,
-   "sante": 3
+   "sante": 2
   }
  ],
- "nb_offres": 148,
- "nb_sante": 36,
- "nb_sante_marketing": 16,
- "nb_fonctions": 63,
+ "incompletes": [],
+ "nb_offres": 150,
+ "nb_sante": 33,
+ "nb_sante_marketing": 14,
+ "nb_fonctions": 64,
  "offres": [
   {
    "id": "247818",
@@ -48,6 +49,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-02",
+   "expire": "2026-12-02",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -153,6 +157,9 @@
    "recherches": [
     "pharma"
    ],
+   "publiee": "2026-10-27",
+   "expire": "2026-11-26",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -193,6 +200,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-08-28",
+   "expire": "2026-11-26",
+   "debut": "2026-11-01",
    "marketing": true
   },
   {
@@ -259,48 +269,6 @@
    "marketing": true
   },
   {
-   "id": "248265",
-   "entreprise": "SANOFI WINTHROP INDUSTRIE",
-   "intitule": "Policy and External Affairs Executive (H/F)",
-   "lieu": "IRLANDE - DUBLIN",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248265",
-   "extrait": "About the job As Policy and External Affairs Executive VIE within our Public Affairs team, you’ll provide support to policy and related activities surrounding Patient Advocacy groups. Join the team transforming care for people with immune challenges, rare diseases, cancers, and neurological conditio",
-   "sante": true,
-   "fonctions": [
-    "accès au marché"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-12",
-   "expire": "2026-12-12",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
-   "id": "248160",
-   "entreprise": "SANOFI WINTHROP INDUSTRIE",
-   "intitule": "Commercial Project Specialist - Insulins & Established Products Franchise (H/F)",
-   "lieu": "ALLEMAGNE - BERLIN",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248160",
-   "extrait": "About the job As Commercial Project Specialist - Insulins & Established Products Franchise VIE within our Commercial management team, you’ll will play an active role in supporting the franchise’s strategic priorities and driving business excellence across a diverse pharmaceutical portfolio. Working ",
-   "sante": true,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-10",
-   "expire": "2026-12-10",
-   "debut": "2027-03-01",
-   "marketing": true
-  },
-  {
    "id": "248354",
    "entreprise": "SERVIER INTERNATIONAL",
    "intitule": "Junior Omnichannel Project Manager (H/F)",
@@ -316,6 +284,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-16",
+   "expire": "2026-12-16",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -502,6 +473,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-09",
+   "expire": "2026-12-09",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -521,6 +495,9 @@
     "marketing",
     "chef de produit"
    ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -540,6 +517,9 @@
     "marketing",
     "chef de produit"
    ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -558,6 +538,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -836,6 +819,27 @@
    "marketing": true
   },
   {
+   "id": "248385",
+   "entreprise": "HENDRIX GENETICS RECHERCHE TECHNOLOGIE ET SERVICES",
+   "intitule": "Sales Representative (H/F)",
+   "lieu": "JAPON - TOKYO",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248385",
+   "extrait": "Your Role As a Sales Representative, you will be responsible for driving sustainable revenue and profitable growth within the Japanese market for the Layers Business Unit. You will develop long-term customer relationships, identify and capture new business opportunities, and support the implementati",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-18",
+   "expire": "2026-12-18",
+   "debut": "2027-03-01",
+   "marketing": true
+  },
+  {
    "id": "242577",
    "entreprise": "ISAGRI",
    "intitule": "INGÉNIEUR COMMERCIAL AUPRES D'AGRICULTEURS EN SUISSE ALEMANIQUE (H/F)",
@@ -851,6 +855,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-10",
+   "expire": "2026-12-10",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -935,6 +942,27 @@
    "publiee": "2026-11-10",
    "expire": "2026-12-10",
    "debut": "2027-03-01",
+   "marketing": true
+  },
+  {
+   "id": "248447",
+   "entreprise": "LA FINANCIERE DE L'ECHIQUIER",
+   "intitule": "Sales & Admin Support (H/F)",
+   "lieu": "SUISSE - GENEVE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248447",
+   "extrait": "Mission Support the Swiss sales team in business development and day-to-day operations, with exposure to client servicing, marketing coordination, and commercial support. Responsibilities · Prepare client presentations, sales materials, and briefing notes for the Swiss market. · Support prospecting ",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-18",
+   "expire": "2026-12-18",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1103,6 +1131,9 @@
     "marketing",
     "chef de produit"
    ],
+   "publiee": "2026-11-09",
+   "expire": "2026-12-31",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -1335,6 +1366,27 @@
    "publiee": "2026-11-12",
    "expire": "2026-12-12",
    "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
+   "id": "248425",
+   "entreprise": "YELLOWSCAN",
+   "intitule": "INGENIEUR COMMERCIAL TECHNIQUE TOPOGRAPHE (H/F)",
+   "lieu": "AUSTRALIE - MELBOURNE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248425",
+   "extrait": "YellowScan conçoit, développe et produit des capteurs cartographiques pour les applications professionnelles de drones. Il est parfaitement intégré, ultra-léger et facile à utiliser. Ces capteurs hautement automatisés sont utilisés par clients dans le monde entier dans divers domaines: topographie, ",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-18",
+   "expire": "2026-12-18",
+   "debut": "2027-04-01",
    "marketing": true
   },
   {
@@ -1599,23 +1651,6 @@
    "marketing": false
   },
   {
-   "id": "247001",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Scientific Data Analyst (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247001",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "fonctions": [],
-   "recherches": [
-    "pharma",
-    "chef de produit"
-   ],
-   "marketing": false
-  },
-  {
    "id": "247752",
    "entreprise": "UCB PHARMA",
    "intitule": "Process Engineer (H/F)",
@@ -1676,6 +1711,22 @@
    "fonctions": [],
    "recherches": [
     "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248378",
+   "entreprise": "ACALY",
+   "intitule": "DESSINATEUR MECANIQUE (H/F)",
+   "lieu": "BELGIQUE - LIEGE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248378",
+   "extrait": "Présentation d’ACALY ACALY est une société de conseil en ingénierie créée en 2015 et implantée en France à Lille, Paris, Lyon et Nantes, ainsi qu’en Suisse et en Belgique. Partenaire privilégié des entreprises industrielles, ACALY accompagne ses clients sur des projets à forte valeur ajoutée....",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
    ],
    "marketing": false
   },
@@ -2175,6 +2226,22 @@
    "fonctions": [],
    "recherches": [
     "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248395",
+   "entreprise": "GRAITEC INNOVATION",
+   "intitule": "Work Experience Partner (H/F)",
+   "lieu": "ETATS-UNIS - ATLANTA -GA-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248395",
+   "extrait": "Ce posten débutera au sein de nos bureaux parisiens et est à pourvoir dès que possible. GRAITEC recherche un(e) Work & Experience Partner Ce poste a pour mission de concevoir et d’optimiser les environnements de travail à l’échelle mondiale, tout en favorisant la performance de...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
    ],
    "marketing": false
   },

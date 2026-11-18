@@ -58,8 +58,29 @@ const dateFr = (s, bref = false) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(
 // Âge d'une annonce en jours, par rapport à la date d'extraction.
 const age = o => { const jour = Date.parse(D.date), t = Date.parse(o.date); return (isFinite(jour) && isFinite(t)) ? (jour - t) / 86400000 : null; };
 
-const couleur = "#0a5cff", pale = "rgba(10,92,255,.25)";
-const COULEURS = { "Mon métier": "#c2185b", Marketing: "#0a5cff", Digital: "#ff6a00", Frontière: "#8e8e93" };
+const couleur = "#1fa9a4", pale = "rgba(31,169,164,.18)";
+const COULEURS = { "Mon métier": "#c2185b", Marketing: "#1f5fbf", Digital: "#ef6c00", Frontière: "#8e8e93" };
+// Mes cinq fonctions : une couleur chacune, la même sur toutes les pages
+const FONCTIONS = [["marketing", "Produit / marketing", "#1f5fbf"], ["affaires médicales", "Affaires médicales", "#6b55a6"],
+  ["accès au marché", "Accès au marché", "#b7832a"], ["digital", "Digital", "#ef6c00"], ["commercial", "Commercial", "#1fa9a4"]];
+// Départements -> régions (pour compter par région et zoomer la carte)
+const REGIONS = {
+  "Auvergne-Rhône-Alpes": ["01","03","07","15","26","38","42","43","63","69","73","74"],
+  "Bourgogne-Franche-Comté": ["21","25","39","58","70","71","89","90"], "Bretagne": ["22","29","35","56"],
+  "Centre-Val de Loire": ["18","28","36","37","41","45"], "Corse": ["2A","2B"],
+  "Grand Est": ["08","10","51","52","54","55","57","67","68","88"], "Hauts-de-France": ["02","59","60","62","80"],
+  "Île-de-France": ["75","77","78","91","92","93","94","95"], "Normandie": ["14","27","50","61","76"],
+  "Nouvelle-Aquitaine": ["16","17","19","23","24","33","40","47","64","79","86","87"],
+  "Occitanie": ["09","11","12","30","31","32","34","46","48","65","66","81","82"],
+  "Pays de la Loire": ["44","49","53","72","85"], "Provence-Alpes-Côte d'Azur": ["04","05","06","13","83","84"],
+  "Outre-mer": ["971","972","973","974","976"] };
+const REGION_DE = Object.fromEntries(Object.entries(REGIONS).flatMap(([r, ds]) => ds.map(d => [d, r])));
+const NOMS_DEP = {"01":"Ain","02":"Aisne","03":"Allier","04":"Alpes-de-Haute-Provence","05":"Hautes-Alpes","06":"Alpes-Maritimes","07":"Ardèche","08":"Ardennes","09":"Ariège","10":"Aube","11":"Aude","12":"Aveyron","13":"Bouches-du-Rhône","14":"Calvados","15":"Cantal","16":"Charente","17":"Charente-Maritime","18":"Cher","19":"Corrèze","2A":"Corse-du-Sud","2B":"Haute-Corse","21":"Côte-d'Or","22":"Côtes-d'Armor","23":"Creuse","24":"Dordogne","25":"Doubs","26":"Drôme","27":"Eure","28":"Eure-et-Loir","29":"Finistère","30":"Gard","31":"Haute-Garonne","32":"Gers","33":"Gironde","34":"Hérault","35":"Ille-et-Vilaine","36":"Indre","37":"Indre-et-Loire","38":"Isère","39":"Jura","40":"Landes","41":"Loir-et-Cher","42":"Loire","43":"Haute-Loire","44":"Loire-Atlantique","45":"Loiret","46":"Lot","47":"Lot-et-Garonne","48":"Lozère","49":"Maine-et-Loire","50":"Manche","51":"Marne","52":"Haute-Marne","53":"Mayenne","54":"Meurthe-et-Moselle","55":"Meuse","56":"Morbihan","57":"Moselle","58":"Nièvre","59":"Nord","60":"Oise","61":"Orne","62":"Pas-de-Calais","63":"Puy-de-Dôme","64":"Pyrénées-Atlantiques","65":"Hautes-Pyrénées","66":"Pyrénées-Orientales","67":"Bas-Rhin","68":"Haut-Rhin","69":"Rhône","70":"Haute-Saône","71":"Saône-et-Loire","72":"Sarthe","73":"Savoie","74":"Haute-Savoie","75":"Paris","76":"Seine-Maritime","77":"Seine-et-Marne","78":"Yvelines","79":"Deux-Sèvres","80":"Somme","81":"Tarn","82":"Tarn-et-Garonne","83":"Var","84":"Vaucluse","85":"Vendée","86":"Vienne","87":"Haute-Vienne","88":"Vosges","89":"Yonne","90":"Territoire de Belfort","91":"Essonne","92":"Hauts-de-Seine","93":"Seine-Saint-Denis","94":"Val-de-Marne","95":"Val-d'Oise","971":"Guadeloupe","972":"Martinique","973":"Guyane","974":"La Réunion","976":"Mayotte"};
+const nomDep = d => NOMS_DEP[d] ? `${NOMS_DEP[d]} (${d})` : d;
+// Libellés plus parlants pour la grille d'outils
+const OUTIL_LISIBLE = { "CRM (Veeva, Salesforce)": "CRM, logiciel de suivi clients",
+  "Omnicanal / digital santé": "Digital santé, omnicanal", "Budget, P&L, prévisions": "Budget, prévisions de ventes" };
+const outilLisible = x => OUTIL_LISIBLE[x] || x;
 // Palette des niveaux : du clair au foncé, assistant → directeur, « autre » en gris. Valable sur toute la page.
 // Niveaux : un dégradé du turquoise clair (junior) au bleu nuit (senior), aux couleurs du CV
 const COUL_NIV = { assistant: "#9fded9", charge: "#1fa9a4", responsable: "#1f5fbf", directeur: "#123a7a", autre: "#b4b4bc" };
@@ -76,7 +97,8 @@ const AURA = new Set(["01", "03", "07", "15", "26", "38", "42", "43", "63", "69"
 const IDF = new Set(["75", "77", "78", "91", "92", "93", "94", "95"]);
 const EXPS = ["Débutant accepté", "Moins d'un an", "1 à 2 ans", "3 à 4 ans", "5 ans et plus", "Non précisé"];
 
-Chart.defaults.font.family = "system-ui, -apple-system, 'Segoe UI', sans-serif";
+Chart.defaults.font.family = "Outfit, system-ui, -apple-system, 'Segoe UI', sans-serif";
+Chart.defaults.color = "#5d6b80";
 Chart.defaults.plugins.legend.display = false;
 
 let D, graphiques = {};
@@ -241,10 +263,9 @@ function filtrer(f) {
    ============================================================ */
 const PAGES = [
   ["index.html", "Accueil"],
-  ["salaires.html", "Ce que ça paie"],
-  ["exigences.html", "Ce qu'on vous demande"],
-  ["recruteurs.html", "Qui recrute"],
-  ["mouvement.html", "Le marché bouge"],
+  ["offres.html", "Mes offres"],
+  ["explorer.html", "Explorer en détail"],
+  ["mouvement.html", "Au fil des jours"],
   ["vie.html", "Veille VIE"],
   ["benevolat.html", "Bénévolat"],
   ["index.html#position", "Ma position"],
@@ -281,7 +302,7 @@ function poserNavEtFiltres() {
     `<a href="${url}"${url === PAGE_ICI ? ' class="ici" aria-current="page"' : ""}>${lib}</a>`).join("") + `</nav>`;
 
   const f = document.getElementById("filtres-ici");
-  if (f) f.outerHTML = (PAGE_ICI === "index.html"
+  if (f) f.outerHTML = (PAGE_ICI === "explorer.html"
     // Accueil : le panneau est déplié, c'est le point de départ.
     ? `<div class="carte">${HTML_FILTRES}</div>`
     // Ailleurs : replié, on vient lire une page, pas refaire ses filtres.
@@ -290,10 +311,7 @@ function poserNavEtFiltres() {
 
   const p = document.getElementById("pied");
   if (p) p.innerHTML =
-    `<p style="margin:0 0 8px"><a href="mouvement.html#limites">Limites de ces chiffres</a></p>
-     Chaîne : API France Travail → <code>scripts/extraire.py</code> → <code>data/brut/</code> (chaque version d'annonce, une seule fois) + <code>data/actives/</code> (les offres du jour) → <code>scripts/resumer.py</code> → <code>data/resume.json</code> → ces pages (GitHub Pages).
-     Une Action GitHub relance la collecte chaque matin à 7 h. Identifiants dans les secrets du dépôt, jamais dans le code.
-     Le marché de mon métier, cheffe de produit pharmaceutique — M2 MOD, IAE Clermont Auvergne, d'après le dépôt de démonstration VincentFavarin/metier.`;
+    `Offres d'emploi lues chaque matin sur France Travail (accès officiel, pas de LinkedIn ni d'APEC) · <a href="mouvement.html#limites">Méthode et limites</a> · M2 Marketing opérationnel et digital, IAE Clermont Auvergne`;
 }
 
 /* ============================================================
@@ -355,8 +373,9 @@ const Commun = {
 
       const sous = document.getElementById("sous");
       if (sous) sous.innerHTML =
-        `${d.source} · ${d.requete} · extraction du <b>${dateFr(d.date)}</b> · ${d.offres.length} offres actives, ${d.versions_conservees} versions d'annonces conservées`;
+        `Extraction du <b>${dateFr(d.date)}</b> · <b>${d.offres.length.toLocaleString("fr-FR")}</b> offres actives sur France Travail · mise à jour chaque matin`;
 
+      if (!document.getElementById("metiers")) { if (initier) initier(d); Commun.rendre(d.offres, d); return; }
       let memo = null;
       try { memo = JSON.parse(localStorage.getItem(CLE_FILTRES)); } catch (e) {}
       const memoA = (cle, defaut) => (memo && Array.isArray(memo[cle])) ? memo[cle] : defaut;

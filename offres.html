@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mes offres — le marketing de la santé</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/commun.css?v=12">
+</head>
+<body>
+<main>
+  <div id="nav-ici"></div>
+  <h1>Mes offres, une par une</h1>
+  <p class="sous" id="sous">Chargement des données…</p>
+
+  <h2>Les offres de mon métier <small id="sous-liste"></small></h2>
+  <div class="carte large"><div class="defile"><table class="liste" id="liste-pharma"></table></div></div>
+
+  <h2>Ce que les annonces demandent, face à ce que j'ai <small id="comp-sous"></small></h2>
+  <div class="carte large defile">
+    <table class="confronte" id="comp-table"><tbody><tr><td>Chargement…</td></tr></tbody></table>
+  </div>
+  <div class="phrase" style="margin-top:12px" id="comp-phrase">Chargement…</div>
+
+  <footer id="pied"></footer>
+</main>
+
+<script src="assets/commun.js?v=11"></script>
+<script src="assets/profil.js?v=8"></script>
+<script>
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const puceFn = o => (o.fonctions || []).map(fn => { const f = FONCTIONS.find(x => x[0] === fn); return f ? `<span class="etat" style="background:${f[2]};color:#fff">${f[1]}</span>` : ""; }).join(" ");
+
+function rendre(_, D) {
+  const P = D.offres.filter(o => o.pharma), n = P.length;
+  const tri = [...P].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  document.getElementById("sous-liste").textContent = `— ${n} aujourd'hui ; « Plus d'infos » : mes forces et ma lettre`;
+  document.getElementById("liste-pharma").innerHTML =
+    `<tr><th>Intitulé</th><th>Fonction</th><th>Employeur</th><th>Lieu</th><th>Contrat</th><th>Salaire</th><th>Publiée</th><th></th></tr>` +
+    tri.map(o => `<tr><td>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)}</td><td>${puceFn(o)}</td>` +
+      `<td>${esc(o.entreprise || "non précisé")}${o.intermediaire ? " <small>(cabinet / intérim)</small>" : ""}</td><td>${esc(o.lieu || "")}</td>` +
+      `<td>${esc(libContratOffre(o))}</td><td>${esc(salaireCourt(o) || "—")}</td><td>${dateFr(o.date)}</td>` +
+      `<td><button class="bouton petit" data-fiche="${esc(o.id)}">Plus d'infos</button></td></tr>`).join("");
+  const parId = Object.fromEntries(tri.map(o => [String(o.id), o]));
+  document.getElementById("liste-pharma").onclick = e => {
+    const b = e.target.closest("[data-fiche]"); if (!b) return;
+    const o = parId[b.dataset.fiche];
+    Profil.ouvrir({ ...o, contratLib: libContratOffre(o), entreprise: o.entreprise || "employeur non communiqué" });
+  };
+
+  /* ---- Ce que les annonces demandent, face à ce que j'ai ---- */
+  const cite = (o, l) => (l.outils || []).some(x => (o.outils || []).includes(x)) ||
+                         (l.comp || []).some(x => (o.competences || []).some(c => c.startsWith(x)));
+  const lignes = Profil.LIGNES.map(l => ({ ...l, nb: P.filter(o => cite(o, l)).length })).sort((a, b) => b.nb - a.nb);
+  // « Mon point fort » / « Couvert » / « À renforcer : … » -> une étiquette courte, le détail en dessous
+  const etat = l => {
+    const [tete, ...reste] = String(l.ecart).split(":");
+    const cls = /point fort/i.test(tete) ? "fort" : l.ok ? "ok" : "renf";
+    const lib = cls === "fort" ? "★ Mon point fort" : cls === "ok" ? "✓ Acquis" : "↗ À renforcer";
+    return `<span class="etat ${cls}">${lib}</span>${reste.length ? `<small>${esc(reste.join(":").trim())}</small>` : ""}`;
+  };
+  document.getElementById("comp-sous").textContent = `— sur les ${n} offres ci-dessus`;
+  document.getElementById("comp-table").innerHTML =
+    `<thead><tr><th>Demandé</th><th>Cité dans</th><th>Ce que j'ai</th><th>Où j'en suis</th></tr></thead><tbody>` +
+    lignes.map(l => `<tr><td><b>${esc(l.lib)}</b></td><td><span class="mini-barre"><span class="piste"><i style="width:${100 * l.nb / (n || 1)}%"></i></span>${l.nb} / ${n}</span></td>` +
+      `<td>${esc(l.jai)}</td><td>${etat(l)}</td></tr>`).join("") + `</tbody>`;
+  const long5 = P.filter(o => o.exp_ans != null && o.exp_ans >= 5).length;
+  const top = lignes.filter(l => l.nb > 0).slice(0, 4).map(l => l.lib.toLowerCase());
+  const renf = lignes.filter(l => !l.ok && l.nb > 0).slice(0, 3).map(l => l.lib.toLowerCase());
+  document.getElementById("comp-phrase").innerHTML =
+    `Aujourd'hui, le marché demande surtout <b>${esc(top.join(" · "))}</b>. Ma double formation, scientifique puis marketing, et mes deux années chez Théa couvrent l'essentiel. ` +
+    `À renforcer : <b>${esc(renf.join(" · "))}</b> ; et l'expérience : <b>${long5} offre${long5 > 1 ? "s" : ""} sur ${n}</b> demande${long5 > 1 ? "nt" : ""} 5 ans ou plus.`;
+}
+Commun.demarrer(rendre);
+</script>
+</body>
+</html>

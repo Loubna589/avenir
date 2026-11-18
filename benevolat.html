@@ -6,7 +6,7 @@
 <title>Bénévolat — cheffe de produit pharmaceutique</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=11">
+<link rel="stylesheet" href="assets/commun.css?v=12">
 </head>
 <body>
 <main>
@@ -14,55 +14,55 @@
   <h1>Bénévolat — mettre mes compétences en pratique</h1>
   <p class="sous" id="sous">Chargement de la veille bénévolat…</p>
 
-  <div class="phrase">Pourquoi le bénévolat ? Une mission de marketing digital — réseaux sociaux, site internet, communication, ou ateliers sur l'intelligence artificielle —, dans la santé ou ailleurs, me permet de mettre en pratique et de développer mes compétences, et de le montrer en entretien : un vrai projet, un vrai résultat.</div>
+  <div class="phrase">💡 <b>Pourquoi le bénévolat ?</b> Une vraie mission (réseaux sociaux, site internet, lancement, événement, santé) me permet de pratiquer ce que j'apprends en master, et de le raconter en entretien : un vrai projet, un vrai résultat.</div>
 
-  <h2>Missions disponibles par activité <small>— sur JeVeuxAider.gouv.fr, ce jour-là</small></h2>
+  <h2>Mes thèmes, aujourd'hui</h2>
   <div class="chiffres" id="tuiles"></div>
 
   <h2>Les missions <small id="compte"></small></h2>
   <div class="carte large">
     <div class="vie-filtres">
       <span id="f-themes" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;flex-basis:100%"><b>Mes thèmes :</b>
-        <label><input type="checkbox" value="marketing digital" checked> marketing digital</label>
-        <label><input type="checkbox" value="intelligence artificielle" checked> intelligence artificielle</label>
-        <label><input type="checkbox" value="mon profil santé" checked> mon profil santé</label>
-        <label><input type="checkbox" value="" > autres missions</label>
+        <label><input type="checkbox" value="marketing digital" checked> 💻 marketing digital</label><label><input type="checkbox" value="marketing produit" checked> 📦 marketing produit</label><label><input type="checkbox" value="intelligence artificielle" checked> 🤖 intelligence artificielle</label><label><input type="checkbox" value="santé" checked> 🩺 santé</label><label><input type="checkbox" value="événementiel" checked> 🎪 événementiel</label>
+        <label><input type="checkbox" value=""> autres missions</label>
       </span>
-      <select id="f-activite"><option value="">Toutes les activités</option></select>
       <input type="search" id="f-texte" placeholder="Chercher : ville, association, mot…">
     </div>
   </div>
   <div class="liste" id="liste" style="margin-top:12px"></div>
 
-  <h2>Le bénévolat bouge <small>— missions disponibles par activité, jour après jour</small></h2>
-  <div class="carte large"><div class="zone"><canvas id="g-serie"></canvas></div><p class="note" id="note-serie"></p></div>
-
-  <h2>Méthode et limites</h2>
-  <p class="note">JeVeuxAider.gouv.fr n'a pas d'API ouverte : l'API Engagement (beta.gouv), qui diffuse ses missions, demande une clé accordée aux partenaires sur demande. Son fichier robots.txt interdit aux robots la recherche (les adresses avec « ? ») et demande 10 secondes entre deux pages, mais il signale le <b>plan du site</b> (sitemap), fait pour les robots, qui liste toutes les missions en ligne. Chaque matin, une Action GitHub (<code>.github/workflows/benevolat.yml</code>) lance <code>scripts/benevolat.py</code> : il lit ce plan du site, repère les missions qu'il n'a pas encore lues — les plus récentes d'abord —, ouvre chacune (une page toutes les 10 secondes, 300 au plus par jour) et lit son titre, son association, son lieu, ses activités et sa description. Les nouvelles missions de toute la France sont donc toutes lues ; les plus anciennes le sont petit à petit. Une mission reste affichée tant qu'elle est en ligne. Je garde trois thèmes, repérés par mots-clés sur le titre, les activités et la description : le marketing digital (réseaux sociaux, site internet, WordPress, newsletter, création de contenu, stratégie de communication…), dans la santé comme ailleurs ; l'intelligence artificielle ; et les missions liées à mon parcours (santé mentale, que ma formation PSSM m'a fait découvrir ; animaux et vétérinaire ; santé et biologie), hors missions réservées aux soignants diplômés. Le repérage par mots-clés peut se tromper. Les tuiles du haut comptent les missions disponibles par activité, lues sur les pages publiques par activité. Données : <code>data/benevolat/benevolat.json</code>, <code>data/benevolat/lues.txt</code> et <code>data/benevolat/serie.csv</code>.</p>
+  <h2>Comment ça marche</h2>
+  <div class="limites">
+    <div class="carte"><span class="ico">🕖</span><b>Chaque matin</b><p>GitHub lit automatiquement les nouvelles missions publiées sur JeVeuxAider.gouv.fr, la plateforme publique du bénévolat.</p></div>
+    <div class="carte"><span class="ico">🗺️</span><b>Toute la France</b><p>La liste vient du plan du site, prévu pour les robots : rien n'est aspiré en cachette, une page toutes les 10 secondes.</p></div>
+    <div class="carte"><span class="ico">🏷️</span><b>Mes thèmes</b><p>Repérés par mots-clés dans le titre et la description : ça peut se tromper, la mission complète fait foi.</p></div>
+  </div>
   <footer>Veille bénévolat — M2 MOD, IAE Clermont Auvergne. Données : jeveuxaider.gouv.fr (pages publiques), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=10"></script>
-<script src="assets/profil.js?v=7"></script>
+<script src="assets/commun.js?v=11"></script>
+<script src="assets/profil.js?v=8"></script>
 <script>
 const esc = Profil.esc;
 document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map(([url, lib]) =>
   `<a href="${url}"${url === "benevolat.html" ? ' class="ici" aria-current="page"' : ""}>${lib}</a>`).join("") + `</nav>`;
 let B, missions = [];
+const TH = {"marketing digital":["#ef6c00","💻"],"marketing produit":["#1f5fbf","📦"],"intelligence artificielle":["#6b55a6","🤖"],"santé":["#1fa9a4","🩺"],"événementiel":["#b7832a","🎪"]};
 
 function afficher() {
-  const a = document.getElementById("f-activite").value, q = document.getElementById("f-texte").value.trim().toLowerCase();
+  const q = document.getElementById("f-texte").value.trim().toLowerCase();
   // Thèmes cochés, cumulables : une mission est gardée si elle a au moins un des thèmes cochés
   // (« autres missions » : celles qui n'ont aucun de mes thèmes)
   const coches = new Set([...document.querySelectorAll("#f-themes input:checked")].map(i => i.value));
   const garde = m => (m.themes || []).some(x => coches.has(x)) || (coches.has("") && !(m.themes || []).length);
-  const liste = missions.filter(m => garde(m) && (!a || m.activites.includes(a)) &&
+  const liste = missions.filter(m => garde(m) &&
     (!q || [m.titre, m.organisation, m.ville, m.texte || ""].join(" ").toLowerCase().includes(q)));
   document.getElementById("compte").textContent = `— ${liste.length} affichées`;
   document.getElementById("liste").innerHTML = liste.length ? liste.map(m => `
     <div class="item"><div class="titre"><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.titre)}</a></div>
       <div class="meta"><span><b>${esc(m.organisation)}</b></span>${m.ville ? `<span>·</span><span>${esc(m.ville)}</span>` : ""}${m.frequence ? `<span>·</span><span>${esc(m.frequence)}</span>` : ""}
-        ${m.activites.map(x => `<span class="etiq" style="background:#1f5fbf">${esc(x)}</span>`).join("")}${(m.themes || []).map(x => `<span class="etiq" style="background:#1fa9a4">${esc(x)}</span>`).join("")}
-        <span class="note" style="margin-left:auto">${m.a_distance ? "à distance · " : ""}repérée le ${new Date(m.premiere_fois + "T12:00:00").toLocaleDateString("fr-FR")}</span></div>
+        ${(m.themes || []).map(x => `<span class="etiq" style="background:${(TH[x] || ["#8e8e93"])[0]}">${(TH[x] || ["", ""])[1]} ${esc(x)}</span>`).join("")}
+        <span class="note" style="margin-left:auto">${m.a_distance ? "à distance · " : ""}repérée le ${new Date(m.premiere_fois + "T12:00:00").toLocaleDateString("fr-FR")}</span>
+        <button class="bouton secondaire petit" data-veille="${esc(m.organisation)}">🔎 Veille</button></div>
       ${m.extrait ? `<div class="note" style="margin-top:4px">${esc(m.extrait.slice(0, 220))}…</div>` : ""}</div>`).join("")
     : `<p class="note">Aucune mission avec ces filtres.</p>`;
 }
@@ -72,25 +72,13 @@ function afficher() {
   catch (e) { document.getElementById("sous").textContent = "La veille bénévolat n'a pas encore de données."; return; }
   missions = B.missions;
   const jour = new Date(B.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
-  document.getElementById("sous").innerHTML = `Relevé automatique du <b>${jour}</b> sur JeVeuxAider.gouv.fr (plateforme publique du bénévolat) · ${(B.en_ligne ?? 0).toLocaleString("fr-FR")} missions en ligne, ${(B.lues_total ?? 0).toLocaleString("fr-FR")} déjà lues par la veille (${B.lues_aujourdhui ?? 0} aujourd'hui) · <b>${B.nb_pratique}</b> dans mes thèmes (marketing digital, IA, santé mentale, animaux et vétérinaire, santé).`;
-  document.getElementById("tuiles").innerHTML = B.activites.map(b =>
-    `<div class="chiffre"><b>${(b.disponibles ?? 0).toLocaleString("fr-FR")}</b><span>${esc(b.activite)}</span></div>`).join("");
-  const sel = document.getElementById("f-activite");
-  B.activites.forEach(b => sel.add(new Option(b.activite, b.activite)));
-  ["f-themes", "f-activite"].forEach(id => document.getElementById(id).addEventListener("change", afficher));
+  document.getElementById("sous").innerHTML = `Relevé automatique chaque matin sur JeVeuxAider.gouv.fr · dernier relevé le <b>${jour}</b> · <b>${(B.en_ligne ?? 0).toLocaleString("fr-FR")}</b> missions en ligne en France`;
+  document.getElementById("tuiles").innerHTML = Object.entries(TH).map(([t, [c, e]]) =>
+    `<div class="chiffre" style="border-top:4px solid ${c}"><b style="color:${c}">${e} ${missions.filter(m => (m.themes || []).includes(t)).length}</b><span>${esc(t)}</span></div>`).join("");
+  document.getElementById("f-themes").addEventListener("change", afficher);
   document.getElementById("f-texte").addEventListener("input", afficher);
   afficher();
-  try {
-    const lignes = (await (await fetch("data/benevolat/serie.csv?" + Date.now())).text()).trim().split("\n").slice(1).map(l => l.split(","));
-    const jours = [...new Set(lignes.map(l => l[0]))].sort(), acts = [...new Set(lignes.map(l => l[1]))];
-    const couleurs = ["#1f5fbf", "#1fa9a4", "#b7832a", "#c2185b", "#6b55a6", "#2e7d32", "#ef6c00", "#455a64"];
-    new Chart(document.getElementById("g-serie"), {type: "line",
-      data: {labels: jours.map(j => new Date(j + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"short"})),
-        datasets: acts.map((a, i) => ({label: a, borderColor: couleurs[i % 8], backgroundColor: couleurs[i % 8], tension: .25,
-          data: jours.map(j => { const l = lignes.find(x => x[0] === j && x[1] === a); return l ? +l[2] : null; })}))},
-      options: {maintainAspectRatio: false, scales: {y: {beginAtZero: true}}}});
-    document.getElementById("note-serie").textContent = jours.length < 2 ? `La veille a commencé le ${jour} : la courbe se dessinera au fil des jours.` : `${jours.length} jours de collecte.`;
-  } catch (e) {}
+  document.getElementById("liste").addEventListener("click", e => { const b = e.target.closest("[data-veille]"); if (b) Profil.ouvrirVeille(b.dataset.veille, "association"); });
 })();
 </script>
 </body>

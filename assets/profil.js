@@ -139,8 +139,78 @@
     p.push(`${vie ? "Prête à partir à l'étranger" : "Mobile en France et à l'international"} à partir de septembre 2027, je serais ravie d'en parler avec vous : vingt minutes suffiront pour vous montrer ce que je peux apporter à votre équipe.`);
     p.push(`Bien à vous,`);
     p.push(`Loubna BENMAHMOUD`);
-    const tete = `Loubna BENMAHMOUD\nClermont-Ferrand · [téléphone] · [e-mail]\n\n${ent === "votre entreprise" ? "[Nom de l'entreprise]" : ent}\n[Service / nom du recruteur]\n\nClermont-Ferrand, le ${new Date().toLocaleDateString("fr-FR")}\n\nObjet : candidature ${vie ? "V.I.E" : "au poste"} « ${poste} »`;
+    const c = coordonnees();
+    const tete = `Loubna BENMAHMOUD\nClermont-Ferrand · ${c.tel || "[téléphone]"} · ${c.mail || "[e-mail]"}\n\n${ent === "votre entreprise" ? "[Nom de l'entreprise]" : ent}\n[Service / nom du recruteur]\n\nClermont-Ferrand, le ${new Date().toLocaleDateString("fr-FR")}\n\nObjet : candidature ${vie ? "V.I.E" : "au poste"} « ${poste} »`;
     return tete + "\n\n" + p.join("\n\n");
+  }
+
+  // Mes coordonnées : gardées dans CE navigateur seulement (localStorage), jamais publiées sur le site
+  const CLE_COORD = "avenir-coordonnees";
+  function coordonnees() { try { return JSON.parse(localStorage.getItem(CLE_COORD)) || {}; } catch (e) { return {}; } }
+  function garderCoordonnees(c) { try { localStorage.setItem(CLE_COORD, JSON.stringify(c)); } catch (e) {} }
+
+  // ---- Veille sur l'entreprise ou l'association, avant l'entretien ----
+  // Données publiques de l'État (API Recherche d'entreprises, sans clé) + liens de recherche prêts.
+  // Seul le NOM de l'organisation est envoyé : aucune donnée personnelle.
+  const EFFECTIF = {"00":"0 salarié","01":"1 à 2","02":"3 à 5","03":"6 à 9","11":"10 à 19","12":"20 à 49","21":"50 à 99","22":"100 à 199",
+    "31":"200 à 249","32":"250 à 499","41":"500 à 999","42":"1 000 à 1 999","51":"2 000 à 4 999","52":"5 000 à 9 999","53":"10 000 et plus"};
+  const AXES = {
+    entreprise: ["<b>Ce qu'elle fait</b> : ses produits phares, ses marques, ses aires thérapeutiques",
+      "<b>Sa taille</b> : chiffre d'affaires, effectif, groupe auquel elle appartient",
+      "<b>Son actualité</b> des 6 derniers mois : lancements, rachats, résultats, nominations",
+      "<b>Son marché</b> : ses concurrents, ce qui la distingue",
+      "<b>Sa culture</b> : valeurs, engagements RSE, avis de salariés",
+      "<b>Le poste</b> : l'équipe, à qui je reporterais, pourquoi le poste est ouvert"],
+    cabinet: ["<b>C'est un cabinet ou une agence</b> : demander pour quel laboratoire ou quelle marque il recrute",
+      "<b>Le client final</b> : une fois connu, faire la veille sur lui (produits, actualité, taille)",
+      "<b>Le cabinet</b> : sa spécialité (santé ?), le consultant qui suit le poste"],
+    association: ["<b>Sa mission</b> : la cause, les publics aidés, depuis quand",
+      "<b>Ses actions récentes</b> : événements, campagnes, résultats",
+      "<b>Son organisation</b> : bénévoles, salariés, financement (dons, subventions)",
+      "<b>Ce que je peux apporter</b> : une mission concrète, avec un résultat à raconter en entretien"],
+  };
+  async function veille(zone, nom, type) {
+    const q = encodeURIComponent(nom), cle = type === "association" ? "association" : type === "cabinet" ? "cabinet" : "entreprise";
+    const liens = [
+      ["📰 Son actualité", `https://news.google.com/search?q=${encodeURIComponent('"' + nom + '"')}&hl=fr&gl=FR&ceid=FR:fr`],
+      ["🌐 Son site", `https://duckduckgo.com/?q=${encodeURIComponent(nom + " site officiel")}`],
+      ["📖 Wikipédia", `https://fr.wikipedia.org/w/index.php?search=${q}`],
+      ["🏛️ Annuaire officiel", `https://annuaire-entreprises.data.gouv.fr/rechercher?terme=${q}`],
+      cle === "association" ? ["🤝 Ses missions", `https://www.jeveuxaider.gouv.fr/organisations?search=${q}`] : ["💬 Avis de salariés", `https://duckduckgo.com/?q=${encodeURIComponent(nom + " avis salariés")}`],
+    ];
+    zone.innerHTML = `<h4>🔎 Veille : ${esc(nom)}</h4><p class="note">Recherche dans l'annuaire officiel des entreprises…</p>`;
+    let fiches = "";
+    try {
+      const r = await (await fetch(`https://recherche-entreprises.api.gouv.fr/search?q=${q}&per_page=8&etat_administratif=A`)).json();
+      // Pas les entrepreneurs individuels homonymes ; d'abord les structures qui ont des salariés et des comptes publiés
+      const poids = x => (x.finances ? 2 : 0) + (EFFECTIF[x.tranche_effectif_salarie] ? 1 : 0);
+      const res = (r.results || []).filter(x => x.nature_juridique !== "1000").sort((a, b) => poids(b) - poids(a)).slice(0, 3);
+      fiches = res.map(x => {
+        const an = x.finances && Object.keys(x.finances).sort().pop(), ca = an && x.finances[an].ca;
+        const morceaux = [x.siege && x.siege.libelle_commune ? "📍 " + x.siege.libelle_commune : "",
+          x.date_creation ? "créée en " + x.date_creation.slice(0, 4) : "",
+          EFFECTIF[x.tranche_effectif_salarie] ? "👥 " + EFFECTIF[x.tranche_effectif_salarie] + " salariés" : "",
+          ca ? `💶 CA ${an} : ${(ca / 1e6).toLocaleString("fr-FR", {maximumFractionDigits: 1})} M€` : "",
+          x.categorie_entreprise ? x.categorie_entreprise : ""].filter(Boolean);
+        return `<li class="force"><b><a href="https://annuaire-entreprises.data.gouv.fr/entreprise/${esc(x.siren)}" target="_blank" rel="noopener">${esc(x.nom_complet)}</a></b><span>${morceaux.map(esc).join(" · ")}</span></li>`;
+      }).join("");
+    } catch (e) { fiches = ""; }
+    zone.innerHTML = `<h4>🔎 Veille : ${esc(nom)}</h4>
+      <div class="fiche-actions" style="margin:6px 0 10px">${liens.map(([l, u]) => `<a class="bouton secondaire petit" href="${u}" target="_blank" rel="noopener">${l}</a>`).join("")}</div>
+      ${fiches ? `<p class="note" style="margin:0 0 6px">Dans l'annuaire officiel (homonymes possibles : vérifie que c'est la bonne) :</p><ul>${fiches}</ul>` : `<p class="note">Rien trouvé automatiquement dans l'annuaire officiel : utilise les liens ci-dessus.</p>`}
+      <h4>À savoir avant l'entretien</h4><ul class="oral">${AXES[cle].map(x => `<li>${x}</li>`).join("")}</ul>`;
+  }
+  // Une fenêtre avec la seule veille (page bénévolat)
+  let boiteV;
+  function ouvrirVeille(nom, type) {
+    if (!boiteV) {
+      boiteV = document.createElement("dialog"); boiteV.className = "fiche"; document.body.appendChild(boiteV);
+      boiteV.addEventListener("click", e => { if (e.target === boiteV) boiteV.close(); });
+    }
+    boiteV.innerHTML = `<div class="fiche-tete"><div></div><button class="fermer" aria-label="Fermer">×</button></div><div class="veille"></div>`;
+    boiteV.querySelector(".fermer").onclick = () => boiteV.close();
+    veille(boiteV.querySelector(".veille"), nom, type);
+    boiteV.showModal();
   }
 
   // Les points à préparer pour l'entretien, à partir des forces et des écarts
@@ -175,15 +245,21 @@
       <div class="fiche-cols">
         <div><h4>Mes forces pour cette offre</h4><ul>${a.forces.map(l => puce(l, "force")).join("") || "<li class='vide-l'>Aucune repérée automatiquement.</li>"}</ul>
           ${a.atouts.length ? `<h4>Mes atouts en plus, à mettre en avant</h4><ul>${a.atouts.map(l => puce(l, "force")).join("")}</ul>` : ""}</div>
-        <div><h4>Mes écarts</h4><ul>${a.ecarts.map(l => puce(l, "ecart")).join("") || "<li class='vide-l'>Aucun écart repéré.</li>"}</ul></div>
+        <div><h4>À renforcer</h4><ul>${a.ecarts.map(l => puce(l, "ecart")).join("") || "<li class='vide-l'>Rien à signaler.</li>"}</ul></div>
       </div>
       <h4>À valoriser à l'oral</h4>
       <ul class="oral">${oral(o, a).map(x => `<li>${x}</li>`).join("")}</ul>
       <p class="note">Repérage automatique sur ${o.outils ? "les outils et compétences de l'annonce (France Travail)" : "l'intitulé et le début de l'annonce"} : il peut se tromper, l'annonce complète fait foi.</p>
+      <details class="coord"><summary>Mes coordonnées pour la lettre</summary>
+        <div class="vie-filtres" style="margin-top:8px"><input type="tel" data-c="tel" placeholder="Téléphone">
+          <input type="email" data-c="mail" placeholder="E-mail" style="flex:1 1 220px"></div>
+        <p class="note">Gardées dans ce navigateur seulement : elles ne sont pas publiées sur le site.</p></details>
       <div class="fiche-actions">
         ${o.url ? `<a class="bouton secondaire" href="${esc(o.url)}" target="_blank" rel="noopener">Lire l'annonce</a>` : ""}
+        ${/non communiqu/i.test(o.entreprise || "non communiqué") ? "" : `<button class="bouton secondaire" data-action="veille">🔎 Veille sur l'entreprise</button>`}
         <button class="bouton" data-action="lettre">Générer ma lettre de motivation</button>
       </div>
+      <div class="veille" hidden></div>
       <div class="lettre" hidden>
         <textarea rows="18"></textarea>
         <div class="fiche-actions"><button class="bouton" data-action="copier">Copier</button>
@@ -192,6 +268,15 @@
       </div>`;
     boite.querySelector(".fermer").onclick = () => boite.close();
     const zone = boite.querySelector(".lettre"), ta = zone.querySelector("textarea");
+    const bv = boite.querySelector('[data-action="veille"]');
+    if (bv) bv.onclick = () => { const z = boite.querySelector(".veille"); z.hidden = false; bv.disabled = true;
+      veille(z, o.entreprise, o.intermediaire ? "cabinet" : "entreprise").then(() => z.scrollIntoView({behavior: "smooth", block: "nearest"})); };
+    const c0 = coordonnees();
+    const champs = [...boite.querySelectorAll("[data-c]")];
+    champs.forEach(i => { i.value = c0[i.dataset.c] || ""; i.oninput = () => {
+      garderCoordonnees(Object.fromEntries(champs.map(x => [x.dataset.c, x.value.trim()])));
+      if (!zone.hidden) ta.value = lettre(o); }; });
+    if (!c0.tel && !c0.mail) boite.querySelector("details.coord").open = true;
     boite.querySelector('[data-action="lettre"]').onclick = () => { ta.value = lettre(o); zone.hidden = false; ta.scrollIntoView({behavior:"smooth", block:"nearest"}); };
     zone.querySelector('[data-action="copier"]').onclick = async e => {
       try { await navigator.clipboard.writeText(ta.value); e.target.textContent = "Copiée ✓"; } catch { ta.select(); document.execCommand("copy"); e.target.textContent = "Copiée ✓"; }
@@ -204,5 +289,5 @@
     boite.showModal();
   }
 
-  window.Profil = {LIGNES, analyser, lettre, ouvrir, esc};
+  window.Profil = {LIGNES, analyser, lettre, ouvrir, ouvrirVeille, esc};
 })();

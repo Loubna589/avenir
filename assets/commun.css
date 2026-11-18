@@ -209,3 +209,74 @@ dialog.fiche::backdrop { background:rgba(20,35,59,.45); }
 .vie-filtres input[type=search] { flex:1 1 220px; }
 .fiche ul.oral li { background:#eef3fa; display:block; color:var(--encre); }
 .fiche ul.oral li b { color:var(--accent); }
+
+/* ============================================================
+   Refonte visuelle (nov. 2026) : fond habillé, moins de texte,
+   cartes-questions avec leur petit graphique
+   ============================================================ */
+body { background:
+  radial-gradient(900px 520px at 8% -6%, rgba(31,169,164,.16), transparent 62%),
+  radial-gradient(800px 600px at 104% 12%, rgba(183,131,42,.12), transparent 60%),
+  radial-gradient(900px 700px at 50% 110%, rgba(107,85,166,.10), transparent 60%),
+  radial-gradient(rgba(31,95,191,.07) 1px, transparent 1.4px) 0 0 / 22px 22px,
+  #f4f7fb; background-attachment:fixed; }
+.grappe { background:rgba(31,169,164,.9); }
+.ma-recherche { display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center; border-top:5px solid var(--dore); }
+.ma-recherche p { margin:0 0 10px; font-size:1.08rem; }
+.ma-recherche .ref { color:var(--gris); font-size:.88rem; margin:8px 0 0; }
+.puces { display:flex; flex-wrap:wrap; gap:8px; }
+.puce { display:inline-flex; align-items:center; gap:6px; padding:5px 12px; border-radius:99px; font-size:.88rem; font-weight:600; color:#fff; }
+.puce.claire { background:#eef3fa; color:var(--encre); font-weight:500; }
+.gros-chiffre { text-align:center; padding:6px 18px; }
+.gros-chiffre b { display:block; font-size:3rem; line-height:1; color:var(--accent); }
+.gros-chiffre span { color:var(--gris); font-size:.9rem; }
+.reponse .sous-gros { color:var(--gris); font-size:.88rem; margin:-2px 0 10px; }
+.reponse .repere { color:var(--gris); font-size:.84rem; margin:10px 0 8px; }
+/* barres en HTML */
+.barres-h { display:grid; gap:7px; }
+.barre { display:grid; grid-template-columns:minmax(0,1.5fr) 1fr auto; gap:8px; align-items:center; font-size:.88rem; }
+.barre .lib { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.barre .piste { height:12px; background:#eef2f7; border-radius:99px; overflow:hidden; }
+.barre .piste i { display:block; height:100%; border-radius:99px; min-width:3px; }
+.barre .val { font-weight:600; min-width:2.4em; text-align:right; }
+.segments { display:flex; height:16px; border-radius:99px; overflow:hidden; gap:2px; margin:6px 0 6px; }
+.segments i { display:block; height:100%; }
+.legende-seg { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:.8rem; color:var(--gris); }
+.legende-seg i { display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:4px; vertical-align:-1px; }
+.duo { display:grid; grid-template-columns:130px 1fr; gap:14px; align-items:center; }
+.anneau { position:relative; width:130px; height:130px; }
+.anneau .centre { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:.78rem; color:var(--gris); }
+.anneau .centre b { font-size:1.4rem; color:var(--encre); }
+/* recruteurs : monogrammes */
+.recruteurs { display:grid; gap:8px; }
+.recruteur { display:grid; grid-template-columns:34px 1fr auto; gap:10px; align-items:center; font-size:.9rem; }
+.mono { width:34px; height:34px; border-radius:10px; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:.85rem; }
+.recruteur small { display:block; color:var(--gris); font-size:.76rem; }
+.recruteur .val { font-weight:700; color:var(--accent); }
+/* tableau des 5 fonctions */
+table.fonctions { width:100%; border-collapse:separate; border-spacing:6px; font-size:.92rem; }
+table.fonctions th { color:#fff; border-radius:10px; padding:8px 6px; font-weight:600; font-size:.85rem; }
+table.fonctions th.vide-t { background:none; }
+table.fonctions th.repere-t { background:#eef2f7; color:var(--gris); }
+table.fonctions td { background:#f6f9fd; border-radius:10px; padding:8px 6px; text-align:center; }
+table.fonctions td:first-child { background:none; text-align:left; color:var(--gris); font-size:.86rem; }
+table.fonctions td b { font-size:1.15rem; }
+table.fonctions td.repere-c { background:#f1f2f5; color:var(--gris); }
+.etat { display:inline-block; padding:2px 10px; border-radius:99px; font-size:.8rem; font-weight:600; white-space:nowrap; }
+.etat.fort { background:#e3f5f4; color:#147d79; }
+.etat.ok { background:#e8f0fb; color:#1f5fbf; }
+.etat.renf { background:#f8efd9; color:#8a5f17; }
+.confronte td small { display:block; color:var(--gris); font-size:.8rem; margin-top:3px; }
+.mini-barre { display:flex; align-items:center; gap:8px; }
+.mini-barre .piste { width:70px; height:8px; background:#eef2f7; border-radius:99px; overflow:hidden; }
+.mini-barre .piste i { display:block; height:100%; background:var(--turquoise); }
+.carte-outils select { font:inherit; font-size:.85rem; padding:4px 10px; border:1px solid var(--trait); border-radius:8px; background:#fff; }
+.bouton-lien { display:inline-block; margin-top:14px; }
+@media (max-width:640px) { .ma-recherche, .duo { grid-template-columns:1fr; } .anneau { margin:0 auto; } }
+.coord summary { cursor:pointer; font-weight:600; color:var(--accent); margin-top:14px; }
+.limites { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(250px,100%), 1fr)); gap:12px; }
+.limites .carte { border-top:4px solid var(--dore); }
+.limites .ico { font-size:1.6rem; display:block; margin-bottom:4px; }
+.limites p { margin:4px 0 0; color:var(--gris); font-size:.9rem; }
+.veille h4 { margin-top:16px; } .veille .bouton.petit { text-decoration:none; }
+.vie-filtres input[type=tel], .vie-filtres input[type=email] { font:inherit; padding:6px 12px; border:1px solid var(--trait); border-radius:99px; background:#fff; }

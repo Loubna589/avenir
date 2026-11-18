@@ -47,7 +47,7 @@
   }
  ],
  "nb_missions": 599,
- "nb_pratique": 114,
+ "nb_pratique": 227,
  "missions": [
   {
    "id": "121478",
@@ -65,7 +65,7 @@
    "frequence": "Une demi-journée Prochaines dates 9 déc. 14 déc. 16 déc.",
    "themes": [
     "marketing digital",
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -86,7 +86,7 @@
    "extrait": "Il est essentiel que les personnes les plus en risque d’isolement relationnel puissent bénéficier de contacts réguliers et bienveillants. Cet isolement peut, en effet, être rompu en organisant un lien par téléphone, visio ou par d’autres moyens de communication.",
    "frequence": "1 heure par semaine A définir ensemble  - en semaine ou le week end",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -108,7 +108,7 @@
    "extrait": "Récolter des denrées auprès des clients lors de leurs courses en magasin. Ces dons reconstituent les stocks des associations d’aide alimentaire qui viennent en aide aux personnes en situation de précarité.",
    "frequence": "Une demi-journée",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -130,7 +130,8 @@
    "extrait": "Au sein d'une équipe de bénévoles ,  et en binôme , vous serez chargé de relayer la communication du Mouvement Habitat & Humanisme Morbihan et de la développer au niveau local, avec le soutien de l'équipe de communication fédérale. Votre mission : Diffuser les messages et actions de l'association sur le territoire Contribuer au développement de la communication locale Collaborer avec l'équipe de c",
    "frequence": "1 jour par semaine Pas de jours ni de créneaux horaires obligatoires",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -195,7 +196,7 @@
    "extrait": "La Ligue contre le cancer recherche des bénévoles pour intervenir auprès d'élèves de primaire, collège ou lycée dans le cadre d'actions de prévention et d'éducation à la santé. Toujours en binôme, vous animez des séances ludiques sur des thématiques comme l'alimentation, le soleil, et les différents facteurs de risque de cancer. Votre rôle consiste à échanger avec les élèves, animer des outils péd",
    "frequence": "5 jours par mois En semaine et sur le temps scolaire",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -217,7 +218,7 @@
    "extrait": "Nous recherchons un président bénévole pour notre association. Au cœur de l’activité de notre structure, son rôle est de représenter l'association et de coordonner les activités.",
    "frequence": "2 heures par mois Horaires de gouvernance flexible",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -260,7 +261,7 @@
    "extrait": "Devenez bénévole co-animateur des actions collectives : partagez votre expérience avec d'autres proches aidants ! Vous avez accompagné un proche malade, en situation de handicap ou en perte d'autonomie ? Vous aimez échanger en groupe et souhaitez partager votre expérience au service d'autres aidants ou anciens aidants ? Rejoignez Avec Nos Proches ! Notre association organise des ateliers et des te",
    "frequence": "Une demi-journée par mois Selon vos disponibilités",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -281,7 +282,7 @@
    "extrait": "Vous avez accompagné un proche malade, en situation de handicap ou en perte d'autonomie ? Vous souhaitez mettre votre expérience au service d’autres aidants ou anciens aidants ? Rejoignez Avec Nos Proches ! Notre association propose une ligne d'écoute gratuite et anonyme, accessible 7j/7 de 8h à 22h. Notre force ? L'écoute entre pairs ! Grâce à leur expérience, ils offrent une écoute bienveillante",
    "frequence": "2 jours par mois Selon vos disponibilités",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -303,7 +304,7 @@
    "extrait": "Le samedi 6 février, le Rotaract Chaumontais se mobilise aux côtés du Rotary Club de Chaumont pour l’opération « Jetons Cancer » au centre E.Leclerc de Chaumont. Le principe est simple : proposer aux clients des jetons de caddie solidaires en échange d’un don. L’intégralité des fonds collectés est destinée à soutenir la recherche contre le cancer. Ces petits jetons, que l’on garde habituellement d",
    "frequence": "2 heures Prochaines dates 5 févr.",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -324,7 +325,7 @@
    "extrait": "La Chaîne de l’Espoir (La CDE) accompagne en France des enfants hospitalisés en situation de vulnérabilité . Ce programme s’adresse à des enfants âgés de quelques semaines à 18 ans dont les parents sont absents ou ont besoin de répit pendant l’hospitalisation de leur enfant, principalement en raison d'éloignement géographique ou de situations familiales complexes. Afin de renforcer son équipe de \"",
    "frequence": "Une demi-journée par semaine Quelques heures plusieurs fois par semaine (au tota",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -367,7 +368,8 @@
    "extrait": "Recherche de sponsors",
    "frequence": "1 heure par mois Flexible",
    "themes": [
-    "mon profil santé"
+    "santé",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -389,7 +391,8 @@
    "extrait": "Installation d'une fête équine",
    "frequence": "2 jours",
    "themes": [
-    "mon profil santé"
+    "santé",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -411,7 +414,8 @@
    "extrait": "Restauration buvette",
    "frequence": "1 jour Prochaines dates 6 août",
    "themes": [
-    "mon profil santé"
+    "santé",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -434,7 +438,8 @@
    "frequence": "1 jour Prochaines dates 6 août",
    "themes": [
     "marketing digital",
-    "mon profil santé"
+    "santé",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -455,7 +460,7 @@
    "extrait": "Vous travaillez dans les sciences de la vie, l'industrie pharmaceutique, la cosmétique ou la recherche ? Transmettez votre expérience et accompagnez une jeune femme dans son parcours professionnel ! Nous recherchons un·e mentor·e pour accompagner une jeune diplômée en biologie moléculaire et cellulaire, qui souhaite trouver un emploi et développer sa carrière dans les sciences de la vie ( Life Sci",
    "frequence": "1 heure par mois 1h par mois pendant 6 mois. Les créneaux sont définis directeme",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -520,7 +525,9 @@
    "extrait": "Résonansemble transforme les environnements de soin grâce à la musique. En 2026, l’association organise plus de 500 concerts participatifs dans plus de 50 hôpitaux, EHPAD et Instituts Médico-Educatifs, avec plus de 1 200 musiciens professionnels et amateurs, au bénéfice de 5 500 personnes. Pour faire connaître son action plus largement, Résonansemble recherche un ou une bénévole pour renforcer sa ",
    "frequence": "2 heures par semaine Horaires flexibles",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "marketing produit",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -585,7 +592,8 @@
    "extrait": "Le Vannes Urban Trail revient les 20 et 21 Mars 2027 pour sa 4e édition ! Plus qu’une simple course, c’est une immersion conviviale au cœur du patrimoine vannetais, entre lieux emblématiques et trésors architecturaux, à travers plusieurs parcours variés. Pour que cet évènement soit une réussite, nous avons besoin de volontaires ! En rejoignant notre équipe de volontaires , vous participerez active",
    "frequence": "Une demi-journée Prochaines dates Plus de date disponible",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -628,7 +636,7 @@
    "extrait": "Chez Colette est une jeune association yvelinoise de prévention et de sensibilisation aux violences faites aux femmes, pour les jeunes et les adultes. Pour beaucoup de femmes, parler est le premier pas : mettre des mots sur ce qu’on vit ou ce qu’on a vécu, repérer les mécanismes des violences, découvrir qu’on n’est pas seule. Nous mettons en place des cercles de parole, des espaces d’écoute collec",
    "frequence": "2 heures par mois 1 fois tous les 2 mois, environ 1h30 à 2h",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -650,7 +658,8 @@
    "extrait": "La mission Etre le-la vidéaste officiel-le de l'évènement (pro ou amateur). Objectif :  s'amuser à prendre de belles vidéos pour restituer l'ambiance et les temps forts de l'évènements. Tout type de vidéos acceptées : format pro, format réseaux sociaux (caméra, téléphone au choix) Évènement : marché de créateurs, Tropikal Market, le week-end du 28 & 29 novembre 2026 au 7 rue Bailly, Paris 3e (Métr",
    "frequence": "3 jours Prochaines dates 26 nov. 27 nov. 28 nov.",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -672,7 +681,7 @@
    "extrait": "Pet Positive est une jeune association qui développe une web app dédiée au bien-être animal. Notre ambition : créer le « Duolingo des animaux » ! Une application qui encourage, valorise et récompense les actions positives en faveur des animaux, tout en aidant chacun à agir concrètement au quotidien grâce à des défis, des contenus pédagogiques et des conseils accessibles. Notre mission va bien au-d",
    "frequence": "Plus de 5 jours",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -715,7 +724,8 @@
    "extrait": "Le magasin Cultura à Chantepie (Ille-et-Vilaine) nous accueille le 25 novembre, les 19, 20 et 28 décembre pour participer à l'emballage des cadeaux. Tout les dons libres laissés par les clients sont au bénéfice de l'association.",
    "frequence": "Une demi-journée Prochaines dates 24 nov. 18 déc. 19 déc. ...",
    "themes": [
-    "mon profil santé"
+    "santé",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -737,7 +747,7 @@
    "extrait": "L’objectif de la mission est d’accompagner les patients lors des temps d’animation, d’échange et de partage au quotidien, dans une ambiance chaleureuse et bienveillante. Ces temps d’animation jouent un rôle central dans la vie quotidienne des patients puisqu’ils contribuent à : créer du lien social stimuler les capacités de chacun offrir du bien-être",
    "frequence": "2 heures",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -759,7 +769,7 @@
    "extrait": "Co-animer des activités (jeux, sorties, etc)auprès des aidants familiaux et de leur proche malade.",
    "frequence": "Une demi-journée par semaine Unedemi journée par semaine ou par mois selon dispo",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -782,7 +792,8 @@
    "frequence": "3 jours Prochaines dates 3 juin 4 juin 5 juin",
    "themes": [
     "marketing digital",
-    "intelligence artificielle"
+    "intelligence artificielle",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -803,7 +814,8 @@
    "extrait": "🎨 Deviens le talent créatif du Zenitud Fest 2027 – Le Village des Possibles ! L'association B-ZEN recherche un(e) bénévole ayant des compétences en graphisme et création visuelle pour accompagner la préparation du Zenitud Fest 2027, qui se déroulera les 4, 5 et 6 juin 2027 à Bessan, dans l'Hérault. L'objectif est de contribuer à la création et au développement de l'univers visuel du festival, en c",
    "frequence": "1 heure par semaine Les créneaux horaires sont entièrement flexibles et définis ",
    "themes": [
-    "intelligence artificielle"
+    "intelligence artificielle",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -825,7 +837,8 @@
    "extrait": "En lien avec les autres membres de notre structure, votre rôle sera de contribuer au développement de la communication interne et/ou externe de notre organisation.",
    "frequence": "1 heure par semaine Jours et horaires flexibles",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -847,7 +860,7 @@
    "extrait": "Je gère les demandes d'adoption",
    "frequence": "",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -869,7 +882,7 @@
    "extrait": "Je gère les collectes en magasin",
    "frequence": "",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -957,7 +970,8 @@
    "extrait": "En lien avec les autres membres de notre structure, votre rôle sera de contribuer au développement de la communication interne et/ou externe de notre organisation.",
    "frequence": "2 heures par semaine 1 jour à choisir dans la semaine (2h/semaine)",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1001,7 +1015,7 @@
    "extrait": "L'association Erina gère un Centre de soins basé en Haute-Vienne (Razès). Ce centre est habilité à accueillir les mammifères sauvages en détresse, à les soigner, les réhabiliter et à les réintroduire dans leur milieu naturel dans les meilleures conditions. Pour accomplir ses missions, l'association s'appuie sur l'engagement précieux de nombreux bénévoles. Leurs actions consistent à effectuer le su",
    "frequence": "Une demi-journée par mois 8h - 13h, 9h - 14h ou 10h - 15h",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1023,7 +1037,8 @@
    "extrait": "En lien avec les autres membres de notre structure, votre rôle sera de contribuer au développement de la communication interne et/ou externe de notre organisation.",
    "frequence": "Une demi-journée par semaine A définir ensemble",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1045,7 +1060,8 @@
    "extrait": "Aux côtés de notre équipe, vous contribuez à renforcer notre présence sur le territoire et à développer nos actions : Selon ce qui vous motive, vous pourrez nous aider à : Développer les liens avec les associations, collectivités, établissements scolaires, centres sociaux et acteurs locaux Représenter l'association lors d'événements, forums, salons et rencontres citoyennes Faire connaître nos acti",
    "frequence": "1 jour par semaine 2 demi-journées du lundi au vendredi",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1066,7 +1082,8 @@
    "extrait": "Dans le cadre de cette mission, plusieurs besoins ont été identifiés. Tu pourras intervenir sur l’un de ces sujets, en fonction de tes disponibilités et compétences : 🗣️ Tu es à l'aise en public et as un bon sens du relationnel : viens assurer la promotion de l'événement en allant distribuer des flyers et en informant le public dans des lieux stratégiques (sur les marchés, lieux touristiques..) 💻 ",
    "frequence": "3 jours",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1088,7 +1105,8 @@
    "extrait": "Nous recherchons actuellement Un(e) Responsable ainsi que Un(e) Bénévoles dans la Communication. Vous aurez pour mission de faire connaître les actions et les projets de l'association, de valoriser ses activités et de développer sa visibilité auprès du public ( Réseaux sociaux, sur le terrain )…",
    "frequence": "2 heures par semaine Celons la disponibilité du bénévoles",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1110,7 +1128,7 @@
    "extrait": "Je rends visite aux résidents d'EHPAD ou aux patients de l'hôpital Stell  à Rueil-Malmaison pour rompre leur solitude et leur apporter un peu de réconfort",
    "frequence": "2 heures par semaine exclusivement l'après-midi un jour dédié",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1154,7 +1172,7 @@
    "extrait": "Je participe à la commission des usagers au sein de l'hôpital au titre de l'association VMEH (visite des malades en établissements hospitaliers)",
    "frequence": "Une demi-journée par mois 1 réunion par trimestre d'une demi-journée  obligatoir",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1241,7 +1259,7 @@
    "extrait": "Nous portons un projet de lutte contre la précarité au Sénégal. Dans ce cadre, nous envisageons, en 2027, entre avril et juin, de former des jeunes filles à la sensibilisation et à la lutte contre les tabous liés aux menstruations. Comme chaque année depuis 2025, nous souhaitons également organiser une distribution de protections hygiéniques afin de contribuer à améliorer l'accès des filles à l'hy",
    "frequence": "1 heure par semaine Selon votre disponibilité",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1263,7 +1281,8 @@
    "extrait": "AESIR recherche des vidéastes bénévoles sur Clermont-Ferrand et ses alentours afin de participer à la création de contenus vidéo pour l'association. L'objectif est de réaliser différents tournages pour mettre en valeur les activités d'AESIR, ses événements, ses partenaires et les personnes qui font vivre l'association. En fonction des projets, le bénévole pourra être amené à : Réaliser des prises ",
    "frequence": "2 heures",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1284,7 +1303,7 @@
    "extrait": "Le programme Sport à l'hôpital est lancé sur la ville de Pontivy. Nous recherchons des bénévoles pour être présents sur les séances, 1 fois par mois l'après-midi de 14h à 16h (rotation entre les bénévoles).",
    "frequence": "2 heures par mois 1 fois par mois, l'après-midi de 14h à 16h",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1305,7 +1324,7 @@
    "extrait": "Le programme Sport à l'hôpital est lancé sur la ville de Vannes. Nous recherchons des bénévoles pour être présents sur les séances, 1 fois par mois (rotation entre les bénévoles).",
    "frequence": "2 heures par mois 1 fois par mois",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1326,7 +1345,7 @@
    "extrait": "Le programme Sport à l'hôpital est lancé sur la ville de Rennes. Nous recherchons des bénévoles pour être présents sur les séances, 1 fois par mois (rotation entre les bénévoles).",
    "frequence": "2 heures par mois 1 fois par mois",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1347,7 +1366,7 @@
    "extrait": "Le programme Sport à l'hôpital est lancé sur la ville de Lorient. Nous recherchons des bénévoles pour être présents sur les séances, 1 fois par mois (rotation entre les bénévoles).",
    "frequence": "2 heures par mois 1 fois par mois",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1368,7 +1387,8 @@
    "extrait": "Dans le cadre de cette mission, plusieurs besoins ont été identifiés. Tu pourras intervenir sur l’un de ces sujets, en fonction de tes disponibilités et compétences : 🗣️ Tu es à l'aise en public et as un bon sens du relationnel : viens assurer la promotion de l'événement en allant distribuer des flyers et en informant le public dans des lieux stratégiques (sur les marchés, lieux touristiques..) 💻 ",
    "frequence": "Plus de 5 jours",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1390,7 +1410,7 @@
    "extrait": "Le secourisme à la Croix-Rouge, c'est 160 ans d'exercice et près de 6 500 bénévoles mobilisés sur + de 30 000 interventions par an. Toutes les motivations sont bonnes pour devenir secouriste ! L’essentiel c’est de s’engager 🙂 Sous la responsabilité et l'accompagnement d'un chef d'équipe, vos missions sont :➔ Assurer un poste de secours lors d'évènements➔ Prendre en charge des victimes en leur appo",
    "frequence": "2 jours par mois selon vos disponibilités",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1411,7 +1431,7 @@
    "extrait": "Le programme Sport à l'hôpital est lancé sur la ville de Mulhouse. Nous recherchons des bénévoles pour être présents sur les séances du mardi matin (10h00-12h00), 1 fois par mois (rotation entre les bénévoles).",
    "frequence": "2 heures par mois Un mardi par mois, sur un créneau 10h00-12h00",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1433,7 +1453,8 @@
    "extrait": "Dans la continuité du développement de notre association, nous souhaitons recruter un animateur réseau : une personne capable d’imaginer, de développer et de mettre en place des activités à destination de notre réseau de propriétaires. Son rôle sera de faire vivre ce réseau, de créer du lien entre ses membres et d’imaginer des moments conviviaux, des rencontres et des événements fédérateurs.",
    "frequence": "2 heures par semaine plutôt le week-end",
    "themes": [
-    "mon profil santé"
+    "santé",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1455,7 +1476,9 @@
    "extrait": "Rejoignez l’aventure Flamenco en Arles ! Créée en 2016, l’association Flamenco en Arles a fêté ses dix ans. Dix années de passion partagée, avec à ce jour plus de 140 concerts , une cinquantaine d’expositions , des conférences, des masterclass, des soirées projections, toujours dans une grande convivialité. Tout cela repose sur une équipe entièrement bénévole. Nos activités se développent sans ces",
    "frequence": "1 heure par semaine Chacun adapte ses horaires selon ses disponibilités",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "santé",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1500,7 +1523,7 @@
    "frequence": "Une demi-journée par mois A définir ensemble",
    "themes": [
     "marketing digital",
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1543,7 +1566,8 @@
    "extrait": "Tu as envie d'être utile, de rencontrer du monde et de faire bouger ton territoire ? Nous recherchons de nouveaux bénévoles pour renforcer notre équipe et promouvoir l'engagement bénévole dans le département.",
    "frequence": "2 jours par mois Ni jours, ni horaires obligatoires, interventions à définir ave",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1694,7 +1718,7 @@
    "extrait": "Le secourisme à la Croix-Rouge, c'est 160 ans d'exercice et près de 6 500 bénévoles mobilisés sur + de 30 000 interventions par an.Toutes les motivations sont bonnes pour devenir secouriste ! L’essentiel c’est de s’engager 🙂 Sous la responsabilité d'un chef d'équipe, vos missions sont : ➔ Assurer un poste de secours lors d'évènements ➔ Prendre en charge des victimes en leur apportant assistance et",
    "frequence": "Une demi-journée par mois Les week-ends ou en soirée",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1738,7 +1762,8 @@
    "extrait": "Multi’Pass agit pour favoriser l'égalité des chances dans l'accès à la culture pour les jeunes de 15 à 25 ans, issus des quartiers populaires. Pour faire connaître notre association, valoriser nos initiatives et toucher toujours plus de jeunes, nous souhaitons développer une communication créative, dynamique et engagée. L'équipe Communication aura pour mission de faire rayonner Multi’Pass, de part",
    "frequence": "2 heures par semaine À déterminer avec le.la bénévole",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1760,7 +1785,8 @@
    "extrait": "L'association WOMEN PLANNER recherche des bénévoles de tous horizons, et tout particulièrement des jeunes souhaitant s'engager dans une aventure humaine, solidaire et enrichissante. Notre objectif est de favoriser l'autonomie économique et financière des femmes, de promouvoir l'entraide, le partage de connaissances et la solidarité. Tous les jeunes sont les bienvenus, quels que soient leur âge, le",
    "frequence": "Une demi-journée par semaine Mercredi de 14h-16h",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1803,7 +1829,8 @@
    "extrait": "Objectif principal Soutenir le directeur de la communication dans la mise en œuvre et la gestion de la stratégie de communication de la Protection Civile des Yvelines, afin de renforcer la visibilité et l'image de l'organisation. Responsabilités principales Appui à la définition de la stratégie de communication Collaborer avec le directeur de la communication pour élaborer et affiner la stratégie ",
    "frequence": "5 jours par mois Selon vos disponibilités",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1846,7 +1873,7 @@
    "extrait": "Visites de convivialité à domicile : la mission consiste à rendre visite, au simple motif de la convivialité, à des personnes bénéficiant de nos interventions (aide ou soin). Les personnes visitées ont préalablement accepté le principe de cette visite.  Cela leur permet de rompre leur solitude, d'avoir des échanges sans vocation \"utilitaire\", de se sentir compter autrement que comme simple \"bénéfi",
    "frequence": "1 heure par semaine à convenir, mais le plus souvent l'après-midi",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1889,7 +1916,8 @@
    "extrait": "L'association Victime, Pas Coupable, basée à Marseille, recherche des bénévoles engagés et qualifiés pour participer au développement de ses actions de prévention, de sensibilisation et d'éducation à la citoyenneté auprès des enfants, des adolescents et des jeunes. Nous souhaitons constituer une équipe pluridisciplinaire composée notamment d'éducateurs spécialisés, de moniteurs-éducateurs, de psyc",
    "frequence": "2 heures par semaine Les interventions auront lieu à raison de 2 heures par sema",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1933,7 +1961,7 @@
    "extrait": "Il est essentiel que les personnes les plus en risque d’isolement relationnel puissent bénéficier de contacts réguliers et bienveillants. Cet isolement peut, en effet, être rompu en organisant un lien par téléphone, visio ou par d’autres moyens de communication.",
    "frequence": "1 heure par semaine Libre",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1977,7 +2005,8 @@
    "extrait": "VOTRE RÔLE AU SEIN DE NOTRE ASSOCIATION LOCALE Enjeux : à quoi allez-vous contribuer ? Vous intégrez une association pionnière du commerce équitable en France. Depuis plus de 50 ans, les équipes de bénévoles ont choisi d’allier alternative économique (prouver qu’un autre commerce est possible) et mobilisation citoyenne (par l’éducation populaire et le plaidoyer). Vous intégrez une association de s",
    "frequence": "Mission permanente A partager avec au moins 1 autre bénévole Fort enjeu au momen",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2043,7 +2072,7 @@
    "extrait": "Il est essentiel que les personnes les plus en risque d’isolement relationnel puissent bénéficier de contacts réguliers et bienveillants. Cet isolement peut, en effet, être rompu en organisant un lien par téléphone, visio ou par d’autres moyens de communication.",
    "frequence": "1 jour par mois De 14h à 16h le mercredi ou samedi ou dimanche",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2065,7 +2094,8 @@
    "extrait": "Rejoignez l'équipe d'organisation d'une grande soirée caritative à Courbevoie ! L'association humanitaire d'intérêt général UN CŒUR QUI AGIT , basée à Courbevoie, recherche des bénévoles disposant de compétences variées pour préparer et organiser une soirée caritative et un dîner de bienfaisance prévus le 13 novembre 2027 , avec un objectif d'accueil de cinq cent personnes. La mission se déroulera",
    "frequence": "2 heures par semaine 10h à 12h",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2086,10 +2116,8 @@
    ],
    "extrait": "Votre expérience du crowdfunding peut contribuer à faire naître un Éco-Village solidaire ! CARIS-SACRI est une jeune association humanitaire française qui prépare la création d'un Éco-Village solidaire au Cameroun. Notre projet repose sur trois initiatives complémentaires : Un orphelinat , pour accueillir, protéger et accompagner des enfants vulnérables Un centre de soins , pour favoriser l'accès ",
    "frequence": "1 jour par mois La mission s'effectue entièrement à distance, à raison d'une jou",
-   "themes": [
-    "marketing digital"
-   ],
-   "pratique": true,
+   "themes": [],
+   "pratique": false,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": "Je conçois et anime une campagne de crowdfunding pour un Éco-Village solidaire Collecte de fonds Communication Votre expérience du crowdfunding peut contribuer à faire naître un Éco-Village solidaire ! CARIS-SACRI est une jeune association humanitaire française qui prépare la création d'un Éco-Village solidaire au Cameroun. Notre projet repose sur trois initiatives complémentaires : Un orphelinat , pour accueillir, protéger et accompagner des enfants vulnérables Un centre de soins , pour favoriser l'accès à la santé des populations locales Une ferme-école écologique , pour développer l'autonomie alimentaire, transmettre des savoir-faire et favoriser la formation et l'insertion professionnelle Nous souhaitons également faire de ce projet un exemple de développement durable et de transmission du patrimoine architectural. Un futur chantier participatif et formateur permettra de valoriser les matériaux locaux et de remettre en pratique des techniques traditionnelles de construction en terre, en les adaptant aux exigences contemporaines. Un architecte nous accompagne déjà et a réalisé les premiers plans conceptuels du futur Éco-Village. Votre mission : mobiliser la solidarité grâce au financement participatif Nous recherchons un ou une bénévole expérimenté(e) dans la conception, le lancement et l'animation de campagnes de crowdfunding. Votre contribution consistera notamment à : Étudier les plateformes de financement participatif les mieux adaptées à notre association et à notre p"
@@ -2109,7 +2137,8 @@
    "extrait": "Dans le cadre de cette mission, plusieurs besoins ont été identifiés. Tu pourras intervenir sur l’un de ces sujets, en fonction de tes disponibilités et compétences : 🗣️ Tu es à l'aise en public et as un bon sens du relationnel : viens assurer la promotion de l'événement en allant distribuer des flyers et en informant le public dans des lieux stratégiques (sur les marchés, lieux touristiques..) 💻 ",
    "frequence": "Plus de 5 jours",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "événementiel"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2218,7 +2247,7 @@
    "extrait": "L'association SIMBA de protection animale recherche 2 bénévoles : Contribuer au financement de l’association (frais vétérinaires, soins, stérilisations) en développant ses ressources Levées de fonds : organiser ou participer à des événements Recherche de dons : solliciter particuliers et entreprises, suivre les donateurs et les remercier. Mécénat et partenariats : identifier, contacter et fidélise",
    "frequence": "Une demi-journée par semaine En semaine en journée",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2284,7 +2313,7 @@
    "extrait": "L'association SIMBA recherche trois bénévoles de terrain pour la protection animale : Intervenir sur le terrain pour secourir les animaux en détresse (chats, chiens, NAC) et assurer la logistique de l’association Sauvetages : capture et récupération d’animaux errants, abandonnés ou maltraités ; interventions sur les colonies de chats libres (stérilisation). Déplacements : conduire les animaux vers",
    "frequence": "Une demi-journée par semaine Horaires à déterminer avec l'association",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2307,7 +2336,7 @@
    "frequence": "Une demi-journée par semaine Pas d'horaires fixes mais une régularité est demand",
    "themes": [
     "marketing digital",
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2352,7 +2381,7 @@
    "frequence": "2 heures par semaine Rien n'est imposé, vous faites comme vous voulez/pouvez.",
    "themes": [
     "marketing digital",
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2396,7 +2425,7 @@
    "extrait": "Samedi 28 et dimanche 29 novembre, le magasin Animalis de Clayes sous Bois accueille les bénévoles de notre association pour une collecte de nourriture destinée à nourrir la centaine de chats que nous avons en charge.",
    "frequence": "Une demi-journée",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2461,7 +2490,7 @@
    "extrait": "La Ligue contre le cancer des Hautes-Alpes recherche des bénévoles ponctuels pour nous aider à réaliser les papiers cadeaux au Joué Club de Gap durant le mois de décembre jusqu'à Noël ! Cet événement est essentiel pour notre association, car il nous permet de collecter des fonds précieux pour financer nos actions locales de soutien aux malades et de prévention du cancer. En tant qu’association ne ",
    "frequence": "Une demi-journée",
    "themes": [
-    "mon profil santé"
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2483,7 +2512,8 @@
    "extrait": "Rejoignez L’Alchimie des Liens et contribuez à faire grandir un projet solidaire ! L’Alchimie des Liens est une jeune association toulousaine de l’économie sociale et solidaire, qui œuvre pour rendre le bien-être accessible à toutes et à tous, lutter contre l’isolement et renforcer le lien social grâce à la socio-esthétique. Notre association s’appuie sur Socio Beauty , un collectif de six profess",
    "frequence": "2 heures par semaine Flexibles ,à définir ensemble",
    "themes": [
-    "marketing digital"
+    "marketing digital",
+    "santé"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2626,8 +2656,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "2 jours Prochaines dates 3 sept. 4 sept.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -2686,8 +2718,10 @@
    ],
    "extrait": "BOMOI est une association de solidarité internationale qui promeut le don de sang volontaire et non rémunéré. À Toulouse, elle mène un projet pilote en collaboration avec l’EFS Occitanie pour diversifier les profils des donneurs de sang. Cette diversité est essentielle pour certains patients, notamment les personnes atteintes de drépanocytose, qui ont besoin de donneurs aux profils sanguins variés",
    "frequence": "2 heures par semaine À préciser",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -2705,8 +2739,10 @@
    ],
    "extrait": "Vénissieux Escrime organise les 9 et 10 Janvier 2027 au gymnase Jacques Anquetil de Vénissieux : Une épreuve du Circuit Régional Senior Epée individuel et par équipes (à partir de 20 ans) Une compétition Départementale Epée pour les catégories M9 / M11 / M13 (entre 7 et 13 ans)",
    "frequence": "Une demi-journée Prochaines dates 7 janv. 8 janv. 9 janv.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -2744,8 +2780,10 @@
    ],
    "extrait": "🎯 Objectif Représenter l'association lors d'événements et contribuer à sensibiliser le public à la lutte contre l'isolement. Exemples de missions tenir un stand ; accueillir le public ; présenter l'association ; distribuer des flyers ; participer à des collectes ; aider à l'installation et au rangement ; participer à des animations ; échanger avec les visiteurs.",
    "frequence": "Plus de 5 jours",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -2784,8 +2822,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "1 jour",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -2843,8 +2883,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "2 jours Prochaines dates 20 nov. 21 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -2883,8 +2925,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "Une demi-journée Prochaines dates 19 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -2921,8 +2965,10 @@
    ],
    "extrait": "Contribuer à l'animation d'une fête de Noël pour les enfants et les familles de notre association sportive : Animation de jeux (chamboule-tout, jeux de société, corn-hole, etc...) Maquillage.... Arts créatifs et manuels sur le thème de Noël",
    "frequence": "2 heures Prochaines dates 15 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -3081,8 +3127,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "Une demi-journée Prochaines dates 3 avr.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -3547,8 +3595,10 @@
    ],
    "extrait": "Si tu lis notre annonce, c’est que nous avons capté ton attention sur un sujet important. Enchantée, je suis Debbie Jackson, fondatrice et présidente de Link’Elles. Link’Elles c’est quoi. Nous sommes une association à but non lucratif dédiée à l’entrepreneuriat féminin. Nos missions : • Lier les membres entre eux et notamment les femmes entrepreneures et celles en devenir à travers diverses action",
    "frequence": "Une demi-journée",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -3567,8 +3617,10 @@
    ],
    "extrait": "Si tu lis notre annonce, c’est que nous avons capté ton attention sur un sujet important. Enchantée, je suis Debbie Jackson, fondatrice et présidente de Link’Elles. Link’Elles c’est quoi. Nous sommes une association à but non lucratif dédiée à l’entrepreneuriat féminin. Nos missions : • Lier les membres entre eux et notamment les femmes entrepreneures et celles en devenir à travers diverses action",
    "frequence": "Une demi-journée",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -3587,8 +3639,10 @@
    ],
    "extrait": "Si tu lis notre annonce, c’est que nous avons capté ton attention sur un sujet important. Enchantée, je suis Debbie Jackson, fondatrice et présidente de Link’Elles. Link’Elles c’est quoi. Nous sommes une association à but non lucratif dédiée à l’entrepreneuriat féminin. Nos missions : • Lier les membres entre eux et notamment les femmes entrepreneures et celles en devenir à travers diverses action",
    "frequence": "Une demi-journée par semaine pas de créneaux spécifiques",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -3626,8 +3680,10 @@
    ],
    "extrait": "Nous sommes une association à but non lucratif dédiée à l’entrepreneuriat féminin. N os missions : Lier les membres entre eux et notamment les femmes entrepreneures et celles en devenir à travers diverses actions (c’est ouvert à tous/tes) Référencer et mettre en avant toutes les actrices et acteurs de l’entrepreneuriat français. La cause égalité femme-homme te parle  ?  Tu as un attrait pour le se",
    "frequence": "Une demi-journée par semaine pas de créneaux spécifiques",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -3864,8 +3920,10 @@
    ],
    "extrait": "Description de la mission Vous aimez organiser, coordonner et créer des moments mémorables ?L’association Hypersens a pour mission d'améliorer la qualité de vie des jeunes en proposant des ateliers bien-être. En tant que soutien événementiel, vous participerez à des groupes de travail pour organiser les 5 ans de l'association et un projet de stand pour un festival: Vous imaginerez, préparerez et c",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -4099,8 +4157,10 @@
    ],
    "extrait": "L'association 1 Lettre 1 Sourire recherche deux bénévoles pour participer à une soirée organisée le jeudi 26 novembre 2026 au Château de Pourtalès, à Strasbourg. Notre mission est de lutter contre l'isolement des personnes âgées en créant du lien grâce à l'écriture et à l'envoi de lettres bienveillantes. À l'occasion de cet événement réunissant 170 invités, nous souhaitons faire découvrir notre as",
    "frequence": "2 heures",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -4139,8 +4199,11 @@
    ],
    "extrait": "Recherche bénévoles homme ou femme pouvant aider selon leur disponibilité l'association afin de récolter des fonds en organisant des manifestations",
    "frequence": "3 jours par mois cela dépend des manifestations",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel",
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -4417,8 +4480,10 @@
    ],
    "extrait": "En tant que coordinateur ou coordinatrice du pôle événementiel , vous donnez vie aux temps forts de notre association. Vous organisez concrètement nos événements (conférences, rencontres) pour assurer leur réussite et développer notre visibilité locale . À qui bénéficie cette mission ? Vos actions profitent directement à : nos adhérents le public qui participe à nos événements l'ensemble des bénév",
    "frequence": "Une demi-journée par mois Horaires flexibles, 100 % adapatable selon l'emploi du",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -4593,8 +4658,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "Une demi-journée",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -4633,8 +4700,10 @@
    ],
    "extrait": "Vous participerez aux discussions tenues entre les responsables des OPSAN, les organisateurs, et les services de sécurité civile des Bouches-du-Rhône. L'objectif est de définir régulièrement les meilleures pratiques pour optimiser l'intervention des OPSAN aux côtés des secours publics. À ce titre, en équipe, vous serez chargé de la rédaction et de la mise en forme des documents structurants de l'a",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -4731,8 +4800,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "Une demi-journée Prochaines dates 12 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5069,8 +5140,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5088,8 +5161,10 @@
    ],
    "extrait": "L'objectif de cette mission sera d'assurer la tenue du stand de restauration ou de la buvette sur le site du festival / événement.",
    "frequence": "2 heures Prochaines dates 28 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5186,8 +5261,10 @@
    ],
    "extrait": "L'objectif de cette mission sera d'assurer la tenue du stand de restauration ou de la buvette sur le site du festival / événement.",
    "frequence": "Une demi-journée",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5246,8 +5323,10 @@
    ],
    "extrait": "Intervenez en tant que  ditététicien.ne bénévole auprès de personnes souffrant de douleurs chroniques Notre association PREGED – Prévention et Gestion de la Douleur accompagne les personnes souffrant de douleurs chroniques à travers des ateliers thématiques et groupes  en visioconférence. Ces temps d’échange en petit groupe visent à rompre l’isolement, mieux comprendre la douleur, et expérimenter ",
    "frequence": "Une demi-journée par mois A définir",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5266,8 +5345,10 @@
    ],
    "extrait": "Le dimanche 28 février 2027 , nous cherchons 4 bénévoles pour faire vivre le Winter Trail d'Alix avec nous ! Ce que tu vas vivre : Rencontrer du monde Partager l'ambiance du trail côté coulisses Donner un coup de main à un événement qui rassemble tout le village Que ce soit ta première mission bénévole ou que tu aies déjà de l'expérience, nous t'accueillerons avec plaisir dans l'équipe. Alors, par",
    "frequence": "1 jour Prochaines dates 27 févr.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5346,8 +5427,10 @@
    ],
    "extrait": "En amont du festival / événement, tu seras en charge d'installer les infrastructures du festival / de l'évènement, en coordination avec l'équipe logistique. Nous aurons besoin de toi sur différents postes: Le montage : quelques jours avant l'évènement, tu sera convié pour nous aider à monter les scènes, stands d'accueil, d'animation, de restauration, barnums.. Le démontage : les jours qui suivent ",
    "frequence": "3 jours Prochaines dates 2 juin 3 juin 4 juin",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5563,8 +5646,10 @@
    ],
    "extrait": "Le 31 décembre, pendant que beaucoup préparent le réveillon, des personnes âgées et des patients passeront la fin d’année loin de chez eux, parfois sans visite. Résonansemble vous propose de leur offrir un vrai moment de fête : un concert d’une heure, en après-midi, au sein d’un EHPAD ou d’un hôpital. Vous venez seul(e) ou avec votre groupe, avec votre répertoire. Classique, jazz, chanson français",
    "frequence": "Une demi-journée Prochaines dates 30 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5583,8 +5668,10 @@
    ],
    "extrait": "Le 31 décembre, pendant que beaucoup préparent le réveillon, des personnes âgées et des patients passeront la fin d’année loin de chez eux, parfois sans visite. Résonansemble vous propose de leur offrir un vrai moment de fête : un concert d’une heure, en après-midi, au sein d’un EHPAD ou d’un hôpital. Vous venez seul(e) ou avec votre groupe, avec votre répertoire. Classique, jazz, chanson français",
    "frequence": "Une demi-journée Prochaines dates 30 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5643,8 +5730,10 @@
    ],
    "extrait": "Le 31 décembre, pendant que beaucoup préparent le réveillon, des personnes âgées et des patients passeront la fin d’année loin de chez eux, parfois sans visite. Résonansemble vous propose de leur offrir un vrai moment de fête : un concert d’une heure, en après-midi, au sein d’un EHPAD ou d’un hôpital. Vous venez seul(e) ou avec votre groupe, avec votre répertoire. Classique, jazz, chanson français",
    "frequence": "Une demi-journée Prochaines dates 30 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5979,8 +6068,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -5998,8 +6089,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6076,8 +6169,10 @@
    ],
    "extrait": "Pour notre Association ESCALE ACCUEIL DE JOUR, nous recherchons des bénévoles par demies journées du lundi eu vendredi (possibilité de ne venir qu'une demi journée par semaine) pour accueillir les personnes en difficulté. L'Escale est un lieu d'accueil pour permettre aux personnes en difficultés ou sans domicile de venir se réchauffer, boire un café, manger, prendre une douche ou récupérer son cou",
    "frequence": "Une demi-journée par semaine Du lundi au vendredi par demies journées",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6194,8 +6289,10 @@
    ],
    "extrait": "Nous recherchons une équipe de bénévoles motivés pour contribuer à l'organisation des Rencontres régionales 2026 de l'Éducation à l'Environnement et au Développement Durable (EEDD) qui se tiendront le mercredi 2 décembre 2026, à l'Académie du Climat, à Paris . Placée sous le thème « Éduquer pour transformer : faire réseau et agir ensemble dans les transitions écologiques à venir », cette journée r",
    "frequence": "1 jour Prochaines dates 1 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6214,8 +6311,10 @@
    ],
    "extrait": "1. Suivre et rechercher des financements Effectuer un suivi des bailleurs pré-identifiés, développer le fichier bailleurs en France et à l’international; instaurer une première relation en fonction des compétences. 2. Sélectionner les opportunités pertinentes Vérifier si Data 4 Women remplit les critères d’éligibilité : thématique du projet, ancienneté et antériorité financière, budget demandé, zo",
    "frequence": "2 heures par semaine Flexible",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6253,8 +6352,10 @@
    ],
    "extrait": "Comme chaque année, nous organisons une grande collecte de produits d'hygiène à l’occasion de la Journée internationale de lutte contre les violences faites aux femmes. Ces produits collectés seront redistribués ensuite auprès des femmes victimes de violences conjugales et de leurs enfants, lors des mises à l'abri en hôtels secours 🫂 Cette année, la collecte aura lieu le 26 novembre dans le magasi",
    "frequence": "2 heures Prochaines dates Plus de date disponible",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6311,8 +6412,10 @@
    ],
    "extrait": "En amont du festival / événement, tu seras en charge d'installer les infrastructures du festival / de l'évènement, en coordination avec l'équipe logistique. Nous aurons besoin de toi sur différents postes: Le montage : quelques jours avant l'évènement, tu sera convié pour nous aider à monter les scènes, stands d'accueil, d'animation, de restauration, barnums.. Le démontage : les jours qui suivent ",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6351,8 +6454,10 @@
    ],
    "extrait": "Pourquoi pas la reconstitution historique ? La Maisnie du Mont Ferrand, compagnie de reconstitution médiévale XVème siècle, recherche de nouveaux participants. Nous intervenons dans le cadre de fêtes médiévales, d'animation de château, de lieux historiques...Nous dressons et animons des campements, véritables petits villages médiévaux, aux activités les plus variées. Nous avons l'intendance, les i",
    "frequence": "3 jours par mois Week-end",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6766,8 +6871,10 @@
    ],
    "extrait": "Pearls & Fashion prépare FUSION à Nice, un événement culturel qui fait dialoguer la mode, l’art et la création contemporaine. Le projet est porté par une équipe déjà engagée dans sa préparation. Nous souhaitons la renforcer avec des bénévoles capables de prendre en charge un périmètre précis, en collaboration avec la direction et les référents en place. Les profils recherchés : • Responsable de pr",
    "frequence": "Une demi-journée par semaine Engagement de 3 heures par semaine : le jeudi après",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6786,8 +6893,10 @@
    ],
    "extrait": "Pearls & Fashion, association culturelle pour la mode, prépare ALL’ITALIANA à Nice, un événement dédié à la créativité et aux savoir-faire de la mode italienne. Nous réunissons une équipe bénévole dédiée, organisée autour de responsabilités précises, pour développer le projet avec la direction de l’association et les référents concernés. Les profils recherchés : • Responsable de projet : structure",
    "frequence": "Une demi-journée par semaine Engagement de 3 heures par semaine, en présentiel à",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6904,8 +7013,10 @@
    ],
    "extrait": "Vendre des boissons au bar du RADAZIK des ULIS pour le Téléthon",
    "frequence": "Une demi-journée Prochaines dates 4 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6924,8 +7035,10 @@
    ],
    "extrait": "La mission est de tenir un stand de boissons chaudes au profit du Téléthon des Ulis",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -6983,8 +7096,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "2 heures Prochaines dates 5 févr.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7002,8 +7117,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "2 heures Prochaines dates 6 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7021,8 +7138,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "2 heures Prochaines dates 8 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7040,8 +7159,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "2 heures Prochaines dates 4 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7060,8 +7181,10 @@
    ],
    "extrait": "En amont du festival / événement, tu seras en charge d'installer les infrastructures du festival / de l'évènement, en coordination avec l'équipe logistique. Nous aurons besoin de toi sur différents postes: Le montage : quelques jours avant l'évènement, tu sera convié pour nous aider à monter les scènes, stands d'accueil, d'animation, de restauration, barnums.. Le démontage : les jours qui suivent ",
    "frequence": "2 jours Prochaines dates 19 nov. 20 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7080,8 +7203,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "2 heures Prochaines dates 30 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7100,8 +7225,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "2 heures Prochaines dates 11 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7140,8 +7267,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "2 heures Prochaines dates 1 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7200,8 +7329,10 @@
    ],
    "extrait": "L’objectif de la mission est de contribuer aux actions de sensibilisation mises en place à destination du public. Il s’agit de faire connaître notre action, de partager des bonnes pratiques et de répondre aux éventuelles questions relatives à notre activité.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7656,8 +7787,10 @@
    ],
    "extrait": "La Vaisselle des Chefs est une grande vente écoresponsable de vaisselle provenant de prestigieux restaurants parisiens. Assiettes, verres, couverts, argenterie, vasques à champagne, nappes… Autant de trésors parfois conservés depuis plusieurs générations dans des réserves ou greniers, auxquels nous offrons une seconde vie lors d’une vente ouverte au public, répartie sur 10 à 12 stands. Pourquoi no",
    "frequence": "2 jours",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "marketing produit"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7735,8 +7868,10 @@
    ],
    "extrait": "L'objectif et est de nous aider à proposer des activités pertinentes pour les séniors de l'association (bénévoles et stagiaires) : café social, jeux, animations, activités artistiques...",
    "frequence": "1 jour par mois Du lundi au vendredi",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -7933,8 +8068,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8307,8 +8444,10 @@
    ],
    "extrait": "La Maison de Quartier La Touche organise son Week-end créatif les 21 et 22 novembre 2026. À cette occasion, nous recherchons des bénévoles pour nous donner un coup de main et contribuer au bon déroulement de cet événement convivial, dédié à la création et à l'artisanat. Les bénévoles participeront à différentes missions selon les besoins et leurs envies : Coup de main logistique : aider à l'instal",
    "frequence": "Une demi-journée Prochaines dates 20 nov. 21 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8385,8 +8524,10 @@
    ],
    "extrait": "Tu as envie d'être utile, de rencontrer du monde et de faire bouger ton territoire ? Nous recherchons de nouveaux bénévoles pour renforcer notre équipe et promouvoir l'engagement bénévole dans le département.",
    "frequence": "2 jours par mois Ni jours, ni horaires obligatoires, interventions à définir ave",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8424,8 +8565,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "1 jour Prochaines dates 9 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8481,8 +8624,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "1 jour Prochaines dates 13 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8500,8 +8645,10 @@
    ],
    "extrait": "Travailler en équipe à la valorisation du papier récupéré auprès d'entreprises et d'administrations",
    "frequence": "Une demi-journée par semaine Les bénévoles sont libres de leurs horaires. En gén",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8519,8 +8666,10 @@
    ],
    "extrait": "Collecter du papier usagé auprès d'entreprises et d'administrations.",
    "frequence": "Une demi-journée par semaine Les collectes s'organisent en matinée, et s'effectu",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8557,8 +8706,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8595,8 +8746,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8653,8 +8806,10 @@
    ],
    "extrait": "On cherche une personne qui est spécialisé ou qui connait le domaine du logement social afin d'organiser une conférence en juin",
    "frequence": "2 heures",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8693,8 +8848,10 @@
    ],
    "extrait": "Les boutiques solidaires, \"La Boutique\" sont ouvertes à toutes et à tous ! Elles proposent un espace d'accueil et d'écoute, un lieu convivial et bien sûr de nombreux articles de seconde main. En tant que bénévoles, vos missions sont : ➔ Accueillir les publics (clients, donateurs, personnes accompagnées) et présenter la boutique ➔ Veiller au bon réapprovisionnement des portants ➔ Recevoir les perso",
    "frequence": "Une demi-journée par semaine Les mercredis aprèq-midi de 14h à 18h. D'autres cré",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "marketing produit"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8793,8 +8950,10 @@
    ],
    "extrait": "1. L'objectif de la mission Le Répondeur est le festival imaginé par Multi’Pass pour mettre en lumière les talents de la banlieue, célébrer la créativité et valoriser l'engagement des jeunes entrepreneurs. À travers une programmation artistique, des rencontres et un village engagé dédié aux jeunes porteurs de projets et entrepreneurs, nous souhaitons créer un événement culturel fédérateur, accessi",
    "frequence": "Une demi-journée par semaine À déterminer avec le.la bénévole",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9093,8 +9252,10 @@
    ],
    "extrait": "Soyez le Fermeur VTT des Courses Rejoignez l’équipe sur le secteur d'Amboise à Chaumont-sur-Loire, puis de Chaumont-sur-Loire jusqu'à Blois pour accompagner la fin de la course en VTT. Votre mission sera essentielle pour sécuriser le parcours, accompagner les derniers participants et contribuer à une clôture sereine et conviviale de l’événement.",
    "frequence": "1 jour Prochaines dates 20 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9153,8 +9314,10 @@
    ],
    "extrait": "À l'approche des fêtes de fin d'année, l'association Prévention Routière se mobilise dans le cadre de sa campagne nationale « Bien Rentrer » pour sensibiliser le public aux risques liés à la consommation d'alcool au volant. Nous recherchons des personnes motivées, dynamiques et bienveillantes pour animer des ateliers interactifs de sensibilisation, à l'occasion du marché de Noël du Puy-en-Velay, e",
    "frequence": "Une demi-journée Prochaines dates 16 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9172,8 +9335,10 @@
    ],
    "extrait": "Votre action a pour objectif de permettre à ces personnes de renouer, dans un cadre bienveillant, avec la pratique du sport.Il pourra vous être demandé de respecter un certain protocole sanitaire pour la réalisation de la mission.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9192,8 +9357,10 @@
    ],
    "extrait": "Participez à une collecte solidaire de produits d'hygiène au profit des femmes en situation de précarité accompagnées par l'association Toutes à l'Abri. L'objectif est simple : sensibiliser les client·es d'un supermarché aux besoins en produits d'hygiène (gel douche, shampoing, déodorant, brosses à dents, couches pour bébé, etc.) et les inviter à acheter un ou plusieurs produits qui seront ensuite",
    "frequence": "2 heures",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9310,8 +9477,10 @@
    ],
    "extrait": "L’association Prévention Routière recherche des bénévoles pour sa campagne de sensibilisation Bien Rentrer qui invite les Français à anticiper les retours de soirée au moment des fêtes de fin d'année. Nous allons sensibiliser sur ce sujet lors de l'événement de fin d'année Parc Neige & Glace d'Albertville. Votre rôle à nos côtés : Dans ce cadre, votre mission sera d'animer des ateliers ludiques dé",
    "frequence": "Une demi-journée Prochaines dates 22 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9330,8 +9499,11 @@
    ],
    "extrait": "Participe au montage à l'installation d'un décor de spectacle à l'occasion de la dernière journée du Matrimoine de la Maison des femmes d'Iparralde ! Le 28 novembre 2026, se tient la dernière journée du Matrimoine - des journées qui permettent de mettre en lumière les créations et l'héritage transmis par les femmes dans la société. A cette occasion, un spectacle théâtrale aura lieu dans la journée",
    "frequence": "Une demi-journée Prochaines dates 27 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé",
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9505,8 +9677,10 @@
    ],
    "extrait": "Participer comme bénévole au Leu Tempo Festival , c’est prendre part à une belle aventure collective et contribuer à faire vivre un événement culturel majeur à Saint-Leu. Aux côtés de l’équipe du Séchoir, les bénévoles contribuent à l’accueil et au bon déroulement du festival. Selon les besoins et les envies de chacun, les missions sont variées : accueil et orientation des publics, information des",
    "frequence": "4 jours Prochaines dates 4 mai 5 mai 6 mai ...",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9585,8 +9759,10 @@
    ],
    "extrait": "Le Gala des Mécènes d'Alsace est une soirée solidaire organisée pour mobiliser entreprises et mécènes autour de projets en faveur des personnes en situation de handicap et de leurs familles . Cette année, les fonds collectés contribueront notamment à soutenir des actions favorisant l' autodétermination , pour permettre à chacun de faire ses choix et d'être acteur de sa vie. Pour faire de cette soi",
    "frequence": "1 jour Prochaines dates 18 nov.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9684,8 +9860,10 @@
    ],
    "extrait": "Je rejoins l'équipe de bénévoles du CIAM pour ses spectacles de Noël",
    "frequence": "Plus de 5 jours Prochaines dates 2 déc. 3 déc. 4 déc. ...",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9703,8 +9881,10 @@
    ],
    "extrait": "Samedi 5 Décembre matin, le bar associatif vendra des boissons et des gâteaux. Tous les bénéfices seront reversés au Téléthon. La mission est simple, cuisiner quelques petits gâteaux, à déposer la vieille ou le matin de 9h à 10h à la MJC !",
    "frequence": "1 heure Prochaines dates 3 déc. 4 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9920,8 +10100,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu près d'Auxerre  qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le même jeu s",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -9979,8 +10161,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu près de La Roche sur yon   ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10018,8 +10202,10 @@
    ],
    "extrait": "VOTRE RÔLE AU SEIN DE NOTRE ASSOCIATION LOCALE Enjeux : à quoi allez-vous contribuer ? Artisans du Monde est un acteur pionnier du commerce équitable avec trois grands moyens d'action : vente, éducation et plaidoyer. Nos boutiques « pas comme les autres » vendent des produits artisanaux et alimentaires qui permettent à des producteurs et productrices de vivre dignement de leur travail. La tenue ri",
    "frequence": "Mission permanente À partager avec au moins un ou une autre bénévole Sautez le p",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "marketing produit"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10038,8 +10224,10 @@
    ],
    "extrait": "CONTEXTE DE NOTRE ASSOCIATION LOCALE Notre association locale a réussi à lancer une belle dynamique bénévole et commerciale depuis 3 ans. Il s'agit de confirmer cette dynamique en répartissant les temps d'engagement sur une équipe renforcée (doublement du nombre de bénévoles dédié à cette mission). Notre boutique est le cœur battant de notre association. VOS MISSIONS Accueillir les clients Répondr",
    "frequence": "Une demi-journée par semaine Nous vous proposons de réaliser une permanence par ",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "marketing produit"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10058,8 +10246,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu à Orléans ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le même jeu sans",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10078,8 +10268,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un jeune autiste dans le cocon d’une salle de jeu à Limoges   ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le même jeu san",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10098,8 +10290,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu à SAINT ETIENNE  ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le même j",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10118,8 +10312,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu à  ROUEN OU PROCHE ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le même",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10138,8 +10334,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu proche Elbeuf-Rouen ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le mêm",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10158,8 +10356,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu à Bobigny (93 )   ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le même ",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE ou le Week End ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10275,8 +10475,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu à Nantes ou proche    ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le m",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10295,8 +10497,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à Saumur ou  dans le 49   ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10335,8 +10539,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située proche Rennes  ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le m",
    "frequence": "2 jours par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10374,8 +10580,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à Cannes ou région Grasse  ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivan",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10394,8 +10602,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à Aix en Provence  ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec ",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10414,8 +10624,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à  Bordeaux ou proche ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, av",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10434,8 +10646,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à METZ ou proche THIONVILLE ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suiva",
    "frequence": "1 heure par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10454,8 +10668,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à LILLE ou PROCHE  ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec ",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10493,8 +10709,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à VERSAILLES ou au VESINET ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivan",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10513,8 +10731,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à Bobigny (93 ) ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain’ en le suivant, avec le ",
    "frequence": "2 heures par semaine Le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10533,8 +10753,10 @@
    ],
    "extrait": "L’objectif est par le jeu individuel  de contribuer à éveiller un enfant autiste dans le cocon d’une salle de jeu située à CERGY , à PONTOISE  ou à MONTMORENCY , ce qui permet  de relayer 1h30 par semaine ses parents et de l'apaiser par votre présence régulière. L'approche Lud'Eveil 3i est simple et à la portée de tous : il suffit d’aimer jouer comme un enfant : vous jouez comme lui tel un 'copain",
    "frequence": "2 heures par semaine TOUTE LA SEMAINE dont le week end ENTRE 9h et 18 h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10593,8 +10815,10 @@
    ],
    "extrait": "Le samedi 12 décembre 2026 à Paris, l’association Prévention Routière organise la 5ème édition de sa course solidaire pour sensibiliser à l’importance de la visibilité et de la vision pour tous les usagers de la route, au moment du passage à l’heure d’hiver. Un évènement à la croisée du sport, de la prévention et de la convivialité ! Nous recherchons des bénévoles enthousiastes pour contribuer au ",
    "frequence": "1 jour Prochaines dates 11 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10712,8 +10936,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10832,8 +11058,10 @@
    ],
    "extrait": "Azur Oxalis recherche des bénévoles retraité(e)s pour apporter sourires, créativité et bonne humeur à des seniors en résidences autonomie ou en EHPAD sur Nice ! Vous êtes à la retraite, vous aimez les travaux manuels, créer de vos mains, trouver des petites astuces et partager de bons moments ? Vous avez un peu de temps, des idées toutes simples et surtout l'envie de faire plaisir ?",
    "frequence": "2 heures par semaine Les après-midi du lundi au vendredi à votre rythme - Nous v",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10851,8 +11079,10 @@
    ],
    "extrait": "En amont du festival / événement, tu seras en charge d'installer les infrastructures du festival / de l'évènement, en coordination avec l'équipe logistique. Nous aurons besoin de toi sur différents postes: Le montage : quelques jours avant l'évènement, tu sera convié pour nous aider à monter les scènes, stands d'accueil, d'animation, de restauration, barnums.. Le démontage : les jours qui suivent ",
    "frequence": "Une demi-journée",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10871,8 +11101,10 @@
    ],
    "extrait": "La mission Etre le photographe officiel de l'évènement. Objectif :  s'amuser à prendre de belles photos pour raconter l'évènement en photos. Évènement : marché de créateurs, Tropikal Market, le week-end du 28 & 29 novembre 2026 au 7 rue Bailly, Paris 3e (Métro 3-11 Arts &Métiers) Les tâches à réaliser Photos de l'évènement Couvrir les temps forts Prendre des photos des visiteurs, des réactions, ém",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10930,8 +11162,10 @@
    ],
    "extrait": "Votre rôle sera, au sein de l’équipe coordinatrice, de contribuer à l’organisation d’un événement sportif, de sa conception jusqu’au jour J.",
    "frequence": "Une demi-journée",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10950,8 +11184,10 @@
    ],
    "extrait": "Votre rôle sera, au sein de l’équipe coordinatrice, de contribuer à l’organisation d’un événement sportif, de sa conception jusqu’au jour J.",
    "frequence": "Une demi-journée",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11048,8 +11284,10 @@
    ],
    "extrait": "La Coiffure du Cœur organise des maraudes de coiffure pour les plus démunies ou sans-abri. L’objectif de cette mission est d’assurer le bon déroulement de nos salons de rue le soir en ville, 2 heures par mois en veillant à la sécurité de l'équipe et des bénéficiaires, en maintenant un cadre serein et structuré, et en créant du lien social à travers l'échange et l'écoute.",
    "frequence": "2 heures par mois de 19h à 21h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11088,8 +11326,10 @@
    ],
    "extrait": "La Coiffure du Cœur organise des maraudes de coiffure pour les plus démunies ou sans-abri. L’objectif de cette mission est d’assurer le bon déroulement de nos salons de rue le soir en ville, 2 heures par mois en veillant à la sécurité de l'équipe et des bénéficiaires, en maintenant un cadre serein et structuré, et en créant du lien social à travers l'échange et l'écoute.",
    "frequence": "2 heures par mois de 18h30 à 20h30",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11108,8 +11348,10 @@
    ],
    "extrait": "La Coiffure du Cœur organise des maraudes de coiffure pour les plus démunies ou sans-abri. L’objectif de cette mission est d’assurer le bon déroulement de nos salons de rue le soir en ville, 2 heures par mois en veillant à la sécurité de l'équipe et des bénéficiaires, en maintenant un cadre serein et structuré, et en créant du lien social à travers l'échange et l'écoute.",
    "frequence": "2 heures par mois de 19h à 21h",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11148,8 +11390,10 @@
    ],
    "extrait": "La Coiffure du Cœur organise des maraudes de coiffure pour les plus démunies ou sans-abri. L’objectif de cette mission est d’assurer le bon déroulement de nos salons de rue le soir en ville, 2 heures par mois en veillant à la sécurité de l'équipe et des bénéficiaires, en maintenant un cadre serein et structuré, et en créant du lien social à travers l'échange et l'écoute.",
    "frequence": "2 heures par mois en général de 19h30 à 21h30",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11206,8 +11450,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11384,8 +11630,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "1 jour Prochaines dates 23 janv.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11422,8 +11670,10 @@
    ],
    "extrait": "L’association Prévention Routière recherche des bénévoles pour sa campagne de sensibilisation Bien Rentrer qui invite les Français à anticiper les retours de soirée au moment des fêtes de fin d'année. Votre rôle à nos côtés : Dans ce cadre, votre mission sera d'animer des ateliers ludiques dédiés à la thématique de l'alcool et ses conséquences sur la conduite : un atelier sur la simulation d'alcoo",
    "frequence": "Une demi-journée Prochaines dates 10 déc.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11599,8 +11849,10 @@
    ],
    "extrait": "L'association TOMBÉE DU NID recherche des bénévoles pour aider les familles ayant des enfants en situation de handicap. Cela consiste à consacrer du temps pour :  jouer, lire, aider... dans le quotidien de ces enfants.",
    "frequence": "Une demi-journée par mois à définir",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11618,8 +11870,10 @@
    ],
    "extrait": "h'up entrepreneurs est une association loi 1901 dont la mission est de favoriser l'inclusion des personnes en situation de handicap ou fragilisées par la santé, grâce à l'entrepreneuriat. Nous sommes à la recherche de mentors bénévoles pour partager votre expérience et votre expertise auprès d'entrepreneurs en situation de handicap ou fragilisés par la santé, au moment clé où leur projet prend for",
    "frequence": "Une demi-journée par mois selon vos disponibilités (dans la journée, le soir, en",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11658,8 +11912,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "Une demi-journée Prochaines dates 8 janv.",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11836,8 +12092,10 @@
    ],
    "extrait": "Je participe à un stand de marché de Noël au profit d'une association",
    "frequence": "Une demi-journée Prochaines dates 3 déc. 3 déc. 3 déc. ...",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "santé"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -11916,8 +12174,10 @@
    ],
    "extrait": "Votre rôle sera de contribuer au bon déroulé d’un événement sportif en apportant une aide ponctuelle le jour J.",
    "frequence": "1 jour",
-   "themes": [],
-   "pratique": false,
+   "themes": [
+    "événementiel"
+   ],
+   "pratique": true,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""

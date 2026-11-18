@@ -64,18 +64,31 @@ THEMES = {
             r"|linkedin|tiktok|newsletter|e-?mailing|\bseo\b|contenus?|graphis\w*|infographi\w*|identit[ée] visuelle|canva"
             r"|vid[ée]os?|communication|faire conna[iî]tre|promotion|promouvoir|visibilit", re.IGNORECASE),
         "fort": re.compile(
-            r"marketing|r[ée]seaux sociaux|community manag\w*|wordpress|newsletter|\bseo\b|cr[ée]ation de contenus?"
+            r"marketing digital|r[ée]seaux sociaux|community manag\w*|wordpress|newsletter|\bseo\b|cr[ée]ation de contenus?"
             r"|strat[ée]gie de communication|plan de communication|communication digitale|site internet", re.IGNORECASE)},
+    "marketing produit": {
+        "titre": re.compile(
+            r"marketing|chef de produit|lancement|[ée]tudes? de march[ée]|positionnement|image de marque|\bmarque\b|packaging"
+            r"|commercialis\w*|boutique|vente solidaire|business plan|mod[èe]le [ée]conomique|offre de services", re.IGNORECASE),
+        "fort": re.compile(
+            r"strat[ée]gie marketing|plan marketing|[ée]tudes? de march[ée]|lancement d.un (produit|nouveau)|image de marque"
+            r"|business plan|positionnement", re.IGNORECASE)},
     "intelligence artificielle": {
         "titre": re.compile(r"intelligence artificielle|\bIA\b|\bchatgpt\b|IA g[ée]n[ée]rative"),
         "fort": re.compile(r"intelligence artificielle|IA g[ée]n[ée]rative|\bchatgpt\b", re.IGNORECASE)},
-    # En lien avec mon parcours : santé mentale (PSSM), animaux et vétérinaire (SOS Cheval), santé, biologie
-    "mon profil santé": {
+    # La santé au sens large : mentale, animale et vétérinaire, féminine, prévention, maladies, biologie…
+    "santé": {
         "titre": re.compile(
             r"sant[ée]|psych\w*|bipol\w*|d[ée]pression|[ée]coute|addict\w*|suicid\w*|animaux|animal|chevaux|cheval|\b[ée]quin"
-            r"|v[ée]t[ée]rinaire|refuge|faune|patients?|malad\w*|cancer|h[ôo]pital|hospitalis\w*|biolog\w*"
-            r"|m[ée]dical|pr[ée]vention sant|d[ée]pistage|don du sang|sciences de la vie", re.IGNORECASE),
-        "fort": re.compile(r"sant[ée] mentale|v[ée]t[ée]rinaire|premiers secours en sant[ée] mentale", re.IGNORECASE)},
+            r"|v[ée]t[ée]rinaire|refuge|faune|patients?|malad\w*|cancer|h[ôo]pital|hospitalis\w*|biolog\w*|handicap\w*"
+            r"|m[ée]dical|pr[ée]vention|d[ée]pistage|don du sang|sciences de la vie|femmes?|p[ée]rinat\w*|maternit\w*"
+            r"|endom[ée]triose|nutrition|alimentation|bien-[êe]tre|seniors?|aidants?|alzheimer|autisme|diab[èe]te", re.IGNORECASE),
+        "fort": re.compile(r"sant[ée] mentale|v[ée]t[ée]rinaire|premiers secours|sant[ée] des femmes|pr[ée]vention sant[ée]", re.IGNORECASE)},
+    "événementiel": {
+        "titre": re.compile(
+            r"[ée]v[ée]nement\w*|festival|salon|forum|f[êe]te|gala|concert|soir[ée]e|spectacle|course|marathon|tournoi"
+            r"|journ[ée]e (de|du|des|mondiale|nationale)|semaine (de|du|des)|exposition|colloque|conf[ée]rence|t[ée]l[ée]thon", re.IGNORECASE),
+        "fort": re.compile(r"[ée]v[ée]nementiel|organisation (d.un|de l.|des?) [ée]v[ée]nements?|festival", re.IGNORECASE)},
 }
 # Missions réservées aux soignants diplômés : pas pour moi
 SOIGNANT = re.compile(r"m[ée]decin|infirmi|permanences? m[ée]dicales|kin[ée]|dentiste|psychologue", re.IGNORECASE)
@@ -128,14 +141,16 @@ def lire_mission(ident, url):
 
 
 def themes_de(m):
-    # L'activité « Communication » est trop large (accueil, collecte, ventes…) : pour le marketing
-    # digital et l'IA on ne lit que le titre ; pour mon profil santé, les activités Écoute / Aide
-    # psychologique, Soins aux animaux et Médical comptent aussi.
-    sante_act = [a for a in m["activites"] if re.search(r"psycholog|animaux|m[ée]dical", a, re.I)]
-    court = {"mon profil santé": " ".join([m["titre"]] + sante_act)}
-    th = [nom for nom, rx in THEMES.items() if rx["titre"].search(court.get(nom, m["titre"])) or rx["fort"].search(m["texte"])]
+    # Le titre d'abord ; pour la santé, les activités du soin (écoute, animaux, médical) comptent aussi ;
+    # la description complète n'est lue qu'avec les mots-clés « forts », plus précis.
+    # Le domaine « Santé pour tous » du site range aussi la mission dans la santé.
+    sante_act = [a for a in m["activites"] if re.search(r"psycholog|animaux|m[ée]dical|sant", a, re.I)]
+    court = {"santé": " ".join([m["titre"]] + sante_act)}
+    th = [nom for nom, rx in THEMES.items() if rx["titre"].search(court.get(nom, m["titre"])) or rx["fort"].search(m.get("texte") or "")]
+    if "Santé" in (m.get("domaine") or "") and "santé" not in th:
+        th.append("santé")
     if SOIGNANT.search(m["titre"]):
-        th = [x for x in th if x != "mon profil santé"]
+        th = [x for x in th if x != "santé"]
     return th
 
 
@@ -171,6 +186,11 @@ def main():
 
     # Missions déjà connues : on ne garde que celles encore en ligne (le format d'avant est abandonné)
     missions = {m["id"]: m for m in ancien.get("missions", []) if "texte" in m and int(m["id"]) in plan}
+
+    # Les thèmes sont recalculés chaque jour : une règle modifiée s'applique aussi aux missions déjà lues
+    for m in missions.values():
+        m["themes"] = themes_de(m)
+        m["pratique"] = bool(m["themes"])
 
     a_lire = [i for i in sorted(plan, reverse=True) if str(i) not in lues][:MAX_PAGES]
     print(f"À lire aujourd'hui : {len(a_lire)} nouvelles missions (les plus récentes d'abord)")

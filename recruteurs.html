@@ -26,6 +26,7 @@
   <h2>Les dernières offres <small id="nb-offres"></small></h2>
   <div class="liste" id="liste-offres"></div>
   <p class="note" style="margin-top:10px">Les douze plus récentes de votre sélection. Le reste est dans <code>data/</code> sur le dépôt.</p>
+  <p class="note">Limite : environ une offre sur cinq arrive sans nom d'employeur. France Travail laisse l'employeur rester anonyme ; son nom est pourtant souvent cité dans le texte de l'annonce (exemple : une offre de Product Marketing Manager à Gentilly, publiée par Infopro Digital). J'ai essayé de le retrouver automatiquement dans le texte : trop d'erreurs (des mots comme « Siège social » ou « Active » pris pour des noms d'entreprise). Je préfère donc écrire « non communiqué » qu'un nom faux : pour ces offres, il faut ouvrir l'annonce.</p>
 
   <footer id="pied"></footer>
 </main>
@@ -73,7 +74,7 @@ function rendre(offres, D) {
     const k = niv(o);
     return `<div class="item">
       <div class="titre">${o.url ? `<a href="${o.url}" target="_blank" rel="noopener">${o.intitule}</a>` : o.intitule}</div>
-      <div class="meta"><span>${o.entreprise || "employeur non précisé"}</span><span>·</span><span>${o.lieu || "lieu non précisé"}</span>
+      <div class="meta"><span>${o.entreprise || "employeur non communiqué à France Travail (voir l'annonce)"}</span><span>·</span><span>${o.lieu || "lieu non précisé"}</span>
         <span>·</span><span>${libContratOffre(o)}</span>
         ${salaireCourt(o) ? `<span>·</span><span class="sal">${salaireCourt(o)}</span>` : ""}
         <span class="etiq" style="background:${COUL_NIV[k]}${ENCRE_FONCEE.has(k) ? ";color:#1d1d1f" : ""}">${libNiv(k)}</span>

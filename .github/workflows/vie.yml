@@ -1,0 +1,43 @@
+# La veille VIE : chaque matin, GitHub ouvre le site public des offres V.I.E de Business France
+# dans un navigateur automatique (scripts/vie.py), lit les offres et enregistre data/vie/ par un commit.
+# Pas d'identifiant à fournir : la page de recherche est publique (robots.txt l'autorise).
+name: veille-vie
+
+on:
+  schedule:
+    - cron: "30 5 * * *"      # 5 h 30 UTC, une demi-heure après la veille France Travail
+  workflow_dispatch:          # le bouton « Run workflow » pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commit-data          # jamais deux commits de données en même temps
+  cancel-in-progress: false
+
+jobs:
+  vie:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer le navigateur automatique
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Lire les offres VIE
+        run: python scripts/vie.py
+
+      - name: Enregistrer la donnée du jour (commit + push)
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "actions@github.com"
+          git add data/vie
+          git commit -m "veille VIE : offres du $(date -u +%Y-%m-%d)" || { echo "rien de nouveau"; exit 0; }
+          git pull --rebase origin main
+          git push

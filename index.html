@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=6">
+<link rel="stylesheet" href="assets/commun.css?v=7">
 </head>
 <body>
 <main>
@@ -62,30 +62,16 @@
   </div>
 
 
-  <!-- ============ 0 quater. MA VEILLE VIE (relevé du 18/11/2026) ============ -->
-  <h2>Ma veille VIE <small>— le volontariat international, relevé du 18/11/2026</small></h2>
-  <div class="phrase">Sur le site officiel des VIE, la recherche « marketing » donne <b>92 offres</b>, dont <b>16 dans la santé</b> (pharma, nutrition, cosmétique, vétérinaire) ; la recherche « pharma » en donne <b>18</b>. Les grands laboratoires français (Sanofi, Servier, Ipsen) y recrutent des profils marketing et digital juniors : c'est une vraie porte d'entrée pour moi.</div>
+  <!-- ============ 0 quater. MA VEILLE VIE (mise à jour chaque matin par scripts/vie.py) ============ -->
+  <h2>Ma veille VIE <small id="vie-date">— le volontariat international</small></h2>
+  <div class="phrase" id="vie-phrase">Chargement de la veille VIE…</div>
   <div class="carte large defile" style="margin-top:12px">
-    <table class="confronte vie">
-      <thead><tr><th>Mission</th><th>Entreprise</th><th>Pays</th><th>Durée</th><th>Secteur</th></tr></thead>
-      <tbody>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/248354" target="_blank" rel="noopener">Junior Omnichannel Project Manager</a></td><td>Servier International</td><td>Belgique - Bruxelles</td><td>12 mois</td><td><span>laboratoire pharmaceutique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/248266" target="_blank" rel="noopener">Omnichannel Strategy Analyst</a></td><td>Servier International</td><td>Argentine - Buenos Aires</td><td>12 mois</td><td><span>laboratoire pharmaceutique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/248160" target="_blank" rel="noopener">Commercial Project Specialist - Insulins &amp; Established Products</a></td><td>Sanofi Winthrop Industrie</td><td>Allemagne - Berlin</td><td>24 mois</td><td><span>laboratoire pharmaceutique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/247847" target="_blank" rel="noopener">Oncology Business Insights Manager</a></td><td>Ipsen Pharma</td><td>États-Unis - Cambridge (MA)</td><td>18 mois</td><td><span>laboratoire pharmaceutique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/247531" target="_blank" rel="noopener">Digital Project Manager</a></td><td>Ipsen Pharma</td><td>Pays-Bas - Hoofddorp</td><td>18 mois</td><td><span>laboratoire pharmaceutique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/247818" target="_blank" rel="noopener">Spécialiste engagement digital</a></td><td>Astrazeneca</td><td>Belgique - Groot-Bijgaarden</td><td>12 mois</td><td><span>laboratoire pharmaceutique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/247849" target="_blank" rel="noopener">Marketing Associate E-commerce and Shopper</a></td><td>Biocodex</td><td>Canada - Montréal</td><td>24 mois</td><td><span>laboratoire pharmaceutique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/247706" target="_blank" rel="noopener">Assistant Project Manager Pharma</a></td><td>Cvo-Europe (Efor)</td><td>Belgique - Braine-l&#x27;Alleud</td><td>24 mois</td><td><span>conseil en santé</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/245485" target="_blank" rel="noopener">Marketing Expert</a></td><td>Laboratoires Arkopharma</td><td>Allemagne - Munich</td><td>12 mois</td><td><span>nutrition-santé</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/247930" target="_blank" rel="noopener">Représentant des ventes itinérant (pharmacie &amp; cosmétique)</a></td><td>Vitry Frères</td><td>Allemagne - Berlin</td><td>24 mois</td><td><span>cosmétique</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/247270" target="_blank" rel="noopener">Business Development Manager</a></td><td>Biodevas Laboratoires</td><td>Turquie - Istanbul</td><td>24 mois</td><td><span>nutrition-santé animale</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/237862" target="_blank" rel="noopener">Business Development &amp; Distribution - secteur vétérinaire équin</a></td><td>Lim France</td><td>Pologne - Varsovie</td><td>24 mois</td><td><span>vétérinaire</span></td></tr>
-        <tr><td><a href="https://mon-vie-via.businessfrance.fr/offres/237861" target="_blank" rel="noopener">Business Development &amp; Distribution - secteur vétérinaire équin</a></td><td>Lim France</td><td>Italie - Turin</td><td>24 mois</td><td><span>vétérinaire</span></td></tr>
-      </tbody>
-    </table>
+    <h3>Missions santé dans le marketing, le digital ou le commercial</h3>
+    <table class="confronte vie" id="vie-marketing"></table>
   </div>
-  <p class="note">Méthode et limites : Business France ne publie pas d'API ouverte. J'ai lu la page publique de recherche dans un navigateur (son fichier robots.txt l'autorise), le 18/11/2026, pour les mots « marketing » et « pharma » ; 15 des 18 offres « pharma » ont pu être affichées. Ce relevé est ponctuel, pas automatique : il est enregistré dans <code>data/vie/releve_2026-11-18.json</code>. La sélection ci-dessus garde les missions marketing, digitales ou commerciales dans la santé ; les postes de scientifique, d'ingénieur ou de finance sont écartés.</p>
+  <details class="carte large" style="margin-top:12px"><summary id="vie-autres-titre">Les autres missions VIE dans la santé</summary>
+    <div class="defile"><table class="confronte vie" id="vie-autres"></table></div></details>
+  <p class="note">Méthode et limites : Business France ne publie pas d'API ouverte, et les offres ne sont pas dans le code de la page (elles s'affichent par JavaScript). Chaque matin, une Action GitHub lance <code>scripts/vie.py</code> : un navigateur automatique (Chromium, piloté par Playwright) ouvre la page publique de recherche — que le fichier robots.txt du site autorise —, tape quatre recherches (« marketing », « pharma », « santé », « chef de produit »), clique sur « Voir plus d'offres » jusqu'au bout et lit chaque carte. Une offre est classée « santé » par mots-clés sur l'entreprise, l'intitulé et le début de l'annonce : le classement peut se tromper. Données : <code>data/vie/vie.json</code> (offres du jour) et <code>data/vie/serie.csv</code> (l'historique jour par jour).</p>
 
   <!-- ============ 1. FILTRES (posés par commun.js) ============ -->
   <h2>Explorer en détail <small>— carte, graphiques et pages suivantes selon les filtres</small></h2>
@@ -294,6 +280,30 @@ document.querySelectorAll("[data-fond]").forEach(b => b.addEventListener("click"
 }));
 
 Commun.demarrer(rendre);
+
+// ---- Ma veille VIE : lit data/vie/vie.json (écrit chaque matin par scripts/vie.py) ----
+(async () => {
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+  const phrase = document.getElementById("vie-phrase");
+  try {
+    const r = await fetch("data/vie/vie.json?" + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    const jour = new Date(d.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
+    document.getElementById("vie-date").textContent = `— le volontariat international, relevé automatique du ${jour}`;
+    const rech = d.recherches.map(b => `« ${esc(b.recherche)} » : <b>${b.annoncees ?? b.lues}</b>`).join(" · ");
+    phrase.innerHTML = `Sur le site officiel des VIE, ${rech} offres. Une fois dédoublonnées, <b>${d.nb_offres} offres</b>, dont <b>${d.nb_sante} dans la santé</b> et <b>${d.nb_sante_marketing} en santé et marketing</b> : les grands laboratoires y recrutent des profils marketing et digital juniors, une vraie porte d'entrée pour moi.`;
+    const tete = `<thead><tr><th>Mission</th><th>Entreprise</th><th>Pays</th><th>Durée</th><th>Trouvée par</th></tr></thead>`;
+    const ligne = o => `<tr><td><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a></td><td>${esc(o.entreprise)}</td><td>${esc(o.lieu)}</td><td>${esc(o.duree)}</td><td>${o.recherches.map(m => `<span>${esc(m)}</span>`).join(" ")}</td></tr>`;
+    const sante = d.offres.filter(o => o.sante);
+    const mk = sante.filter(o => o.marketing), autres = sante.filter(o => !o.marketing);
+    document.getElementById("vie-marketing").innerHTML = tete + "<tbody>" + mk.map(ligne).join("") + "</tbody>";
+    document.getElementById("vie-autres").innerHTML = tete + "<tbody>" + autres.map(ligne).join("") + "</tbody>";
+    document.getElementById("vie-autres-titre").textContent = `Les ${autres.length} autres missions VIE dans la santé (recherche, ingénierie, finance, qualité…)`;
+  } catch (e) {
+    phrase.textContent = "La veille VIE n'a pas encore de données (data/vie/vie.json absent).";
+  }
+})();
 </script>
 </body>
 </html>

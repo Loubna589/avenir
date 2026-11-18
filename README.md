@@ -160,3 +160,16 @@ copy .env.example .env        (puis remplir avec ses identifiants francetravail.
   (GitHub) : jamais dans un fichier versionné.
 - Un canal, une requête, une date : chaque chiffre du site les affiche.
 - Pas de scraping de LinkedIn, APEC ou Indeed (interdit par leurs CGU).
+
+## La veille VIE (volontariat international en entreprise)
+
+Business France ne publie pas d'API ouverte pour les offres V.I.E, et la page de recherche
+les affiche par JavaScript. `scripts/vie.py` ouvre donc cette page publique dans un navigateur
+automatique (Playwright + Chromium), lance quatre recherches (« marketing », « pharma », « santé »,
+« chef de produit »), déplie toutes les offres et lit chaque carte. Il repère les offres « santé »
+et « marketing » par mots-clés et écrit `data/vie/vie.json` (offres du jour) et `data/vie/serie.csv`
+(historique). L'Action `.github/workflows/vie.yml` le relance chaque matin à 5 h 30 UTC ;
+l'accueil du site lit `vie.json` (section « Ma veille VIE »).
+
+Lancer à la main : `pip install playwright`, `python -m playwright install chromium`, puis
+`python scripts/vie.py`.

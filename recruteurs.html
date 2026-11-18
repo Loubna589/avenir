@@ -23,15 +23,17 @@
       <p class="note">Une offre est comptée ici si elle est en alternance, ou si l'annonce indique « débutant accepté ». Ce sont les premiers noms à qui écrire quand on sort de formation — en gardant en tête que certains de ces publieurs sont des écoles ou des agences qui recrutent pour le compte d'autres entreprises.</p></div>
   </div>
 
-  <h2>Les dernières offres <small id="nb-offres"></small></h2>
+  <h2>Toutes les offres de ma sélection <small id="nb-offres"></small></h2>
   <div class="liste" id="liste-offres"></div>
-  <p class="note" style="margin-top:10px">Les douze plus récentes de votre sélection. Le reste est dans <code>data/</code> sur le dépôt.</p>
+  <div class="fiche-actions"><button class="bouton secondaire" id="plus-offres" hidden></button></div>
+  <p class="note" style="margin-top:10px">Toutes les offres actives le jour de la collecte, les plus récentes d'abord ; elles suivent vos filtres. Une offre disparaît de cette liste dès que France Travail la retire (pourvue ou expirée) ; son historique reste dans <code>data/brut/</code> sur le dépôt.</p>
   <p class="note">Limite : environ une offre sur cinq arrive sans nom d'employeur. France Travail laisse l'employeur rester anonyme ; son nom est pourtant souvent cité dans le texte de l'annonce (exemple : une offre de Product Marketing Manager à Gentilly, publiée par Infopro Digital). J'ai essayé de le retrouver automatiquement dans le texte : trop d'erreurs (des mots comme « Siège social » ou « Active » pris pour des noms d'entreprise). Je préfère donc écrire « non communiqué » qu'un nom faux : pour ces offres, il faut ouvrir l'annonce.</p>
 
   <footer id="pied"></footer>
 </main>
 
 <script src="assets/commun.js?v=7"></script>
+<script src="assets/profil.js?v=3"></script>
 <script>
 /* ============ Qui recrute ============ */
 function rendre(offres, D) {
@@ -67,10 +69,9 @@ function rendre(offres, D) {
   document.getElementById("sous-juniors").textContent =
     `— ${juniors.length} offres de votre sélection sont ouvertes à quelqu'un sans expérience ; ${ouvertes.length} nomment leur employeur, voici ceux qui en publient le plus`;
 
-  /* ---- Dernières offres ---- */
-  const recentes = [...offres].sort((a, b) => (b.date || "").localeCompare(a.date || "")).slice(0, 12);
-  document.getElementById("nb-offres").textContent = n ? `— les 12 plus récentes sur ${n}` : "";
-  document.getElementById("liste-offres").innerHTML = recentes.length ? recentes.map(o => {
+  /* ---- Toutes les offres de la sélection, par paquets de 30 ---- */
+  const toutes = [...offres].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  const carte = o => {
     const k = niv(o);
     return `<div class="item">
       <div class="titre">${o.url ? `<a href="${o.url}" target="_blank" rel="noopener">${o.intitule}</a>` : o.intitule}</div>
@@ -78,9 +79,30 @@ function rendre(offres, D) {
         <span>·</span><span>${libContratOffre(o)}</span>
         ${salaireCourt(o) ? `<span>·</span><span class="sal">${salaireCourt(o)}</span>` : ""}
         <span class="etiq" style="background:${COUL_NIV[k]}${ENCRE_FONCEE.has(k) ? ";color:#1d1d1f" : ""}">${libNiv(k)}</span>
-        <span>·</span><span>publiée le ${dateFr(o.date)}</span></div>
+        <span>·</span><span>publiée le ${dateFr(o.date)}</span>
+        <button class="bouton petit" data-fiche="${o.id}" style="margin-left:auto">Plus d'infos</button></div>
     </div>`;
-  }).join("") : `<p class="note">Aucune offre dans cette sélection.</p>`;
+  };
+  const liste = document.getElementById("liste-offres"), bouton = document.getElementById("plus-offres");
+  let montrees = 0;
+  const montrer = combien => {
+    const paquet = toutes.slice(montrees, montrees + combien);
+    liste.insertAdjacentHTML("beforeend", paquet.map(carte).join(""));
+    montrees += paquet.length;
+    const reste = toutes.length - montrees;
+    bouton.hidden = reste <= 0;
+    bouton.textContent = `Afficher les ${Math.min(30, reste)} suivantes (${reste} restantes)`;
+    document.getElementById("nb-offres").textContent = n ? `— ${montrees} affichées sur ${n}, les plus récentes d'abord` : "";
+  };
+  liste.innerHTML = toutes.length ? "" : `<p class="note">Aucune offre dans cette sélection.</p>`;
+  montrer(30);
+  bouton.onclick = () => montrer(30);
+  const parId = Object.fromEntries(toutes.map(o => [String(o.id), o]));
+  liste.onclick = e => {
+    const b = e.target.closest("[data-fiche]"); if (!b) return;
+    const o = parId[b.dataset.fiche];
+    Profil.ouvrir({...o, contratLib: libContratOffre(o), entreprise: o.entreprise || "employeur non communiqué"});
+  };
 }
 
 Commun.demarrer(rendre);

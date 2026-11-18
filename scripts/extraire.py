@@ -40,7 +40,7 @@ load_dotenv(RACINE / ".env")
 METIERS = {
     # Mon métier : cheffe de produit pharmaceutique
     "M1703": ("Chef(fe) de produit", "Mon métier", True),
-    "PHARMA": ("Chef(fe) de produit pharma-santé (tous codes + mots-clés)", "Mon métier", True),
+    "PHARMA": ("Mon métier : marketing santé (produit, médical, accès au marché, digital, commercial)", "Mon métier", True),
     # Cœur marketing
     "M1718": ("Chargé(e) de marketing digital", "Marketing", False),
     "M1716": ("Directeur(trice) marketing digital", "Marketing", False),

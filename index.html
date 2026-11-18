@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=10">
+<link rel="stylesheet" href="assets/commun.css?v=11">
 </head>
 <body>
 <main>
@@ -93,7 +93,7 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=7"></script>
+<script src="assets/commun.js?v=8"></script>
 <script src="assets/profil.js?v=3"></script>
 <script>
 /* ============ Accueil : mes six questions, puis chiffres, carte, départements, contrats ============ */
@@ -123,14 +123,14 @@ function rendreQuestions(D) {
   const nP = P.length, nM = M.length;
   const petit = nP < 30 ? ` <b>Petit échantillon</b> : lire les nombres plutôt que les pourcentages.` : "";
   document.getElementById("perimetre").innerHTML =
-    `<b>Mon métier</b> = les offres de chef(fe) de produit (ou de gamme, de marque, de marché) dans la pharma et la santé, repérées dans tous les codes suivis et par ${Object.values(D.mots_cles || {}).flat().length || "des"} recherches par mots-clés : intitulé, code d'activité de l'employeur (NAF) ou description qui désigne un laboratoire, un médicament, un dispositif médical, la biotech… ` +
+    `<b>Mon métier</b> = le marketing de la santé au sens large : les offres dont l'intitulé désigne une de mes fonctions (marketing et chef de produit, affaires médicales, accès au marché, digital, commercial — supply chain, qualité, production, R&D, finance, achats, RH et réglementaire écartés) dans la pharma et la santé, repérées dans tous les codes suivis et par ${Object.values(D.mots_cles || {}).flat().length || "des"} recherches par mots-clés : intitulé, code d'activité de l'employeur (NAF) ou description qui désigne un laboratoire, un médicament, un dispositif médical, la biotech… ` +
     `<b>M1703</b> = le code ROME « Chef de produit », tous secteurs : il sert de point de comparaison.${petit}`;
 
   const cartes = [];
   /* 1. Combien */
   const parCode = compter(P, o => o.rome === "PHARMA" ? "mots-clés seulement" : o.rome === "M1703" ? "code M1703" : "autres codes marketing");
   cartes.push(["1. Combien d'offres en France ?", `${nP} offres`,
-    `de cheffe de produit pharma-santé actives le ${dateFr(D.date)}. Trouvées par : ${enListe(parCode)}.`,
+    `de marketing santé actives le ${dateFr(D.date)}. Trouvées par : ${enListe(parCode)}.`,
     `M1703, tous secteurs : ${nM} offres, dont ${part(M.filter(o => o.pharma).length, nM)} dans la pharma-santé.`, "mouvement.html"]);
   /* 2. Où */
   const ligne = L => TERRITOIRES.map(([lib, f]) => [lib, L.filter(f).length]);

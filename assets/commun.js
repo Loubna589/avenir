@@ -233,6 +233,7 @@ const PAGES = [
   ["recruteurs.html", "Qui recrute"],
   ["mouvement.html", "Le marché bouge"],
   ["vie.html", "Veille VIE"],
+  ["benevolat.html", "Bénévolat"],
   ["index.html#position", "Ma position"],
 ];
 // Chemins relatifs partout : le site vit dans un sous-dossier (/metier/) sur GitHub Pages.

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bénévolat — cheffe de produit pharmaceutique</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/commun.css?v=11">
+</head>
+<body>
+<main>
+  <div id="nav-ici"></div>
+  <h1>Bénévolat — mettre mes compétences en pratique</h1>
+  <p class="sous" id="sous">Chargement de la veille bénévolat…</p>
+
+  <div class="phrase">Pourquoi le bénévolat ? Une mission en communication, en réseaux sociaux, en recherche de partenaires ou en prévention santé me permet de mettre en pratique le marketing opérationnel et digital, et de le montrer en entretien : un vrai projet, un vrai résultat.</div>
+
+  <h2>Missions disponibles par activité <small>— sur JeVeuxAider.gouv.fr, ce jour-là</small></h2>
+  <div class="chiffres" id="tuiles"></div>
+
+  <h2>Les missions <small id="compte"></small></h2>
+  <div class="carte large">
+    <div class="vie-filtres">
+      <label><input type="checkbox" id="f-pratique" checked> en lien avec ma formation</label>
+      <select id="f-activite"><option value="">Toutes les activités</option></select>
+      <input type="search" id="f-texte" placeholder="Chercher : ville, association, mot…">
+    </div>
+  </div>
+  <div class="liste" id="liste" style="margin-top:12px"></div>
+
+  <h2>Le bénévolat bouge <small>— missions disponibles par activité, jour après jour</small></h2>
+  <div class="carte large"><div class="zone"><canvas id="g-serie"></canvas></div><p class="note" id="note-serie"></p></div>
+
+  <h2>Méthode et limites</h2>
+  <p class="note">JeVeuxAider.gouv.fr n'a pas d'API ouverte : l'API Engagement (beta.gouv), qui diffuse ses missions, demande une clé accordée aux partenaires sur demande. Son fichier robots.txt interdit aux robots la recherche complète (les adresses avec « ? ») et demande 10 secondes entre deux pages ; il autorise les pages par activité. Chaque matin, une Action GitHub (<code>.github/workflows/benevolat.yml</code>) lance <code>scripts/benevolat.py</code> : un navigateur automatique ouvre huit pages d'activité (communication, informatique, gestion de projets, recherche de partenariats, événementiel, sensibilisation, médical, collecte de fonds), une toutes les 10 secondes, relève le nombre de missions disponibles et lit les missions que chaque page met en avant. Limite : une page n'en montre que six, souvent proches du lieu de la connexion ; la liste s'enrichit donc jour après jour (une mission reste affichée 30 jours après sa dernière apparition). Une mission est dite « en lien avec ma formation » par mots-clés (communication, réseaux sociaux, site internet, partenariats, prévention santé…). Données : <code>data/benevolat/benevolat.json</code> et <code>data/benevolat/serie.csv</code>.</p>
+  <footer>Veille bénévolat — M2 MOD, IAE Clermont Auvergne. Données : jeveuxaider.gouv.fr (pages publiques), relevées automatiquement.</footer>
+</main>
+<script src="assets/commun.js?v=8"></script>
+<script src="assets/profil.js?v=3"></script>
+<script>
+const esc = Profil.esc;
+document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map(([url, lib]) =>
+  `<a href="${url}"${url === "benevolat.html" ? ' class="ici" aria-current="page"' : ""}>${lib}</a>`).join("") + `</nav>`;
+let B, missions = [];
+
+function afficher() {
+  const pr = document.getElementById("f-pratique").checked, a = document.getElementById("f-activite").value;
+  const q = document.getElementById("f-texte").value.trim().toLowerCase();
+  const liste = missions.filter(m => (!pr || m.pratique) && (!a || m.activites.includes(a)) &&
+    (!q || [m.titre, m.organisation, m.ville].join(" ").toLowerCase().includes(q)));
+  document.getElementById("compte").textContent = `— ${liste.length} sur ${missions.length} relevées (30 derniers jours)`;
+  document.getElementById("liste").innerHTML = liste.length ? liste.map(m => `
+    <div class="item"><div class="titre"><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.titre)}</a></div>
+      <div class="meta"><span><b>${esc(m.organisation)}</b></span>${m.ville ? `<span>·</span><span>${esc(m.ville)}</span>` : ""}${m.frequence ? `<span>·</span><span>${esc(m.frequence)}</span>` : ""}
+        ${m.activites.map(x => `<span class="etiq" style="background:#1f5fbf">${esc(x)}</span>`).join("")}${m.pratique ? `<span class="etiq" style="background:#1fa9a4">en lien avec ma formation</span>` : ""}
+        <span class="note" style="margin-left:auto">vue le ${new Date(m.vue_le + "T12:00:00").toLocaleDateString("fr-FR")}</span></div></div>`).join("")
+    : `<p class="note">Aucune mission avec ces filtres.</p>`;
+}
+
+(async () => {
+  try { B = await (await fetch("data/benevolat/benevolat.json?" + Date.now())).json(); }
+  catch (e) { document.getElementById("sous").textContent = "La veille bénévolat n'a pas encore de données."; return; }
+  missions = B.missions;
+  const jour = new Date(B.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
+  document.getElementById("sous").innerHTML = `Relevé automatique du <b>${jour}</b> sur JeVeuxAider.gouv.fr (plateforme publique du bénévolat) · ${B.nb_missions} missions gardées, dont <b>${B.nb_pratique}</b> en lien avec ma formation.`;
+  document.getElementById("tuiles").innerHTML = B.activites.map(b =>
+    `<div class="chiffre"><b>${(b.disponibles ?? 0).toLocaleString("fr-FR")}</b><span>${esc(b.activite)}</span></div>`).join("");
+  const sel = document.getElementById("f-activite");
+  B.activites.forEach(b => sel.add(new Option(b.activite, b.activite)));
+  ["f-pratique", "f-activite"].forEach(id => document.getElementById(id).addEventListener("change", afficher));
+  document.getElementById("f-texte").addEventListener("input", afficher);
+  afficher();
+  try {
+    const lignes = (await (await fetch("data/benevolat/serie.csv?" + Date.now())).text()).trim().split("\n").slice(1).map(l => l.split(","));
+    const jours = [...new Set(lignes.map(l => l[0]))].sort(), acts = [...new Set(lignes.map(l => l[1]))];
+    const couleurs = ["#1f5fbf", "#1fa9a4", "#b7832a", "#c2185b", "#6b55a6", "#2e7d32", "#ef6c00", "#455a64"];
+    new Chart(document.getElementById("g-serie"), {type: "line",
+      data: {labels: jours.map(j => new Date(j + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"short"})),
+        datasets: acts.map((a, i) => ({label: a, borderColor: couleurs[i % 8], backgroundColor: couleurs[i % 8], tension: .25,
+          data: jours.map(j => { const l = lignes.find(x => x[0] === j && x[1] === a); return l ? +l[2] : null; })}))},
+      options: {maintainAspectRatio: false, scales: {y: {beginAtZero: true}}}});
+    document.getElementById("note-serie").textContent = jours.length < 2 ? `La veille a commencé le ${jour} : la courbe se dessinera au fil des jours.` : `${jours.length} jours de collecte.`;
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>

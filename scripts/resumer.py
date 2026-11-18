@@ -29,6 +29,7 @@ import requests
 
 RACINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RACINE / "scripts"))
+from fonctions import fonctions  # marketing, affaires médicales, accès au marché, digital, commercial
 from extraire import METIERS, MOTS_CLES  # noqa: E402  (la liste des métiers vit dans un seul fichier)
 
 # Les outils et compétences que l'on cherche dans les annonces : c'est MA grille, celle d'une
@@ -86,9 +87,11 @@ NAF_SANTE = ("21.", "46.46", "32.50", "72.11")
 
 
 def est_pharma(o):
-    """L'offre relève-t-elle de mon métier : un poste de produit dans la pharma ou la santé ?"""
+    """L'offre relève-t-elle de mon métier : le marketing de la santé au sens large ?
+    Une fonction de ma cible dans l'intitulé (marketing, affaires médicales, accès au marché,
+    digital, commercial : voir scripts/fonctions.py) ET un contexte santé."""
     titre = o.get("intitule") or ""
-    if not RX_ROLE.search(titre) or RX_PAS_ROLE.search(titre):
+    if not fonctions(titre) or RX_PAS_ROLE.search(titre):
         return False
     return bool(RX_SANTE_TITRE.search(titre)
                 or (o.get("codeNAF") or "").startswith(NAF_SANTE)
@@ -394,6 +397,7 @@ def main():
             "outils": [nom for nom, rx in REGEX_OUTILS.items() if rx.search(t)],
             "teletravail": teletravail(texte),
             "pharma": est_pharma(o),
+            "fonctions": fonctions(o.get("intitule") or "") if est_pharma(o) else [],
             "intermediaire": intermediaire(o),
             "competences": [c.get("libelle") for c in o.get("competences") or [] if c.get("libelle")],
             "niveau": niveau(o.get("intitule")),

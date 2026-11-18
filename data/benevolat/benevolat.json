@@ -1,0 +1,652 @@
+{
+ "date": "2026-11-18",
+ "source": "https://www.jeveuxaider.gouv.fr/activites/… (pages publiques, lues par navigateur automatique)",
+ "activites": [
+  {
+   "activite": "Communication",
+   "cle": "communication",
+   "disponibles": 1729,
+   "lues": 6
+  },
+  {
+   "activite": "Informatique et numérique",
+   "cle": "informatique",
+   "disponibles": 814,
+   "lues": 6
+  },
+  {
+   "activite": "Gestion de projets",
+   "cle": "gestion-de-projets",
+   "disponibles": 1464,
+   "lues": 6
+  },
+  {
+   "activite": "Recherche de partenariats",
+   "cle": "recherche-de-partenariats",
+   "disponibles": 777,
+   "lues": 6
+  },
+  {
+   "activite": "Événementiel",
+   "cle": "evenementiel",
+   "disponibles": 1511,
+   "lues": 6
+  },
+  {
+   "activite": "Actions de sensibilisation",
+   "cle": "actions-de-sensibilisation",
+   "disponibles": 2679,
+   "lues": 6
+  },
+  {
+   "activite": "Médical",
+   "cle": "medical",
+   "disponibles": 210,
+   "lues": 6
+  },
+  {
+   "activite": "Collecte de fonds",
+   "cle": "collecte-de-fonds",
+   "disponibles": 431,
+   "lues": 6
+  }
+ ],
+ "nb_missions": 42,
+ "nb_pratique": 13,
+ "missions": [
+  {
+   "id": "110711",
+   "titre": "Je fais connaître une association d'accompagnement des personnes bipolaires",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/110711/benevolat-bipol-co-france-2",
+   "activites": [
+    "Communication"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "Plus de 5 jours par mois",
+   "organisation": "BIPOL'& Co France",
+   "pratique": true
+  },
+  {
+   "id": "96138",
+   "titre": "J’accompagne des projets de communication",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/96138/benevolat-france-benevolat-clermont-20",
+   "activites": [
+    "Communication",
+    "Événementiel"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures par semaine",
+   "organisation": "France Bénévolat Clermont",
+   "pratique": true
+  },
+  {
+   "id": "120895",
+   "titre": "Je réalise des tournages pour une association geek à Clermont-Ferrand",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/120895/benevolat-aesir-11",
+   "activites": [
+    "Communication",
+    "Événementiel"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures",
+   "organisation": "AESIR",
+   "pratique": true
+  },
+  {
+   "id": "108386",
+   "titre": "J'anime le site internet régional de CCFD Terre Solidaire",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/108386/benevolat-ccfd-terre-solidaire-auvergne-limousin-45",
+   "activites": [
+    "Communication"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures par semaine",
+   "organisation": "CCFD-Terre Solidaire Auvergne-Limousin",
+   "pratique": true
+  },
+  {
+   "id": "109441",
+   "titre": "J’accompagne des projets de communication",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/109441/benevolat-la-base-clermont-4",
+   "activites": [
+    "Communication"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "Plus de 5 jours par mois",
+   "organisation": "OUVERTE DÈS 16 ANS",
+   "pratique": true
+  },
+  {
+   "id": "109015",
+   "titre": "Je donne un coup de pouce pour trouver des financements",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/109015/benevolat-la-base-clermont-1",
+   "activites": [
+    "Recherche de partenariats",
+    "Collecte de fonds"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "1 jour par mois",
+   "organisation": "LA BASE CLERMONT",
+   "pratique": true
+  },
+  {
+   "id": "55838",
+   "titre": "Je suis référent.e partenariat établissement scolaire et supérieur",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/55838/benevolat-ccfd-terre-solidaire-auvergne-limousin-21",
+   "activites": [
+    "Recherche de partenariats"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand, Riom, Issoire",
+   "frequence": "1 jour par mois",
+   "organisation": "CCFD-Terre Solidaire Auvergne-Limousin",
+   "pratique": true
+  },
+  {
+   "id": "49562",
+   "titre": "Je deviens Co-référent d'Antenne - Clermont-Ferrand (63000)",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/49562/benevolat-fondation-claude-pompidou-28",
+   "activites": [
+    "Recherche de partenariats"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "1 jour par semaine",
+   "organisation": "Fondation Claude Pompidou",
+   "pratique": true
+  },
+  {
+   "id": "96739",
+   "titre": "J'aide à trouver des subventions et partenariats pour une banque alimentaire",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/96739/benevolat-banque-alimentaire-auvergne-134",
+   "activites": [
+    "Recherche de partenariats",
+    "Collecte de fonds"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Banque Alimentaire Auvergne",
+   "pratique": true
+  },
+  {
+   "id": "115113",
+   "titre": "Je recherche des partenaires financiers pour soutenir un club de rugby",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/115113/benevolat-club-amical-sportif-gerzatois",
+   "activites": [
+    "Recherche de partenariats",
+    "Collecte de fonds"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Gerzat",
+   "frequence": "2 heures par semaine",
+   "organisation": "Club Amical Sportif Gerzatois",
+   "pratique": true
+  },
+  {
+   "id": "118112",
+   "titre": "Je sensibilise le public au dépistage du cancer du poumon sur des stands du CNMR",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/118112/benevolat-comite-national-contre-les-maladies-respiratoires-2",
+   "activites": [
+    "Médical"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "",
+   "frequence": "2 jours par semaine",
+   "organisation": "Comité National contre les Maladies Respiratoires",
+   "pratique": true
+  },
+  {
+   "id": "117372",
+   "titre": "Je soutiens des résidents dans leur parcours de santé",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/117372/benevolat-habitat-et-humanisme-rhone-48",
+   "activites": [
+    "Médical"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Aide aux démarches administratives",
+   "frequence": "2 heures par semaine",
+   "organisation": "Habitat et Humanisme Rhône",
+   "pratique": true
+  },
+  {
+   "id": "107146",
+   "titre": "J'organise des événements de collecte de fonds contre le cancer à Lezoux",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/107146/benevolat-ligue-contre-le-cancer-comite-du-puy-de-dome-8",
+   "activites": [
+    "Collecte de fonds"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Lezoux",
+   "frequence": "2 heures",
+   "organisation": "Ligue Contre le Cancer - Comité du Puy de Dôme",
+   "pratique": true
+  },
+  {
+   "id": "116594",
+   "titre": "Je contribue à faire vivre la musique classique en Auvergne",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/116594/benevolat-orchestre-symphonique-des-domes-1",
+   "activites": [
+    "Communication"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Accueil / Information",
+   "frequence": "Une demi-journée par mois",
+   "organisation": "Orchestre Symphonique des dômes",
+   "pratique": false
+  },
+  {
+   "id": "101724",
+   "titre": "Je favorise l’appropriation des technologies (appareils, applications, outils, etc.), et la compréhension des enjeux et usages du numérique",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/101724/benevolat-france-benevolat-clermont-30",
+   "activites": [
+    "Informatique et numérique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "",
+   "frequence": "",
+   "organisation": "",
+   "pratique": false
+  },
+  {
+   "id": "21323",
+   "titre": "J'anime des ateliers informatiques au Centre Pénitentiaire de Riom",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/21323/benevolat-association-clip-104",
+   "activites": [
+    "Informatique et numérique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Informatique",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Association CLIP",
+   "pratique": false
+  },
+  {
+   "id": "103449",
+   "titre": "J'accompagne des jeunes dans la découverte du numérique et de la programmation",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/103449/benevolat-les-petits-debrouillards-aura-auvergne-rhone-alpes-4",
+   "activites": [
+    "Informatique et numérique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Informatique",
+   "frequence": "Une demi-journée par mois",
+   "organisation": "Les Petits Débrouillards AuRA - Auvergne-Rhône-Alpes",
+   "pratique": false
+  },
+  {
+   "id": "106421",
+   "titre": "J'accompagne des personnes dans leur apprentissage du numérique",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/106421/benevolat-regie-de-territoire-des-deux-rives-4",
+   "activites": [
+    "Informatique et numérique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Informatique",
+   "frequence": "2 heures par semaine",
+   "organisation": "Régie de territoire des deux rives",
+   "pratique": false
+  },
+  {
+   "id": "12299",
+   "titre": "J'anime des ateliers informatiques au Centre de Détention de Roanne (Rhône-Alpes Auvergne)",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/12299/benevolat-association-clip-56",
+   "activites": [
+    "Informatique et numérique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Informatique",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Association CLIP",
+   "pratique": false
+  },
+  {
+   "id": "109487",
+   "titre": "Je favorise l’appropriation des technologies (appareils, applications, outils, etc.), et la compréhension des enjeux et usages du numérique",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/109487/benevolat-viltais-48",
+   "activites": [
+    "Informatique et numérique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "",
+   "frequence": "",
+   "organisation": "",
+   "pratique": false
+  },
+  {
+   "id": "117102",
+   "titre": "Je rejoins le Programme Jeunes d’Oxfam France !",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/117102/benevolat-oxfam-france-132",
+   "activites": [
+    "Gestion de projets"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures par semaine",
+   "organisation": "Oxfam France",
+   "pratique": false
+  },
+  {
+   "id": "55829",
+   "titre": "Je développe des actions culturelles sur le thème de la solidarité internationale",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/55829/benevolat-ccfd-terre-solidaire-auvergne-limousin-18",
+   "activites": [
+    "Gestion de projets"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand, Riom, Issoire",
+   "frequence": "2 heures par semaine",
+   "organisation": "CCFD-Terre Solidaire Auvergne-Limousin",
+   "pratique": false
+  },
+  {
+   "id": "39891",
+   "titre": "Je deviens Animateur/trice Scout Bénévole",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/39891/benevolat-scouts-et-guides-de-france-auvergne-1",
+   "activites": [
+    "Gestion de projets"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Animation / Loisirs",
+   "frequence": "2 jours par mois",
+   "organisation": "Scouts et Guides de France Auvergne",
+   "pratique": false
+  },
+  {
+   "id": "43278",
+   "titre": "Je m'engage comme bénévole au sein de l'équipe de France Bénévolat Clermont 63 et oriente des candidats vers des associations",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/43278/benevolat-france-benevolat-clermont-4",
+   "activites": [
+    "Gestion de projets"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "",
+   "frequence": "",
+   "organisation": "",
+   "pratique": false
+  },
+  {
+   "id": "106865",
+   "titre": "Je gère la trésorerie et les finances des Restos du Cœur du Puy-de-Dôme",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/106865/benevolat-restos-du-coeur-du-puy-de-dome-5",
+   "activites": [
+    "Gestion de projets"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Gestion financière / comptabilité",
+   "frequence": "2 jours par semaine",
+   "organisation": "Restos du Coeur du Puy-de-Dôme",
+   "pratique": false
+  },
+  {
+   "id": "117462",
+   "titre": "J'anime des activités scoutes et j'accompagne des enfants dans leur progression",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/117462/benevolat-scouts-et-guides-de-france-auvergne-7",
+   "activites": [
+    "Gestion de projets"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Animation / Loisirs",
+   "frequence": "3 jours par mois",
+   "organisation": "Scouts et Guides de France Auvergne",
+   "pratique": false
+  },
+  {
+   "id": "58630",
+   "titre": "Je développe l’accueil de personnes en grande précarité au sein d’entreprises à Clermont-Ferrand",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/58630/benevolat-bureaux-du-coeur-11",
+   "activites": [
+    "Recherche de partenariats"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Lutte contre l'isolement",
+   "frequence": "1 heure par semaine",
+   "organisation": "Bureaux du Cœur",
+   "pratique": false
+  },
+  {
+   "id": "109016",
+   "titre": "Je participe à la programmation d'événements sur la justice sociale et l'écologie",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/109016/benevolat-la-base-clermont-2",
+   "activites": [
+    "Événementiel",
+    "Actions de sensibilisation"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures par semaine",
+   "organisation": "LA BASE CLERMONT",
+   "pratique": false
+  },
+  {
+   "id": "106436",
+   "titre": "J'organise des événements jeux de société à Clermont-Ferrand",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/106436/benevolat-aesir-10",
+   "activites": [
+    "Événementiel"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures par semaine",
+   "organisation": "AESIR",
+   "pratique": false
+  },
+  {
+   "id": "106357",
+   "titre": "J'organise des sorties avec une communauté de passionnés à Clermont-Ferrand",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/106357/benevolat-aesir-9",
+   "activites": [
+    "Événementiel"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures par semaine",
+   "organisation": "AESIR",
+   "pratique": false
+  },
+  {
+   "id": "84790",
+   "titre": "J'organise des animations jeux vidéo à Clermont-Ferrand !",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/84790/benevolat-aesir-6",
+   "activites": [
+    "Événementiel"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "2 heures par semaine",
+   "organisation": "AESIR",
+   "pratique": false
+  },
+  {
+   "id": "39276",
+   "titre": "Je m'engage comme accompagnant élève de l'activité soutient scolaire à Clermont-Ferrand",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/39276/benevolat-secours-catholique-cantal-puy-de-dome-8",
+   "activites": [
+    "Actions de sensibilisation"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Soutien scolaire et formation",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Secours catholique - Cantal Puy-de-Dôme",
+   "pratique": false
+  },
+  {
+   "id": "118278",
+   "titre": "J'organise et j'anime des ateliers pour sensibiliser les jeunes aux impacts de l’intelligence artificielle !",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/118278/benevolat-latitudes-330",
+   "activites": [
+    "Actions de sensibilisation"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Latitudes",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Latitudes",
+   "pratique": false
+  },
+  {
+   "id": "115370",
+   "titre": "J’organise et j'anime des ateliers de sensibilisation au numérique pour les ados",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/115370/benevolat-latitudes-260",
+   "activites": [
+    "Actions de sensibilisation"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Latitudes",
+   "pratique": false
+  },
+  {
+   "id": "117911",
+   "titre": "Je deviens Référent Départemental du Puy-de-Dôme",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/117911/benevolat-mouvement-marianne-249",
+   "activites": [
+    "Actions de sensibilisation"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Gouvernance",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Mouvement Marianne",
+   "pratique": false
+  },
+  {
+   "id": "116018",
+   "titre": "Je participe à des ateliers de soutien scolaire auprès de personnes détenues",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/116018/benevolat-rebond-reseau-detudiantes-benevoles-organisees-nationalement-en-detention-5",
+   "activites": [
+    "Actions de sensibilisation"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Soutien scolaire et formation",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "REBOND - Réseau d’Étudiant·e·s Bénévoles Organisé·e·s Nationalement en Détention",
+   "pratique": false
+  },
+  {
+   "id": "119816",
+   "titre": "J'assure des permanences médicales pour des personnes en situation de précarité",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/119816/benevolat-solidarite-sante-63",
+   "activites": [
+    "Médical"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand",
+   "frequence": "Une demi-journée par mois",
+   "organisation": "Solidarité Santé 63",
+   "pratique": false
+  },
+  {
+   "id": "75064",
+   "titre": "Je deviens secouriste bénévole au sein de la Protection Civile du Cantal",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/75064/benevolat-protection-civile-du-cantal",
+   "activites": [
+    "Médical"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Secourisme et sécurité civile",
+   "frequence": "1 jour par mois",
+   "organisation": "Protection Civile du Cantal",
+   "pratique": false
+  },
+  {
+   "id": "119343",
+   "titre": "Je souhaite participer à la cellule d'écoute \"Espace Vie en Rose\"",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/119343/benevolat-rose-des-sabres-2",
+   "activites": [
+    "Médical"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Écoute / Aide psychologique",
+   "frequence": "Une demi-journée par mois",
+   "organisation": "Rose des Sabres",
+   "pratique": false
+  },
+  {
+   "id": "116581",
+   "titre": "Je suis médecin bénévole auprès de personnes exilées",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/116581/benevolat-le-comede-comite-pour-la-sante-des-exiles-9",
+   "activites": [
+    "Médical"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Saint-Étienne",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "LE COMEDE COMITE POUR LA SANTE DES EXILES",
+   "pratique": false
+  },
+  {
+   "id": "102310",
+   "titre": "J'organise des événements de collecte de fond pour l'antenne de Riom au profit de la Ligue contre le cancer",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/102310/benevolat-ligue-contre-le-cancer-comite-du-puy-de-dome-6",
+   "activites": [
+    "Collecte de fonds"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Riom",
+   "frequence": "1 jour par mois",
+   "organisation": "Ligue Contre le Cancer - Comité du Puy de Dôme",
+   "pratique": false
+  },
+  {
+   "id": "79141",
+   "titre": "Je m’engage en tant que comptable bénévole",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/79141/benevolat-rires-en-musiques-france-26",
+   "activites": [
+    "Collecte de fonds"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Gestion financière / comptabilité",
+   "frequence": "2 jours",
+   "organisation": "Rires en Musiques France",
+   "pratique": false
+  }
+ ]
+}

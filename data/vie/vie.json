@@ -30,6 +30,7 @@
  "nb_offres": 147,
  "nb_sante": 35,
  "nb_sante_marketing": 15,
+ "nb_fonctions": 62,
  "offres": [
   {
    "id": "247818",
@@ -41,10 +42,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247818",
    "extrait": "AstraZeneca (AZ) is a global, science-led, patient-focused pharmaceutical company that focuses on the discovery, development, and commercialization of prescription medicines for some of the world’s most serious diseases. As we evolve our digital transformation forward, changing the way we interact w",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247849",
@@ -56,10 +60,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247849",
    "extrait": "Act with purpose. Innovate with care. At Biocodex, we believe we can be global without being impersonal, demanding without being rigid, and innovative without losing sight of care. As a human-sized pharmaceutical company, we operate with high standards, a strong team mindset, and a clear...",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "marketing",
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247270",
@@ -71,42 +79,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247270",
    "extrait": "Acteur engagé dans la nutrition-santé animale durable, nous développons et commercialisons une gamme complète de solutions naturelles pour diminuer l'utilisation d'antibiotiques en élevage et améliorer la performance des animaux. Convaincu que la performance zootechnique et le bien-être animal sont ",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing",
     "santé"
-   ]
-  },
-  {
-   "id": "243256",
-   "entreprise": "CEVA SANTE ANIMALE",
-   "intitule": "Project Manager, Engineering (H/F)",
-   "lieu": "ETATS-UNIS - VERONA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/243256",
-   "extrait": "The Project Manager, Engineering is responsible for leading capital and operational projects including facility construction and renovation, equipment installation, and manufacturing process optimization. This role is accountable for managing scope, schedule, budget, and risk while ensuring projects",
-   "sante": true,
-   "marketing": true,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "247706",
-   "entreprise": "CVO-EUROPE",
-   "intitule": "Assistant Project Manager Pharma h-f (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247706",
-   "extrait": "VIE - GESTION DE PROJET PHARMA H-F Fondé en 2013, Efor a su en 10 ans se positionner comme l'acteur européen de référence du conseil spécialisé en Life Sciences. Avec plus de 2000 collaborateurs répartis au sein de 19 agences en France, en Belgique, en...",
-   "sante": true,
-   "marketing": true,
-   "recherches": [
-    "pharma",
-    "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248308",
@@ -118,10 +98,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248308",
    "extrait": "Vous souhaitez développer des partenariats qui font progresser l’accès aux traitements innovants ? Rejoignez ElixirTrials à Chicago et contribuez à construire un réseau de recherche clinique au plus près des patients. ElixirTrials est une Public Benefit Company américaine qui conjugue innovation et ",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247847",
@@ -133,11 +116,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247847",
    "extrait": "Mission Description The V.I.E will join the US Oncology Business Unit and support the Business Insights team in generating meaningful insights to guide strategic decision-making. The role will involve analyzing market trends, customer insights, business performance data and competitive intelligence,",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing",
     "pharma"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247531",
@@ -149,10 +135,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247531",
    "extrait": "Your mission As a Digital Project Manager for the BeNeLux region, you will lead digital projects across Belgium and the Netherlands, from initial scoping through to launch and user adoption. You will translate business needs into practical digital solutions while ensuring compliance with quality, pr",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "pharma"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "245485",
@@ -164,10 +153,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/245485",
    "extrait": "As a VIE Marketing Specialist, you will play a key role in supporting the launch and development of Arkopharma brands in Germany. Working closely with Product Managers and cross-functional teams, you will: - Develop and implement brand and marketing initiatives - Monitor market trends and...",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "237862",
@@ -179,10 +171,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/237862",
    "extrait": "VIE – Business Development & Distribution Network Coordinator – Equine Veterinary Sector (Poland) Location: Poland Duration: 12–24 months Start date: To be defined Program: VIE – International Corporate Volunteering ________________________________________ Company Description We are a leading and fa",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "237861",
@@ -194,192 +189,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/237861",
    "extrait": "VIE – Business Development & Distribution Network Coordinator – Equine Veterinary Sector (Italy) Location: Italy Duration: 12–24 months Start date: To be defined Program: VIE – International Corporate Volunteering ________________________________________ Company Description We are a leading and fast",
    "sante": true,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "248160",
-   "entreprise": "SANOFI WINTHROP INDUSTRIE",
-   "intitule": "Commercial Project Specialist - Insulins & Established Products Franchise (H/F)",
-   "lieu": "ALLEMAGNE - BERLIN",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248160",
-   "extrait": "About the job As Commercial Project Specialist - Insulins & Established Products Franchise VIE within our Commercial management team, you’ll will play an active role in supporting the franchise’s strategic priorities and driving business excellence across a diverse pharmaceutical portfolio. Working ",
-   "sante": true,
-   "marketing": true,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "248354",
-   "entreprise": "SERVIER INTERNATIONAL",
-   "intitule": "Junior Omnichannel Project Manager (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248354",
-   "extrait": "As a leading French pharmaceutical company, we specialize in prescription medicines. We generate 92% of our sales internationally and have numerous subsidiaries abroad. We are seeking a VIE participant for our subsidiary based in Belgium. WHAT YOU WILL DO • Support the local implementation of...",
-   "sante": true,
-   "marketing": true,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "248266",
-   "entreprise": "SERVIER INTERNATIONAL",
-   "intitule": "OMNICHANNEL STRATEGY ANALYST (H/F)",
-   "lieu": "ARGENTINE - BUENOS AIRES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248266",
-   "extrait": "Leading French independent pharmaceutical Company, specialised in ethical medicinal products. 92% of Servier’s sales are achieved internationally, with several subsidiary companies abroad. We are looking for V.I.E’s, for our subsidiary in ARGENTINA Description of the mission: • Omnichannel Strategy ",
-   "sante": true,
-   "marketing": true,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247930",
-   "entreprise": "VITRY FRERES",
-   "intitule": "Représentant des ventes itinérant (H/F)",
-   "lieu": "ALLEMAGNE - BERLIN",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247930",
-   "extrait": "Rejoignez une entreprise française d'excellence présente depuis plus de 230 ans ! Secteur Pharmacie & Cosmétique Nous recherchons un(e) : Représentant Commercial Itinérant (H/F) Résidence : Allemagne Votre mission : Véritable ambassadeur(drice) de la marque Vitry, vous participez activement au dével",
-   "sante": true,
-   "marketing": true,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "245853",
-   "entreprise": "EFE INTERNATIONAL",
-   "intitule": "Ingénieur logiciel IA, Member of Technical Staff (H/F)",
-   "lieu": "ETATS-UNIS - SAN FRANCISCO -CA-",
-   "type": "VIE",
-   "duree": "18 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245853",
-   "extrait": "A propos de l'entreprise : ClarityCare AI est une start-up basée à San Francisco, fondée en 2024, qui développe des agents d'intelligence artificielle pour les assureurs santé américains. Nos agents lisent, analysent et adjudiquent en temps réel des dossiers cliniques complexes et des tâches adminis",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "248423",
-   "entreprise": "IPSEN PHARMA",
-   "intitule": "Finance Analyst/Controller Neuroscience & Aesthetics (H/F)",
-   "lieu": "ETATS-UNIS - CAMBRIDGE -MA-",
-   "type": "VIE",
-   "duree": "18 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248423",
-   "extrait": "Your Mission As a V.I.E Finance Analyst / Controller, you will join our Neuroscience Finance team in Cambridge. Working closely with Finance teams across the US, France and the UK, you will support financial planning, controlling and business partnering activities, contributing to strategic decision",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "247759",
-   "entreprise": "LABORATOIRES URGO HEALTHCARE",
-   "intitule": "Business Controller (H/F)",
-   "lieu": "ITALIE - BOLOGNE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247759",
-   "extrait": "Agave est une filiale du Groupe Urgo spécialisée dans les dispositifs médicaux à destination des professionnels de santé. Dans un contexte de croissance de l'activité et de transformation de ses outils de gestion, Agave renforce son équipe Finance et recherche un(e) V.I.E Business Controller pour...",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "marketing",
-    "santé"
-   ]
-  },
-  {
-   "id": "244238",
-   "entreprise": "MEDIFF",
-   "intitule": "Chargé de coordination opérationnelle (H/F)",
-   "lieu": "CAMEROUN - YAOUNDE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/244238",
-   "extrait": "CPrésentation de l'entreprise : Distribution de dispositifs de diagnostic in vitro sur 35 pays en Afrique, dont notre filiale Mediff Cameroun. Cette entité de 7 personnes, créée en 2019 et basée à Yaoundé, assure l’importation, la distribution et la réparation de matériel médical auprès des...",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "247066",
-   "entreprise": "MEDSCONNECT TECHNOLOGIES",
-   "intitule": "Lead Developpeur FullStack H/F | HealthTech | Télétravail - Barcelone (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247066",
-   "extrait": "Responsabilités Clés Au sein de l'équipe Dev, ta mission s’axera autour de 3 sujets : Développer des APIs : Concevoir, développer et maintenir des APIs en Nodejs Collaborer étroitement avec l’équipe Front-End : Travailler en tandem avec notre équipe Product/OPS pour créer des solutions web...",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "santé",
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "247062",
-   "entreprise": "MEDSCONNECT TECHNOLOGIES",
-   "intitule": "Head of Operations H/F - HealthTech - Télétravail hybride à Barcelone (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247062",
-   "extrait": "Nous recherchons un(e) Directeur des Opérations / COO Le V.I.E. est prévu pour une durée maximale de 2 ans. Si tout se passe bien durant la mission, celle-ci peut naturellement déboucher sur une poursuite de la collaboration au sein de l'entreprise. Secteur d’activité : Médical...",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "245480",
-   "entreprise": "PRODUCT DEVELOPMENT EMPLOYENEURSHIP",
-   "intitule": "Supply Chain Specialist M/F (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245480",
-   "extrait": "As a Supply Chain Specialist at TMC, you’ll work closely with our partners to enhance supply chain performance, improve visibility, and solve tactical and strategic planning challenges. You’ll be able to bring your expertise into dynamic projects in industries such as high-tech, pharma, energy, tran",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "242951",
-   "entreprise": "QUALIFY LIFE SCIENCES",
-   "intitule": "INGÉNIEUR ASSURANCE QUALITÉ (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/242951",
-   "extrait": "Présentation de la société : QUALIFY Life Sciences (QLS) se distingue en tant que société d'ingénierie et de conseil de premier plan. Nous offrons une expertise spécialisée aux acteurs des industries pharmaceutique, biotechnologique et des dispositifs médicaux, les accompagnant dans le développement",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248272",
@@ -391,10 +207,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248272",
    "extrait": "About the job As Medical Program Management Advisor VIE within our Operations/Governance team you will focus on the optimization of the medical program management organization and related activities within the Franchise for Sanofi under one medical. Join the engine of Sanofi’s mission — where deep..",
    "sante": true,
-   "marketing": false,
+   "fonctions": [
+    "affaires médicales"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248265",
@@ -406,178 +225,85 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248265",
    "extrait": "About the job As Policy and External Affairs Executive VIE within our Public Affairs team, you’ll provide support to policy and related activities surrounding Patient Advocacy groups. Join the team transforming care for people with immune challenges, rare diseases, cancers, and neurological conditio",
    "sante": true,
-   "marketing": false,
+   "fonctions": [
+    "accès au marché"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
-   "id": "248150",
+   "id": "248160",
+   "entreprise": "SANOFI WINTHROP INDUSTRIE",
+   "intitule": "Commercial Project Specialist - Insulins & Established Products Franchise (H/F)",
+   "lieu": "ALLEMAGNE - BERLIN",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248160",
+   "extrait": "About the job As Commercial Project Specialist - Insulins & Established Products Franchise VIE within our Commercial management team, you’ll will play an active role in supporting the franchise’s strategic priorities and driving business excellence across a diverse pharmaceutical portfolio. Working ",
+   "sante": true,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": true
+  },
+  {
+   "id": "248354",
    "entreprise": "SERVIER INTERNATIONAL",
-   "intitule": "PROCUREMENT ANALYST (H/F)",
+   "intitule": "Junior Omnichannel Project Manager (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248354",
+   "extrait": "As a leading French pharmaceutical company, we specialize in prescription medicines. We generate 92% of our sales internationally and have numerous subsidiaries abroad. We are seeking a VIE participant for our subsidiary based in Belgium. WHAT YOU WILL DO • Support the local implementation of...",
+   "sante": true,
+   "fonctions": [
+    "marketing"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": true
+  },
+  {
+   "id": "248266",
+   "entreprise": "SERVIER INTERNATIONAL",
+   "intitule": "OMNICHANNEL STRATEGY ANALYST (H/F)",
    "lieu": "ARGENTINE - BUENOS AIRES",
    "type": "VIE",
    "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248150",
-   "extrait": "Leading French independent pharmaceutical Company, specialised in ethical medicinal products. 92% of Servier’s sales are achieved internationally, with several subsidiary companies abroad. We are looking for V.I.E’s, for our subsidiary in ARGENTINA Description of the mission:  Centralized Managemen",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248266",
+   "extrait": "Leading French independent pharmaceutical Company, specialised in ethical medicinal products. 92% of Servier’s sales are achieved internationally, with several subsidiary companies abroad. We are looking for V.I.E’s, for our subsidiary in ARGENTINA Description of the mission: • Omnichannel Strategy ",
    "sante": true,
-   "marketing": false,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
-   "id": "247284",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Business Excellence Data Analyst (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "id": "247930",
+   "entreprise": "VITRY FRERES",
+   "intitule": "Représentant des ventes itinérant (H/F)",
+   "lieu": "ALLEMAGNE - BERLIN",
    "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247284",
-   "extrait": "External Manufacturing doit renforcer ses capacités en matière de data analytics, pour supporter digitilsation et d’excellence opérationnelle. La mission permettra d’accélérer la mise à disposition d’informations fiables et exploitables, de soutenir l’harmonisation des processus et d’améliorer le pi",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247930",
+   "extrait": "Rejoignez une entreprise française d'excellence présente depuis plus de 230 ans ! Secteur Pharmacie & Cosmétique Nous recherchons un(e) : Représentant Commercial Itinérant (H/F) Résidence : Allemagne Votre mission : Véritable ambassadeur(drice) de la marque Vitry, vous participez activement au dével",
    "sante": true,
-   "marketing": false,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "247051",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Scientist - In Vivo Epilepsy (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247051",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma",
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "247145",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Bioprocess Engineer Junior (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247145",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "247008",
-   "entreprise": "UCB PHARMA",
-   "intitule": "MSAT Lab Associate Scientist (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247008",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma",
-    "santé"
-   ]
-  },
-  {
-   "id": "247005",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Associate Scientist (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247005",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "247001",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Scientific Data Analyst (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247001",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma",
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "247752",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Process Engineer (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247752",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "247709",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Capital Project Performance Analyst (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247709",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "247425",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Scientist: Biochemistry and Biophysics (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247425",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "247688",
-   "entreprise": "9S58",
-   "intitule": "AUDIT/ contrôle de gestion / Financements et modèles économiques (H/F)",
-   "lieu": "COTE D'IVOIRE - ABIDJAN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247688",
-   "extrait": "Contexte de la mission : Winwin Afrique est une entreprise qui fait du sport et de la culture des leviers pour le développement économique et social en Afrique. En Côte d’Ivoire, nous opérons pour le compte du gouvernement, dans le cadre d’un contrat de coopération...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
+    "marketing"
+   ],
+   "marketing": true
   },
   {
    "id": "245738",
@@ -589,55 +315,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/245738",
    "extrait": "Le/La Responsable Marketing Aerospace & Defense définit et déploie les actions marketing pour les activités de distribution, custom packaging et manufacturing de produits chimiques à destination du marché Aerospace & Defense. Il/Elle structure l’approche go to market, produits et services associés, ",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247111",
-   "entreprise": "AFFLUENCES",
-   "intitule": "Customer Success Manager (H/F)",
-   "lieu": "ITALIE - MILAN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247111",
-   "extrait": "Au sein de l’équipe Relation Client, tu auras pour principales missions : 1. Onboarding & gestion de projet Piloter les nouveaux projets clients (déploiement de la solution, installation de capteurs, paramétrage…) Coordonner les équipes internes (tech, produit, sales) Assurer la formation des utilis",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "247751",
-   "entreprise": "AIRBUS",
-   "intitule": "External Communications Advisor (H/F)",
-   "lieu": "AUSTRALIE - BANKSTOWN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247751",
-   "extrait": "Un poste sous contrat VIE External Communications Officer (F/M) est à pourvoir au sein d’Airbus à Bankstown (Australie). Vous rejoindrez l'équipe de communication. Rejoignez l'équipe de communication d'Airbus et représentez nos activités dans la région Pacifique ! Basé(e) à Bankstown, vous jouerez u",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "246909",
-   "entreprise": "AJSTAGE",
-   "intitule": "Talent Acquisition Specialist (H/F)",
-   "lieu": "PORTUGAL - LISBONNE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246909",
-   "extrait": "Dans un marché où les attentes des candidats et les enjeux des entreprises évoluent sans cesse, Eiquem construit une approche du recrutement centrée sur l’humain. Pour accompagner notre croissance et continuer d’offrir un service de qualité à nos clients comme à nos candidats, nous recherchons...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "242147",
@@ -649,10 +333,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/242147",
    "extrait": "BUSINESS MANAGER PAYS-BAS (VIE) – ref JOB-1559 Référence à rappeler: JOB-1559 Poste basé aux Pays-Bas à Rotterdam, durée de 12 mois renouvelable une fois, avant un recrutement long terme. Ce poste n’est ouvert qu’aux candidats : - parlant anglais couramment (niveau C1) - parlant hollandais...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "238307",
@@ -664,146 +351,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/238307",
    "extrait": "BUSINESS MANAGER PAYS-BAS (VIE) – ref JOB-1553 Référence à rappeler: JOB-1553 Poste basé aux Pays-Bas à Rotterdam, durée de 12 mois renouvelable une fois. Ce poste n’est ouvert qu’aux candidats : - parlant anglais couramment (niveau C1) - parlant hollandais (niveau B2 ou C1) QUI...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "245314",
-   "entreprise": "ALLIO FRANCE",
-   "intitule": "Field engineer - Ingénieur terrain (H/F)",
-   "lieu": "PORTUGAL - MARINHA GRANDE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245314",
-   "extrait": "Présentation de la société : Spécialiste de la conception et de la réalisation complète d’outillages dans les secteurs de l'automobile, de l'aéronautique, du ferroviaire ainsi que dans d'autres secteurs industriels, ALLIO GROUP propose à ses clients, comprenant de grands acteurs et des donneurs d'or",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "247861",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247861",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247860",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "ITALIE - ROME",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247860",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247850",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "LUXEMBOURG - LUXEMBOURG",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247850",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247774",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "PORTUGAL - LISBONNE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247774",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247289",
-   "entreprise": "ARGEVILLE S A",
-   "intitule": "Aromaticien (H/F)",
-   "lieu": "THAILANDE - BANGKOK",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247289",
-   "extrait": "VOTRE RÔLE Rejoignez notre Centre Créatif à Bangkok et jouez un rôle clé en tant qu’Aromaticien, soutenant le développement de nos arômes en Asie du Sud-Est—principalement dans la catégorie e-liquide ainsi que boissons / arômes sucrés sur les marchés thaïlandais, vietnamien et indonésien. Dans ce...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "246978",
-   "entreprise": "ATEME",
-   "intitule": "Solutions Engineer (H/F)",
-   "lieu": "ETATS-UNIS - LOS ANGELES -CA-",
-   "type": "VIE",
-   "duree": "18 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246978",
-   "extrait": "About the Company If you have ever watched television or enjoyed a movie on your phone or tablet, this experience was likely brought to you through an Ateme solution created by our award-winning engineering teams. Ateme (PARIS: ATEME) is the global leader in video delivery,...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "246724",
-   "entreprise": "ATEME",
-   "intitule": "Solutions Engineer (H/F)",
-   "lieu": "ETATS-UNIS - DENVER -CO-",
-   "type": "VIE",
-   "duree": "18 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246724",
-   "extrait": "About the Company If you have ever watched television or enjoyed a movie on your phone or tablet, this experience was likely brought to you through an Ateme solution created by our award-winning engineering teams. Ateme (PARIS: ATEME) is the global leader in video delivery,...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247655",
-   "entreprise": "BEIERSDORF S.A.S",
-   "intitule": "ACHETEUR H/F (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247655",
-   "extrait": "Chez Beiersdorf, nous voulons aider les gens à se sentir bien dans leur peau - et notre engagement va bien au-delà des soins de la peau. Depuis 140 ans, nous développons des produits de soins de la peau et du corps innovants pour des marques...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé",
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247012",
@@ -815,70 +369,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247012",
    "extrait": "Présentation de la société : Big Bang est une société d’experts-conseils qui aide les organisations à optimiser et à simplifier les processus par la planification d’une stratégie numérique, par le déploiement de solutions d’affaires et par la réalisation d’harmonisation organisationnelle. Notre obje",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "248032",
-   "entreprise": "BOSTIK SA",
-   "intitule": "Agentic Commerce Automation Specialist (H/F)",
-   "lieu": "PAYS-BAS - OOSTERHOUT",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248032",
-   "extrait": "The Agentic Commerce Automation Specialist will support the transformation of Bostik's digital commerce operations through the deployment of automation, AI-driven workflows, and data-driven decision making across global markets. Key activities include: - Supporting and optimizing commerce operations",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247931",
-   "entreprise": "BOSTIK SA",
-   "intitule": "R&D Chemist - UV-Curable Adhesive Technologies (H/F)",
-   "lieu": "ALLEMAGNE - MAXDORF",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247931",
-   "extrait": "As a VIE R&D Chemist, you will : - Contribute to the development, optimization, and validation of UV-curable adhesive systems and support the continuous improvement of existing products. - Assist in designing, performing, and analyzing laboratory experiments to develop new formulations and evaluate ",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247927",
-   "entreprise": "BOSTIK SA",
-   "intitule": "R&D Chemist - Epoxy Adhesive Technologies (H/F)",
-   "lieu": "ALLEMAGNE - KARLSBAD",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247927",
-   "extrait": "As a VIE R&D Chemist, you will : - Contribute to the development, optimization, and validation of innovative epoxy adhesive systems, with a particular focus on thermally and electrically conductive technologies for demanding industrial applications. You will support the continuous improvement of exi",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247504",
-   "entreprise": "CA CONSUMER FINANCE",
-   "intitule": "PMO & Project Coordination (H/F)",
-   "lieu": "ALLEMAGNE - STUTTGART",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247504",
-   "extrait": "JOB PURPOSE Support the development of our retail Bank in Germany : Crédit Agricole Deutschland, by providing hands-on PMO, cross-functional coordination across the main workstreams. The VIE will help translate governance decisions into execution, maintain a consolidated view of actions, dependencie",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247934",
@@ -890,10 +387,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247934",
    "extrait": "The selected candidate will work under the supervision of the local Head of Marketing and Communication providing support for the following activities: - Support the management of internal and external communication activities - Draft, edit, and proofread content for communication materials, includi",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247225",
@@ -905,26 +405,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247225",
    "extrait": "Rattaché au Responsable Commercial, vous renforcerez une équipe expérimentée de commerciaux. Vous aurez entre autres à : - Contribuer au développement commercial de la zone en participant aux actions de prospection, de suivi clients et de soutien aux équipes commerciales, - Maintenir les clients exi",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "244989",
-   "entreprise": "CAR DATA",
-   "intitule": "IA Builder (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/244989",
-   "extrait": "Offre VIE – AI & Automation Developer (H/F) Début : Octobre 2026 Lieu : Barcelone Contrat : VIE (12 à 24 mois) À propos de Dataventure Group Dataventure Group aide les annonceurs à exploiter leur potentiel de croissance digitale grâce à une expertise reconnue et...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248154",
@@ -936,10 +423,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248154",
    "extrait": "Consultant(e) CRM (V.I.E) Département : CRM & Data Operations Localisation : Barcelone (Espagne) Type de contrat : V.I.E – Volontariat International en Entreprise (12 à 24 mois) Date de début : 01/02/2027 Durée : 12 mois, renouvelable une fois (dans la limite de 24 mois)...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247634",
@@ -951,11 +441,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247634",
    "extrait": "V.I.E Chef.fe de Projet Stratégie Commerciale et RSE (F/H) - Brésil 📍Date : Mars 2027 🌎Pays : São Paulo, Brésil ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing",
     "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247631",
@@ -967,11 +460,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247631",
    "extrait": "V.I.E Chef.fe de Projet Stratégie Commerciale et Retail (F/H) - Brésil 📍Date : Mars 2027 🌎Pays : São Paulo, Brésil ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing",
     "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247630",
@@ -983,26 +479,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247630",
    "extrait": "V.I.E SPÉCIALISTE PRICING ET STRATÉGIE (F/H) - Brésil 📍Date : Mars 2027 🌎Pays : São Paulo, Brésil ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième distributeur mondial et...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "accès au marché"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247608",
-   "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Chef.fe de Projet Transformation & Développement de l'Écosystème Promotionnel (H/F)",
-   "lieu": "ARGENTINE - BUENOS AIRES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247608",
-   "extrait": "V.I.E Chef.fe de Projet Transformation & Développement de l'Écosystème Promotionnel (F/H) - Argentine 📍Date : Février 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de.",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247605",
@@ -1014,10 +497,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247605",
    "extrait": "V.I.E Chargé.e de mission E-Commerce & Quick Commerce (F/H) - Argentine 📍Date : Février 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247636",
@@ -1029,25 +515,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247636",
    "extrait": "V.I.E CHEF.FE DE PROJET MARQUE DE CARREFOUR (F/H) - Belgique 📍Date : Février 2027 🌎Ville/Pays : Zaventem, Belgique ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième distributeur mondial..",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "chef de produit"
-   ]
-  },
-  {
-   "id": "247635",
-   "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Chef.fe de projet transformation supply (H/F)",
-   "lieu": "BELGIQUE - ZAVENTEM",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247635",
-   "extrait": "V.I.E Chef.fe de projet transformation supply (F/H) - Belgique 📍Date : Février 2027 🌎Ville/Pays : Zaventem, Belgique ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième distributeur mondial",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "245237",
@@ -1059,11 +533,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/245237",
    "extrait": "Présentation de la mission : Groupe agroalimentaire familial français recherche un(e) VIE afin d'accompagner le développement de ses activités sur le marché américain. Intégré(e) au sein d'un partenaire commercial majeur aux États-Unis et rattaché(e) au Chef de Zone Export, vous participerez activem",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing",
     "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247155",
@@ -1075,10 +552,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247155",
    "extrait": "Established in 1950, Club Med is the pioneer of Premium All Inclusive holidays. We have been continuously innovating over the last 75 years and now offer more than 60 ski and sun Resorts across Europe, Asia, Africa, America and the Caribbean as well as a...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "244762",
@@ -1090,10 +570,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/244762",
    "extrait": "The primary purpose of this role is to support the e-commerce platform, work hand in hand with markets teams and agriculture dealers to generate online sales on the e-commerce platform. The Go-To market specialist provides digital marketing insights and recommendations for improvement of content del",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "243536",
@@ -1105,85 +588,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/243536",
    "extrait": "The primary purpose of this role is to support the e-commerce platform, work hand in hand with markets teams and agriculture dealers to generate online sales on the e-commerce platform. The Go-To market specialist provides digital marketing insights and recommendations for improvement of content del",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247247",
-   "entreprise": "COLLABORATION BETTERS THE WORLD",
-   "intitule": "ESG Officer (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247247",
-   "extrait": "Bienvenue chez CBTW, notre global tech compagny, où nous exploitons le pouvoir de la collaboration pour créer et fournir des solutions technologiques et business innovantes. Chez CBTW, nous nous engageons à fournir des solutions technologiques à forte valeur ajoutée, avec des modes d’engagement agil",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247397",
-   "entreprise": "COMMISSARIAT A L' ENERGIE ATOMIQUE ET AUX ENERGIES ALTERNATIVES",
-   "intitule": "CHARGE DE MISSION NUCLEAIRE (H/F)",
-   "lieu": "INDE - NEW DELHI",
-   "type": "VIA",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247397",
-   "extrait": "Le Service nucléaire met en œuvre ses moyens afin de renforcer la coopération franco indienne et défendre les intérêts de la France dans le domaine du nucléaire civil (et des nouvelles technologies pour l’énergie). Il conseille l’Ambassadeur sur ces sujets, assure un rôle de soutien...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "246027",
-   "entreprise": "COMPAGNIE DE SAINT-GOBAIN",
-   "intitule": "Analyste Achats Stratégiques Production (H/F)",
-   "lieu": "AUSTRALIE - SYDNEY",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246027",
-   "extrait": "Rejoignez l'équipe Achats Production de Saint-Gobain en Australie et participez à l'analyse des marchés matières premières et à l'élaboration des stratégies achats au sein d'un environnement international et multiculturel. Rattaché(e) au Production Procurement Manager, vous contribuerez à l'optimisa",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247245",
-   "entreprise": "COMPAGNIE DE SAINT-GOBAIN",
-   "intitule": "Ingénieur HSE (Hygiène, Sécurité, Environnement) (H/F)",
-   "lieu": "SUEDE - BALSTA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247245",
-   "extrait": "Vous souhaitez évoluer au cœur d'un environnement industriel et contribuer concrètement à l'amélioration des performances Environnement, Santé & Sécurité d'un site de production ? Rejoignez Gyproc Sweden, l'activité plaques de plâtre de Saint-Gobain en Suède, en tant qu'Ingénieur HSE VIE. Basé sur n",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "248393",
-   "entreprise": "DILYNX",
-   "intitule": "Deployment project Manager (H/F)",
-   "lieu": "PORTUGAL - LISBONNE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248393",
-   "extrait": "En tant que Deployment Project Manager, vous êtes le point de contact privilégié de nos nouveaux clients dès la vente. Vous prenez le relais de l’équipe Sales, pilotez le déploiement de Stafiz chez le client et formez ses utilisateurs pour qu’ils tirent pleinement parti de...",
-   "sante": false,
-   "marketing": true,
-   "recherches": [
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247119",
@@ -1195,85 +606,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247119",
    "extrait": "Présentation de la société : Depuis 2007, Dunasys s’est établi comme spécialiste des systèmes embarqués, principalement dans le secteur de l’automobile. Nous travaillons sur deux activités principales : -R&D : Nous concevons des boitiers télématiques (hardware et software), des logiciels embarqués, ",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "chef de produit"
-   ]
-  },
-  {
-   "id": "232756",
-   "entreprise": "EFE INTERNATIONAL",
-   "intitule": "INGENIEUR QUALITE H/F (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/232756",
-   "extrait": "Présentation de la société : Coengi est une société de conseil en ingénierie en pleine expansion, spécialisée dans l’accompagnement de projets techniques ambitieux et innovants. Notre mission ? Apporter des solutions sur mesure à nos clients en mettant à leur disposition l’expertise et la créativité",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "230224",
-   "entreprise": "EFE INTERNATIONAL",
-   "intitule": "ADJOINT CHEF DE FERME H/F (H/F)",
-   "lieu": "ROUMANIE - BRAILA",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/230224",
-   "extrait": "Description de la mission proposée : Présent en Roumanie depuis une dizaine d’années, l’entreprise familiale ALSAGRO produit des céréales sur 4600 hectares répartis sur plusieurs fermes et a comme objectif d’atteindre les 10000 hectares d’ici quelques années. La Roumanie n’a de cesse de se modernise",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "248310",
-   "entreprise": "ELIXIRTRIALS FRANCE",
-   "intitule": "Chargé(e) de stratégie et d’opérations auprès du dirigeant (H/F)",
-   "lieu": "ETATS-UNIS - CHICAGO -IL-",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248310",
-   "extrait": "Vous souhaitez découvrir l’entrepreneuriat de l’intérieur tout en contribuant à un meilleur accès aux traitements innovants ? À Chicago, accompagnez directement la direction d’ElixirTrials sur les projets qui structurent notre croissance. ElixirTrials est une Public Benefit Company américaine qui co",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "246325",
-   "entreprise": "ERAMET",
-   "intitule": "VIE Achats Indirects - F/H (H/F)",
-   "lieu": "ARGENTINE - SALTA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246325",
-   "extrait": "Eramine Sudamérica SA est une filiale d’Eramet, groupe minier et métallurgique français d’envergure mondiale. Elle est située dans le Salar Centenario Ratones, à 3 800 mètres d’altitude, dans le département de Los Andes, au sein de la province de Salta, en Argentine. Les activités d’exploration...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "244796",
-   "entreprise": "ETABLISSEMENTS EMILY",
-   "intitule": "Démonstrateur & Développeur d’affaires Canada/USA (H/F)",
-   "lieu": "CANADA - MISSISSAUGA",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/244796",
-   "extrait": "Epicentre de l’activité industrielle du Pays, c’est à Mississauga (en banlieue de Toronto), dans la société Héli Canada que notre VIE sera basé. Partenaire importateur des balayeuses industrielles Emily sur l’ensemble du Canada, Héli Canada est aussi l’adresse de distribution de la filiale Emily Nor",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247627",
@@ -1285,10 +624,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247627",
    "extrait": "Consultant(e) CRM (V.I.E) Département : CRM & Data Operations Localisation : Barcelone (Espagne) Type de contrat : V.I.E – Volontariat International en Entreprise (12 à 24 mois) Date de début : 01/02/2027 Durée : 12 mois, renouvelable une fois (dans la limite de 24 mois)...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247893",
@@ -1300,55 +642,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247893",
    "extrait": "Au sein d’une équipe dédiée à l’ingénierie avancée, à la Data et à l’IA agentique, vous pilotez en tant que Product Owner l’outillage technique et les composants plateformes mis à disposition des développeurs et ingénieurs. Vous faites le pont entre les besoins métiers/ingénierie et les...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "chef de produit"
-   ]
-  },
-  {
-   "id": "247658",
-   "entreprise": "EXTIA",
-   "intitule": "Documentation Drafting & Matching Analyst - Lisbon (H/F)",
-   "lieu": "PORTUGAL - LISBONNE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247658",
-   "extrait": "Dans le cadre du développement de nos activités bancaires internationales, nous recrutons un(e) Documentation Drafting & Matching Analyst (F/H) en contrat V.I.E pour accompagner l'un de nos clients grands comptes, acteur majeur du secteur bancaire d’investissement basé à Lisbonne. Contexte & Rôle ch",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "248157",
-   "entreprise": "FORTIL GROUP",
-   "intitule": "INGÉNIEUR.E PROCESS (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248157",
-   "extrait": "VOTRE PREMIER PROJET EN TANT QUE CONSULTANT FORTIL Afin de renforcer nos équipes, nous recherchons un consultant « Ingénieur process / clean utilities ». Vous êtes communiquant, proactif et vous n’avez pas peur de relever des défis, alors bienvenue dans nos équipes. CONTEXTE CLIENT :...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "pharma"
-   ]
-  },
-  {
-   "id": "246789",
-   "entreprise": "GRAITEC INNOVATION",
-   "intitule": "Work & Experience Partner (H/F)",
-   "lieu": "CANADA - MONTREAL -QC",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246789",
-   "extrait": "Ce posten débutera au sein de nos bureaux parisiens et est à pourvoir dès que possible. GRAITEC recherche un(e) Work & Experience Partner Ce poste a pour mission de concevoir et d’optimiser les environnements de travail à l’échelle mondiale, tout en favorisant la performance de...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247762",
@@ -1360,10 +660,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247762",
    "extrait": "Afin d’accélérer son développement international, GYS a créé en 2015 une filiale commerciale à Venise en Italie. Notre filiale italienne a permis à GYS de renforcer sa position sur le marché italien. Dans le cadre de l’expansion de nos activités en Italie, nous recherchons un/une...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248190",
@@ -1375,10 +678,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248190",
    "extrait": "Heetch met en relation chauffeurs et passagers sur plusieurs marchés. Après une profonde restructuration, nous sommes aujourd'hui une petite équipe resserrée et agile, avec un seul objectif : remettre l'entreprise sur une trajectoire durable. Ce ne sera pas facile. Mais peu d'endroits te permettront",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing",
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247989",
@@ -1390,10 +697,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247989",
    "extrait": "Nous proposons un V .I.E de 12 mois à Barcelone (Espagne) pour un(e) Product Builder UX / UI au sein de sa BU E-commerce, à partir de Janvier 2027. La personne recrutée sera amenée à concevoir des parcours e-commerce dans Figma et les intègre en...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247902",
@@ -1405,55 +715,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247902",
    "extrait": "🚀 Tes missions Tu es à la fois l’expert métier e-commerce et le Product Manager du projet : c’est toi qui tiens le fil, du conseil au client jusqu’à la mise en production. Tu comprends le métier, tu portes la vision, tu prototypes le produit...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247769",
-   "entreprise": "HUTCHINSON",
-   "intitule": "Product Development Engineer - Cooling Systems (H/F)",
-   "lieu": "ITALIE - RIVOLI",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247769",
-   "extrait": "Votre site : Au sein du service Recherche & Développement du site de Rivoli (IT), à proximité de Turin, vous serez rattaché au référent technique Système de Rivoli, lui-même rattaché au responsable du service basé à Châlette sur Loing en France. Hutchinson Rivoli est un...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "247770",
-   "entreprise": "IDEX SERVICES",
-   "intitule": "Business Developer Allemagne – Photovoltaïque F/H (H/F)",
-   "lieu": "ALLEMAGNE - COLOGNE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247770",
-   "extrait": "La direction Energies Solaires du groupe IDEX accompagne les entreprises dans leur transition énergétique grâce à des solutions photovoltaïques clés en main (ombrières, toitures, stockage, IRVE). Notre mission : permettre à nos clients (industrie, tertiaire, logistique) de produire et consommer leur",
-   "sante": false,
-   "marketing": true,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "248355",
-   "entreprise": "INEO SCLE FERROVIAIRE",
-   "intitule": "VIE Chargé(e) HSE (H/F)",
-   "lieu": "ITALIE - CUSANO MILANINO",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248355",
-   "extrait": "INEO SCLE FERROVIAIRE est une entreprise française spécialisée dans la construction de réseaux électriques, de télécommunications et dans les systèmes de signalisation ferroviaire. Elle fait partie du groupe EQUANS (société du groupe Bouygues) Missions : Assister et conseiller l'ensemble des respons",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "242577",
@@ -1465,10 +733,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/242577",
    "extrait": "Elue 10ème entreprise française où il fait bon travailler en 2024, 9ème éditeur français au classement Truffle 2024, une croissance continue de 50% tous les 4 ans... Ce qui nous rend vraiment très fiers, c'est d'avoir su écrire une success story où chaque collaborateur est...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "236538",
@@ -1480,10 +751,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/236538",
    "extrait": "En tant que Sales Account Executive junior, tu feras partie d’une équipe de 5 sales et KAM qui sont des tops *performers* et experts de la vente saas B2B. Ton rôle sera de générer des leads, de répondre aux besoins du prospect puis de les...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "236537",
@@ -1495,25 +769,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/236537",
    "extrait": "# Le poste En relation directe avec le CEO de MerciApp et l’équipe KAM, ton rôle sera de réaliser différentes missions liées à la relation client et de prendre en main un portefeuille de clients pour le faire grandir. Voici la répartition de ton temps...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "chef de produit"
-   ]
-  },
-  {
-   "id": "247275",
-   "entreprise": "KUHN SAS",
-   "intitule": "INGÉNIEURS MÉCATRONIQUE OU SYSTÈMES ELECTRONIQUES EMBARQUÉS (H/F)",
-   "lieu": "ETATS-UNIS - BRODHEAD -WI-",
-   "type": "VIE",
-   "duree": "19 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247275",
-   "extrait": "Spécialisé dans la conception, la fabrication et la commercialisation de machines agricoles, nous recherchons pour notre filiale située à Brodhead, près de Madison aux Etats-Unis, un Ingénieur Mécatronique ou Systèmes Electroniques Embarqués h/f pour une durée de 19 mois (premier mois de formation s",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "246537",
@@ -1525,10 +787,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/246537",
    "extrait": "Rattaché à la directrice marketing au sein de l’équipe Marketing vous contribuerez à la croissance du groupe de manière rentable; vous pilotez les canaux d'acquisition et arbitrez les budgets selon le CAC et la contribution, pour attirer les bons clients au meilleur coût. Vous développez...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247013",
@@ -1540,10 +805,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247013",
    "extrait": "Rattaché à la directrice marketing au sein de l’équipe Marketing vous contribuerez à la croissance du groupe de manière rentable; vous pilotez les canaux d'acquisition et arbitrez les budgets selon le CAC et la contribution, pour attirer les bons clients au meilleur coût. Vous développez...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247573",
@@ -1555,11 +823,15 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247573",
    "extrait": "Au sein de notre bureau basé à Dubaï pour la zone Emirats Arabes-Unis, Arabie Saoudite, Qatar et Koweit, rattaché à la Direction des ventes, vous êtes chargé des missions suivantes : Vous participez à l’élaboration des plans et budget marketing, et piloterez la mise en...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing",
+    "commercial"
+   ],
    "recherches": [
     "marketing",
     "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248000",
@@ -1571,10 +843,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248000",
    "extrait": "Rattaché(e) à la direction de l'entreprise, vous aurez pour mission principale de développer notre présence commerciale en Espagne et au Portugal. 1. Étude et analyse des marchés Réaliser une étude des marchés espagnol et portugais de la meunerie et de la boulangerie. Identifier les acteurs...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "245624",
@@ -1586,40 +861,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/245624",
    "extrait": "Entreprise À la recherche de votre prochain défi professionnel à l’international ? Osez libérer l'aventurier en vous ! Partez à la découverte d’un territoire en pleine croissance économique et participez à l’expansion d’une activité de recrutement à Maurice. Poste Dans le cadre du développement de..",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "248147",
-   "entreprise": "MECACHROME FRANCE",
-   "intitule": "Controleur de gestion industriel (H/F)",
-   "lieu": "MAROC - TANGER",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248147",
-   "extrait": "Acteur incontournable des pièces élémentaires et sous-ensembles de structure à forte valeur ajoutée, le Groupe Mecachrome accompagne depuis 80 ans les équipementiers et industriels dans les domaines de l’aéronautique, de l’automobile, du sport automobile, de la défense et de l’énergie. S'appuyant su",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "245450",
-   "entreprise": "NORCAN",
-   "intitule": "Field Engineer (H/F)",
-   "lieu": "ALLEMAGNE - HANOVRE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245450",
-   "extrait": "Depuis plus de 35 ans, NORCAN conçoit des solutions sur mesure pour l’industrie et la logistique, en s’appuyant sur une expertise reconnue en aménagement de postes de travail et en optimisation des flux. Au cœur de cette offre, le robot SHERPA℗ incarne une nouvelle génération...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247496",
@@ -1631,10 +879,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247496",
    "extrait": "Le Groupe engage l’accélération de ses activités commerciale de sa BU matériel Transmission et Distribution (T&D) / ferroviaire / industrie (sites AFELEC, Dervieux, Maltep en France, KLK en Espagne), avec un objectif de croissance de 100 à 250 M€ de chiffre d'affaires. Le développement à...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247432",
@@ -1646,10 +897,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247432",
    "extrait": "Le Groupe engage l’accélération de ses activités commerciale de sa BU matériel Transmission et Distribution (T&D) / ferroviaire / industrie (sites AFELEC, Dervieux, Maltep en France, KLK en Espagne), avec un objectif de croissance de 100 à 250 M€ de chiffre d'affaires. Le développement à...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247430",
@@ -1661,10 +915,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247430",
    "extrait": "Le Groupe engage l’accélération de ses activités commerciale de sa BU matériel Transmission et Distribution (T&D) / ferroviaire / industrie (sites AFELEC, Dervieux, Maltep en France, KLK en Espagne), avec un objectif de croissance de 100 à 250 M€ de chiffre d'affaires. Le développement à...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247431",
@@ -1676,70 +933,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247431",
    "extrait": "Le Groupe engage l’accélération de ses activités commerciale de sa BU matériel Transmission et Distribution (T&D) / ferroviaire / industrie (sites AFELEC, Dervieux, Maltep en France, KLK en Espagne), avec un objectif de croissance de 100 à 250 M€ de chiffre d'affaires. Le développement à...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247594",
-   "entreprise": "OMERIN SAS",
-   "intitule": "CHEF DE PROJETS METHODES ET AMELIORATION CONTINUE (H/F)",
-   "lieu": "TUNISIE - MONASTIR",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247594",
-   "extrait": "Le Groupe OMERIN (300 M€ CA – 1700 collaborateurs – 16 sites industriels) est une ETI française d'envergure internationale. Innovant et multisectoriel, le Groupe organise ses activités autour de quatre Business Units dédiées à la santé et à la sécurité : - Câbles électriques de...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "248258",
-   "entreprise": "ORANO MINING",
-   "intitule": "Hydrogéologue F/H (H/F)",
-   "lieu": "CANADA - SASKATOON",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248258",
-   "extrait": "Orano recrute un(e) Hydrogéologue VIE au Canada À propos du poste Orano recherche un(e) Hydrogéologue VIE pour rejoindre son département Sécurité, Santé, Environnement et Réglementation. Vous contribuerez à la gestion des eaux souterraines, au développement de modèles hydrogéologiques et à l'accompa",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "246975",
-   "entreprise": "ORANO MINING",
-   "intitule": "Géophysicien.ne (H/F)",
-   "lieu": "CANADA - SASKATOON",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246975",
-   "extrait": "Orano Canada est l'un des principaux producteurs d'uranium au Canada et œuvre à propulser l'avenir grâce à une énergie propre ! Notre usine de McClean Lake est la plus avancée technologiquement au monde pour le traitement, sans dilution, du minerai d'uranium à haute teneur. Notre...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "243976",
-   "entreprise": "PALAMATIC FRANCE",
-   "intitule": "CHARGÉ(E) D'AFFAIRES (H/F)",
-   "lieu": "CANADA - SAINT HYACINTHE -QC",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/243976",
-   "extrait": "PALAMATIC PROCESS est une société de process industriels située à Brécé (10 km de Rennes), leader dans la manutention des poudres depuis 30 ans. Nous développons des lignes de process totalement automatisées pour des grands comptes industriels internationaux et dans tous les secteurs d'activité (l'O",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247078",
@@ -1751,26 +951,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247078",
    "extrait": "Mission principale : Développer le chiffre d’affaires et assurer le bon fonctionnement de la filiale PDS Suisse en s’axant sur les 4 fondamentaux de la société mère : le dosage (équipements de dosage et consommables), le mélange, la robotisation et la polymérisation. Rôle : -Participation...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing",
     "chef de produit"
-   ]
-  },
-  {
-   "id": "245989",
-   "entreprise": "PRODUCT DEVELOPMENT EMPLOYENEURSHIP",
-   "intitule": "Customer Operations & Supply Chain Specialist (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245989",
-   "extrait": "This role focuses on managing the complete Order-to-Cash process, ensuring customer orders are accurately processed from receipt through delivery and invoicing. It serves as the primary point of contact for customers regarding order status, deliveries, invoicing, returns, and claims. The position re",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "246954",
@@ -1782,26 +970,14 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/246954",
    "extrait": "1. Administration des Ventes & Service Client • Gestion des commandes clients : réception, saisie, validation et suivi jusqu’à la livraison. • Facturation et suivi des paiements : en coordination avec la comptabilité. • Gestion des demandes clients : commandes, produits, disponibilités, délais et co",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing",
     "santé"
-   ]
-  },
-  {
-   "id": "248298",
-   "entreprise": "RCI BANQUE",
-   "intitule": "BUSINESS & FINANCIAL CONTROLLER (H/F)",
-   "lieu": "SLOVENIE - LJUBLJANA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248298",
-   "extrait": "Mobilize Financial Services, filiale de Renault Group, est une banque de financement solide, partenaire des constructeurs Renault et d’autres marques du secteur automobile. Nos 4 000 collaborateurs présents dans 35 pays, agissent ensemble au service de nos clients. Nous proposons à nos clients - par",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248377",
@@ -1813,70 +989,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248377",
    "extrait": "Job Description External Mission Principale Au sein de la Direction Marketing de Renault Österreich, vous participez à la gestion et au développement de la gamme Véhicules Utilitaires Légers (LCV) sur le marché autrichien. En support du Brand Manager LCV, vous contribuez à la définition et...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247845",
-   "entreprise": "RSL HOLDING",
-   "intitule": "Business Developer (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247845",
-   "extrait": "Reisel Consulting renforce son développement et recherche un Business Developer (H/F) basé à Bruxelles pour accompagner la croissance de son activité au cœur des secteurs d’avenir : mobilité, transition écologique, santé et industrie 4.0 1/ Mission générale : Le Business Developer (H/F) est particip",
-   "sante": false,
-   "marketing": true,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "248270",
-   "entreprise": "SAFRAN HELICOPTER ENGINES",
-   "intitule": "Chargé-e de missions en Ressources Humaines (H/F)",
-   "lieu": "CANADA - MIRABEL -QC",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248270",
-   "extrait": "Dans le cadre d'un Volontariat International en Entreprise (VIE) au sein de Safran Helicopter Engines Canada à Mirabel, vous rejoindrez l'équipe Ressources Humaines et Santé, Sécurité et Environnement (SSE) et contribuerez activement au bon fonctionnement des activités du département. Rattaché-e à l",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
-  },
-  {
-   "id": "247987",
-   "entreprise": "SAFRAN NACELLES",
-   "intitule": "Pilote Transfert Industriel Externe F/H (H/F)",
-   "lieu": "MAROC - CASABLANCA",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247987",
-   "extrait": "Rejoignez la Direction des Achats en tant que Pilote Transfert Industriel Externe et devenez un acteur clé dans la performance de notre supply chain. Dans le cadre de votre mission de Volontariat International en Entreprise, vous travaillerez en étroite collaboration avec les équipes de Safran...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "239998",
-   "entreprise": "SCALIAN",
-   "intitule": "PROJECT MANAGEMENT OFFICER AERONAUTIQUE (H/F)",
-   "lieu": "CANADA - MONTREAL -QC",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/239998",
-   "extrait": "Vous êtes PMO en Europe et vous rêvez d'une expérience au Canada ! Si votre réponse est oui et que vous avez une première expérience dans le secteur aéronautique, c'est votre jour de chance car nous sommes à la recherche de candidats dynamiques et talentueux...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "246807",
@@ -1888,40 +1007,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/246807",
    "extrait": "As a V.I.E Data Analyst for a 12-month assignment renewable for an additional 12 months, you will join the Data Analytics team within the Marketing organization and contribute to the development of advanced analytical solutions supporting business growth. Your responsibilities will include: Collecti",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "246805",
-   "entreprise": "SEB DEVELOPPEMENT",
-   "intitule": "Amazon Account Specialist (H/F)",
-   "lieu": "ROYAUME-UNI - LONDRES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246805",
-   "extrait": "WHAT IS GROUPE SEB UK? Groupe SEB is the global leader in the manufacturing of small domestic appliances and cookware. Join us in the UK Market where we distribute and sell products across the UK & Ireland under our famous brands Tefal & Krups. Whilst...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "248365",
-   "entreprise": "SNCF VOYAGES DEVELOPPEMENT",
-   "intitule": "Direct Distribution Technician (H/F)",
-   "lieu": "ESPAGNE - MADRID",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248365",
-   "extrait": "\"We are OUIGO España, the new high speed train company in Spain, that have the objetive of approach the high speed trains to every people.\" We started our project in Spain in 2021. Actually we are opering in Madrid, Barcelona, Valencia, Zaragoza, Tarragona, Albacete and...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248364",
@@ -1933,55 +1025,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248364",
    "extrait": "Depuis 1867, la Manufacture Pinton perpétue la tradition de la tapisserie d'Aubusson et participe à son renouveau sur la scène de l'art contemporain. Reconnue dans l'art, la décoration d'intérieur et le luxe, l'entreprise familiale a constitué un groupe textile unique (Manufacture Royale d'Aubusson,",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247372",
-   "entreprise": "SOCIETE GENERALE",
-   "intitule": "Product Engineering Officer (H/F)",
-   "lieu": "ITALIE - MILAN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247372",
-   "extrait": "The Product Engineering Office is responsible for the design, development and implementation of products, solutions and services supporting SGSS business development objectives. As part of the Commercial Department, the Office works in close collaboration with the Commercial and Marketing teams to s",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247424",
-   "entreprise": "SOCIETE POUR L'INFORMATIQUE INDUSTRIELLE",
-   "intitule": "TALENT ACQUISITION PARTNER – BARCELONE (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247424",
-   "extrait": "Vous souhaitez évoluer dans un environnement international, gagner rapidement en responsabilités et avoir un réel impact sur le développement d'un groupe en forte croissance ? Rejoignez SII Group Spain à Barcelone et vivez une expérience professionnelle unique au cœur du recrutement international. 🚀",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "248193",
-   "entreprise": "SOGEFI AIR & COOLING",
-   "intitule": "Spécialiste Méthodes (H/F)",
-   "lieu": "CANADA - MONTREAL -QC",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248193",
-   "extrait": "SPECIALISTE METHODES - VIE Basé(e) sur notre site : MONTREAL - Canada Business Unit : AIR & COOLING Durée de la mission : 24 mois Poste : Chez SOGEFI, un(e) spécialiste méthode et amélioration continue a pour mission principale d’analyser, de créer, de mettre à...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247529",
@@ -1993,11 +1043,15 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247529",
    "extrait": "La mission de SPRING : réenchanter le quotidien avec des produits de tous les jours qui captent l’essence des petits bonheurs et diffusent leur énergie positive. Start-up française fondée en 2020, entreprise à mission certifiée B Corp, nous réinventons la lessive et les produits d’entretien....",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing",
+    "digital"
+   ],
    "recherches": [
     "marketing",
     "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "246470",
@@ -2009,10 +1063,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/246470",
    "extrait": "Square Management Luxembourg is part of Square Management Group of over 900 consultants. Our strategy and organization consulting firm has experienced one of the strongest growth rates in its market over the past 15 years. It operates in 10 practices that concentrate the expertise of...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "238017",
@@ -2024,118 +1081,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/238017",
    "extrait": "Square Management Belgium is part of Square Management Group of over 900 consultants. Our strategy and organization consulting firm has experienced one of the strongest growth rates in its market over the past 15 years. It operates in 10 practices that concentrate the expertise of...",
    "sante": false,
-   "marketing": false,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247219",
-   "entreprise": "STMICROELECTRONICS (GRENOBLE 2) SAS",
-   "intitule": "Ingénieur Application en imagerie (H/F)",
-   "lieu": "TAIWAN - TAIPEI",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247219",
-   "extrait": "La division IMAGING de ST recherche un Ingénieur Application en imagerie sous contrat VIE (Volontariat International en Entreprise) La personne sera détachée à Taiwan et intégrée dans l'équipe Application locale pour supporter le lancement de capteurs d'images innovants. A propos de vos missions Rép",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247498",
-   "entreprise": "STMICROELECTRONICS (GRENOBLE 2) SAS",
-   "intitule": "Ingénieur Support Recherche & Développement Boitier Micro-Electronique (H/F)",
-   "lieu": "MALTE - KIRKOP",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247498",
-   "extrait": "La mise en boîtier des puces électroniques constitue un levier majeur de différenciation et de création de valeur pour le portefeuille de produits de ST. Cette activité est au cœur de la stratégie d’innovation du Groupe. L’Ingénieur Support R&D Développement Boîtier s’intègre à l’organisation centra",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "247963",
-   "entreprise": "STMICROELECTRONICS ROUSSET SAS",
-   "intitule": "DEMAND MANAGEMENT (H/F)",
-   "lieu": "ITALIE - AGRATE BRIANZA",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247963",
-   "extrait": "VOTRE ÉQUIPE L'équipe Demand Management joue un rôle central dans l'alignement entre les besoins du marché et la planification de la production. En étroite collaboration avec les équipes Commerciales, Marketing, Supply Chain et Product Management, elle consolide les prévisions d'activité, accompagne",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "247266",
-   "entreprise": "STMICROELECTRONICS ROUSSET SAS",
-   "intitule": "Ingénieur en analyse des défaillances (H/F)",
-   "lieu": "ITALIE - AGRATE BRIANZA",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247266",
-   "extrait": "Le candidat rejoindra notre équipe d’analyse des défaillances des microcontrôleurs automobiles basée dans la région de Milan, en Italie, et jouera un rôle clé dans la résolution des problèmes liés aux dispositifs semi-conducteurs qui ont un impact direct sur la qualité des produits et la...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "246318",
-   "entreprise": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE",
-   "intitule": "INGENIEUR(E) SUPPORT TECHNIQUE (H/F)",
-   "lieu": "TAIWAN - TAICHUNG",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246318",
-   "extrait": "Entreprise: SUMITOMO (SHI) Material Solutions Europe est une PME innovante faisant partie du groupe japonais Sumitomo Heavy Industries, Ltd. Basé à Gennevilliers (92230), nous concevons, fabriquons et installons des systèmes à base de lasers ultra-violets de très forte énergie, destinés aux fabrican",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "246311",
-   "entreprise": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE",
-   "intitule": "INGENIEUR(E) SUPPORT TECHNIQUE (H/F)",
-   "lieu": "SINGAPOUR - SINGAPOUR",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246311",
-   "extrait": "Entreprise: SUMITOMO (SHI) Material Solutions Europe est une PME innovante située à Gennevilliers - 92 Au sein d'un groupe japonais fabricant d’équipements pour l'industrie du semi-conducteur (Sumitomo Heavy Industries, Ltd.),SUMITOMO (SHI) conçoit, fabrique et installe des systèmes à base de lasers",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ]
-  },
-  {
-   "id": "246309",
-   "entreprise": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE",
-   "intitule": "INGENIEUR(E) SUPPORT TECHNIQUE (H/F)",
-   "lieu": "JAPON - HIGASHIHIROSHIMA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246309",
-   "extrait": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE (SMS-E) est une PME innovante faisant partie du groupe japonais Sumitomo Heavy Industries, Ltd. Basée à Gennevilliers (92230), nous concevons, fabriquons et installons des systèmes à base de lasers ultra-violets de très forte énergie, destinés aux fabricants ",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "245987",
@@ -2147,25 +1099,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/245987",
    "extrait": "Rejoignez une marque française reconnue à l'international Depuis plus de 90 ans, TOPY conçoit, fabrique et commercialise des plaques, semelles et talons destinés à la réparation de chaussures ainsi qu'aux acteurs du luxe et de la chaussure haut de gamme. Reconnue pour la qualité de...",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "commercial"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247841",
-   "entreprise": "TOTALENERGIES MARKETING SERVICES",
-   "intitule": "Coordinateur Transformation Opérationnelle et Transport H/F (H/F)",
-   "lieu": "SINGAPOUR - SINGAPOUR",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247841",
-   "extrait": "Directement intégré à l’équipe Operations & Optimization de la filiale TotalEnergies Marketing & Services à Singapour, vos principales responsabilités sont de contribuer à l’amélioration des performances opérationnelles, d’accompagner les projets de digitalisation et de soutenir les activités transp",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "marketing"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247771",
@@ -2177,40 +1117,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247771",
    "extrait": "Rejoignez la branche Marketing & Services de TotalEnergies dans sa filiale au Portugal. TotalEnergies Marketing Portugal est une filiale à taille humaine. L’activité est dédiée aux lubrifiants sur le marché B2B. La filiale est intégrée au hub ibérique Espagne-Portugal. Vous travaillez avec les équip",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "247383",
-   "entreprise": "TOTALENERGIES MARKETING SERVICES",
-   "intitule": "Assistant Chef de Projet Contrôle Interne (H/F) – République tchèque",
-   "lieu": "TCHEQUIE / REPUBLIQUE TCHEQUE - PRAGUE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247383",
-   "extrait": "Rejoignez la branche Marketing & Services de TotalEnergies à Prague, en République tchèque, et contribuez au renforcement du contrôle interne au sein d’un hub régional couvrant la République tchèque, la Slovaquie et la Hongrie. Vous participez à la préparation d’un audit interne régional et contribu",
-   "sante": false,
-   "marketing": true,
-   "recherches": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "245999",
-   "entreprise": "TWYCE",
-   "intitule": "AGENT METHODE (H/F)",
-   "lieu": "CANADA - MONTREAL -QC",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245999",
-   "extrait": "Poste et missions: • Travailler en étroite collaboration avec les fonctions de l’ingénierie, de la production, de la logistique et de la qualité. • Investiguer les causes racines de problèmes et analyser les solutions potentielles en évaluant les coûts, les impacts et les risques d’un...",
-   "sante": false,
-   "marketing": false,
-   "recherches": [
-    "santé"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "247297",
@@ -2222,26 +1135,13 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/247297",
    "extrait": "Définir et analyser les besoins du client, Configurer des solutions personnalisées et optimiser les organisations clientes selon les besoins Superviser l’implémentation, collaborer avec nos équipes de développeurs Salesforce Créer des tests et des recettes fonctionnelles, Garantir le suivi, la commu",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "digital"
+   ],
    "recherches": [
     "marketing"
-   ]
-  },
-  {
-   "id": "246959",
-   "entreprise": "VYGON",
-   "intitule": "Chef de projet industrialisation injection et outillage H/F (H/F)",
-   "lieu": "MAURICE - PAMPLEMOUSSES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246959",
-   "extrait": "Vous souhaitez donner du sens à votre carrière en rejoignant une entreprise dont les produits contribuent chaque jour à sauver des vies ? Vous souhaitez évoluer dans un environnement industriel innovant, au sein d’un groupe international à taille humaine, reconnu pour son expertise dans les...",
-   "sante": false,
-   "marketing": true,
-   "recherches": [
-    "santé",
-    "chef de produit"
-   ]
+   ],
+   "marketing": true
   },
   {
    "id": "248267",
@@ -2253,11 +1153,1387 @@
    "url": "https://mon-vie-via.businessfrance.fr/offres/248267",
    "extrait": "Watura est une plateforme SaaS d'origine française qui propose des formations en ligne certifiantes (CEU) destinées aux opérateurs des services publics d'eau potable et d'eaux usées aux États-Unis. L'équipe de conception pédagogique est basée à Paris ; l'entité nord-américaine, basée à Chicago, port",
    "sante": false,
-   "marketing": true,
+   "fonctions": [
+    "marketing"
+   ],
    "recherches": [
     "marketing",
     "santé"
-   ]
+   ],
+   "marketing": true
+  },
+  {
+   "id": "243256",
+   "entreprise": "CEVA SANTE ANIMALE",
+   "intitule": "Project Manager, Engineering (H/F)",
+   "lieu": "ETATS-UNIS - VERONA",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/243256",
+   "extrait": "The Project Manager, Engineering is responsible for leading capital and operational projects including facility construction and renovation, equipment installation, and manufacturing process optimization. This role is accountable for managing scope, schedule, budget, and risk while ensuring projects",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247706",
+   "entreprise": "CVO-EUROPE",
+   "intitule": "Assistant Project Manager Pharma h-f (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247706",
+   "extrait": "VIE - GESTION DE PROJET PHARMA H-F Fondé en 2013, Efor a su en 10 ans se positionner comme l'acteur européen de référence du conseil spécialisé en Life Sciences. Avec plus de 2000 collaborateurs répartis au sein de 19 agences en France, en Belgique, en...",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma",
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "245853",
+   "entreprise": "EFE INTERNATIONAL",
+   "intitule": "Ingénieur logiciel IA, Member of Technical Staff (H/F)",
+   "lieu": "ETATS-UNIS - SAN FRANCISCO -CA-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/245853",
+   "extrait": "A propos de l'entreprise : ClarityCare AI est une start-up basée à San Francisco, fondée en 2024, qui développe des agents d'intelligence artificielle pour les assureurs santé américains. Nos agents lisent, analysent et adjudiquent en temps réel des dossiers cliniques complexes et des tâches adminis",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248423",
+   "entreprise": "IPSEN PHARMA",
+   "intitule": "Finance Analyst/Controller Neuroscience & Aesthetics (H/F)",
+   "lieu": "ETATS-UNIS - CAMBRIDGE -MA-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248423",
+   "extrait": "Your Mission As a V.I.E Finance Analyst / Controller, you will join our Neuroscience Finance team in Cambridge. Working closely with Finance teams across the US, France and the UK, you will support financial planning, controlling and business partnering activities, contributing to strategic decision",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247759",
+   "entreprise": "LABORATOIRES URGO HEALTHCARE",
+   "intitule": "Business Controller (H/F)",
+   "lieu": "ITALIE - BOLOGNE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247759",
+   "extrait": "Agave est une filiale du Groupe Urgo spécialisée dans les dispositifs médicaux à destination des professionnels de santé. Dans un contexte de croissance de l'activité et de transformation de ses outils de gestion, Agave renforce son équipe Finance et recherche un(e) V.I.E Business Controller pour...",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "marketing",
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "244238",
+   "entreprise": "MEDIFF",
+   "intitule": "Chargé de coordination opérationnelle (H/F)",
+   "lieu": "CAMEROUN - YAOUNDE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/244238",
+   "extrait": "CPrésentation de l'entreprise : Distribution de dispositifs de diagnostic in vitro sur 35 pays en Afrique, dont notre filiale Mediff Cameroun. Cette entité de 7 personnes, créée en 2019 et basée à Yaoundé, assure l’importation, la distribution et la réparation de matériel médical auprès des...",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247066",
+   "entreprise": "MEDSCONNECT TECHNOLOGIES",
+   "intitule": "Lead Developpeur FullStack H/F | HealthTech | Télétravail - Barcelone (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247066",
+   "extrait": "Responsabilités Clés Au sein de l'équipe Dev, ta mission s’axera autour de 3 sujets : Développer des APIs : Concevoir, développer et maintenir des APIs en Nodejs Collaborer étroitement avec l’équipe Front-End : Travailler en tandem avec notre équipe Product/OPS pour créer des solutions web...",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "santé",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247062",
+   "entreprise": "MEDSCONNECT TECHNOLOGIES",
+   "intitule": "Head of Operations H/F - HealthTech - Télétravail hybride à Barcelone (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247062",
+   "extrait": "Nous recherchons un(e) Directeur des Opérations / COO Le V.I.E. est prévu pour une durée maximale de 2 ans. Si tout se passe bien durant la mission, celle-ci peut naturellement déboucher sur une poursuite de la collaboration au sein de l'entreprise. Secteur d’activité : Médical...",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "245480",
+   "entreprise": "PRODUCT DEVELOPMENT EMPLOYENEURSHIP",
+   "intitule": "Supply Chain Specialist M/F (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/245480",
+   "extrait": "As a Supply Chain Specialist at TMC, you’ll work closely with our partners to enhance supply chain performance, improve visibility, and solve tactical and strategic planning challenges. You’ll be able to bring your expertise into dynamic projects in industries such as high-tech, pharma, energy, tran",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "242951",
+   "entreprise": "QUALIFY LIFE SCIENCES",
+   "intitule": "INGÉNIEUR ASSURANCE QUALITÉ (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/242951",
+   "extrait": "Présentation de la société : QUALIFY Life Sciences (QLS) se distingue en tant que société d'ingénierie et de conseil de premier plan. Nous offrons une expertise spécialisée aux acteurs des industries pharmaceutique, biotechnologique et des dispositifs médicaux, les accompagnant dans le développement",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248150",
+   "entreprise": "SERVIER INTERNATIONAL",
+   "intitule": "PROCUREMENT ANALYST (H/F)",
+   "lieu": "ARGENTINE - BUENOS AIRES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248150",
+   "extrait": "Leading French independent pharmaceutical Company, specialised in ethical medicinal products. 92% of Servier’s sales are achieved internationally, with several subsidiary companies abroad. We are looking for V.I.E’s, for our subsidiary in ARGENTINA Description of the mission:  Centralized Managemen",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247284",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Business Excellence Data Analyst (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247284",
+   "extrait": "External Manufacturing doit renforcer ses capacités en matière de data analytics, pour supporter digitilsation et d’excellence opérationnelle. La mission permettra d’accélérer la mise à disposition d’informations fiables et exploitables, de soutenir l’harmonisation des processus et d’améliorer le pi",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247051",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Scientist - In Vivo Epilepsy (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247051",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247145",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Bioprocess Engineer Junior (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247145",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247008",
+   "entreprise": "UCB PHARMA",
+   "intitule": "MSAT Lab Associate Scientist (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247008",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma",
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247005",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Associate Scientist (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247005",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247001",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Scientific Data Analyst (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247001",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247752",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Process Engineer (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247752",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247709",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Capital Project Performance Analyst (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247709",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247425",
+   "entreprise": "UCB PHARMA",
+   "intitule": "Scientist: Biochemistry and Biophysics (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247425",
+   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247688",
+   "entreprise": "9S58",
+   "intitule": "AUDIT/ contrôle de gestion / Financements et modèles économiques (H/F)",
+   "lieu": "COTE D'IVOIRE - ABIDJAN",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247688",
+   "extrait": "Contexte de la mission : Winwin Afrique est une entreprise qui fait du sport et de la culture des leviers pour le développement économique et social en Afrique. En Côte d’Ivoire, nous opérons pour le compte du gouvernement, dans le cadre d’un contrat de coopération...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247111",
+   "entreprise": "AFFLUENCES",
+   "intitule": "Customer Success Manager (H/F)",
+   "lieu": "ITALIE - MILAN",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247111",
+   "extrait": "Au sein de l’équipe Relation Client, tu auras pour principales missions : 1. Onboarding & gestion de projet Piloter les nouveaux projets clients (déploiement de la solution, installation de capteurs, paramétrage…) Coordonner les équipes internes (tech, produit, sales) Assurer la formation des utilis",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247751",
+   "entreprise": "AIRBUS",
+   "intitule": "External Communications Advisor (H/F)",
+   "lieu": "AUSTRALIE - BANKSTOWN",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247751",
+   "extrait": "Un poste sous contrat VIE External Communications Officer (F/M) est à pourvoir au sein d’Airbus à Bankstown (Australie). Vous rejoindrez l'équipe de communication. Rejoignez l'équipe de communication d'Airbus et représentez nos activités dans la région Pacifique ! Basé(e) à Bankstown, vous jouerez u",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246909",
+   "entreprise": "AJSTAGE",
+   "intitule": "Talent Acquisition Specialist (H/F)",
+   "lieu": "PORTUGAL - LISBONNE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246909",
+   "extrait": "Dans un marché où les attentes des candidats et les enjeux des entreprises évoluent sans cesse, Eiquem construit une approche du recrutement centrée sur l’humain. Pour accompagner notre croissance et continuer d’offrir un service de qualité à nos clients comme à nos candidats, nous recherchons...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "245314",
+   "entreprise": "ALLIO FRANCE",
+   "intitule": "Field engineer - Ingénieur terrain (H/F)",
+   "lieu": "PORTUGAL - MARINHA GRANDE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/245314",
+   "extrait": "Présentation de la société : Spécialiste de la conception et de la réalisation complète d’outillages dans les secteurs de l'automobile, de l'aéronautique, du ferroviaire ainsi que dans d'autres secteurs industriels, ALLIO GROUP propose à ses clients, comprenant de grands acteurs et des donneurs d'or",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247861",
+   "entreprise": "AMARIS FRANCE SAS",
+   "intitule": "Fleet Manager (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247861",
+   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247860",
+   "entreprise": "AMARIS FRANCE SAS",
+   "intitule": "Fleet Manager (H/F)",
+   "lieu": "ITALIE - ROME",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247860",
+   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247850",
+   "entreprise": "AMARIS FRANCE SAS",
+   "intitule": "Fleet Manager (H/F)",
+   "lieu": "LUXEMBOURG - LUXEMBOURG",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247850",
+   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247774",
+   "entreprise": "AMARIS FRANCE SAS",
+   "intitule": "Fleet Manager (H/F)",
+   "lieu": "PORTUGAL - LISBONNE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247774",
+   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247289",
+   "entreprise": "ARGEVILLE S A",
+   "intitule": "Aromaticien (H/F)",
+   "lieu": "THAILANDE - BANGKOK",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247289",
+   "extrait": "VOTRE RÔLE Rejoignez notre Centre Créatif à Bangkok et jouez un rôle clé en tant qu’Aromaticien, soutenant le développement de nos arômes en Asie du Sud-Est—principalement dans la catégorie e-liquide ainsi que boissons / arômes sucrés sur les marchés thaïlandais, vietnamien et indonésien. Dans ce...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246978",
+   "entreprise": "ATEME",
+   "intitule": "Solutions Engineer (H/F)",
+   "lieu": "ETATS-UNIS - LOS ANGELES -CA-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246978",
+   "extrait": "About the Company If you have ever watched television or enjoyed a movie on your phone or tablet, this experience was likely brought to you through an Ateme solution created by our award-winning engineering teams. Ateme (PARIS: ATEME) is the global leader in video delivery,...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246724",
+   "entreprise": "ATEME",
+   "intitule": "Solutions Engineer (H/F)",
+   "lieu": "ETATS-UNIS - DENVER -CO-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246724",
+   "extrait": "About the Company If you have ever watched television or enjoyed a movie on your phone or tablet, this experience was likely brought to you through an Ateme solution created by our award-winning engineering teams. Ateme (PARIS: ATEME) is the global leader in video delivery,...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247655",
+   "entreprise": "BEIERSDORF S.A.S",
+   "intitule": "ACHETEUR H/F (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247655",
+   "extrait": "Chez Beiersdorf, nous voulons aider les gens à se sentir bien dans leur peau - et notre engagement va bien au-delà des soins de la peau. Depuis 140 ans, nous développons des produits de soins de la peau et du corps innovants pour des marques...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248032",
+   "entreprise": "BOSTIK SA",
+   "intitule": "Agentic Commerce Automation Specialist (H/F)",
+   "lieu": "PAYS-BAS - OOSTERHOUT",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248032",
+   "extrait": "The Agentic Commerce Automation Specialist will support the transformation of Bostik's digital commerce operations through the deployment of automation, AI-driven workflows, and data-driven decision making across global markets. Key activities include: - Supporting and optimizing commerce operations",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247931",
+   "entreprise": "BOSTIK SA",
+   "intitule": "R&D Chemist - UV-Curable Adhesive Technologies (H/F)",
+   "lieu": "ALLEMAGNE - MAXDORF",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247931",
+   "extrait": "As a VIE R&D Chemist, you will : - Contribute to the development, optimization, and validation of UV-curable adhesive systems and support the continuous improvement of existing products. - Assist in designing, performing, and analyzing laboratory experiments to develop new formulations and evaluate ",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247927",
+   "entreprise": "BOSTIK SA",
+   "intitule": "R&D Chemist - Epoxy Adhesive Technologies (H/F)",
+   "lieu": "ALLEMAGNE - KARLSBAD",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247927",
+   "extrait": "As a VIE R&D Chemist, you will : - Contribute to the development, optimization, and validation of innovative epoxy adhesive systems, with a particular focus on thermally and electrically conductive technologies for demanding industrial applications. You will support the continuous improvement of exi",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247504",
+   "entreprise": "CA CONSUMER FINANCE",
+   "intitule": "PMO & Project Coordination (H/F)",
+   "lieu": "ALLEMAGNE - STUTTGART",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247504",
+   "extrait": "JOB PURPOSE Support the development of our retail Bank in Germany : Crédit Agricole Deutschland, by providing hands-on PMO, cross-functional coordination across the main workstreams. The VIE will help translate governance decisions into execution, maintain a consolidated view of actions, dependencie",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "244989",
+   "entreprise": "CAR DATA",
+   "intitule": "IA Builder (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/244989",
+   "extrait": "Offre VIE – AI & Automation Developer (H/F) Début : Octobre 2026 Lieu : Barcelone Contrat : VIE (12 à 24 mois) À propos de Dataventure Group Dataventure Group aide les annonceurs à exploiter leur potentiel de croissance digitale grâce à une expertise reconnue et...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247608",
+   "entreprise": "CARREFOUR MANAGEMENT",
+   "intitule": "Chef.fe de Projet Transformation & Développement de l'Écosystème Promotionnel (H/F)",
+   "lieu": "ARGENTINE - BUENOS AIRES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247608",
+   "extrait": "V.I.E Chef.fe de Projet Transformation & Développement de l'Écosystème Promotionnel (F/H) - Argentine 📍Date : Février 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de.",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247635",
+   "entreprise": "CARREFOUR MANAGEMENT",
+   "intitule": "Chef.fe de projet transformation supply (H/F)",
+   "lieu": "BELGIQUE - ZAVENTEM",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247635",
+   "extrait": "V.I.E Chef.fe de projet transformation supply (F/H) - Belgique 📍Date : Février 2027 🌎Ville/Pays : Zaventem, Belgique ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième distributeur mondial",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247247",
+   "entreprise": "COLLABORATION BETTERS THE WORLD",
+   "intitule": "ESG Officer (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247247",
+   "extrait": "Bienvenue chez CBTW, notre global tech compagny, où nous exploitons le pouvoir de la collaboration pour créer et fournir des solutions technologiques et business innovantes. Chez CBTW, nous nous engageons à fournir des solutions technologiques à forte valeur ajoutée, avec des modes d’engagement agil",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247397",
+   "entreprise": "COMMISSARIAT A L' ENERGIE ATOMIQUE ET AUX ENERGIES ALTERNATIVES",
+   "intitule": "CHARGE DE MISSION NUCLEAIRE (H/F)",
+   "lieu": "INDE - NEW DELHI",
+   "type": "VIA",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247397",
+   "extrait": "Le Service nucléaire met en œuvre ses moyens afin de renforcer la coopération franco indienne et défendre les intérêts de la France dans le domaine du nucléaire civil (et des nouvelles technologies pour l’énergie). Il conseille l’Ambassadeur sur ces sujets, assure un rôle de soutien...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246027",
+   "entreprise": "COMPAGNIE DE SAINT-GOBAIN",
+   "intitule": "Analyste Achats Stratégiques Production (H/F)",
+   "lieu": "AUSTRALIE - SYDNEY",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246027",
+   "extrait": "Rejoignez l'équipe Achats Production de Saint-Gobain en Australie et participez à l'analyse des marchés matières premières et à l'élaboration des stratégies achats au sein d'un environnement international et multiculturel. Rattaché(e) au Production Procurement Manager, vous contribuerez à l'optimisa",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247245",
+   "entreprise": "COMPAGNIE DE SAINT-GOBAIN",
+   "intitule": "Ingénieur HSE (Hygiène, Sécurité, Environnement) (H/F)",
+   "lieu": "SUEDE - BALSTA",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247245",
+   "extrait": "Vous souhaitez évoluer au cœur d'un environnement industriel et contribuer concrètement à l'amélioration des performances Environnement, Santé & Sécurité d'un site de production ? Rejoignez Gyproc Sweden, l'activité plaques de plâtre de Saint-Gobain en Suède, en tant qu'Ingénieur HSE VIE. Basé sur n",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248393",
+   "entreprise": "DILYNX",
+   "intitule": "Deployment project Manager (H/F)",
+   "lieu": "PORTUGAL - LISBONNE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248393",
+   "extrait": "En tant que Deployment Project Manager, vous êtes le point de contact privilégié de nos nouveaux clients dès la vente. Vous prenez le relais de l’équipe Sales, pilotez le déploiement de Stafiz chez le client et formez ses utilisateurs pour qu’ils tirent pleinement parti de...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "232756",
+   "entreprise": "EFE INTERNATIONAL",
+   "intitule": "INGENIEUR QUALITE H/F (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/232756",
+   "extrait": "Présentation de la société : Coengi est une société de conseil en ingénierie en pleine expansion, spécialisée dans l’accompagnement de projets techniques ambitieux et innovants. Notre mission ? Apporter des solutions sur mesure à nos clients en mettant à leur disposition l’expertise et la créativité",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "230224",
+   "entreprise": "EFE INTERNATIONAL",
+   "intitule": "ADJOINT CHEF DE FERME H/F (H/F)",
+   "lieu": "ROUMANIE - BRAILA",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/230224",
+   "extrait": "Description de la mission proposée : Présent en Roumanie depuis une dizaine d’années, l’entreprise familiale ALSAGRO produit des céréales sur 4600 hectares répartis sur plusieurs fermes et a comme objectif d’atteindre les 10000 hectares d’ici quelques années. La Roumanie n’a de cesse de se modernise",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248310",
+   "entreprise": "ELIXIRTRIALS FRANCE",
+   "intitule": "Chargé(e) de stratégie et d’opérations auprès du dirigeant (H/F)",
+   "lieu": "ETATS-UNIS - CHICAGO -IL-",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248310",
+   "extrait": "Vous souhaitez découvrir l’entrepreneuriat de l’intérieur tout en contribuant à un meilleur accès aux traitements innovants ? À Chicago, accompagnez directement la direction d’ElixirTrials sur les projets qui structurent notre croissance. ElixirTrials est une Public Benefit Company américaine qui co",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246325",
+   "entreprise": "ERAMET",
+   "intitule": "VIE Achats Indirects - F/H (H/F)",
+   "lieu": "ARGENTINE - SALTA",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246325",
+   "extrait": "Eramine Sudamérica SA est une filiale d’Eramet, groupe minier et métallurgique français d’envergure mondiale. Elle est située dans le Salar Centenario Ratones, à 3 800 mètres d’altitude, dans le département de Los Andes, au sein de la province de Salta, en Argentine. Les activités d’exploration...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "244796",
+   "entreprise": "ETABLISSEMENTS EMILY",
+   "intitule": "Démonstrateur & Développeur d’affaires Canada/USA (H/F)",
+   "lieu": "CANADA - MISSISSAUGA",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/244796",
+   "extrait": "Epicentre de l’activité industrielle du Pays, c’est à Mississauga (en banlieue de Toronto), dans la société Héli Canada que notre VIE sera basé. Partenaire importateur des balayeuses industrielles Emily sur l’ensemble du Canada, Héli Canada est aussi l’adresse de distribution de la filiale Emily Nor",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247658",
+   "entreprise": "EXTIA",
+   "intitule": "Documentation Drafting & Matching Analyst - Lisbon (H/F)",
+   "lieu": "PORTUGAL - LISBONNE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247658",
+   "extrait": "Dans le cadre du développement de nos activités bancaires internationales, nous recrutons un(e) Documentation Drafting & Matching Analyst (F/H) en contrat V.I.E pour accompagner l'un de nos clients grands comptes, acteur majeur du secteur bancaire d’investissement basé à Lisbonne. Contexte & Rôle ch",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248157",
+   "entreprise": "FORTIL GROUP",
+   "intitule": "INGÉNIEUR.E PROCESS (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248157",
+   "extrait": "VOTRE PREMIER PROJET EN TANT QUE CONSULTANT FORTIL Afin de renforcer nos équipes, nous recherchons un consultant « Ingénieur process / clean utilities ». Vous êtes communiquant, proactif et vous n’avez pas peur de relever des défis, alors bienvenue dans nos équipes. CONTEXTE CLIENT :...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246789",
+   "entreprise": "GRAITEC INNOVATION",
+   "intitule": "Work & Experience Partner (H/F)",
+   "lieu": "CANADA - MONTREAL -QC",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246789",
+   "extrait": "Ce posten débutera au sein de nos bureaux parisiens et est à pourvoir dès que possible. GRAITEC recherche un(e) Work & Experience Partner Ce poste a pour mission de concevoir et d’optimiser les environnements de travail à l’échelle mondiale, tout en favorisant la performance de...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247769",
+   "entreprise": "HUTCHINSON",
+   "intitule": "Product Development Engineer - Cooling Systems (H/F)",
+   "lieu": "ITALIE - RIVOLI",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247769",
+   "extrait": "Votre site : Au sein du service Recherche & Développement du site de Rivoli (IT), à proximité de Turin, vous serez rattaché au référent technique Système de Rivoli, lui-même rattaché au responsable du service basé à Châlette sur Loing en France. Hutchinson Rivoli est un...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247770",
+   "entreprise": "IDEX SERVICES",
+   "intitule": "Business Developer Allemagne – Photovoltaïque F/H (H/F)",
+   "lieu": "ALLEMAGNE - COLOGNE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247770",
+   "extrait": "La direction Energies Solaires du groupe IDEX accompagne les entreprises dans leur transition énergétique grâce à des solutions photovoltaïques clés en main (ombrières, toitures, stockage, IRVE). Notre mission : permettre à nos clients (industrie, tertiaire, logistique) de produire et consommer leur",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248355",
+   "entreprise": "INEO SCLE FERROVIAIRE",
+   "intitule": "VIE Chargé(e) HSE (H/F)",
+   "lieu": "ITALIE - CUSANO MILANINO",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248355",
+   "extrait": "INEO SCLE FERROVIAIRE est une entreprise française spécialisée dans la construction de réseaux électriques, de télécommunications et dans les systèmes de signalisation ferroviaire. Elle fait partie du groupe EQUANS (société du groupe Bouygues) Missions : Assister et conseiller l'ensemble des respons",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247275",
+   "entreprise": "KUHN SAS",
+   "intitule": "INGÉNIEURS MÉCATRONIQUE OU SYSTÈMES ELECTRONIQUES EMBARQUÉS (H/F)",
+   "lieu": "ETATS-UNIS - BRODHEAD -WI-",
+   "type": "VIE",
+   "duree": "19 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247275",
+   "extrait": "Spécialisé dans la conception, la fabrication et la commercialisation de machines agricoles, nous recherchons pour notre filiale située à Brodhead, près de Madison aux Etats-Unis, un Ingénieur Mécatronique ou Systèmes Electroniques Embarqués h/f pour une durée de 19 mois (premier mois de formation s",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248147",
+   "entreprise": "MECACHROME FRANCE",
+   "intitule": "Controleur de gestion industriel (H/F)",
+   "lieu": "MAROC - TANGER",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248147",
+   "extrait": "Acteur incontournable des pièces élémentaires et sous-ensembles de structure à forte valeur ajoutée, le Groupe Mecachrome accompagne depuis 80 ans les équipementiers et industriels dans les domaines de l’aéronautique, de l’automobile, du sport automobile, de la défense et de l’énergie. S'appuyant su",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "245450",
+   "entreprise": "NORCAN",
+   "intitule": "Field Engineer (H/F)",
+   "lieu": "ALLEMAGNE - HANOVRE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/245450",
+   "extrait": "Depuis plus de 35 ans, NORCAN conçoit des solutions sur mesure pour l’industrie et la logistique, en s’appuyant sur une expertise reconnue en aménagement de postes de travail et en optimisation des flux. Au cœur de cette offre, le robot SHERPA℗ incarne une nouvelle génération...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247594",
+   "entreprise": "OMERIN SAS",
+   "intitule": "CHEF DE PROJETS METHODES ET AMELIORATION CONTINUE (H/F)",
+   "lieu": "TUNISIE - MONASTIR",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247594",
+   "extrait": "Le Groupe OMERIN (300 M€ CA – 1700 collaborateurs – 16 sites industriels) est une ETI française d'envergure internationale. Innovant et multisectoriel, le Groupe organise ses activités autour de quatre Business Units dédiées à la santé et à la sécurité : - Câbles électriques de...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248258",
+   "entreprise": "ORANO MINING",
+   "intitule": "Hydrogéologue F/H (H/F)",
+   "lieu": "CANADA - SASKATOON",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248258",
+   "extrait": "Orano recrute un(e) Hydrogéologue VIE au Canada À propos du poste Orano recherche un(e) Hydrogéologue VIE pour rejoindre son département Sécurité, Santé, Environnement et Réglementation. Vous contribuerez à la gestion des eaux souterraines, au développement de modèles hydrogéologiques et à l'accompa",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246975",
+   "entreprise": "ORANO MINING",
+   "intitule": "Géophysicien.ne (H/F)",
+   "lieu": "CANADA - SASKATOON",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246975",
+   "extrait": "Orano Canada est l'un des principaux producteurs d'uranium au Canada et œuvre à propulser l'avenir grâce à une énergie propre ! Notre usine de McClean Lake est la plus avancée technologiquement au monde pour le traitement, sans dilution, du minerai d'uranium à haute teneur. Notre...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "243976",
+   "entreprise": "PALAMATIC FRANCE",
+   "intitule": "CHARGÉ(E) D'AFFAIRES (H/F)",
+   "lieu": "CANADA - SAINT HYACINTHE -QC",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/243976",
+   "extrait": "PALAMATIC PROCESS est une société de process industriels située à Brécé (10 km de Rennes), leader dans la manutention des poudres depuis 30 ans. Nous développons des lignes de process totalement automatisées pour des grands comptes industriels internationaux et dans tous les secteurs d'activité (l'O",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "245989",
+   "entreprise": "PRODUCT DEVELOPMENT EMPLOYENEURSHIP",
+   "intitule": "Customer Operations & Supply Chain Specialist (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/245989",
+   "extrait": "This role focuses on managing the complete Order-to-Cash process, ensuring customer orders are accurately processed from receipt through delivery and invoicing. It serves as the primary point of contact for customers regarding order status, deliveries, invoicing, returns, and claims. The position re",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248298",
+   "entreprise": "RCI BANQUE",
+   "intitule": "BUSINESS & FINANCIAL CONTROLLER (H/F)",
+   "lieu": "SLOVENIE - LJUBLJANA",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248298",
+   "extrait": "Mobilize Financial Services, filiale de Renault Group, est une banque de financement solide, partenaire des constructeurs Renault et d’autres marques du secteur automobile. Nos 4 000 collaborateurs présents dans 35 pays, agissent ensemble au service de nos clients. Nous proposons à nos clients - par",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247845",
+   "entreprise": "RSL HOLDING",
+   "intitule": "Business Developer (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247845",
+   "extrait": "Reisel Consulting renforce son développement et recherche un Business Developer (H/F) basé à Bruxelles pour accompagner la croissance de son activité au cœur des secteurs d’avenir : mobilité, transition écologique, santé et industrie 4.0 1/ Mission générale : Le Business Developer (H/F) est particip",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248270",
+   "entreprise": "SAFRAN HELICOPTER ENGINES",
+   "intitule": "Chargé-e de missions en Ressources Humaines (H/F)",
+   "lieu": "CANADA - MIRABEL -QC",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248270",
+   "extrait": "Dans le cadre d'un Volontariat International en Entreprise (VIE) au sein de Safran Helicopter Engines Canada à Mirabel, vous rejoindrez l'équipe Ressources Humaines et Santé, Sécurité et Environnement (SSE) et contribuerez activement au bon fonctionnement des activités du département. Rattaché-e à l",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247987",
+   "entreprise": "SAFRAN NACELLES",
+   "intitule": "Pilote Transfert Industriel Externe F/H (H/F)",
+   "lieu": "MAROC - CASABLANCA",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247987",
+   "extrait": "Rejoignez la Direction des Achats en tant que Pilote Transfert Industriel Externe et devenez un acteur clé dans la performance de notre supply chain. Dans le cadre de votre mission de Volontariat International en Entreprise, vous travaillerez en étroite collaboration avec les équipes de Safran...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "239998",
+   "entreprise": "SCALIAN",
+   "intitule": "PROJECT MANAGEMENT OFFICER AERONAUTIQUE (H/F)",
+   "lieu": "CANADA - MONTREAL -QC",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/239998",
+   "extrait": "Vous êtes PMO en Europe et vous rêvez d'une expérience au Canada ! Si votre réponse est oui et que vous avez une première expérience dans le secteur aéronautique, c'est votre jour de chance car nous sommes à la recherche de candidats dynamiques et talentueux...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246805",
+   "entreprise": "SEB DEVELOPPEMENT",
+   "intitule": "Amazon Account Specialist (H/F)",
+   "lieu": "ROYAUME-UNI - LONDRES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246805",
+   "extrait": "WHAT IS GROUPE SEB UK? Groupe SEB is the global leader in the manufacturing of small domestic appliances and cookware. Join us in the UK Market where we distribute and sell products across the UK & Ireland under our famous brands Tefal & Krups. Whilst...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248365",
+   "entreprise": "SNCF VOYAGES DEVELOPPEMENT",
+   "intitule": "Direct Distribution Technician (H/F)",
+   "lieu": "ESPAGNE - MADRID",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248365",
+   "extrait": "\"We are OUIGO España, the new high speed train company in Spain, that have the objetive of approach the high speed trains to every people.\" We started our project in Spain in 2021. Actually we are opering in Madrid, Barcelona, Valencia, Zaragoza, Tarragona, Albacete and...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247372",
+   "entreprise": "SOCIETE GENERALE",
+   "intitule": "Product Engineering Officer (H/F)",
+   "lieu": "ITALIE - MILAN",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247372",
+   "extrait": "The Product Engineering Office is responsible for the design, development and implementation of products, solutions and services supporting SGSS business development objectives. As part of the Commercial Department, the Office works in close collaboration with the Commercial and Marketing teams to s",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247424",
+   "entreprise": "SOCIETE POUR L'INFORMATIQUE INDUSTRIELLE",
+   "intitule": "TALENT ACQUISITION PARTNER – BARCELONE (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247424",
+   "extrait": "Vous souhaitez évoluer dans un environnement international, gagner rapidement en responsabilités et avoir un réel impact sur le développement d'un groupe en forte croissance ? Rejoignez SII Group Spain à Barcelone et vivez une expérience professionnelle unique au cœur du recrutement international. 🚀",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248193",
+   "entreprise": "SOGEFI AIR & COOLING",
+   "intitule": "Spécialiste Méthodes (H/F)",
+   "lieu": "CANADA - MONTREAL -QC",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248193",
+   "extrait": "SPECIALISTE METHODES - VIE Basé(e) sur notre site : MONTREAL - Canada Business Unit : AIR & COOLING Durée de la mission : 24 mois Poste : Chez SOGEFI, un(e) spécialiste méthode et amélioration continue a pour mission principale d’analyser, de créer, de mettre à...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247219",
+   "entreprise": "STMICROELECTRONICS (GRENOBLE 2) SAS",
+   "intitule": "Ingénieur Application en imagerie (H/F)",
+   "lieu": "TAIWAN - TAIPEI",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247219",
+   "extrait": "La division IMAGING de ST recherche un Ingénieur Application en imagerie sous contrat VIE (Volontariat International en Entreprise) La personne sera détachée à Taiwan et intégrée dans l'équipe Application locale pour supporter le lancement de capteurs d'images innovants. A propos de vos missions Rép",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247498",
+   "entreprise": "STMICROELECTRONICS (GRENOBLE 2) SAS",
+   "intitule": "Ingénieur Support Recherche & Développement Boitier Micro-Electronique (H/F)",
+   "lieu": "MALTE - KIRKOP",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247498",
+   "extrait": "La mise en boîtier des puces électroniques constitue un levier majeur de différenciation et de création de valeur pour le portefeuille de produits de ST. Cette activité est au cœur de la stratégie d’innovation du Groupe. L’Ingénieur Support R&D Développement Boîtier s’intègre à l’organisation centra",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247963",
+   "entreprise": "STMICROELECTRONICS ROUSSET SAS",
+   "intitule": "DEMAND MANAGEMENT (H/F)",
+   "lieu": "ITALIE - AGRATE BRIANZA",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247963",
+   "extrait": "VOTRE ÉQUIPE L'équipe Demand Management joue un rôle central dans l'alignement entre les besoins du marché et la planification de la production. En étroite collaboration avec les équipes Commerciales, Marketing, Supply Chain et Product Management, elle consolide les prévisions d'activité, accompagne",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247266",
+   "entreprise": "STMICROELECTRONICS ROUSSET SAS",
+   "intitule": "Ingénieur en analyse des défaillances (H/F)",
+   "lieu": "ITALIE - AGRATE BRIANZA",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247266",
+   "extrait": "Le candidat rejoindra notre équipe d’analyse des défaillances des microcontrôleurs automobiles basée dans la région de Milan, en Italie, et jouera un rôle clé dans la résolution des problèmes liés aux dispositifs semi-conducteurs qui ont un impact direct sur la qualité des produits et la...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246318",
+   "entreprise": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE",
+   "intitule": "INGENIEUR(E) SUPPORT TECHNIQUE (H/F)",
+   "lieu": "TAIWAN - TAICHUNG",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246318",
+   "extrait": "Entreprise: SUMITOMO (SHI) Material Solutions Europe est une PME innovante faisant partie du groupe japonais Sumitomo Heavy Industries, Ltd. Basé à Gennevilliers (92230), nous concevons, fabriquons et installons des systèmes à base de lasers ultra-violets de très forte énergie, destinés aux fabrican",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246311",
+   "entreprise": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE",
+   "intitule": "INGENIEUR(E) SUPPORT TECHNIQUE (H/F)",
+   "lieu": "SINGAPOUR - SINGAPOUR",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246311",
+   "extrait": "Entreprise: SUMITOMO (SHI) Material Solutions Europe est une PME innovante située à Gennevilliers - 92 Au sein d'un groupe japonais fabricant d’équipements pour l'industrie du semi-conducteur (Sumitomo Heavy Industries, Ltd.),SUMITOMO (SHI) conçoit, fabrique et installe des systèmes à base de lasers",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246309",
+   "entreprise": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE",
+   "intitule": "INGENIEUR(E) SUPPORT TECHNIQUE (H/F)",
+   "lieu": "JAPON - HIGASHIHIROSHIMA",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246309",
+   "extrait": "SUMITOMO (SHI) MATERIAL SOLUTIONS EUROPE (SMS-E) est une PME innovante faisant partie du groupe japonais Sumitomo Heavy Industries, Ltd. Basée à Gennevilliers (92230), nous concevons, fabriquons et installons des systèmes à base de lasers ultra-violets de très forte énergie, destinés aux fabricants ",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing",
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247841",
+   "entreprise": "TOTALENERGIES MARKETING SERVICES",
+   "intitule": "Coordinateur Transformation Opérationnelle et Transport H/F (H/F)",
+   "lieu": "SINGAPOUR - SINGAPOUR",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247841",
+   "extrait": "Directement intégré à l’équipe Operations & Optimization de la filiale TotalEnergies Marketing & Services à Singapour, vos principales responsabilités sont de contribuer à l’amélioration des performances opérationnelles, d’accompagner les projets de digitalisation et de soutenir les activités transp",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "247383",
+   "entreprise": "TOTALENERGIES MARKETING SERVICES",
+   "intitule": "Assistant Chef de Projet Contrôle Interne (H/F) – République tchèque",
+   "lieu": "TCHEQUIE / REPUBLIQUE TCHEQUE - PRAGUE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247383",
+   "extrait": "Rejoignez la branche Marketing & Services de TotalEnergies à Prague, en République tchèque, et contribuez au renforcement du contrôle interne au sein d’un hub régional couvrant la République tchèque, la Slovaquie et la Hongrie. Vous participez à la préparation d’un audit interne régional et contribu",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "245999",
+   "entreprise": "TWYCE",
+   "intitule": "AGENT METHODE (H/F)",
+   "lieu": "CANADA - MONTREAL -QC",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/245999",
+   "extrait": "Poste et missions: • Travailler en étroite collaboration avec les fonctions de l’ingénierie, de la production, de la logistique et de la qualité. • Investiguer les causes racines de problèmes et analyser les solutions potentielles en évaluant les coûts, les impacts et les risques d’un...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "246959",
+   "entreprise": "VYGON",
+   "intitule": "Chef de projet industrialisation injection et outillage H/F (H/F)",
+   "lieu": "MAURICE - PAMPLEMOUSSES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246959",
+   "extrait": "Vous souhaitez donner du sens à votre carrière en rejoignant une entreprise dont les produits contribuent chaque jour à sauver des vies ? Vous souhaitez évoluer dans un environnement industriel innovant, au sein d’un groupe international à taille humaine, reconnu pour son expertise dans les...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé",
+    "chef de produit"
+   ],
+   "marketing": false
   }
  ]
 }

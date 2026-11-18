@@ -6,7 +6,7 @@
 <title>Veille VIE — cheffe de produit pharmaceutique</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=10">
+<link rel="stylesheet" href="assets/commun.css?v=11">
 </head>
 <body>
 <main>
@@ -19,8 +19,14 @@
   <h2>Les missions <small id="compte-vie"></small></h2>
   <div class="carte large">
     <div class="vie-filtres">
-      <label><input type="checkbox" id="f-sante" checked> santé seulement</label>
-      <label><input type="checkbox" id="f-marketing" checked> marketing, digital ou commercial seulement</label>
+      <select id="f-cible">
+        <option value="cible">Ma cible : santé × mes fonctions</option>
+        <option value="fonctions">Mes fonctions, tous secteurs</option>
+        <option value="sante">Toute la santé, toutes fonctions</option>
+        <option value="tout">Toutes les missions</option>
+      </select>
+      <select id="f-fonction"><option value="">Toutes mes fonctions</option>
+        <option>marketing</option><option>affaires médicales</option><option>accès au marché</option><option>digital</option><option>commercial</option></select>
       <select id="f-pays"><option value="">Tous les pays</option></select>
       <input type="search" id="f-texte" placeholder="Chercher : entreprise, poste, ville…">
     </div>
@@ -32,10 +38,10 @@
     <p class="note" id="note-serie"></p></div>
 
   <h2>Méthode et limites</h2>
-  <p class="note">Business France ne publie pas d'API ouverte, et les offres ne sont pas dans le code de la page : elles s'affichent par JavaScript. Chaque matin, une Action GitHub (<code>.github/workflows/vie.yml</code>) lance <code>scripts/vie.py</code> : un navigateur automatique (Chromium, piloté par Playwright) ouvre la page publique de recherche — que le fichier robots.txt du site autorise —, tape quatre recherches (« marketing », « pharma », « santé », « chef de produit »), clique sur « Voir plus d'offres » jusqu'au bout et lit chaque carte d'offre. Une mission est classée « santé » ou « marketing » par mots-clés sur l'entreprise, l'intitulé et le début de l'annonce : le classement peut se tromper, et les missions qu'aucune des quatre recherches ne renvoie n'apparaissent pas. « Plus d'infos » compare l'intitulé et l'extrait de l'annonce à mon profil : c'est une aide, l'annonce complète fait foi. Données : <code>data/vie/vie.json</code> (missions du jour) et <code>data/vie/serie.csv</code> (historique).</p>
+  <p class="note">Business France ne publie pas d'API ouverte, et les offres ne sont pas dans le code de la page : elles s'affichent par JavaScript. Chaque matin, une Action GitHub (<code>.github/workflows/vie.yml</code>) lance <code>scripts/vie.py</code> : un navigateur automatique (Chromium, piloté par Playwright) ouvre la page publique de recherche — que le fichier robots.txt du site autorise —, tape quatre recherches (« marketing », « pharma », « santé », « chef de produit »), clique sur « Voir plus d'offres » jusqu'au bout et lit chaque carte d'offre. Une mission est classée « santé » par mots-clés sur l'entreprise, l'intitulé et le début de l'annonce, et rangée dans mes fonctions (marketing, affaires médicales, accès au marché, digital, commercial) d'après son intitulé ; supply chain, qualité, production, R&D, finance, achats, RH, informatique et réglementaire sont écartés (<code>scripts/fonctions.py</code>) : le classement peut se tromper, et les missions qu'aucune des quatre recherches ne renvoie n'apparaissent pas. « Plus d'infos » compare l'intitulé et l'extrait de l'annonce à mon profil : c'est une aide, l'annonce complète fait foi. Données : <code>data/vie/vie.json</code> (missions du jour) et <code>data/vie/serie.csv</code> (historique).</p>
   <footer>Veille VIE — M2 MOD, IAE Clermont Auvergne. Données : mon-vie-via.businessfrance.fr (page publique), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=7"></script>
+<script src="assets/commun.js?v=8"></script>
 <script src="assets/profil.js?v=3"></script>
 <script>
 const esc = Profil.esc;
@@ -46,15 +52,16 @@ const pays = o => (o.lieu || "").split(" - ")[0].trim();
 let V, offres = [];
 
 function afficher() {
-  const s = document.getElementById("f-sante").checked, m = document.getElementById("f-marketing").checked;
+  const c = document.getElementById("f-cible").value, fn = document.getElementById("f-fonction").value;
   const p = document.getElementById("f-pays").value, q = document.getElementById("f-texte").value.trim().toLowerCase();
-  const liste = offres.filter(o => (!s || o.sante) && (!m || o.marketing) && (!p || pays(o) === p) &&
+  const garde = o => c === "tout" || (c === "sante" && o.sante) || (c === "fonctions" && o.marketing) || (c === "cible" && o.sante && o.marketing);
+  const liste = offres.filter(o => garde(o) && (!fn || (o.fonctions || []).includes(fn)) && (!p || pays(o) === p) &&
     (!q || [o.intitule, o.entreprise, o.lieu, o.extrait].join(" ").toLowerCase().includes(q)));
   document.getElementById("compte-vie").textContent = `— ${liste.length} sur ${offres.length}`;
   document.getElementById("liste-vie").innerHTML = liste.length ? liste.map(o => `
     <div class="item"><div class="titre"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a></div>
       <div class="meta"><span><b>${esc(o.entreprise)}</b></span><span>·</span><span>${esc(o.lieu)}</span><span>·</span><span>${esc(o.duree)}</span>
-        ${o.sante ? `<span class="etiq" style="background:#1fa9a4">santé</span>` : ""}${o.marketing ? `<span class="etiq" style="background:#1f5fbf">marketing</span>` : ""}
+        ${o.sante ? `<span class="etiq" style="background:#1fa9a4">santé</span>` : ""}${(o.fonctions || []).map(f => `<span class="etiq" style="background:#1f5fbf">${esc(f)}</span>`).join("")}
         <button class="bouton petit" data-fiche="${esc(o.id)}" style="margin-left:auto">Plus d'infos</button></div>
       <div class="note" style="margin-top:4px">${esc((o.extrait || "").slice(0, 220))}…</div></div>`).join("")
     : `<p class="note">Aucune mission avec ces filtres.</p>`;
@@ -70,12 +77,12 @@ function afficher() {
   document.getElementById("sous").innerHTML = `Relevé automatique du <b>${jour}</b> sur le site officiel des VIE (Business France) · recherches : ${rech}.`;
   const nPays = new Set(offres.filter(o => o.sante).map(pays)).size;
   document.getElementById("tuiles").innerHTML = [
-    [V.nb_offres, "missions lues, une fois dédoublonnées"], [V.nb_sante, "dans la santé"],
-    [V.nb_sante_marketing, "en santé et marketing, digital ou commercial"], [nPays, "pays pour les missions santé"],
+    [V.nb_offres, "missions lues, une fois dédoublonnées"], [V.nb_sante, "dans la santé (toutes fonctions)"],
+    [V.nb_sante_marketing, "dans ma cible : santé × mes fonctions"], [V.nb_fonctions ?? "—", "dans mes fonctions, tous secteurs"],
   ].map(([b, s]) => `<div class="chiffre"><b>${b}</b><span>${s}</span></div>`).join("");
   const sel = document.getElementById("f-pays");
   [...new Set(offres.map(pays))].sort((a, b) => a.localeCompare(b, "fr")).forEach(p => sel.add(new Option(p.charAt(0) + p.slice(1).toLowerCase(), p)));
-  ["f-sante", "f-marketing", "f-pays"].forEach(id => document.getElementById(id).addEventListener("change", afficher));
+  ["f-cible", "f-fonction", "f-pays"].forEach(id => document.getElementById(id).addEventListener("change", afficher));
   document.getElementById("f-texte").addEventListener("input", afficher);
   const parId = Object.fromEntries(offres.map(o => [String(o.id), o]));
   document.getElementById("liste-vie").onclick = e => { const b = e.target.closest("[data-fiche]"); if (b) Profil.ouvrir(parId[b.dataset.fiche]); };

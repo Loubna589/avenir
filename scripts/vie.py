@@ -29,6 +29,9 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from fonctions import fonctions  # marketing, affaires médicales, accès au marché, digital, commercial
+
 RACINE = Path(__file__).resolve().parent.parent
 DOSSIER = RACINE / "data" / "vie"
 SITE = "https://mon-vie-via.businessfrance.fr"
@@ -116,7 +119,7 @@ def main():
                     "lieu": c["lieu"], "type": c["type"], "duree": c["duree"],
                     "url": SITE + c["lien"], "extrait": c["extrait"][:300],
                     "sante": bool(SANTE.search(texte)),
-                    "marketing": bool(MARKETING.search(plat(c["intitule"]))),
+                    "fonctions": fonctions(c["intitule"]),
                     "recherches": []})
                 o["recherches"].append(mot)
                 sante += o["sante"]
@@ -128,11 +131,14 @@ def main():
     if not offres:
         sys.exit("Aucune offre lue : le site a peut-être changé. data/vie/ n'est pas modifié.")
 
-    liste = sorted(offres.values(), key=lambda o: (not (o["sante"] and o["marketing"]), not o["sante"], o["entreprise"]))
+    for o in offres.values():
+        o["marketing"] = bool(o["fonctions"])  # dans ma cible de fonctions (tous secteurs)
+    liste = sorted(offres.values(), key=lambda o: (not (o["sante"] and o["marketing"]), not o["marketing"], not o["sante"], o["entreprise"]))
     resume = {"date": jour, "source": SITE + "/offres/recherche (page publique, lue par navigateur automatique)",
               "recherches": bilan, "nb_offres": len(liste),
               "nb_sante": sum(o["sante"] for o in liste),
               "nb_sante_marketing": sum(o["sante"] and o["marketing"] for o in liste),
+              "nb_fonctions": sum(o["marketing"] for o in liste),
               "offres": liste}
     (DOSSIER / "vie.json").write_text(json.dumps(resume, ensure_ascii=False, indent=1), encoding="utf-8")
 

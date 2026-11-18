@@ -1,0 +1,43 @@
+# La veille bénévolat : chaque matin, GitHub ouvre les pages publiques par activité de JeVeuxAider.gouv.fr
+# dans un navigateur automatique (scripts/benevolat.py), lit les missions et enregistre data/benevolat/ par un commit.
+# Pas d identifiant à fournir : pages publiques, 10 s entre deux pages (Crawl-delay du robots.txt).
+name: veille-benevolat
+
+on:
+  schedule:
+    - cron: "0 6 * * *"      # 6 h UTC, une heure après la veille France Travail
+  workflow_dispatch:          # le bouton « Run workflow » pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commit-data          # jamais deux commits de données en même temps
+  cancel-in-progress: false
+
+jobs:
+  benevolat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer le navigateur automatique
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Lire les missions de bénévolat
+        run: python scripts/benevolat.py
+
+      - name: Enregistrer la donnée du jour (commit + push)
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "actions@github.com"
+          git add data/benevolat
+          git commit -m "veille bénévolat : missions du $(date -u +%Y-%m-%d)" || { echo "rien de nouveau"; exit 0; }
+          git pull --rebase origin main
+          git push

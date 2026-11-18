@@ -68,8 +68,8 @@ THEMES = {
             r"|strat[ée]gie de communication|plan de communication|communication digitale|site internet", re.IGNORECASE)},
     "marketing produit": {
         "titre": re.compile(
-            r"marketing|chef de produit|lancement|[ée]tudes? de march[ée]|positionnement|image de marque|\bmarque\b|packaging"
-            r"|commercialis\w*|boutique|vente solidaire|business plan|mod[èe]le [ée]conomique|offre de services", re.IGNORECASE),
+            r"marketing (produit|strat\w*)|chef de produit|lancement d.un|[ée]tudes? de march[ée]|positionnement|image de marque|packaging"
+            r"|business plan|mod[èe]le [ée]conomique", re.IGNORECASE),
         "fort": re.compile(
             r"strat[ée]gie marketing|plan marketing|[ée]tudes? de march[ée]|lancement d.un (produit|nouveau)|image de marque"
             r"|business plan|positionnement", re.IGNORECASE)},
@@ -79,11 +79,15 @@ THEMES = {
     # La santé au sens large : mentale, animale et vétérinaire, féminine, prévention, maladies, biologie…
     "santé": {
         "titre": re.compile(
-            r"sant[ée]|psych\w*|bipol\w*|d[ée]pression|[ée]coute|addict\w*|suicid\w*|animaux|animal|chevaux|cheval|\b[ée]quin"
-            r"|v[ée]t[ée]rinaire|refuge|faune|patients?|malad\w*|cancer|h[ôo]pital|hospitalis\w*|biolog\w*|handicap\w*"
+            r"sant[ée]|psych\w*|bipol\w*|d[ée]pression|[ée]coute|addict\w*|suicid\w*"
+            r"|patients?|malad\w*|cancer|h[ôo]pital|hospitalis\w*|biolog\w*|handicap\w*"
             r"|m[ée]dical|pr[ée]vention|d[ée]pistage|don du sang|sciences de la vie|femmes?|p[ée]rinat\w*|maternit\w*"
             r"|endom[ée]triose|nutrition|alimentation|bien-[êe]tre|seniors?|aidants?|alzheimer|autisme|diab[èe]te", re.IGNORECASE),
-        "fort": re.compile(r"sant[ée] mentale|v[ée]t[ée]rinaire|premiers secours|sant[ée] des femmes|pr[ée]vention sant[ée]", re.IGNORECASE)},
+        "fort": re.compile(r"sant[ée] mentale|premiers secours|sant[ée] des femmes|pr[ée]vention sant[ée]", re.IGNORECASE)},
+    # Les animaux à part : une fête du cheval, ce n'est pas de la santé
+    "animaux": {
+        "titre": re.compile(r"animaux|animal|chevaux|cheval|\b[ée]quin|\b[âa]nes?\b|chiens?|chats?\b|v[ée]t[ée]rinaire|refuge|faune|spa\b", re.IGNORECASE),
+        "fort": re.compile(r"v[ée]t[ée]rinaire|soins aux animaux|protection animale", re.IGNORECASE)},
     "événementiel": {
         "titre": re.compile(
             r"[ée]v[ée]nement\w*|festival|salon|forum|f[êe]te|gala|concert|soir[ée]e|spectacle|course|marathon|tournoi"
@@ -129,11 +133,12 @@ def lire_mission(ident, url):
     fins = {"Public aidé", "Publics aidés", "Mission ouverte", "Mission fermée", "Aux bénévoles majeurs", "Mission sur le terrain", "Mission à distance"}
     activites = entre(lignes, "Activités", fins) or entre(lignes, "Activité", fins)
     adresse = apres(lignes, "📍")
-    m = re.search(r"\b\d{5}\s+(.+)$", adresse)
-    ville = m.group(1) if m else ("À distance" if any("distance" in l.lower() for l in lignes[:80]) else adresse)
+    m = re.search(r"\b(\d{5})\s+(.+)$", adresse)
+    cp = m.group(1) if m else ""  # code postal : « 63… » = Puy-de-Dôme, près de Clermont-Ferrand
+    ville = m.group(2) if m else ("À distance" if any("distance" in l.lower() for l in lignes[:80]) else adresse)
     description = " ".join(entre(lignes, "Présentation de la mission", {"Sautez le pas", "Précisions", "Découvrez"}))
     return {"id": str(ident), "titre": titre, "url": url, "domaine": apres(lignes, "Missions de bénévolat"),
-            "organisation": apres(lignes, "Publié par", 3), "ville": ville,
+            "organisation": apres(lignes, "Publié par", 3), "ville": ville, "cp": cp,
             "a_distance": any(l == "Mission à distance" for l in lignes),
             "activites": activites, "extrait": description[:400],
             "frequence": " ".join(entre(lignes, "Durée de la mission", {"Engagement souhaité :", "Chargement..."}))[:80],
@@ -144,8 +149,9 @@ def themes_de(m):
     # Le titre d'abord ; pour la santé, les activités du soin (écoute, animaux, médical) comptent aussi ;
     # la description complète n'est lue qu'avec les mots-clés « forts », plus précis.
     # Le domaine « Santé pour tous » du site range aussi la mission dans la santé.
-    sante_act = [a for a in m["activites"] if re.search(r"psycholog|animaux|m[ée]dical|sant", a, re.I)]
-    court = {"santé": " ".join([m["titre"]] + sante_act)}
+    sante_act = [a for a in m["activites"] if re.search(r"psycholog|m[ée]dical|sant", a, re.I)]
+    animaux_act = [a for a in m["activites"] if re.search(r"animaux", a, re.I)]
+    court = {"santé": " ".join([m["titre"]] + sante_act), "animaux": " ".join([m["titre"]] + animaux_act)}
     th = [nom for nom, rx in THEMES.items() if rx["titre"].search(court.get(nom, m["titre"])) or rx["fort"].search(m.get("texte") or "")]
     if "Santé" in (m.get("domaine") or "") and "santé" not in th:
         th.append("santé")

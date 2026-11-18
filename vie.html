@@ -6,7 +6,7 @@
 <title>Veille VIE — cheffe de produit pharmaceutique</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=14">
+<link rel="stylesheet" href="assets/commun.css?v=15">
 </head>
 <body>
 <main>
@@ -14,13 +14,14 @@
   <h1>Veille VIE — le volontariat international</h1>
   <p class="sous" id="sous">Chargement de la veille VIE…</p>
 
-  <div class="chiffres" id="tuiles"></div>
+  <div class="phrase">🌍 <b>Pourquoi le VIE ?</b> Mon poste Global chez Théa, en lien avec 35 filiales, m'a donné le goût de l'international. Un VIE, c'est un premier poste de 6 à 24 mois dans une entreprise française à l'étranger : une vraie expérience, un salaire, et un tremplin pour la suite.</div>
+  <div class="chiffres" id="tuiles" style="margin-top:16px"></div>
 
   <h2>Les missions <small id="compte-vie"></small></h2>
   <div class="carte large">
     <div class="vie-filtres">
       <select id="f-fonction"><option value="">Mes fonctions</option>
-        <option>marketing</option><option>affaires médicales</option><option>accès au marché</option><option>digital</option><option>gestion de projet</option><option>commercial</option></select>
+        <option>marketing</option><option>affaires médicales</option><option>accès au marché</option><option>digital</option><option>gestion de projet</option><option>événementiel</option><option>commercial</option></select>
       <select id="f-pays"><option value="">Tous les pays</option></select>
       <input type="search" id="f-texte" placeholder="Chercher : entreprise, poste, ville…">
     </div>
@@ -35,8 +36,8 @@
   <p class="note">Comment : chaque matin, GitHub ouvre automatiquement la page publique de recherche de Business France (autorisée par le site), lance les quatre recherches et lit chaque mission. Le classement dans mes fonctions se fait sur l'intitulé : il peut se tromper, l'annonce complète fait foi.</p>
   <footer>Veille VIE — M2 MOD, IAE Clermont Auvergne. Données : mon-vie-via.businessfrance.fr (page publique), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=12"></script>
-<script src="assets/profil.js?v=8"></script>
+<script src="assets/commun.js?v=13"></script>
+<script src="assets/profil.js?v=9"></script>
 <script>
 const esc = Profil.esc;
 document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map(([url, lib]) =>
@@ -55,7 +56,7 @@ function afficher() {
   document.getElementById("liste-vie").innerHTML = liste.length ? liste.map(o => `
     <div class="item"><div class="titre"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a></div>
       <div class="meta"><span><b>${esc(o.entreprise)}</b></span><span>·</span><span>${esc(o.lieu)}</span><span>·</span><span>${esc(o.duree)}</span>${o.debut ? `<span>·</span><span>départ ${dCourt(o.debut)}</span>` : ""}
-        ${o.sante ? `<span class="etiq" style="background:#1fa9a4">santé</span>` : ""}${(o.fonctions || []).map(f => `<span class="etiq" style="background:#1f5fbf">${esc(f)}</span>`).join("")}
+        ${o.sante ? `<span class="etiq" style="background:#1fa9a4">santé</span>` : ""}${(o.fonctions || []).map(f => `<span class="etiq" style="background:${(FONCTIONS.find(x => x[0] === f) || [0, 0, "#8e8e93"])[2]}">${esc(f)}</span>`).join("")}
         <button class="bouton petit" data-fiche="${esc(o.id)}" style="margin-left:auto">Plus d'infos</button></div>
       ${o.publiee ? `<div class="note" style="margin-top:4px">📅 Publiée le <b>${dCourt(o.publiee)}</b>${o.expire ? ` · candidatures jusqu'au <b>${dCourt(o.expire)}</b>` : ""}</div>` : ""}
       <div class="note" style="margin-top:4px">${esc((o.extrait || "").slice(0, 220))}…</div></div>`).join("")
@@ -73,7 +74,7 @@ function afficher() {
   const nPays = new Set(offres.filter(o => o.sante).map(pays)).size;
   document.getElementById("tuiles").innerHTML = [
     [V.nb_offres, "missions lues, une fois dédoublonnées"], [V.nb_fonctions ?? "—", "dans mes fonctions"],
-    ...["marketing", "affaires médicales", "accès au marché", "digital", "gestion de projet", "commercial"].map(f => [offres.filter(o => (o.fonctions || []).includes(f)).length, f]),
+    ...["marketing", "affaires médicales", "accès au marché", "digital", "gestion de projet", "événementiel", "commercial"].map(f => [offres.filter(o => (o.fonctions || []).includes(f)).length, f]),
   ].map(([b, s]) => `<div class="chiffre"><b>${b}</b><span>${s}</span></div>`).join("");
   const sel = document.getElementById("f-pays");
   [...new Set(offres.map(pays))].sort((a, b) => a.localeCompare(b, "fr")).forEach(p => sel.add(new Option(p.charAt(0) + p.slice(1).toLowerCase(), p)));

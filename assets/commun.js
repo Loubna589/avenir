@@ -62,7 +62,7 @@ const couleur = "#1fa9a4", pale = "rgba(31,169,164,.18)";
 const COULEURS = { "Mon métier": "#c2185b", Marketing: "#1f5fbf", Digital: "#ef6c00", Frontière: "#8e8e93" };
 // Mes cinq fonctions : une couleur chacune, la même sur toutes les pages
 const FONCTIONS = [["marketing", "Produit / marketing", "#1f5fbf"], ["affaires médicales", "Affaires médicales", "#6b55a6"],
-  ["accès au marché", "Accès au marché", "#b7832a"], ["digital", "Digital", "#ef6c00"], ["gestion de projet", "Gestion de projet", "#2e7d5b"], ["commercial", "Commercial", "#1fa9a4"]];
+  ["accès au marché", "Accès au marché", "#b7832a"], ["digital", "Digital", "#ef6c00"], ["gestion de projet", "Gestion de projet", "#2e7d5b"], ["événementiel", "Événementiel", "#c2185b"], ["commercial", "Commercial", "#1fa9a4"]];
 // Départements -> régions (pour compter par région et zoomer la carte)
 const REGIONS = {
   "Auvergne-Rhône-Alpes": ["01","03","07","15","26","38","42","43","63","69","73","74"],
@@ -246,7 +246,7 @@ function etatFiltres() {
    scripts/fonctions.py) : code « PH:marketing », « PH:digital »… Une offre à deux fonctions
    apparaît sous les deux cases. */
 const SOUS_PHARMA = [["marketing", "Santé — produit / marketing"], ["affaires médicales", "Santé — affaires médicales"],
-  ["accès au marché", "Santé — accès au marché"], ["digital", "Santé — digital"], ["gestion de projet", "Santé — gestion de projet"], ["commercial", "Santé — commercial"]];
+  ["accès au marché", "Santé — accès au marché"], ["digital", "Santé — digital"], ["gestion de projet", "Santé — gestion de projet"], ["événementiel", "Santé — événementiel"], ["commercial", "Santé — commercial"]];
 const dansCode = (o, c) => c.startsWith("PH:") ? !!o.pharma && (o.fonctions || []).includes(c.slice(3))
   : c === "PHARMA" ? !!o.pharma : o.rome === c && o.rome !== "PHARMA";
 const dansMetiers = (o, f) => [...f.metiers].some(c => dansCode(o, c));
@@ -264,7 +264,6 @@ function filtrer(f) {
 const PAGES = [
   ["index.html", "Accueil"],
   ["offres.html", "Mes offres"],
-  ["explorer.html", "Explorer en détail"],
   ["mouvement.html", "Au fil des jours"],
   ["vie.html", "Veille VIE"],
   ["benevolat.html", "Bénévolat"],
@@ -373,7 +372,7 @@ const Commun = {
 
       const sous = document.getElementById("sous");
       if (sous) sous.innerHTML =
-        `Extraction du <b>${dateFr(d.date)}</b> · <b>${d.offres.length.toLocaleString("fr-FR")}</b> offres actives sur France Travail · mise à jour chaque matin`;
+        `Extraction du <b>${dateFr(d.date)}</b> · <b>${d.offres.length.toLocaleString("fr-FR")}</b> offres actives sur France Travail · mise à jour automatiquement chaque matin`;
 
       if (!document.getElementById("metiers")) { if (initier) initier(d); Commun.rendre(d.offres, d); return; }
       let memo = null;
@@ -422,3 +421,54 @@ const Commun = {
     }).catch(e => { const s = document.getElementById("sous"); if (s) s.textContent = "Impossible de lire data/resume.json : " + e; });
   },
 };
+
+
+/* ============================================================
+   6) PETITS VISUELS EN HTML ET LISTE D'OFFRES AU CLIC (accueil, mes offres, au fil des jours)
+   ============================================================ */
+const escH = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const pluriel = k => k > 1 ? "s" : "";
+/* Une liste de barres horizontales en HTML : [libellé, valeur, couleur, texte affiché] */
+/* ---- Cliquer sur une barre, un segment, un nom : la liste des offres concernées ---- */
+const LOTS = [];
+const voir = (titre, liste) => liste && liste.length ? ` data-voir="${LOTS.push([titre, liste]) - 1}"` : "";
+function barresHTML(lignes, max) {
+  max = max || Math.max(1, ...lignes.map(l => l[1]));
+  return `<div class="barres-h">` + lignes.map(([lib, v, c, txt, liste]) =>
+    `<div class="barre"${voir(lib, liste)} title="${escH(lib)} : ${escH(txt == null ? v : txt)}"><span class="lib">${escH(lib)}</span>` +
+    `<span class="piste"><i style="width:${100 * v / max}%;background:${c}"></i></span><span class="val">${txt == null ? v : txt}</span></div>`).join("") + `</div>`;
+}
+/* Une barre découpée en segments, avec sa légende */
+function segmentsHTML(parts) {
+  const tot = parts.reduce((s, p) => s + p[1], 0) || 1;
+  return `<div class="segments">` + parts.filter(p => p[1]).map(([l, v, c, liste]) => `<i${voir(l, liste)} title="${escH(l)} : ${v}" style="width:${100 * v / tot}%;background:${c}"></i>`).join("") + `</div>` +
+    `<div class="legende-seg">` + parts.filter(p => p[1]).map(([l, v, c, liste]) => `<span${voir(l, liste)}><i style="background:${c}"></i>${escH(l)} ${v}</span>`).join("") + `</div>`;
+}
+/* Un anneau (Chart.js) avec un texte au centre */
+function anneau(id, parts, centre) {
+  return { html: `<div class="anneau"><canvas id="${id}"></canvas><div class="centre">${centre}</div></div>`,
+    dessin: () => new Chart(document.getElementById(id), { type: "doughnut",
+      data: { labels: parts.map(p => p[0]), datasets: [{ data: parts.map(p => p[1]), backgroundColor: parts.map(p => p[2]), borderColor: "#fff", borderWidth: 2 }] },
+      options: { cutout: "68%", responsive: true, maintainAspectRatio: false, animation: false,
+        plugins: { tooltip: { callbacks: { label: c => ` ${c.label} : ${c.parsed} offre${pluriel(c.parsed)}` } } } } }) };
+}
+
+/* La fenêtre qui liste les offres d'un clic */
+let boiteL;
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-voir]"); if (!el) return;
+  const [titre, liste] = LOTS[+el.dataset.voir];
+  if (!boiteL) { boiteL = document.createElement("dialog"); boiteL.className = "fiche"; document.body.appendChild(boiteL);
+    boiteL.addEventListener("click", ev => { if (ev.target === boiteL) boiteL.close();
+      const b = ev.target.closest("[data-fiche]"); if (b) { const o = boiteL._liste[+b.dataset.fiche]; boiteL.close();
+        window.Profil && Profil.ouvrir({ ...o, contratLib: libContratOffre(o), entreprise: o.entreprise || "employeur non communiqué" }); } }); }
+  const tri = [...liste].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  boiteL._liste = tri;
+  boiteL.innerHTML = `<div class="fiche-tete"><div><h3>${escH(titre)}</h3><p class="note">${tri.length} offre${pluriel(tri.length)}, les plus récentes d'abord</p></div><button class="fermer" aria-label="Fermer">×</button></div>
+    <div class="liste" style="margin-top:12px">${tri.map((o, i) => `<div class="item"><div class="titre">${o.url ? `<a href="${escH(o.url)}" target="_blank" rel="noopener">${escH(o.intitule)}</a>` : escH(o.intitule)}</div>
+      <div class="meta"><span>${escH(o.entreprise || "employeur non communiqué")}</span><span>·</span><span>${escH(o.lieu || "lieu non précisé")}</span><span>·</span><span>${escH(libContratOffre(o))}</span>
+      ${salaireCourt(o) ? `<span>·</span><span class="sal">${escH(salaireCourt(o))}</span>` : ""}<span>·</span><span>${trancheExp(o)}</span><span>·</span><span>publiée le ${dateFr(o.date)}</span>
+      <button class="bouton petit" data-fiche="${i}" style="margin-left:auto">Plus d'infos</button></div></div>`).join("")}</div>`;
+  boiteL.querySelector(".fermer").onclick = () => boiteL.close();
+  boiteL.showModal();
+});

@@ -6,7 +6,7 @@
 <title>Mon marché — le marketing de la santé</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=14">
+<link rel="stylesheet" href="assets/commun.css?v=15">
 </head>
 <body>
 <main>
@@ -46,38 +46,14 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=12"></script>
-<script src="assets/profil.js?v=8"></script>
+<script src="assets/commun.js?v=13"></script>
+<script src="assets/profil.js?v=9"></script>
 <script>
 /* ============ Accueil : ma recherche, six questions en image, mes cinq fonctions, ma position ============ */
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const s_ = k => k > 1 ? "s" : "";
 const kE = v => v == null ? "—" : Math.round(v / 1000) + " k€";
 
-/* Une liste de barres horizontales en HTML : [libellé, valeur, couleur, texte affiché] */
-/* ---- Cliquer sur une barre, un segment, un nom : la liste des offres concernées ---- */
-const LOTS = [];
-const voir = (titre, liste) => liste && liste.length ? ` data-voir="${LOTS.push([titre, liste]) - 1}"` : "";
-function barresHTML(lignes, max) {
-  max = max || Math.max(1, ...lignes.map(l => l[1]));
-  return `<div class="barres-h">` + lignes.map(([lib, v, c, txt, liste]) =>
-    `<div class="barre"${voir(lib, liste)} title="${esc(lib)} : ${esc(txt == null ? v : txt)}"><span class="lib">${esc(lib)}</span>` +
-    `<span class="piste"><i style="width:${100 * v / max}%;background:${c}"></i></span><span class="val">${txt == null ? v : txt}</span></div>`).join("") + `</div>`;
-}
-/* Une barre découpée en segments, avec sa légende */
-function segmentsHTML(parts) {
-  const tot = parts.reduce((s, p) => s + p[1], 0) || 1;
-  return `<div class="segments">` + parts.filter(p => p[1]).map(([l, v, c, liste]) => `<i${voir(l, liste)} title="${esc(l)} : ${v}" style="width:${100 * v / tot}%;background:${c}"></i>`).join("") + `</div>` +
-    `<div class="legende-seg">` + parts.filter(p => p[1]).map(([l, v, c, liste]) => `<span${voir(l, liste)}><i style="background:${c}"></i>${esc(l)} ${v}</span>`).join("") + `</div>`;
-}
-/* Un anneau (Chart.js) avec un texte au centre */
-function anneau(id, parts, centre) {
-  return { html: `<div class="anneau"><canvas id="${id}"></canvas><div class="centre">${centre}</div></div>`,
-    dessin: () => new Chart(document.getElementById(id), { type: "doughnut",
-      data: { labels: parts.map(p => p[0]), datasets: [{ data: parts.map(p => p[1]), backgroundColor: parts.map(p => p[2]), borderColor: "#fff", borderWidth: 2 }] },
-      options: { cutout: "68%", responsive: true, maintainAspectRatio: false, animation: false,
-        plugins: { tooltip: { callbacks: { label: c => ` ${c.label} : ${c.parsed} offre${s_(c.parsed)}` } } } } }) };
-}
 // Une couleur fixe par employeur (elle suit le nom, pas le rang)
 const TEINTES = ["#1f5fbf", "#1fa9a4", "#b7832a", "#6b55a6", "#c2185b", "#ef6c00", "#2e7d5b", "#5d6b80"];
 const teinteDe = nom => TEINTES[[...nom].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) % TEINTES.length];
@@ -100,21 +76,21 @@ function rendre(_, D) {
   document.getElementById("puces").innerHTML = [
     ["🎯 Ma cible", ["marketing", "digital"], ""],
     ["➕ J'y postule aussi", ["affaires médicales", "accès au marché", "gestion de projet"], "Au fil de mon parcours, je me suis découvert un vrai intérêt pour ces domaines : ils font pleinement partie de ma recherche."],
-    ["🤝 Si l'occasion se présente", ["commercial"], "Pas mon premier choix, mais une porte d'entrée possible."],
+    ["🤝 Si l'occasion se présente", ["événementiel", "commercial"], "Pas mon premier choix, mais une porte d'entrée possible."],
   ].map(([t, fns, txt]) => `<div class="cible"><b>${t}</b><div class="puces">${fns.map(puce).join("")}</div>${txt ? `<span>${txt}</span>` : ""}</div>`).join("");
 
   const cartes = [], dessins = [];
   /* 1. Combien */
   cartes.push(["1. Combien d'offres ?", `${nP} offres`, "dans la santé, sur mes fonctions, hors alternance",
     barresHTML(FONCTIONS.map(([fn, l, c]) => { const L = P.filter(o => aFn(o, fn)); return [l, L.length, c, null, L]; })),
-    `Repère : ${nM} offres de chef de produit tous secteurs, dont ${M.filter(o => o.pharma).length} dans la santé.`, "mouvement.html"]);
+    `Repère : ${nM} offres de chef de produit tous secteurs, dont ${M.filter(o => o.pharma).length} dans la santé.`, "offres.html"]);
 
   /* 2. Où */
   const parReg = compter(P, o => o.dep ? (REGION_DE[o.dep] || "Autre") : "Lieu non précisé");
   const tReg = r => r === "Île-de-France" ? "#b7832a" : r === "Auvergne-Rhône-Alpes" ? "#1fa9a4" : r === "Lieu non précisé" ? "#c4cad3" : "#8f7cc4";
   const idf = P.filter(o => IDF.has(o.dep)).length, p63 = P.filter(o => o.dep === "63").length, clf = P.filter(o => o.commune === "63113").length;
   cartes.push(["2. Où sont-elles ?", `${idf} en Île-de-France`, `<span class="lien-voir"${voir("Puy-de-Dôme", P.filter(o => o.dep === "63"))}>${p63} dans le Puy-de-Dôme</span>, dont ${clf ? `<span class="lien-voir"${voir("Clermont-Ferrand", P.filter(o => o.commune === "63113"))}>${clf} à Clermont-Ferrand</span>` : "aucune à Clermont-Ferrand"}`,
-    barresHTML(parReg.map(([r, k]) => [r, k, tReg(r), null, P.filter(o => (o.dep ? (REGION_DE[o.dep] || "Autre") : "Lieu non précisé") === r)])), "Cliquez une barre pour voir les offres.", "explorer.html#ou"]);
+    barresHTML(parReg.map(([r, k]) => [r, k, tReg(r), null, P.filter(o => (o.dep ? (REGION_DE[o.dep] || "Autre") : "Lieu non précisé") === r)])), "Cliquez une barre pour voir les offres.", "offres.html#carte"]);
 
   /* 3. Contrats et salaires */
   const cP = compter(P, o => familleContrat(o));
@@ -126,7 +102,7 @@ function rendre(_, D) {
     `<div class="duo">${a3.html}<div><div class="legende-seg" style="display:grid;gap:4px">${cP.map(([k, v]) => `<span${voir(libC[k], P.filter(o => familleContrat(o) === k))}><i style="background:${COUL_CONTRAT[k]}"></i>${libC[k]} : <b>${v}</b></span>`).join("")}` +
     `<span${voir("Offres qui affichent un salaire", P.filter(o => o.smin != null))}>💶 avec salaire : <b>${sP.n}</b></span></div>` +
     `<p class="repere">≈ ${euro(net(sP.mn), 10)} → ${euro(net(sP.mx), 10)} net par mois</p></div></div>`,
-    `Seules ${sP.n} offres sur ${nP} affichent un salaire : le salaire affiché n'est pas tout le marché.`, "explorer.html#salaires"]);
+    `Seules ${sP.n} offres sur ${nP} affichent un salaire : le salaire affiché n'est pas tout le marché.`, "offres.html"]);
 
   /* 4. Ce qu'on demande */
   const outils = compter(P.flatMap(o => o.outils || []), x => x).slice(0, 5);
@@ -134,14 +110,16 @@ function rendre(_, D) {
   const exp = EXPS.map(t => { const L = P.filter(o => trancheExp(o) === t); return [t, L.length, EXPC[t], L]; });
   cartes.push(["4. Qu'est-ce qu'on me demande ?", outils.length ? `${pct(outils[0][1], nP)} %` : "—", outils.length ? `des offres citent : ${esc(outilLisible(outils[0][0]))}` : "",
     barresHTML(outils.map(([k, v]) => [outilLisible(k), v, "#1fa9a4", pct(v, nP) + " %", P.filter(o => (o.outils || []).includes(k))]), nP) +
-    `<p class="repere" style="margin-bottom:2px"><b>Expérience demandée</b></p>${segmentsHTML(exp)}`, "", "explorer.html#demande"]);
+    `<p class="repere" style="margin-bottom:2px"><b>Expérience demandée</b> <small>(cliquez une couleur)</small></p>${segmentsHTML(exp)}` +
+    `<div class="mini-tuiles"><span${voir("Bac+5 demandé", P.filter(o => o.formation === "Bac+5"))}><b>${pct(P.filter(o => o.formation === "Bac+5").length, P.filter(o => o.formation).length)} %</b> demandent un Bac+5 <small>(parmi les ${P.filter(o => o.formation).length} qui précisent)</small></span>` +
+    `<span><b>${(() => { const e = P.filter(o => o.exp_exige === "E" && o.exp_ans > 0).map(o => o.exp_ans); return e.length ? ans(mediane(e)) : "—"; })()}</b> d'expérience, quand elle est exigée</span></div>`, "", "offres.html#demande"]);
 
   /* 5. Télétravail */
   const tt = P.filter(o => o.teletravail).length;
   const a5 = anneau("a-tele", [["Télétravail mentionné", tt, "#1fa9a4"], ["Pas mentionné", nP - tt, "#e6ebf2"]], `<b>${tt}</b>sur ${nP}`);
   dessins.push(a5.dessin);
   cartes.push(["5. Du télétravail ?", `${pct(tt, nP)} %`, "des offres parlent de télétravail ou d'hybride",
-    `<div class="duo">${a5.html}<p class="repere" style="margin:0"><span class="lien-voir"${voir("Télétravail mentionné", P.filter(o => o.teletravail))}>Voir les ${tt} offres →</span><br><br>Repère : ${pct(M.filter(o => o.teletravail).length, nM)} % chez les chefs de produit, tous secteurs.</p></div>`, "", "explorer.html#demande"]);
+    `<div class="duo">${a5.html}<p class="repere" style="margin:0"><span class="lien-voir"${voir("Télétravail mentionné", P.filter(o => o.teletravail))}>Voir les ${tt} offres →</span><br><br>Repère : ${pct(M.filter(o => o.teletravail).length, nM)} % chez les chefs de produit, tous secteurs.</p></div>`, "", "offres.html#demande"]);
 
   /* 6. Qui recrute */
   const nomme = P.filter(o => o.entreprise);
@@ -150,7 +128,7 @@ function rendre(_, D) {
   const nbEmp = new Set(nomme.map(o => o.entreprise)).size;
   cartes.push(["6. Qui recrute ?", `${nbEmp} employeurs`, `différents ; ${P.length - nomme.length} offres ne disent pas qui recrute`,
     `<div class="recruteurs">` + top.map(([nom, k]) => `<div class="recruteur"${voir(nom, P.filter(o => o.entreprise === nom))}><span class="mono" style="background:${teinteDe(nom)}">${esc(initiales(nom))}</span>` +
-      `<span>${esc(nom)}${inter.has(nom) ? "<small>cabinet de recrutement ou intérim</small>" : ""}</span><span class="val">${k}</span></div>`).join("") + `</div>`, "", "explorer.html#recrute"]);
+      `<span>${esc(nom)}${inter.has(nom) ? "<small>cabinet de recrutement ou intérim</small>" : ""}</span><span class="val">${k}</span></div>`).join("") + `</div>`, "", "offres.html"]);
 
   document.getElementById("reponses").innerHTML = cartes.map(([q, gros, sous, visuel, repere, lien]) =>
     `<div class="reponse"><h3>${q}</h3><b class="gros">${gros}</b><p class="sous-gros">${sous}</p>${visuel}` +
@@ -180,25 +158,6 @@ function rendre(_, D) {
   document.getElementById("pos-geo").textContent = `${idf} offres sur ${nP} en Île-de-France, les autres dans ${autres} départements`;
 }
 
-/* La fenêtre qui liste les offres d'un clic */
-let boiteL;
-document.addEventListener("click", e => {
-  const el = e.target.closest("[data-voir]"); if (!el) return;
-  const [titre, liste] = LOTS[+el.dataset.voir];
-  if (!boiteL) { boiteL = document.createElement("dialog"); boiteL.className = "fiche"; document.body.appendChild(boiteL);
-    boiteL.addEventListener("click", ev => { if (ev.target === boiteL) boiteL.close();
-      const b = ev.target.closest("[data-fiche]"); if (b) { const o = boiteL._liste[+b.dataset.fiche]; boiteL.close();
-        Profil.ouvrir({ ...o, contratLib: libContratOffre(o), entreprise: o.entreprise || "employeur non communiqué" }); } }); }
-  const tri = [...liste].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-  boiteL._liste = tri;
-  boiteL.innerHTML = `<div class="fiche-tete"><div><h3>${esc(titre)}</h3><p class="note">${tri.length} offre${s_(tri.length)}, les plus récentes d'abord</p></div><button class="fermer" aria-label="Fermer">×</button></div>
-    <div class="liste" style="margin-top:12px">${tri.map((o, i) => `<div class="item"><div class="titre">${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)}</div>
-      <div class="meta"><span>${esc(o.entreprise || "employeur non communiqué")}</span><span>·</span><span>${esc(o.lieu || "lieu non précisé")}</span><span>·</span><span>${esc(libContratOffre(o))}</span>
-      ${salaireCourt(o) ? `<span>·</span><span class="sal">${esc(salaireCourt(o))}</span>` : ""}<span>·</span><span>${trancheExp(o)}</span><span>·</span><span>publiée le ${dateFr(o.date)}</span>
-      <button class="bouton petit" data-fiche="${i}" style="margin-left:auto">Plus d'infos</button></div></div>`).join("")}</div>`;
-  boiteL.querySelector(".fermer").onclick = () => boiteL.close();
-  boiteL.showModal();
-});
 
 Commun.demarrer(rendre);
 </script>

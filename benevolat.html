@@ -6,7 +6,7 @@
 <title>Bénévolat — cheffe de produit pharmaceutique</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=14">
+<link rel="stylesheet" href="assets/commun.css?v=15">
 </head>
 <body>
 <main>
@@ -23,9 +23,12 @@
   <div class="carte large">
     <div class="vie-filtres">
       <span id="f-themes" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;flex-basis:100%"><b>Mes thèmes :</b>
-        <label><input type="checkbox" value="marketing digital" checked> 💻 marketing digital</label><label><input type="checkbox" value="marketing produit" checked> 📦 marketing produit</label><label><input type="checkbox" value="intelligence artificielle" checked> 🤖 intelligence artificielle</label><label><input type="checkbox" value="santé" checked> 🩺 santé</label><label><input type="checkbox" value="événementiel" checked> 🎪 événementiel</label>
+        <label><input type="checkbox" value="marketing digital" checked> 💻 marketing digital</label><label><input type="checkbox" value="marketing produit" checked> 📦 marketing produit</label><label><input type="checkbox" value="intelligence artificielle" checked> 🤖 intelligence artificielle</label><label><input type="checkbox" value="santé" checked> 🩺 santé</label><label><input type="checkbox" value="animaux" checked> 🐾 animaux</label><label><input type="checkbox" value="événementiel" checked> 🎪 événementiel</label>
         <label><input type="checkbox" value=""> autres missions</label>
       </span>
+      <span id="f-lieu" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px"><b>Où :</b>
+        <label><input type="radio" name="lieu" value="pres" checked> 🏠 à distance ou près de Clermont-Ferrand</label>
+        <label><input type="radio" name="lieu" value=""> 🇫🇷 toute la France</label></span>
       <input type="search" id="f-texte" placeholder="Chercher : ville, association, mot…">
     </div>
   </div>
@@ -39,14 +42,17 @@
   </div>
   <footer>Veille bénévolat — M2 MOD, IAE Clermont Auvergne. Données : jeveuxaider.gouv.fr (pages publiques), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=12"></script>
-<script src="assets/profil.js?v=8"></script>
+<script src="assets/commun.js?v=13"></script>
+<script src="assets/profil.js?v=9"></script>
 <script>
 const esc = Profil.esc;
 document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map(([url, lib]) =>
   `<a href="${url}"${url === "benevolat.html" ? ' class="ici" aria-current="page"' : ""}>${lib}</a>`).join("") + `</nav>`;
 let B, missions = [];
-const TH = {"marketing digital":["#ef6c00","💻"],"marketing produit":["#1f5fbf","📦"],"intelligence artificielle":["#6b55a6","🤖"],"santé":["#1fa9a4","🩺"],"événementiel":["#b7832a","🎪"]};
+// À distance, ou dans le Puy-de-Dôme (code postal 63…, ou une commune de l'agglomération pour les missions lues avant)
+const AUTOUR = /^(clermont-ferrand|aubi[èe]re|beaumont|chamali[èe]res|cournon|riom|issoire|thiers|royat|ceyrat|gerzat|lempdes|pont-du-ch[âa]teau|le cendre|romagnat|ch[âa]tel-guyon|volvic|aulnat|blanzat|cébazat|c[ée]bazat|durtol|nohanent|orcines|p[ée]rignat|aigueperse|ambert|vichy)/i;
+const prochePourMoi = m => m.a_distance || /distance/i.test(m.ville || "") || String(m.cp || "").startsWith("63") || AUTOUR.test(m.ville || "");
+const TH = {"marketing digital":["#ef6c00","💻"],"marketing produit":["#1f5fbf","📦"],"intelligence artificielle":["#6b55a6","🤖"],"santé":["#1fa9a4","🩺"],"animaux":["#8d6e63","🐾"],"événementiel":["#b7832a","🎪"]};
 
 function afficher() {
   const q = document.getElementById("f-texte").value.trim().toLowerCase();
@@ -54,7 +60,8 @@ function afficher() {
   // (« autres missions » : celles qui n'ont aucun de mes thèmes)
   const coches = new Set([...document.querySelectorAll("#f-themes input:checked")].map(i => i.value));
   const garde = m => (m.themes || []).some(x => coches.has(x)) || (coches.has("") && !(m.themes || []).length);
-  const liste = missions.filter(m => garde(m) &&
+  const pres = (document.querySelector("#f-lieu input:checked") || {}).value === "pres";
+  const liste = missions.filter(m => garde(m) && (!pres || prochePourMoi(m)) &&
     (!q || [m.titre, m.organisation, m.ville, m.texte || ""].join(" ").toLowerCase().includes(q)));
   document.getElementById("compte").textContent = `— ${liste.length} affichées`;
   document.getElementById("liste").innerHTML = liste.length ? liste.map(m => `
@@ -76,6 +83,7 @@ function afficher() {
   document.getElementById("tuiles").innerHTML = Object.entries(TH).map(([t, [c, e]]) =>
     `<div class="chiffre" style="border-top:4px solid ${c}"><b style="color:${c}">${e} ${missions.filter(m => (m.themes || []).includes(t)).length}</b><span>${esc(t)}</span></div>`).join("");
   document.getElementById("f-themes").addEventListener("change", afficher);
+  document.getElementById("f-lieu").addEventListener("change", afficher);
   document.getElementById("f-texte").addEventListener("input", afficher);
   afficher();
   document.getElementById("liste").addEventListener("click", e => { const b = e.target.closest("[data-veille]"); if (b) Profil.ouvrirVeille(b.dataset.veille, "association"); });

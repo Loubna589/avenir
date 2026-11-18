@@ -34,6 +34,7 @@ FONCTIONS = {
     "gestion de projet": re.compile(
         r"\bchef\w* de projets?\b|project manag\w*|gestion de projets?|\bpmo\b|coordinat\w* de projets?|\bcharge\w* de projets?\b"
         r"|\bproject (lead|leader|coordinator)\b|\bprogram\w* manager\b"),
+    "événementiel": re.compile(r"evenement\w*|\bevent(s|ing)?\b|congres|salons?\b|seminaires?\b"),
     "commercial": re.compile(
         r"commercia\w*|\bsales\b|\bventes?\b|business develop\w*|developpement commercial|\bkey account|\bkam\b"
         r"|account (manager|executive)|\bdelegue\w*|visiteu\w* medical|\brepresentant\w*|\battache\w* commercial"
@@ -63,4 +64,7 @@ def fonctions(intitule):
         return []
     if HORS_CIBLE.search(t) and not any(f in trouvees for f in ("marketing", "affaires médicales", "accès au marché")):
         return []
+    # « Chef de projet événementiel » : c'est de l'événementiel, pas de la gestion de projet au sens large
+    if "événementiel" in trouvees and "gestion de projet" in trouvees:
+        trouvees.remove("gestion de projet")
     return trouvees

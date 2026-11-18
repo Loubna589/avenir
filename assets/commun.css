@@ -300,3 +300,13 @@ table.fonctions b[data-voir] { text-decoration:underline dotted; }
 .tuiles-pos b { display:block; color:var(--encre); font-size:.95rem; }
 .tuiles-pos i { font-style:normal; }
 .ma-recherche .ref { grid-column:1 / -1; }
+.mini-tuiles { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; }
+.mini-tuiles > span { background:#f6f9fd; border-radius:10px; padding:6px 10px; font-size:.82rem; color:var(--gris); }
+.mini-tuiles b { display:block; color:var(--accent); font-size:1.05rem; }
+.veille-fiche { background:#f6f9fd; border-radius:14px; padding:12px 14px; margin:6px 0; }
+.veille-tuiles { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:8px; margin-top:8px; }
+.veille-tuiles span { background:#fff; border-radius:10px; padding:6px 10px 6px 34px; position:relative; font-size:.88rem; font-weight:600; }
+.veille-tuiles i { position:absolute; left:9px; top:8px; font-style:normal; }
+.veille-tuiles small { display:block; font-weight:400; color:var(--gris); font-size:.75rem; }
+.veille-wiki { background:linear-gradient(120deg,#fff,#eaf6f5); border-left:4px solid var(--turquoise); border-radius:12px; padding:10px 14px; margin:6px 0; font-size:.9rem; }
+.veille-wiki p { margin:4px 0; }

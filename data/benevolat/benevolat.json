@@ -47,7 +47,7 @@
   }
  ],
  "nb_missions": 599,
- "nb_pratique": 227,
+ "nb_pratique": 223,
  "missions": [
   {
    "id": "121478",
@@ -368,7 +368,7 @@
    "extrait": "Recherche de sponsors",
    "frequence": "1 heure par mois Flexible",
    "themes": [
-    "santé",
+    "animaux",
     "événementiel"
    ],
    "pratique": true,
@@ -391,7 +391,7 @@
    "extrait": "Installation d'une fête équine",
    "frequence": "2 jours",
    "themes": [
-    "santé",
+    "animaux",
     "événementiel"
    ],
    "pratique": true,
@@ -414,7 +414,7 @@
    "extrait": "Restauration buvette",
    "frequence": "1 jour Prochaines dates 6 août",
    "themes": [
-    "santé",
+    "animaux",
     "événementiel"
    ],
    "pratique": true,
@@ -438,7 +438,7 @@
    "frequence": "1 jour Prochaines dates 6 août",
    "themes": [
     "marketing digital",
-    "santé",
+    "animaux",
     "événementiel"
    ],
    "pratique": true,
@@ -526,7 +526,6 @@
    "frequence": "2 heures par semaine Horaires flexibles",
    "themes": [
     "marketing digital",
-    "marketing produit",
     "événementiel"
    ],
    "pratique": true,
@@ -681,7 +680,7 @@
    "extrait": "Pet Positive est une jeune association qui développe une web app dédiée au bien-être animal. Notre ambition : créer le « Duolingo des animaux » ! Une application qui encourage, valorise et récompense les actions positives en faveur des animaux, tout en aidant chacun à agir concrètement au quotidien grâce à des défis, des contenus pédagogiques et des conseils accessibles. Notre mission va bien au-d",
    "frequence": "Plus de 5 jours",
    "themes": [
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -724,7 +723,7 @@
    "extrait": "Le magasin Cultura à Chantepie (Ille-et-Vilaine) nous accueille le 25 novembre, les 19, 20 et 28 décembre pour participer à l'emballage des cadeaux. Tout les dons libres laissés par les clients sont au bénéfice de l'association.",
    "frequence": "Une demi-journée Prochaines dates 24 nov. 18 déc. 19 déc. ...",
    "themes": [
-    "santé",
+    "animaux",
     "événementiel"
    ],
    "pratique": true,
@@ -860,7 +859,7 @@
    "extrait": "Je gère les demandes d'adoption",
    "frequence": "",
    "themes": [
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -882,7 +881,7 @@
    "extrait": "Je gère les collectes en magasin",
    "frequence": "",
    "themes": [
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1015,7 +1014,7 @@
    "extrait": "L'association Erina gère un Centre de soins basé en Haute-Vienne (Razès). Ce centre est habilité à accueillir les mammifères sauvages en détresse, à les soigner, les réhabiliter et à les réintroduire dans leur milieu naturel dans les meilleures conditions. Pour accomplir ses missions, l'association s'appuie sur l'engagement précieux de nombreux bénévoles. Leurs actions consistent à effectuer le su",
    "frequence": "Une demi-journée par mois 8h - 13h, 9h - 14h ou 10h - 15h",
    "themes": [
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -1454,6 +1453,7 @@
    "frequence": "2 heures par semaine plutôt le week-end",
    "themes": [
     "santé",
+    "animaux",
     "événementiel"
    ],
    "pratique": true,
@@ -2247,7 +2247,7 @@
    "extrait": "L'association SIMBA de protection animale recherche 2 bénévoles : Contribuer au financement de l’association (frais vétérinaires, soins, stérilisations) en développant ses ressources Levées de fonds : organiser ou participer à des événements Recherche de dons : solliciter particuliers et entreprises, suivre les donateurs et les remercier. Mécénat et partenariats : identifier, contacter et fidélise",
    "frequence": "Une demi-journée par semaine En semaine en journée",
    "themes": [
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2313,7 +2313,7 @@
    "extrait": "L'association SIMBA recherche trois bénévoles de terrain pour la protection animale : Intervenir sur le terrain pour secourir les animaux en détresse (chats, chiens, NAC) et assurer la logistique de l’association Sauvetages : capture et récupération d’animaux errants, abandonnés ou maltraités ; interventions sur les colonies de chats libres (stérilisation). Déplacements : conduire les animaux vers",
    "frequence": "Une demi-journée par semaine Horaires à déterminer avec l'association",
    "themes": [
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2336,7 +2336,7 @@
    "frequence": "Une demi-journée par semaine Pas d'horaires fixes mais une régularité est demand",
    "themes": [
     "marketing digital",
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2381,7 +2381,7 @@
    "frequence": "2 heures par semaine Rien n'est imposé, vous faites comme vous voulez/pouvez.",
    "themes": [
     "marketing digital",
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -2425,7 +2425,7 @@
    "extrait": "Samedi 28 et dimanche 29 novembre, le magasin Animalis de Clayes sous Bois accueille les bénévoles de notre association pour une collecte de nourriture destinée à nourrir la centaine de chats que nous avons en charge.",
    "frequence": "Une demi-journée",
    "themes": [
-    "santé"
+    "animaux"
    ],
    "pratique": true,
    "premiere_fois": "2026-11-18",
@@ -7787,10 +7787,8 @@
    ],
    "extrait": "La Vaisselle des Chefs est une grande vente écoresponsable de vaisselle provenant de prestigieux restaurants parisiens. Assiettes, verres, couverts, argenterie, vasques à champagne, nappes… Autant de trésors parfois conservés depuis plusieurs générations dans des réserves ou greniers, auxquels nous offrons une seconde vie lors d’une vente ouverte au public, répartie sur 10 à 12 stands. Pourquoi no",
    "frequence": "2 jours",
-   "themes": [
-    "marketing produit"
-   ],
-   "pratique": true,
+   "themes": [],
+   "pratique": false,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -8848,10 +8846,8 @@
    ],
    "extrait": "Les boutiques solidaires, \"La Boutique\" sont ouvertes à toutes et à tous ! Elles proposent un espace d'accueil et d'écoute, un lieu convivial et bien sûr de nombreux articles de seconde main. En tant que bénévoles, vos missions sont : ➔ Accueillir les publics (clients, donateurs, personnes accompagnées) et présenter la boutique ➔ Veiller au bon réapprovisionnement des portants ➔ Recevoir les perso",
    "frequence": "Une demi-journée par semaine Les mercredis aprèq-midi de 14h à 18h. D'autres cré",
-   "themes": [
-    "marketing produit"
-   ],
-   "pratique": true,
+   "themes": [],
+   "pratique": false,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10202,10 +10198,8 @@
    ],
    "extrait": "VOTRE RÔLE AU SEIN DE NOTRE ASSOCIATION LOCALE Enjeux : à quoi allez-vous contribuer ? Artisans du Monde est un acteur pionnier du commerce équitable avec trois grands moyens d'action : vente, éducation et plaidoyer. Nos boutiques « pas comme les autres » vendent des produits artisanaux et alimentaires qui permettent à des producteurs et productrices de vivre dignement de leur travail. La tenue ri",
    "frequence": "Mission permanente À partager avec au moins un ou une autre bénévole Sautez le p",
-   "themes": [
-    "marketing produit"
-   ],
-   "pratique": true,
+   "themes": [],
+   "pratique": false,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""
@@ -10224,10 +10218,8 @@
    ],
    "extrait": "CONTEXTE DE NOTRE ASSOCIATION LOCALE Notre association locale a réussi à lancer une belle dynamique bénévole et commerciale depuis 3 ans. Il s'agit de confirmer cette dynamique en répartissant les temps d'engagement sur une équipe renforcée (doublement du nombre de bénévoles dédié à cette mission). Notre boutique est le cœur battant de notre association. VOS MISSIONS Accueillir les clients Répondr",
    "frequence": "Une demi-journée par semaine Nous vous proposons de réaliser une permanence par ",
-   "themes": [
-    "marketing produit"
-   ],
-   "pratique": true,
+   "themes": [],
+   "pratique": false,
    "premiere_fois": "2026-11-18",
    "vue_le": "2026-11-18",
    "texte": ""

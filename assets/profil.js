@@ -169,36 +169,54 @@
       "<b>Son organisation</b> : bénévoles, salariés, financement (dons, subventions)",
       "<b>Ce que je peux apporter</b> : une mission concrète, avec un résultat à raconter en entretien"],
   };
+  // Grands secteurs de l'INSEE (lettre de la nomenclature NAF)
+  const SECTION = {A:"Agriculture",B:"Industries extractives",C:"Industrie",D:"Énergie",E:"Eau, déchets",F:"Construction",G:"Commerce",H:"Transports",I:"Hébergement, restauration",
+    J:"Information, communication",K:"Finance, assurance",L:"Immobilier",M:"Conseil, sciences, techniques",N:"Services aux entreprises (dont intérim, recrutement)",O:"Administration publique",
+    P:"Enseignement",Q:"Santé humaine, action sociale",R:"Arts, spectacles, loisirs",S:"Autres services (dont associations)",T:"Ménages",U:"Organismes extraterritoriaux"};
+  const norm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  // Wikipédia : seulement une page dont le titre commence par le nom cherché (pas d'homonyme au hasard)
+  async function wikipedia(nom) {
+    const api = "https://fr.wikipedia.org/w/api.php?format=json&origin=*&";
+    const s = await (await fetch(api + "action=opensearch&namespace=0&limit=5&search=" + encodeURIComponent(nom))).json();
+    const titre = (s[1] || []).find(t => norm(t).startsWith(norm(nom)) && norm(nom).length >= 3);
+    if (!titre) return null;
+    const r = await (await fetch(api + "action=query&prop=extracts|info|pageprops&exintro=1&explaintext=1&exsentences=4&inprop=url&redirects=1&titles=" + encodeURIComponent(titre))).json();
+    const page = Object.values((r.query || {}).pages || {})[0];
+    if (!page || !page.extract || (page.pageprops && "disambiguation" in page.pageprops)) return null;
+    return { titre: page.title, texte: page.extract, url: page.fullurl };
+  }
   async function veille(zone, nom, type) {
     const q = encodeURIComponent(nom), cle = type === "association" ? "association" : type === "cabinet" ? "cabinet" : "entreprise";
-    const liens = [
-      ["📰 Son actualité", `https://news.google.com/search?q=${encodeURIComponent('"' + nom + '"')}&hl=fr&gl=FR&ceid=FR:fr`],
-      ["🌐 Son site", `https://duckduckgo.com/?q=${encodeURIComponent(nom + " site officiel")}`],
-      ["📖 Wikipédia", `https://fr.wikipedia.org/w/index.php?search=${q}`],
-      ["🏛️ Annuaire officiel", `https://annuaire-entreprises.data.gouv.fr/rechercher?terme=${q}`],
-      cle === "association" ? ["🤝 Ses missions", `https://www.jeveuxaider.gouv.fr/organisations?search=${q}`] : ["💬 Avis de salariés", `https://duckduckgo.com/?q=${encodeURIComponent(nom + " avis salariés")}`],
-    ];
-    zone.innerHTML = `<h4>🔎 Veille : ${esc(nom)}</h4><p class="note">Recherche dans l'annuaire officiel des entreprises…</p>`;
-    let fiches = "";
-    try {
-      const r = await (await fetch(`https://recherche-entreprises.api.gouv.fr/search?q=${q}&per_page=8&etat_administratif=A`)).json();
-      // Pas les entrepreneurs individuels homonymes ; d'abord les structures qui ont des salariés et des comptes publiés
-      const poids = x => (x.finances ? 2 : 0) + (EFFECTIF[x.tranche_effectif_salarie] ? 1 : 0);
-      const res = (r.results || []).filter(x => x.nature_juridique !== "1000").sort((a, b) => poids(b) - poids(a)).slice(0, 3);
-      fiches = res.map(x => {
-        const an = x.finances && Object.keys(x.finances).sort().pop(), ca = an && x.finances[an].ca;
-        const morceaux = [x.siege && x.siege.libelle_commune ? "📍 " + x.siege.libelle_commune : "",
-          x.date_creation ? "créée en " + x.date_creation.slice(0, 4) : "",
-          EFFECTIF[x.tranche_effectif_salarie] ? "👥 " + EFFECTIF[x.tranche_effectif_salarie] + " salariés" : "",
-          ca ? `💶 CA ${an} : ${(ca / 1e6).toLocaleString("fr-FR", {maximumFractionDigits: 1})} M€` : "",
-          x.categorie_entreprise ? x.categorie_entreprise : ""].filter(Boolean);
-        return `<li class="force"><b><a href="https://annuaire-entreprises.data.gouv.fr/entreprise/${esc(x.siren)}" target="_blank" rel="noopener">${esc(x.nom_complet)}</a></b><span>${morceaux.map(esc).join(" · ")}</span></li>`;
-      }).join("");
-    } catch (e) { fiches = ""; }
+    zone.innerHTML = `<h4>🔎 Veille : ${esc(nom)}</h4><p class="note">Recherche en cours dans l'annuaire officiel et sur Wikipédia…</p>`;
+    // Ses autres offres en ce moment, dans mes données France Travail
+    const D0 = typeof Commun !== "undefined" && Commun.D;
+    const autres = D0 ? D0.offres.filter(o => o.entreprise && norm(o.entreprise) === norm(nom)) : [];
+    const [annu, wiki] = await Promise.all([
+      fetch(`https://recherche-entreprises.api.gouv.fr/search?q=${q}&per_page=8&etat_administratif=A`).then(r => r.json()).catch(() => null),
+      wikipedia(nom).catch(() => null)]);
+    // Pas les entrepreneurs individuels homonymes ; d'abord les structures qui ont des salariés et des comptes publiés
+    const poids = x => (x.finances ? 2 : 0) + (EFFECTIF[x.tranche_effectif_salarie] ? 1 : 0) + (norm(x.nom_complet).startsWith(norm(nom)) ? 2 : 0);
+    const res = ((annu && annu.results) || []).filter(x => x.nature_juridique !== "1000").sort((a, b) => poids(b) - poids(a)).slice(0, 2);
+    const fiches = res.map(x => {
+      const an = x.finances && Object.keys(x.finances).sort().pop(), ca = an && x.finances[an].ca;
+      const dir = (x.dirigeants || []).filter(d => d.nom).slice(0, 2).map(d => [d.prenoms && d.prenoms.split(" ")[0], d.nom, d.qualite ? `(${d.qualite.toLowerCase()})` : ""].filter(Boolean).join(" "));
+      const tuiles = [
+        ["🏭", "Activité", SECTION[x.section_activite_principale] || "—"],
+        ["📍", "Siège", (x.siege && x.siege.libelle_commune) || "—"],
+        ["📅", "Créée en", x.date_creation ? x.date_creation.slice(0, 4) : "—"],
+        ["👥", "Salariés", EFFECTIF[x.tranche_effectif_salarie] || "non publié"],
+        ["💶", ca ? `Chiffre d'affaires ${an}` : "Chiffre d'affaires", ca ? (ca / 1e6).toLocaleString("fr-FR", {maximumFractionDigits: 1}) + " M€" : "non publié"],
+        ["🏷️", "Taille", {PME: "PME", ETI: "Entreprise de taille intermédiaire", GE: "Grande entreprise"}[x.categorie_entreprise] || "—"],
+      ];
+      return `<div class="veille-fiche"><b><a href="https://annuaire-entreprises.data.gouv.fr/entreprise/${esc(x.siren)}" target="_blank" rel="noopener">${esc(x.nom_complet)}</a></b>
+        <div class="veille-tuiles">${tuiles.map(([i, l, v]) => `<span><i>${i}</i><small>${esc(l)}</small>${esc(v)}</span>`).join("")}</div>
+        ${dir.length ? `<p class="note" style="margin:6px 0 0">Dirigeants : ${esc(dir.join(" · "))}</p>` : ""}</div>`;
+    }).join("");
     zone.innerHTML = `<h4>🔎 Veille : ${esc(nom)}</h4>
-      <div class="fiche-actions" style="margin:6px 0 10px">${liens.map(([l, u]) => `<a class="bouton secondaire petit" href="${u}" target="_blank" rel="noopener">${l}</a>`).join("")}</div>
-      ${fiches ? `<p class="note" style="margin:0 0 6px">Dans l'annuaire officiel (homonymes possibles : vérifie que c'est la bonne) :</p><ul>${fiches}</ul>` : `<p class="note">Rien trouvé automatiquement dans l'annuaire officiel : utilise les liens ci-dessus.</p>`}
-      <h4>À savoir avant l'entretien</h4><ul class="oral">${AXES[cle].map(x => `<li>${x}</li>`).join("")}</ul>`;
+      ${wiki ? `<div class="veille-wiki"><b>📖 ${esc(wiki.titre)}</b><p>${esc(wiki.texte)}</p><a href="${esc(wiki.url)}" target="_blank" rel="noopener">Lire la suite sur Wikipédia →</a></div>` : ""}
+      ${fiches ? `<p class="note" style="margin:10px 0 6px">🏛️ L'annuaire officiel des entreprises (homonymes possibles : vérifie que c'est la bonne)</p>${fiches}` : `<p class="note">Rien trouvé dans l'annuaire officiel sous ce nom.</p>`}
+      ${autres.length > 1 ? `<p class="note" style="margin:10px 0 4px">📋 Ses ${autres.length} offres en ce moment sur France Travail :</p><ul class="oral">${autres.slice(0, 6).map(o => `<li>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)} <span class="note">· ${esc(o.lieu || "")}</span></li>`).join("")}</ul>` : ""}
+      <h4>À préparer avant l'entretien</h4><ul class="oral">${AXES[cle].map(x => `<li>${x}</li>`).join("")}</ul>`;
   }
   // Une fenêtre avec la seule veille (page bénévolat)
   let boiteV;

@@ -61,7 +61,15 @@ OUTILS = {
 # de marque ou de marché. Les listes de secteurs clients d'un fournisseur (« agroalimentaire,
 # pharmacie, chimie ») ne suffisent pas non plus : on demande dans la description une
 # expression qui désigne l'employeur ou ses produits.
-RX_ROLE = re.compile(r"produit|product|gamme|brand|marque|march[ée]\b|portfolio", re.IGNORECASE)
+# Mots entiers : « product » ne doit pas attraper « production » (bug corrigé le 18/11/2026).
+RX_ROLE = re.compile(r"\bproduits?\b|\bproducts?\b|\bgammes?\b|\bbrands?\b|\bmarques?\b|\bmarch[ée]s?\b|\bportfolio\b",
+                     re.IGNORECASE)
+# Postes de production, de qualité ou d'officine : « produits finis », « pharmacien support
+# production »… ne sont pas des postes de chef de produit, même dans un laboratoire.
+RX_PAS_ROLE = re.compile(
+    r"production|fabrication|conditionnement|contr[ôo]le qualit|assurance qualit|\bqualit[ée]\b|chef d.[ée]quipe"
+    r"|superviseur|op[ée]rateur|technicien|pr[ée]parateur|magasinier|logisti|maintenance|pharmacien|vendeu"
+    r"|caissi|merchandis|animat(eur|rice) d.[ée]quipe", re.IGNORECASE)
 RX_SANTE_TITRE = re.compile(
     r"pharma|m[ée]dicament|sant[ée]|m[ée]dical|\bdm\b|medtech|biotech|ophtalm|dermo|\botc\b|officine"
     r"|h[ôo]pital|diagnostic|\bivd\b|vaccin|oncolog|healthcare|nutraceut|compl[ée]ments? alimentaires?",
@@ -80,7 +88,7 @@ NAF_SANTE = ("21.", "46.46", "32.50", "72.11")
 def est_pharma(o):
     """L'offre relève-t-elle de mon métier : un poste de produit dans la pharma ou la santé ?"""
     titre = o.get("intitule") or ""
-    if not RX_ROLE.search(titre):
+    if not RX_ROLE.search(titre) or RX_PAS_ROLE.search(titre):
         return False
     return bool(RX_SANTE_TITRE.search(titre)
                 or (o.get("codeNAF") or "").startswith(NAF_SANTE)
@@ -419,7 +427,7 @@ def main():
         # La case PHARMA retient les offres trouvées par mots-clés ET celles repérées comme
         # pharma-santé sous n'importe quel code (même règle que filtrer() dans commun.js).
         "metiers": [{"code": c, "libelle": l, "groupe": g, "coche": k,
-                     "actives": sum(1 for o in offres if o["rome"] == c or (c == "PHARMA" and o["pharma"]))}
+                     "actives": sum(1 for o in offres if (o["pharma"] if c == "PHARMA" else o["rome"] == c))}
                     for c, (l, g, k) in METIERS.items()],
         "outils": list(OUTILS),
         "contrats": {c: contrat_libelle(c)

@@ -212,9 +212,11 @@ function etatFiltres() {
   return { metiers: cochees("#metiers"), contrats: cochees("#f-contrats"), niveaux: cochees("#f-niveaux") };
 }
 /* Une offre est retenue par le filtre métiers si son code est coché. La case PHARMA
-   (mon métier) retient en plus les offres repérées comme pharma-santé sous n'importe quel
-   code : même règle que le compteur de la case, calculé dans scripts/resumer.py. */
-const dansMetiers = (o, f) => f.metiers.has(o.rome) || (o.pharma && f.metiers.has("PHARMA"));
+   (mon métier) ne retient QUE les offres repérées comme pharma-santé (o.pharma), sous
+   n'importe quel code : les recherches par mots-clés de France Travail renvoient aussi des
+   postes hors sujet (production, prestations santé…), qui ne comptent pas.
+   Même règle que le compteur de la case, calculé dans scripts/resumer.py. */
+const dansMetiers = (o, f) => (o.rome !== "PHARMA" && f.metiers.has(o.rome)) || (o.pharma && f.metiers.has("PHARMA"));
 /* Les offres retenues par les trois filtres. */
 function filtrer(f) {
   f = f || etatFiltres();

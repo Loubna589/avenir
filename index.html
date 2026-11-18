@@ -25,26 +25,13 @@
   <div class="carte large" style="margin-top:16px"><h3>Les offres de mon métier, une par une <small id="sous-liste"></small></h3>
     <div class="defile"><table class="liste" id="liste-pharma"></table></div></div>
 
-  <!-- ============ 0 bis. COMPÉTENCES : LES ANNONCES FACE À MA FORMATION ============ -->
-  <h2>Ce que les annonces demandent, face à ce que j'ai <small>— les 15 offres de mon métier du 24/09/2026, lues une par une</small></h2>
-  <p class="note">Lecture : « 10 sur 15 » = l'outil ou la compétence est cité dans 10 des 15 annonces pharma-santé (repérage par mots-clés dans le texte, colonne « outils » de <code>data/resume.json</code>). Échantillon petit : ce sont des tendances, pas des statistiques.</p>
+  <!-- ============ 0 bis. COMPÉTENCES : LES ANNONCES FACE À MA FORMATION (recalculé chaque jour) ============ -->
+  <h2>Ce que les annonces demandent, face à ce que j'ai <small id="comp-sous">— les offres de mon métier du jour</small></h2>
+  <p class="note">Lecture : « 8 sur 23 » = l'outil ou la compétence est cité dans 8 des 23 annonces pharma-santé actives ce jour-là (repérage par mots-clés dans le texte, colonnes « outils » et « compétences » de <code>data/resume.json</code>). Échantillon petit : ce sont des tendances, pas des statistiques. Les chiffres se recalculent à chaque collecte ; la colonne « ce que m'apportent… » est écrite par moi.</p>
   <div class="carte large defile">
-    <table class="confronte">
-      <thead><tr><th>Demandé dans les annonces</th><th>Offres</th><th>Ce que m'apportent ma formation et mon alternance</th><th>Mon écart</th></tr></thead>
-      <tbody>
-        <tr><td>Anglais</td><td>10 sur 15</td><td>Anglais B2 ; poste Global chez Théa en lien avec 35 filiales</td><td class="ecart"><span>À renforcer : viser un niveau C1 certifié</span></td></tr>
-        <tr><td>Études de marché, insights</td><td>7 sur 15</td><td>M2 Marketing Vente (MOD) ; veille concurrentielle et analyse des ventes chez Théa France</td><td class="ok"><span>Couvert</span></td></tr>
-        <tr><td>Réglementaire (AMM, ANSM, HAS)</td><td>7 sur 15</td><td>Master Biologie Santé « Produits de santé et innovation » ; évaluation HAS et prix CEPS chez Théa France ; demandes d'autorisation réglementaires en animalerie ; UE Évaluation médico-économique (Cnam, en cours)</td><td class="ok"><span>Mon point fort</span></td></tr>
-        <tr><td>Lancement de produit</td><td>6 sur 15</td><td>Lancement d'un médicament dans 4 pays avec 35 filiales ; lancement d'un médicament et d'un complément alimentaire chez Théa France</td><td class="ok"><span>Mon point fort</span></td></tr>
-        <tr><td>Excel, Power BI, tableaux de bord</td><td>5 sur 15</td><td>Tableau de bord des ventes chez Théa France ; Excel, Power BI, R (biostatistiques)</td><td class="ok"><span>Couvert</span></td></tr>
-        <tr><td>Plan marketing, veille, besoins clients <small>(codage France Travail)</small></td><td>5 sur 15</td><td>M2 MOD ; argumentaires et réponses aux objections ; immersion terrain avec les équipes de vente</td><td class="ok"><span>Couvert</span></td></tr>
-        <tr><td>Promotion médicale, KOL, congrès · digital santé omnicanal</td><td>2 sur 15 chacun</td><td>Messages clés, outils marketing, podcasts scientifiques</td><td class="ecart"><span>Partiel : peu d'expérience des leaders d'opinion et des congrès</span></td></tr>
-        <tr><td>IA générative</td><td>2 sur 15</td><td>DU Intelligence artificielle en santé (Université Paris-Saclay, en cours)</td><td class="ok"><span>Atout rare</span></td></tr>
-        <tr><td>Données IQVIA / GERS · CRM Veeva</td><td>1 sur 15 chacun</td><td>Pas encore utilisés</td><td class="ecart"><span>À demander en alternance</span></td></tr>
-      </tbody>
-    </table>
+    <table class="confronte" id="comp-table"><tbody><tr><td>Chargement…</td></tr></tbody></table>
   </div>
-  <div class="phrase" style="margin-top:12px">Le marché demande surtout <b>l'anglais, le réglementaire, les études de marché et le lancement de produit</b>. Ma double formation, scientifique puis marketing, et mes deux années chez Théa couvrent l'essentiel. Mes vrais écarts sont <b>l'anglais à certifier</b>, <b>l'expérience</b> (7 offres sur 15 demandent 5 ans ou plus) et les outils de données du secteur (IQVIA, Veeva).</div>
+  <div class="phrase" style="margin-top:12px" id="comp-phrase">Chargement…</div>
 
   <!-- ============ 0 ter. MA POSITION ============ -->
   <h2>Ma position <small>— ce que je vais chercher cette année</small></h2>
@@ -53,8 +40,8 @@
     <ul>
       <li><b>Mon profil.</b> Un profil scientifique (licence de pharmacologie, master Biologie Santé « Produits de santé et innovation ») complété par une spécialisation en marketing opérationnel et digital (M2 MOD) : la double compétence que demande le marketing santé, où il faut à la fois comprendre un produit et savoir le faire connaître.</li>
       <li><b>Le contrat.</b> CDI, CDD, mission d'intérim ou VIE (volontariat international en entreprise) : tous me permettent d'entrer dans le métier.</li>
-      <li><b>Le bon niveau de poste.</b> Hors alternance, seules 4 offres sur 12 acceptent 2 ans d'expérience ou moins. Je vise donc les postes junior et d'assistant(e) chef de produit, et je présente mes deux années d'alternance comme une expérience réelle, pas comme un stage.</li>
-      <li><b>Où.</b> Toute la France et l'international. Les offres de mon métier sont dispersées (6 sur 15 en Île-de-France, les autres dans 8 départements différents) : me limiter à une ville réduirait trop un marché déjà petit. Mon poste Global chez Théa m'a donné envie de l'international, d'où le VIE.</li>
+      <li><b>Le bon niveau de poste.</b> <span id="pos-exp">Hors alternance, une partie seulement des offres accepte 2 ans d'expérience ou moins.</span> Je vise donc les postes junior et d'assistant(e) chef de produit, et je présente mes deux années d'alternance comme une expérience réelle, pas comme un stage.</li>
+      <li><b>Où.</b> Toute la France et l'international. Les offres de mon métier sont dispersées (<span id="pos-geo">une partie en Île-de-France, les autres dans de nombreux départements</span>) : me limiter à une ville réduirait trop un marché déjà petit. Mon poste Global chez Théa m'a donné envie de l'international, d'où le VIE.</li>
       <li><b>À qui j'écris.</b> Les entreprises qui recrutent dans mes données : des laboratoires (Innothera, Mayoly, HTL Biotechnology), le diagnostic et l'équipement de laboratoire (Horiba, Erlab), la santé numérique (Cegedim, Technidata, PRECIPHAR), et des cabinets de recrutement spécialisés santé, qui recrutent pour le compte de laboratoires (Talents Santé, Appel Médical). J'y ajoute les laboratoires d'ophtalmologie, mon domaine chez Théa, et une candidature en interne chez Théa.</li>
       <li><b>Quand.</b> Les postes se publient quelques mois avant la prise de poste : je postule de mars à juin 2027. D'ici là, ma veille tourne chaque matin, et mon outil de candidature trie les nouvelles offres, prépare un brouillon de lettre et les suit dans un tableau Excel.</li>
     </ul>
@@ -302,6 +289,57 @@ Commun.demarrer(rendre);
     document.getElementById("vie-autres-titre").textContent = `Les ${autres.length} autres missions VIE dans la santé (recherche, ingénierie, finance, qualité…)`;
   } catch (e) {
     phrase.textContent = "La veille VIE n'a pas encore de données (data/vie/vie.json absent).";
+  }
+})();
+
+// ---- Compétences et position : recalculées sur les offres pharma du jour (data/resume.json) ----
+(async () => {
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+  // Chaque ligne : ce que je cherche dans les annonces, puis ce que j'ai (écrit à la main) et mon écart.
+  const LIGNES = [
+    {lib:"Anglais", outils:["Anglais"], jai:"Anglais B2 ; poste Global chez Théa en lien avec 35 filiales", ecart:"À renforcer : viser un niveau C1 certifié", ok:false},
+    {lib:"Lancement de produit", outils:["Lancement de produit"], jai:"Lancement d'un médicament dans 4 pays avec 35 filiales ; lancement d'un médicament et d'un complément alimentaire chez Théa France", ecart:"Mon point fort", ok:true},
+    {lib:"Plan marketing, stratégie de marque", outils:["Plan marketing / stratégie de marque"], comp:["Elaborer un plan marketing"], jai:"M2 Marketing Vente (MOD) ; messages clés et outils marketing chez Théa", ecart:"Couvert", ok:true},
+    {lib:"Veille, besoins clients, connaissance produit", comp:["Réaliser une veille", "Recueillir et analyser les besoins client", "Maîtriser les caractéristiques"], jai:"Veille concurrentielle chez Théa France ; argumentaires et réponses aux objections ; immersion terrain avec les équipes de vente", ecart:"Couvert", ok:true},
+    {lib:"Compliance, conformité", outils:["Compliance / conformité"], jai:"Mise à jour des documents scientifiques et vérification des références ; procédures réglementaires en animalerie", ecart:"Couvert", ok:true},
+    {lib:"Réglementaire (AMM, ANSM, HAS)", outils:["Réglementaire (AMM, ANSM, HAS)"], jai:"Master Biologie Santé « Produits de santé et innovation » ; évaluation HAS et prix CEPS chez Théa France ; demandes d'autorisation réglementaires ; UE Évaluation médico-économique (Cnam, en cours)", ecart:"Mon point fort", ok:true},
+    {lib:"Études de marché, insights", outils:["Études de marché, insights"], jai:"M2 MOD ; analyse des ventes chez Théa France", ecart:"Couvert", ok:true},
+    {lib:"Excel, Power BI, tableaux de bord", outils:["Excel", "Power BI / tableaux de bord"], jai:"Tableau de bord des ventes chez Théa France ; Excel, Power BI, R (biostatistiques)", ecart:"Couvert", ok:true},
+    {lib:"Promotion médicale, KOL, congrès", outils:["Promotion médicale, KOL, congrès"], jai:"Messages clés, podcasts scientifiques", ecart:"Partiel : peu d'expérience des leaders d'opinion et des congrès", ok:false},
+    {lib:"Budget, P&L, prévisions", outils:["Budget, P&L, prévisions"], jai:"Analyse des ventes ; DU Entrepreneuriat (IAE)", ecart:"À développer : gérer le budget d'un produit", ok:false},
+    {lib:"Digital santé, omnicanal, CRM (Veeva)", outils:["Omnicanal / digital santé", "CRM (Veeva, Salesforce)"], jai:"M2 Marketing Opérationnel et Digital ; outils marketing et podcasts", ecart:"Partiel : Veeva jamais utilisé", ok:false},
+    {lib:"IA générative", outils:["IA générative"], jai:"DU Intelligence artificielle en santé (Université Paris-Saclay, en cours)", ecart:"Atout rare", ok:true},
+    {lib:"Données de marché (IQVIA, GERS)", outils:["Données de marché (IQVIA, GERS…)"], jai:"Pas encore utilisées", ecart:"À demander en alternance", ok:false},
+  ];
+  try {
+    const d = await (await fetch("data/resume.json?" + Date.now())).json();
+    const ph = d.offres.filter(o => o.pharma), n = ph.length;
+    const jour = new Date(d.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
+    const cite = (o, l) => (l.outils || []).some(x => (o.outils || []).includes(x)) ||
+                           (l.comp || []).some(x => (o.competences || []).some(c => c.startsWith(x)));
+    const lignes = LIGNES.map(l => ({...l, nb: ph.filter(o => cite(o, l)).length})).sort((a, b) => b.nb - a.nb);
+    document.getElementById("comp-sous").textContent = `— les ${n} offres de mon métier actives le ${jour}, lues une par une`;
+    document.getElementById("comp-table").innerHTML =
+      `<thead><tr><th>Demandé dans les annonces</th><th>Offres</th><th>Ce que m'apportent ma formation et mon alternance</th><th>Mon écart</th></tr></thead><tbody>` +
+      lignes.map(l => `<tr><td>${esc(l.lib)}</td><td>${l.nb} sur ${n}</td><td>${esc(l.jai)}</td><td class="${l.ok ? "ok" : "ecart"}"><span>${esc(l.ecart)}</span></td></tr>`).join("") + `</tbody>`;
+    // Expérience, hors alternance : « débutant accepté » ou 2 ans au plus ; « exigée » sans durée = non compté
+    const hors = ph.filter(o => !o.alternance);
+    const court = hors.filter(o => o.exp_exige === "D" || (o.exp_ans != null && o.exp_ans <= 2)).length;
+    const long5 = ph.filter(o => o.exp_ans != null && o.exp_ans >= 5).length;
+    const top = lignes.filter(l => l.nb > 0).slice(0, 4).map(l => l.lib.toLowerCase());
+    const manques = lignes.filter(l => !l.ok && l.nb > 0).slice(0, 3).map(l => l.lib.toLowerCase());
+    document.getElementById("comp-phrase").innerHTML =
+      `Ce jour-là, le marché demande surtout <b>${esc(top.join(" · "))}</b>. Ma double formation, scientifique puis marketing, et mes deux années chez Théa couvrent l'essentiel. ` +
+      `Mes écarts les plus cités : <b>${esc(manques.join(" · "))}</b> ; et l'expérience : <b>${long5} offre${long5 > 1 ? "s" : ""} sur ${n}</b> demande${long5 > 1 ? "nt" : ""} 5 ans ou plus.`;
+    document.getElementById("pos-exp").textContent =
+      `Hors alternance, ${court} offre${court > 1 ? "s" : ""} sur ${hors.length} accepte${court > 1 ? "nt" : ""} un débutant ou 2 ans d'expérience au plus (relevé du ${jour}).`;
+    const idf = ["75","77","78","91","92","93","94","95"];
+    const nIdf = ph.filter(o => idf.includes(o.dep)).length;
+    const autres = new Set(ph.filter(o => o.dep && !idf.includes(o.dep)).map(o => o.dep)).size;
+    document.getElementById("pos-geo").textContent =
+      `${nIdf} sur ${n} en Île-de-France, les autres dans ${autres} départements différents`;
+  } catch (e) {
+    document.getElementById("comp-phrase").textContent = "Données indisponibles.";
   }
 })();
 </script>

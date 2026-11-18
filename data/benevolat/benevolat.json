@@ -21,12 +21,6 @@
    "lues": 6
   },
   {
-   "activite": "Recherche de partenariats",
-   "cle": "recherche-de-partenariats",
-   "disponibles": 777,
-   "lues": 6
-  },
-  {
    "activite": "Événementiel",
    "cle": "evenementiel",
    "disponibles": 1511,
@@ -39,20 +33,26 @@
    "lues": 6
   },
   {
+   "activite": "Écoute et aide psychologique",
+   "cle": "ecoute-aide-psychologique",
+   "disponibles": 716,
+   "lues": 6
+  },
+  {
+   "activite": "Soins aux animaux",
+   "cle": "soins-aux-animaux",
+   "disponibles": 682,
+   "lues": 6
+  },
+  {
    "activite": "Médical",
    "cle": "medical",
    "disponibles": 210,
    "lues": 6
-  },
-  {
-   "activite": "Collecte de fonds",
-   "cle": "collecte-de-fonds",
-   "disponibles": 431,
-   "lues": 6
   }
  ],
- "nb_missions": 42,
- "nb_pratique": 13,
+ "nb_missions": 44,
+ "nb_pratique": 18,
  "missions": [
   {
    "id": "110711",
@@ -66,6 +66,10 @@
    "ville": "Clermont-Ferrand",
    "frequence": "Plus de 5 jours par mois",
    "organisation": "BIPOL'& Co France",
+   "themes": [
+    "marketing digital",
+    "mon profil santé"
+   ],
    "pratique": true
   },
   {
@@ -81,6 +85,9 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures par semaine",
    "organisation": "France Bénévolat Clermont",
+   "themes": [
+    "marketing digital"
+   ],
    "pratique": true
   },
   {
@@ -96,6 +103,9 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures",
    "organisation": "AESIR",
+   "themes": [
+    "marketing digital"
+   ],
    "pratique": true
   },
   {
@@ -110,6 +120,9 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures par semaine",
    "organisation": "CCFD-Terre Solidaire Auvergne-Limousin",
+   "themes": [
+    "marketing digital"
+   ],
    "pratique": true
   },
   {
@@ -124,79 +137,198 @@
    "ville": "Clermont-Ferrand",
    "frequence": "Plus de 5 jours par mois",
    "organisation": "OUVERTE DÈS 16 ANS",
+   "themes": [
+    "marketing digital",
+    "mon profil santé"
+   ],
    "pratique": true
   },
   {
-   "id": "109015",
-   "titre": "Je donne un coup de pouce pour trouver des financements",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/109015/benevolat-la-base-clermont-1",
+   "id": "118278",
+   "titre": "J'organise et j'anime des ateliers pour sensibiliser les jeunes aux impacts de l’intelligence artificielle !",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/118278/benevolat-latitudes-330",
    "activites": [
-    "Recherche de partenariats",
-    "Collecte de fonds"
+    "Actions de sensibilisation"
    ],
    "vue_le": "2026-11-18",
    "premiere_fois": "2026-11-18",
-   "ville": "Clermont-Ferrand",
-   "frequence": "1 jour par mois",
-   "organisation": "LA BASE CLERMONT",
-   "pratique": true
-  },
-  {
-   "id": "55838",
-   "titre": "Je suis référent.e partenariat établissement scolaire et supérieur",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/55838/benevolat-ccfd-terre-solidaire-auvergne-limousin-21",
-   "activites": [
-    "Recherche de partenariats"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Clermont-Ferrand, Riom, Issoire",
-   "frequence": "1 jour par mois",
-   "organisation": "CCFD-Terre Solidaire Auvergne-Limousin",
-   "pratique": true
-  },
-  {
-   "id": "49562",
-   "titre": "Je deviens Co-référent d'Antenne - Clermont-Ferrand (63000)",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/49562/benevolat-fondation-claude-pompidou-28",
-   "activites": [
-    "Recherche de partenariats"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Clermont-Ferrand",
-   "frequence": "1 jour par semaine",
-   "organisation": "Fondation Claude Pompidou",
-   "pratique": true
-  },
-  {
-   "id": "96739",
-   "titre": "J'aide à trouver des subventions et partenariats pour une banque alimentaire",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/96739/benevolat-banque-alimentaire-auvergne-134",
-   "activites": [
-    "Recherche de partenariats",
-    "Collecte de fonds"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Clermont-Ferrand",
+   "ville": "Latitudes",
    "frequence": "Une demi-journée par semaine",
-   "organisation": "Banque Alimentaire Auvergne",
+   "organisation": "Latitudes",
+   "themes": [
+    "intelligence artificielle"
+   ],
    "pratique": true
   },
   {
-   "id": "115113",
-   "titre": "Je recherche des partenaires financiers pour soutenir un club de rugby",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/115113/benevolat-club-amical-sportif-gerzatois",
+   "id": "105769",
+   "titre": "J'écoute et soutiens des personnes en souffrance psychique ou en détresse",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/105769/benevolat-federation-sos-suicide-phenix-france-2",
    "activites": [
-    "Recherche de partenariats",
-    "Collecte de fonds"
+    "Écoute et aide psychologique"
    ],
    "vue_le": "2026-11-18",
    "premiere_fois": "2026-11-18",
-   "ville": "Gerzat",
+   "ville": "Écoute / Aide psychologique",
    "frequence": "2 heures par semaine",
-   "organisation": "Club Amical Sportif Gerzatois",
+   "organisation": "FEDERATION SOS SUICIDE PHENIX FRANCE",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "119447",
+   "titre": "J'accueille des jeunes enfants et leurs parents dans un Lieu d'accueil enfant parent (LAEP)",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/119447/benevolat-association-enfance-et-familles-du-quartier-saint-jacques-3",
+   "activites": [
+    "Écoute et aide psychologique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Écoute / Aide psychologique",
+   "frequence": "2 jours par mois",
+   "organisation": "Association enfance et familles du Quartier Saint-Jacques",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "66119",
+   "titre": "Je deviens Délégué-Enquêteur bénévole du Puy de Dôme",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/66119/benevolat-la-societe-protectrice-des-animaux-la-spa-97",
+   "activites": [
+    "Écoute et aide psychologique",
+    "Soins aux animaux"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "",
+   "frequence": "1 jour par semaine",
+   "organisation": "La Société Protectrice des Animaux (la SPA)",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "72192",
+   "titre": "J'écoute toutes les semaines une personne qui se sent seule ou fragilisée par un événement de vie",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/72192/benevolat-astree-antenne-clermont-ferrand-2",
+   "activites": [
+    "Écoute et aide psychologique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Lutte contre l'isolement",
+   "frequence": "1 heure par semaine",
+   "organisation": "ASTREE - Antenne Clermont-Ferrand",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "89081",
+   "titre": "Je deviens famille d'accueil temporaire pour animaux",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/89081/benevolat-kiweeto-90",
+   "activites": [
+    "Soins aux animaux"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Kiweeto",
+   "frequence": "Plus de 5 jours",
+   "organisation": "Kiweeto",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "118195",
+   "titre": "Je deviens famille d'accueil pour chien dans le Puy-de-Dôme (63) et aux alentours",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/118195/benevolat-association-groupe-enqueteur-protection-animale-agepa-32",
+   "activites": [
+    "Soins aux animaux"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Clermont-Ferrand, Thiers",
+   "frequence": "Plus de 5 jours par semaine",
+   "organisation": "Association Groupe Enquêteur Protection Animale (AGEPA)",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "71622",
+   "titre": "Je deviens enquêteur protection animal dans le Puy De dôme (63)",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/71622/benevolat-association-groupe-enqueteur-protection-animale-agepa-2",
+   "activites": [
+    "Soins aux animaux"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "",
+   "frequence": "1 jour par semaine",
+   "organisation": "Association Groupe Enquêteur Protection Animale (AGEPA)",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "71621",
+   "titre": "Je deviens famille d'accueil bénévole pour animaux dans le puy de dôme (63)",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/71621/benevolat-association-groupe-enqueteur-protection-animale-agepa-1",
+   "activites": [
+    "Soins aux animaux"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Thiers, Clermont-Ferrand",
+   "frequence": "Plus de 5 jours par semaine",
+   "organisation": "Association Groupe Enquêteur Protection Animale (AGEPA)",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "77507",
+   "titre": "Je participe à la protection des chats errants et lutte contre la maltraitance animale",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/77507/benevolat-france-benevolat-clermont-13",
+   "activites": [
+    "Soins aux animaux"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Thiers",
+   "frequence": "2 heures par semaine",
+   "organisation": "France Bénévolat Clermont",
+   "themes": [
+    "mon profil santé"
+   ],
+   "pratique": true
+  },
+  {
+   "id": "119343",
+   "titre": "Je souhaite participer à la cellule d'écoute \"Espace Vie en Rose\"",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/119343/benevolat-rose-des-sabres-2",
+   "activites": [
+    "Médical"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Écoute / Aide psychologique",
+   "frequence": "Une demi-journée par mois",
+   "organisation": "Rose des Sabres",
+   "themes": [
+    "mon profil santé"
+   ],
    "pratique": true
   },
   {
@@ -211,6 +343,9 @@
    "ville": "",
    "frequence": "2 jours par semaine",
    "organisation": "Comité National contre les Maladies Respiratoires",
+   "themes": [
+    "mon profil santé"
+   ],
    "pratique": true
   },
   {
@@ -225,20 +360,9 @@
    "ville": "Aide aux démarches administratives",
    "frequence": "2 heures par semaine",
    "organisation": "Habitat et Humanisme Rhône",
-   "pratique": true
-  },
-  {
-   "id": "107146",
-   "titre": "J'organise des événements de collecte de fonds contre le cancer à Lezoux",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/107146/benevolat-ligue-contre-le-cancer-comite-du-puy-de-dome-8",
-   "activites": [
-    "Collecte de fonds"
+   "themes": [
+    "mon profil santé"
    ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Lezoux",
-   "frequence": "2 heures",
-   "organisation": "Ligue Contre le Cancer - Comité du Puy de Dôme",
    "pratique": true
   },
   {
@@ -253,6 +377,7 @@
    "ville": "Accueil / Information",
    "frequence": "Une demi-journée par mois",
    "organisation": "Orchestre Symphonique des dômes",
+   "themes": [],
    "pratique": false
   },
   {
@@ -267,6 +392,7 @@
    "ville": "",
    "frequence": "",
    "organisation": "",
+   "themes": [],
    "pratique": false
   },
   {
@@ -281,6 +407,7 @@
    "ville": "Informatique",
    "frequence": "Une demi-journée par semaine",
    "organisation": "Association CLIP",
+   "themes": [],
    "pratique": false
   },
   {
@@ -295,6 +422,7 @@
    "ville": "Informatique",
    "frequence": "Une demi-journée par mois",
    "organisation": "Les Petits Débrouillards AuRA - Auvergne-Rhône-Alpes",
+   "themes": [],
    "pratique": false
   },
   {
@@ -309,6 +437,7 @@
    "ville": "Informatique",
    "frequence": "2 heures par semaine",
    "organisation": "Régie de territoire des deux rives",
+   "themes": [],
    "pratique": false
   },
   {
@@ -323,6 +452,7 @@
    "ville": "Informatique",
    "frequence": "Une demi-journée par semaine",
    "organisation": "Association CLIP",
+   "themes": [],
    "pratique": false
   },
   {
@@ -337,6 +467,7 @@
    "ville": "",
    "frequence": "",
    "organisation": "",
+   "themes": [],
    "pratique": false
   },
   {
@@ -351,6 +482,7 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures par semaine",
    "organisation": "Oxfam France",
+   "themes": [],
    "pratique": false
   },
   {
@@ -365,6 +497,7 @@
    "ville": "Clermont-Ferrand, Riom, Issoire",
    "frequence": "2 heures par semaine",
    "organisation": "CCFD-Terre Solidaire Auvergne-Limousin",
+   "themes": [],
    "pratique": false
   },
   {
@@ -379,6 +512,7 @@
    "ville": "Animation / Loisirs",
    "frequence": "2 jours par mois",
    "organisation": "Scouts et Guides de France Auvergne",
+   "themes": [],
    "pratique": false
   },
   {
@@ -393,6 +527,7 @@
    "ville": "",
    "frequence": "",
    "organisation": "",
+   "themes": [],
    "pratique": false
   },
   {
@@ -407,6 +542,7 @@
    "ville": "Gestion financière / comptabilité",
    "frequence": "2 jours par semaine",
    "organisation": "Restos du Coeur du Puy-de-Dôme",
+   "themes": [],
    "pratique": false
   },
   {
@@ -421,20 +557,7 @@
    "ville": "Animation / Loisirs",
    "frequence": "3 jours par mois",
    "organisation": "Scouts et Guides de France Auvergne",
-   "pratique": false
-  },
-  {
-   "id": "58630",
-   "titre": "Je développe l’accueil de personnes en grande précarité au sein d’entreprises à Clermont-Ferrand",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/58630/benevolat-bureaux-du-coeur-11",
-   "activites": [
-    "Recherche de partenariats"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Lutte contre l'isolement",
-   "frequence": "1 heure par semaine",
-   "organisation": "Bureaux du Cœur",
+   "themes": [],
    "pratique": false
   },
   {
@@ -450,6 +573,7 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures par semaine",
    "organisation": "LA BASE CLERMONT",
+   "themes": [],
    "pratique": false
   },
   {
@@ -464,6 +588,7 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures par semaine",
    "organisation": "AESIR",
+   "themes": [],
    "pratique": false
   },
   {
@@ -478,6 +603,7 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures par semaine",
    "organisation": "AESIR",
+   "themes": [],
    "pratique": false
   },
   {
@@ -492,6 +618,7 @@
    "ville": "Clermont-Ferrand",
    "frequence": "2 heures par semaine",
    "organisation": "AESIR",
+   "themes": [],
    "pratique": false
   },
   {
@@ -506,20 +633,7 @@
    "ville": "Soutien scolaire et formation",
    "frequence": "Une demi-journée par semaine",
    "organisation": "Secours catholique - Cantal Puy-de-Dôme",
-   "pratique": false
-  },
-  {
-   "id": "118278",
-   "titre": "J'organise et j'anime des ateliers pour sensibiliser les jeunes aux impacts de l’intelligence artificielle !",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/118278/benevolat-latitudes-330",
-   "activites": [
-    "Actions de sensibilisation"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Latitudes",
-   "frequence": "Une demi-journée par semaine",
-   "organisation": "Latitudes",
+   "themes": [],
    "pratique": false
   },
   {
@@ -534,6 +648,7 @@
    "ville": "Clermont-Ferrand",
    "frequence": "Une demi-journée par semaine",
    "organisation": "Latitudes",
+   "themes": [],
    "pratique": false
   },
   {
@@ -548,6 +663,7 @@
    "ville": "Gouvernance",
    "frequence": "Une demi-journée par semaine",
    "organisation": "Mouvement Marianne",
+   "themes": [],
    "pratique": false
   },
   {
@@ -562,6 +678,37 @@
    "ville": "Soutien scolaire et formation",
    "frequence": "Une demi-journée par semaine",
    "organisation": "REBOND - Réseau d’Étudiant·e·s Bénévoles Organisé·e·s Nationalement en Détention",
+   "themes": [],
+   "pratique": false
+  },
+  {
+   "id": "109087",
+   "titre": "J'accueille les familles de détenus lors des parloirs au centre pénitentiaire",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/109087/benevolat-secours-catholique-cantal-puy-de-dome-69",
+   "activites": [
+    "Écoute et aide psychologique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Accueil / Information",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Secours catholique - Cantal Puy-de-Dôme",
+   "themes": [],
+   "pratique": false
+  },
+  {
+   "id": "89190",
+   "titre": "Je deviens Accueillant.e sur le Lieu d'Accueil Enfant Parent - L'Autre Maison",
+   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/89190/benevolat-association-des-centres-sociaux-et-culturels-du-bassin-de-riom-6",
+   "activites": [
+    "Écoute et aide psychologique"
+   ],
+   "vue_le": "2026-11-18",
+   "premiere_fois": "2026-11-18",
+   "ville": "Lutte contre l'isolement",
+   "frequence": "Une demi-journée par semaine",
+   "organisation": "Association des Centres Sociaux et Culturels du Bassin de Riom",
+   "themes": [],
    "pratique": false
   },
   {
@@ -576,6 +723,7 @@
    "ville": "Clermont-Ferrand",
    "frequence": "Une demi-journée par mois",
    "organisation": "Solidarité Santé 63",
+   "themes": [],
    "pratique": false
   },
   {
@@ -590,20 +738,7 @@
    "ville": "Secourisme et sécurité civile",
    "frequence": "1 jour par mois",
    "organisation": "Protection Civile du Cantal",
-   "pratique": false
-  },
-  {
-   "id": "119343",
-   "titre": "Je souhaite participer à la cellule d'écoute \"Espace Vie en Rose\"",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/119343/benevolat-rose-des-sabres-2",
-   "activites": [
-    "Médical"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Écoute / Aide psychologique",
-   "frequence": "Une demi-journée par mois",
-   "organisation": "Rose des Sabres",
+   "themes": [],
    "pratique": false
   },
   {
@@ -618,34 +753,7 @@
    "ville": "Saint-Étienne",
    "frequence": "Une demi-journée par semaine",
    "organisation": "LE COMEDE COMITE POUR LA SANTE DES EXILES",
-   "pratique": false
-  },
-  {
-   "id": "102310",
-   "titre": "J'organise des événements de collecte de fond pour l'antenne de Riom au profit de la Ligue contre le cancer",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/102310/benevolat-ligue-contre-le-cancer-comite-du-puy-de-dome-6",
-   "activites": [
-    "Collecte de fonds"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Riom",
-   "frequence": "1 jour par mois",
-   "organisation": "Ligue Contre le Cancer - Comité du Puy de Dôme",
-   "pratique": false
-  },
-  {
-   "id": "79141",
-   "titre": "Je m’engage en tant que comptable bénévole",
-   "url": "https://www.jeveuxaider.gouv.fr/missions-benevolat/79141/benevolat-rires-en-musiques-france-26",
-   "activites": [
-    "Collecte de fonds"
-   ],
-   "vue_le": "2026-11-18",
-   "premiere_fois": "2026-11-18",
-   "ville": "Gestion financière / comptabilité",
-   "frequence": "2 jours",
-   "organisation": "Rires en Musiques France",
+   "themes": [],
    "pratique": false
   }
  ]

@@ -35,23 +35,31 @@ SITE = "https://www.jeveuxaider.gouv.fr"
 PAUSE = 10  # secondes entre deux pages (Crawl-delay du robots.txt)
 GARDER_JOURS = 30
 
-# Activités suivies : celles où mon profil (marketing, digital, santé) peut servir
+# Activités suivies : celles où l'on trouve des missions de marketing digital et de communication
 ACTIVITES = {
     "communication": "Communication",
     "informatique": "Informatique et numérique",
     "gestion-de-projets": "Gestion de projets",
-    "recherche-de-partenariats": "Recherche de partenariats",
     "evenementiel": "Événementiel",
     "actions-de-sensibilisation": "Actions de sensibilisation",
+    "ecoute-aide-psychologique": "Écoute et aide psychologique",
+    "soins-aux-animaux": "Soins aux animaux",
     "medical": "Médical",
-    "collecte-de-fonds": "Collecte de fonds",
 }
 
-# Missions où je mets en pratique ma formation (mots-clés sur l'intitulé et la carte)
-PRATIQUE = re.compile(
-    r"communication|r[ée]seaux sociaux|site (internet|web)|wordpress|digital|marketing|strat[ée]gi|graphi|canva"
-    r"|montage|newsletter|campagne|visibilit|faire conna[iî]tre|partenariat|m[ée]c[ée]nat|financement|collecte de fonds"
-    r"|pr[ée]vention|sensibilis\w* .{0,30}(sant|maladie|cancer|addict)|d[ée]pistage|parcours de sant[ée]", re.IGNORECASE)
+# Missions où je mets en pratique le marketing digital, en santé ou ailleurs (mots-clés sur l'intitulé et la carte)
+THEMES = {
+    "marketing digital": re.compile(
+        r"digital|marketing|r[ée]seaux sociaux|site (internet|web)|\bweb\b|wordpress|community manag|instagram|facebook"
+        r"|linkedin|tiktok|newsletter|e-?mailing|\bseo\b|cr[ée]ation de contenu|contenus? (num[ée]rique|en ligne|web)"
+        r"|graphi|canva|montage vid[ée]o|strat[ée]gie de communication|communication|faire conna[iî]tre|visibilit", re.IGNORECASE),
+    "intelligence artificielle": re.compile(r"intelligence artificielle|\bIA\b|\bchatgpt\b|\bIA g[ée]n[ée]rative", re.IGNORECASE),
+    # En lien avec mon parcours : santé mentale (PSSM), animaux et vétérinaire (SOS Cheval), santé, biologie
+    "mon profil santé": re.compile(
+        r"sant[ée] mentale|psych\w*|bipol\w*|d[ée]pression|[ée]coute|addict\w*|souffrance|suicid\w*|animal|animaux|chevaux|cheval"
+        r"|\b[ée]quin|v[ée]t[ée]rinaire|refuge|faune|sant[ée]|m[ée]dic\w*|patients?|maladie|cancer|handicap|biolog\w*|scienti\w*"
+        r"|recherche m[ée]dicale|don du sang|pr[ée]vention|d[ée]pistage", re.IGNORECASE),
+}
 
 LIRE_CARTES = r"""() => [...document.querySelectorAll("a.stretched-link[href*='/missions-benevolat/']")].map(a => {
   let c = a;
@@ -100,7 +108,11 @@ def main():
                                                 "activites": [], "vue_le": jour, "premiere_fois": jour})
                 m.update({"titre": c["titre"], "ville": ville, "frequence": frequence,
                           "organisation": organisation, "vue_le": jour,
-                          "pratique": bool(PRATIQUE.search(" ".join([c["titre"]] + lignes)))})
+                          "themes": [nom for nom, rx in THEMES.items() if rx.search(" ".join([c["titre"]] + lignes))]})
+                # Missions réservées aux soignants diplômés : pas pour moi
+                if re.search(r"m[ée]decin|infirmi|permanences? m[ée]dicales|kin[ée]|dentiste|psychologue", c["titre"], re.I):
+                    m["themes"] = [x for x in m["themes"] if x != "mon profil santé"]
+                m["pratique"] = bool(m["themes"])
                 if libelle not in m["activites"]:
                     m["activites"].append(libelle)
             bilan.append({"activite": libelle, "cle": cle, "disponibles": total, "lues": len(cartes)})

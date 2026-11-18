@@ -69,7 +69,7 @@
     [/dispositif|medtech|implant|dentaire|perfusion|monitoring|\bdm\b|chirurg|diagnostic|ivd/i, "dispositifs médicaux"],
     [/pharma|m[ée]dicament|laborato|oncolog|biotech|therap|sanofi|servier|ipsen|astrazeneca|ucb|biocodex|mayoly/i, "pharmaceutique"],
   ];
-  const secteur = o => (SECTEURS.find(([rx]) => rx.test(texteOffre(o) + " " + (o.entreprise || ""))) || [null, "santé"])[1];
+  const secteur = o => (SECTEURS.find(([rx]) => rx.test(texteOffre(o) + " " + (o.entreprise || "") + " " + (o.secteur || ""))) || [null, "santé"])[1];
 
   function analyser(o) {
     const forces = [], ecarts = [], atouts = [];
@@ -91,34 +91,42 @@
     if (poste === poste.toUpperCase()) poste = poste.charAt(0) + poste.slice(1).toLowerCase();  // MAJUSCULES -> phrase
     const ent = o.entreprise && !/non communiqu/i.test(o.entreprise) ? o.entreprise : "votre entreprise";
     const chez = ent === "votre entreprise" ? "au sein de votre entreprise" : `chez ${ent}`;
-    const preuves = a.forces.filter(l => l.phrase).slice(0, 3).map(l => l.phrase);
-    if (preuves.length < 2) preuves.push(...a.atouts.filter(l => l.phrase && !preuves.includes(l.phrase)).slice(0, 2 - preuves.length).map(l => l.phrase));
     const intl = vie || /international|global|export|europe|filiales?|pays/i.test(texteOffre(o));
     const lieu = (o.lieu || "").trim();
-    // Une lettre qui ne commence pas par « Actuellement en… » : une accroche concrète,
-    // puis « vous cherchez / j'apporte », un écart dit franchement, et une fin courte.
+    // La lettre : une accroche liée au SECTEUR de l'offre, puis ce que l'annonce demande face à
+    // ce que j'ai déjà fait, mon parcours, et une fin courte. Aucun point faible : les écarts
+    // servent à préparer l'oral (fiche « Plus d'infos »), pas à la lettre.
     const libs = a.forces.map(l => l.lib);
+    const lance = libs.includes("Lancement de produit");
+    const pour = `${vie ? "pour la mission de V.I.E" : "pour le poste"} « ${poste} » ${chez}${lieu ? ` (${lieu})` : ""}`;
+    const ACCROCHES = {
+      "dispositifs médicaux": `Un dispositif médical ne se vend pas sur une promesse : il se vend sur la preuve, auprès de professionnels de santé exigeants. Traduire une donnée scientifique en message clair pour des praticiens, c'est ce que je fais chaque jour comme alternante cheffe de produit Global aux Laboratoires Théa. C'est cette exigence que je souhaite mettre au service de votre gamme, ${pour}.`,
+      "santé animale": `La santé animale demande la même rigueur scientifique que la santé humaine, avec un interlocuteur de plus : celui qui prend soin de l'animal. Formée à la pharmacologie, jusqu'aux travaux pratiques en animalerie, et aujourd'hui alternante cheffe de produit Global aux Laboratoires Théa, je vous propose ma candidature ${pour}.`,
+      "cosmétique": `Un produit dermo-cosmétique doit convaincre deux fois : le professionnel par la preuve, le consommateur par l'envie. Chez Théa France, j'ai participé au lancement d'un médicament et d'un complément alimentaire : deux produits, deux publics, deux façons de raconter. C'est cette double lecture que je vous propose ${pour}.`,
+      "nutrition-santé": `La nutrition-santé se joue à la frontière du médicament et de la grande consommation : il faut la rigueur de la preuve et l'envie du consommateur. Chez Théa France, j'ai participé au lancement d'un médicament et d'un complément alimentaire. C'est cette double expérience que je vous propose ${pour}.`,
+      "pharmaceutique": lance
+        ? `Un médicament du glaucome, quatre pays, trente-cinq filiales, un seul lancement à réussir : c'est mon quotidien d'alternante cheffe de produit Global aux Laboratoires Théa. C'est cette expérience que je vous propose ${pour}.`
+        : `Faire connaître un médicament, c'est d'abord le comprendre. J'ai appris la pharmacologie avant le marketing, et je mets aujourd'hui les deux en pratique comme alternante cheffe de produit Global aux Laboratoires Théa. C'est ce double regard que je vous propose ${pour}.`,
+    };
+    // Un poste digital ou commercial (sans marketing produit) : l'accroche part du métier, pas du secteur
+    const fn = o.fonctions || [];
+    const METIER = !fn.includes("marketing") && fn.includes("digital")
+      ? `Un produit de santé se choisit de plus en plus en ligne, mais il se vend toujours sur la confiance. Mon M2 Marketing Opérationnel et Digital m'a formée aux outils digitaux et omnicanaux ; mon alternance de cheffe de produit aux Laboratoires Théa m'a appris ce qu'exige la communication sur un produit de santé. C'est cette double compétence que je vous propose ${pour}.`
+      : !fn.includes("marketing") && fn.includes("commercial")
+      ? `Un argumentaire ne vaut que s'il tient face aux questions du terrain. Chez Théa France, j'ai préparé les argumentaires et les réponses aux objections des équipes de vente, après une immersion sur le terrain à leurs côtés. C'est ce lien entre le marketing et la vente que je vous propose ${pour}.`
+      : null;
     const p = [];
     p.push(`Madame, Monsieur,`);
-    if (libs.includes("Lancement de produit"))
-      p.push(`Un médicament du glaucome, quatre pays, trente-cinq filiales, un seul lancement à réussir : c'est mon quotidien d'alternante cheffe de produit Global aux Laboratoires Théa. C'est aussi, à peu de choses près, ce que vous décrivez ${vie ? "pour la mission de V.I.E" : "pour le poste"} « ${poste} »${lieu ? ` (${lieu})` : ""}.`);
-    else if (libs.includes("IA générative"))
-      p.push(`L'intelligence artificielle va changer la façon dont on fait connaître un produit de santé. Je fais partie de ceux qui s'y préparent dès maintenant : en parallèle de mon alternance de cheffe de produit Global aux Laboratoires Théa, je suis un DU Intelligence artificielle en santé à l'Université Paris-Saclay. C'est ce regard que je propose d'apporter ${vie ? "à la mission de V.I.E" : "au poste"} « ${poste} » ${chez}.`);
-    else
-      p.push(`J'ai appris la pharmacologie avant le marketing. Je sais donc ce qu'il y a derrière un produit de santé, jusqu'aux mécanismes, et je sais le faire connaître : c'est ce double regard que je propose ${vie ? "pour la mission de V.I.E" : "pour le poste"} « ${poste} » ${chez}${lieu ? ` (${lieu})` : ""}.`);
-    // La force déjà racontée dans l'accroche n'est pas répétée dans la liste
-    const accroche = libs.includes("Lancement de produit") ? "Lancement de produit" : libs.includes("IA générative") ? "IA générative" : "";
-    // Ce que l'annonce demande (mes forces), puis mes atouts en plus : jamais présentés comme demandés
-    const demandes = a.forces.filter(l => l.phrase && l.lib !== accroche).slice(0, 3);
-    const enPlus = a.atouts.filter(l => l.phrase && l.lib !== accroche).slice(0, Math.max(0, 3 - demandes.length));
-    const puce = l => `— ${l.lib} : ${l.phrase}.`;
-    if (demandes.length) p.push(`Ce que votre annonce demande, et ce que j'ai déjà fait :\n` + demandes.map(puce).join("\n"));
-    if (enPlus.length) p.push(`${demandes.length ? "Et ce que j'apporte en plus" : "Ce que j'apporterais à votre équipe"} :\n` + enPlus.map(puce).join("\n"));
-    p.push(`Mon parcours sort du marketing classique : licence de pharmacologie, master Biologie Santé « Produits de santé et innovation », puis M2 Marketing Opérationnel et Digital à l'IAE Clermont Auvergne. ${intl ? "Entre le siège et les filiales, j'ai appris qu'un même message ne se dit pas de la même façon d'un pays à l'autre." : "Je parle le langage des équipes médicales comme celui des équipes de vente, et je fais le lien entre les deux."}`);
-    if (a.ecarts.length) {
-      const manque = a.ecarts.slice(0, 2).map(l => /^Expérience/.test(l.lib) ? `les ${o.exp_ans} ans d'expérience demandés` : l.lib.toLowerCase());
-      p.push(`Je ne coche pas toutes les cases, et je préfère le dire : il me manque encore ${manque.join(" et ")}. [À COMPLÉTER : ce que tu fais déjà pour progresser ${manque.length > 1 ? "sur ces deux points" : "sur ce point"}, en une phrase concrète.]`);
-    }
+    p.push(METIER || ACCROCHES[a.secteur] || `J'ai appris la pharmacologie avant le marketing : je sais ce qu'il y a derrière un produit de santé, et je sais le faire connaître. Alternante cheffe de produit Global aux Laboratoires Théa, je vous propose ce double regard ${pour}.`);
+    // Ce que l'annonce demande, dans l'ordre du métier (le produit d'abord, les outils ensuite)
+    const ORDRE = ["Lancement de produit", "Plan marketing, stratégie de marque", "Veille, besoins clients, connaissance produit",
+      "Études de marché, insights", "Réglementaire (AMM, ANSM, HAS)", "Digital santé, omnicanal, CRM (Veeva)", "Compliance, conformité",
+      "Excel, Power BI, tableaux de bord", "Anglais", "IA générative"];
+    const rang = l => { const i = ORDRE.indexOf(l.lib); return i < 0 ? 99 : i; };
+    const dejaDit = a.secteur === "pharmaceutique" && lance ? "Lancement de produit" : "";
+    const demandes = a.forces.filter(l => l.phrase && l.lib !== dejaDit).sort((x, y) => rang(x) - rang(y)).slice(0, 3);
+    if (demandes.length) p.push(`Ce que vous recherchez, et ce que j'ai déjà fait :\n` + demandes.map(l => `— ${l.lib} : ${l.phrase}.`).join("\n"));
+    p.push(`Mon parcours sort du marketing classique : licence de pharmacologie, master Biologie Santé « Produits de santé et innovation », puis M2 Marketing Opérationnel et Digital à l'IAE Clermont Auvergne. ${intl ? "Entre le siège et les filiales, j'ai appris qu'un même message ne se dit pas de la même façon d'un pays à l'autre." : "Je parle le langage des professionnels de santé comme celui des équipes de vente, et je fais le lien entre les deux."}`);
     p.push(`Pourquoi ${ent === "votre entreprise" ? "vous" : ent} ? [À COMPLÉTER : un produit, une gamme, une actualité ou un choix de l'entreprise qui t'a vraiment marquée, et ce que tu en penses. C'est la phrase qui fera la différence : elle ne peut venir que de toi.]`);
     p.push(`${vie ? "Prête à partir à l'étranger" : "Mobile en France et à l'international"} à partir de septembre 2027, je serais ravie d'en parler avec vous : vingt minutes suffiront pour vous montrer ce que je peux apporter à votre équipe.`);
     p.push(`Bien à vous,`);

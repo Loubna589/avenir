@@ -1,6 +1,7 @@
-# La veille bénévolat : chaque matin, GitHub ouvre les pages publiques par activité de JeVeuxAider.gouv.fr
-# dans un navigateur automatique (scripts/benevolat.py), lit les missions et enregistre data/benevolat/ par un commit.
-# Pas d identifiant à fournir : pages publiques, 10 s entre deux pages (Crawl-delay du robots.txt).
+# La veille bénévolat : chaque matin, GitHub lit le plan du site (sitemap) de JeVeuxAider.gouv.fr,
+# ouvre les nouvelles missions (scripts/benevolat.py) et enregistre data/benevolat/ par un commit.
+# Pas d identifiant à fournir : pages publiques, 10 s entre deux pages (Crawl-delay du robots.txt),
+# 300 missions au plus par jour (environ 50 minutes).
 name: veille-benevolat
 
 on:
@@ -11,13 +12,13 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: commit-data          # jamais deux commits de données en même temps
-  cancel-in-progress: false
+# Pas de groupe « commit-data » ici : la veille dure ~50 minutes et bloquerait les autres veilles.
+# Elle n'écrit que dans data/benevolat/ : on réessaie simplement le push si un autre commit est passé avant.
 
 jobs:
   benevolat:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -25,12 +26,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Installer le navigateur automatique
-        run: |
-          pip install playwright
-          python -m playwright install --with-deps chromium
-
-      - name: Lire les missions de bénévolat
+      - name: Lire les nouvelles missions de bénévolat
         run: python scripts/benevolat.py
 
       - name: Enregistrer la donnée du jour (commit + push)
@@ -39,5 +35,4 @@ jobs:
           git config user.email "actions@github.com"
           git add data/benevolat
           git commit -m "veille bénévolat : missions du $(date -u +%Y-%m-%d)" || { echo "rien de nouveau"; exit 0; }
-          git pull --rebase origin main
-          git push
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 20; done

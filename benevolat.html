@@ -37,8 +37,8 @@
   <p class="note">JeVeuxAider.gouv.fr n'a pas d'API ouverte : l'API Engagement (beta.gouv), qui diffuse ses missions, demande une clé accordée aux partenaires sur demande. Son fichier robots.txt interdit aux robots la recherche complète (les adresses avec « ? ») et demande 10 secondes entre deux pages ; il autorise les pages par activité. Chaque matin, une Action GitHub (<code>.github/workflows/benevolat.yml</code>) lance <code>scripts/benevolat.py</code> : un navigateur automatique ouvre huit pages d'activité (communication, informatique, gestion de projets, événementiel, sensibilisation, écoute et aide psychologique, soins aux animaux, médical), une toutes les 10 secondes, relève le nombre de missions disponibles et lit les missions que chaque page met en avant. Limite : une page n'en montre que six, souvent proches du lieu de la connexion ; la liste s'enrichit donc jour après jour (une mission reste affichée 30 jours après sa dernière apparition). Je ne garde par défaut que trois thèmes, repérés par mots-clés : le marketing digital (réseaux sociaux, site internet, WordPress, newsletter, création de contenu, communication…), dans la santé comme ailleurs ; l'intelligence artificielle ; et les missions liées à mon parcours (santé mentale, que ma formation PSSM m'a fait découvrir ; animaux et vétérinaire ; santé et biologie). Il n'existe pas d'activité « digital » sur JeVeuxAider : ces missions sont cherchées dans les pages Communication et Informatique. Données : <code>data/benevolat/benevolat.json</code> et <code>data/benevolat/serie.csv</code>.</p>
   <footer>Veille bénévolat — M2 MOD, IAE Clermont Auvergne. Données : jeveuxaider.gouv.fr (pages publiques), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=8"></script>
-<script src="assets/profil.js?v=3"></script>
+<script src="assets/commun.js?v=9"></script>
+<script src="assets/profil.js?v=4"></script>
 <script>
 const esc = Profil.esc;
 document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map(([url, lib]) =>

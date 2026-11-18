@@ -28,7 +28,7 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=8"></script>
+<script src="assets/commun.js?v=9"></script>
 <script>
 /* ============ Ce que ça paie ============ */
 function rendre(offres, D) {
@@ -50,7 +50,7 @@ function rendre(offres, D) {
 
   // b) par métier (au moins 8 offres avec salaire)
   const parMetierSal = [...f.metiers].map(code => {
-    const lot = avecSal.filter(o => o.rome === code);
+    const lot = avecSal.filter(o => dansCode(o, code));
     return { label: enLignes((lib[code] && lib[code].libelle) || code, 30), n: lot.length, paire: fourchette(lot) };
   }).filter(x => x.paire && x.n >= 8).sort((a, b) => a.paire[0] - b.paire[0]);
   zoneSelonBarres("g-paie-metier", parMetierSal.length, 46);

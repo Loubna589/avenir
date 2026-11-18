@@ -36,13 +36,13 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=8"></script>
+<script src="assets/commun.js?v=9"></script>
 <script>
 /* ============ Le marché bouge ============ */
 function rendre(offres, D) {
   const f = Commun.f;
 
-  const serie = (D.serie || []).map(j => ({ date: j.date, total: [...f.metiers].reduce((s, c) => s + ((j.par_metier && j.par_metier[c]) || 0), 0) }));
+  const serie = (D.serie || []).map(j => ({ date: j.date, total: codesSerie(f).reduce((s, c) => s + ((j.par_metier && j.par_metier[c]) || 0), 0) }));
   dessiner("g-serie", "line",
     { labels: serie.map(x => dateFr(x.date, true)), datasets: [{ data: serie.map(x => x.total), borderColor: couleur, backgroundColor: pale, fill: true, tension: .2, pointRadius: 4 }] },
     { scales: { y: { beginAtZero: true } } });

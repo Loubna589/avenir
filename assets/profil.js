@@ -95,15 +95,33 @@
     if (preuves.length < 2) preuves.push(...a.atouts.filter(l => l.phrase && !preuves.includes(l.phrase)).slice(0, 2 - preuves.length).map(l => l.phrase));
     const intl = vie || /international|global|export|europe|filiales?|pays/i.test(texteOffre(o));
     const lieu = (o.lieu || "").trim();
+    // Une lettre qui ne commence pas par « Actuellement en… » : une accroche concrète,
+    // puis « vous cherchez / j'apporte », un écart dit franchement, et une fin courte.
+    const libs = a.forces.map(l => l.lib);
     const p = [];
     p.push(`Madame, Monsieur,`);
-    p.push(`Actuellement en Master 2 Marketing Vente (parcours Marketing Opérationnel et Digital) à l'IAE Clermont Auvergne et en alternance en tant que cheffe de produit Glaucome Global aux Laboratoires Théa, je vous propose ma candidature ${vie ? "pour la mission de V.I.E" : "au poste"} « ${poste} » ${chez}${lieu ? ` (${lieu})` : ""}.`);
-    p.push(`Mon profil associe une formation scientifique (licence de pharmacologie, master Biologie Santé « Produits de santé et innovation ») et une spécialisation en marketing opérationnel et digital. Cette double compétence est celle qu'attend le marketing ${a.secteur === "santé" ? "de la santé" : "dans le secteur " + a.secteur} : comprendre un produit en profondeur et savoir le faire connaître.`);
-    if (preuves.length) p.push(`Concrètement, ${preuves.join(" ; ")}. ${intl ? "Travailler entre un siège et des filiales de plusieurs pays m'a appris à adapter un même projet à des marchés différents, une dimension internationale que je retrouve dans votre annonce." : "Ces expériences m'ont appris à relier la rigueur scientifique aux attentes du terrain."}`);
-    if (a.ecarts.length) p.push(`Votre annonce mentionne aussi ${a.ecarts.slice(0, 2).map(l => l.lib.toLowerCase()).join(" et ")}. [À COMPLÉTER : montre comment tu comptes progresser sur ce point, avec un exemple concret.]`);
-    p.push(`[À COMPLÉTER : pourquoi ${ent === "votre entreprise" ? "cette entreprise" : ent} ? Une phrase sur un produit, une gamme, une actualité ou une valeur que tu as repérée.]`);
-    p.push(`${vie ? "Disponible pour partir à l'étranger" : "Mobile en France et à l'international, je suis disponible"} à partir de septembre 2027. Je serais heureuse de vous présenter ma motivation lors d'un entretien.`);
-    p.push(`Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.`);
+    if (libs.includes("Lancement de produit"))
+      p.push(`Un médicament du glaucome, quatre pays, trente-cinq filiales, un seul lancement à réussir : c'est mon quotidien d'alternante cheffe de produit Global aux Laboratoires Théa. C'est aussi, à peu de choses près, ce que vous décrivez ${vie ? "pour la mission de V.I.E" : "pour le poste"} « ${poste} »${lieu ? ` (${lieu})` : ""}.`);
+    else if (libs.includes("IA générative"))
+      p.push(`L'intelligence artificielle va changer la façon dont on fait connaître un produit de santé. Je fais partie de ceux qui s'y préparent dès maintenant : en parallèle de mon alternance de cheffe de produit Global aux Laboratoires Théa, je suis un DU Intelligence artificielle en santé à l'Université Paris-Saclay. C'est ce regard que je propose d'apporter ${vie ? "à la mission de V.I.E" : "au poste"} « ${poste} » ${chez}.`);
+    else
+      p.push(`J'ai appris la pharmacologie avant le marketing. Je sais donc ce qu'il y a derrière un produit de santé, jusqu'aux mécanismes, et je sais le faire connaître : c'est ce double regard que je propose ${vie ? "pour la mission de V.I.E" : "pour le poste"} « ${poste} » ${chez}${lieu ? ` (${lieu})` : ""}.`);
+    // La force déjà racontée dans l'accroche n'est pas répétée dans la liste
+    const accroche = libs.includes("Lancement de produit") ? "Lancement de produit" : libs.includes("IA générative") ? "IA générative" : "";
+    // Ce que l'annonce demande (mes forces), puis mes atouts en plus : jamais présentés comme demandés
+    const demandes = a.forces.filter(l => l.phrase && l.lib !== accroche).slice(0, 3);
+    const enPlus = a.atouts.filter(l => l.phrase && l.lib !== accroche).slice(0, Math.max(0, 3 - demandes.length));
+    const puce = l => `— ${l.lib} : ${l.phrase}.`;
+    if (demandes.length) p.push(`Ce que votre annonce demande, et ce que j'ai déjà fait :\n` + demandes.map(puce).join("\n"));
+    if (enPlus.length) p.push(`${demandes.length ? "Et ce que j'apporte en plus" : "Ce que j'apporterais à votre équipe"} :\n` + enPlus.map(puce).join("\n"));
+    p.push(`Mon parcours sort du marketing classique : licence de pharmacologie, master Biologie Santé « Produits de santé et innovation », puis M2 Marketing Opérationnel et Digital à l'IAE Clermont Auvergne. ${intl ? "Entre le siège et les filiales, j'ai appris qu'un même message ne se dit pas de la même façon d'un pays à l'autre." : "Je parle le langage des équipes médicales comme celui des équipes de vente, et je fais le lien entre les deux."}`);
+    if (a.ecarts.length) {
+      const manque = a.ecarts.slice(0, 2).map(l => /^Expérience/.test(l.lib) ? `les ${o.exp_ans} ans d'expérience demandés` : l.lib.toLowerCase());
+      p.push(`Je ne coche pas toutes les cases, et je préfère le dire : il me manque encore ${manque.join(" et ")}. [À COMPLÉTER : ce que tu fais déjà pour progresser ${manque.length > 1 ? "sur ces deux points" : "sur ce point"}, en une phrase concrète.]`);
+    }
+    p.push(`Pourquoi ${ent === "votre entreprise" ? "vous" : ent} ? [À COMPLÉTER : un produit, une gamme, une actualité ou un choix de l'entreprise qui t'a vraiment marquée, et ce que tu en penses. C'est la phrase qui fera la différence : elle ne peut venir que de toi.]`);
+    p.push(`${vie ? "Prête à partir à l'étranger" : "Mobile en France et à l'international"} à partir de septembre 2027, je serais ravie d'en parler avec vous : vingt minutes suffiront pour vous montrer ce que je peux apporter à votre équipe.`);
+    p.push(`Bien à vous,`);
     p.push(`Loubna BENMAHMOUD`);
     const tete = `Loubna BENMAHMOUD\nClermont-Ferrand · [téléphone] · [e-mail]\n\n${ent === "votre entreprise" ? "[Nom de l'entreprise]" : ent}\n[Service / nom du recruteur]\n\nClermont-Ferrand, le ${new Date().toLocaleDateString("fr-FR")}\n\nObjet : candidature ${vie ? "V.I.E" : "au poste"} « ${poste} »`;
     return tete + "\n\n" + p.join("\n\n");

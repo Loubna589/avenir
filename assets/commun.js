@@ -216,7 +216,16 @@ function etatFiltres() {
    n'importe quel code : les recherches par mots-clés de France Travail renvoient aussi des
    postes hors sujet (production, prestations santé…), qui ne comptent pas.
    Même règle que le compteur de la case, calculé dans scripts/resumer.py. */
-const dansMetiers = (o, f) => (o.rome !== "PHARMA" && f.metiers.has(o.rome)) || (o.pharma && f.metiers.has("PHARMA"));
+/* La case « mon métier » est séparée en cinq cases, une par fonction (lue dans l'intitulé,
+   scripts/fonctions.py) : code « PH:marketing », « PH:digital »… Une offre à deux fonctions
+   apparaît sous les deux cases. */
+const SOUS_PHARMA = [["marketing", "Santé — produit / marketing"], ["affaires médicales", "Santé — affaires médicales"],
+  ["accès au marché", "Santé — accès au marché"], ["digital", "Santé — digital"], ["commercial", "Santé — commercial"]];
+const dansCode = (o, c) => c.startsWith("PH:") ? !!o.pharma && (o.fonctions || []).includes(c.slice(3))
+  : c === "PHARMA" ? !!o.pharma : o.rome === c && o.rome !== "PHARMA";
+const dansMetiers = (o, f) => [...f.metiers].some(c => dansCode(o, c));
+/* Pour les séries par jour (par_metier), les cinq cases « PH: » comptent comme PHARMA. */
+const codesSerie = f => [...new Set([...f.metiers].map(c => c.startsWith("PH:") ? "PHARMA" : c))];
 /* Les offres retenues par les trois filtres. */
 function filtrer(f) {
   f = f || etatFiltres();
@@ -329,6 +338,14 @@ const Commun = {
       D = d;
       Commun.D = d;
       Commun.lib = Object.fromEntries(d.metiers.map(m => [m.code, m]));
+      // « Mon métier » en cinq cases, une par fonction
+      const iP = d.metiers.findIndex(m => m.code === "PHARMA");
+      if (iP >= 0) {
+        const mP = d.metiers[iP];
+        d.metiers.splice(iP, 1, ...SOUS_PHARMA.map(([fn, l]) => ({ ...mP, code: "PH:" + fn, libelle: l,
+          actives: d.offres.filter(o => dansCode(o, "PH:" + fn)).length })));
+        d.metiers.forEach(m => { Commun.lib[m.code] = m; });
+      }
       if (Array.isArray(d.niveaux) && d.niveaux.length) NIVEAUX = d.niveaux.filter(x => Array.isArray(x) && x.length === 2);
       if (Array.isArray(d.formations) && d.formations.length) FORMATIONS = d.formations;
 
@@ -342,10 +359,11 @@ const Commun = {
 
       // --- Filtre métiers, par groupe ---
       const groupes = [...new Set(d.metiers.map(m => m.groupe))];
-      const memoM = memo && Array.isArray(memo.metiers) ? memo.metiers : null;
+      let memoM = memo && Array.isArray(memo.metiers) ? memo.metiers : null;
+      if (memoM && memoM.includes("PHARMA")) memoM = memoM.concat(SOUS_PHARMA.map(x => "PH:" + x[0]));
       document.getElementById("metiers").innerHTML = groupes.map(g => `<h4 style="color:${COULEURS[g] || ""}">${g}</h4>` +
         d.metiers.filter(m => m.groupe === g).map(m =>
-          `<label><input type="checkbox" value="${m.code}" data-groupe="${m.groupe}" ${(memoM ? memoM.includes(m.code) : m.coche) ? "checked" : ""}> ${m.libelle} <small>${m.code} · ${m.actives}</small></label>`).join("")).join("");
+          `<label><input type="checkbox" value="${m.code}" data-groupe="${m.groupe}" ${(memoM ? memoM.includes(m.code) : m.coche) ? "checked" : ""}> ${m.libelle} <small>${m.code.startsWith("PH:") ? "" : m.code + " · "}${m.actives}</small></label>`).join("")).join("");
       // Une case par groupe : cocher/décocher le groupe entier, cumulables ; état intermédiaire si le groupe est partiel.
       document.getElementById("groupes").innerHTML = groupes.map(g =>
         `<label style="color:${COULEURS[g] || ""}"><input type="checkbox" data-groupe-case="${g}"> ${g}</label>`).join("");

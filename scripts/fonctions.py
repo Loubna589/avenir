@@ -54,6 +54,9 @@ def fonctions(intitule):
     if not trouvees:
         return []
     # Écarté si l'intitulé désigne une fonction hors cible, sauf marketing / médical / accès explicites
+    # Toujours écarté : secrétariat, assistanat administratif
+    if re.search(r"secretari|assistant\w* (de direction|administrati)", t):
+        return []
     if HORS_CIBLE.search(t) and not any(f in trouvees for f in ("marketing", "affaires médicales", "accès au marché")):
         return []
     return trouvees

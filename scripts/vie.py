@@ -120,7 +120,7 @@ def lire_dates(page, url):
 def main():
     DOSSIER.mkdir(parents=True, exist_ok=True)
     jour = date.today().isoformat()
-    offres, bilan = {}, []
+    offres, bilan, incompletes = {}, [], []
     with sync_playwright() as p:
         navigateur = p.chromium.launch()
         page = navigateur.new_page(locale="fr-FR")
@@ -129,6 +129,7 @@ def main():
                 total, cartes = chercher(page, mot)
             except Exception as e:  # une recherche qui échoue ne bloque pas les autres
                 print(f"  {mot} : échec ({e.__class__.__name__})", file=sys.stderr)
+                incompletes.append(mot)
                 continue
             sante = 0
             for c in cartes:
@@ -146,12 +147,27 @@ def main():
                 o["recherches"].append(mot)
                 sante += o["sante"]
             bilan.append({"recherche": mot, "annoncees": total, "lues": len(cartes), "sante": sante})
+            # Le site a répondu à moitié (moins de 80 % des offres annoncées ont pu être lues)
+            if total and len(cartes) < 0.8 * total:
+                incompletes.append(mot)
+                print(f"  {mot} : recherche incomplète, les offres de la veille sont gardées", file=sys.stderr)
             print(f"  {mot} : {total} annoncées, {len(cartes)} lues, {sante} dans la santé")
             time.sleep(2)
         # Dates de l'offre : seulement pour les missions dans mes fonctions, une page par offre,
         # et une seule fois par offre (les dates déjà lues les jours précédents sont reprises)
         ancien = DOSSIER / "vie.json"
         connues = {o["id"]: o for o in json.loads(ancien.read_text(encoding="utf-8")).get("offres", [])} if ancien.exists() else {}
+        # Panne partielle du site : pour une recherche ratée ou incomplète, on garde les offres
+        # de la veille qu'elle avait trouvées, au lieu de publier une liste amputée.
+        # (Si aucune recherche n'a marché, rien n'est réécrit : voir plus bas.)
+        reprises = 0
+        if bilan:
+            for o in connues.values():
+                if o["id"] not in offres and any(r in incompletes for r in o.get("recherches", [])):
+                    offres[o["id"]] = {**o, "reprise": True}
+                    reprises += 1
+        if reprises:
+            print(f"  {reprises} offres de la veille gardées (recherches incomplètes : {', '.join(incompletes)})")
         lues, echecs_suite = 0, 0
         for o in offres.values():
             if not o["fonctions"]:
@@ -172,14 +188,14 @@ def main():
         print(f"  dates lues sur {lues} pages d'offres")
         navigateur.close()
 
-    if not offres:
+    if not bilan:
         sys.exit("Aucune offre lue : le site a peut-être changé. data/vie/ n'est pas modifié.")
 
     for o in offres.values():
         o["marketing"] = bool(o["fonctions"])  # dans ma cible de fonctions (tous secteurs)
     liste = sorted(offres.values(), key=lambda o: (not (o["sante"] and o["marketing"]), not o["marketing"], not o["sante"], o["entreprise"]))
     resume = {"date": jour, "source": SITE + "/offres/recherche (page publique, lue par navigateur automatique)",
-              "recherches": bilan, "nb_offres": len(liste),
+              "recherches": bilan, "incompletes": incompletes, "nb_offres": len(liste),
               "nb_sante": sum(o["sante"] for o in liste),
               "nb_sante_marketing": sum(o["sante"] and o["marketing"] for o in liste),
               "nb_fonctions": sum(o["marketing"] for o in liste),

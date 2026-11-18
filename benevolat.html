@@ -22,8 +22,12 @@
   <h2>Les missions <small id="compte"></small></h2>
   <div class="carte large">
     <div class="vie-filtres">
-      <label><input type="checkbox" id="f-pratique" checked> mes thèmes seulement</label>
-      <select id="f-theme"><option value="">Tous mes thèmes</option><option>marketing digital</option><option>intelligence artificielle</option><option>mon profil santé</option></select>
+      <span id="f-themes" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;flex-basis:100%"><b>Mes thèmes :</b>
+        <label><input type="checkbox" value="marketing digital" checked> marketing digital</label>
+        <label><input type="checkbox" value="intelligence artificielle" checked> intelligence artificielle</label>
+        <label><input type="checkbox" value="mon profil santé" checked> mon profil santé</label>
+        <label><input type="checkbox" value="" > autres missions</label>
+      </span>
       <select id="f-activite"><option value="">Toutes les activités</option></select>
       <input type="search" id="f-texte" placeholder="Chercher : ville, association, mot…">
     </div>
@@ -46,9 +50,12 @@ document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map((
 let B, missions = [];
 
 function afficher() {
-  const pr = document.getElementById("f-pratique").checked, a = document.getElementById("f-activite").value;
-  const q = document.getElementById("f-texte").value.trim().toLowerCase(), th = document.getElementById("f-theme").value;
-  const liste = missions.filter(m => (!pr || m.pratique) && (!th || (m.themes || []).includes(th)) && (!a || m.activites.includes(a)) &&
+  const a = document.getElementById("f-activite").value, q = document.getElementById("f-texte").value.trim().toLowerCase();
+  // Thèmes cochés, cumulables : une mission est gardée si elle a au moins un des thèmes cochés
+  // (« autres missions » : celles qui n'ont aucun de mes thèmes)
+  const coches = new Set([...document.querySelectorAll("#f-themes input:checked")].map(i => i.value));
+  const garde = m => (m.themes || []).some(x => coches.has(x)) || (coches.has("") && !(m.themes || []).length);
+  const liste = missions.filter(m => garde(m) && (!a || m.activites.includes(a)) &&
     (!q || [m.titre, m.organisation, m.ville].join(" ").toLowerCase().includes(q)));
   document.getElementById("compte").textContent = `— ${liste.length} sur ${missions.length} relevées (30 derniers jours)`;
   document.getElementById("liste").innerHTML = liste.length ? liste.map(m => `
@@ -69,7 +76,7 @@ function afficher() {
     `<div class="chiffre"><b>${(b.disponibles ?? 0).toLocaleString("fr-FR")}</b><span>${esc(b.activite)}</span></div>`).join("");
   const sel = document.getElementById("f-activite");
   B.activites.forEach(b => sel.add(new Option(b.activite, b.activite)));
-  ["f-pratique", "f-activite", "f-theme"].forEach(id => document.getElementById(id).addEventListener("change", afficher));
+  ["f-themes", "f-activite"].forEach(id => document.getElementById(id).addEventListener("change", afficher));
   document.getElementById("f-texte").addEventListener("input", afficher);
   afficher();
   try {

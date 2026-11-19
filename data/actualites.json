@@ -134,6 +134,12 @@
   "LABORATOIRES DE BIOLOGIE VEGETALE YR": [],
   "LABORATOIRES MAYOLY SPINDLER": [
    {
+    "titre": "PHARM NATURE tombe dans l'escarcelle de MAYOLY SPINDLER",
+    "source": "Fusacq",
+    "date": "2022-09-27",
+    "url": "https://www.fusacq.com/buzz/pharm-nature-tombe-dans-l-escarcelle-de-mayoly-spindler-a231795_fr_"
+   },
+   {
     "titre": "Les Laboratoires Mayoly Spindler S.A.S. ont finalisé l'acquisition de CHC Business auprès d'Ipsen S.A. (ENXTPA:IPN).",
     "source": "ch.zonebourse",
     "date": "2022-07-27",
@@ -144,6 +150,12 @@
     "source": "le Moniteur des pharmacie",
     "date": "2021-09-30",
     "url": "https://www.lemoniteurdespharmacies.fr/business/laboratoires/mayoly-spindler"
+   },
+   {
+    "titre": "Stéphane Thiroloix nommé président de France MVO",
+    "source": "mind",
+    "date": "2018-04-09",
+    "url": "https://www.mind.eu.com/health/article/stephane-thiroloix-nomme-president-de-france-mvo/"
    },
    {
     "titre": "Démosthène donne de la visibilité à Mayoly Spindler dans les pharmacies",
@@ -239,12 +251,6 @@
     "url": "https://www.actumma.com/michael-venom-page-veut-se-racheter-apres-setre-fait-huer-a-lufc-paris/191249/"
    },
    {
-    "titre": "UFC Paris : Michael Page neutralise Nursulton Ruziboev et décroche une décision unanime étriquée",
-    "source": "ufc-fr",
-    "date": "2026-09-05",
-    "url": "https://www.ufc-fr.com/ufc-paris-michael-page-neutralise-nursulton-ruziboev-et-decroche-une-decision-unanime-etriquee-14454.html"
-   },
-   {
     "titre": "Michael Page",
     "source": "Le Figaro",
     "date": "2026-08-18",
@@ -318,10 +324,10 @@
     "url": "https://www.newsauvergne.com/verdot-la-pepite-auvergnate-change-de-dimension-et-investit-10-millions-deuros/"
    },
    {
-    "titre": "VERDOT Opens its New Centre of Excellence and Manufacturing Facility in Saint-Beauzire, France",
-    "source": "prweb.com",
+    "titre": "Avec sa nouvelle usine, Verdot veut profiter de la dynamique des biopharmas aux États-Unis",
+    "source": "La Tribune",
     "date": "2026-09-15",
-    "url": "https://www.prweb.com/releases/verdot-opens-its-new-centre-of-excellence-and-manufacturing-facility-in-saint-beauzire-france-302877402.html"
+    "url": "https://www.latribune.fr/article/regions/auvergne-rhone-alpes/23853120529449/avec-sa-nouvelle-usine-verdot-veut-profiter-de-la-dynamique-des-biopharmas-aux-etats-unis"
    }
   ]
  }

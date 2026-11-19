@@ -39,6 +39,10 @@ jobs:
         continue-on-error: true   # une panne des actualités ne doit pas bloquer les offres
         run: python scripts/actualites.py
 
+      - name: Offres de mes alertes LinkedIn (tableau Google publié en CSV)
+        continue-on-error: true   # si le tableau est indisponible, on garde la liste de la veille
+        run: python scripts/linkedin.py
+
       - name: Enregistrer la donnée du jour (commit + push)
         run: |
           git config user.name "veille-bot"

@@ -1,0 +1,142 @@
+{
+ "date": "2026-11-19",
+ "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
+ "lues": 9,
+ "offres": [
+  {
+   "id": "li-4492093022",
+   "intitule": "",
+   "entreprise": "Azenta Life Sciences",
+   "lieu": "Wotton, Angleterre, Royaume-Uni",
+   "pays": "Royaume-Uni",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4492093022",
+   "alerte": "Product Manager Pharma (Royaume-Uni)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492071948",
+   "intitule": "Associate Product Manager",
+   "entreprise": "Circle Health Group",
+   "lieu": "Grand Londres, Angleterre, Royaume-Uni",
+   "pays": "Royaume-Uni",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4492071948",
+   "alerte": "Product Manager Pharma (Royaume-Uni)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4449791339",
+   "intitule": "Associate Product Manager (College Grad 2027)",
+   "entreprise": "Solace",
+   "lieu": "Redwood City, Californie, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4449791339",
+   "alerte": "Associate Product Manager Healthcare (États-Unis)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4491275872",
+   "intitule": "Product Manager, AI Agents",
+   "entreprise": "Assort Health",
+   "lieu": "San Francisco, Californie, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4491275872",
+   "alerte": "Associate Product Manager Healthcare (États-Unis)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4491467219",
+   "intitule": "Associate Product Manager, US Marketing",
+   "entreprise": "Caldera Medical",
+   "lieu": "Westlake Village, Californie, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4491467219",
+   "alerte": "Associate Product Manager Healthcare (États-Unis)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4406503107",
+   "intitule": "",
+   "entreprise": "Veeva Systems",
+   "lieu": "Pleasanton, Californie, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4406503107",
+   "alerte": "Associate Product Manager Healthcare (États-Unis)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4406294171",
+   "intitule": "",
+   "entreprise": "Veeva Systems",
+   "lieu": "Boston, Massachusetts, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4406294171",
+   "alerte": "Associate Product Manager Healthcare (États-Unis)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4491553375",
+   "intitule": "Associate Product Manager",
+   "entreprise": "Free Market Health",
+   "lieu": "Pittsburgh, Pennsylvanie, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4491553375",
+   "alerte": "Associate Product Manager Healthcare (États-Unis)",
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4419024293",
+   "intitule": "",
+   "entreprise": "Veeva Systems",
+   "lieu": "Toronto, Ontario, Canada",
+   "pays": "Canada",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4419024293",
+   "alerte": "Product Manager Pharma (Canada)",
+   "fonctions": [
+    "marketing"
+   ]
+  }
+ ]
+}

@@ -15,7 +15,7 @@
   <div id="nav-ici"></div>
   <h1>Les offres qui correspondent à ma recherche</h1>
   <p class="sous" id="sous">Chargement des données…</p>
-  <nav class="nav" style="margin-top:-8px"><a href="#liste">📋 Une par une</a><a href="#carte">📍 Sur la carte</a><a href="#demande">🧰 Ce qu'elles demandent face à ce que j'ai</a></nav>
+  <nav class="nav" style="margin-top:-8px"><a href="#liste">📋 Une par une</a><a href="#linkedin">🔗 LinkedIn</a><a href="#carte">📍 Sur la carte</a><a href="#demande">🧰 Ce qu'elles demandent face à ce que j'ai</a></nav>
 
   <h2 id="liste">Une par une <small id="sous-liste"></small></h2>
   <div class="carte large">
@@ -24,6 +24,11 @@
       <button class="bouton secondaire petit" id="export-cand">Exporter pour Excel</button></div>
     <div class="defile"><table class="liste" id="liste-pharma"></table></div>
     <p class="note" style="margin:8px 0 0">Net : estimation, environ 78 % du brut, avant impôt sur le revenu. La case « J'ai postulé » reste dans ce navigateur : elle n'est pas publiée.</p></div>
+
+  <h2 id="linkedin">Repérées par mes alertes LinkedIn <small id="li-sous"></small></h2>
+  <div class="carte large">
+    <div class="defile"><table class="liste" id="liste-li"><tr><td>Chargement…</td></tr></table></div>
+    <p class="note" style="margin:8px 0 0">LinkedIn n'a pas d'API : je ne lis pas son site. Ses alertes arrivent par e-mail, un script Google les recopie chaque jour dans un tableau, et la collecte du site le relit. La France d'abord, puis l'étranger.</p></div>
 
   <h2 id="carte">Sur la carte</h2>
   <div class="carte large"><div id="map" style="height:480px"></div>
@@ -108,6 +113,30 @@ function rendre(_, D) {
     const o = parId[b.dataset.fiche];
     Profil.ouvrir({ ...o, contratLib: libContratOffre(o), entreprise: o.entreprise || "employeur non communiqué" });
   };
+
+  /* ---- Les offres de mes alertes LinkedIn (data/linkedin.json), avec la même case « J'ai postulé » ---- */
+  const zoneLi = document.getElementById("liste-li");
+  let LI = [];
+  const dessinerLi = () => {
+    document.getElementById("li-sous").textContent = LI.length ? `— ${LI.length} offre${pluriel(LI.length)}` : "";
+    zoneLi.innerHTML = !LI.length ? `<tr><td>Aucune offre pour l'instant : elles arrivent avec les alertes.</td></tr>` :
+      `<tr><th>J'ai postulé</th><th>Intitulé</th><th>Fonction</th><th>Employeur</th><th>Lieu</th><th>Salaire</th><th>Reçue le</th></tr>` +
+      LI.map(o => `<tr${cand[o.id] ? ' class="postule"' : ""}><td><label class="coche"><input type="checkbox" data-li="${esc(o.id)}"${cand[o.id] ? " checked" : ""}>` +
+        `${cand[o.id] ? `<small>le ${dateFr(cand[o.id].date)}</small>` : ""}</label></td>` +
+        `<td><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule || "Voir l'annonce")}</a></td><td>${puceFn(o)}</td>` +
+        `<td>${esc(o.entreprise || "non précisé")}</td><td>${o.france ? "" : "🌍 "}${esc(o.lieu || "")}</td>` +
+        `<td>${esc(o.salaire || "non affiché")}</td><td>${dateFr(o.recue_le)}</td></tr>`).join("");
+  };
+  zoneLi.addEventListener("change", e => {
+    const c = e.target.closest("[data-li]"); if (!c) return;
+    const o = LI.find(x => x.id === c.dataset.li);
+    if (c.checked) cand[o.id] = { date: auj(), intitule: o.intitule || "(voir l'annonce LinkedIn)", entreprise: o.entreprise, lieu: o.lieu, contrat: "LinkedIn", url: o.url };
+    else delete cand[o.id];
+    garderCand(cand); dessinerLi(); dessinerListe();
+  });
+  fetch("data/linkedin.json?v=" + Date.now()).then(r => r.ok ? r.json() : { offres: [] })
+    .then(d => { LI = d.offres || []; dessinerLi(); })
+    .catch(() => { zoneLi.innerHTML = `<tr><td>Offres LinkedIn indisponibles pour le moment.</td></tr>`; });
 
   /* ---- La carte : un point par offre, couleur de sa fonction ---- */
   const carte = L.map("map", { scrollWheelZoom: false }).setView([46.6, 2.4], 6);

@@ -84,7 +84,7 @@ function rendre(_, D) {
   /* 1. Combien */
   cartes.push(["1. Combien d'offres ?", `${nP} offres`, "dans la santé, sur mes fonctions, hors alternance",
     barresHTML(FONCTIONS.map(([fn, l, c]) => { const L = P.filter(o => aFn(o, fn)); return [l, L.length, c, null, L]; })),
-    `Repère : ${nM} offres de chef de produit tous secteurs, dont ${M.filter(o => o.pharma).length} dans la santé.`, "offres.html"]);
+    `Repère : France Travail range ${nM} offres sous le code « Chef de produit » (M1703), tous secteurs, dont ${M.filter(o => o.pharma).length} dans la santé. Mes autres offres produit / marketing sont rangées sous d'autres codes (responsable marketing, marketing digital…).`, "offres.html"]);
 
   /* 2. Où */
   const parReg = compter(P, o => o.dep ? (REGION_DE[o.dep] || "Autre") : "Lieu non précisé");

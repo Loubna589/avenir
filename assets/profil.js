@@ -203,6 +203,9 @@
     return tete + "\n\n" + p.join("\n\n");
   }
 
+  // Adresse de mon assistant IA (Worker Cloudflare avenir-ia)
+  const IA_URL = "https://avenir-ia.loubna-benmahmoud-190.workers.dev";
+
   // Mes coordonnées : gardées dans CE navigateur seulement (localStorage), jamais publiées sur le site
   const CLE_COORD = "avenir-coordonnees";
   function coordonnees() { try { return JSON.parse(localStorage.getItem(CLE_COORD)) || {}; } catch (e) { return {}; } }
@@ -277,8 +280,11 @@
       ${autres.length > 1 ? `<p class="note" style="margin:10px 0 4px">📋 Ses ${autres.length} offres en ce moment sur France Travail :</p><ul class="oral">${autres.slice(0, 6).map(o => `<li>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)} <span class="note">· ${esc(o.lieu || "")}</span></li>`).join("")}</ul>` : ""}
       <h4>À préparer avant l'entretien</h4><ul class="oral">${AXES[cle].map(x => `<li>${x}</li>`).join("")}</ul>
       <div class="veille-ia"><b>🤖 Aller plus loin avec une IA</b>
-        <p class="note" style="margin:4px 0 8px">Le bouton copie une demande toute prête, avec l'offre, ce que l'annuaire a trouvé et mon profil. Je la colle dans Claude ou ChatGPT pour obtenir une fiche de préparation complète, puis je peux continuer à lui poser mes questions.</p>
-        <button class="bouton" data-action="copier-ia">Copier pour Claude / ChatGPT</button></div>`;
+        <p class="note" style="margin:4px 0 8px">L'assistant prépare une fiche d'entretien à partir de l'offre, de ce que l'annuaire a trouvé et de mon profil, puis répond à mes questions. Il n'a pas accès à internet : l'actualité récente est à vérifier.</p>
+        <div class="fiche-actions" style="margin:0"><button class="bouton" data-action="demander-ia">Demander à l'IA</button>
+        <button class="bouton secondaire" data-action="copier-ia">Copier pour Claude / ChatGPT</button></div>
+        <div class="ia-fil" hidden></div>
+        <form class="ia-question vie-filtres" hidden><input type="search" placeholder="Pose une autre question sur cette entreprise ou cet entretien…" style="flex:1 1 260px"><button class="bouton petit">Envoyer</button></form></div>`;
     // La demande à coller dans une IA : rien n'est envoyé d'ici, c'est moi qui la colle
     const r0 = res[0];
     const faits = r0 ? [`nom officiel : ${r0.nom_complet}`, r0.siege && r0.siege.libelle_commune ? `siège : ${r0.siege.libelle_commune}` : "",
@@ -306,6 +312,32 @@
       e.target.textContent = "Copié ✓ : collez dans Claude ou ChatGPT";
       setTimeout(() => { e.target.textContent = "Copier pour Claude / ChatGPT"; }, 3000);
     };
+    // L'assistant : un Worker Cloudflare (Workers AI, gratuit) garde l'accès à l'IA ; le site lui envoie la conversation
+    const fil = zone.querySelector(".ia-fil"), form = zone.querySelector(".ia-question"), conv = [];
+    const enHTML = t => esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/^#{1,4}\s*(.+)$/gm, "<b>$1</b>").replace(/\n/g, "<br>");
+    const bulle = (qui, html) => { fil.insertAdjacentHTML("beforeend", `<div class="ia-msg ${qui}">${html}</div>`); return fil.lastElementChild; };
+    const envoyer = async (texte, montrer) => {
+      conv.push({ role: "user", content: texte });
+      if (montrer) bulle("moi", esc(texte));
+      const attente = bulle("ia", "<i>L'IA réfléchit… (10 à 30 secondes)</i>");
+      try {
+        const r = await fetch(IA_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ messages: conv }) });
+        const j = await r.json();
+        if (!r.ok || !j.reponse) throw new Error(j.erreur || "pas de réponse");
+        conv.push({ role: "assistant", content: j.reponse });
+        attente.innerHTML = enHTML(j.reponse);
+      } catch (e) {
+        conv.pop();
+        attente.innerHTML = `<i>L'IA n'a pas répondu (${esc(e.message)}). Réessaie, ou utilise « Copier pour Claude / ChatGPT ».</i>`;
+      }
+      form.hidden = false;
+    };
+    zone.querySelector('[data-action="demander-ia"]').onclick = e => {
+      e.target.disabled = true; fil.hidden = false;
+      bulle("moi", `Prépare-moi une fiche d'entretien pour ${esc(nom)}.`);
+      envoyer(demandeIA, false);
+    };
+    form.onsubmit = ev => { ev.preventDefault(); const i = form.querySelector("input"), t = i.value.trim(); if (!t) return; i.value = ""; envoyer(t, true); };
   }
   // Une fenêtre avec la seule veille (page bénévolat)
   let boiteV;

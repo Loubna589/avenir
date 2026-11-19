@@ -311,3 +311,8 @@ table.fonctions b[data-voir] { text-decoration:underline dotted; }
 .veille-wiki { background:linear-gradient(120deg,#fff,#eaf6f5); border-left:4px solid var(--turquoise); border-radius:12px; padding:10px 14px; margin:6px 0; font-size:.9rem; }
 .veille-wiki p { margin:4px 0; }
 .veille-ia { margin-top:14px; background:linear-gradient(120deg,#fff,#f1edfa); border-left:4px solid #6b55a6; border-radius:12px; padding:12px 14px; }
+.ia-fil { margin-top:12px; display:grid; gap:8px; max-height:420px; overflow:auto; }
+.ia-msg { border-radius:12px; padding:10px 12px; font-size:.9rem; line-height:1.5; }
+.ia-msg.moi { background:#e8f0fb; justify-self:end; max-width:85%; }
+.ia-msg.ia { background:#fff; border:1px solid var(--trait); }
+.ia-question { margin-top:10px; }

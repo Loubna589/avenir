@@ -27,8 +27,9 @@
         <label><input type="checkbox" value=""> autres missions</label>
       </span>
       <span id="f-lieu" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px"><b>Où :</b>
-        <label><input type="radio" name="lieu" value="pres" checked> 🏠 à distance ou près de Clermont-Ferrand</label>
-        <label><input type="radio" name="lieu" value=""> 🇫🇷 toute la France</label></span>
+        <label><input type="checkbox" value="distance" checked> 💻 à distance <small id="nb-distance"></small></label>
+        <label><input type="checkbox" value="clermont" checked> 🏠 près de Clermont-Ferrand <small id="nb-clermont"></small></label>
+        <label><input type="checkbox" value="ailleurs"> 🇫🇷 ailleurs en France <small id="nb-ailleurs"></small></label></span>
       <input type="search" id="f-texte" placeholder="Chercher : ville, association, mot…">
     </div>
   </div>
@@ -51,7 +52,9 @@ document.getElementById("nav-ici").outerHTML = `<nav class="nav">` + PAGES.map((
 let B, missions = [];
 // À distance, ou dans le Puy-de-Dôme (code postal 63…, ou une commune de l'agglomération pour les missions lues avant)
 const AUTOUR = /^(clermont-ferrand|aubi[èe]re|beaumont|chamali[èe]res|cournon|riom|issoire|thiers|royat|ceyrat|gerzat|lempdes|pont-du-ch[âa]teau|le cendre|romagnat|ch[âa]tel-guyon|volvic|aulnat|blanzat|cébazat|c[ée]bazat|durtol|nohanent|orcines|p[ée]rignat|aigueperse|ambert|vichy)/i;
-const prochePourMoi = m => m.a_distance || /distance/i.test(m.ville || "") || String(m.cp || "").startsWith("63") || AUTOUR.test(m.ville || "");
+// Chaque mission tombe dans une seule case : à distance, près de Clermont-Ferrand, ou ailleurs en France
+const ouEst = m => (m.a_distance || /distance/i.test(m.ville || "")) ? "distance"
+  : (String(m.cp || "").startsWith("63") || AUTOUR.test(m.ville || "")) ? "clermont" : "ailleurs";
 const TH = {"marketing digital":["#ef6c00","💻"],"marketing produit":["#1f5fbf","📦"],"intelligence artificielle":["#6b55a6","🤖"],"santé":["#1fa9a4","🩺"],"animaux":["#8d6e63","🐾"],"événementiel":["#b7832a","🎪"]};
 
 function afficher() {
@@ -60,8 +63,10 @@ function afficher() {
   // (« autres missions » : celles qui n'ont aucun de mes thèmes)
   const coches = new Set([...document.querySelectorAll("#f-themes input:checked")].map(i => i.value));
   const garde = m => (m.themes || []).some(x => coches.has(x)) || (coches.has("") && !(m.themes || []).length);
-  const pres = (document.querySelector("#f-lieu input:checked") || {}).value === "pres";
-  const liste = missions.filter(m => garde(m) && (!pres || prochePourMoi(m)) &&
+  const lieux = new Set([...document.querySelectorAll("#f-lieu input:checked")].map(i => i.value));
+  // Le compteur de chaque case suit les thèmes cochés
+  ["distance", "clermont", "ailleurs"].forEach(k => { document.getElementById("nb-" + k).textContent = missions.filter(m => garde(m) && ouEst(m) === k).length; });
+  const liste = missions.filter(m => garde(m) && lieux.has(ouEst(m)) &&
     (!q || [m.titre, m.organisation, m.ville, m.texte || ""].join(" ").toLowerCase().includes(q)));
   document.getElementById("compte").textContent = `— ${liste.length} affichées`;
   document.getElementById("liste").innerHTML = liste.length ? liste.map(m => `

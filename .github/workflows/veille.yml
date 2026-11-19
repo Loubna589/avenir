@@ -35,6 +35,10 @@ jobs:
           python scripts/extraire.py
           python scripts/resumer.py
 
+      - name: Actualités des entreprises qui recrutent (flux RSS Bing Actualités)
+        continue-on-error: true   # une panne des actualités ne doit pas bloquer les offres
+        run: python scripts/actualites.py
+
       - name: Enregistrer la donnée du jour (commit + push)
         run: |
           git config user.name "veille-bot"

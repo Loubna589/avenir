@@ -337,3 +337,6 @@ table.fonctions b[data-voir] { text-decoration:underline dotted; }
 .coche small { color:#2e7d5b; font-size:.72rem; white-space:nowrap; }
 tr.postule td { background:#eef8f1; }
 .mes-cand label { font-weight:500; }
+.veille-actu { background:#fff; border:1px solid var(--trait); border-left:4px solid var(--dore); border-radius:12px; padding:10px 14px; margin:6px 0; font-size:.9rem; }
+.veille-actu ul { margin:6px 0 0; padding-left:18px; display:grid; gap:4px; list-style:disc; }
+.veille-actu li { display:list-item; background:none; padding:0; }

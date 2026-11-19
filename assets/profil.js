@@ -253,9 +253,12 @@
     // Ses autres offres en ce moment, dans mes données France Travail
     const D0 = typeof Commun !== "undefined" && Commun.D;
     const autres = D0 ? D0.offres.filter(o => o.entreprise && norm(o.entreprise) === norm(nom)) : [];
-    const [annu, wiki] = await Promise.all([
+    const [annu, wiki, actu] = await Promise.all([
       fetch(`https://recherche-entreprises.api.gouv.fr/search?q=${q}&per_page=8&etat_administratif=A`).then(r => r.json()).catch(() => null),
-      wikipedia(nom).catch(() => null)]);
+      wikipedia(nom).catch(() => null),
+      // Actualités relevées chaque jour par la collecte (flux RSS Bing Actualités, scripts/actualites.py)
+      fetch("data/actualites.json", {cache: "no-cache"}).then(r => r.json()).catch(() => null)]);
+    const articles = (actu && Object.entries(actu.entreprises || {}).find(([n]) => norm(n) === norm(nom)) || [0, []])[1];
     // Pas les entrepreneurs individuels homonymes ; d'abord les structures qui ont des salariés et des comptes publiés
     const poids = x => (x.finances ? 2 : 0) + (EFFECTIF[x.tranche_effectif_salarie] ? 1 : 0) + (norm(x.nom_complet).startsWith(norm(nom)) ? 2 : 0);
     const res = ((annu && annu.results) || []).filter(x => x.nature_juridique !== "1000").sort((a, b) => poids(b) - poids(a)).slice(0, 2);
@@ -275,6 +278,8 @@
         ${dir.length ? `<p class="note" style="margin:6px 0 0">Dirigeants : ${esc(dir.join(" · "))}</p>` : ""}</div>`;
     }).join("");
     zone.innerHTML = `<h4>🔎 Veille : ${esc(nom)}</h4>
+      ${articles.length ? `<div class="veille-actu"><b>📰 Son actualité</b> <span class="note">(relevée le ${esc(dateFr(actu.date))}, homonymes possibles)</span><ul>${articles.map(a =>
+        `<li><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.titre)}</a> <span class="note">· ${esc(a.source || "")}${a.date ? ` · ${esc(dateFr(a.date))}` : ""}</span></li>`).join("")}</ul></div>` : ""}
       ${wiki ? `<div class="veille-wiki"><b>📖 ${esc(wiki.titre)}</b><p>${esc(wiki.texte)}</p><a href="${esc(wiki.url)}" target="_blank" rel="noopener">Lire la suite sur Wikipédia →</a></div>` : ""}
       ${fiches ? `<p class="note" style="margin:10px 0 6px">🏛️ L'annuaire officiel des entreprises (homonymes possibles : vérifie que c'est la bonne)</p>${fiches}` : `<p class="note">Rien trouvé dans l'annuaire officiel sous ce nom.</p>`}
       ${autres.length > 1 ? `<p class="note" style="margin:10px 0 4px">📋 Ses ${autres.length} offres en ce moment sur France Travail :</p><ul class="oral">${autres.slice(0, 6).map(o => `<li>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)} <span class="note">· ${esc(o.lieu || "")}</span></li>`).join("")}</ul>` : ""}
@@ -298,6 +303,7 @@
       : `Je prépare une candidature${poste ? ` pour le poste « ${poste} »` : ""} chez « ${nom} »${cle === "cabinet" ? " (un cabinet de recrutement ou une agence d'intérim)" : ""}.\n` +
         (faits ? `D'après l'annuaire officiel des entreprises : ${faits}.\n` : "") +
         (wiki ? `D'après Wikipédia : ${wiki.texte}\n` : "") +
+        (articles.length ? `Ses derniers articles de presse (titres, à utiliser pour son actualité) :\n${articles.map(a => `- ${a.date} · ${a.source} : ${a.titre}`).join("\n")}\n` : "") +
         `\nFais-moi une fiche de préparation d'entretien :\n` +
         `1. Ce que fait l'entreprise : activité, produits ou marques phares, aires thérapeutiques.\n` +
         `2. Sa taille et son groupe.\n3. Son actualité des 12 derniers mois (lancements, rachats, résultats), avec les sources.\n` +

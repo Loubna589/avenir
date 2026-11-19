@@ -267,7 +267,6 @@ const PAGES = [
   ["mouvement.html", "Au fil des jours"],
   ["vie.html", "Veille VIE"],
   ["benevolat.html", "Bénévolat"],
-  ["index.html#position", "Ma position"],
 ];
 // Chemins relatifs partout : le site vit dans un sous-dossier (/metier/) sur GitHub Pages.
 const PAGE_ICI = (location.pathname.split("/").pop() || "index.html");

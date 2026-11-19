@@ -56,7 +56,8 @@ function rendre(_, D) {
   const zoneF = document.getElementById("f-fn");
   zoneF.innerHTML = `<b>Fonction :</b> <label><input type="radio" name="fn" value="" checked> toutes (${n})</label>` +
     FONCTIONS.map(([fn, l, c]) => { const k = P.filter(o => (o.fonctions || []).includes(fn)).length;
-      return k ? `<label><input type="radio" name="fn" value="${fn}"> <span class="etat" style="background:${c};color:#fff">${l}</span> ${k}</label>` : ""; }).join("");
+      // Toutes mes fonctions restent visibles ; sans offre ce jour-là, la case est grisée
+      return `<label${k ? "" : ` style="opacity:.45" title="Aucune offre aujourd'hui"`}><input type="radio" name="fn" value="${fn}"${k ? "" : " disabled"}> <span class="etat" style="background:${c};color:#fff">${l}</span> ${k}</label>`; }).join("");
   const dessinerListe = () => {
     const fn = (zoneF.querySelector("input:checked") || {}).value;
     const L = tri.filter(o => !fn || (o.fonctions || []).includes(fn));

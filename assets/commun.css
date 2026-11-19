@@ -316,3 +316,18 @@ table.fonctions b[data-voir] { text-decoration:underline dotted; }
 .ia-msg.moi { background:#e8f0fb; justify-self:end; max-width:85%; }
 .ia-msg.ia { background:#fff; border:1px solid var(--trait); }
 .ia-question { margin-top:10px; }
+/* ---- Mon assistant IA (toutes les pages) ---- */
+#assistant-ouvrir { position:fixed; right:20px; bottom:20px; z-index:900; border:none; border-radius:99px; padding:12px 18px; font:inherit; font-weight:600; color:#fff; cursor:pointer;
+  background:linear-gradient(120deg,#6b55a6,#1f5fbf); box-shadow:0 8px 24px rgba(31,95,191,.35); }
+#assistant-ouvrir:hover { filter:brightness(1.08); }
+#assistant-ia { position:fixed; right:20px; bottom:20px; z-index:901; width:min(420px, calc(100vw - 32px)); height:min(600px, calc(100vh - 40px));
+  background:#fff; border-radius:20px; box-shadow:0 20px 60px rgba(20,35,59,.3); display:flex; flex-direction:column; overflow:hidden; }
+#assistant-ia[hidden] { display:none; }
+#assistant-ia header { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; color:#fff; background:linear-gradient(120deg,#6b55a6,#1f5fbf); }
+#assistant-ia header button { border:none; background:rgba(255,255,255,.2); color:#fff; border-radius:50%; width:30px; height:30px; font-size:1.2rem; cursor:pointer; }
+#assistant-fil { flex:1; overflow:auto; padding:12px; display:grid; gap:8px; align-content:start; background:#f6f9fd; }
+#assistant-idees { display:flex; flex-wrap:wrap; gap:6px; padding:8px 12px 0; background:#f6f9fd; }
+#assistant-idees[hidden] { display:none; }
+#assistant-idees button { font:inherit; font-size:.8rem; border:1px solid var(--trait); background:#fff; border-radius:99px; padding:4px 10px; cursor:pointer; color:var(--accent); }
+#assistant-form { display:flex; gap:8px; padding:10px 12px; border-top:1px solid var(--trait); }
+#assistant-form input { flex:1; font:inherit; padding:8px 12px; border:1px solid var(--trait); border-radius:99px; }

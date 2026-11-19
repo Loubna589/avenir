@@ -471,3 +471,77 @@ document.addEventListener("click", e => {
   boiteL.querySelector(".fermer").onclick = () => boiteL.close();
   boiteL.showModal();
 });
+
+/* ============================================================
+   7) MON ASSISTANT IA, SUR TOUTES LES PAGES
+   Un bouton rond en bas à droite ouvre une fenêtre de discussion.
+   L'IA tourne sur Cloudflare (Worker « avenir-ia », Workers AI, gratuit) :
+   le site n'a aucune clé, il envoie seulement la conversation au Worker.
+   À la première question, on lui joint le résumé des offres du jour
+   (data/resume.json), pour qu'elle puisse parler de MES offres.
+   ============================================================ */
+(function () {
+  const ADRESSE = "https://avenir-ia.loubna-benmahmoud-190.workers.dev";
+  const conv = [];
+  let contexte = null;
+
+  async function lireContexte() {
+    if (contexte !== null) return contexte;
+    try {
+      const d = await (await fetch("data/resume.json", { cache: "no-cache" })).json();
+      const P = d.offres.filter(o => o.pharma).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+      const avecSal = P.filter(o => o.smin != null);
+      contexte = `Contexte (données de mon site de veille, extraction du ${d.date}) : ${d.offres.length} offres actives sur France Travail, ` +
+        `dont ${P.length} correspondent à ma recherche (marketing de la santé : produit/marketing, digital, affaires médicales, accès au marché, gestion de projet, événementiel, commercial ; hors alternance). ` +
+        `${avecSal.length} affichent un salaire. Les voici, une par ligne (intitulé ; employeur ; lieu ; contrat ; salaire ; date) :\n` +
+        P.slice(0, 45).map(o => `- ${o.intitule} ; ${o.entreprise || "employeur non précisé"} ; ${o.lieu || "?"} ; ${o.contrat || "?"} ; ${String(o.salaire || "—").split(" - ")[0]} ; ${o.date}`).join("\n") +
+        `\nUtilise ces données quand ma question porte sur mes offres ou mon marché, et dis-le quand tu réponds avec tes connaissances générales.`;
+    } catch (e) { contexte = ""; }
+    return contexte;
+  }
+
+  function installer() {
+    if (document.getElementById("assistant-ia")) return;
+    document.body.insertAdjacentHTML("beforeend", `
+      <button id="assistant-ouvrir" aria-label="Ouvrir mon assistant IA">🤖 <span>Mon assistant</span></button>
+      <section id="assistant-ia" hidden aria-label="Mon assistant IA">
+        <header><b>🤖 Mon assistant IA</b><button id="assistant-fermer" aria-label="Fermer">×</button></header>
+        <div id="assistant-fil"><div class="ia-msg ia">Bonjour ! Pose-moi une question sur tes offres, une entreprise, un entretien ou une lettre. Je connais les offres du jour de ton site. Je n'ai pas accès à internet : vérifie l'actualité récente.</div></div>
+        <div id="assistant-idees">
+          <button>Quelles offres me correspondent le mieux ?</button>
+          <button>Comment présenter mon alternance en entretien ?</button>
+          <button>Quelles questions poser à un recruteur ?</button>
+        </div>
+        <form id="assistant-form"><input type="text" placeholder="Écris ta question…" aria-label="Ta question"><button class="bouton petit">Envoyer</button></form>
+      </section>`);
+    const boite = document.getElementById("assistant-ia"), fil = document.getElementById("assistant-fil"), form = document.getElementById("assistant-form");
+    const champ = form.querySelector("input");
+    const enHTML = t => escH(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/^#{1,4}\s*(.+)$/gm, "<b>$1</b>").replace(/\n/g, "<br>");
+    const bulle = (qui, html) => { fil.insertAdjacentHTML("beforeend", `<div class="ia-msg ${qui}">${html}</div>`); fil.scrollTop = fil.scrollHeight; return fil.lastElementChild; };
+    async function poser(question) {
+      document.getElementById("assistant-idees").hidden = true;
+      bulle("moi", escH(question));
+      const attente = bulle("ia", "<i>Je réfléchis… (10 à 30 secondes)</i>");
+      conv.push({ role: "user", content: question });
+      const ctx = await lireContexte();
+      // Le contexte est renvoyé à chaque fois, devant les derniers échanges (le Worker en garde 10 au plus)
+      const messages = (ctx ? [{ role: "user", content: ctx }, { role: "assistant", content: "Entendu, j'ai les offres du jour." }] : []).concat(conv.slice(-8));
+      try {
+        const r = await fetch(ADRESSE, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ messages }) });
+        const j = await r.json();
+        if (!r.ok || !j.reponse) throw new Error(j.erreur || "pas de réponse");
+        conv.push({ role: "assistant", content: j.reponse });
+        attente.innerHTML = enHTML(j.reponse);
+      } catch (e) {
+        conv.pop();
+        attente.innerHTML = `<i>Je n'ai pas pu répondre (${escH(e.message)}). Réessaie dans un instant.</i>`;
+      }
+      fil.scrollTop = fil.scrollHeight;
+    }
+    document.getElementById("assistant-ouvrir").onclick = () => { boite.hidden = false; champ.focus(); };
+    document.getElementById("assistant-fermer").onclick = () => { boite.hidden = true; };
+    document.getElementById("assistant-idees").onclick = e => { const b = e.target.closest("button"); if (b) poser(b.textContent); };
+    form.onsubmit = e => { e.preventDefault(); const q = champ.value.trim(); if (!q) return; champ.value = ""; poser(q); };
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", installer); else installer();
+})();

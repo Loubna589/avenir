@@ -144,6 +144,65 @@
     return tete + "\n\n" + p.join("\n\n");
   }
 
+  // ---- La lettre en anglais, pour les annonces rédigées en anglais (souvent les VIE) ----
+  // L'annonce est-elle en anglais ? On compte les petits mots anglais et français de l'intitulé et du texte.
+  const enAnglais = o => {
+    const t = " " + [o.intitule, o.extrait, o.description].join(" ").toLowerCase() + " ";
+    const n = rx => (t.match(rx) || []).length;
+    return n(/\b(the|and|you|with|will|our|of|to|for|your|we)\b/g) > n(/\b(le|la|les|et|vous|avec|des|du|pour|une|nous)\b/g);
+  };
+  // Ce que la lettre dit de moi, en anglais (mêmes lignes que LIGNES)
+  const EN = {
+    "Anglais": ["English", "I work in English every day with Théa's subsidiaries"],
+    "Lancement de produit": ["Product launch", "I support the launch of a glaucoma drug in 4 European countries, coordinating with 35 subsidiaries"],
+    "Plan marketing, stratégie de marque": ["Marketing plan and brand strategy", "I adapt key messages and create marketing tools for the teams"],
+    "Veille, besoins clients, connaissance produit": ["Market watch and customer insight", "I ran competitive intelligence and prepared sales arguments and objection handling"],
+    "Compliance, conformité": ["Compliance", "I update scientific documents and check every reference"],
+    "Réglementaire (AMM, ANSM, HAS)": ["Regulatory and market access", "I discovered market access (HAS assessment, CEPS pricing) and I am taking a health economics course at the Cnam"],
+    "Études de marché, insights": ["Market research and insights", "I analyse sales and market data to guide actions"],
+    "Excel, Power BI, tableaux de bord": ["Excel, Power BI, dashboards", "I tracked sales with a Power BI dashboard"],
+    "Digital santé, omnicanal, CRM (Veeva)": ["Digital health and omnichannel", "my Master's degree in Operational and Digital Marketing trained me in digital and omnichannel tools"],
+    "IA générative": ["Generative AI", "I am taking a university diploma in Artificial Intelligence in Health at Université Paris-Saclay"],
+  };
+  const SECTEUR_EN = {
+    "dispositifs médicaux": "A medical device is not sold on a promise but on evidence, to demanding healthcare professionals. Turning scientific data into a clear message for practitioners is what I do every day as a Global Product Manager apprentice at Laboratoires Théa.",
+    "santé animale": "Animal health requires the same scientific rigour as human health, with one more stakeholder: the person who cares for the animal. Trained in pharmacology and now a Global Product Manager apprentice at Laboratoires Théa, I would love to bring this background to your team.",
+    "cosmétique": "A dermo-cosmetic product has to convince twice: the professional through evidence, the consumer through desire. At Théa France, I took part in the launch of a drug and of a food supplement: two products, two audiences, two ways of telling the story.",
+    "nutrition-santé": "Health nutrition sits between medicine and consumer goods: it needs both scientific proof and consumer appeal. At Théa France, I took part in the launch of a drug and of a food supplement.",
+    "pharmaceutique": "One glaucoma drug, four countries, thirty-five subsidiaries, one launch to get right: this is my daily life as a Global Product Manager apprentice at Laboratoires Théa.",
+  };
+  function lettreEN(o) {
+    const a = analyser(o);
+    const vie = /vie/i.test(o.type || "") || o.source === "vie";
+    let poste = (o.intitule || "").replace(/[\s(–-]*\b(H\s*\/\s*F|F\s*\/\s*H|M\s*\/\s*F)(\s*\/\s*[XD])?\b\)?/gi, " ").replace(/[\s\-–(]+$/g, "").replace(/\s{2,}/g, " ").trim();
+    if (poste === poste.toUpperCase()) poste = poste.charAt(0) + poste.slice(1).toLowerCase();
+    const ent = o.entreprise && !/non communiqu/i.test(o.entreprise) ? o.entreprise : "";
+    const lieu = (o.lieu || "").trim();
+    const pour = `${vie ? "the V.I.E mission" : "the position"} "${poste}"${ent ? ` at ${ent}` : ""}${lieu ? ` (${lieu})` : ""}`;
+    const fn = o.fonctions || [];
+    const PAR_FONCTION = {
+      "accès au marché": "A treatment only reaches patients once it has been assessed, reimbursed and fairly priced. At Théa France, I discovered this decisive step (HAS assessment, CEPS pricing), and I am now deepening it with a health economics course at the Cnam.",
+      "digital": "Health products are increasingly chosen online, but they are still sold on trust. My Master's in Operational and Digital Marketing trained me in digital and omnichannel tools; my apprenticeship as a product manager at Laboratoires Théa taught me what communicating about a health product requires.",
+      "commercial": "A sales pitch is only as good as its answers to field questions. At Théa France, I prepared the sales arguments and objection handling for the sales force, after spending time in the field with them.",
+    };
+    const cle = ["accès au marché", "digital"].find(f => fn.includes(f)) || (fn.includes("commercial") && !fn.includes("marketing") ? "commercial" : null);
+    const accroche = (cle ? PAR_FONCTION[cle] : SECTEUR_EN[a.secteur]) ||
+      "I studied biology before marketing: I understand what lies behind a health product, and I know how to make it known. As a Global Product Manager apprentice at Laboratoires Théa, I offer you this dual perspective.";
+    const ORDRE = ["Lancement de produit", "Plan marketing, stratégie de marque", "Veille, besoins clients, connaissance produit", "Études de marché, insights",
+      "Réglementaire (AMM, ANSM, HAS)", "Digital santé, omnicanal, CRM (Veeva)", "Compliance, conformité", "Excel, Power BI, tableaux de bord", "Anglais", "IA générative"];
+    const rang = l => { const i = ORDRE.indexOf(l.lib); return i < 0 ? 99 : i; };
+    const demandes = a.forces.filter(l => EN[l.lib] && !(a.secteur === "pharmaceutique" && !cle && l.lib === "Lancement de produit")).sort((x, y) => rang(x) - rang(y)).slice(0, 3);
+    const c = coordonnees();
+    const p = [`Dear Hiring Manager,`, `${accroche} I am pleased to apply for ${pour}.`];
+    if (demandes.length) p.push(`What you are looking for, and what I have already done:\n` + demandes.map(l => `— ${EN[l.lib][0]}: ${EN[l.lib][1]}.`).join("\n"));
+    p.push(`My background goes beyond classic marketing: a Bachelor's degree in pharmacology, a Master's in Biology and Health ("Health products and innovation"), then a Master's in Operational and Digital Marketing at IAE Clermont Auvergne. Working between headquarters and subsidiaries has taught me that the same message is not delivered the same way from one country to another.`);
+    p.push(`Why ${ent || "your company"}? [TO COMPLETE: a product, a range, a piece of news or a choice made by the company that genuinely struck you, and what you think of it. This is the sentence that will make the difference.]`);
+    p.push(`${vie ? "Ready to move abroad" : "Open to mobility in France and abroad"} from September 2027, I would be delighted to discuss this with you: twenty minutes would be enough to show you what I can bring to your team.`);
+    p.push(`Kind regards,`, `Loubna BENMAHMOUD`);
+    const tete = `Loubna BENMAHMOUD\nClermont-Ferrand, France · ${c.tel || "[phone]"} · ${c.mail || "[e-mail]"}\n\n${ent || "[Company name]"}\n[Department / recruiter's name]\n\nClermont-Ferrand, ${new Date().toLocaleDateString("en-GB", {day: "numeric", month: "long", year: "numeric"})}\n\nSubject: application for ${vie ? "the V.I.E mission" : "the position"} "${poste}"`;
+    return tete + "\n\n" + p.join("\n\n");
+  }
+
   // Mes coordonnées : gardées dans CE navigateur seulement (localStorage), jamais publiées sur le site
   const CLE_COORD = "avenir-coordonnees";
   function coordonnees() { try { return JSON.parse(localStorage.getItem(CLE_COORD)) || {}; } catch (e) { return {}; } }
@@ -281,6 +340,7 @@
       <div class="lettre" hidden>
         <textarea rows="18"></textarea>
         <div class="fiche-actions"><button class="bouton" data-action="copier">Copier</button>
+          <button class="bouton secondaire" data-action="langue"></button>
           <button class="bouton secondaire" data-action="telecharger">Télécharger (.txt)</button></div>
         <p class="note">Brouillon : relis-le, remplace les [crochets] et adapte-le avant de l'envoyer. Rien n'est envoyé : la lettre est écrite dans ton navigateur.</p>
       </div>`;
@@ -289,13 +349,18 @@
     const bv = boite.querySelector('[data-action="veille"]');
     if (bv) bv.onclick = () => { const z = boite.querySelector(".veille"); z.hidden = false; bv.disabled = true;
       veille(z, o.entreprise, o.intermediaire ? "cabinet" : "entreprise").then(() => z.scrollIntoView({behavior: "smooth", block: "nearest"})); };
+    // La lettre part dans la langue de l'annonce ; un bouton permet de basculer
+    let langue = enAnglais(o) ? "en" : "fr";
+    const ecrire = () => { ta.value = langue === "en" ? lettreEN(o) : lettre(o);
+      zone.querySelector('[data-action="langue"]').textContent = langue === "en" ? "🇫🇷 Version française" : "🇬🇧 English version"; };
     const c0 = coordonnees();
     const champs = [...boite.querySelectorAll("[data-c]")];
     champs.forEach(i => { i.value = c0[i.dataset.c] || ""; i.oninput = () => {
       garderCoordonnees(Object.fromEntries(champs.map(x => [x.dataset.c, x.value.trim()])));
-      if (!zone.hidden) ta.value = lettre(o); }; });
+      if (!zone.hidden) ecrire(); }; });
     if (!c0.tel && !c0.mail) boite.querySelector("details.coord").open = true;
-    boite.querySelector('[data-action="lettre"]').onclick = () => { ta.value = lettre(o); zone.hidden = false; ta.scrollIntoView({behavior:"smooth", block:"nearest"}); };
+    boite.querySelector('[data-action="lettre"]').onclick = () => { ecrire(); zone.hidden = false; ta.scrollIntoView({behavior:"smooth", block:"nearest"}); };
+    zone.querySelector('[data-action="langue"]').onclick = () => { langue = langue === "en" ? "fr" : "en"; ecrire(); };
     zone.querySelector('[data-action="copier"]').onclick = async e => {
       try { await navigator.clipboard.writeText(ta.value); e.target.textContent = "Copiée ✓"; } catch { ta.select(); document.execCommand("copy"); e.target.textContent = "Copiée ✓"; }
     };
@@ -307,5 +372,5 @@
     boite.showModal();
   }
 
-  window.Profil = {LIGNES, analyser, lettre, ouvrir, ouvrirVeille, esc};
+  window.Profil = {LIGNES, analyser, lettre, lettreEN, enAnglais, ouvrir, ouvrirVeille, esc};
 })();

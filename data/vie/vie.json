@@ -1,11 +1,11 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 94,
-   "lues": 94,
+   "annoncees": 91,
+   "lues": 91,
    "sante": 14
   },
   {
@@ -22,16 +22,16 @@
   },
   {
    "recherche": "chef de produit",
-   "annoncees": 34,
-   "lues": 34,
+   "annoncees": 33,
+   "lues": 33,
    "sante": 2
   }
  ],
  "incompletes": [],
- "nb_offres": 150,
+ "nb_offres": 146,
  "nb_sante": 33,
- "nb_sante_marketing": 14,
- "nb_fonctions": 64,
+ "nb_sante_marketing": 15,
+ "nb_fonctions": 69,
  "offres": [
   {
    "id": "247818",
@@ -99,6 +99,28 @@
    "marketing": true
   },
   {
+   "id": "247706",
+   "entreprise": "CVO-EUROPE",
+   "intitule": "Assistant Project Manager Pharma h-f (H/F)",
+   "lieu": "BELGIQUE - BRAINE L ALLEUD",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247706",
+   "extrait": "VIE - GESTION DE PROJET PHARMA H-F Fondé en 2013, Efor a su en 10 ans se positionner comme l'acteur européen de référence du conseil spécialisé en Life Sciences. Avec plus de 2000 collaborateurs répartis au sein de 19 agences en France, en Belgique, en...",
+   "sante": true,
+   "fonctions": [
+    "gestion de projet"
+   ],
+   "recherches": [
+    "pharma",
+    "santé"
+   ],
+   "publiee": "2026-10-29",
+   "expire": "2026-11-28",
+   "debut": "2027-01-01",
+   "marketing": true
+  },
+  {
    "id": "248308",
    "entreprise": "ELIXIRTRIALS FRANCE",
    "intitule": "Chargé(e) de développement commercial et de partenariats stratégiques (H/F)",
@@ -152,7 +174,8 @@
    "extrait": "Your mission As a Digital Project Manager for the BeNeLux region, you will lead digital projects across Belgium and the Netherlands, from initial scoping through to launch and user adoption. You will translate business needs into practical digital solutions while ensuring compliance with quality, pr",
    "sante": true,
    "fonctions": [
-    "digital"
+    "digital",
+    "gestion de projet"
    ],
    "recherches": [
     "pharma"
@@ -279,7 +302,8 @@
    "extrait": "As a leading French pharmaceutical company, we specialize in prescription medicines. We generate 92% of our sales internationally and have numerous subsidiaries abroad. We are seeking a VIE participant for our subsidiary based in Belgium. WHAT YOU WILL DO • Support the local implementation of...",
    "sante": true,
    "fonctions": [
-    "marketing"
+    "marketing",
+    "gestion de projet"
    ],
    "recherches": [
     "marketing"
@@ -413,6 +437,27 @@
    "publiee": "2026-11-10",
    "expire": "2026-12-10",
    "debut": "2027-03-01",
+   "marketing": true
+  },
+  {
+   "id": "247504",
+   "entreprise": "CA CONSUMER FINANCE",
+   "intitule": "PMO & Project Coordination (H/F)",
+   "lieu": "ALLEMAGNE - STUTTGART",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247504",
+   "extrait": "JOB PURPOSE Support the development of our retail Bank in Germany : Crédit Agricole Deutschland, by providing hands-on PMO, cross-functional coordination across the main workstreams. The VIE will help translate governance decisions into execution, maintain a consolidated view of actions, dependencie",
+   "sante": false,
+   "fonctions": [
+    "gestion de projet"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-10-26",
+   "expire": "2026-11-25",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -608,27 +653,6 @@
    "marketing": true
   },
   {
-   "id": "247155",
-   "entreprise": "CLUB MED SAS",
-   "intitule": "VIE - CRM project manager - Southern Europe and Emerging Markets (M/F) (H/F)",
-   "lieu": "ITALIE - MILAN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247155",
-   "extrait": "Established in 1950, Club Med is the pioneer of Premium All Inclusive holidays. We have been continuously innovating over the last 75 years and now offer more than 60 ski and sun Resorts across Europe, Asia, Africa, America and the Caribbean as well as a...",
-   "sante": false,
-   "fonctions": [
-    "digital"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-19",
-   "expire": "2026-11-18",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "244762",
    "entreprise": "CNH INDUSTRIAL FRANCE",
    "intitule": "eCommerce / Go-to market specialist (H/F)",
@@ -667,6 +691,27 @@
    ],
    "publiee": "2026-11-09",
    "expire": "2026-12-09",
+   "debut": "2027-01-01",
+   "marketing": true
+  },
+  {
+   "id": "248393",
+   "entreprise": "DILYNX",
+   "intitule": "Deployment project Manager (H/F)",
+   "lieu": "PORTUGAL - LISBONNE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248393",
+   "extrait": "En tant que Deployment Project Manager, vous êtes le point de contact privilégié de nos nouveaux clients dès la vente. Vous prenez le relais de l’équipe Sales, pilotez le déploiement de Stafiz chez le client et formez ses utilisateurs pour qu’ils tirent pleinement parti de...",
+   "sante": false,
+   "fonctions": [
+    "gestion de projet"
+   ],
+   "recherches": [
+    "chef de produit"
+   ],
+   "publiee": "2026-11-17",
+   "expire": "2026-12-17",
    "debut": "2027-01-01",
    "marketing": true
   },
@@ -1115,6 +1160,27 @@
    "marketing": true
   },
   {
+   "id": "247594",
+   "entreprise": "OMERIN SAS",
+   "intitule": "CHEF DE PROJETS METHODES ET AMELIORATION CONTINUE (H/F)",
+   "lieu": "TUNISIE - MONASTIR",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247594",
+   "extrait": "Le Groupe OMERIN (300 M€ CA – 1700 collaborateurs – 16 sites industriels) est une ETI française d'envergure internationale. Innovant et multisectoriel, le Groupe organise ses activités autour de quatre Business Units dédiées à la santé et à la sécurité : - Câbles électriques de...",
+   "sante": false,
+   "fonctions": [
+    "gestion de projet"
+   ],
+   "recherches": [
+    "santé"
+   ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-01-01",
+   "marketing": true
+  },
+  {
    "id": "247078",
    "entreprise": "POLY DISPENSING SYSTEMS",
    "intitule": "Area Sales Manager (H/F)",
@@ -1166,7 +1232,7 @@
    "type": "VIE",
    "duree": "24 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248377",
-   "extrait": "Job Description External Mission Principale Au sein de la Direction Marketing de Renault Österreich, vous participez à la gestion et au développement de la gamme Véhicules Utilitaires Légers (LCV) sur le marché autrichien. En support du Brand Manager LCV, vous contribuez à la définition et...",
+   "extrait": "Mission Principale Au sein de la Direction Marketing de Renault Österreich, vous participez à la gestion et au développement de la gamme Véhicules Utilitaires Légers (LCV) sur le marché autrichien. En support du Brand Manager LCV, vous contribuez à la définition et au déploiement de...",
    "sante": false,
    "fonctions": [
     "marketing"
@@ -1177,6 +1243,27 @@
    "publiee": "2026-11-16",
    "expire": "2026-12-16",
    "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
+   "id": "239998",
+   "entreprise": "SCALIAN",
+   "intitule": "PROJECT MANAGEMENT OFFICER AERONAUTIQUE (H/F)",
+   "lieu": "CANADA - MONTREAL -QC",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/239998",
+   "extrait": "Vous êtes PMO en Europe et vous rêvez d'une expérience au Canada ! Si votre réponse est oui et que vous avez une première expérience dans le secteur aéronautique, c'est votre jour de chance car nous sommes à la recherche de candidats dynamiques et talentueux...",
+   "sante": false,
+   "fonctions": [
+    "gestion de projet"
+   ],
+   "recherches": [
+    "santé"
+   ],
+   "publiee": "2026-11-05",
+   "expire": "2026-12-05",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -1233,7 +1320,8 @@
    "sante": false,
    "fonctions": [
     "marketing",
-    "digital"
+    "digital",
+    "gestion de projet"
    ],
    "recherches": [
     "marketing",
@@ -1266,27 +1354,6 @@
    "marketing": true
   },
   {
-   "id": "238017",
-   "entreprise": "SQUARE",
-   "intitule": "Business Manager - Bruxelles (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/238017",
-   "extrait": "Square Management Belgium is part of Square Management Group of over 900 consultants. Our strategy and organization consulting firm has experienced one of the strongest growth rates in its market over the past 15 years. It operates in 10 practices that concentrate the expertise of...",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-19",
-   "expire": "2026-11-18",
-   "debut": "2026-12-01",
-   "marketing": true
-  },
-  {
    "id": "245987",
    "entreprise": "TOPY",
    "intitule": "BUSINESS DEVELOPMENT & CUSTOMER SUCCESS EUROPE (H/F)",
@@ -1302,6 +1369,9 @@
    "recherches": [
     "marketing"
    ],
+   "publiee": "2026-11-02",
+   "expire": "2026-12-02",
+   "debut": "2027-01-01",
    "marketing": true
   },
   {
@@ -1326,6 +1396,27 @@
    "marketing": true
   },
   {
+   "id": "247383",
+   "entreprise": "TOTALENERGIES MARKETING SERVICES",
+   "intitule": "Assistant Chef de Projet Contrôle Interne (H/F) – République tchèque",
+   "lieu": "TCHEQUIE / REPUBLIQUE TCHEQUE - PRAGUE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247383",
+   "extrait": "Rejoignez la branche Marketing & Services de TotalEnergies à Prague, en République tchèque, et contribuez au renforcement du contrôle interne au sein d’un hub régional couvrant la République tchèque, la Slovaquie et la Hongrie. Vous participez à la préparation d’un audit interne régional et contribu",
+   "sante": false,
+   "fonctions": [
+    "gestion de projet"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-10-22",
+   "expire": "2026-11-21",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
    "id": "247297",
    "entreprise": "V02 GROUP",
    "intitule": "CONSULTANT FONCTIONNEL CRM SALESFORCE (H/F)",
@@ -1343,6 +1434,28 @@
    ],
    "publiee": "2026-10-27",
    "expire": "2026-11-26",
+   "debut": "2027-03-01",
+   "marketing": true
+  },
+  {
+   "id": "246959",
+   "entreprise": "VYGON",
+   "intitule": "Chef de projet industrialisation injection et outillage H/F (H/F)",
+   "lieu": "MAURICE - PAMPLEMOUSSES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246959",
+   "extrait": "Vous souhaitez donner du sens à votre carrière en rejoignant une entreprise dont les produits contribuent chaque jour à sauver des vies ? Vous souhaitez évoluer dans un environnement industriel innovant, au sein d’un groupe international à taille humaine, reconnu pour son expertise dans les...",
+   "sante": false,
+   "fonctions": [
+    "gestion de projet"
+   ],
+   "recherches": [
+    "santé",
+    "chef de produit"
+   ],
+   "publiee": "2026-11-05",
+   "expire": "2026-12-05",
    "debut": "2027-03-01",
    "marketing": true
   },
@@ -1401,23 +1514,6 @@
    "sante": true,
    "fonctions": [],
    "recherches": [
-    "santé"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247706",
-   "entreprise": "CVO-EUROPE",
-   "intitule": "Assistant Project Manager Pharma h-f (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247706",
-   "extrait": "VIE - GESTION DE PROJET PHARMA H-F Fondé en 2013, Efor a su en 10 ans se positionner comme l'acteur européen de référence du conseil spécialisé en Life Sciences. Avec plus de 2000 collaborateurs répartis au sein de 19 agences en France, en Belgique, en...",
-   "sante": true,
-   "fonctions": [],
-   "recherches": [
-    "pharma",
     "santé"
    ],
    "marketing": false
@@ -1731,22 +1827,6 @@
    "marketing": false
   },
   {
-   "id": "247111",
-   "entreprise": "AFFLUENCES",
-   "intitule": "Customer Success Manager (H/F)",
-   "lieu": "ITALIE - MILAN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247111",
-   "extrait": "Au sein de l’équipe Relation Client, tu auras pour principales missions : 1. Onboarding & gestion de projet Piloter les nouveaux projets clients (déploiement de la solution, installation de capteurs, paramétrage…) Coordonner les équipes internes (tech, produit, sales) Assurer la formation des utilis",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "chef de produit"
-   ],
-   "marketing": false
-  },
-  {
    "id": "247751",
    "entreprise": "AIRBUS",
    "intitule": "External Communications Advisor (H/F)",
@@ -1972,22 +2052,6 @@
    "marketing": false
   },
   {
-   "id": "247504",
-   "entreprise": "CA CONSUMER FINANCE",
-   "intitule": "PMO & Project Coordination (H/F)",
-   "lieu": "ALLEMAGNE - STUTTGART",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247504",
-   "extrait": "JOB PURPOSE Support the development of our retail Bank in Germany : Crédit Agricole Deutschland, by providing hands-on PMO, cross-functional coordination across the main workstreams. The VIE will help translate governance decisions into execution, maintain a consolidated view of actions, dependencie",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
    "id": "244989",
    "entreprise": "CAR DATA",
    "intitule": "IA Builder (H/F)",
@@ -2098,22 +2162,6 @@
    "fonctions": [],
    "recherches": [
     "santé"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "248393",
-   "entreprise": "DILYNX",
-   "intitule": "Deployment project Manager (H/F)",
-   "lieu": "PORTUGAL - LISBONNE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248393",
-   "extrait": "En tant que Deployment Project Manager, vous êtes le point de contact privilégié de nos nouveaux clients dès la vente. Vous prenez le relais de l’équipe Sales, pilotez le déploiement de Stafiz chez le client et formez ses utilisateurs pour qu’ils tirent pleinement parti de...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "chef de produit"
    ],
    "marketing": false
   },
@@ -2358,22 +2406,6 @@
    "marketing": false
   },
   {
-   "id": "247594",
-   "entreprise": "OMERIN SAS",
-   "intitule": "CHEF DE PROJETS METHODES ET AMELIORATION CONTINUE (H/F)",
-   "lieu": "TUNISIE - MONASTIR",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247594",
-   "extrait": "Le Groupe OMERIN (300 M€ CA – 1700 collaborateurs – 16 sites industriels) est une ETI française d'envergure internationale. Innovant et multisectoriel, le Groupe organise ses activités autour de quatre Business Units dédiées à la santé et à la sécurité : - Câbles électriques de...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "santé"
-   ],
-   "marketing": false
-  },
-  {
    "id": "248258",
    "entreprise": "ORANO MINING",
    "intitule": "Hydrogéologue F/H (H/F)",
@@ -2502,22 +2534,6 @@
    "marketing": false
   },
   {
-   "id": "239998",
-   "entreprise": "SCALIAN",
-   "intitule": "PROJECT MANAGEMENT OFFICER AERONAUTIQUE (H/F)",
-   "lieu": "CANADA - MONTREAL -QC",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/239998",
-   "extrait": "Vous êtes PMO en Europe et vous rêvez d'une expérience au Canada ! Si votre réponse est oui et que vous avez une première expérience dans le secteur aéronautique, c'est votre jour de chance car nous sommes à la recherche de candidats dynamiques et talentueux...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "santé"
-   ],
-   "marketing": false
-  },
-  {
    "id": "246805",
    "entreprise": "SEB DEVELOPPEMENT",
    "intitule": "Amazon Account Specialist (H/F)",
@@ -2594,22 +2610,6 @@
    "fonctions": [],
    "recherches": [
     "chef de produit"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247219",
-   "entreprise": "STMICROELECTRONICS (GRENOBLE 2) SAS",
-   "intitule": "Ingénieur Application en imagerie (H/F)",
-   "lieu": "TAIWAN - TAIPEI",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247219",
-   "extrait": "La division IMAGING de ST recherche un Ingénieur Application en imagerie sous contrat VIE (Volontariat International en Entreprise) La personne sera détachée à Taiwan et intégrée dans l'équipe Application locale pour supporter le lancement de capteurs d'images innovants. A propos de vos missions Rép",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
    ],
    "marketing": false
   },
@@ -2729,22 +2729,6 @@
    "marketing": false
   },
   {
-   "id": "247383",
-   "entreprise": "TOTALENERGIES MARKETING SERVICES",
-   "intitule": "Assistant Chef de Projet Contrôle Interne (H/F) – République tchèque",
-   "lieu": "TCHEQUIE / REPUBLIQUE TCHEQUE - PRAGUE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247383",
-   "extrait": "Rejoignez la branche Marketing & Services de TotalEnergies à Prague, en République tchèque, et contribuez au renforcement du contrôle interne au sein d’un hub régional couvrant la République tchèque, la Slovaquie et la Hongrie. Vous participez à la préparation d’un audit interne régional et contribu",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
    "id": "245999",
    "entreprise": "TWYCE",
    "intitule": "AGENT METHODE (H/F)",
@@ -2757,23 +2741,6 @@
    "fonctions": [],
    "recherches": [
     "santé"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "246959",
-   "entreprise": "VYGON",
-   "intitule": "Chef de projet industrialisation injection et outillage H/F (H/F)",
-   "lieu": "MAURICE - PAMPLEMOUSSES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246959",
-   "extrait": "Vous souhaitez donner du sens à votre carrière en rejoignant une entreprise dont les produits contribuent chaque jour à sauver des vies ? Vous souhaitez évoluer dans un environnement industriel innovant, au sein d’un groupe international à taille humaine, reconnu pour son expertise dans les...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "santé",
-    "chef de produit"
    ],
    "marketing": false
   }

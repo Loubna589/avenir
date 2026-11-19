@@ -11,11 +11,11 @@
 <body>
 <main>
   <div id="nav-ici"></div>
-  <h1>Au fil des jours <small>— combien d'offres chaque matin, et depuis quand elles sont en ligne</small></h1>
+  <h1>Au fil des jours <small>— combien d'offres chaque jour, et depuis quand elles sont en ligne</small></h1>
   <p class="sous" id="sous">Chargement des données…</p>
 
   <div class="grille" style="margin-top:8px">
-    <div class="carte"><h3>Combien d'offres en ligne chaque matin ?</h3>
+    <div class="carte"><h3>Combien d'offres en ligne chaque jour ?</h3>
       <div class="legende-seg" style="margin-bottom:6px"><span><i style="background:#c2185b"></i>ma recherche (santé, mes fonctions)</span><span><i style="background:#8f7cc4"></i>chef de produit, tous secteurs</span></div>
       <div class="zone"><canvas id="g-serie"></canvas></div>
       <p class="note" id="note-serie"></p></div>
@@ -29,7 +29,7 @@
   <footer id="pied"></footer>
 </main>
 
-<script src="assets/commun.js?v=14"></script>
+<script src="assets/commun.js?v=15"></script>
 <script src="assets/profil.js?v=10"></script>
 <script>
 /* ============ Au fil des jours ============ */
@@ -41,8 +41,8 @@ function rendre(_, D) {
       { label: "Chef de produit, tous secteurs", data: serie.map(x => (x.par_metier || {}).M1703 || 0), borderColor: "#8f7cc4", backgroundColor: "#8f7cc4", tension: .2, pointRadius: 4 } ] },
     { scales: { y: { beginAtZero: true } } });
   document.getElementById("note-serie").textContent = serie.length < 2
-    ? "La courbe se dessine au fil des matins."
-    : `${serie.length} matins relevés, du ${dateFr(serie[0].date)} au ${dateFr(serie[serie.length - 1].date)}. Si la courbe monte, on recrute davantage.`;
+    ? "La courbe se dessine au fil des jours."
+    : `${serie.length} jours relevés, du ${dateFr(serie[0].date)} au ${dateFr(serie[serie.length - 1].date)}. Si la courbe monte, on recrute davantage.`;
   const P = D.offres.filter(o => o.pharma);
   const FRAIS = [["Moins de 7 jours", j => j < 7, "#1fa9a4"], ["7 à 30 jours", j => j >= 7 && j < 30, "#9fded9"], ["1 à 3 mois", j => j >= 30 && j < 90, "#b7832a"], ["Plus de 3 mois", j => j >= 90, "#c4cad3"]];
   document.getElementById("b-fraicheur").innerHTML = barresHTML(FRAIS.map(([l, t, c]) => {

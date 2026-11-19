@@ -33,10 +33,10 @@
     <p class="note" id="note-serie"></p></div>
 
   <h2>Méthode et limites</h2>
-  <p class="note">Comment : chaque matin, GitHub ouvre automatiquement la page publique de recherche de Business France (autorisée par le site), lance les quatre recherches et lit chaque mission. Le classement dans mes fonctions se fait sur l'intitulé : il peut se tromper, l'annonce complète fait foi.</p>
+  <p class="note">Comment : chaque jour, GitHub ouvre automatiquement la page publique de recherche de Business France (autorisée par le site), lance les quatre recherches et lit chaque mission. Le classement dans mes fonctions se fait sur l'intitulé : il peut se tromper, l'annonce complète fait foi.</p>
   <footer>Veille VIE — M2 MOD, IAE Clermont Auvergne. Données : mon-vie-via.businessfrance.fr (page publique), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=14"></script>
+<script src="assets/commun.js?v=15"></script>
 <script src="assets/profil.js?v=10"></script>
 <script>
 const esc = Profil.esc;
@@ -70,7 +70,7 @@ function afficher() {
   offres = V.offres.map(o => ({...o, type: "VIE", source: "vie"}));
   const jour = new Date(V.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
   const rech = V.recherches.map(b => `« ${esc(b.recherche)} » ${b.annoncees ?? b.lues}`).join(" · ");
-  document.getElementById("sous").innerHTML = `Relevé automatique chaque matin sur le site officiel des VIE (Business France) · dernier relevé le <b>${jour}</b> · recherches : ${rech}.`;
+  document.getElementById("sous").innerHTML = `Relevé automatique chaque jour sur le site officiel des VIE (Business France) · dernier relevé le <b>${jour}</b> · recherches : ${rech}.`;
   const nPays = new Set(offres.filter(o => o.sante).map(pays)).size;
   document.getElementById("tuiles").innerHTML = [
     [V.nb_offres, "missions lues, une fois dédoublonnées"], [V.nb_fonctions ?? "—", "dans mes fonctions"],

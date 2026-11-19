@@ -309,7 +309,7 @@ function poserNavEtFiltres() {
 
   const p = document.getElementById("pied");
   if (p) p.innerHTML =
-    `Offres d'emploi lues chaque matin sur France Travail (accès officiel, pas de LinkedIn ni d'APEC) · <a href="mouvement.html#limites">Méthode et limites</a> · M2 Marketing opérationnel et digital, IAE Clermont Auvergne`;
+    `Offres d'emploi lues chaque jour sur France Travail (accès officiel, pas de LinkedIn ni d'APEC) · <a href="mouvement.html#limites">Méthode et limites</a> · M2 Marketing opérationnel et digital, IAE Clermont Auvergne`;
 }
 
 /* ============================================================
@@ -371,7 +371,7 @@ const Commun = {
 
       const sous = document.getElementById("sous");
       if (sous) sous.innerHTML =
-        `Extraction du <b>${dateFr(d.date)}</b> · <b>${d.offres.length.toLocaleString("fr-FR")}</b> offres actives sur France Travail · mise à jour automatiquement chaque matin`;
+        `Extraction du <b>${dateFr(d.date)}</b> · <b>${d.offres.length.toLocaleString("fr-FR")}</b> offres actives sur France Travail · mise à jour automatiquement chaque jour`;
 
       if (!document.getElementById("metiers")) { if (initier) initier(d); Commun.rendre(d.offres, d); return; }
       let memo = null;

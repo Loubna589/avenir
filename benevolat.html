@@ -37,13 +37,13 @@
 
   <h2>Comment ça marche</h2>
   <div class="limites">
-    <div class="carte"><span class="ico">🕖</span><b>Chaque matin</b><p>GitHub lit automatiquement les nouvelles missions publiées sur JeVeuxAider.gouv.fr, la plateforme publique du bénévolat.</p></div>
+    <div class="carte"><span class="ico">🕖</span><b>Chaque jour</b><p>GitHub lit automatiquement les nouvelles missions publiées sur JeVeuxAider.gouv.fr, la plateforme publique du bénévolat.</p></div>
     <div class="carte"><span class="ico">🗺️</span><b>Toute la France</b><p>La liste vient du plan du site, prévu pour les robots : rien n'est aspiré en cachette, une page toutes les 10 secondes.</p></div>
     <div class="carte"><span class="ico">🏷️</span><b>Mes thèmes</b><p>Repérés par mots-clés dans le titre et la description : ça peut se tromper, la mission complète fait foi.</p></div>
   </div>
   <footer>Veille bénévolat — M2 MOD, IAE Clermont Auvergne. Données : jeveuxaider.gouv.fr (pages publiques), relevées automatiquement.</footer>
 </main>
-<script src="assets/commun.js?v=14"></script>
+<script src="assets/commun.js?v=15"></script>
 <script src="assets/profil.js?v=10"></script>
 <script>
 const esc = Profil.esc;
@@ -84,7 +84,7 @@ function afficher() {
   catch (e) { document.getElementById("sous").textContent = "La veille bénévolat n'a pas encore de données."; return; }
   missions = B.missions;
   const jour = new Date(B.date + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"});
-  document.getElementById("sous").innerHTML = `Relevé automatique chaque matin sur JeVeuxAider.gouv.fr · dernier relevé le <b>${jour}</b> · <b>${(B.en_ligne ?? 0).toLocaleString("fr-FR")}</b> missions en ligne en France`;
+  document.getElementById("sous").innerHTML = `Relevé automatique chaque jour sur JeVeuxAider.gouv.fr · dernier relevé le <b>${jour}</b> · <b>${(B.en_ligne ?? 0).toLocaleString("fr-FR")}</b> missions en ligne en France`;
   document.getElementById("tuiles").innerHTML = Object.entries(TH).map(([t, [c, e]]) =>
     `<div class="chiffre" style="border-top:4px solid ${c}"><b style="color:${c}">${e} ${missions.filter(m => (m.themes || []).includes(t)).length}</b><span>${esc(t)}</span></div>`).join("");
   document.getElementById("f-themes").addEventListener("change", afficher);

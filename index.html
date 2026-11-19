@@ -111,7 +111,7 @@ function rendre(_, D) {
   const exp = EXPS.map(t => { const L = P.filter(o => trancheExp(o) === t); return [t, L.length, EXPC[t], L]; });
   cartes.push(["4. Qu'est-ce qu'on me demande ?", outils.length ? `${pct(outils[0][1], nP)} %` : "—", outils.length ? `des offres citent : ${esc(outilLisible(outils[0][0]))}` : "",
     barresHTML(outils.map(([k, v]) => [outilLisible(k), v, "#1fa9a4", pct(v, nP) + " %", P.filter(o => (o.outils || []).includes(k))]), nP) +
-    `<p class="repere" style="margin-bottom:2px"><b>Expérience demandée</b> <small>(cliquez une couleur)</small></p>${segmentsHTML(exp)}` +
+    `<p class="repere" style="margin-bottom:2px"><b>Expérience demandée</b> <small>(cliquez sur la barre pour voir les offres)</small></p>${segmentsHTML(exp)}` +
     `<div class="mini-tuiles"><span${voir("Bac+5 demandé", P.filter(o => o.formation === "Bac+5"))}><b>${pct(P.filter(o => o.formation === "Bac+5").length, P.filter(o => o.formation).length)} %</b> demandent un Bac+5 <small>(parmi les ${P.filter(o => o.formation).length} qui précisent)</small></span>` +
     `<span><b>${(() => { const e = P.filter(o => o.exp_exige === "E" && o.exp_ans > 0).map(o => o.exp_ans); return e.length ? ans(mediane(e)) : "—"; })()}</b> d'expérience, quand elle est exigée</span></div>`, "", "offres.html#demande"]);
 

@@ -331,3 +331,9 @@ table.fonctions b[data-voir] { text-decoration:underline dotted; }
 #assistant-idees button { font:inherit; font-size:.8rem; border:1px solid var(--trait); background:#fff; border-radius:99px; padding:4px 10px; cursor:pointer; color:var(--accent); }
 #assistant-form { display:flex; gap:8px; padding:10px 12px; border-top:1px solid var(--trait); }
 #assistant-form input { flex:1; font:inherit; padding:8px 12px; border:1px solid var(--trait); border-radius:99px; }
+/* ---- Mes candidatures (Mes offres) ---- */
+.coche { display:flex; flex-direction:column; align-items:center; gap:2px; cursor:pointer; }
+.coche input { width:20px; height:20px; accent-color:#2e7d5b; cursor:pointer; }
+.coche small { color:#2e7d5b; font-size:.72rem; white-space:nowrap; }
+tr.postule td { background:#eef8f1; }
+.mes-cand label { font-weight:500; }

@@ -8,7 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/commun.css?v=18">
+<link rel="stylesheet" href="assets/commun.css?v=19">
 </head>
 <body>
 <main>
@@ -20,8 +20,10 @@
   <h2 id="liste">Une par une <small id="sous-liste"></small></h2>
   <div class="carte large">
     <div class="vie-filtres" style="margin-bottom:10px" id="f-fn"></div>
+    <div class="vie-filtres mes-cand" style="margin-bottom:10px"><label><input type="checkbox" id="f-cand"> ✅ Seulement mes candidatures <b id="nb-cand">0</b></label>
+      <button class="bouton secondaire petit" id="export-cand">Exporter pour Excel</button></div>
     <div class="defile"><table class="liste" id="liste-pharma"></table></div>
-    <p class="note" style="margin:8px 0 0">Net : estimation, environ 78 % du brut, avant impôt sur le revenu.</p></div>
+    <p class="note" style="margin:8px 0 0">Net : estimation, environ 78 % du brut, avant impôt sur le revenu. La case « J'ai postulé » reste dans ce navigateur : elle n'est pas publiée.</p></div>
 
   <h2 id="carte">Sur la carte</h2>
   <div class="carte large"><div id="map" style="height:480px"></div>
@@ -58,20 +60,49 @@ function rendre(_, D) {
     FONCTIONS.map(([fn, l, c]) => { const k = P.filter(o => (o.fonctions || []).includes(fn)).length;
       // Toutes mes fonctions restent visibles ; sans offre ce jour-là, la case est grisée
       return `<label${k ? "" : ` style="opacity:.45" title="Aucune offre aujourd'hui"`}><input type="radio" name="fn" value="${fn}"${k ? "" : " disabled"}> <span class="etat" style="background:${c};color:#fff">${l}</span> ${k}</label>`; }).join("");
+  /* ---- Mes candidatures : une case par offre, gardée dans ce navigateur (localStorage) ---- */
+  const CLE_CAND = "avenir-candidatures";
+  const lireCand = () => { try { return JSON.parse(localStorage.getItem(CLE_CAND)) || {}; } catch (e) { return {}; } };
+  const garderCand = c => { try { localStorage.setItem(CLE_CAND, JSON.stringify(c)); } catch (e) {} };
+  let cand = lireCand();
+  const auj = () => new Date().toISOString().slice(0, 10);
   const dessinerListe = () => {
     const fn = (zoneF.querySelector("input:checked") || {}).value;
-    const L = tri.filter(o => !fn || (o.fonctions || []).includes(fn));
+    const seulement = document.getElementById("f-cand").checked;
+    const L = tri.filter(o => (!fn || (o.fonctions || []).includes(fn)) && (!seulement || cand[o.id]));
+    document.getElementById("nb-cand").textContent = Object.keys(cand).length;
     document.getElementById("sous-liste").textContent = `— ${L.length} offre${pluriel(L.length)}, les plus récentes d'abord`;
     document.getElementById("liste-pharma").innerHTML =
-      `<tr><th>Intitulé</th><th>Fonction</th><th>Employeur</th><th>Lieu</th><th>Contrat</th><th>Salaire brut</th><th>Net / mois</th><th>Publiée</th><th></th></tr>` +
-      L.map(o => `<tr><td>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)}</td><td>${puceFn(o)}</td>` +
+      `<tr><th>J'ai postulé</th><th>Intitulé</th><th>Fonction</th><th>Employeur</th><th>Lieu</th><th>Contrat</th><th>Salaire brut</th><th>Net / mois</th><th>Publiée</th><th></th></tr>` +
+      L.map(o => `<tr${cand[o.id] ? ' class="postule"' : ""}><td><label class="coche"><input type="checkbox" data-cand="${esc(o.id)}"${cand[o.id] ? " checked" : ""}>` +
+        `${cand[o.id] ? `<small>le ${dateFr(cand[o.id].date)}</small>` : ""}</label></td>` +
+        `<td>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)}</td><td>${puceFn(o)}</td>` +
         `<td>${esc(o.entreprise || "non précisé")}${o.intermediaire ? " <small>(cabinet / intérim)</small>" : ""}</td><td>${esc(o.lieu || "")}</td>` +
         `<td>${esc(libContratOffre(o))}</td><td>${esc(salaireCourt(o) || "—")}</td><td class="sal">${netCourt(o)}</td><td>${dateFr(o.date)}</td>` +
         `<td><button class="bouton petit" data-fiche="${esc(o.id)}">Plus d'infos</button></td></tr>`).join("");
   };
   zoneF.addEventListener("change", dessinerListe);
+  document.getElementById("f-cand").addEventListener("change", dessinerListe);
   dessinerListe();
   const parId = Object.fromEntries(tri.map(o => [String(o.id), o]));
+  // Cocher / décocher : on garde de quoi retrouver l'offre même quand elle aura quitté France Travail
+  document.getElementById("liste-pharma").addEventListener("change", e => {
+    const c = e.target.closest("[data-cand]"); if (!c) return;
+    const o = parId[c.dataset.cand];
+    if (c.checked) cand[o.id] = { date: auj(), intitule: o.intitule, entreprise: o.entreprise || "", lieu: o.lieu || "", contrat: libContratOffre(o), url: o.url || "" };
+    else delete cand[o.id];
+    garderCand(cand); dessinerListe();
+  });
+  // Export : un fichier CSV (point-virgule, pour Excel en français) à coller dans mon tableau de suivi
+  document.getElementById("export-cand").onclick = () => {
+    const lignes = Object.entries(cand).sort((a, b) => b[1].date.localeCompare(a[1].date));
+    if (!lignes.length) { alert("Coche d'abord « J'ai postulé » sur une offre."); return; }
+    const cel = v => `"${String(v || "").replace(/"/g, '""')}"`;
+    const csv = "﻿" + ["Envoyée le;Entreprise;Poste;Lieu;Contrat;Annonce;ID"].concat(
+      lignes.map(([id, c]) => [dateFr(c.date), c.entreprise, c.intitule, c.lieu, c.contrat, c.url, id].map(cel).join(";"))).join("\r\n");
+    const lien = Object.assign(document.createElement("a"), { href: URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" })), download: `mes_candidatures_${auj()}.csv` });
+    document.body.appendChild(lien); lien.click(); lien.remove();
+  };
   document.getElementById("liste-pharma").onclick = e => {
     const b = e.target.closest("[data-fiche]"); if (!b) return;
     const o = parId[b.dataset.fiche];

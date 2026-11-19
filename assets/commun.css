@@ -310,3 +310,4 @@ table.fonctions b[data-voir] { text-decoration:underline dotted; }
 .veille-tuiles small { display:block; font-weight:400; color:var(--gris); font-size:.75rem; }
 .veille-wiki { background:linear-gradient(120deg,#fff,#eaf6f5); border-left:4px solid var(--turquoise); border-radius:12px; padding:10px 14px; margin:6px 0; font-size:.9rem; }
 .veille-wiki p { margin:4px 0; }
+.veille-ia { margin-top:14px; background:linear-gradient(120deg,#fff,#f1edfa); border-left:4px solid #6b55a6; border-radius:12px; padding:12px 14px; }

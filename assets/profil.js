@@ -244,7 +244,7 @@
     if (!page || !page.extract || (page.pageprops && "disambiguation" in page.pageprops)) return null;
     return { titre: page.title, texte: page.extract, url: page.fullurl };
   }
-  async function veille(zone, nom, type) {
+  async function veille(zone, nom, type, offre) {
     const q = encodeURIComponent(nom), cle = type === "association" ? "association" : type === "cabinet" ? "cabinet" : "entreprise";
     zone.innerHTML = `<h4>🔎 Veille : ${esc(nom)}</h4><p class="note">Recherche en cours dans l'annuaire officiel et sur Wikipédia…</p>`;
     // Ses autres offres en ce moment, dans mes données France Travail
@@ -275,7 +275,37 @@
       ${wiki ? `<div class="veille-wiki"><b>📖 ${esc(wiki.titre)}</b><p>${esc(wiki.texte)}</p><a href="${esc(wiki.url)}" target="_blank" rel="noopener">Lire la suite sur Wikipédia →</a></div>` : ""}
       ${fiches ? `<p class="note" style="margin:10px 0 6px">🏛️ L'annuaire officiel des entreprises (homonymes possibles : vérifie que c'est la bonne)</p>${fiches}` : `<p class="note">Rien trouvé dans l'annuaire officiel sous ce nom.</p>`}
       ${autres.length > 1 ? `<p class="note" style="margin:10px 0 4px">📋 Ses ${autres.length} offres en ce moment sur France Travail :</p><ul class="oral">${autres.slice(0, 6).map(o => `<li>${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule)}</a>` : esc(o.intitule)} <span class="note">· ${esc(o.lieu || "")}</span></li>`).join("")}</ul>` : ""}
-      <h4>À préparer avant l'entretien</h4><ul class="oral">${AXES[cle].map(x => `<li>${x}</li>`).join("")}</ul>`;
+      <h4>À préparer avant l'entretien</h4><ul class="oral">${AXES[cle].map(x => `<li>${x}</li>`).join("")}</ul>
+      <div class="veille-ia"><b>🤖 Aller plus loin avec une IA</b>
+        <p class="note" style="margin:4px 0 8px">Le bouton copie une demande toute prête, avec l'offre, ce que l'annuaire a trouvé et mon profil. Je la colle dans Claude ou ChatGPT pour obtenir une fiche de préparation complète, puis je peux continuer à lui poser mes questions.</p>
+        <button class="bouton" data-action="copier-ia">Copier pour Claude / ChatGPT</button></div>`;
+    // La demande à coller dans une IA : rien n'est envoyé d'ici, c'est moi qui la colle
+    const r0 = res[0];
+    const faits = r0 ? [`nom officiel : ${r0.nom_complet}`, r0.siege && r0.siege.libelle_commune ? `siège : ${r0.siege.libelle_commune}` : "",
+      r0.date_creation ? `créée en ${r0.date_creation.slice(0, 4)}` : "", EFFECTIF[r0.tranche_effectif_salarie] ? `${EFFECTIF[r0.tranche_effectif_salarie]} salariés` : "",
+      SECTION[r0.section_activite_principale] ? `secteur : ${SECTION[r0.section_activite_principale]}` : ""].filter(Boolean).join(" ; ") : "";
+    const poste = offre ? `${offre.intitule}${offre.lieu ? ` (${offre.lieu})` : ""}${offre.contratLib ? `, ${offre.contratLib}` : ""}` : "";
+    const demandeIA = cle === "association"
+      ? `Je veux m'engager comme bénévole auprès de l'association « ${nom} »${poste ? ` pour la mission « ${poste} »` : ""}.\n` +
+        `Fais-moi une fiche courte : sa mission et les publics aidés, ses actions récentes, son organisation, et ce que je peux lui apporter avec mon profil. Cite tes sources et dis-moi quand tu n'es pas sûr.\n\n` +
+        `Mon profil : étudiante en M2 Marketing opérationnel et digital (IAE Clermont Auvergne), formation en biologie, alternante cheffe de produit chez Théa (ophtalmologie).`
+      : `Je prépare une candidature${poste ? ` pour le poste « ${poste} »` : ""} chez « ${nom} »${cle === "cabinet" ? " (un cabinet de recrutement ou une agence d'intérim)" : ""}.\n` +
+        (faits ? `D'après l'annuaire officiel des entreprises : ${faits}.\n` : "") +
+        (wiki ? `D'après Wikipédia : ${wiki.texte}\n` : "") +
+        `\nFais-moi une fiche de préparation d'entretien :\n` +
+        `1. Ce que fait l'entreprise : activité, produits ou marques phares, aires thérapeutiques.\n` +
+        `2. Sa taille et son groupe.\n3. Son actualité des 12 derniers mois (lancements, rachats, résultats), avec les sources.\n` +
+        `4. Son marché et ses concurrents.\n5. Sa culture et ses engagements.\n` +
+        `6. Cinq questions qu'on pourrait me poser et comment y répondre avec mon profil.\n7. Trois questions intelligentes à poser au recruteur.\n` +
+        (cle === "cabinet" ? `Rappelle-moi aussi comment savoir pour quel client le cabinet recrute.\n` : "") +
+        `Dis-moi clairement quand une information n'est pas sûre.\n\n` +
+        `Mon profil : formation en biologie puis M2 Marketing opérationnel et digital (IAE Clermont Auvergne), alternante cheffe de produit chez Théa : lancement d'un médicament du glaucome dans 4 pays avec 35 filiales, veille concurrentielle, argumentaires, tableau de bord des ventes. Disponible en septembre 2027.`;
+    zone.querySelector('[data-action="copier-ia"]').onclick = async e => {
+      try { await navigator.clipboard.writeText(demandeIA); }
+      catch { const t = Object.assign(document.createElement("textarea"), {value: demandeIA}); document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); }
+      e.target.textContent = "Copié ✓ : collez dans Claude ou ChatGPT";
+      setTimeout(() => { e.target.textContent = "Copier pour Claude / ChatGPT"; }, 3000);
+    };
   }
   // Une fenêtre avec la seule veille (page bénévolat)
   let boiteV;
@@ -348,7 +378,7 @@
     const zone = boite.querySelector(".lettre"), ta = zone.querySelector("textarea");
     const bv = boite.querySelector('[data-action="veille"]');
     if (bv) bv.onclick = () => { const z = boite.querySelector(".veille"); z.hidden = false; bv.disabled = true;
-      veille(z, o.entreprise, o.intermediaire ? "cabinet" : "entreprise").then(() => z.scrollIntoView({behavior: "smooth", block: "nearest"})); };
+      veille(z, o.entreprise, o.intermediaire ? "cabinet" : "entreprise", o).then(() => z.scrollIntoView({behavior: "smooth", block: "nearest"})); };
     // La lettre part dans la langue de l'annonce ; un bouton permet de basculer
     let langue = enAnglais(o) ? "en" : "fr";
     const ecrire = () => { ta.value = langue === "en" ? lettreEN(o) : lettre(o);

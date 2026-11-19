@@ -10,28 +10,28 @@
   },
   {
    "recherche": "pharma",
-   "annoncees": 14,
-   "lues": 14,
-   "sante": 13
-  },
-  {
-   "recherche": "santé",
-   "annoncees": 31,
-   "lues": 31,
+   "annoncees": 13,
+   "lues": 13,
    "sante": 12
   },
   {
+   "recherche": "santé",
+   "annoncees": 34,
+   "lues": 34,
+   "sante": 11
+  },
+  {
    "recherche": "chef de produit",
-   "annoncees": 33,
-   "lues": 33,
+   "annoncees": 35,
+   "lues": 35,
    "sante": 2
   }
  ],
  "incompletes": [],
- "nb_offres": 146,
- "nb_sante": 33,
+ "nb_offres": 151,
+ "nb_sante": 32,
  "nb_sante_marketing": 15,
- "nb_fonctions": 69,
+ "nb_fonctions": 70,
  "offres": [
   {
    "id": "247818",
@@ -1076,6 +1076,27 @@
    "marketing": true
   },
   {
+   "id": "246531",
+   "entreprise": "MOBILITY WORK",
+   "intitule": "Business Development Representative (BDR) – Espagne (H/F)",
+   "lieu": "ESPAGNE - MADRID",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/246531",
+   "extrait": "Business Development Representative (BDR) – Espagne Localisation Poste basé en Espagne à Madrid, avec des déplacements ponctuels sur les sites industriels de nos clients et prospects. Contexte Mobility Work, la plateforme SaaS de GMAO nouvelle génération, accélère son développement en Espagne, où no",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "chef de produit"
+   ],
+   "publiee": "2026-11-19",
+   "expire": "2026-12-19",
+   "debut": "2027-01-01",
+   "marketing": true
+  },
+  {
    "id": "247496",
    "entreprise": "NOVARC",
    "intitule": "Chargé(e) de développement commercial (H/F)",
@@ -1714,23 +1735,6 @@
    "marketing": false
   },
   {
-   "id": "247008",
-   "entreprise": "UCB PHARMA",
-   "intitule": "MSAT Lab Associate Scientist (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247008",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "fonctions": [],
-   "recherches": [
-    "pharma",
-    "santé"
-   ],
-   "marketing": false
-  },
-  {
    "id": "247005",
    "entreprise": "UCB PHARMA",
    "intitule": "Associate Scientist (H/F)",
@@ -2102,6 +2106,54 @@
    "marketing": false
   },
   {
+   "id": "248508",
+   "entreprise": "CEGEDIM.CLOUD",
+   "intitule": "ADMINISTRATEUR réseaux (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248508",
+   "extrait": "Fondée en 1969, Cegedim est une entreprise innovante de technologies et de services spécialisée dans la gestion des flux numériques de l’écosystème santé et BtoB, ainsi que dans la conception de logiciels métier destinés aux professionnels de santé et de l’assurance. Cegedim compte plus de...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248507",
+   "entreprise": "CEGEDIM.CLOUD",
+   "intitule": "ADMINISTRATEUR IT - Windows (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248507",
+   "extrait": "Fondée en 1969, Cegedim est une entreprise innovante de technologies et de services spécialisée dans la gestion des flux numériques de l’écosystème santé et BtoB, ainsi que dans la conception de logiciels métier destinés aux professionnels de santé et de l’assurance. Cegedim compte plus de...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248506",
+   "entreprise": "CEGEDIM.CLOUD",
+   "intitule": "ADMINISTRATEUR IT - Linux (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248506",
+   "extrait": "Fondée en 1969, Cegedim est une entreprise innovante de technologies et de services spécialisée dans la gestion des flux numériques de l’écosystème santé et BtoB, ainsi que dans la conception de logiciels métier destinés aux professionnels de santé et de l’assurance. Cegedim compte plus de...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
    "id": "247247",
    "entreprise": "COLLABORATION BETTERS THE WORLD",
    "intitule": "ESG Officer (H/F)",
@@ -2354,6 +2406,22 @@
    "fonctions": [],
    "recherches": [
     "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248504",
+   "entreprise": "INFOTEL CONSEIL",
+   "intitule": "Développeur Fullstack (H/F)",
+   "lieu": "ALLEMAGNE - DUSSELDORF",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248504",
+   "extrait": "Notre entreprise Infotel Conseil accompagne les directions Informatiques et Métiers des grandes entreprises depuis plus de 40 ans (Airbus, BNP Paribas, Banque de France, BPCE, Air France, Arkéa, Stellantis, etc.). C’est aujourd’hui plus de 3 100 Infotéliens qui ont rejoint le groupe en France (Paris",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
    ],
    "marketing": false
   },
@@ -2709,6 +2777,22 @@
    "recherches": [
     "marketing",
     "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248499",
+   "entreprise": "TELCO OI",
+   "intitule": "CHEF(FE) DE PROJET (H/F)",
+   "lieu": "MADAGASCAR - ANTANANARIVO",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248499",
+   "extrait": "Présentation de WeLight Fondée en 2018 par le Groupe Axian, Sagemcom et Norfund, WeLight est une entreprise pionnière de l’électrification rurale en Afrique subsaharienne. Sa mission est de favoriser l’inclusion énergétique en développant des solutions d’accès à une électricité propre, fiable et abo",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
    ],
    "marketing": false
   },

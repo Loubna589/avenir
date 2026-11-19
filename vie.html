@@ -28,6 +28,10 @@
   </div>
   <div class="liste" id="liste-vie" style="margin-top:12px"></div>
 
+  <h2>Repérées par mes alertes LinkedIn <small id="li-vie-sous"></small></h2>
+  <div class="carte large"><div class="defile"><table class="liste" id="liste-li-vie"><tr><td>Chargement…</td></tr></table></div>
+    <p class="note" style="margin:8px 0 0">Les offres VIE reçues par mes alertes LinkedIn (e-mails recopiés chaque jour par un script Google) arrivent ici plutôt que dans « Mes offres ».</p></div>
+
   <h2>Le marché VIE bouge <small>— une ligne par jour de collecte</small></h2>
   <div class="carte large"><div class="zone"><canvas id="g-serie"></canvas></div>
     <p class="note" id="note-serie"></p></div>
@@ -83,6 +87,16 @@ function afficher() {
   const parId = Object.fromEntries(offres.map(o => [String(o.id), o]));
   document.getElementById("liste-vie").onclick = e => { const b = e.target.closest("[data-fiche]"); if (b) Profil.ouvrir(parId[b.dataset.fiche]); };
   afficher();
+
+  // Les VIE repérés par mes alertes LinkedIn (data/linkedin.json, champ vie)
+  fetch("data/linkedin.json?" + Date.now()).then(r => r.ok ? r.json() : { offres: [] }).then(d => {
+    const L = (d.offres || []).filter(o => o.vie);
+    document.getElementById("li-vie-sous").textContent = L.length ? `— ${L.length} offre${L.length > 1 ? "s" : ""}` : "";
+    document.getElementById("liste-li-vie").innerHTML = !L.length ? `<tr><td>Aucun VIE reçu par LinkedIn pour l'instant.</td></tr>` :
+      `<tr><th>Intitulé</th><th>Employeur</th><th>Lieu</th><th>Reçue le</th></tr>` + L.map(o =>
+        `<tr><td><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.intitule || "Voir l'annonce")}</a></td><td>${esc(o.entreprise || "")}</td>` +
+        `<td>${esc(o.lieu || "")}</td><td>${dCourt(o.recue_le)}</td></tr>`).join("");
+  }).catch(() => { document.getElementById("liste-li-vie").innerHTML = `<tr><td>Offres LinkedIn indisponibles pour le moment.</td></tr>`; });
 
   // Historique : une ligne par jour (data/vie/serie.csv)
   try {

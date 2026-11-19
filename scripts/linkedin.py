@@ -25,6 +25,9 @@ SORTIE = RACINE / "data" / "linkedin.json"
 CSV_URL = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vQXxCMoooe71eyw3d-MBdkJIFXOW5S4Jo5RcquMRqHJNQ8Qwq1XUp2HwYf-4xjoHkSE_7KAnhAEI5lf"
            "/pub?gid=1269937811&single=true&output=csv")
 GARDER_JOURS = 30   # une offre LinkedIn reste rarement ouverte plus d'un mois
+# Un VIE (volontariat international en entreprise) part dans l'onglet « Veille VIE », pas dans « Mes offres ».
+# « VIE » en majuscules seulement : « vie » en minuscules est un mot courant.
+RX_VIE = re.compile(r"\bV\.?I\.?E\b|\b(?i:volontariat international|international volunteer)")
 
 # Lignes du mail qui ne sont ni un poste, ni une entreprise, ni un lieu
 BRUIT = re.compile(r"recrute activement|actively recruiting|candidature simplifi|easy apply|promu|promoted|relations?\b|applicants?|candidats?",
@@ -59,6 +62,7 @@ def nettoyer(l):
         "recue_le": l["recue_le"].strip(),
         "url": l["lien"].strip(),
         "alerte": alerte,
+        "vie": bool(RX_VIE.search(poste) or RX_VIE.search(alerte)),
         # Sans intitulé lisible, on se fie au nom de l'alerte pour la fonction
         "fonctions": fonctions(poste or alerte),
     }

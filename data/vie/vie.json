@@ -1,11 +1,11 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 91,
-   "lues": 91,
+   "annoncees": 94,
+   "lues": 94,
    "sante": 14
   },
   {
@@ -16,22 +16,22 @@
   },
   {
    "recherche": "santé",
-   "annoncees": 34,
-   "lues": 34,
-   "sante": 11
+   "annoncees": 32,
+   "lues": 32,
+   "sante": 10
   },
   {
    "recherche": "chef de produit",
-   "annoncees": 35,
-   "lues": 35,
+   "annoncees": 34,
+   "lues": 34,
    "sante": 2
   }
  ],
  "incompletes": [],
- "nb_offres": 151,
- "nb_sante": 32,
+ "nb_offres": 152,
+ "nb_sante": 31,
  "nb_sante_marketing": 15,
- "nb_fonctions": 70,
+ "nb_fonctions": 72,
  "offres": [
   {
    "id": "247818",
@@ -419,6 +419,48 @@
    "marketing": true
   },
   {
+   "id": "248523",
+   "entreprise": "BEAUTE PRESTIGE INTERNATIONAL",
+   "intitule": "Operational product Manager Clé de Peau Beauté (H/F)",
+   "lieu": "PAYS-BAS - AMSTERDAM",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248523",
+   "extrait": "Be the local Clé de Peau Beauté ambassador and become the key contact for the brand Implement the global Clé de Peau Beauté vision/ strategy in the Benelux market and align all related product launches to business objectives Develop launch strategy plan together with the...",
+   "sante": false,
+   "fonctions": [
+    "marketing"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-19",
+   "expire": "2026-12-19",
+   "debut": "2027-04-01",
+   "marketing": true
+  },
+  {
+   "id": "248556",
+   "entreprise": "BFR SYSTEMS",
+   "intitule": "Commercial Irlande (H/F)",
+   "lieu": "IRLANDE - NAAS",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248556",
+   "extrait": "Votre mission consistera notamment à : - Accompagner la force commerciale export et les filières dans le développement des ventes dans les iles Britanniques. Cet accompagnement sera très varié : * participation aux actions de prospection des clients finaux, des différents prescripteurs (bureaux d’en",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-20",
+   "expire": "2026-12-20",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
    "id": "247012",
    "entreprise": "BIG BANG ERP FRANCE",
    "intitule": "EXPERT-CONSEIL, SOLUTIONS PGI ET CRM (H/F)",
@@ -437,6 +479,27 @@
    "publiee": "2026-11-10",
    "expire": "2026-12-10",
    "debut": "2027-03-01",
+   "marketing": true
+  },
+  {
+   "id": "248531",
+   "entreprise": "BNP PARIBAS",
+   "intitule": "V.I.E - Equity Sales H/F - Frankfurt (H/F)",
+   "lieu": "ALLEMAGNE - FRANCFORT",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248531",
+   "extrait": "Au quotidien, ça donne quoi ? BNP Paribas Corporate & Institutional Banking (CIB) sert une vaste clientèle, allant des grandes multinationales et des entreprises de taille moyenne aux investisseurs institutionnels et aux prestataires de services financiers. L'activité est l'un des principaux fournis",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-20",
+   "expire": "2026-11-27",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1011,29 +1074,6 @@
    "marketing": true
   },
   {
-   "id": "247573",
-   "entreprise": "LAITA",
-   "intitule": "Attaché Commercial et Marketing (H/F)",
-   "lieu": "EMIRATS ARABES UNIS - DUBAI",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247573",
-   "extrait": "Au sein de notre bureau basé à Dubaï pour la zone Emirats Arabes-Unis, Arabie Saoudite, Qatar et Koweit, rattaché à la Direction des ventes, vous êtes chargé des missions suivantes : Vous participez à l’élaboration des plans et budget marketing, et piloterez la mise en...",
-   "sante": false,
-   "fonctions": [
-    "marketing",
-    "commercial"
-   ],
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ],
-   "publiee": "2026-10-28",
-   "expire": "2026-11-27",
-   "debut": "2028-03-01",
-   "marketing": true
-  },
-  {
    "id": "248000",
    "entreprise": "LES COMPTOIR DES FARINES",
    "intitule": "Chargé(e) de développement commercial export (H/F)",
@@ -1524,22 +1564,6 @@
    "marketing": true
   },
   {
-   "id": "243256",
-   "entreprise": "CEVA SANTE ANIMALE",
-   "intitule": "Project Manager, Engineering (H/F)",
-   "lieu": "ETATS-UNIS - VERONA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/243256",
-   "extrait": "The Project Manager, Engineering is responsible for leading capital and operational projects including facility construction and renovation, equipment installation, and manufacturing process optimization. This role is accountable for managing scope, schedule, budget, and risk while ensuring projects",
-   "sante": true,
-   "fonctions": [],
-   "recherches": [
-    "santé"
-   ],
-   "marketing": false
-  },
-  {
    "id": "245853",
    "entreprise": "EFE INTERNATIONAL",
    "intitule": "Ingénieur logiciel IA, Member of Technical Staff (H/F)",
@@ -1991,6 +2015,38 @@
    "marketing": false
   },
   {
+   "id": "248555",
+   "entreprise": "B2C ENGINEERING",
+   "intitule": "Business Developer (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248555",
+   "extrait": "Qui sommes-nous ? B2C Group accompagne les entreprises industrielles dans leurs projets d’automation, d’électricité et de digitalisation. Présent en Belgique, en France, au Luxembourg et en Suisse, le groupe développe ses activités autour de deux métiers complémentaires : B2C Engineering, dédié à la",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248527",
+   "entreprise": "BEAUTE PRESTIGE INTERNATIONAL",
+   "intitule": "Demand Planning Specialist (H/F)",
+   "lieu": "ITALIE - MILAN",
+   "type": "VIE",
+   "duree": "13 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248527",
+   "extrait": "1. Demand Forecasting & Business Intelligence • Supervise, consolidate, and validate local forecasts ensuring accuracy, consistency, and timely delivery. • Integrate historical data, statistical modelling, market trends, and commercial plans into the forecasting process. • Manage the impact of new p",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "247655",
    "entreprise": "BEIERSDORF S.A.S",
    "intitule": "ACHETEUR H/F (H/F)",
@@ -2154,22 +2210,6 @@
    "marketing": false
   },
   {
-   "id": "247247",
-   "entreprise": "COLLABORATION BETTERS THE WORLD",
-   "intitule": "ESG Officer (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247247",
-   "extrait": "Bienvenue chez CBTW, notre global tech compagny, où nous exploitons le pouvoir de la collaboration pour créer et fournir des solutions technologiques et business innovantes. Chez CBTW, nous nous engageons à fournir des solutions technologiques à forte valeur ajoutée, avec des modes d’engagement agil",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
    "id": "247397",
    "entreprise": "COMMISSARIAT A L' ENERGIE ATOMIQUE ET AUX ENERGIES ALTERNATIVES",
    "intitule": "CHARGE DE MISSION NUCLEAIRE (H/F)",
@@ -2198,22 +2238,6 @@
    "fonctions": [],
    "recherches": [
     "marketing"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247245",
-   "entreprise": "COMPAGNIE DE SAINT-GOBAIN",
-   "intitule": "Ingénieur HSE (Hygiène, Sécurité, Environnement) (H/F)",
-   "lieu": "SUEDE - BALSTA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247245",
-   "extrait": "Vous souhaitez évoluer au cœur d'un environnement industriel et contribuer concrètement à l'amélioration des performances Environnement, Santé & Sécurité d'un site de production ? Rejoignez Gyproc Sweden, l'activité plaques de plâtre de Saint-Gobain en Suède, en tant qu'Ingénieur HSE VIE. Basé sur n",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "santé"
    ],
    "marketing": false
   },
@@ -2262,22 +2286,6 @@
    "fonctions": [],
    "recherches": [
     "santé"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "246325",
-   "entreprise": "ERAMET",
-   "intitule": "VIE Achats Indirects - F/H (H/F)",
-   "lieu": "ARGENTINE - SALTA",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246325",
-   "extrait": "Eramine Sudamérica SA est une filiale d’Eramet, groupe minier et métallurgique français d’envergure mondiale. Elle est située dans le Salar Centenario Ratones, à 3 800 mètres d’altitude, dans le département de Los Andes, au sein de la province de Salta, en Argentine. Les activités d’exploration...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
    ],
    "marketing": false
   },
@@ -2793,6 +2801,22 @@
    "fonctions": [],
    "recherches": [
     "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248260",
+   "entreprise": "TOTALENERGIES MARKETING SERVICES",
+   "intitule": "Chargé de projets RH & Développement Business H/F – Luxembourg (H/F)",
+   "lieu": "LUXEMBOURG - WICKRANGE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248260",
+   "extrait": "Contexte et environnement Vous souhaitez démarrer votre parcours international avec une mission qui vous permette de comprendre le fonctionnement d’une entreprise dans sa globalité, à l’interface entre People, Business et Performance ? Rejoignez TotalEnergies au Luxembourg pour un VIE particulièreme",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
    ],
    "marketing": false
   },

@@ -1,8 +1,217 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 9,
+ "lues": 27,
  "offres": [
+  {
+   "id": "li-4484700702",
+   "intitule": "",
+   "entreprise": "Fnac Darty",
+   "lieu": "Ivry-sur-Seine, Île-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4484700702",
+   "alerte": "Chef De Produit (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492421766",
+   "intitule": "Chef de projets Marketing de l'Offre Junior F/H",
+   "entreprise": "MAISON THIRIET",
+   "lieu": "Éloyes, Grand Est, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4492421766",
+   "alerte": "Chef De Produit (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "gestion de projet"
+   ]
+  },
+  {
+   "id": "li-4489757486",
+   "intitule": "Junior Product Owner M/F",
+   "entreprise": "Wezen",
+   "lieu": "Levallois-Perret, Île-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4489757486",
+   "alerte": "Chef De Produit (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4489568688",
+   "intitule": "",
+   "entreprise": "Institut F2I",
+   "lieu": "Paris, Île-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4489568688",
+   "alerte": "Chef De Produit (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4488531585",
+   "intitule": "un/une Chef de Produits - Trousses Chirurgicales Personnalisées France/Benelux (H/F)",
+   "entreprise": "Medline Europe",
+   "lieu": "Saint-Quentin-en-Yvelines, Île-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4488531585",
+   "alerte": "Chef De Produit Santé (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4473687213",
+   "intitule": "",
+   "entreprise": "Medline",
+   "lieu": "Saint-Allouestre, Bretagne, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4473687213",
+   "alerte": "Chef De Produit Santé (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492157592",
+   "intitule": "Vente-unique.com",
+   "entreprise": "Ville de Paris, Île-de-France, France",
+   "lieu": "1 ancien élève",
+   "pays": "1 ancien élève",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4492157592",
+   "alerte": "Chef De Produit (France)",
+   "vie": false,
+   "fonctions": [
+    "commercial"
+   ]
+  },
+  {
+   "id": "li-4491597920",
+   "intitule": "",
+   "entreprise": "TruTechnologies",
+   "lieu": "Durham, Caroline du Nord, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4491597920",
+   "alerte": "Product Manager Pharma (États-Unis)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4446950917",
+   "intitule": "",
+   "entreprise": "B. Braun Medical Inc. (US)",
+   "lieu": "Bethlehem, Pennsylvanie, États-Unis",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4446950917",
+   "alerte": "Product Manager Pharma (États-Unis)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4488378690",
+   "intitule": "Junior Product Owner - Maternity",
+   "entreprise": "System C",
+   "lieu": "Liverpool, Angleterre, Royaume-Uni",
+   "pays": "Royaume-Uni",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4488378690",
+   "alerte": "Associate Product Manager Healthcare (Royaume-Uni)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4488390305",
+   "intitule": "Junior Product Owner - Maternity",
+   "entreprise": "System C",
+   "lieu": "Royal Leamington Spa, Angleterre, Royaume-Uni",
+   "pays": "Royaume-Uni",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4488390305",
+   "alerte": "Associate Product Manager Healthcare (Royaume-Uni)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4490739245",
+   "intitule": "Junior Product Owner",
+   "entreprise": "Phlo",
+   "lieu": "Glasgow, Écosse, Royaume-Uni",
+   "pays": "Royaume-Uni",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4490739245",
+   "alerte": "Associate Product Manager Healthcare (Royaume-Uni)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4488377740",
+   "intitule": "Junior Product Owner - Maternity",
+   "entreprise": "System C",
+   "lieu": "Nottingham, Angleterre, Royaume-Uni",
+   "pays": "Royaume-Uni",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4488377740",
+   "alerte": "Associate Product Manager Healthcare (Royaume-Uni)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
   {
    "id": "li-4492093022",
    "intitule": "",
@@ -142,6 +351,22 @@
    "recue_le": "2026-11-19",
    "url": "https://www.linkedin.com/jobs/view/4419024293",
    "alerte": "Product Manager Pharma (Canada)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4434543029",
+   "intitule": "",
+   "entreprise": "AstraZeneca",
+   "lieu": "Shanghai, Shanghai, Chine",
+   "pays": "Chine",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-19",
+   "url": "https://www.linkedin.com/jobs/view/4434543029",
+   "alerte": "Product Manager Healthcare (Chine)",
    "vie": false,
    "fonctions": [
     "marketing"

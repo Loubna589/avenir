@@ -1,5 +1,5 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Advanced Medical Solutions (France) SAS": [
@@ -131,7 +131,6 @@
   ],
   "Gi Group France": [],
   "IDS MEDIA": [],
-  "LABORATOIRES DE BIOLOGIE VEGETALE YR": [],
   "LABORATOIRES MAYOLY SPINDLER": [
    {
     "titre": "PHARM NATURE tombe dans l'escarcelle de MAYOLY SPINDLER",
@@ -150,12 +149,6 @@
     "source": "le Moniteur des pharmacie",
     "date": "2021-09-30",
     "url": "https://www.lemoniteurdespharmacies.fr/business/laboratoires/mayoly-spindler"
-   },
-   {
-    "titre": "Stéphane Thiroloix nommé président de France MVO",
-    "source": "mind",
-    "date": "2018-04-09",
-    "url": "https://www.mind.eu.com/health/article/stephane-thiroloix-nomme-president-de-france-mvo/"
    },
    {
     "titre": "Démosthène donne de la visibilité à Mayoly Spindler dans les pharmacies",
@@ -185,16 +178,16 @@
     "url": "https://bellaciao.org/Manpower-France-une-entreprise-qui-surfe-sur-la-precarite"
    },
    {
+    "titre": "Manpower « France » Rugby",
+    "source": "ffr.fr",
+    "date": "2023-06-27",
+    "url": "https://www.ffr.fr/actualites/partenariat/manpower-france-rugby"
+   },
+   {
     "titre": "Manpower France lance sa « semaine de l’aéronautique »",
     "source": "aeromorning",
     "date": "2023-06-15",
     "url": "https://aeromorning.com/manpower-france-lance-sa-semaine-de-laeronautique/"
-   },
-   {
-    "titre": "Manpower France fait confiance à Kyndryl pour l'accompagner dans la transformation digitale de ses applications",
-    "source": "irblog.prnewswire.com",
-    "date": "2022-02-04",
-    "url": "https://www.prnewswire.com/fr/communiques-de-presse/manpower-france-fait-confiance-a-kyndryl-pour-l-accompagner-dans-la-transformation-digitale-de-ses-applications-855509860.html"
    }
   ],
   "MAYOLY": [
@@ -255,6 +248,12 @@
     "source": "Le Figaro",
     "date": "2026-08-18",
     "url": "https://www.lefigaro.fr/tag/michael-page-personne"
+   },
+   {
+    "titre": "Michael Page",
+    "source": "rhmatin",
+    "date": "2015-07-05",
+    "url": "https://www.rhmatin.com/annuaires/recrutement-talents/michael-page.html"
    }
   ],
   "Red Hot Talents": [],
@@ -264,38 +263,6 @@
     "source": "Cap Campus",
     "date": "2025-10-28",
     "url": "https://www.capcampus.com/emploi/societe/scientech-interim-s249465.htm"
-   }
-  ],
-  "THERADIAL": [
-   {
-    "titre": "De Pardieu conseille Théradial et UI Gestion",
-    "source": "Le Monde du Droit",
-    "date": "2026-09-27",
-    "url": "https://www.lemondedudroit.fr/deals/62865-depardieu-conseille-theradial-ui-gestion.html"
-   },
-   {
-    "titre": "Théradial fait renaître un antibiotique disparu",
-    "source": "europesays",
-    "date": "2026-08-21",
-    "url": "https://www.europesays.com/fr/1139956/"
-   },
-   {
-    "titre": "French Tech : Théradial relocalise la production de la josamycine - 22/07",
-    "source": "BFMTV",
-    "date": "2026-07-21",
-    "url": "https://www.bfmtv.com/economie/replay-emissions/good-morning-business/french-tech-theradial-relocalise-la-production-de-la-josamycine-22-07_EN-202607220179.html"
-   },
-   {
-    "titre": "Chimie-pharmacie. Théradial relance un antibiotique disparu du marché depuis 2023",
-    "source": "agence-api.ouest-france",
-    "date": "2026-07-14",
-    "url": "https://agence-api.ouest-france.fr/pays-de-la-loire/loire-atlantique/chimie-pharmacie-theradial-relance-un-antibiotique-disparu-du-marche-depuis-2023-8230bebe-eecd-4ad1-917b-e39d41fbfc3c"
-   },
-   {
-    "titre": "Près de 600000 Français s’en sont vu administrer avant la crise du Covid : la PME nantaise Théradial relocalise un antibiotique japonais, disparu depuis 2023",
-    "source": "L'Usine Nouvelle",
-    "date": "2026-07-13",
-    "url": "https://www.usinenouvelle.com/sante-pharma/pharma/medicaments/pres-de-600000-francais-sen-sont-vu-administrer-avant-la-crise-du-covid-la-pme-nantaise-theradial-relocalise-un-antibiotique-japonais-disparu-depuis-2023.JAI2YJ63DFGCTO66GHPB345IME.html"
    }
   ],
   "VERDOT": [

@@ -1,8 +1,41 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 27,
+ "lues": 45,
  "offres": [
+  {
+   "id": "li-4465694026",
+   "intitule": "Chef de projet Expérience Professionnels de Santé (H/F/X) - France (Paris)",
+   "entreprise": "Sunday Natural",
+   "lieu": "Paris, Île-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4465694026",
+   "alerte": "Chef De Projet Marketing Santé (France)",
+   "vie": false,
+   "fonctions": [
+    "gestion de projet"
+   ]
+  },
+  {
+   "id": "li-4489580112",
+   "intitule": "Assistant.e chef de projet Marketing",
+   "entreprise": "Antipodes Médical",
+   "lieu": "Paris, Île-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4489580112",
+   "alerte": "Chef De Projet Marketing Santé (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "gestion de projet"
+   ]
+  },
   {
    "id": "li-4484700702",
    "intitule": "",
@@ -98,6 +131,56 @@
    "vie": false,
    "fonctions": [
     "marketing"
+   ]
+  },
+  {
+   "id": "li-4491826699",
+   "intitule": "",
+   "entreprise": "Dalt - Digital alternative",
+   "lieu": "Lille, Hauts-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4491826699",
+   "alerte": "Marketing Digital Santé (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "digital"
+   ]
+  },
+  {
+   "id": "li-4492428447",
+   "intitule": "Associate Product Manager",
+   "entreprise": "Johnson & Johnson Innovative Medicine",
+   "lieu": "Maidenhead",
+   "pays": "Maidenhead",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4492428447",
+   "alerte": "Associate Product Manager chez Johnson & Johnson Innovative Medicine",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4491627773",
+   "intitule": "",
+   "entreprise": "Novartis",
+   "lieu": "Paris",
+   "pays": "Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4491627773",
+   "alerte": "CHEF DE PROJET OMNICANAL - STG chez Novartis",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "gestion de projet"
    ]
   },
   {
@@ -207,6 +290,151 @@
    "recue_le": "2026-11-20",
    "url": "https://www.linkedin.com/jobs/view/4488377740",
    "alerte": "Associate Product Manager Healthcare (Royaume-Uni)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4484375555",
+   "intitule": "",
+   "entreprise": "Caldic",
+   "lieu": "Cournon-d'Auvergne",
+   "pays": "Cournon-d'Auvergne",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4484375555",
+   "alerte": "Une offre d’emploi de Product Manager Assistant chez Caldicet 4 autres offres d’emploi pourraient vous intéresser",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492159598",
+   "intitule": "Vente-unique.com",
+   "entreprise": "Ville de Paris",
+   "lieu": "1 ancien élève",
+   "pays": "1 ancien élève",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4492159598",
+   "alerte": "Une offre d’emploi de Product Manager Assistant chez Caldicet 4 autres offres d’emploi pourraient vous intéresser",
+   "vie": false,
+   "fonctions": [
+    "commercial"
+   ]
+  },
+  {
+   "id": "li-4418329180",
+   "intitule": "Associate Product Manager",
+   "entreprise": "Globus Medical",
+   "lieu": "King of Prussia, PA",
+   "pays": "PA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4418329180",
+   "alerte": "Globus Medical recrute au poste de Associate Product Manager",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492259612",
+   "intitule": "Gen-X Commercial Global Product Manager(A148076)",
+   "entreprise": "南京金斯瑞生物科技有限公司",
+   "lieu": "Nankin",
+   "pays": "Nankin",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4492259612",
+   "alerte": "Offre d’emploi de 【校招】产品管培生 chez Tuodao (Singapore)",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "commercial"
+   ]
+  },
+  {
+   "id": "li-4438617487",
+   "intitule": "",
+   "entreprise": "Sogeti",
+   "lieu": "Aix-en-Provence",
+   "pays": "Aix-en-Provence",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4438617487",
+   "alerte": "Le poste de Chef.fe de produit junior (H/F) de Vente-unique.com pourrait vous convenir – 1 ancien élève",
+   "vie": false,
+   "fonctions": [
+    "commercial"
+   ]
+  },
+  {
+   "id": "li-4485512217",
+   "intitule": "Product Owner santé F/H",
+   "entreprise": "Docaposte",
+   "lieu": "Gironde",
+   "pays": "Gironde",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4485512217",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4443942420",
+   "intitule": "Product Owner Cloud Junior - H/F",
+   "entreprise": "SUEZ",
+   "lieu": "Puteaux",
+   "pays": "Puteaux",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4443942420",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4461312084",
+   "intitule": "Assistant chef de produit (H/F)",
+   "entreprise": "Medline Europe",
+   "lieu": "Montigny-le-Bretonneux",
+   "pays": "Montigny-le-Bretonneux",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4461312084",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4473147489",
+   "intitule": "Chef de Produit Dispositifs Médicaux : Champs opératoires et Housses d'équipement France/Benelux (H/F)",
+   "entreprise": "Medline Europe",
+   "lieu": "Saint-Quentin-en-Yvelines",
+   "pays": "Saint-Quentin-en-Yvelines",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4473147489",
+   "alerte": "Docaposte recrute au poste de À distance",
    "vie": false,
    "fonctions": [
     "marketing"

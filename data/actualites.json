@@ -1,5 +1,5 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Advanced Medical Solutions (France) SAS": [
@@ -26,6 +26,38 @@
     "source": "Boursorama",
     "date": "2026-04-18",
     "url": "https://www.boursorama.com/bourse/actualites/l-offre-de-600-millions-de-livres-de-ta-associates-pour-l-entreprise-britannique-advanced-medical-solutions-selon-sky-news-b7ea45b793077240625a4860197b1b00"
+   }
+  ],
+  "Ajinomoto": [
+   {
+    "titre": "Ajinomoto Co., Inc. révise ses prévisions d’acompte sur dividende pour l’exercice se terminant le 31 mars 2027, payable le 2 décembre 2026",
+    "source": "Zonebourse",
+    "date": "2026-11-09",
+    "url": "https://ch.zonebourse.com/actualite-bourse/ajinomoto-co-inc-revise-ses-previsions-da-acompte-sur-dividende-pour-la-exercice-se-terminant-l-ce785fd3d18cf724"
+   },
+   {
+    "titre": "Ajinomoto Co., Inc. publie ses résultats pour le semestre clos le 30 septembre 2026",
+    "source": "Zonebourse",
+    "date": "2026-11-08",
+    "url": "https://www.zonebourse.com/actualite-bourse/ajinomoto-co-inc-publie-ses-resultats-pour-le-semestre-clos-le-30-septembre-2026-ce785edad88af725"
+   },
+   {
+    "titre": "Ajinomoto expande linha de Gyoza com novo sabor de carne bovina",
+    "source": "gironews.com",
+    "date": "2026-10-19",
+    "url": "https://gironews.com/food-service/ajinomoto-expande-linha-de-gyoza-com-novo-sabor-de-carne-bovina/"
+   },
+   {
+    "titre": "Michelin ResiCare investit dans la chimie biosourcée",
+    "source": "Zonebourse",
+    "date": "2026-10-07",
+    "url": "https://ch.zonebourse.com/actualite-bourse/michelin-resicare-investit-dans-la-chimie-biosourcee-ce785ddeda8af125"
+   },
+   {
+    "titre": "Ajinomoto expande parceria com One Piece e traz novos personagens",
+    "source": "GKPB",
+    "date": "2026-01-19",
+    "url": "https://gkpb.com.br/186494/ajinomoto-one-piece-2/"
    }
   ],
   "Bureau des Talents": [
@@ -105,6 +137,12 @@
   ],
   "GROUPE LEPINE": [
    {
+    "titre": "Information n° R2607057 destinée aux pharmacies d'usage intérieur",
+    "source": "ansm.sante",
+    "date": "2026-03-11",
+    "url": "https://ansm.sante.fr/informations-de-securite/obturateur-centro-medullaire-a-ciment-orthopedie-obturateur-diaphysaire-airplug-t10-t12-groupe-lepine"
+   },
+   {
     "titre": "Information n° R2603233 destinée aux établissements de santé",
     "source": "ansm.sante",
     "date": "2026-02-04",
@@ -132,12 +170,6 @@
   "Gi Group France": [],
   "IDS MEDIA": [],
   "LABORATOIRES MAYOLY SPINDLER": [
-   {
-    "titre": "PHARM NATURE tombe dans l'escarcelle de MAYOLY SPINDLER",
-    "source": "Fusacq",
-    "date": "2022-09-27",
-    "url": "https://www.fusacq.com/buzz/pharm-nature-tombe-dans-l-escarcelle-de-mayoly-spindler-a231795_fr_"
-   },
    {
     "titre": "Les Laboratoires Mayoly Spindler S.A.S. ont finalisé l'acquisition de CHC Business auprès d'Ipsen S.A. (ENXTPA:IPN).",
     "source": "ch.zonebourse",
@@ -178,16 +210,16 @@
     "url": "https://bellaciao.org/Manpower-France-une-entreprise-qui-surfe-sur-la-precarite"
    },
    {
-    "titre": "Manpower « France » Rugby",
-    "source": "ffr.fr",
-    "date": "2023-06-27",
-    "url": "https://www.ffr.fr/actualites/partenariat/manpower-france-rugby"
-   },
-   {
     "titre": "Manpower France lance sa « semaine de l’aéronautique »",
     "source": "aeromorning",
     "date": "2023-06-15",
     "url": "https://aeromorning.com/manpower-france-lance-sa-semaine-de-laeronautique/"
+   },
+   {
+    "titre": "Manpower France fait confiance à Kyndryl pour l'accompagner dans la transformation digitale de ses applications",
+    "source": "irblog.prnewswire.com",
+    "date": "2022-02-04",
+    "url": "https://www.prnewswire.com/fr/communiques-de-presse/manpower-france-fait-confiance-a-kyndryl-pour-l-accompagner-dans-la-transformation-digitale-de-ses-applications-855509860.html"
    }
   ],
   "MAYOLY": [
@@ -222,7 +254,6 @@
     "url": "https://pharmaceutiques.com/actualites/entreprises/mayoly-mise-sur-la-france/"
    }
   ],
-  "MICHAEL PAGE ADVERTISING": [],
   "MMLS- M2LS- M2I LIFE SCIENCES": [],
   "Michael Page": [
    {
@@ -291,10 +322,10 @@
     "url": "https://www.newsauvergne.com/verdot-la-pepite-auvergnate-change-de-dimension-et-investit-10-millions-deuros/"
    },
    {
-    "titre": "Avec sa nouvelle usine, Verdot veut profiter de la dynamique des biopharmas aux États-Unis",
-    "source": "La Tribune",
+    "titre": "VERDOT Opens its New Centre of Excellence and Manufacturing Facility in Saint-Beauzire, France",
+    "source": "prweb.com",
     "date": "2026-09-15",
-    "url": "https://www.latribune.fr/article/regions/auvergne-rhone-alpes/23853120529449/avec-sa-nouvelle-usine-verdot-veut-profiter-de-la-dynamique-des-biopharmas-aux-etats-unis"
+    "url": "https://www.prweb.com/releases/verdot-opens-its-new-centre-of-excellence-and-manufacturing-facility-in-saint-beauzire-france-302877402.html"
    }
   ]
  }

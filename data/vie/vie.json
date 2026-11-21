@@ -1,11 +1,11 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 94,
-   "lues": 94,
+   "annoncees": 90,
+   "lues": 90,
    "sante": 14
   },
   {
@@ -28,7 +28,7 @@
   }
  ],
  "incompletes": [],
- "nb_offres": 152,
+ "nb_offres": 147,
  "nb_sante": 31,
  "nb_sante_marketing": 15,
  "nb_fonctions": 72,
@@ -545,27 +545,6 @@
    "marketing": true
   },
   {
-   "id": "247225",
-   "entreprise": "CAHOUET",
-   "intitule": "TECHNICO-COMMERCIAL DE ZONE EXPORT PENINSULE IBERIQUE (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247225",
-   "extrait": "Rattaché au Responsable Commercial, vous renforcerez une équipe expérimentée de commerciaux. Vous aurez entre autres à : - Contribuer au développement commercial de la zone en participant aux actions de prospection, de suivi clients et de soutien aux équipes commerciales, - Maintenir les clients exi",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-21",
-   "expire": "2026-11-20",
-   "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
    "id": "248154",
    "entreprise": "CAR DATA",
    "intitule": "CRM Consultant - Data analyst (H/F)",
@@ -1071,6 +1050,29 @@
    "publiee": "2026-11-18",
    "expire": "2026-12-18",
    "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
+   "id": "247573",
+   "entreprise": "LAITA",
+   "intitule": "Attaché Commercial et Marketing (H/F)",
+   "lieu": "EMIRATS ARABES UNIS - DUBAI",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247573",
+   "extrait": "Au sein de notre bureau basé à Dubaï pour la zone Emirats Arabes-Unis, Arabie Saoudite, Qatar et Koweit, rattaché à la Direction des ventes, vous êtes chargé des missions suivantes : Vous participez à l’élaboration des plans et budget marketing, et piloterez la mise en...",
+   "sante": false,
+   "fonctions": [
+    "marketing",
+    "commercial"
+   ],
+   "recherches": [
+    "marketing",
+    "chef de produit"
+   ],
+   "publiee": "2026-11-20",
+   "expire": "2026-12-20",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -1903,70 +1905,6 @@
    "marketing": false
   },
   {
-   "id": "247861",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "BELGIQUE - BRUXELLES",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247861",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247860",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "ITALIE - ROME",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247860",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247850",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "LUXEMBOURG - LUXEMBOURG",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247850",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247774",
-   "entreprise": "AMARIS FRANCE SAS",
-   "intitule": "Fleet Manager (H/F)",
-   "lieu": "PORTUGAL - LISBONNE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247774",
-   "extrait": "Qui sommes-nous ? Amaris Consulting, membre du Groupe Mantu, est une société indépendante de conseil et de technologies au service des entreprises. Avec plus de 1 000 clients dans le monde, nous déployons des solutions pour les plus grands projets depuis plus d’une décennie –...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
    "id": "247289",
    "entreprise": "ARGEVILLE S A",
    "intitule": "Aromaticien (H/F)",
@@ -2250,22 +2188,6 @@
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/232756",
    "extrait": "Présentation de la société : Coengi est une société de conseil en ingénierie en pleine expansion, spécialisée dans l’accompagnement de projets techniques ambitieux et innovants. Notre mission ? Apporter des solutions sur mesure à nos clients en mettant à leur disposition l’expertise et la créativité",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "chef de produit"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "230224",
-   "entreprise": "EFE INTERNATIONAL",
-   "intitule": "ADJOINT CHEF DE FERME H/F (H/F)",
-   "lieu": "ROUMANIE - BRAILA",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/230224",
-   "extrait": "Description de la mission proposée : Présent en Roumanie depuis une dizaine d’années, l’entreprise familiale ALSAGRO produit des céréales sur 4600 hectares répartis sur plusieurs fermes et a comme objectif d’atteindre les 10000 hectares d’ici quelques années. La Roumanie n’a de cesse de se modernise",
    "sante": false,
    "fonctions": [],
    "recherches": [

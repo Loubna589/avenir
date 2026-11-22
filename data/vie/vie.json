@@ -1,11 +1,11 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 90,
-   "lues": 90,
+   "annoncees": 88,
+   "lues": 88,
    "sante": 14
   },
   {
@@ -28,10 +28,10 @@
   }
  ],
  "incompletes": [],
- "nb_offres": 147,
+ "nb_offres": 145,
  "nb_sante": 31,
  "nb_sante_marketing": 15,
- "nb_fonctions": 72,
+ "nb_fonctions": 71,
  "offres": [
   {
    "id": "247818",
@@ -1459,27 +1459,6 @@
    "marketing": true
   },
   {
-   "id": "247383",
-   "entreprise": "TOTALENERGIES MARKETING SERVICES",
-   "intitule": "Assistant Chef de Projet Contrôle Interne (H/F) – République tchèque",
-   "lieu": "TCHEQUIE / REPUBLIQUE TCHEQUE - PRAGUE",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247383",
-   "extrait": "Rejoignez la branche Marketing & Services de TotalEnergies à Prague, en République tchèque, et contribuez au renforcement du contrôle interne au sein d’un hub régional couvrant la République tchèque, la Slovaquie et la Hongrie. Vous participez à la préparation d’un audit interne régional et contribu",
-   "sante": false,
-   "fonctions": [
-    "gestion de projet"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-22",
-   "expire": "2026-11-21",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "247297",
    "entreprise": "V02 GROUP",
    "intitule": "CONSULTANT FONCTIONNEL CRM SALESFORCE (H/F)",
@@ -2556,22 +2535,6 @@
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248365",
    "extrait": "\"We are OUIGO España, the new high speed train company in Spain, that have the objetive of approach the high speed trains to every people.\" We started our project in Spain in 2021. Actually we are opering in Madrid, Barcelona, Valencia, Zaragoza, Tarragona, Albacete and...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247372",
-   "entreprise": "SOCIETE GENERALE",
-   "intitule": "Product Engineering Officer (H/F)",
-   "lieu": "ITALIE - MILAN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247372",
-   "extrait": "The Product Engineering Office is responsible for the design, development and implementation of products, solutions and services supporting SGSS business development objectives. As part of the Commercial Department, the Office works in close collaboration with the Commercial and Marketing teams to s",
    "sante": false,
    "fonctions": [],
    "recherches": [

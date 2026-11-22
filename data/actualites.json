@@ -1,5 +1,5 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Advanced Medical Solutions (France) SAS": [
@@ -48,16 +48,16 @@
     "url": "https://gironews.com/food-service/ajinomoto-expande-linha-de-gyoza-com-novo-sabor-de-carne-bovina/"
    },
    {
-    "titre": "Michelin ResiCare investit dans la chimie biosourcée",
-    "source": "Zonebourse",
-    "date": "2026-10-07",
-    "url": "https://ch.zonebourse.com/actualite-bourse/michelin-resicare-investit-dans-la-chimie-biosourcee-ce785ddeda8af125"
-   },
-   {
     "titre": "Ajinomoto expande parceria com One Piece e traz novos personagens",
     "source": "GKPB",
     "date": "2026-01-19",
     "url": "https://gkpb.com.br/186494/ajinomoto-one-piece-2/"
+   },
+   {
+    "titre": "Na receita da Ajinomoto, plano é repetir “melhor ano da história” nos fertilizantes",
+    "source": "agfeed.com.br",
+    "date": "2025-11-12",
+    "url": "https://agfeed.com.br/negocios/na-receita-da-ajinomoto-plano-e-repetir-melhor-ano-da-historia-nos-fertilizantes/"
    }
   ],
   "Bureau des Talents": [
@@ -170,6 +170,12 @@
   "Gi Group France": [],
   "IDS MEDIA": [],
   "LABORATOIRES MAYOLY SPINDLER": [
+   {
+    "titre": "PHARM NATURE tombe dans l'escarcelle de MAYOLY SPINDLER",
+    "source": "Fusacq",
+    "date": "2022-09-27",
+    "url": "https://www.fusacq.com/buzz/pharm-nature-tombe-dans-l-escarcelle-de-mayoly-spindler-a231795_fr_"
+   },
    {
     "titre": "Les Laboratoires Mayoly Spindler S.A.S. ont finalisé l'acquisition de CHC Business auprès d'Ipsen S.A. (ENXTPA:IPN).",
     "source": "ch.zonebourse",

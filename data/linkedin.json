@@ -1,8 +1,24 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 45,
+ "lues": 64,
  "offres": [
+  {
+   "id": "li-4480635381",
+   "intitule": "",
+   "entreprise": "",
+   "lieu": "",
+   "pays": "",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4480635381",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
   {
    "id": "li-4465694026",
    "intitule": "Chef de projet Expérience Professionnels de Santé (H/F/X) - France (Paris)",
@@ -151,6 +167,135 @@
    ]
   },
   {
+   "id": "li-4488664701",
+   "intitule": "Product Manager Junior (H/F)",
+   "entreprise": "Hello Watt",
+   "lieu": "Paris",
+   "pays": "Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4488664701",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4480461474",
+   "intitule": "PRODUCT OWNER",
+   "entreprise": "Cartier",
+   "lieu": "Paris",
+   "pays": "Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4480461474",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4488431026",
+   "intitule": "Technical Product Manager - Junior",
+   "entreprise": "Bigblue",
+   "lieu": "Ville de Paris",
+   "pays": "Ville de Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4488431026",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4490585718",
+   "intitule": "Chef de Produit Maille Junior",
+   "entreprise": "Isabel Marant",
+   "lieu": "Ville de Paris",
+   "pays": "Ville de Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4490585718",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4474941984",
+   "intitule": "Junior Business Product Owner",
+   "entreprise": "Europ Assistance",
+   "lieu": "Saint-Denis",
+   "pays": "Saint-Denis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4474941984",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4470898373",
+   "intitule": "Product Owner / Chef de projet junior (H/F)",
+   "entreprise": "Infotel",
+   "lieu": "Toulouse",
+   "pays": "Toulouse",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4470898373",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "gestion de projet"
+   ]
+  },
+  {
+   "id": "li-4468571942",
+   "intitule": "Chef de produit junior / Achat",
+   "entreprise": "Prozon",
+   "lieu": "Marseille",
+   "pays": "Marseille",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4468571942",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492528026",
+   "intitule": "",
+   "entreprise": "B. Braun Medical Inc. (US)",
+   "lieu": "Bethlehem, PA",
+   "pays": "PA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4492528026",
+   "alerte": "Globus Medical recrute : Associate Product Manager",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
    "id": "li-4492428447",
    "intitule": "Associate Product Manager",
    "entreprise": "Johnson & Johnson Innovative Medicine",
@@ -181,6 +326,70 @@
    "fonctions": [
     "marketing",
     "gestion de projet"
+   ]
+  },
+  {
+   "id": "li-4492733490",
+   "intitule": "",
+   "entreprise": "Walgreens",
+   "lieu": "Deerfield, IL",
+   "pays": "IL",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4492733490",
+   "alerte": "Associate Product Manager chez Globus Medical",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492729654",
+   "intitule": "",
+   "entreprise": "Walgreens",
+   "lieu": "Deerfield, IL",
+   "pays": "IL",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4492729654",
+   "alerte": "Associate Product Manager chez Globus Medical",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492791062",
+   "intitule": "",
+   "entreprise": "Organon",
+   "lieu": "Shanghai",
+   "pays": "Shanghai",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4492791062",
+   "alerte": "Organon recrute au poste de Product Manager",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4341774333",
+   "intitule": "",
+   "entreprise": "Sogeti",
+   "lieu": "Nantes",
+   "pays": "Nantes",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4341774333",
+   "alerte": "Chef.fe de produit junior (H/F) chez Vente-unique.com",
+   "vie": false,
+   "fonctions": [
+    "commercial"
    ]
   },
   {

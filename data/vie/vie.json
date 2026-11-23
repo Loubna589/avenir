@@ -1,37 +1,37 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 88,
-   "lues": 88,
-   "sante": 14
+   "annoncees": 83,
+   "lues": 83,
+   "sante": 13
   },
   {
    "recherche": "pharma",
    "annoncees": 13,
    "lues": 13,
-   "sante": 12
+   "sante": 11
   },
   {
    "recherche": "santé",
-   "annoncees": 32,
-   "lues": 32,
+   "annoncees": 31,
+   "lues": 31,
    "sante": 10
   },
   {
    "recherche": "chef de produit",
-   "annoncees": 34,
-   "lues": 34,
+   "annoncees": 35,
+   "lues": 35,
    "sante": 2
   }
  ],
  "incompletes": [],
- "nb_offres": 145,
- "nb_sante": 31,
- "nb_sante_marketing": 15,
- "nb_fonctions": 71,
+ "nb_offres": 138,
+ "nb_sante": 29,
+ "nb_sante_marketing": 14,
+ "nb_fonctions": 65,
  "offres": [
   {
    "id": "247818",
@@ -271,27 +271,6 @@
    "marketing": true
   },
   {
-   "id": "248272",
-   "entreprise": "SANOFI WINTHROP INDUSTRIE",
-   "intitule": "Medical Program Management Advisor (H/F)",
-   "lieu": "ETATS-UNIS - CAMBRIDGE -MA-",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248272",
-   "extrait": "About the job As Medical Program Management Advisor VIE within our Operations/Governance team you will focus on the optimization of the medical program management organization and related activities within the Franchise for Sanofi under one medical. Join the engine of Sanofi’s mission — where deep..",
-   "sante": true,
-   "fonctions": [
-    "affaires médicales"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-13",
-   "expire": "2026-12-13",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "248354",
    "entreprise": "SERVIER INTERNATIONAL",
    "intitule": "Junior Omnichannel Project Manager (H/F)",
@@ -356,27 +335,6 @@
    "marketing": true
   },
   {
-   "id": "245738",
-   "entreprise": "ADDEV MATERIALS AEROSPACE SAS",
-   "intitule": "Marketing Manager (H/F)",
-   "lieu": "ALLEMAGNE - HAMBOURG",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245738",
-   "extrait": "Le/La Responsable Marketing Aerospace & Defense définit et déploie les actions marketing pour les activités de distribution, custom packaging et manufacturing de produits chimiques à destination du marché Aerospace & Defense. Il/Elle structure l’approche go to market, produits et services associés, ",
-   "sante": false,
-   "fonctions": [
-    "marketing"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-23",
-   "expire": "2026-11-22",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "242147",
    "entreprise": "ALDEBARAN GROUP",
    "intitule": "BUSINESS MANAGER PAYS-BAS (H/F)",
@@ -416,6 +374,28 @@
    "publiee": "2026-11-02",
    "expire": "2026-12-02",
    "debut": "2027-01-01",
+   "marketing": true
+  },
+  {
+   "id": "248577",
+   "entreprise": "AYMING",
+   "intitule": "Chargé.e de coordination commerciale & CRM (F/H) (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248577",
+   "extrait": "Au sein du pôle Data & BI, aux côtés du Sales Business Analyst, vous ferez le lien entre les équipes commerciales, Marketing et Consulting. Vous contribuerez à fiabiliser les données du CRM, à faciliter le suivi des prospects, clients et opportunités, ainsi qu’au reporting et...",
+   "sante": false,
+   "fonctions": [
+    "digital",
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-23",
+   "expire": "2026-12-23",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -779,27 +759,6 @@
    "marketing": true
   },
   {
-   "id": "247627",
-   "entreprise": "EUROPEAN SALES GROUP FRANCE",
-   "intitule": "CRM Consultant (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247627",
-   "extrait": "Consultant(e) CRM (V.I.E) Département : CRM & Data Operations Localisation : Barcelone (Espagne) Type de contrat : V.I.E – Volontariat International en Entreprise (12 à 24 mois) Date de début : 01/02/2027 Durée : 12 mois, renouvelable une fois (dans la limite de 24 mois)...",
-   "sante": false,
-   "fonctions": [
-    "digital"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-30",
-   "expire": "2026-11-29",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "247893",
    "entreprise": "EXTIA",
    "intitule": "Product Owner - Bucarest (H/F)",
@@ -1032,27 +991,6 @@
    "marketing": true
   },
   {
-   "id": "248447",
-   "entreprise": "LA FINANCIERE DE L'ECHIQUIER",
-   "intitule": "Sales & Admin Support (H/F)",
-   "lieu": "SUISSE - GENEVE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248447",
-   "extrait": "Mission Support the Swiss sales team in business development and day-to-day operations, with exposure to client servicing, marketing coordination, and commercial support. Responsibilities · Prepare client presentations, sales materials, and briefing notes for the Swiss market. · Support prospecting ",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-18",
-   "expire": "2026-12-18",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "247573",
    "entreprise": "LAITA",
    "intitule": "Attaché Commercial et Marketing (H/F)",
@@ -1202,27 +1140,6 @@
    "marketing": true
   },
   {
-   "id": "247431",
-   "entreprise": "NOVARC",
-   "intitule": "Chargé(e) de développement commercial (H/F)",
-   "lieu": "ROYAUME-UNI - CORSHAM",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247431",
-   "extrait": "Le Groupe engage l’accélération de ses activités commerciale de sa BU matériel Transmission et Distribution (T&D) / ferroviaire / industrie (sites AFELEC, Dervieux, Maltep en France, KLK en Espagne), avec un objectif de croissance de 100 à 250 M€ de chiffre d'affaires. Le développement à...",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-23",
-   "expire": "2026-11-22",
-   "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
    "id": "247594",
    "entreprise": "OMERIN SAS",
    "intitule": "CHEF DE PROJETS METHODES ET AMELIORATION CONTINUE (H/F)",
@@ -1330,27 +1247,6 @@
    "marketing": true
   },
   {
-   "id": "246807",
-   "entreprise": "SEB DEVELOPPEMENT",
-   "intitule": "Data Analyst - Marketing Analytics (H/F)",
-   "lieu": "ALLEMAGNE - FRANCFORT",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246807",
-   "extrait": "As a V.I.E Data Analyst for a 12-month assignment renewable for an additional 12 months, you will join the Data Analytics team within the Marketing organization and contribute to the development of advanced analytical solutions supporting business growth. Your responsibilities will include: Collecti",
-   "sante": false,
-   "fonctions": [
-    "marketing"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-09",
-   "expire": "2026-12-09",
-   "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
    "id": "248364",
    "entreprise": "SOC ATELIERS PINTON",
    "intitule": "Responsable Administratif et Commercial (H/F)",
@@ -1413,27 +1309,6 @@
    ],
    "publiee": "2026-10-26",
    "expire": "2026-11-25",
-   "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
-   "id": "245987",
-   "entreprise": "TOPY",
-   "intitule": "BUSINESS DEVELOPMENT & CUSTOMER SUCCESS EUROPE (H/F)",
-   "lieu": "ALLEMAGNE - BERLIN",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245987",
-   "extrait": "Rejoignez une marque française reconnue à l'international Depuis plus de 90 ans, TOPY conçoit, fabrique et commercialise des plaques, semelles et talons destinés à la réparation de chaussures ainsi qu'aux acteurs du luxe et de la chaussure haut de gamme. Reconnue pour la qualité de...",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-02",
-   "expire": "2026-12-02",
    "debut": "2027-01-01",
    "marketing": true
   },
@@ -1788,22 +1663,6 @@
    "marketing": false
   },
   {
-   "id": "247425",
-   "entreprise": "UCB PHARMA",
-   "intitule": "Scientist: Biochemistry and Biophysics (H/F)",
-   "lieu": "BELGIQUE - BRAINE L ALLEUD",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247425",
-   "extrait": "UCB cherchant à développer son pôle biopharmaceutique en Belgique a besoin de ressources humaines aux compétences spécifiques afin de gérer depuis ce pôle la production de ses produits actifs dans le traitement des maladies auto-immunes. UCB France cherche dès lors à renforcer les compétences locale",
-   "sante": true,
-   "fonctions": [],
-   "recherches": [
-    "pharma"
-   ],
-   "marketing": false
-  },
-  {
    "id": "247688",
    "entreprise": "9S58",
    "intitule": "AUDIT/ contrôle de gestion / Financements et modèles économiques (H/F)",
@@ -2029,23 +1888,6 @@
    "marketing": false
   },
   {
-   "id": "244989",
-   "entreprise": "CAR DATA",
-   "intitule": "IA Builder (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/244989",
-   "extrait": "Offre VIE – AI & Automation Developer (H/F) Début : Octobre 2026 Lieu : Barcelone Contrat : VIE (12 à 24 mois) À propos de Dataventure Group Dataventure Group aide les annonceurs à exploiter leur potentiel de croissance digitale grâce à une expertise reconnue et...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ],
-   "marketing": false
-  },
-  {
    "id": "247608",
    "entreprise": "CARREFOUR MANAGEMENT",
    "intitule": "Chef.fe de Projet Transformation & Développement de l'Écosystème Promotionnel (H/F)",
@@ -2119,22 +1961,6 @@
    "duree": "24 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248506",
    "extrait": "Fondée en 1969, Cegedim est une entreprise innovante de technologies et de services spécialisée dans la gestion des flux numériques de l’écosystème santé et BtoB, ainsi que dans la conception de logiciels métier destinés aux professionnels de santé et de l’assurance. Cegedim compte plus de...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "santé"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "247397",
-   "entreprise": "COMMISSARIAT A L' ENERGIE ATOMIQUE ET AUX ENERGIES ALTERNATIVES",
-   "intitule": "CHARGE DE MISSION NUCLEAIRE (H/F)",
-   "lieu": "INDE - NEW DELHI",
-   "type": "VIA",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247397",
-   "extrait": "Le Service nucléaire met en œuvre ses moyens afin de renforcer la coopération franco indienne et défendre les intérêts de la France dans le domaine du nucléaire civil (et des nouvelles technologies pour l’énergie). Il conseille l’Ambassadeur sur ces sujets, assure un rôle de soutien...",
    "sante": false,
    "fonctions": [],
    "recherches": [
@@ -2351,6 +2177,22 @@
    "marketing": false
   },
   {
+   "id": "248578",
+   "entreprise": "MECACHROME FRANCE",
+   "intitule": "INGENIEUR PERFORMANCE QUALITE - H/F (H/F)",
+   "lieu": "TUNISIE - FOUCHANA",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248578",
+   "extrait": "Acteur incontournable des pièces élémentaires et sous-ensembles de structure à forte valeur ajoutée, le Groupe Mecachrome accompagne depuis 80 ans les équipementiers et industriels dans les domaines de l’aéronautique, de l’automobile, du sport automobile, de la défense et de l’énergie. S'appuyant su",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
    "id": "248147",
    "entreprise": "MECACHROME FRANCE",
    "intitule": "Controleur de gestion industriel (H/F)",
@@ -2359,6 +2201,22 @@
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248147",
    "extrait": "Acteur incontournable des pièces élémentaires et sous-ensembles de structure à forte valeur ajoutée, le Groupe Mecachrome accompagne depuis 80 ans les équipementiers et industriels dans les domaines de l’aéronautique, de l’automobile, du sport automobile, de la défense et de l’énergie. S'appuyant su",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248639",
+   "entreprise": "MY PIE",
+   "intitule": "CHEF DE SECTEUR BELGIQUE (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248639",
+   "extrait": "Chez My Pie, nous avons une mission : réinventer la pause déjeuner avec des produits 100 % naturels, fabriqués dans notre atelier en Mayenne. En pleine croissance, nous continuons à nous développer en Belgique et avons besoin de talents motivés pour nous accompagner dans cette...",
    "sante": false,
    "fonctions": [],
    "recherches": [
@@ -2530,7 +2388,7 @@
    "id": "248365",
    "entreprise": "SNCF VOYAGES DEVELOPPEMENT",
    "intitule": "Direct Distribution Technician (H/F)",
-   "lieu": "ESPAGNE - MADRID",
+   "lieu": "ESPAGNE - BARCELONE",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248365",

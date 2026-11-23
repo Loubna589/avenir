@@ -1,5 +1,5 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Advanced Medical Solutions (France) SAS": [
@@ -8,12 +8,6 @@
     "source": "Zonebourse",
     "date": "2026-08-21",
     "url": "https://www.zonebourse.com/cours/action/ADVANCED-MEDICAL-SOLUTION-4002045/consensus/"
-   },
-   {
-    "titre": "Advanced Medical Solutions accepte une offre de rachat de 715 millions de livres sterling par Fuller",
-    "source": "Zonebourse",
-    "date": "2026-06-25",
-    "url": "https://www.zonebourse.com/actualite-bourse/advanced-medical-solutions-accepte-une-offre-de-rachat-de-715-millions-de-livres-sterling-par-fuller-ce7f5fd8da8ff32d"
    },
    {
     "titre": "Le britannique Advanced Medical Solutions s'envole après le rachat par H.B. Fuller",
@@ -26,9 +20,21 @@
     "source": "Boursorama",
     "date": "2026-04-18",
     "url": "https://www.boursorama.com/bourse/actualites/l-offre-de-600-millions-de-livres-de-ta-associates-pour-l-entreprise-britannique-advanced-medical-solutions-selon-sky-news-b7ea45b793077240625a4860197b1b00"
+   },
+   {
+    "titre": "Société Advanced Medical Solutions Group plc",
+    "source": "Zonebourse",
+    "date": "2010-12-31",
+    "url": "https://www.zonebourse.com/cours/action/ADVANCED-MEDICAL-SOLUTION-4002045/societe/"
    }
   ],
   "Ajinomoto": [
+   {
+    "titre": "2802 - Ajinomoto Co., Inc.",
+    "source": "Investing",
+    "date": "2026-11-19",
+    "url": "https://br.investing.com/equities/ajinomoto-co.,-inc."
+   },
    {
     "titre": "Ajinomoto Co., Inc. révise ses prévisions d’acompte sur dividende pour l’exercice se terminant le 31 mars 2027, payable le 2 décembre 2026",
     "source": "Zonebourse",
@@ -42,16 +48,10 @@
     "url": "https://www.zonebourse.com/actualite-bourse/ajinomoto-co-inc-publie-ses-resultats-pour-le-semestre-clos-le-30-septembre-2026-ce785edad88af725"
    },
    {
-    "titre": "Ajinomoto expande linha de Gyoza com novo sabor de carne bovina",
-    "source": "gironews.com",
-    "date": "2026-10-19",
-    "url": "https://gironews.com/food-service/ajinomoto-expande-linha-de-gyoza-com-novo-sabor-de-carne-bovina/"
-   },
-   {
-    "titre": "Ajinomoto expande parceria com One Piece e traz novos personagens",
-    "source": "GKPB",
-    "date": "2026-01-19",
-    "url": "https://gkpb.com.br/186494/ajinomoto-one-piece-2/"
+    "titre": "Michelin ResiCare investit dans la chimie biosourcée",
+    "source": "Zonebourse",
+    "date": "2026-10-07",
+    "url": "https://ch.zonebourse.com/actualite-bourse/michelin-resicare-investit-dans-la-chimie-biosourcee-ce785ddeda8af125"
    },
    {
     "titre": "Na receita da Ajinomoto, plano é repetir “melhor ano da história” nos fertilizantes",
@@ -137,12 +137,6 @@
   ],
   "GROUPE LEPINE": [
    {
-    "titre": "Information n° R2607057 destinée aux pharmacies d'usage intérieur",
-    "source": "ansm.sante",
-    "date": "2026-03-11",
-    "url": "https://ansm.sante.fr/informations-de-securite/obturateur-centro-medullaire-a-ciment-orthopedie-obturateur-diaphysaire-airplug-t10-t12-groupe-lepine"
-   },
-   {
     "titre": "Information n° R2603233 destinée aux établissements de santé",
     "source": "ansm.sante",
     "date": "2026-02-04",
@@ -168,6 +162,38 @@
    }
   ],
   "Gi Group France": [],
+  "HORIBA ABX SAS": [
+   {
+    "titre": "Information destinée aux laboratoires d'analyses de biologie médicale",
+    "source": "ansm.sante",
+    "date": "2024-04-08",
+    "url": "https://ansm.sante.fr/informations-de-securite/biochimie-reactif-abx-pentra-urea-cp-horiba-abx"
+   },
+   {
+    "titre": "Horiba ABX Pentra 60C+ User manual",
+    "source": "archive",
+    "date": "2020-05-19",
+    "url": "https://archive.org/details/manual_Horiba_ABX_Pentra_60C_User_manual"
+   },
+   {
+    "titre": "Hématologie - Automate Yumizen H2500 - Horiba ABX - Information de sécurité",
+    "source": "ansm.sante",
+    "date": "2018-12-16",
+    "url": "https://ansm.sante.fr/informations-de-securite/hematologie-automate-yumizen-h2500-horiba-abx"
+   },
+   {
+    "titre": "HORIBA ABX Introduces Laboratory Automation Systems",
+    "source": "BioSpace",
+    "date": "2008-10-30",
+    "url": "https://www.biospace.com/b-horiba-abx-b-introduces-laboratory-automation-systems"
+   },
+   {
+    "titre": "Horiba ABX mise sur les réactifs",
+    "source": "L'Usine Nouvelle",
+    "date": "2007-07-03",
+    "url": "https://www.usinenouvelle.com/article/horiba-abx-mise-sur-les-reactifs.N19270"
+   }
+  ],
   "IDS MEDIA": [],
   "LABORATOIRES MAYOLY SPINDLER": [
    {
@@ -187,6 +213,12 @@
     "source": "le Moniteur des pharmacie",
     "date": "2021-09-30",
     "url": "https://www.lemoniteurdespharmacies.fr/business/laboratoires/mayoly-spindler"
+   },
+   {
+    "titre": "Stéphane Thiroloix nommé président de France MVO",
+    "source": "mind",
+    "date": "2018-04-09",
+    "url": "https://www.mind.eu.com/health/article/stephane-thiroloix-nomme-president-de-france-mvo/"
    },
    {
     "titre": "Démosthène donne de la visibilité à Mayoly Spindler dans les pharmacies",
@@ -216,16 +248,16 @@
     "url": "https://bellaciao.org/Manpower-France-une-entreprise-qui-surfe-sur-la-precarite"
    },
    {
+    "titre": "Manpower « France » Rugby",
+    "source": "ffr.fr",
+    "date": "2023-06-27",
+    "url": "https://www.ffr.fr/actualites/partenariat/manpower-france-rugby"
+   },
+   {
     "titre": "Manpower France lance sa « semaine de l’aéronautique »",
     "source": "aeromorning",
     "date": "2023-06-15",
     "url": "https://aeromorning.com/manpower-france-lance-sa-semaine-de-laeronautique/"
-   },
-   {
-    "titre": "Manpower France fait confiance à Kyndryl pour l'accompagner dans la transformation digitale de ses applications",
-    "source": "irblog.prnewswire.com",
-    "date": "2022-02-04",
-    "url": "https://www.prnewswire.com/fr/communiques-de-presse/manpower-france-fait-confiance-a-kyndryl-pour-l-accompagner-dans-la-transformation-digitale-de-ses-applications-855509860.html"
    }
   ],
   "MAYOLY": [
@@ -281,16 +313,16 @@
     "url": "https://www.actumma.com/michael-venom-page-veut-se-racheter-apres-setre-fait-huer-a-lufc-paris/191249/"
    },
    {
+    "titre": "UFC Paris : Michael Page neutralise Nursulton Ruziboev et décroche une décision unanime étriquée",
+    "source": "ufc-fr",
+    "date": "2026-09-05",
+    "url": "https://www.ufc-fr.com/ufc-paris-michael-page-neutralise-nursulton-ruziboev-et-decroche-une-decision-unanime-etriquee-14454.html"
+   },
+   {
     "titre": "Michael Page",
     "source": "Le Figaro",
     "date": "2026-08-18",
     "url": "https://www.lefigaro.fr/tag/michael-page-personne"
-   },
-   {
-    "titre": "Michael Page",
-    "source": "rhmatin",
-    "date": "2015-07-05",
-    "url": "https://www.rhmatin.com/annuaires/recrutement-talents/michael-page.html"
    }
   ],
   "Red Hot Talents": [],
@@ -300,6 +332,38 @@
     "source": "Cap Campus",
     "date": "2025-10-28",
     "url": "https://www.capcampus.com/emploi/societe/scientech-interim-s249465.htm"
+   }
+  ],
+  "SOUNDUCT": [
+   {
+    "titre": "Le Pitch : Sounduct, une solution auditive innovante - 26/05",
+    "source": "BFMTV",
+    "date": "2026-05-25",
+    "url": "https://www.bfmtv.com/economie/replay-emissions/good-morning-business/le-pitch-sounduct-une-solution-auditive-innovante-26-05_EN-202605260092.html"
+   },
+   {
+    "titre": "Le Pitch : Sounduct, une solution auditive innovante - 26/05",
+    "source": "BFMTV",
+    "date": "2026-05-25",
+    "url": "https://www.bfmtv.com/economie/replay-emissions/le-pitch/video-le-pitch-sounduct-une-solution-auditive-innovante-26-05_VN-202605260096.html"
+   },
+   {
+    "titre": "Sounduct, à fond contre la surdité",
+    "source": "europesays",
+    "date": "2026-03-27",
+    "url": "https://www.europesays.com/fr/830270/"
+   },
+   {
+    "titre": "Sounduct décroche le prix Inpi-France 2030",
+    "source": "ouiemagazine",
+    "date": "2025-11-27",
+    "url": "https://www.ouiemagazine.net/2025/11/27/sounduct-prix-inpi-france-2030/"
+   },
+   {
+    "titre": "La medtech Sounduct lauréat des Trophées INPI 2025",
+    "source": "Le Journal des Entreprises",
+    "date": "2025-11-26",
+    "url": "https://www.lejournaldesentreprises.com/breve/la-medtech-sounduct-laureat-des-trophees-inpi-2025-2131679"
    }
   ],
   "VERDOT": [
@@ -322,16 +386,16 @@
     "url": "https://www.estrepublicain.fr/economie/2026/10/26/faute-de-repreneur-l-entreprise-verdot-a-besancon-disparaitra-apres-la-retraite-du-gerant"
    },
    {
-    "titre": "Verdot, la pépite auvergnate, change de dimension et investit 10 millions d’euros",
-    "source": "NewsAuvergne.com",
-    "date": "2026-10-18",
-    "url": "https://www.newsauvergne.com/verdot-la-pepite-auvergnate-change-de-dimension-et-investit-10-millions-deuros/"
+    "titre": "Avec sa nouvelle usine, Verdot veut profiter de la dynamique des biopharmas aux États-Unis",
+    "source": "La Tribune",
+    "date": "2026-09-15",
+    "url": "https://www.latribune.fr/article/regions/auvergne-rhone-alpes/23853120529449/avec-sa-nouvelle-usine-verdot-veut-profiter-de-la-dynamique-des-biopharmas-aux-etats-unis"
    },
    {
-    "titre": "VERDOT Opens its New Centre of Excellence and Manufacturing Facility in Saint-Beauzire, France",
-    "source": "prweb.com",
+    "titre": "Dans le Puy-de-Dôme, la société Verdot investit 10 millions d’euros pour tripler production de biomédicaments",
+    "source": "ici",
     "date": "2026-09-15",
-    "url": "https://www.prweb.com/releases/verdot-opens-its-new-centre-of-excellence-and-manufacturing-facility-in-saint-beauzire-france-302877402.html"
+    "url": "https://www.ici.fr/emissions/l-info-d-ici-ici-pays-d-auvergne/dans-le-puy-de-dome-la-societe-verdot-investit-10-millions-d-euros-pour-tripler-production-de-biomedicaments-9997710"
    }
   ]
  }

@@ -1,7 +1,7 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 64,
+ "lues": 82,
  "offres": [
   {
    "id": "li-4480635381",
@@ -290,6 +290,166 @@
    "recue_le": "2026-11-22",
    "url": "https://www.linkedin.com/jobs/view/4492528026",
    "alerte": "Globus Medical recrute : Associate Product Manager",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4468652978",
+   "intitule": "",
+   "entreprise": "Back Market",
+   "lieu": "Paris",
+   "pays": "Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4468652978",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4475978503",
+   "intitule": "",
+   "entreprise": "Lucca",
+   "lieu": "Nantes",
+   "pays": "Nantes",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4475978503",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492950713",
+   "intitule": "",
+   "entreprise": "SOLUTEC",
+   "lieu": "Bordeaux",
+   "pays": "Bordeaux",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4492950713",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4485335298",
+   "intitule": "",
+   "entreprise": "Murex",
+   "lieu": "Paris",
+   "pays": "Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4485335298",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493214597",
+   "intitule": "Associate Product Manager",
+   "entreprise": "Mainstay Medical",
+   "lieu": "San Diego, CA",
+   "pays": "CA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4493214597",
+   "alerte": "90 k $US–105 k $US par an : Associate Product Manager chez Mainstay Medical",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4467799593",
+   "intitule": "Associate Product Manager - Dermatology",
+   "entreprise": "FFF Enterprises",
+   "lieu": "Temecula, CA",
+   "pays": "CA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4467799593",
+   "alerte": "90 k $US–105 k $US par an : Associate Product Manager chez Mainstay Medical",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493223631",
+   "intitule": "",
+   "entreprise": "DaVita Kidney Care",
+   "lieu": "Denver, CO",
+   "pays": "CO",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4493223631",
+   "alerte": "90 k $US–105 k $US par an : Associate Product Manager chez Mainstay Medical",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493230554",
+   "intitule": "",
+   "entreprise": "DaVita Kidney Care",
+   "lieu": "Gilbert, AZ",
+   "pays": "AZ",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4493230554",
+   "alerte": "Associate Product Manager - Dermatology chez FFF Enterprises",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493200831",
+   "intitule": "",
+   "entreprise": "Genentech",
+   "lieu": "South San Francisco, CA",
+   "pays": "CA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4493200831",
+   "alerte": "Associate Product Manager - Dermatology chez FFF Enterprises",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4491969126",
+   "intitule": "Assistant chef de produit",
+   "entreprise": "FretBay",
+   "lieu": "Paris",
+   "pays": "Paris",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4491969126",
+   "alerte": "Assistant chef de produit chez FretBay",
    "vie": false,
    "fonctions": [
     "marketing"

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Advanced Medical Solutions (France) SAS": [
@@ -30,10 +30,22 @@
   ],
   "Ajinomoto": [
    {
+    "titre": "Ajinomoto Indonesia Perkuat Komitmen Lingkungan melalui Penggunaan Energi Bersih",
+    "source": "Suara Merdeka",
+    "date": "2026-11-20",
+    "url": "https://www.suaramerdeka.com/ekonomi/0417929684/ajinomoto-indonesia-perkuat-komitmen-lingkungan-melalui-penggunaan-energi-bersih"
+   },
+   {
     "titre": "2802 - Ajinomoto Co., Inc.",
     "source": "Investing",
-    "date": "2026-11-19",
+    "date": "2026-11-17",
     "url": "https://br.investing.com/equities/ajinomoto-co.,-inc."
+   },
+   {
+    "titre": "Ajinomoto Co., Inc. révise ses prévisions de résultats consolidés pour l’exercice clos le 31 mars 2027",
+    "source": "Zonebourse",
+    "date": "2026-11-09",
+    "url": "https://www.zonebourse.com/actualite-bourse/ajinomoto-co-inc-revise-ses-previsions-de-resultats-consolides-pour-la-exercice-clos-le-31-mars-ce785fd3de80f327"
    },
    {
     "titre": "Ajinomoto Co., Inc. révise ses prévisions d’acompte sur dividende pour l’exercice se terminant le 31 mars 2027, payable le 2 décembre 2026",
@@ -42,22 +54,10 @@
     "url": "https://ch.zonebourse.com/actualite-bourse/ajinomoto-co-inc-revise-ses-previsions-da-acompte-sur-dividende-pour-la-exercice-se-terminant-l-ce785fd3d18cf724"
    },
    {
-    "titre": "Ajinomoto Co., Inc. publie ses résultats pour le semestre clos le 30 septembre 2026",
-    "source": "Zonebourse",
-    "date": "2026-11-08",
-    "url": "https://www.zonebourse.com/actualite-bourse/ajinomoto-co-inc-publie-ses-resultats-pour-le-semestre-clos-le-30-septembre-2026-ce785edad88af725"
-   },
-   {
-    "titre": "Michelin ResiCare investit dans la chimie biosourcée",
-    "source": "Zonebourse",
-    "date": "2026-10-07",
-    "url": "https://ch.zonebourse.com/actualite-bourse/michelin-resicare-investit-dans-la-chimie-biosourcee-ce785ddeda8af125"
-   },
-   {
-    "titre": "Na receita da Ajinomoto, plano é repetir “melhor ano da história” nos fertilizantes",
-    "source": "agfeed.com.br",
-    "date": "2025-11-12",
-    "url": "https://agfeed.com.br/negocios/na-receita-da-ajinomoto-plano-e-repetir-melhor-ano-da-historia-nos-fertilizantes/"
+    "titre": "Ajinomoto expande linha de Gyoza com novo sabor de carne bovina",
+    "source": "gironews.com",
+    "date": "2026-10-19",
+    "url": "https://gironews.com/food-service/ajinomoto-expande-linha-de-gyoza-com-novo-sabor-de-carne-bovina/"
    }
   ],
   "Bureau des Talents": [
@@ -137,10 +137,16 @@
   ],
   "GROUPE LEPINE": [
    {
-    "titre": "Information n° R2603233 destinée aux établissements de santé",
+    "titre": "Rappel n° R2527307 destiné aux pharmacies d'usage intérieur",
     "source": "ansm.sante",
-    "date": "2026-02-04",
-    "url": "https://ansm.sante.fr/informations-de-securite/implant-main-orthopedie-tige-metacarpienne-maia-t8s-groupe-lepine"
+    "date": "2025-10-12",
+    "url": "https://ansm.sante.fr/informations-de-securite/materiel-ancillaire-genou-pins-de-fixation-filete-kneo-groupe-lepine-1"
+   },
+   {
+    "titre": "Information n° R2517812 destinée aux pharmacies d'usage intérieur",
+    "source": "ansm.sante",
+    "date": "2025-07-16",
+    "url": "https://ansm.sante.fr/informations-de-securite/materiel-ancillaire-genou-pins-de-fixation-filete-kneo-groupe-lepine"
    },
    {
     "titre": "Nominations Arnaud Teulet, Patrick Casadessus, Lorraine Razafi... : les mouvements du jour",
@@ -204,21 +210,15 @@
    },
    {
     "titre": "Les Laboratoires Mayoly Spindler S.A.S. ont finalisé l'acquisition de CHC Business auprès d'Ipsen S.A. (ENXTPA:IPN).",
-    "source": "ch.zonebourse",
+    "source": "Zonebourse",
     "date": "2022-07-27",
-    "url": "https://ch.zonebourse.com/cours/action/IPSEN-5137/actualite/Les-Laboratoires-Mayoly-Spindler-S-A-S-ont-finalise-l-acquisition-de-CHC-Business-aupres-d-Ipsen-41167208/"
+    "url": "https://www.zonebourse.com/cours/action/IPSEN-5137/actualite/Les-Laboratoires-Mayoly-Spindler-S-A-S-ont-finalise-l-acquisition-de-CHC-Business-aupres-d-Ipsen-41167208/"
    },
    {
     "titre": "Mayoly Spindler",
     "source": "le Moniteur des pharmacie",
     "date": "2021-09-30",
     "url": "https://www.lemoniteurdespharmacies.fr/business/laboratoires/mayoly-spindler"
-   },
-   {
-    "titre": "Stéphane Thiroloix nommé président de France MVO",
-    "source": "mind",
-    "date": "2018-04-09",
-    "url": "https://www.mind.eu.com/health/article/stephane-thiroloix-nomme-president-de-france-mvo/"
    },
    {
     "titre": "Démosthène donne de la visibilité à Mayoly Spindler dans les pharmacies",
@@ -248,16 +248,16 @@
     "url": "https://bellaciao.org/Manpower-France-une-entreprise-qui-surfe-sur-la-precarite"
    },
    {
-    "titre": "Manpower « France » Rugby",
-    "source": "ffr.fr",
-    "date": "2023-06-27",
-    "url": "https://www.ffr.fr/actualites/partenariat/manpower-france-rugby"
-   },
-   {
     "titre": "Manpower France lance sa « semaine de l’aéronautique »",
     "source": "aeromorning",
     "date": "2023-06-15",
     "url": "https://aeromorning.com/manpower-france-lance-sa-semaine-de-laeronautique/"
+   },
+   {
+    "titre": "Manpower France fait confiance à Kyndryl pour l'accompagner dans la transformation digitale de ses applications",
+    "source": "irblog.prnewswire.com",
+    "date": "2022-02-04",
+    "url": "https://www.prnewswire.com/fr/communiques-de-presse/manpower-france-fait-confiance-a-kyndryl-pour-l-accompagner-dans-la-transformation-digitale-de-ses-applications-855509860.html"
    }
   ],
   "MAYOLY": [
@@ -366,36 +366,12 @@
     "url": "https://www.lejournaldesentreprises.com/breve/la-medtech-sounduct-laureat-des-trophees-inpi-2025-2131679"
    }
   ],
-  "VERDOT": [
+  "VYV EQUIPEMENT MEDICAL": [
    {
-    "titre": "Verdot met en avant sa collaboration avec Moderna sur Intismeran",
-    "source": "MyPharma Editions",
-    "date": "2026-11-16",
-    "url": "https://www.mypharma-editions.com/verdot-met-en-avant-sa-collaboration-avec-moderna-sur-intismeran"
-   },
-   {
-    "titre": "VERDOT Highlights Collaboration with Moderna on Intismeran",
-    "source": "PRWeb",
-    "date": "2026-11-10",
-    "url": "https://www.prweb.com/releases/verdot-highlights-collaboration-with-moderna-on-intismeran-302934021.html"
-   },
-   {
-    "titre": "Doubs Faute de repreneur, l’entreprise Verdot, à Besançon, disparaîtra après la retraite du gérant",
-    "source": "L'Est Républicain",
-    "date": "2026-10-25",
-    "url": "https://www.estrepublicain.fr/economie/2026/10/26/faute-de-repreneur-l-entreprise-verdot-a-besancon-disparaitra-apres-la-retraite-du-gerant"
-   },
-   {
-    "titre": "Avec sa nouvelle usine, Verdot veut profiter de la dynamique des biopharmas aux États-Unis",
-    "source": "La Tribune",
-    "date": "2026-09-15",
-    "url": "https://www.latribune.fr/article/regions/auvergne-rhone-alpes/23853120529449/avec-sa-nouvelle-usine-verdot-veut-profiter-de-la-dynamique-des-biopharmas-aux-etats-unis"
-   },
-   {
-    "titre": "Dans le Puy-de-Dôme, la société Verdot investit 10 millions d’euros pour tripler production de biomédicaments",
-    "source": "ici",
-    "date": "2026-09-15",
-    "url": "https://www.ici.fr/emissions/l-info-d-ici-ici-pays-d-auvergne/dans-le-puy-de-dome-la-societe-verdot-investit-10-millions-d-euros-pour-tripler-production-de-biomedicaments-9997710"
+    "titre": "Harmonie Ambulance et Harmonie Médical service deviennent VYV Ambulance et VYV Equipement médical",
+    "source": "Miroir Social",
+    "date": "2022-11-16",
+    "url": "https://www.miroirsocial.com/index.php/participatif/harmonie-ambulance-et-harmonie-medical-service-deviennent-vyv-ambulance-et-vyv"
    }
   ]
  }

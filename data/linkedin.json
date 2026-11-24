@@ -1,7 +1,7 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 82,
+ "lues": 93,
  "offres": [
   {
    "id": "li-4480635381",
@@ -165,6 +165,115 @@
     "marketing",
     "digital"
    ]
+  },
+  {
+   "id": "li-4492325175",
+   "intitule": "",
+   "entreprise": "Applied Materials",
+   "lieu": "Santa Clara, CA",
+   "pays": "CA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4492325175",
+   "alerte": "Offre d’emploi de Product Management II New College Grad- Master's (Santa Clara, CA) chez Applied Materials – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4460330568",
+   "intitule": "",
+   "entreprise": "Elekta",
+   "lieu": "Boulogne-Billancourt",
+   "pays": "Boulogne-Billancourt",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4460330568",
+   "alerte": "Le poste de Product Marketing Support de Elekta pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492323923",
+   "intitule": "Product Manager(83120) (MJ000093)",
+   "entreprise": "Bright Future Pharmaceutical Lab. Ltd.",
+   "lieu": "Nankin",
+   "pays": "Nankin",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4492323923",
+   "alerte": "Recrutement actif : Product Manager(83120) (MJ000093) chez Bright Future Pharmaceutical Lab. Ltd., rémunération à partir de 15 k CNY par mois",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492329562",
+   "intitule": "Gen-X Commercial Global Product Manager(A148076)",
+   "entreprise": "南京金斯瑞生物科技有限公司",
+   "lieu": "Nankin",
+   "pays": "Nankin",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4492329562",
+   "alerte": "Recrutement actif : Product Manager(83120) (MJ000093) chez Bright Future Pharmaceutical Lab. Ltd., rémunération à partir de 15 k CNY par mois",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "commercial"
+   ]
+  },
+  {
+   "id": "li-4493271479",
+   "intitule": "",
+   "entreprise": "JPMorganChase",
+   "lieu": "Philadelphie, PA",
+   "pays": "PA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4493271479",
+   "alerte": "Le poste de Product Associate, Digital Channels - Healthcare Payments de JPMorganChase pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": []
+  },
+  {
+   "id": "li-4493172103",
+   "intitule": "Product Associate, Digital Channels - Healthcare Payments",
+   "entreprise": "Archer",
+   "lieu": "Philadelphie, PA",
+   "pays": "PA",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4493172103",
+   "alerte": "Le poste de Product Associate, Digital Channels - Healthcare Payments de JPMorganChase pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "digital"
+   ]
+  },
+  {
+   "id": "li-4468812477",
+   "intitule": "",
+   "entreprise": "WellSky",
+   "lieu": "Overland Park, KS",
+   "pays": "KS",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4468812477",
+   "alerte": "Le poste de Product Associate, Digital Channels - Healthcare Payments de JPMorganChase pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": []
   },
   {
    "id": "li-4488664701",

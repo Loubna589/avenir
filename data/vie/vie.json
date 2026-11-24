@@ -1,23 +1,23 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 83,
-   "lues": 83,
+   "annoncees": 84,
+   "lues": 84,
    "sante": 13
   },
   {
    "recherche": "pharma",
-   "annoncees": 13,
-   "lues": 13,
+   "annoncees": 12,
+   "lues": 12,
    "sante": 11
   },
   {
    "recherche": "santé",
-   "annoncees": 31,
-   "lues": 31,
+   "annoncees": 32,
+   "lues": 32,
    "sante": 10
   },
   {
@@ -28,7 +28,7 @@
   }
  ],
  "incompletes": [],
- "nb_offres": 138,
+ "nb_offres": 142,
  "nb_sante": 29,
  "nb_sante_marketing": 14,
  "nb_fonctions": 65,
@@ -1017,7 +1017,7 @@
    "id": "248000",
    "entreprise": "LES COMPTOIR DES FARINES",
    "intitule": "Chargé(e) de développement commercial export (H/F)",
-   "lieu": "ESPAGNE - MADRID",
+   "lieu": "ESPAGNE - BARCELONE",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248000",
@@ -1059,7 +1059,7 @@
    "id": "246531",
    "entreprise": "MOBILITY WORK",
    "intitule": "Business Development Representative (BDR) – Espagne (H/F)",
-   "lieu": "ESPAGNE - MADRID",
+   "lieu": "ESPAGNE - BARCELONE",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/246531",
@@ -1840,6 +1840,38 @@
    "marketing": false
   },
   {
+   "id": "248706",
+   "entreprise": "BOSTIK SA",
+   "intitule": "Product Line Manager Assistant - Hot Melt Specialties (H/F/X) (H/F)",
+   "lieu": "ETATS-UNIS - WAUWATOSA -WI-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248706",
+   "extrait": "- Stewards the Master Data Platform (MDP) for product setup and maintenance. Gathers and enters relevant product information into the system and proactively follows-up with stakeholders to ensure timely completion of workflows. - Serves as the team’s subject matter expert and one-stop resource for g",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248510",
+   "entreprise": "BOSTIK SA",
+   "intitule": "Product Line Manager Assistant - Converted Hot Melts (H/F/X) (H/F)",
+   "lieu": "ETATS-UNIS - WAUWATOSA -WI-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248510",
+   "extrait": "- Supports product setup and maintenance. Gathers relevant product information, proactively follows-up with stakeholders to ensure timely completion of workflows. - Serves as the primary source for gathering relevant product and financial data using SAP, BI Analyzer, Power BI, and other sources to s",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "248032",
    "entreprise": "BOSTIK SA",
    "intitule": "Agentic Commerce Automation Specialist (H/F)",
@@ -2161,6 +2193,22 @@
    "marketing": false
   },
   {
+   "id": "248687",
+   "entreprise": "JOLIROOM",
+   "intitule": "Ingénieur chef de projet IT (H/F)",
+   "lieu": "HONGRIE - BUDAPEST",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248687",
+   "extrait": "Qui sommes-nous Cozycozy est un métamoteur de recherche d'hébergements qui agrège en temps réel plus de 20 millions d'annonces issues de plus de 100 sites de réservation : Airbnb, Booking.com, Abritel/VRBO, Hotels.com, mais aussi des plateformes spécialisées comme Agriturismo, Gîtes de France, Onefi",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "247275",
    "entreprise": "KUHN SAS",
    "intitule": "INGÉNIEURS MÉCATRONIQUE OU SYSTÈMES ELECTRONIQUES EMBARQUÉS (H/F)",
@@ -2265,6 +2313,22 @@
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/246975",
    "extrait": "Orano Canada est l'un des principaux producteurs d'uranium au Canada et œuvre à propulser l'avenir grâce à une énergie propre ! Notre usine de McClean Lake est la plus avancée technologiquement au monde pour le traitement, sans dilution, du minerai d'uranium à haute teneur. Notre...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248704",
+   "entreprise": "P.B.O.",
+   "intitule": "Business Analyst & Contrôleur de Gestion H/F (H/F)",
+   "lieu": "TCHEQUIE / REPUBLIQUE TCHEQUE - PRAGUE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248704",
+   "extrait": "En étroite collaboration avec le Responsable du Contrôle de gestion, vous contribuerez à la transformation des outils et des méthodes de pilotage de la performance, notamment à travers la Business Intelligence et l'intelligence artificielle. Vos principales missions : 1.Optimiser l'analyse et le pil",
    "sante": false,
    "fonctions": [],
    "recherches": [

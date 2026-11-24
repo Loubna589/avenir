@@ -30,8 +30,17 @@ GARDER_JOURS = 30   # une offre LinkedIn reste rarement ouverte plus d'un mois
 RX_VIE = re.compile(r"\bV\.?I\.?E\b|\b(?i:volontariat international|international volunteer)")
 
 # Lignes du mail qui ne sont ni un poste, ni une entreprise, ni un lieu
-BRUIT = re.compile(r"recrute activement|actively recruiting|candidature simplifi|easy apply|promu|promoted|relations?\b|applicants?|candidats?",
-                   re.I)
+BRUIT = re.compile(r"recrute activement|actively recruiting|candidature simplifi|easy apply|promu|promoted|relations?\b|applicants?|candidats?"
+                   r"|ancien(ne)?s? él[èe]ves?|alumni|postulez avec|apply with", re.I)
+# Hors de ma recherche : alternance, stage, apprentissage (je cherche un premier emploi)
+EXCLU = re.compile(r"apprenti|alternan|work[- ]?study|\bstages?\b|stagiaire|\bintern(ship)?\b", re.I)
+# Une annonce rédigée en chinois, japonais ou coréen : je ne peux pas y répondre
+CJK = re.compile(r"[぀-ヿ㐀-鿿가-힯]")
+# Le lieu dit-il l'étranger ? Pays cités, États américains (« Bethlehem, PA »), villes repérées dans mes alertes
+ETRANGER = re.compile(
+    r"États-Unis|Royaume-Uni|Angleterre|Écosse|Pays de Galles|Irlande|Canada|Chine|Suisse|Australie|Singapour|Viêt ?Nam|Thaïlande"
+    r"|Belgique|Allemagne|Espagne|Italie|Pays-Bas|Luxembourg|Japon|Inde|Hong Kong|, [A-Z]{2}$"
+    r"|Londres|London|Maidenhead|Shanghai|Nankin|Pékin|Beijing|Wuhan|Qingdao|Guangzhou|Suzhou|Shenzhen|Hangzhou|Toronto|Montréal|Genève|Bâle|Zurich")
 
 
 def lire_csv():
@@ -41,23 +50,34 @@ def lire_csv():
 
 
 def nettoyer(l):
-    poste, entreprise, lieu = l["poste"].strip(), l["entreprise"].strip(), l["lieu"].strip()
-    # Quand le mail ajoute « Cette entreprise recrute activement », les colonnes glissent d'un cran :
-    # le poste est perdu, l'entreprise est dans « poste » et le lieu dans « entreprise »
-    if BRUIT.search(lieu):
-        poste, entreprise, lieu = "", poste, entreprise
+    # Quand le mail ajoute « Cette entreprise recrute activement » ou « 1 ancien élève », les colonnes
+    # glissent : on retire ces mentions et on range ce qui reste par la droite (… entreprise, lieu)
+    champs = [x.strip() for x in (l["poste"], l["entreprise"], l["lieu"]) if x.strip() and not BRUIT.search(x)]
+    champs = [""] * (3 - len(champs)) + champs
+    poste, entreprise, lieu = champs
     # « Associate Product Manager - Circle Health Group » : on retire l'entreprise répétée
     if entreprise and poste.endswith(" - " + entreprise):
         poste = poste[: -len(entreprise) - 3]
     alerte = re.sub(r"^.*?alerte Emploi pour\s*", "", l["alerte"]).replace(" a été créée", "").strip()
-    pays = lieu.rsplit(",", 1)[-1].strip() if lieu else ""
+    # Le pays : celui de l'alerte (« … (France) »), sinon la fin du lieu ; la France par défaut
+    m = re.search(r"\(([^)]+)\)\s*$", alerte)
+    if m and "France" in m.group(1):
+        pays = "France"
+    elif "," in lieu and not re.search(r", [A-Z]{2}$", lieu):
+        pays = lieu.rsplit(",", 1)[-1].strip()
+    elif ETRANGER.search(lieu):
+        pays = "États-Unis" if re.search(r", [A-Z]{2}$", lieu) else (m.group(1) if m else "étranger")
+    else:
+        pays = "France"
+    if pays != "France" and not ETRANGER.search(lieu + " " + pays) and "France" in lieu:
+        pays = "France"
     return {
         "id": "li-" + l["id"].strip(),
         "intitule": poste,
         "entreprise": entreprise,
         "lieu": lieu,
         "pays": pays,
-        "france": pays == "France" or not pays,
+        "france": pays == "France",
         "salaire": l["salaire"].strip(),
         "recue_le": l["recue_le"].strip(),
         "url": l["lien"].strip(),
@@ -79,8 +99,12 @@ def main():
         if o["id"] in vus or o["recue_le"] < limite:
             continue
         vus.add(o["id"])
-        # Intitulé connu mais hors de ma cible (ingénieur, data…) : on écarte
+        # Ligne vide, intitulé hors de ma cible (ingénieur, data…), alternance ou stage, annonce en chinois : on écarte
+        if not (o["intitule"] or o["entreprise"]):
+            continue
         if o["intitule"] and not o["fonctions"]:
+            continue
+        if EXCLU.search(o["intitule"]) or CJK.search(o["intitule"] + o["entreprise"]):
             continue
         offres.append(o)
     # La France d'abord, puis les plus récentes

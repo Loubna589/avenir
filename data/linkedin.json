@@ -4,19 +4,229 @@
  "lues": 93,
  "offres": [
   {
-   "id": "li-4480635381",
+   "id": "li-4460330568",
    "intitule": "",
-   "entreprise": "",
-   "lieu": "",
-   "pays": "",
+   "entreprise": "Elekta",
+   "lieu": "Boulogne-Billancourt",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-23",
+   "url": "https://www.linkedin.com/jobs/view/4460330568",
+   "alerte": "Le poste de Product Marketing Support de Elekta pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4488664701",
+   "intitule": "Product Manager Junior (H/F)",
+   "entreprise": "Hello Watt",
+   "lieu": "Paris",
+   "pays": "France",
    "france": true,
    "salaire": "",
    "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4480635381",
+   "url": "https://www.linkedin.com/jobs/view/4488664701",
    "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
    "vie": false,
    "fonctions": [
     "marketing"
+   ]
+  },
+  {
+   "id": "li-4480461474",
+   "intitule": "PRODUCT OWNER",
+   "entreprise": "Cartier",
+   "lieu": "Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4480461474",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4488431026",
+   "intitule": "Technical Product Manager - Junior",
+   "entreprise": "Bigblue",
+   "lieu": "Ville de Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4488431026",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4490585718",
+   "intitule": "Chef de Produit Maille Junior",
+   "entreprise": "Isabel Marant",
+   "lieu": "Ville de Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4490585718",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4474941984",
+   "intitule": "Junior Business Product Owner",
+   "entreprise": "Europ Assistance",
+   "lieu": "Saint-Denis",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4474941984",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4470898373",
+   "intitule": "Product Owner / Chef de projet junior (H/F)",
+   "entreprise": "Infotel",
+   "lieu": "Toulouse",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4470898373",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "gestion de projet"
+   ]
+  },
+  {
+   "id": "li-4468571942",
+   "intitule": "Chef de produit junior / Achat",
+   "entreprise": "Prozon",
+   "lieu": "Marseille",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4468571942",
+   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4468652978",
+   "intitule": "",
+   "entreprise": "Back Market",
+   "lieu": "Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4468652978",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4475978503",
+   "intitule": "",
+   "entreprise": "Lucca",
+   "lieu": "Nantes",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4475978503",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492950713",
+   "intitule": "",
+   "entreprise": "SOLUTEC",
+   "lieu": "Bordeaux",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4492950713",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4485335298",
+   "intitule": "",
+   "entreprise": "Murex",
+   "lieu": "Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4485335298",
+   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4491969126",
+   "intitule": "Assistant chef de produit",
+   "entreprise": "FretBay",
+   "lieu": "Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-22",
+   "url": "https://www.linkedin.com/jobs/view/4491969126",
+   "alerte": "Assistant chef de produit chez FretBay",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4491627773",
+   "intitule": "",
+   "entreprise": "Novartis",
+   "lieu": "Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4491627773",
+   "alerte": "CHEF DE PROJET OMNICANAL - STG chez Novartis",
+   "vie": false,
+   "fonctions": [
+    "marketing",
+    "gestion de projet"
    ]
   },
   {
@@ -50,6 +260,22 @@
    "fonctions": [
     "marketing",
     "gestion de projet"
+   ]
+  },
+  {
+   "id": "li-4341774333",
+   "intitule": "",
+   "entreprise": "Sogeti",
+   "lieu": "Nantes",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4341774333",
+   "alerte": "Chef.fe de produit junior (H/F) chez Vente-unique.com",
+   "vie": false,
+   "fonctions": [
+    "commercial"
    ]
   },
   {
@@ -118,6 +344,22 @@
    ]
   },
   {
+   "id": "li-4492157592",
+   "intitule": "",
+   "entreprise": "Vente-unique.com",
+   "lieu": "Ville de Paris, Île-de-France, France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4492157592",
+   "alerte": "Chef De Produit (France)",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
    "id": "li-4488531585",
    "intitule": "un/une Chef de Produits - Trousses Chirurgicales Personnalisées France/Benelux (H/F)",
    "entreprise": "Medline Europe",
@@ -150,6 +392,148 @@
    ]
   },
   {
+   "id": "li-4484375555",
+   "intitule": "",
+   "entreprise": "Caldic",
+   "lieu": "Cournon-d'Auvergne",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4484375555",
+   "alerte": "Une offre d’emploi de Product Manager Assistant chez Caldicet 4 autres offres d’emploi pourraient vous intéresser",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492159598",
+   "intitule": "",
+   "entreprise": "Vente-unique.com",
+   "lieu": "Ville de Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4492159598",
+   "alerte": "Une offre d’emploi de Product Manager Assistant chez Caldicet 4 autres offres d’emploi pourraient vous intéresser",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4492431855",
+   "intitule": "",
+   "entreprise": "BUT",
+   "lieu": "Émerainville",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4492431855",
+   "alerte": "Une offre d’emploi de Product Manager Assistant chez Caldicet 4 autres offres d’emploi pourraient vous intéresser",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4438617487",
+   "intitule": "",
+   "entreprise": "Sogeti",
+   "lieu": "Aix-en-Provence",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4438617487",
+   "alerte": "Le poste de Chef.fe de produit junior (H/F) de Vente-unique.com pourrait vous convenir – 1 ancien élève",
+   "vie": false,
+   "fonctions": [
+    "commercial"
+   ]
+  },
+  {
+   "id": "li-4485512217",
+   "intitule": "Product Owner santé F/H",
+   "entreprise": "Docaposte",
+   "lieu": "Gironde",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4485512217",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4443942420",
+   "intitule": "Product Owner Cloud Junior - H/F",
+   "entreprise": "SUEZ",
+   "lieu": "Puteaux",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4443942420",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4461312084",
+   "intitule": "Assistant chef de produit (H/F)",
+   "entreprise": "Medline Europe",
+   "lieu": "Montigny-le-Bretonneux",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4461312084",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4482849522",
+   "intitule": "",
+   "entreprise": "Theodo",
+   "lieu": "Paris et périphérie",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4482849522",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": []
+  },
+  {
+   "id": "li-4473147489",
+   "intitule": "Chef de Produit Dispositifs Médicaux : Champs opératoires et Housses d'équipement France/Benelux (H/F)",
+   "entreprise": "Medline Europe",
+   "lieu": "Saint-Quentin-en-Yvelines",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-20",
+   "url": "https://www.linkedin.com/jobs/view/4473147489",
+   "alerte": "Docaposte recrute au poste de À distance",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
    "id": "li-4491826699",
    "intitule": "",
    "entreprise": "Dalt - Digital alternative",
@@ -171,7 +555,7 @@
    "intitule": "",
    "entreprise": "Applied Materials",
    "lieu": "Santa Clara, CA",
-   "pays": "CA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-23",
@@ -183,27 +567,11 @@
    ]
   },
   {
-   "id": "li-4460330568",
-   "intitule": "",
-   "entreprise": "Elekta",
-   "lieu": "Boulogne-Billancourt",
-   "pays": "Boulogne-Billancourt",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-23",
-   "url": "https://www.linkedin.com/jobs/view/4460330568",
-   "alerte": "Le poste de Product Marketing Support de Elekta pourrait vous convenir – Recrute activement",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
    "id": "li-4492323923",
    "intitule": "Product Manager(83120) (MJ000093)",
    "entreprise": "Bright Future Pharmaceutical Lab. Ltd.",
    "lieu": "Nankin",
-   "pays": "Nankin",
+   "pays": "étranger",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-23",
@@ -215,28 +583,11 @@
    ]
   },
   {
-   "id": "li-4492329562",
-   "intitule": "Gen-X Commercial Global Product Manager(A148076)",
-   "entreprise": "南京金斯瑞生物科技有限公司",
-   "lieu": "Nankin",
-   "pays": "Nankin",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-23",
-   "url": "https://www.linkedin.com/jobs/view/4492329562",
-   "alerte": "Recrutement actif : Product Manager(83120) (MJ000093) chez Bright Future Pharmaceutical Lab. Ltd., rémunération à partir de 15 k CNY par mois",
-   "vie": false,
-   "fonctions": [
-    "marketing",
-    "commercial"
-   ]
-  },
-  {
    "id": "li-4493271479",
    "intitule": "",
    "entreprise": "JPMorganChase",
    "lieu": "Philadelphie, PA",
-   "pays": "PA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-23",
@@ -250,7 +601,7 @@
    "intitule": "Product Associate, Digital Channels - Healthcare Payments",
    "entreprise": "Archer",
    "lieu": "Philadelphie, PA",
-   "pays": "PA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-23",
@@ -266,7 +617,7 @@
    "intitule": "",
    "entreprise": "WellSky",
    "lieu": "Overland Park, KS",
-   "pays": "KS",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-23",
@@ -276,124 +627,11 @@
    "fonctions": []
   },
   {
-   "id": "li-4488664701",
-   "intitule": "Product Manager Junior (H/F)",
-   "entreprise": "Hello Watt",
-   "lieu": "Paris",
-   "pays": "Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4488664701",
-   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4480461474",
-   "intitule": "PRODUCT OWNER",
-   "entreprise": "Cartier",
-   "lieu": "Paris",
-   "pays": "Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4480461474",
-   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4488431026",
-   "intitule": "Technical Product Manager - Junior",
-   "entreprise": "Bigblue",
-   "lieu": "Ville de Paris",
-   "pays": "Ville de Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4488431026",
-   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4490585718",
-   "intitule": "Chef de Produit Maille Junior",
-   "entreprise": "Isabel Marant",
-   "lieu": "Ville de Paris",
-   "pays": "Ville de Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4490585718",
-   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4474941984",
-   "intitule": "Junior Business Product Owner",
-   "entreprise": "Europ Assistance",
-   "lieu": "Saint-Denis",
-   "pays": "Saint-Denis",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4474941984",
-   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4470898373",
-   "intitule": "Product Owner / Chef de projet junior (H/F)",
-   "entreprise": "Infotel",
-   "lieu": "Toulouse",
-   "pays": "Toulouse",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4470898373",
-   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
-   "vie": false,
-   "fonctions": [
-    "marketing",
-    "gestion de projet"
-   ]
-  },
-  {
-   "id": "li-4468571942",
-   "intitule": "Chef de produit junior / Achat",
-   "entreprise": "Prozon",
-   "lieu": "Marseille",
-   "pays": "Marseille",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4468571942",
-   "alerte": "Nouvelles offres d’emploi similaires à Junior Product Manager chez Perfetti Van Melle",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
    "id": "li-4492528026",
    "intitule": "",
    "entreprise": "B. Braun Medical Inc. (US)",
    "lieu": "Bethlehem, PA",
-   "pays": "PA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-22",
@@ -405,75 +643,11 @@
    ]
   },
   {
-   "id": "li-4468652978",
-   "intitule": "",
-   "entreprise": "Back Market",
-   "lieu": "Paris",
-   "pays": "Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4468652978",
-   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4475978503",
-   "intitule": "",
-   "entreprise": "Lucca",
-   "lieu": "Nantes",
-   "pays": "Nantes",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4475978503",
-   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4492950713",
-   "intitule": "",
-   "entreprise": "SOLUTEC",
-   "lieu": "Bordeaux",
-   "pays": "Bordeaux",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4492950713",
-   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4485335298",
-   "intitule": "",
-   "entreprise": "Murex",
-   "lieu": "Paris",
-   "pays": "Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4485335298",
-   "alerte": "Le poste de Product Manager Apprentice, Checkout de Back Market pourrait vous convenir – Recrute activement",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
    "id": "li-4493214597",
    "intitule": "Associate Product Manager",
    "entreprise": "Mainstay Medical",
    "lieu": "San Diego, CA",
-   "pays": "CA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-22",
@@ -489,7 +663,7 @@
    "intitule": "Associate Product Manager - Dermatology",
    "entreprise": "FFF Enterprises",
    "lieu": "Temecula, CA",
-   "pays": "CA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-22",
@@ -505,7 +679,7 @@
    "intitule": "",
    "entreprise": "DaVita Kidney Care",
    "lieu": "Denver, CO",
-   "pays": "CO",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-22",
@@ -521,7 +695,7 @@
    "intitule": "",
    "entreprise": "DaVita Kidney Care",
    "lieu": "Gilbert, AZ",
-   "pays": "AZ",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-22",
@@ -537,7 +711,7 @@
    "intitule": "",
    "entreprise": "Genentech",
    "lieu": "South San Francisco, CA",
-   "pays": "CA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-22",
@@ -549,27 +723,11 @@
    ]
   },
   {
-   "id": "li-4491969126",
-   "intitule": "Assistant chef de produit",
-   "entreprise": "FretBay",
-   "lieu": "Paris",
-   "pays": "Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-22",
-   "url": "https://www.linkedin.com/jobs/view/4491969126",
-   "alerte": "Assistant chef de produit chez FretBay",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
    "id": "li-4492428447",
    "intitule": "Associate Product Manager",
    "entreprise": "Johnson & Johnson Innovative Medicine",
    "lieu": "Maidenhead",
-   "pays": "Maidenhead",
+   "pays": "étranger",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-21",
@@ -581,28 +739,11 @@
    ]
   },
   {
-   "id": "li-4491627773",
-   "intitule": "",
-   "entreprise": "Novartis",
-   "lieu": "Paris",
-   "pays": "Paris",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-21",
-   "url": "https://www.linkedin.com/jobs/view/4491627773",
-   "alerte": "CHEF DE PROJET OMNICANAL - STG chez Novartis",
-   "vie": false,
-   "fonctions": [
-    "marketing",
-    "gestion de projet"
-   ]
-  },
-  {
    "id": "li-4492733490",
    "intitule": "",
    "entreprise": "Walgreens",
    "lieu": "Deerfield, IL",
-   "pays": "IL",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-21",
@@ -618,7 +759,7 @@
    "intitule": "",
    "entreprise": "Walgreens",
    "lieu": "Deerfield, IL",
-   "pays": "IL",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-21",
@@ -634,7 +775,7 @@
    "intitule": "",
    "entreprise": "Organon",
    "lieu": "Shanghai",
-   "pays": "Shanghai",
+   "pays": "étranger",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-21",
@@ -646,35 +787,35 @@
    ]
   },
   {
-   "id": "li-4341774333",
+   "id": "li-4489561501",
    "intitule": "",
-   "entreprise": "Sogeti",
-   "lieu": "Nantes",
-   "pays": "Nantes",
+   "entreprise": "Công ty Cổ phần Dược phẩm Thiên Thảo",
+   "lieu": "Hanoï, Hanoï, Viêt Nam",
+   "pays": "Viêt Nam",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-21",
-   "url": "https://www.linkedin.com/jobs/view/4341774333",
-   "alerte": "Chef.fe de produit junior (H/F) chez Vente-unique.com",
+   "url": "https://www.linkedin.com/jobs/view/4489561501",
+   "alerte": "Product Manager Healthcare (Viêt Nam)",
    "vie": false,
    "fonctions": [
-    "commercial"
+    "marketing"
    ]
   },
   {
-   "id": "li-4492157592",
-   "intitule": "Vente-unique.com",
-   "entreprise": "Ville de Paris, Île-de-France, France",
-   "lieu": "1 ancien élève",
-   "pays": "1 ancien élève",
+   "id": "li-4477983611",
+   "intitule": "",
+   "entreprise": "CÔNG TY TNHH THIẾT BỊ Y TẾ PHƯƠNG ĐÔNG",
+   "lieu": "District de Bình Thủy, Can Tho, Viêt Nam",
+   "pays": "Viêt Nam",
    "france": false,
    "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4492157592",
-   "alerte": "Chef De Produit (France)",
+   "recue_le": "2026-11-21",
+   "url": "https://www.linkedin.com/jobs/view/4477983611",
+   "alerte": "Product Manager Healthcare (Viêt Nam)",
    "vie": false,
    "fonctions": [
-    "commercial"
+    "marketing"
    ]
   },
   {
@@ -774,145 +915,16 @@
    ]
   },
   {
-   "id": "li-4484375555",
-   "intitule": "",
-   "entreprise": "Caldic",
-   "lieu": "Cournon-d'Auvergne",
-   "pays": "Cournon-d'Auvergne",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4484375555",
-   "alerte": "Une offre d’emploi de Product Manager Assistant chez Caldicet 4 autres offres d’emploi pourraient vous intéresser",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4492159598",
-   "intitule": "Vente-unique.com",
-   "entreprise": "Ville de Paris",
-   "lieu": "1 ancien élève",
-   "pays": "1 ancien élève",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4492159598",
-   "alerte": "Une offre d’emploi de Product Manager Assistant chez Caldicet 4 autres offres d’emploi pourraient vous intéresser",
-   "vie": false,
-   "fonctions": [
-    "commercial"
-   ]
-  },
-  {
    "id": "li-4418329180",
    "intitule": "Associate Product Manager",
    "entreprise": "Globus Medical",
    "lieu": "King of Prussia, PA",
-   "pays": "PA",
+   "pays": "États-Unis",
    "france": false,
    "salaire": "",
    "recue_le": "2026-11-20",
    "url": "https://www.linkedin.com/jobs/view/4418329180",
    "alerte": "Globus Medical recrute au poste de Associate Product Manager",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4492259612",
-   "intitule": "Gen-X Commercial Global Product Manager(A148076)",
-   "entreprise": "南京金斯瑞生物科技有限公司",
-   "lieu": "Nankin",
-   "pays": "Nankin",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4492259612",
-   "alerte": "Offre d’emploi de 【校招】产品管培生 chez Tuodao (Singapore)",
-   "vie": false,
-   "fonctions": [
-    "marketing",
-    "commercial"
-   ]
-  },
-  {
-   "id": "li-4438617487",
-   "intitule": "",
-   "entreprise": "Sogeti",
-   "lieu": "Aix-en-Provence",
-   "pays": "Aix-en-Provence",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4438617487",
-   "alerte": "Le poste de Chef.fe de produit junior (H/F) de Vente-unique.com pourrait vous convenir – 1 ancien élève",
-   "vie": false,
-   "fonctions": [
-    "commercial"
-   ]
-  },
-  {
-   "id": "li-4485512217",
-   "intitule": "Product Owner santé F/H",
-   "entreprise": "Docaposte",
-   "lieu": "Gironde",
-   "pays": "Gironde",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4485512217",
-   "alerte": "Docaposte recrute au poste de À distance",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4443942420",
-   "intitule": "Product Owner Cloud Junior - H/F",
-   "entreprise": "SUEZ",
-   "lieu": "Puteaux",
-   "pays": "Puteaux",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4443942420",
-   "alerte": "Docaposte recrute au poste de À distance",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4461312084",
-   "intitule": "Assistant chef de produit (H/F)",
-   "entreprise": "Medline Europe",
-   "lieu": "Montigny-le-Bretonneux",
-   "pays": "Montigny-le-Bretonneux",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4461312084",
-   "alerte": "Docaposte recrute au poste de À distance",
-   "vie": false,
-   "fonctions": [
-    "marketing"
-   ]
-  },
-  {
-   "id": "li-4473147489",
-   "intitule": "Chef de Produit Dispositifs Médicaux : Champs opératoires et Housses d'équipement France/Benelux (H/F)",
-   "entreprise": "Medline Europe",
-   "lieu": "Saint-Quentin-en-Yvelines",
-   "pays": "Saint-Quentin-en-Yvelines",
-   "france": false,
-   "salaire": "",
-   "recue_le": "2026-11-20",
-   "url": "https://www.linkedin.com/jobs/view/4473147489",
-   "alerte": "Docaposte recrute au poste de À distance",
    "vie": false,
    "fonctions": [
     "marketing"

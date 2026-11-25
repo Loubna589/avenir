@@ -1,5 +1,5 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Advanced Medical Solutions (France) SAS": [
@@ -30,22 +30,10 @@
   ],
   "Ajinomoto": [
    {
-    "titre": "Ajinomoto Indonesia Perkuat Komitmen Lingkungan melalui Penggunaan Energi Bersih",
-    "source": "Suara Merdeka",
-    "date": "2026-11-20",
-    "url": "https://www.suaramerdeka.com/ekonomi/0417929684/ajinomoto-indonesia-perkuat-komitmen-lingkungan-melalui-penggunaan-energi-bersih"
-   },
-   {
-    "titre": "2802 - Ajinomoto Co., Inc.",
-    "source": "Investing",
-    "date": "2026-11-17",
-    "url": "https://br.investing.com/equities/ajinomoto-co.,-inc."
-   },
-   {
-    "titre": "Ajinomoto Co., Inc. révise ses prévisions de résultats consolidés pour l’exercice clos le 31 mars 2027",
+    "titre": "Société Ajinomoto Co., Inc.",
     "source": "Zonebourse",
-    "date": "2026-11-09",
-    "url": "https://www.zonebourse.com/actualite-bourse/ajinomoto-co-inc-revise-ses-previsions-de-resultats-consolides-pour-la-exercice-clos-le-31-mars-ce785fd3de80f327"
+    "date": "2026-11-19",
+    "url": "https://www.zonebourse.com/cours/action/AJINOMOTO-CO-INC-6491152/societe/"
    },
    {
     "titre": "Ajinomoto Co., Inc. révise ses prévisions d’acompte sur dividende pour l’exercice se terminant le 31 mars 2027, payable le 2 décembre 2026",
@@ -54,10 +42,22 @@
     "url": "https://ch.zonebourse.com/actualite-bourse/ajinomoto-co-inc-revise-ses-previsions-da-acompte-sur-dividende-pour-la-exercice-se-terminant-l-ce785fd3d18cf724"
    },
    {
-    "titre": "Ajinomoto expande linha de Gyoza com novo sabor de carne bovina",
-    "source": "gironews.com",
-    "date": "2026-10-19",
-    "url": "https://gironews.com/food-service/ajinomoto-expande-linha-de-gyoza-com-novo-sabor-de-carne-bovina/"
+    "titre": "Ajinomoto expande parceria com One Piece e traz novos personagens",
+    "source": "GKPB",
+    "date": "2026-01-19",
+    "url": "https://gkpb.com.br/186494/ajinomoto-one-piece-2/"
+   },
+   {
+    "titre": "Na receita da Ajinomoto, plano é repetir “melhor ano da história” nos fertilizantes",
+    "source": "agfeed.com.br",
+    "date": "2025-11-12",
+    "url": "https://agfeed.com.br/negocios/na-receita-da-ajinomoto-plano-e-repetir-melhor-ano-da-historia-nos-fertilizantes/"
+   },
+   {
+    "titre": "Ajinomoto divulga nova fase com entrada no segmento de nutrição para saúde",
+    "source": "Valor Economico",
+    "date": "2025-03-27",
+    "url": "https://valor.globo.com/conteudo-de-marca/ajinomoto/noticia/2025/03/27/ajinomoto-divulga-nova-fase-com-entrada-no-segmento-de-nutricao-para-saude.ghtml"
    }
   ],
   "Bureau des Talents": [
@@ -95,44 +95,26 @@
     "url": "https://presse.bpifrance.fr/fizimed-leve-4meur-aupres-du-fonds-patient-autonome-gere-par-bpifrance-uniqa-et-ui-investissement-afin-daccelerer-son-expansion-internationale"
    },
    {
-    "titre": "La femtech Fizimed lève 4 millions d’euros pour déployer ses dispositifs médicaux en Europe et aux États-Unis",
-    "source": "FrenchWeb",
-    "date": "2025-03-13",
-    "url": "https://www.frenchweb.fr/la-femtech-fizimed-leve-4-millions-deuros-pour-deployer-ses-dispositifs-medicaux-en-europe-et-aux-etats-unis/452062"
+    "titre": "Fizimed et Cephalgo récompensées à Strasbourg par le concours Digital InPulse de Huawei",
+    "source": "Maddyness",
+    "date": "2022-11-04",
+    "url": "https://www.maddyness.com/2022/11/04/digital-inpulse-fizimed-cephalgo-lille/"
    }
   ],
   "Forums Talents Handicap": [],
   "GALEC Services centraux": [],
   "GLOBAL D": [
    {
-    "titre": "Naxicap offre à Global D son indépendance",
-    "source": "capitalfinance.lesechos",
-    "date": "2024-11-13",
-    "url": "https://capitalfinance.lesechos.fr/deals/lbo/naxicap-offre-a-global-d-son-independance-2131351"
-   },
-   {
-    "titre": "Global D",
-    "source": "Caducee",
-    "date": "2016-10-05",
-    "url": "https://www.caducee.net/annuaire/f/3962/global-d.html"
-   },
-   {
-    "titre": "GLOBAL D - Retour sur leur symposium ADF 2015",
-    "source": "dentaire365",
-    "date": "2015-12-09",
-    "url": "https://www.dentaire365.fr/actualites/global-d-retour-sur-leur-symposium-adf-2015/"
-   },
-   {
-    "titre": "Global D – TRANSFERTS NUMERIQUES GLOBAL D",
-    "source": "dentaire365",
-    "date": "2014-11-24",
-    "url": "https://www.dentaire365.fr/actualites/global-d-stand-3l07-transferts-numeriques-global-d/"
-   },
-   {
     "titre": "Le lyonnais Global D innove dans les implants dentaires",
     "source": "Les Echos Patrimoine",
     "date": "2013-11-05",
     "url": "https://www.lesechos.fr/2013/11/le-lyonnais-global-d-innove-dans-les-implants-dentaires-331040"
+   },
+   {
+    "titre": "Global D regroupe ses activités dentaires",
+    "source": "L'Usine Nouvelle",
+    "date": "2013-07-11",
+    "url": "https://www.usinenouvelle.com/article/global-d-regroupe-ses-activites-dentaires.N201295"
    }
   ],
   "GROUPE LEPINE": [
@@ -176,10 +158,10 @@
     "url": "https://ansm.sante.fr/informations-de-securite/biochimie-reactif-abx-pentra-urea-cp-horiba-abx"
    },
    {
-    "titre": "Horiba ABX Pentra 60C+ User manual",
+    "titre": "Horiba ABX Micros 60 User Manual",
     "source": "archive",
-    "date": "2020-05-19",
-    "url": "https://archive.org/details/manual_Horiba_ABX_Pentra_60C_User_manual"
+    "date": "2020-05-18",
+    "url": "https://archive.org/details/manual_Horiba_ABX_Micros_60_User_Manual"
    },
    {
     "titre": "Hématologie - Automate Yumizen H2500 - Horiba ABX - Information de sécurité",
@@ -201,32 +183,6 @@
    }
   ],
   "IDS MEDIA": [],
-  "LABORATOIRES MAYOLY SPINDLER": [
-   {
-    "titre": "PHARM NATURE tombe dans l'escarcelle de MAYOLY SPINDLER",
-    "source": "Fusacq",
-    "date": "2022-09-27",
-    "url": "https://www.fusacq.com/buzz/pharm-nature-tombe-dans-l-escarcelle-de-mayoly-spindler-a231795_fr_"
-   },
-   {
-    "titre": "Les Laboratoires Mayoly Spindler S.A.S. ont finalisé l'acquisition de CHC Business auprès d'Ipsen S.A. (ENXTPA:IPN).",
-    "source": "Zonebourse",
-    "date": "2022-07-27",
-    "url": "https://www.zonebourse.com/cours/action/IPSEN-5137/actualite/Les-Laboratoires-Mayoly-Spindler-S-A-S-ont-finalise-l-acquisition-de-CHC-Business-aupres-d-Ipsen-41167208/"
-   },
-   {
-    "titre": "Mayoly Spindler",
-    "source": "le Moniteur des pharmacie",
-    "date": "2021-09-30",
-    "url": "https://www.lemoniteurdespharmacies.fr/business/laboratoires/mayoly-spindler"
-   },
-   {
-    "titre": "Démosthène donne de la visibilité à Mayoly Spindler dans les pharmacies",
-    "source": "Actionco",
-    "date": "2009-11-30",
-    "url": "https://www.actionco.fr/Action-Commerciale/Article/Demosthene-donne-de-la-visibilite-a-Mayoly-Spindler-dans-les-pharmacies-35754-1.htm"
-   }
-  ],
   "Le Mercato de l'Emploi": [],
   "MANPOWER FRANCE": [
    {
@@ -242,12 +198,6 @@
     "url": "https://www.rhmatin.com/recrutement-talents/interim/recrutement-2026-un-demarrage-en-douceur-selon-manpower-france.html"
    },
    {
-    "titre": "Manpower France, une entreprise qui surfe sur la précarité.",
-    "source": "Bellaciao",
-    "date": "2023-11-06",
-    "url": "https://bellaciao.org/Manpower-France-une-entreprise-qui-surfe-sur-la-precarite"
-   },
-   {
     "titre": "Manpower France lance sa « semaine de l’aéronautique »",
     "source": "aeromorning",
     "date": "2023-06-15",
@@ -258,6 +208,12 @@
     "source": "irblog.prnewswire.com",
     "date": "2022-02-04",
     "url": "https://www.prnewswire.com/fr/communiques-de-presse/manpower-france-fait-confiance-a-kyndryl-pour-l-accompagner-dans-la-transformation-digitale-de-ses-applications-855509860.html"
+   },
+   {
+    "titre": "Manpower France veut monter en puissance dans l’apprentissage",
+    "source": "rhmatin",
+    "date": "2020-07-16",
+    "url": "https://www.rhmatin.com/formation/organisme-formation/manpower-france-veut-monter-en-puissance-dans-l-apprentissage.html"
    }
   ],
   "MAYOLY": [
@@ -339,13 +295,7 @@
     "titre": "Le Pitch : Sounduct, une solution auditive innovante - 26/05",
     "source": "BFMTV",
     "date": "2026-05-25",
-    "url": "https://www.bfmtv.com/economie/replay-emissions/good-morning-business/le-pitch-sounduct-une-solution-auditive-innovante-26-05_EN-202605260092.html"
-   },
-   {
-    "titre": "Le Pitch : Sounduct, une solution auditive innovante - 26/05",
-    "source": "BFMTV",
-    "date": "2026-05-25",
-    "url": "https://www.bfmtv.com/economie/replay-emissions/le-pitch/video-le-pitch-sounduct-une-solution-auditive-innovante-26-05_VN-202605260096.html"
+    "url": "https://www.bfmtv.com/economie/replay-emissions/le-pitch/le-pitch-sounduct-une-solution-auditive-innovante-26-05_EN-202605260091.html"
    },
    {
     "titre": "Sounduct, à fond contre la surdité",
@@ -364,6 +314,12 @@
     "source": "Le Journal des Entreprises",
     "date": "2025-11-26",
     "url": "https://www.lejournaldesentreprises.com/breve/la-medtech-sounduct-laureat-des-trophees-inpi-2025-2131679"
+   },
+   {
+    "titre": "Sounduct lève 3 millions d’euros pour fabriquer des aides auditives d’un nouveau type",
+    "source": "ouiemagazine",
+    "date": "2025-06-04",
+    "url": "https://www.ouiemagazine.net/2025/06/04/sounduct-leve-3-millions-euros-fabriquer-aides-auditives/"
    }
   ],
   "VYV EQUIPEMENT MEDICAL": [

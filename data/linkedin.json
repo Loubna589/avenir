@@ -1,8 +1,38 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 93,
+ "lues": 100,
  "offres": [
+  {
+   "id": "li-4482851317",
+   "intitule": "Product Manager - CDI Paris - Theodo Healthcare",
+   "entreprise": "Theodo",
+   "lieu": "Paris et périphérie",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-24",
+   "url": "https://www.linkedin.com/jobs/view/4482851317",
+   "alerte": "Nouvelles offres d’emploi similaires à Healthcare Product Manager Junior - CDI Paris - Theodo HealthTech chez Theodo",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4441982738",
+   "intitule": "",
+   "entreprise": "L’univers NOZ",
+   "lieu": "Laval",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-24",
+   "url": "https://www.linkedin.com/jobs/view/4441982738",
+   "alerte": "L’univers NOZ recrute au poste de Assistant Produit - Team Jouet",
+   "vie": false,
+   "fonctions": []
+  },
   {
    "id": "li-4460330568",
    "intitule": "",

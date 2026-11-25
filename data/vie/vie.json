@@ -1,11 +1,11 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 84,
-   "lues": 84,
+   "annoncees": 87,
+   "lues": 87,
    "sante": 13
   },
   {
@@ -16,21 +16,21 @@
   },
   {
    "recherche": "santé",
-   "annoncees": 32,
-   "lues": 32,
+   "annoncees": 31,
+   "lues": 31,
    "sante": 10
   },
   {
    "recherche": "chef de produit",
-   "annoncees": 35,
-   "lues": 35,
+   "annoncees": 38,
+   "lues": 38,
    "sante": 2
   }
  ],
  "incompletes": [],
- "nb_offres": 142,
+ "nb_offres": 147,
  "nb_sante": 29,
- "nb_sante_marketing": 14,
+ "nb_sante_marketing": 13,
  "nb_fonctions": 65,
  "offres": [
   {
@@ -52,28 +52,6 @@
    "publiee": "2026-11-02",
    "expire": "2026-12-02",
    "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
-   "id": "247849",
-   "entreprise": "BIOCODEX",
-   "intitule": "Marketing Associate E-commerce and Shopper (H/F)",
-   "lieu": "CANADA - MONTREAL -QC",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247849",
-   "extrait": "Act with purpose. Innovate with care. At Biocodex, we believe we can be global without being impersonal, demanding without being rigid, and innovative without losing sight of care. As a human-sized pharmaceutical company, we operate with high standards, a strong team mindset, and a clear...",
-   "sante": true,
-   "fonctions": [
-    "marketing",
-    "digital"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-04",
-   "expire": "2026-11-24",
-   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -380,7 +358,7 @@
    "id": "248577",
    "entreprise": "AYMING",
    "intitule": "Chargé.e de coordination commerciale & CRM (F/H) (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
+   "lieu": "ESPAGNE - MADRID",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248577",
@@ -780,6 +758,27 @@
    "marketing": true
   },
   {
+   "id": "248707",
+   "entreprise": "GAINERIE 91",
+   "intitule": "Sales Junior (H/F)",
+   "lieu": "SUISSE - NEUCHATEL",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248707",
+   "extrait": "Description du poste Le Groupe Gainerie 91 est une entreprise à taille humaine dans le secteur du visual merchandising et du packaging pour les plus grandes marques du luxe. Depuis plus de 50 ans, nous avons à cœur d’affirmer une identité conjuguant inventivité, savoir-faire, innovation...",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "chef de produit"
+   ],
+   "publiee": "2026-11-25",
+   "expire": "2026-12-25",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
    "id": "247762",
    "entreprise": "GYS",
    "intitule": "ASSISTANT MARKETING ET COMMUNICATION (F/H) (H/F)",
@@ -1017,7 +1016,7 @@
    "id": "248000",
    "entreprise": "LES COMPTOIR DES FARINES",
    "intitule": "Chargé(e) de développement commercial export (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
+   "lieu": "ESPAGNE - MADRID",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248000",
@@ -1059,7 +1058,7 @@
    "id": "246531",
    "entreprise": "MOBILITY WORK",
    "intitule": "Business Development Representative (BDR) – Espagne (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
+   "lieu": "ESPAGNE - MADRID",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/246531",
@@ -1550,6 +1549,22 @@
    "marketing": false
   },
   {
+   "id": "248714",
+   "entreprise": "SANOFI WINTHROP INDUSTRIE",
+   "intitule": "Bench Scientist - Mass Spectrometry (H/F)",
+   "lieu": "ALLEMAGNE - FRANKFURT AM MAIN",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248714",
+   "extrait": "About the job As Bench Scientist - Mass Spectrometry VIE within our Discovery and Translational Sciences, you will work hands-on in the laboratory with high end mass spectrometry to assess metabolic liabilities of complex modalities and thus, support research from early discovery up to First-in-Huma",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "248150",
    "entreprise": "SERVIER INTERNATIONAL",
    "intitule": "PROCUREMENT ANALYST (H/F)",
@@ -1743,6 +1758,22 @@
    "marketing": false
   },
   {
+   "id": "248723",
+   "entreprise": "AMCOR FLEXIBLE CAPSULES FRANCE",
+   "intitule": "Product Analyst (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248723",
+   "extrait": "MISSION OVERVIEW: The Product Analyst plays a central role in enabling Product Line performance by transforming data, market insights, and operational information into actionable recommendations. The role ensures accurate execution of product line analytics, supports pricing and portfolio positionin",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "247289",
    "entreprise": "ARGEVILLE S A",
    "intitule": "Aromaticien (H/F)",
@@ -1920,14 +1951,30 @@
    "marketing": false
   },
   {
+   "id": "248717",
+   "entreprise": "CAR DATA",
+   "intitule": "Juriste droit des Affaires & contrats commerciaux - RGPD (h/f)",
+   "lieu": "ESPAGNE - MADRID",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248717",
+   "extrait": "Juriste Droit des affaires & Contrats – RGPD (V.I.E) Département : Juridique Lieu : Barcelone (Passeig de Gràcia) Contrat : V.I.E – Volontariat International en Entreprise, 12 mois renouvelable 12 mois Début : 01/02/2027 Indemnité : 2 688E (indemnité V.I.E fixée par l’État pour Barcelone...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "247608",
    "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Chef.fe de Projet Transformation & Développement de l'Écosystème Promotionnel (H/F)",
+   "intitule": "Chef(fe) de Projet Développement de l'écosystème promotionnel (H/F)",
    "lieu": "ARGENTINE - BUENOS AIRES",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/247608",
-   "extrait": "V.I.E Chef.fe de Projet Transformation & Développement de l'Écosystème Promotionnel (F/H) - Argentine 📍Date : Février 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de.",
+   "extrait": "V.I.E Chef.fe de Projet Développement de l'écosystème promotionnel (F/H) - Argentine 📍Date : Février 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, de",
    "sante": false,
    "fonctions": [],
    "recherches": [
@@ -2033,6 +2080,22 @@
    "marketing": false
   },
   {
+   "id": "230224",
+   "entreprise": "EFE INTERNATIONAL",
+   "intitule": "ADJOINT CHEF DE FERME H/F (H/F)",
+   "lieu": "ROUMANIE - BRAILA",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/230224",
+   "extrait": "Description de la mission proposée : Présent en Roumanie depuis une dizaine d’années, l’entreprise familiale ALSAGRO produit des céréales sur 4600 hectares répartis sur plusieurs fermes et a comme objectif d’atteindre les 10000 hectares d’ici quelques années. La Roumanie n’a de cesse de se modernise",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
    "id": "248310",
    "entreprise": "ELIXIRTRIALS FRANCE",
    "intitule": "Chargé(e) de stratégie et d’opérations auprès du dirigeant (H/F)",
@@ -2081,6 +2144,22 @@
    "marketing": false
   },
   {
+   "id": "248761",
+   "entreprise": "FORTIL GROUP",
+   "intitule": "TALENT ACQUISITION (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248761",
+   "extrait": "Poste et missions: Intégré(e) au sein de la Division TA, vous rejoignez une équipe jeune et dynamique dont le rôle est : - Identification des talents > Sourcing & Relation Ecoles - Attraction des talents > Marketing & communication - Recrutement des talents > Entretien...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "248157",
    "entreprise": "FORTIL GROUP",
    "intitule": "INGÉNIEUR.E PROCESS (H/F)",
@@ -2104,22 +2183,6 @@
    "type": "VIE",
    "duree": "18 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248395",
-   "extrait": "Ce posten débutera au sein de nos bureaux parisiens et est à pourvoir dès que possible. GRAITEC recherche un(e) Work & Experience Partner Ce poste a pour mission de concevoir et d’optimiser les environnements de travail à l’échelle mondiale, tout en favorisant la performance de...",
-   "sante": false,
-   "fonctions": [],
-   "recherches": [
-    "santé"
-   ],
-   "marketing": false
-  },
-  {
-   "id": "246789",
-   "entreprise": "GRAITEC INNOVATION",
-   "intitule": "Work & Experience Partner (H/F)",
-   "lieu": "CANADA - MONTREAL -QC",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/246789",
    "extrait": "Ce posten débutera au sein de nos bureaux parisiens et est à pourvoir dès que possible. GRAITEC recherche un(e) Work & Experience Partner Ce poste a pour mission de concevoir et d’optimiser les environnements de travail à l’échelle mondiale, tout en favorisant la performance de...",
    "sante": false,
    "fonctions": [],
@@ -2452,7 +2515,7 @@
    "id": "248365",
    "entreprise": "SNCF VOYAGES DEVELOPPEMENT",
    "intitule": "Direct Distribution Technician (H/F)",
-   "lieu": "ESPAGNE - BARCELONE",
+   "lieu": "ESPAGNE - MADRID",
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/248365",
@@ -2656,6 +2719,22 @@
    "fonctions": [],
    "recherches": [
     "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248719",
+   "entreprise": "WHEELABRATOR GROUP",
+   "intitule": "INGENIEUR MECANIQUE H/F (H/F)",
+   "lieu": "CHINE - CHANGZHOU",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248719",
+   "extrait": "Et si VOTRE aventure avec NOUS commençait ?! Vous êtes à la recherche d’un nouveau challenge ? Vous aimez le travail en équipe, vous êtes motivé(e) par des projets d’ampleur et à l’aise pour transformer les exigences clients en réalité technique ? Nous vous proposons...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "chef de produit"
    ],
    "marketing": false
   }

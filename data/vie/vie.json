@@ -1,11 +1,11 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 87,
-   "lues": 87,
+   "annoncees": 94,
+   "lues": 94,
    "sante": 13
   },
   {
@@ -22,16 +22,16 @@
   },
   {
    "recherche": "chef de produit",
-   "annoncees": 38,
-   "lues": 38,
+   "annoncees": 39,
+   "lues": 39,
    "sante": 2
   }
  ],
  "incompletes": [],
- "nb_offres": 147,
+ "nb_offres": 154,
  "nb_sante": 29,
  "nb_sante_marketing": 13,
- "nb_fonctions": 65,
+ "nb_fonctions": 69,
  "offres": [
   {
    "id": "247818",
@@ -461,27 +461,6 @@
    "marketing": true
   },
   {
-   "id": "247504",
-   "entreprise": "CA CONSUMER FINANCE",
-   "intitule": "PMO & Project Coordination (H/F)",
-   "lieu": "ALLEMAGNE - STUTTGART",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247504",
-   "extrait": "JOB PURPOSE Support the development of our retail Bank in Germany : Crédit Agricole Deutschland, by providing hands-on PMO, cross-functional coordination across the main workstreams. The VIE will help translate governance decisions into execution, maintain a consolidated view of actions, dependencie",
-   "sante": false,
-   "fonctions": [
-    "gestion de projet"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-26",
-   "expire": "2026-11-25",
-   "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
    "id": "247934",
    "entreprise": "CA INDOSUEZ",
    "intitule": "Junior Marketing & Communication Officer (H/F)",
@@ -520,6 +499,27 @@
    ],
    "publiee": "2026-11-09",
    "expire": "2026-12-09",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
+   "id": "247605",
+   "entreprise": "CARREFOUR MANAGEMENT",
+   "intitule": "Chargé(e) de mission E-Commerce & Quick Commerce (H/F)",
+   "lieu": "ARGENTINE - BUENOS AIRES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247605",
+   "extrait": "V.I.E Chargé.e de mission E-Commerce & Quick Commerce (F/H) - Argentine 📍Date : Mars 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
+   "sante": false,
+   "fonctions": [
+    "digital"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
    "debut": "2027-02-01",
    "marketing": true
   },
@@ -589,27 +589,6 @@
    "marketing": true
   },
   {
-   "id": "247605",
-   "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Chargé.e de mission E-Commerce & Quick Commerce (H/F)",
-   "lieu": "ARGENTINE - BUENOS AIRES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247605",
-   "extrait": "V.I.E Chargé.e de mission E-Commerce & Quick Commerce (F/H) - Argentine 📍Date : Février 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
-   "sante": false,
-   "fonctions": [
-    "digital"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-28",
-   "expire": "2026-11-27",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "247636",
    "entreprise": "CARREFOUR MANAGEMENT",
    "intitule": "Chef.fe de Projet Marque de Carrefour (H/F)",
@@ -649,6 +628,27 @@
    ],
    "publiee": "2026-11-04",
    "expire": "2026-12-04",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
+   "id": "248757",
+   "entreprise": "CNH INDUSTRIAL FRANCE",
+   "intitule": "Operational Marketing Specialist (H/F)",
+   "lieu": "ITALIE - TURIN",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248757",
+   "extrait": "The VIE – Operational Marketing Specialist “Parts & Service” MEA – Turkey – Caucasus – Central Asia will drive measurable Parts & Service business growth by taking operational marketing responsibility for assigned markets and dealer relationships, while supporting the Regional Parts Marketing Manage",
+   "sante": false,
+   "fonctions": [
+    "marketing"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-26",
+   "expire": "2026-12-26",
    "debut": "2027-02-01",
    "marketing": true
   },
@@ -734,6 +734,48 @@
    "publiee": "2026-11-09",
    "expire": "2026-12-02",
    "debut": "2027-06-01",
+   "marketing": true
+  },
+  {
+   "id": "248459",
+   "entreprise": "EVERTRUST",
+   "intitule": "Sales Development Representative (H/F)",
+   "lieu": "PAYS-BAS - AMSTERDAM",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248459",
+   "extrait": "Evertrust is a French cybersecurity software vendor, specialized in Public Key Infrastructure (PKI), Certificate Lifecycle Management (CLM) and Crypto Posture Management. Our products, Stream, Horizon and our new CPM solution, help organizations across a wide range of industries secure their digital",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-26",
+   "expire": "2026-12-26",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
+   "id": "248457",
+   "entreprise": "EVERTRUST",
+   "intitule": "Sales Development Representative (H/F)",
+   "lieu": "EMIRATS ARABES UNIS - DUBAI",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248457",
+   "extrait": "Evertrust is a French cybersecurity software vendor, specialized in Public Key Infrastructure (PKI), Certificate Lifecycle Management (CLM) and Crypto Posture Management. Our products, Stream, Horizon and our new CPM solution, help organizations across a wide range of industries secure their digital",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-26",
+   "expire": "2026-12-26",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -861,27 +903,6 @@
    "publiee": "2026-11-04",
    "expire": "2026-12-04",
    "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
-   "id": "248385",
-   "entreprise": "HENDRIX GENETICS RECHERCHE TECHNOLOGIE ET SERVICES",
-   "intitule": "Sales Representative (H/F)",
-   "lieu": "JAPON - TOKYO",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248385",
-   "extrait": "Your Role As a Sales Representative, you will be responsible for driving sustainable revenue and profitable growth within the Japanese market for the Layers Business Unit. You will develop long-term customer relationships, identify and capture new business opportunities, and support the implementati",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-18",
-   "expire": "2026-12-18",
-   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -1076,6 +1097,28 @@
    "marketing": true
   },
   {
+   "id": "248808",
+   "entreprise": "NATIXIS INVESTMENT MANAGERS",
+   "intitule": "V.I.E. - 12 mois - Sales Support and Marketing Assistant F/M (H/F)",
+   "lieu": "SUISSE - GENEVE",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248808",
+   "extrait": "Missions : Mise à jour de notre outil de gestion de la relation client; Création et mise à jour de rapports d’activité commerciale basés sur l’outil CRM ; Contribution aux tâches transversales de gestion de l’activité pour l’ensemble de nos équipes de vente, par exemple...",
+   "sante": false,
+   "fonctions": [
+    "marketing",
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-26",
+   "expire": "2026-12-26",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
    "id": "247496",
    "entreprise": "NOVARC",
    "intitule": "Chargé(e) de développement commercial (H/F)",
@@ -1157,6 +1200,49 @@
    "publiee": "2026-10-28",
    "expire": "2026-11-27",
    "debut": "2027-01-01",
+   "marketing": true
+  },
+  {
+   "id": "248785",
+   "entreprise": "OPTIMETRIKS",
+   "intitule": "Sales Lead - FieldPro Detect (H/F)",
+   "lieu": "VIET NAM - HO CHI MINH",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248785",
+   "extrait": "As Sales Lead of the FieldPro Detect business unit, you will drive new revenue for our AI products: FieldPro Detect (image recognition for retail audits: on-shelf availability, share of shelf, out-of-stock, planogram and POSM compliance) and the new AI products we bring to market. You...",
+   "sante": false,
+   "fonctions": [
+    "commercial"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-26",
+   "expire": "2026-12-26",
+   "debut": "2027-02-01",
+   "marketing": true
+  },
+  {
+   "id": "248784",
+   "entreprise": "PARKER HANNIFIN MANUFACTURING FRANCE",
+   "intitule": "Analyste Pricing F/H (H/F)",
+   "lieu": "SUISSE - ETOY",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248784",
+   "extrait": "Chez Parker, nous jouons un rôle essentiel dans les applications qui changent notre monde. Nous sommes présents dans presque tout ce qui bouge. Grâce à notre large éventail de technologies, y compris dans le domaine des technologies propres, nous aidons nos clients à résoudre leurs...",
+   "sante": false,
+   "fonctions": [
+    "accès au marché"
+   ],
+   "recherches": [
+    "marketing",
+    "chef de produit"
+   ],
+   "publiee": "2026-11-26",
+   "expire": "2026-12-26",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1974,7 +2060,7 @@
    "type": "VIE",
    "duree": "12 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/247608",
-   "extrait": "V.I.E Chef.fe de Projet Développement de l'écosystème promotionnel (F/H) - Argentine 📍Date : Février 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, de",
+   "extrait": "V.I.E Chef.fe de Projet Développement de l'écosystème promotionnel (F/H) - Argentine 📍Date : Mars 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxi",
    "sante": false,
    "fonctions": [],
    "recherches": [
@@ -2120,6 +2206,22 @@
    "duree": "24 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/244796",
    "extrait": "Epicentre de l’activité industrielle du Pays, c’est à Mississauga (en banlieue de Toronto), dans la société Héli Canada que notre VIE sera basé. Partenaire importateur des balayeuses industrielles Emily sur l’ensemble du Canada, Héli Canada est aussi l’adresse de distribution de la filiale Emily Nor",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248574",
+   "entreprise": "EVERTRUST",
+   "intitule": "PreSales Engineer (H/F)",
+   "lieu": "EMIRATS ARABES UNIS - DUBAI",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248574",
+   "extrait": "Evertrust is a French cybersecurity software vendor, specialized in Public Key Infrastructure (PKI), Certificate Lifecycle Management (CLM) and Crypto Posture Management. Our products, Stream, Horizon and our new CPM solution, help organizations across a wide range of industries secure their digital",
    "sante": false,
    "fonctions": [],
    "recherches": [
@@ -2352,6 +2454,22 @@
    "marketing": false
   },
   {
+   "id": "245292",
+   "entreprise": "NUMBERLY",
+   "intitule": "Forward Deployed Engineer - AI & Data Analyst (VIE - New York) (H/F)",
+   "lieu": "ETATS-UNIS - NEW YORK -NY-",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/245292",
+   "extrait": "Description de l'entreprise Numberly est reconnu comme l’un des meilleurs spécialistes mondiaux du Data Marketing avec près de 500 collaborateurs et 11 bureaux dans le monde au service de plus de 300 clients de premier plan (L'Oréal, Groupe Seb, Pernod Ricard, Kellogg's, Colgate, Hills, SNCF,...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
    "id": "248258",
    "entreprise": "ORANO MINING",
    "intitule": "Hydrogéologue F/H (H/F)",
@@ -2424,6 +2542,22 @@
    "duree": "24 mois",
    "url": "https://mon-vie-via.businessfrance.fr/offres/245989",
    "extrait": "This role focuses on managing the complete Order-to-Cash process, ensuring customer orders are accurately processed from receipt through delivery and invoicing. It serves as the primary point of contact for customers regarding order status, deliveries, invoicing, returns, and claims. The position re",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248754",
+   "entreprise": "QUADPACK FRANCE",
+   "intitule": "Chargé de relation clients (H/F)",
+   "lieu": "ETATS-UNIS - DALLAS -TX-",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248754",
+   "extrait": "1 - Gestion des comptes – Ventes Prise en charge de quelques petits clients régionaux : - suivi des commandes (dans les délais et dans leur intégralité) - organisation de réunions pour présenter de nouvelles solutions - fourniture de toutes les informations nécessaires à l'équipe...",
    "sante": false,
    "fonctions": [],
    "recherches": [

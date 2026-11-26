@@ -1,8 +1,120 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 100,
+ "lues": 110,
  "offres": [
+  {
+   "id": "li-4493657467",
+   "intitule": "Product Manager",
+   "entreprise": "WebBeds",
+   "lieu": "France",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4493657467",
+   "alerte": "Product Manager chez WebBeds",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493997771",
+   "intitule": "",
+   "entreprise": "SDE - Vivaraise",
+   "lieu": "Strasbourg",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4493997771",
+   "alerte": "Product Manager chez WebBeds",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493687439",
+   "intitule": "",
+   "entreprise": "Groupe SII",
+   "lieu": "Rouen",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4493687439",
+   "alerte": "Product Manager chez WebBeds",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494024420",
+   "intitule": "",
+   "entreprise": "Pet Drugs Online",
+   "lieu": "Bristol",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4494024420",
+   "alerte": "Le poste de Product Owner de Pet Drugs Online pourrait vous convenir – Recrute activement",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493788032",
+   "intitule": "",
+   "entreprise": "eXalt",
+   "lieu": "Nantes",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4493788032",
+   "alerte": "Healthcare Product Manager Junior - CDI Paris - Theodo HealthTech chez Theodo",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4489447031",
+   "intitule": "",
+   "entreprise": "Theodo",
+   "lieu": "Paris et périphérie",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4489447031",
+   "alerte": "Healthcare Product Manager Junior - CDI Paris - Theodo HealthTech chez Theodo",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494048869",
+   "intitule": "",
+   "entreprise": "eXalt",
+   "lieu": "Nantes",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4494048869",
+   "alerte": "Healthcare Product Manager Junior - CDI Paris - Theodo HealthTech chez Theodo",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
   {
    "id": "li-4482851317",
    "intitule": "Product Manager - CDI Paris - Theodo Healthcare",
@@ -578,6 +690,38 @@
    "fonctions": [
     "marketing",
     "digital"
+   ]
+  },
+  {
+   "id": "li-4493976250",
+   "intitule": "Product Manager, AI Healthcare Platform at Tech Careers",
+   "entreprise": "MeeBoss",
+   "lieu": "San Francisco, CA",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4493976250",
+   "alerte": "Offre d’emploi de Product Manager, AI Healthcare Platform at Tech Careers chez MeeBoss",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494018134",
+   "intitule": "Senior Associate Product Manager",
+   "entreprise": "Solace",
+   "lieu": "États-Unis",
+   "pays": "étranger",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-25",
+   "url": "https://www.linkedin.com/jobs/view/4494018134",
+   "alerte": "Offre d’emploi de Product Manager, AI Healthcare Platform at Tech Careers chez MeeBoss",
+   "vie": false,
+   "fonctions": [
+    "marketing"
    ]
   },
   {

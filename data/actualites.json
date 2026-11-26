@@ -1,5 +1,5 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Advanced Medical Solutions (France) SAS": [
@@ -36,6 +36,12 @@
     "url": "https://www.zonebourse.com/cours/action/AJINOMOTO-CO-INC-6491152/societe/"
    },
    {
+    "titre": "2802 - Ajinomoto Co., Inc.",
+    "source": "Investing",
+    "date": "2026-11-17",
+    "url": "https://br.investing.com/equities/ajinomoto-co.,-inc."
+   },
+   {
     "titre": "Ajinomoto Co., Inc. révise ses prévisions d’acompte sur dividende pour l’exercice se terminant le 31 mars 2027, payable le 2 décembre 2026",
     "source": "Zonebourse",
     "date": "2026-11-09",
@@ -52,12 +58,6 @@
     "source": "agfeed.com.br",
     "date": "2025-11-12",
     "url": "https://agfeed.com.br/negocios/na-receita-da-ajinomoto-plano-e-repetir-melhor-ano-da-historia-nos-fertilizantes/"
-   },
-   {
-    "titre": "Ajinomoto divulga nova fase com entrada no segmento de nutrição para saúde",
-    "source": "Valor Economico",
-    "date": "2025-03-27",
-    "url": "https://valor.globo.com/conteudo-de-marca/ajinomoto/noticia/2025/03/27/ajinomoto-divulga-nova-fase-com-entrada-no-segmento-de-nutricao-para-saude.ghtml"
    }
   ],
   "Bureau des Talents": [
@@ -66,6 +66,32 @@
     "source": "Nice-Matin",
     "date": "2026-05-07",
     "url": "https://www.nicematin.com/societe/vie-locale/qui-sont-les-cinq-nouveaux-animateurs-qui-rejoignent-le-bureau-des-talents-et-arts-reunis-de-flayosc-on-vous-les-presente-10679873"
+   }
+  ],
+  "Collective.work": [
+   {
+    "titre": "Collective.work, Jump, Aria : ces start-up qui veulent simplifier la vie des indépendants",
+    "source": "Les Echos Patrimoine",
+    "date": "2022-03-28",
+    "url": "https://www.lesechos.fr/start-up/ecosysteme/collectivework-jump-aria-ces-start-up-qui-veulent-simplifier-la-vie-des-independants-1396523"
+   },
+   {
+    "titre": "Collective.work lève 7 millions pour accélérer une nouvelle organisation du travail",
+    "source": "L'Usine Nouvelle",
+    "date": "2021-12-21",
+    "url": "https://www.usinenouvelle.com/editorial/collective-work-leve-7-millions-pour-accelerer-une-nouvelle-organisation-du-travail.N1168377"
+   },
+   {
+    "titre": "Collective.work",
+    "source": "Maddyness",
+    "date": "2021-12-10",
+    "url": "https://www.maddyness.com/entreprise/collective-work/"
+   },
+   {
+    "titre": "[SEED] Collective.work lève 7 millions d’euros pour permettre aux freelances de travailler en équipe",
+    "source": "FrenchWeb",
+    "date": "2021-12-08",
+    "url": "https://www.frenchweb.fr/seed-collective-work-leve-7-millions-deuros-pour-permettre-aux-freelances-de-travailler-en-equipe/430796"
    }
   ],
   "DIGITAL MED": [],
@@ -105,16 +131,34 @@
   "GALEC Services centraux": [],
   "GLOBAL D": [
    {
+    "titre": "Naxicap offre à Global D son indépendance",
+    "source": "capitalfinance.lesechos",
+    "date": "2024-11-13",
+    "url": "https://capitalfinance.lesechos.fr/deals/lbo/naxicap-offre-a-global-d-son-independance-2131351"
+   },
+   {
+    "titre": "Global D",
+    "source": "Caducee",
+    "date": "2016-10-05",
+    "url": "https://www.caducee.net/annuaire/f/3962/global-d.html"
+   },
+   {
+    "titre": "GLOBAL D - Retour sur leur symposium ADF 2015",
+    "source": "dentaire365",
+    "date": "2015-12-09",
+    "url": "https://www.dentaire365.fr/actualites/global-d-retour-sur-leur-symposium-adf-2015/"
+   },
+   {
+    "titre": "Global D – TRANSFERTS NUMERIQUES GLOBAL D",
+    "source": "dentaire365",
+    "date": "2014-11-24",
+    "url": "https://www.dentaire365.fr/actualites/global-d-stand-3l07-transferts-numeriques-global-d/"
+   },
+   {
     "titre": "Le lyonnais Global D innove dans les implants dentaires",
     "source": "Les Echos Patrimoine",
     "date": "2013-11-05",
     "url": "https://www.lesechos.fr/2013/11/le-lyonnais-global-d-innove-dans-les-implants-dentaires-331040"
-   },
-   {
-    "titre": "Global D regroupe ses activités dentaires",
-    "source": "L'Usine Nouvelle",
-    "date": "2013-07-11",
-    "url": "https://www.usinenouvelle.com/article/global-d-regroupe-ses-activites-dentaires.N201295"
    }
   ],
   "GROUPE LEPINE": [
@@ -183,6 +227,14 @@
    }
   ],
   "IDS MEDIA": [],
+  "LABORATOIRES URGO HEALTHCARE": [
+   {
+    "titre": "Les Laboratoires Urgo Healthcare choisissent RPCA",
+    "source": "cbnews.fr",
+    "date": "2018-01-21",
+    "url": "https://www.cbnews.fr/conseil/les-laboratoires-urgo-healthcare-choisissent-rpca"
+   }
+  ],
   "Le Mercato de l'Emploi": [],
   "MANPOWER FRANCE": [
    {
@@ -198,31 +250,25 @@
     "url": "https://www.rhmatin.com/recrutement-talents/interim/recrutement-2026-un-demarrage-en-douceur-selon-manpower-france.html"
    },
    {
+    "titre": "Manpower France, une entreprise qui surfe sur la précarité.",
+    "source": "Bellaciao",
+    "date": "2023-11-06",
+    "url": "https://bellaciao.org/Manpower-France-une-entreprise-qui-surfe-sur-la-precarite"
+   },
+   {
+    "titre": "Manpower « France » Rugby",
+    "source": "ffr.fr",
+    "date": "2023-06-27",
+    "url": "https://www.ffr.fr/actualites/partenariat/manpower-france-rugby"
+   },
+   {
     "titre": "Manpower France lance sa « semaine de l’aéronautique »",
     "source": "aeromorning",
     "date": "2023-06-15",
     "url": "https://aeromorning.com/manpower-france-lance-sa-semaine-de-laeronautique/"
-   },
-   {
-    "titre": "Manpower France fait confiance à Kyndryl pour l'accompagner dans la transformation digitale de ses applications",
-    "source": "irblog.prnewswire.com",
-    "date": "2022-02-04",
-    "url": "https://www.prnewswire.com/fr/communiques-de-presse/manpower-france-fait-confiance-a-kyndryl-pour-l-accompagner-dans-la-transformation-digitale-de-ses-applications-855509860.html"
-   },
-   {
-    "titre": "Manpower France veut monter en puissance dans l’apprentissage",
-    "source": "rhmatin",
-    "date": "2020-07-16",
-    "url": "https://www.rhmatin.com/formation/organisme-formation/manpower-france-veut-monter-en-puissance-dans-l-apprentissage.html"
    }
   ],
   "MAYOLY": [
-   {
-    "titre": "Suppositoire A La Glycerine Mayoly Spindler : posologie, effets secondaires, équivalents",
-    "source": "sante.journaldesfemmes",
-    "date": "2026-09-15",
-    "url": "https://sante.journaldesfemmes.fr/medicaments/suppositoire-a-la-glycerine-mayoly-spindler/medicament-9109"
-   },
    {
     "titre": "Le laboratoire Mayoly relocalise en France la production de colchicine, un médicament essentiel contre la goutte",
     "source": "Le Monde.fr",
@@ -230,66 +276,67 @@
     "url": "https://www.lemonde.fr/economie/article/2026/06/23/le-laboratoire-mayoly-relocalise-en-france-la-production-de-colchicine-un-medicament-essentiel-contre-la-goutte_6708616_3234.html"
    },
    {
-    "titre": "Mayoly relocalise la production de colchicine en Bourgogne et mise sur la souveraineté sanitaire",
-    "source": "lagazettefrance",
-    "date": "2026-06-23",
-    "url": "https://www.lagazettefrance.fr/article/mayoly-relocalise-la-production-de-colchicine-en-bourgogne-et-mise-sur-la-souverainete-sanitaire"
-   },
-   {
-    "titre": "Comment Mayoly rapatrie en France la production de colchicine dans l’Yonne, chez les laboratoires Galien",
-    "source": "L'Usine Nouvelle",
-    "date": "2025-12-08",
-    "url": "https://www.usinenouvelle.com/sante-pharma/pharma/comment-mayoly-rapatrie-en-france-la-production-de-colchicine-dans-lyonne-chez-les-laboratoires-galien.37OOT5FIJFESVKFALIKFQ6ITTI.html"
+    "titre": "Suppositoire A La Glycerine Mayoly Spindler : posologie, effets secondaires, équivalents",
+    "source": "sante.journaldesfemmes",
+    "date": "2026-02-25",
+    "url": "https://sante.journaldesfemmes.fr/medicaments/suppositoire-a-la-glycerine-mayoly-spindler/medicament-9109"
    },
    {
     "titre": "Mayoly mise sur la France",
     "source": "pharmaceutiques",
     "date": "2025-11-21",
     "url": "https://pharmaceutiques.com/actualites/entreprises/mayoly-mise-sur-la-france/"
+   },
+   {
+    "titre": "L'entreprise Mayoly inaugure une nouvelle ligne de production sur son site de L'Isle-sur-la-Sorgue",
+    "source": "La Provence",
+    "date": "2025-10-29",
+    "url": "https://www.laprovence.com/article/economie/62981805332726/lentreprise-mayoly-inaugure-une-nouvelle-ligne-de-production-sur-son-site-de-lisle-sur-la-sorgue"
+   },
+   {
+    "titre": "Gaël Chalvon-Demersay (Mayoly) : Soulager les salles d'attentes",
+    "source": "decideurs-magazine",
+    "date": "2025-10-12",
+    "url": "https://www.decideurs-magazine.com/innovation-sante/62150-gael-chalvon-demersay-mayoly-soulager-les-salles-d-attentes.html"
    }
   ],
+  "MEGA BIO PHARMA": [],
   "MMLS- M2LS- M2I LIFE SCIENCES": [],
-  "Michael Page": [
+  "Michael Page": [],
+  "RH PARTNERS": [
    {
-    "titre": "« L'UFC ne paie pas assez ses combattants » : Michael Page livre un bilan sans filtre sur son départ de l'organisation",
-    "source": "ufc-fr",
-    "date": "2026-11-13",
-    "url": "https://www.ufc-fr.com/l-ufc-ne-paie-pas-assez-ses-combattants-michael-page-livre-un-bilan-sans-filtre-sur-son-depart-de-l-organisation-15106.html"
+    "titre": "Emploi en Nouvelle-Aquitaine : « Les candidats sont archi sollicités », selon le cabinet de recrutement RH Partners",
+    "source": "Sud Ouest",
+    "date": "2022-11-09",
+    "url": "https://www.sudouest.fr/economie/emploi/emploi-en-nouvelle-aquitaine-les-candidats-sont-archi-sollicites-selon-le-cabinet-de-recrutement-rh-partners-12414838.php"
    },
    {
-    "titre": "Dana White tranche définitivement sur l’avenir de Michael Page à l’UFC",
-    "source": "actumma",
-    "date": "2026-09-09",
-    "url": "https://www.actumma.com/dana-white-tranche-definitivement-sur-lavenir-de-michael-page-a-lufc/191457/"
-   },
-   {
-    "titre": "Michael Page réagit aux critiques après avoir été hué à l’UFC Paris : « C’est frustrant d’être… »",
-    "source": "actumma",
-    "date": "2026-09-07",
-    "url": "https://www.actumma.com/michael-venom-page-veut-se-racheter-apres-setre-fait-huer-a-lufc-paris/191249/"
-   },
-   {
-    "titre": "UFC Paris : Michael Page neutralise Nursulton Ruziboev et décroche une décision unanime étriquée",
-    "source": "ufc-fr",
-    "date": "2026-09-05",
-    "url": "https://www.ufc-fr.com/ufc-paris-michael-page-neutralise-nursulton-ruziboev-et-decroche-une-decision-unanime-etriquee-14454.html"
-   },
-   {
-    "titre": "Michael Page",
+    "titre": "RH Partners",
     "source": "Le Figaro",
-    "date": "2026-08-18",
-    "url": "https://www.lefigaro.fr/tag/michael-page-personne"
+    "date": "2022-06-22",
+    "url": "https://www.lefigaro.fr/tag/rh-partners"
+   },
+   {
+    "titre": "Jean-Marc Oluski prend la tête du réseau RH Partners",
+    "source": "La Tribune",
+    "date": "2016-08-29",
+    "url": "https://www.latribune.fr/carrieres/management/2016-08-29/jean-marc-oluski-prend-la-tete-du-reseau-rh-partners.html"
+   },
+   {
+    "titre": "Le groupe Gorioux s'associe à RH Partners",
+    "source": "Ouest-France",
+    "date": "2015-07-02",
+    "url": "https://www.ouest-france.fr/bretagne/quimper-29000/le-groupe-gorioux-sassocie-rh-partners-3537850"
+   },
+   {
+    "titre": "Quimper : Le cabinet Gorioux rejoint RH Partners",
+    "source": "Le Journal des Entreprises",
+    "date": "2015-06-26",
+    "url": "https://www.lejournaldesentreprises.com/article/quimper-le-cabinet-gorioux-rejoint-rh-partners-105194"
    }
   ],
   "Red Hot Talents": [],
-  "SCIENTECH Intérim": [
-   {
-    "titre": "SCIENTECH Intérim",
-    "source": "Cap Campus",
-    "date": "2025-10-28",
-    "url": "https://www.capcampus.com/emploi/societe/scientech-interim-s249465.htm"
-   }
-  ],
+  "SCIENTECH Intérim": [],
   "SOUNDUCT": [
    {
     "titre": "Le Pitch : Sounduct, une solution auditive innovante - 26/05",

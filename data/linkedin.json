@@ -1,8 +1,72 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 110,
+ "lues": 125,
  "offres": [
+  {
+   "id": "li-4493029416",
+   "intitule": "",
+   "entreprise": "Nexus Life Sciences",
+   "lieu": "Warrington",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4493029416",
+   "alerte": "Offre d’emploi de Scientific Product Manager chez Nexus Life Sciences",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493025494",
+   "intitule": "Associate Product Manager",
+   "entreprise": "HM Revenue & Customs",
+   "lieu": "Bristol",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4493025494",
+   "alerte": "Offre d’emploi de Scientific Product Manager chez Nexus Life Sciences",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494331286",
+   "intitule": "",
+   "entreprise": "CEGEDIM",
+   "lieu": "Boulogne-Billancourt",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4494331286",
+   "alerte": "Le poste de Healthcare Product Manager Junior - CDI Paris - Theodo HealthTech de Theodo pourrait vous convenir",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4485745456",
+   "intitule": "CDI - CHEF DE PRODUIT JERSEY JUNIOR (H/F)",
+   "entreprise": "JACQUEMUS",
+   "lieu": "Ville de Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4485745456",
+   "alerte": "Le poste de Healthcare Product Manager Junior - CDI Paris - Theodo HealthTech de Theodo pourrait vous convenir",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
   {
    "id": "li-4493657467",
    "intitule": "Product Manager",
@@ -690,6 +754,86 @@
    "fonctions": [
     "marketing",
     "digital"
+   ]
+  },
+  {
+   "id": "li-4494752007",
+   "intitule": "Associate Technical Product Manager – AI Specs & Data Models (Los Altos)",
+   "entreprise": "MaxIT Consulting - Max Corporate Group",
+   "lieu": "Los Altos, CA",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4494752007",
+   "alerte": "Le poste de Associate Technical Product Manager – AI Specs & Data Models (Los Altos) de MaxIT Consulting - Max Corporate Group pourrait vous convenir",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4476096550",
+   "intitule": "Global Product Manager I",
+   "entreprise": "Leica Biosystems",
+   "lieu": "Shanghai",
+   "pays": "étranger",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4476096550",
+   "alerte": "À partir de 300 CNY par mois : AI健康产品管培生 chez 尚德机构",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494428128",
+   "intitule": "Product Owner",
+   "entreprise": "Valeris",
+   "lieu": "États-Unis",
+   "pays": "étranger",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4494428128",
+   "alerte": "Offre d’emploi de Product Owner chez Valeris",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493048626",
+   "intitule": "Associate Product Manager, Core GI/Dilation",
+   "entreprise": "Olympus Corporation",
+   "lieu": "Center Valley, PA",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4493048626",
+   "alerte": "Offre d’emploi de Product Owner chez Valeris",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494426905",
+   "intitule": "",
+   "entreprise": "Cossette",
+   "lieu": "Montréal, QC",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-26",
+   "url": "https://www.linkedin.com/jobs/view/4494426905",
+   "alerte": "Healthcare Product Manager Junior - CDI Paris - Theodo HealthTech chez Theodo",
+   "vie": false,
+   "fonctions": [
+    "marketing"
    ]
   },
   {

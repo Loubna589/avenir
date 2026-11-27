@@ -1,5 +1,5 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
@@ -12,13 +12,13 @@
    "recherche": "pharma",
    "annoncees": 12,
    "lues": 12,
-   "sante": 11
+   "sante": 10
   },
   {
    "recherche": "santé",
-   "annoncees": 31,
-   "lues": 31,
-   "sante": 10
+   "annoncees": 32,
+   "lues": 32,
+   "sante": 11
   },
   {
    "recherche": "chef de produit",
@@ -28,10 +28,10 @@
   }
  ],
  "incompletes": [],
- "nb_offres": 154,
+ "nb_offres": 155,
  "nb_sante": 29,
- "nb_sante_marketing": 13,
- "nb_fonctions": 69,
+ "nb_sante_marketing": 12,
+ "nb_fonctions": 68,
  "offres": [
   {
    "id": "247818",
@@ -142,28 +142,6 @@
    "marketing": true
   },
   {
-   "id": "247531",
-   "entreprise": "IPSEN PHARMA",
-   "intitule": "Digital Project Manager (H/F)",
-   "lieu": "PAYS-BAS - HOOFDDORP",
-   "type": "VIE",
-   "duree": "18 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247531",
-   "extrait": "Your mission As a Digital Project Manager for the BeNeLux region, you will lead digital projects across Belgium and the Netherlands, from initial scoping through to launch and user adoption. You will translate business needs into practical digital solutions while ensuring compliance with quality, pr",
-   "sante": true,
-   "fonctions": [
-    "digital",
-    "gestion de projet"
-   ],
-   "recherches": [
-    "pharma"
-   ],
-   "publiee": "2026-10-27",
-   "expire": "2026-11-26",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "248394",
    "entreprise": "LABORATOIRE D'AUDITION BENOIT",
    "intitule": "BUSINESS DEVELOPMENT & OPERATIONS MANAGER (H/F)",
@@ -183,27 +161,6 @@
    "publiee": "2026-11-18",
    "expire": "2026-12-18",
    "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
-   "id": "245485",
-   "entreprise": "LABORATOIRES ARKOPHARMA",
-   "intitule": "Marketing Expert (H/F)",
-   "lieu": "ALLEMAGNE - MUNICH",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/245485",
-   "extrait": "As a VIE Marketing Specialist, you will play a key role in supporting the launch and development of Arkopharma brands in Germany. Working closely with Product Managers and cross-functional teams, you will: - Develop and implement brand and marketing initiatives - Monitor market trends and...",
-   "sante": true,
-   "fonctions": [
-    "marketing"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-08-28",
-   "expire": "2026-11-26",
-   "debut": "2026-11-01",
    "marketing": true
   },
   {
@@ -246,6 +203,27 @@
    "publiee": "2026-10-29",
    "expire": "2026-11-28",
    "debut": "2027-01-01",
+   "marketing": true
+  },
+  {
+   "id": "248867",
+   "entreprise": "SANOFI WINTHROP INDUSTRIE",
+   "intitule": "Junior Global Marketing Coordinator (H/F)",
+   "lieu": "ALLEMAGNE - BERLIN",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248867",
+   "extrait": "About the job As Junior Global Marketing Coordinator VIE within our Marketing team, you’ll ensure campaigns are executed with the depth and consistency that both global and local stakeholders need. Join the team protecting half a billion lives every year with next-gen science, mRNA innovation,...",
+   "sante": true,
+   "fonctions": [
+    "marketing"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-11-27",
+   "expire": "2026-12-27",
+   "debut": "2027-03-01",
    "marketing": true
   },
   {
@@ -503,27 +481,6 @@
    "marketing": true
   },
   {
-   "id": "247605",
-   "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Chargé(e) de mission E-Commerce & Quick Commerce (H/F)",
-   "lieu": "ARGENTINE - BUENOS AIRES",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247605",
-   "extrait": "V.I.E Chargé.e de mission E-Commerce & Quick Commerce (F/H) - Argentine 📍Date : Mars 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
-   "sante": false,
-   "fonctions": [
-    "digital"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-28",
-   "expire": "2026-11-27",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "247634",
    "entreprise": "CARREFOUR MANAGEMENT",
    "intitule": "Chef.fe de Projet Stratégie Commerciale et RSE (H/F)",
@@ -543,6 +500,27 @@
    "publiee": "2026-10-28",
    "expire": "2026-11-27",
    "debut": "2027-03-01",
+   "marketing": true
+  },
+  {
+   "id": "247605",
+   "entreprise": "CARREFOUR MANAGEMENT",
+   "intitule": "Chargé(e) de mission E-Commerce & Quick Commerce (H/F)",
+   "lieu": "ARGENTINE - BUENOS AIRES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/247605",
+   "extrait": "V.I.E Chargé.e de mission E-Commerce & Quick Commerce (F/H) - Argentine 📍Date : Mars 2027 🌎Ville/Pays : Buenos Aires, Argentine ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
+   "sante": false,
+   "fonctions": [
+    "digital"
+   ],
+   "recherches": [
+    "marketing"
+   ],
+   "publiee": "2026-10-28",
+   "expire": "2026-11-27",
+   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1505,6 +1483,22 @@
    "marketing": true
   },
   {
+   "id": "243256",
+   "entreprise": "CEVA SANTE ANIMALE",
+   "intitule": "Project Manager, Engineering (H/F)",
+   "lieu": "ETATS-UNIS - VERONA",
+   "type": "VIE",
+   "duree": "18 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/243256",
+   "extrait": "The Project Manager, Engineering is responsible for leading capital and operational projects including facility construction and renovation, equipment installation, and manufacturing process optimization. This role is accountable for managing scope, schedule, budget, and risk while ensuring projects",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "santé"
+   ],
+   "marketing": false
+  },
+  {
    "id": "245853",
    "entreprise": "EFE INTERNATIONAL",
    "intitule": "Ingénieur logiciel IA, Member of Technical Staff (H/F)",
@@ -2242,6 +2236,22 @@
    "fonctions": [],
    "recherches": [
     "chef de produit"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248693",
+   "entreprise": "EXTIA INGENIERIE",
+   "intitule": "Ingénieur HVAC H/F (H/F)",
+   "lieu": "BELGIQUE - BRUXELLES",
+   "type": "VIE",
+   "duree": "12 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248693",
+   "extrait": "D'abord QUI ? - Ingénieux, votre imagination débordante vient à bout de chaque problématique - Team player, vous êtes convaincu que “seul, on va plus vite, ensemble, on va plus loin” - Passionné, vous vous réveillez chaque matin avec l’envie d’en savoir plus Ensuite QUOI...",
+   "sante": false,
+   "fonctions": [],
+   "recherches": [
+    "pharma"
    ],
    "marketing": false
   },

@@ -1,12 +1,12 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "source": "https://mon-vie-via.businessfrance.fr/offres/recherche (page publique, lue par navigateur automatique)",
  "recherches": [
   {
    "recherche": "marketing",
-   "annoncees": 94,
-   "lues": 94,
-   "sante": 13
+   "annoncees": 91,
+   "lues": 91,
+   "sante": 14
   },
   {
    "recherche": "pharma",
@@ -16,22 +16,22 @@
   },
   {
    "recherche": "santé",
-   "annoncees": 32,
-   "lues": 32,
+   "annoncees": 31,
+   "lues": 31,
    "sante": 11
   },
   {
    "recherche": "chef de produit",
-   "annoncees": 39,
-   "lues": 39,
+   "annoncees": 37,
+   "lues": 37,
    "sante": 2
   }
  ],
  "incompletes": [],
- "nb_offres": 155,
- "nb_sante": 29,
+ "nb_offres": 150,
+ "nb_sante": 30,
  "nb_sante_marketing": 12,
- "nb_fonctions": 68,
+ "nb_fonctions": 62,
  "offres": [
   {
    "id": "247818",
@@ -333,28 +333,6 @@
    "marketing": true
   },
   {
-   "id": "248577",
-   "entreprise": "AYMING",
-   "intitule": "Chargé.e de coordination commerciale & CRM (F/H) (H/F)",
-   "lieu": "ESPAGNE - MADRID",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248577",
-   "extrait": "Au sein du pôle Data & BI, aux côtés du Sales Business Analyst, vous ferez le lien entre les équipes commerciales, Marketing et Consulting. Vous contribuerez à fiabiliser les données du CRM, à faciliter le suivi des prospects, clients et opportunités, ainsi qu’au reporting et...",
-   "sante": false,
-   "fonctions": [
-    "digital",
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-23",
-   "expire": "2026-12-23",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
    "id": "248523",
    "entreprise": "BEAUTE PRESTIGE INTERNATIONAL",
    "intitule": "Operational product Manager Clé de Peau Beauté (H/F)",
@@ -517,70 +495,6 @@
    ],
    "recherches": [
     "marketing"
-   ],
-   "publiee": "2026-10-28",
-   "expire": "2026-11-27",
-   "debut": "2027-02-01",
-   "marketing": true
-  },
-  {
-   "id": "247631",
-   "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Chef.fe de Projet Stratégie Commerciale et Retail (H/F)",
-   "lieu": "BRESIL - SAO PAULO",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247631",
-   "extrait": "V.I.E Chef.fe de Projet Stratégie Commerciale et Retail (F/H) - Brésil 📍Date : Mars 2027 🌎Pays : São Paulo, Brésil ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième...",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing",
-    "chef de produit"
-   ],
-   "publiee": "2026-10-28",
-   "expire": "2026-11-27",
-   "debut": "2027-03-01",
-   "marketing": true
-  },
-  {
-   "id": "247630",
-   "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Spécialiste pricing et stratégie (H/F)",
-   "lieu": "BRESIL - SAO PAULO",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247630",
-   "extrait": "V.I.E SPÉCIALISTE PRICING ET STRATÉGIE (F/H) - Brésil 📍Date : Mars 2027 🌎Pays : São Paulo, Brésil ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième distributeur mondial et...",
-   "sante": false,
-   "fonctions": [
-    "accès au marché"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-10-28",
-   "expire": "2026-11-27",
-   "debut": "2027-03-01",
-   "marketing": true
-  },
-  {
-   "id": "247636",
-   "entreprise": "CARREFOUR MANAGEMENT",
-   "intitule": "Chef.fe de Projet Marque de Carrefour (H/F)",
-   "lieu": "BELGIQUE - ZAVENTEM",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247636",
-   "extrait": "V.I.E CHEF.FE DE PROJET MARQUE DE CARREFOUR (F/H) - Belgique 📍Date : Février 2027 🌎Ville/Pays : Zaventem, Belgique ⏱️Durée : 12 mois renouvelables (24 mois au total) Participer à l’aventure d’un groupe en pleine transformation, ça te tente ? Créateur de l’hypermarché, deuxième distributeur mondial..",
-   "sante": false,
-   "fonctions": [
-    "marketing"
-   ],
-   "recherches": [
-    "chef de produit"
    ],
    "publiee": "2026-10-28",
    "expire": "2026-11-27",
@@ -1160,27 +1074,6 @@
    "marketing": true
   },
   {
-   "id": "247594",
-   "entreprise": "OMERIN SAS",
-   "intitule": "CHEF DE PROJETS METHODES ET AMELIORATION CONTINUE (H/F)",
-   "lieu": "TUNISIE - MONASTIR",
-   "type": "VIE",
-   "duree": "12 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/247594",
-   "extrait": "Le Groupe OMERIN (300 M€ CA – 1700 collaborateurs – 16 sites industriels) est une ETI française d'envergure internationale. Innovant et multisectoriel, le Groupe organise ses activités autour de quatre Business Units dédiées à la santé et à la sécurité : - Câbles électriques de...",
-   "sante": false,
-   "fonctions": [
-    "gestion de projet"
-   ],
-   "recherches": [
-    "santé"
-   ],
-   "publiee": "2026-10-28",
-   "expire": "2026-11-27",
-   "debut": "2027-01-01",
-   "marketing": true
-  },
-  {
    "id": "248785",
    "entreprise": "OPTIMETRIKS",
    "intitule": "Sales Lead - FieldPro Detect (H/F)",
@@ -1307,27 +1200,6 @@
    "publiee": "2026-11-05",
    "expire": "2026-12-05",
    "debut": "2027-03-01",
-   "marketing": true
-  },
-  {
-   "id": "248364",
-   "entreprise": "SOC ATELIERS PINTON",
-   "intitule": "Responsable Administratif et Commercial (H/F)",
-   "lieu": "ETATS-UNIS - NEW YORK -NY-",
-   "type": "VIE",
-   "duree": "24 mois",
-   "url": "https://mon-vie-via.businessfrance.fr/offres/248364",
-   "extrait": "Depuis 1867, la Manufacture Pinton perpétue la tradition de la tapisserie d'Aubusson et participe à son renouveau sur la scène de l'art contemporain. Reconnue dans l'art, la décoration d'intérieur et le luxe, l'entreprise familiale a constitué un groupe textile unique (Manufacture Royale d'Aubusson,",
-   "sante": false,
-   "fonctions": [
-    "commercial"
-   ],
-   "recherches": [
-    "marketing"
-   ],
-   "publiee": "2026-11-17",
-   "expire": "2026-12-17",
-   "debut": "2027-02-01",
    "marketing": true
   },
   {
@@ -1625,6 +1497,22 @@
    "fonctions": [],
    "recherches": [
     "santé"
+   ],
+   "marketing": false
+  },
+  {
+   "id": "248884",
+   "entreprise": "SANOFI WINTHROP INDUSTRIE",
+   "intitule": "Logistics Engineering Analyst (H/F)",
+   "lieu": "ESPAGNE - BARCELONE",
+   "type": "VIE",
+   "duree": "24 mois",
+   "url": "https://mon-vie-via.businessfrance.fr/offres/248884",
+   "extrait": "About the job As Logistics Engineering Analyst VIE within our Supply Chain team, you will support the ongoing transformation of Sanofi's export platforms in Germany and France, which serve as critical distribution centers exporting to regional distribution hubs and markets across Europe and beyond. ",
+   "sante": true,
+   "fonctions": [],
+   "recherches": [
+    "marketing"
    ],
    "marketing": false
   },

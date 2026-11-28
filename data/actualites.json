@@ -1,5 +1,5 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "source": "Bing Actualités, flux RSS public (un par entreprise)",
  "entreprises": {
   "Achil.": [
@@ -68,9 +68,21 @@
     "url": "https://www.zonebourse.com/actualite-bourse/ajinomoto-malaysia-berhad-publie-ses-resultats-pour-le-deuxieme-trimestre-et-le-semestre-clos-le-3-ce7851d9d98af421"
    },
    {
+    "titre": "Cours Ajinomoto Co., Inc.",
+    "source": "Zonebourse",
+    "date": "2026-11-26",
+    "url": "https://www.zonebourse.com/cours/action/AJINOMOTO-CO-INC-6491152/"
+   },
+   {
+    "titre": "Kuchnia japońska na fali. Ajinomoto wprowadza nową linię dań i zmienia design opakowań",
+    "source": "DlaHandlu.pl",
+    "date": "2026-11-26",
+    "url": "https://www.dlahandlu.pl/nowe-produkty/kuchnia-japonska-na-fali-ajinomoto-wprowadza-nowa-linie-dan-i-zmienia-design-opakowan,178562.html"
+   },
+   {
     "titre": "2802 - Ajinomoto Co., Inc.",
     "source": "Investing",
-    "date": "2026-11-25",
+    "date": "2026-11-19",
     "url": "https://br.investing.com/equities/ajinomoto-co.,-inc."
    },
    {
@@ -78,18 +90,6 @@
     "source": "Zonebourse",
     "date": "2026-11-09",
     "url": "https://ch.zonebourse.com/actualite-bourse/ajinomoto-co-inc-revise-ses-previsions-da-acompte-sur-dividende-pour-la-exercice-se-terminant-l-ce785fd3d18cf724"
-   },
-   {
-    "titre": "Test Ajinomoto : 292 produits Imo Mochi et Oyaki gratuits",
-    "source": "echantillonsclub",
-    "date": "2026-11-05",
-    "url": "https://www.echantillonsclub.com/222683-test-ajinomoto-produits-imo-mochi-oyaki-gratuits.html"
-   },
-   {
-    "titre": "Michelin industrialise son projet de production de molécules par fermentation DragonFly sur le site d’Ajinomoto à Nesle",
-    "source": "L'Usine Nouvelle",
-    "date": "2026-10-09",
-    "url": "https://www.usinenouvelle.com/biosource/produits-biosources/michelin-industrialise-son-projet-de-production-de-molecules-par-fermentation-dragonfly-sur-le-site-dajinomoto-a-nesle.OKPO6PTMBVDSFNWBEZHRI6GZ5A.html"
    }
   ],
   "Bureau des Talents": [
@@ -153,10 +153,10 @@
     "url": "https://presse.bpifrance.fr/fizimed-leve-4meur-aupres-du-fonds-patient-autonome-gere-par-bpifrance-uniqa-et-ui-investissement-afin-daccelerer-son-expansion-internationale"
    },
    {
-    "titre": "Fizimed et Cephalgo récompensées à Strasbourg par le concours Digital InPulse de Huawei",
-    "source": "Maddyness",
-    "date": "2022-11-04",
-    "url": "https://www.maddyness.com/2022/11/04/digital-inpulse-fizimed-cephalgo-lille/"
+    "titre": "La femtech Fizimed lève 4 millions d’euros pour déployer ses dispositifs médicaux en Europe et aux États-Unis",
+    "source": "FrenchWeb",
+    "date": "2025-03-13",
+    "url": "https://www.frenchweb.fr/la-femtech-fizimed-leve-4-millions-deuros-pour-deployer-ses-dispositifs-medicaux-en-europe-et-aux-etats-unis/452062"
    }
   ],
   "Forums Talents Handicap": [],
@@ -182,7 +182,7 @@
    },
    {
     "titre": "Christian Grenier PDG de Genoway",
-    "source": "boursier.com",
+    "source": "Boursier.com",
     "date": "2026-11-01",
     "url": "https://www.boursier.com/actions/actualites/interviews/christian-grenier-pdg-de-genoway-5076.html"
    },
@@ -202,15 +202,15 @@
    },
    {
     "titre": "Global D",
+    "source": "dentaire365",
+    "date": "2022-10-05",
+    "url": "https://www.dentaire365.fr/exposant/global-d/"
+   },
+   {
+    "titre": "Global D",
     "source": "Caducee",
     "date": "2016-10-05",
     "url": "https://www.caducee.net/annuaire/f/3962/global-d.html"
-   },
-   {
-    "titre": "GLOBAL D - Retour sur leur symposium ADF 2015",
-    "source": "dentaire365",
-    "date": "2015-12-09",
-    "url": "https://www.dentaire365.fr/actualites/global-d-retour-sur-leur-symposium-adf-2015/"
    },
    {
     "titre": "Global D – TRANSFERTS NUMERIQUES GLOBAL D",
@@ -266,10 +266,10 @@
     "url": "https://ansm.sante.fr/informations-de-securite/biochimie-reactif-abx-pentra-urea-cp-horiba-abx"
    },
    {
-    "titre": "Horiba ABX Micros 60 User Manual",
+    "titre": "Horiba ABX Pentra 60C+ User manual",
     "source": "archive",
-    "date": "2020-05-18",
-    "url": "https://archive.org/details/manual_Horiba_ABX_Micros_60_User_Manual"
+    "date": "2020-05-19",
+    "url": "https://archive.org/details/manual_Horiba_ABX_Pentra_60C_User_manual"
    },
    {
     "titre": "Hématologie - Automate Yumizen H2500 - Horiba ABX - Information de sécurité",
@@ -291,6 +291,38 @@
    }
   ],
   "IDS MEDIA": [],
+  "KUEHNE+NAGEL": [
+   {
+    "titre": "Consensus Kuehne + Nagel International AG",
+    "source": "Zonebourse",
+    "date": "2026-11-27",
+    "url": "https://www.zonebourse.com/cours/action/KUEHNE-NAGEL-INTERNATIONA-178766/consensus/"
+   },
+   {
+    "titre": "KUEHNE & NAGEL INTERNATIONAL AG",
+    "source": "Finanznachrichten",
+    "date": "2026-11-25",
+    "url": "https://www.finanznachrichten.de/nachrichten-aktien/kuehne-nagel-international-ag.htm"
+   },
+   {
+    "titre": "KUEHNE & NAGEL Aktie: BNP Paribas stuft auf Underperform ab und nennt CHF 200 als Kursziel",
+    "source": "goldesel",
+    "date": "2026-11-24",
+    "url": "https://goldesel.de/aktien/news/kuehne-nagel-aktie-bnp-paribas-stuft-auf-underperform-ab-und-nennt-chf-200-als-kursziel"
+   },
+   {
+    "titre": "Kühne+Nagel-Aktien geben nach Bericht zu neuen US-Strafzöllen nach",
+    "source": "cash",
+    "date": "2026-11-24",
+    "url": "https://www.cash.ch/news/top-news/kuhnenagel-aktien-geben-nach-bericht-zu-neuen-us-strafzollen-nach-987756"
+   },
+   {
+    "titre": "Kühne+Nagel implementiert FAIR@Link von allivate",
+    "source": "loginfo24",
+    "date": "2026-11-23",
+    "url": "https://loginfo24.com/2026/11/23/kuehnenagel-implementiert-fairlink-von-allivate/"
+   }
+  ],
   "LABORATOIRES URGO HEALTHCARE": [
    {
     "titre": "Humexlib état grippal : deux lots rappelés pour une erreur d’étiquetage en braille",
@@ -320,12 +352,6 @@
     "url": "https://www.rhmatin.com/recrutement-talents/interim/recrutement-2026-un-demarrage-en-douceur-selon-manpower-france.html"
    },
    {
-    "titre": "Manpower France, une entreprise qui surfe sur la précarité.",
-    "source": "Bellaciao",
-    "date": "2023-11-06",
-    "url": "https://bellaciao.org/Manpower-France-une-entreprise-qui-surfe-sur-la-precarite"
-   },
-   {
     "titre": "Manpower France lance sa « semaine de l’aéronautique »",
     "source": "aeromorning",
     "date": "2023-06-15",
@@ -336,9 +362,27 @@
     "source": "irblog.prnewswire.com",
     "date": "2022-02-04",
     "url": "https://www.prnewswire.com/fr/communiques-de-presse/manpower-france-fait-confiance-a-kyndryl-pour-l-accompagner-dans-la-transformation-digitale-de-ses-applications-855509860.html"
+   },
+   {
+    "titre": "Manpower France veut monter en puissance dans l’apprentissage",
+    "source": "rhmatin",
+    "date": "2020-07-16",
+    "url": "https://www.rhmatin.com/formation/organisme-formation/manpower-france-veut-monter-en-puissance-dans-l-apprentissage.html"
    }
   ],
   "MAYOLY": [
+   {
+    "titre": "CODEINE-ERYSIMUM MAYOLY SPINDLER SANS SUCRE, sirop",
+    "source": "vidal",
+    "date": "2026-10-21",
+    "url": "https://www.vidal.fr/medicaments/codeine-erysimum-mayoly-spindler-sirop-sans-sucre-6456.html"
+   },
+   {
+    "titre": "Suppositoire A La Glycerine Mayoly Spindler : posologie, effets secondaires, équivalents",
+    "source": "sante.journaldesfemmes",
+    "date": "2026-09-15",
+    "url": "https://sante.journaldesfemmes.fr/medicaments/suppositoire-a-la-glycerine-mayoly-spindler/medicament-9109"
+   },
    {
     "titre": "Le laboratoire Mayoly relocalise en France la production de colchicine, un médicament essentiel contre la goutte",
     "source": "Le Monde.fr",
@@ -346,28 +390,16 @@
     "url": "https://www.lemonde.fr/economie/article/2026/06/23/le-laboratoire-mayoly-relocalise-en-france-la-production-de-colchicine-un-medicament-essentiel-contre-la-goutte_6708616_3234.html"
    },
    {
-    "titre": "Suppositoire A La Glycerine Mayoly Spindler : posologie, effets secondaires, équivalents",
-    "source": "sante.journaldesfemmes",
-    "date": "2026-02-25",
-    "url": "https://sante.journaldesfemmes.fr/medicaments/suppositoire-a-la-glycerine-mayoly-spindler/medicament-9109"
+    "titre": "Mayoly relocalise la production de colchicine en Bourgogne et mise sur la souveraineté sanitaire",
+    "source": "lagazettefrance",
+    "date": "2026-06-23",
+    "url": "https://www.lagazettefrance.fr/article/mayoly-relocalise-la-production-de-colchicine-en-bourgogne-et-mise-sur-la-souverainete-sanitaire"
    },
    {
     "titre": "Mayoly mise sur la France",
     "source": "pharmaceutiques",
     "date": "2025-11-21",
     "url": "https://pharmaceutiques.com/actualites/entreprises/mayoly-mise-sur-la-france/"
-   },
-   {
-    "titre": "L'entreprise Mayoly inaugure une nouvelle ligne de production sur son site de L'Isle-sur-la-Sorgue",
-    "source": "La Provence",
-    "date": "2025-10-29",
-    "url": "https://www.laprovence.com/article/economie/62981805332726/lentreprise-mayoly-inaugure-une-nouvelle-ligne-de-production-sur-son-site-de-lisle-sur-la-sorgue"
-   },
-   {
-    "titre": "Gaël Chalvon-Demersay (Mayoly) : Soulager les salles d'attentes",
-    "source": "decideurs-magazine",
-    "date": "2025-10-12",
-    "url": "https://www.decideurs-magazine.com/innovation-sante/62150-gael-chalvon-demersay-mayoly-soulager-les-salles-d-attentes.html"
    }
   ],
   "MEGA BIO PHARMA": [],
@@ -384,6 +416,12 @@
     "source": "actumma",
     "date": "2026-09-07",
     "url": "https://www.actumma.com/michael-venom-page-veut-se-racheter-apres-setre-fait-huer-a-lufc-paris/191249/"
+   },
+   {
+    "titre": "UFC Paris : Michael Page neutralise Nursulton Ruziboev et décroche une décision unanime étriquée",
+    "source": "ufc-fr",
+    "date": "2026-09-05",
+    "url": "https://www.ufc-fr.com/ufc-paris-michael-page-neutralise-nursulton-ruziboev-et-decroche-une-decision-unanime-etriquee-14454.html"
    }
   ],
   "RH PARTNERS": [

@@ -1,8 +1,136 @@
 {
- "date": "2026-11-27",
+ "date": "2026-11-28",
  "source": "Alertes e-mail LinkedIn, recopiées par Google Apps Script dans un Google Sheets publié en CSV",
- "lues": 125,
+ "lues": 144,
  "offres": [
+  {
+   "id": "li-4494695255",
+   "intitule": "Associate Product Manager",
+   "entreprise": "Women in Tech",
+   "lieu": "Birmingham",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-28",
+   "url": "https://www.linkedin.com/jobs/view/4494695255",
+   "alerte": "Women in Tech recrute : Associate Product Manager",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494913463",
+   "intitule": "Product Manager Junior (H/F)",
+   "entreprise": "Hello Watt",
+   "lieu": "Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-28",
+   "url": "https://www.linkedin.com/jobs/view/4494913463",
+   "alerte": "Offre d’emploi de Product Manager Junior (H/F) chez Hello Watt",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494648151",
+   "intitule": "Junior Product Owner M/F",
+   "entreprise": "Wezen",
+   "lieu": "Levallois-Perret",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-28",
+   "url": "https://www.linkedin.com/jobs/view/4494648151",
+   "alerte": "Offre d’emploi de Product Manager Junior (H/F) chez Hello Watt",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4478111143",
+   "intitule": "Product Manager",
+   "entreprise": "Luni",
+   "lieu": "Bordeaux et périphérie",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-28",
+   "url": "https://www.linkedin.com/jobs/view/4478111143",
+   "alerte": "Offre d’emploi de Product Manager Junior (H/F) chez Hello Watt",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494604976",
+   "intitule": "",
+   "entreprise": "Sézane",
+   "lieu": "Paris",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-28",
+   "url": "https://www.linkedin.com/jobs/view/4494604976",
+   "alerte": "Offre d’emploi de Product Manager Junior (H/F) chez Hello Watt",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4494680101",
+   "intitule": "",
+   "entreprise": "Hamelinbrands",
+   "lieu": "Caen",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-28",
+   "url": "https://www.linkedin.com/jobs/view/4494680101",
+   "alerte": "Offre d’emploi de Product Manager Junior (H/F) chez Hello Watt",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4493411671",
+   "intitule": "",
+   "entreprise": "Viatris",
+   "lieu": "Lyon",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-27",
+   "url": "https://www.linkedin.com/jobs/view/4493411671",
+   "alerte": "Assistant(e) Market Access H/F – CDI - Lyon Gerland ou Paris la Défense  chez Viatris",
+   "vie": false,
+   "fonctions": [
+    "accès au marché"
+   ]
+  },
+  {
+   "id": "li-4494681644",
+   "intitule": "",
+   "entreprise": "Danone",
+   "lieu": "Limonest",
+   "pays": "France",
+   "france": true,
+   "salaire": "",
+   "recue_le": "2026-11-27",
+   "url": "https://www.linkedin.com/jobs/view/4494681644",
+   "alerte": "Product Manager Junior (H/F) chez Hello Watt",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
   {
    "id": "li-4493029416",
    "intitule": "",
@@ -754,6 +882,80 @@
    "fonctions": [
     "marketing",
     "digital"
+   ]
+  },
+  {
+   "id": "li-4494634179",
+   "intitule": "",
+   "entreprise": "Sanofi",
+   "lieu": "Toronto, ON",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-27",
+   "url": "https://www.linkedin.com/jobs/view/4494634179",
+   "alerte": "Sanofi recrute au poste de 2027 Digital Graduate Program, Product Analyst",
+   "vie": false,
+   "fonctions": []
+  },
+  {
+   "id": "li-4494625545",
+   "intitule": "",
+   "entreprise": "Sanofi",
+   "lieu": "Toronto, ON",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-27",
+   "url": "https://www.linkedin.com/jobs/view/4494625545",
+   "alerte": "Sanofi recrute au poste de 2027 Digital Graduate Program, Product Analyst",
+   "vie": false,
+   "fonctions": []
+  },
+  {
+   "id": "li-4494630189",
+   "intitule": "",
+   "entreprise": "Sanofi",
+   "lieu": "Toronto, ON",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-27",
+   "url": "https://www.linkedin.com/jobs/view/4494630189",
+   "alerte": "Sanofi recrute au poste de 2027 Digital Graduate Program, Product Analyst",
+   "vie": false,
+   "fonctions": []
+  },
+  {
+   "id": "li-4494608558",
+   "intitule": "Junior Product Manager - Quantum",
+   "entreprise": "Pride Mobility Products Corporation",
+   "lieu": "Duryea, PA",
+   "pays": "États-Unis",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-27",
+   "url": "https://www.linkedin.com/jobs/view/4494608558",
+   "alerte": "Associate Product Manager chez Scientific Search",
+   "vie": false,
+   "fonctions": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "li-4459684297",
+   "intitule": "",
+   "entreprise": "Galderma",
+   "lieu": "Shanghai",
+   "pays": "étranger",
+   "france": false,
+   "salaire": "",
+   "recue_le": "2026-11-27",
+   "url": "https://www.linkedin.com/jobs/view/4459684297",
+   "alerte": "Une offre d’emploi de Assistant Product Manager, Dermatological Skincare chez Galdermaet 3 autres offres d’emploi pourraient vous intéresser",
+   "vie": false,
+   "fonctions": [
+    "marketing"
    ]
   },
   {
